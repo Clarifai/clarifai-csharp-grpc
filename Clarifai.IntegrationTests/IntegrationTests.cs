@@ -27,15 +27,6 @@ namespace Clarifai.IntegrationTests
         }
 
         [Test]
-        public void ListConcepts()
-        {
-            var response = _client.ListConcepts(new ListConceptsRequest(), _metadata);
-            if (response.Status.Code != StatusCode.Success) Assert.Fail(response.ToString());
-
-            Assert.NotZero(response.Concepts.Count);
-        }
-
-        [Test]
         public void GetModel()
         {
             var response = _client.GetModel(
