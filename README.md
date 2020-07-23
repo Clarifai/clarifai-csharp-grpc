@@ -12,6 +12,8 @@ content.
 * Sign up for a free account at: https://portal.clarifai.com/signup
 * Read the documentation at: https://docs.clarifai.com/
 
+![Run tests](https://github.com/Clarifai/clarifai-csharp-grpc/workflows/Run%20tests/badge.svg)
+
 ## Getting started
 
 Construct the client and setup your API key or Personal Access Token in the `metadata` variable.
