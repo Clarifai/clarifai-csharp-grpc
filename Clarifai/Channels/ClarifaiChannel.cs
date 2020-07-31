@@ -1,14 +1,12 @@
-using System;
 using Grpc.Core;
-using Grpc.Net.Client;
 
 namespace Clarifai.Channels
 {
     public static class ClarifaiChannel
     {
-        public static GrpcChannel Grpc(string url = "https://api.clarifai.com:443")
+        public static Channel Grpc(string url = "api.clarifai.com")
         {
-            return GrpcChannel.ForAddress(url);
+            return new Channel(url, 443, new SslCredentials());
         }
 
         public static Channel InsecureGrpc()
