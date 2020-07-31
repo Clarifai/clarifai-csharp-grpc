@@ -25,5 +25,6 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
+          file: Clarifai/bin/Release/ClarifaiGrpc.*.nupkg
           draft: false
           prerelease: false
