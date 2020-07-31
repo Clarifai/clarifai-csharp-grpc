@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using Clarifai.Api;
 using Clarifai.Channels;
 using Grpc.Core;
@@ -11,6 +12,7 @@ namespace Clarifai.IntegrationTests
     public class IntegrationTests
     {
         private readonly string DOG_IMAGE_URL = "https://samples.clarifai.com/dog2.jpeg";
+        private readonly string TRUCK_IMAGE_URL = "https://samples.clarifai.com/red-truck.png";
         private readonly string NON_EXISTING_IMAGE_URL = "http://example.com/non-existing.jpg";
 
         private readonly string GENERAL_MODEL_ID = "aaa03c23b3724a16a56b629203edc62c";
@@ -151,6 +153,104 @@ namespace Clarifai.IntegrationTests
             Assert.AreEqual(StatusCode.MixedStatus, response.Status.Code);
             Assert.AreEqual(StatusCode.Success, response.Outputs[0].Status.Code);
             Assert.AreEqual(StatusCode.InputDownloadFailed, response.Outputs[1].Status.Code);
+        }
+
+        [Test]
+        public void PostPatchAndDeleteInput()
+        {
+            MultiInputResponse postInputsResponse = _client.PostInputs(
+                new PostInputsRequest
+                {
+                    Inputs =
+                    {
+                        new List<Input>
+                        {
+                            new Input
+                            {
+                                Data = new Data
+                                {
+                                    Image = new Image
+                                    {
+                                        Url = TRUCK_IMAGE_URL,
+                                        AllowDuplicateUrl = true
+                                    },
+                                    Concepts =
+                                    {
+                                        new List<Concept>
+                                        {
+                                            new Concept
+                                            {
+                                                Id = "red-truck"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                _metadata
+            );
+            RaiseOnFailure(postInputsResponse);
+
+            string inputId = postInputsResponse.Inputs[0].Id;
+            try
+            {
+                while (true)
+                {
+                    var getInputResponse = _client.GetInput(
+                        new GetInputRequest {InputId = inputId},
+                        _metadata
+                    );
+                    RaiseOnFailure(getInputResponse);
+                    var inputStatusCode = getInputResponse.Input.Status.Code;
+                    if (inputStatusCode == StatusCode.InputDownloadSuccess)
+                        break;
+                    if (inputStatusCode != StatusCode.InputDownloadPending &&
+                        inputStatusCode != StatusCode.InputDownloadInProgress)
+                        throw new Exception(
+                            $"Waiting for input ID {inputId} failed, status code is " +
+                            $"{inputStatusCode}");
+                    Thread.Sleep(1_000);
+                }
+
+                var patchInputsResponse = _client.PatchInputs(
+                    new PatchInputsRequest
+                    {
+                        Action = "overwrite",
+                        Inputs = { new List<Input>
+                        {
+                            new Input
+                            {
+                                Id = inputId,
+                                Data = new Data
+                                {
+                                    Concepts = { new List<Concept>
+                                    {
+                                        new Concept
+                                        {
+                                            Id = "very-red-truck"
+                                        }
+                                    }}
+                                }
+                            }
+                        }}
+                    },
+                    _metadata
+                );
+                RaiseOnFailure(patchInputsResponse);
+            }
+            finally
+            {
+                var deleteInputsResponse = _client.DeleteInput(
+                    new DeleteInputRequest
+                    {
+                        InputId = inputId
+                    },
+                    _metadata
+                );
+                RaiseOnFailure(deleteInputsResponse);
+            }
         }
 
         private void RaiseOnFailure(dynamic response)
