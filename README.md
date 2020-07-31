@@ -14,6 +14,15 @@ content.
 
 ![Run tests](https://github.com/Clarifai/clarifai-csharp-grpc/workflows/Run%20tests/badge.svg)
 
+## Installation
+
+Install it via the NuGet Package Manager by searching for `ClarifaiGrpc`, or use one of the commands below.
+
+```
+Install-Package ClarifaiGrpc
+dotnet add package ClarifaiGrpc
+```
+
 ## Getting started
 
 Construct the client and setup your API key or Personal Access Token in the `metadata` variable.
