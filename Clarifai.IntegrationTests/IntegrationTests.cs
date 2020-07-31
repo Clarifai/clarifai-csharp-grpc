@@ -38,7 +38,7 @@ namespace Clarifai.IntegrationTests
                 new GetModelRequest() { ModelId = GENERAL_MODEL_ID },
                 _metadata
             );
-            if (response.Status.Code != StatusCode.Success) Assert.Fail(response.ToString());
+            RaiseOnFailure(response);
 
             Assert.AreEqual("general", response.Model.Name);
         }
@@ -50,7 +50,7 @@ namespace Clarifai.IntegrationTests
                 new ListModelsRequest() { PerPage = 2 },
                 _metadata
             );
-            if (response1.Status.Code != StatusCode.Success) Assert.Fail(response1.ToString());
+            RaiseOnFailure(response1);
 
             Assert.AreEqual(2, response1.Models.Count);
 
@@ -59,7 +59,7 @@ namespace Clarifai.IntegrationTests
                 new ListModelsRequest() { Page = 1000, PerPage = 500 },
                 _metadata
             );
-            if (response2.Status.Code != StatusCode.Success) Assert.Fail(response2.ToString());
+            RaiseOnFailure(response2);
         }
 
         [Test]
@@ -84,7 +84,7 @@ namespace Clarifai.IntegrationTests
                 },
                 _metadata
             );
-            if (response.Status.Code != StatusCode.Success) Assert.Fail(response.ToString());
+            RaiseOnFailure(response);
 
             Assert.AreNotEqual(0, response.Outputs[0].Data.Concepts.Count);
         }
@@ -151,6 +151,17 @@ namespace Clarifai.IntegrationTests
             Assert.AreEqual(StatusCode.MixedStatus, response.Status.Code);
             Assert.AreEqual(StatusCode.Success, response.Outputs[0].Status.Code);
             Assert.AreEqual(StatusCode.InputDownloadFailed, response.Outputs[1].Status.Code);
+        }
+
+        private void RaiseOnFailure(dynamic response)
+        {
+            dynamic status = response.Status;
+            if (status.Code != StatusCode.Success)
+            {
+                throw new Exception(
+                    $"Unexpected failure response: {status.Code} {status.Description} " +
+                    $"{status.Details}. Whole response object: {response}");
+            }
         }
     }
 }
