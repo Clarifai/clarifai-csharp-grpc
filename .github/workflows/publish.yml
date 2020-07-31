@@ -19,6 +19,7 @@ jobs:
           dotnet pack -c Release
           dotnet nuget push Clarifai/bin/Release/ClarifaiGrpc.*.nupkg -k $NUGET_API_KEY -s https://www.nuget.org/api/v2/package
       - name: Create GitHub Release
+        id: create_release
         uses: actions/create-release@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -28,3 +29,12 @@ jobs:
           file: Clarifai/bin/Release/ClarifaiGrpc.*.nupkg
           draft: false
           prerelease: false
+      - name: Upload nupkg to GitHub Release
+        id: upload_release_asset
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: Clarifai/bin/Release/ClarifaiGrpc.*.nupkg
