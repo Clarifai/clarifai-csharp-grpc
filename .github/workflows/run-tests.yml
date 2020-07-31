@@ -29,5 +29,5 @@ jobs:
       env:
         CLARIFAI_BASE: ${{ secrets.CLARIFAI_BASE }}
         CLARIFAI_KEY: ${{ secrets.CLARIFAI_KEY }}
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal --framework netcoreapp${{ matrix.dotnet }}
 
