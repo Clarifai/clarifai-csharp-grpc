@@ -10,6 +10,11 @@ namespace Clarifai.IntegrationTests
 {
     public class IntegrationTests
     {
+        private readonly string DOG_IMAGE_URL = "https://samples.clarifai.com/dog2.jpeg";
+        private readonly string NON_EXISTING_IMAGE_URL = "http://example.com/non-existing.jpg";
+
+        private readonly string GENERAL_MODEL_ID = "aaa03c23b3724a16a56b629203edc62c";
+
         private Metadata _metadata;
         private V2.V2Client _client;
 
@@ -30,7 +35,7 @@ namespace Clarifai.IntegrationTests
         public void GetModel()
         {
             var response = _client.GetModel(
-                new GetModelRequest() { ModelId = "aaa03c23b3724a16a56b629203edc62c" },
+                new GetModelRequest() { ModelId = GENERAL_MODEL_ID },
                 _metadata
             );
             if (response.Status.Code != StatusCode.Success) Assert.Fail(response.ToString());
@@ -63,7 +68,7 @@ namespace Clarifai.IntegrationTests
             var response = _client.PostModelOutputs(
                 new PostModelOutputsRequest()
                 {
-                    ModelId = "aaa03c23b3724a16a56b629203edc62c",
+                    ModelId = GENERAL_MODEL_ID,
                     Inputs = { new List<Input>() {
                             new Input()
                             {
@@ -71,7 +76,7 @@ namespace Clarifai.IntegrationTests
                                 {
                                     Image = new Image()
                                     {
-                                        Url = "https://samples.clarifai.com/dog2.jpeg"
+                                        Url = DOG_IMAGE_URL
                                     }
                                 }
                             }
@@ -82,6 +87,70 @@ namespace Clarifai.IntegrationTests
             if (response.Status.Code != StatusCode.Success) Assert.Fail(response.ToString());
 
             Assert.AreNotEqual(0, response.Outputs[0].Data.Concepts.Count);
+        }
+
+        [Test]
+        public void FailedPostModelOutputs()
+        {
+            var response = _client.PostModelOutputs(
+                new PostModelOutputsRequest()
+                {
+                    ModelId = GENERAL_MODEL_ID,
+                    Inputs = { new List<Input> {
+                            new Input
+                            {
+                                Data = new Data
+                                {
+                                    Image = new Image
+                                    {
+                                        Url = NON_EXISTING_IMAGE_URL
+                                    }
+                                }
+                            }
+                    } }
+                },
+                _metadata
+            );
+            Assert.AreEqual(StatusCode.Failure, response.Status.Code);
+            Assert.AreEqual("Failure", response.Status.Description);
+            Assert.AreEqual(StatusCode.InputDownloadFailed, response.Outputs[0].Status.Code);
+        }
+
+        [Test]
+        public void MixedSuccessPostModelOutputs()
+        {
+            var response = _client.PostModelOutputs(
+                new PostModelOutputsRequest
+                {
+                    ModelId = GENERAL_MODEL_ID,
+                    Inputs = { new List<Input> {
+                            new Input
+                            {
+                                Data = new Data
+                                {
+                                    Image = new Image
+                                    {
+                                        Url = DOG_IMAGE_URL
+                                    }
+                                }
+                            },
+                            new Input
+                            {
+                                Data = new Data
+                                {
+                                    Image = new Image
+                                    {
+                                        Url = NON_EXISTING_IMAGE_URL
+                                    }
+                                }
+                            },
+                    } }
+                },
+                _metadata
+            );
+            Assert.AreEqual(StatusCode.MixedStatus, response.Status.Code);
+            Assert.AreEqual(StatusCode.Success, response.Outputs[0].Status.Code);
+            Assert.AreEqual(StatusCode.InputDownloadFailed, response.Outputs[1].Status.Code);
         }
     }
 }
