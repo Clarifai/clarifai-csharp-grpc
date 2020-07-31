@@ -12,6 +12,7 @@ content.
 * Sign up for a free account at: https://portal.clarifai.com/signup
 * Read the documentation at: https://docs.clarifai.com/
 
+[![NuGet](https://img.shields.io/nuget/v/ClarifaiGrpc.svg)](https://www.nuget.org/packages/ClarifaiGrpc)
 ![Run tests](https://github.com/Clarifai/clarifai-csharp-grpc/workflows/Run%20tests/badge.svg)
 
 ## Installation
