@@ -42,3 +42,4 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: Clarifai/bin/Release/ClarifaiGrpc.${{ steps.get_version.outputs.VERSION }}.nupkg
           asset_name: ClarifaiGrpc.${{ github.ref }}.nupkg
+          asset_content_type: application/octet-stream
