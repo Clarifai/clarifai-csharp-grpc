@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Publish to NuGet
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
@@ -17,7 +20,7 @@ jobs:
           rm -rf Clarifai/bin/Release
           dotnet restore
           dotnet pack -c Release
-          dotnet nuget push Clarifai/bin/Release/ClarifaiGrpc.*.nupkg -k $NUGET_API_KEY -s https://www.nuget.org/api/v2/package
+          dotnet nuget push Clarifai/bin/Release/ClarifaiGrpc.${{ steps.get_version.outputs.VERSION }}.nupkg -k $NUGET_API_KEY -s https://www.nuget.org/api/v2/package
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@latest
@@ -26,7 +29,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          file: Clarifai/bin/Release/ClarifaiGrpc.*.nupkg
+          file: Clarifai/bin/Release/ClarifaiGrpc.${{ steps.get_version.outputs.VERSION }}.nupkg
           draft: false
           prerelease: false
       - name: Upload nupkg to GitHub Release
@@ -37,4 +40,5 @@ jobs:
         with:
           # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: Clarifai/bin/Release/ClarifaiGrpc.*.nupkg
+          asset_path: Clarifai/bin/Release/ClarifaiGrpc.${{ steps.get_version.outputs.VERSION }}.nupkg
+          asset_name: ClarifaiGrpc.${{ github.ref }}.nupkg
