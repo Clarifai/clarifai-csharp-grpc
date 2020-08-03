@@ -24,12 +24,12 @@ namespace Clarifai.IntegrationTests
         public void Setup()
         {
             _client = new V2.V2Client(ClarifaiChannel.Grpc(
-                Environment.GetEnvironmentVariable("CLARIFAI_BASE")
+                Environment.GetEnvironmentVariable("CLARIFAI_GRPC_BASE")
             ));
 
             _metadata = new Metadata
             {
-                {"Authorization", "Key " + Environment.GetEnvironmentVariable("CLARIFAI_KEY")}
+                {"Authorization", "Key " + Environment.GetEnvironmentVariable("CLARIFAI_API_KEY")}
             };
         }
 

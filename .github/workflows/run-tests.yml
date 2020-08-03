@@ -27,7 +27,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       env:
-        CLARIFAI_BASE: ${{ secrets.CLARIFAI_BASE }}
-        CLARIFAI_KEY: ${{ secrets.CLARIFAI_KEY }}
+        CLARIFAI_GRPC_BASE: ${{ secrets.CLARIFAI_GRPC_BASE }}
+        CLARIFAI_API_KEY: ${{ secrets.CLARIFAI_API_KEY }}
       run: dotnet test --no-restore --verbosity normal
 
