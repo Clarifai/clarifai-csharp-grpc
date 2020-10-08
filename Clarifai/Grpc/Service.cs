@@ -1578,6 +1578,10 @@ namespace Clarifai.Api {
     /// <summary>
     /// Only return the annotations that has one of these user IDs, effectively operating as an
     /// OR among them to filter down the results.
+    /// If model_version_ids are also provided these user_ids are OR'd with them as well since
+    /// annotations are either provided by users or model versions and we want the union of any
+    /// provided user or model version annotations in the results of ListAnnotations request.
+    /// If no user_ids are provided then annotations from all users are returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> UserIds {
@@ -1592,6 +1596,10 @@ namespace Clarifai.Api {
     /// <summary>
     /// Only return the annotations that has one of these model version IDs, effectively operating as an
     /// OR among them to filter down the results.
+    /// If user_ids are also provided these model_versions_ids are OR'd with them as well since
+    /// annotations are either provided by users or model versions and we want the union of any
+    /// provided user or model version annotations in the results of ListAnnotations request.
+    /// If no model_version_ids are provided then annotations from all model versions are returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> ModelVersionIds {
@@ -1605,6 +1613,7 @@ namespace Clarifai.Api {
     private readonly pbc::RepeatedField<global::Clarifai.Api.Status.Status> statuses_ = new pbc::RepeatedField<global::Clarifai.Api.Status.Status>();
     /// <summary>
     /// Set status to filter by a list of statuses
+    /// If not statuses are provided then annotations with any status will be returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Clarifai.Api.Status.Status> Statuses {

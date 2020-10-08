@@ -388,52 +388,51 @@ namespace Clarifai.Api {
             "WwoSVGFza1Jldmlld1N0cmF0ZWd5EiAKHFRBU0tfUkVWSUVXX1NUUkFURUdZ",
             "X05PVF9TRVQQABIICgROT05FEAESCgoGTUFOVUFMEAISDQoJQ09OU0VOU1VT",
             "EANCDwoNc3RyYXRlZ3lfaW5mbyI5ChxUYXNrUmV2aWV3TWFudWFsU3RyYXRl",
-            "Z3lJbmZvEhkKEXNhbXBsZV9wZXJjZW50YWdlGAEgASgCIkgKH1Rhc2tSZXZp",
-            "ZXdDb25zZW5zdXNTdHJhdGVneUluZm8SJQodcXVvcnVtX25lY2Vzc2FyeV9m",
-            "b3JfYXBwcm92YWwYASABKA0iJgoPVGFza0FJQXNzaXN0YW50EhMKC3dvcmtm",
-            "bG93X2lkGAEgASgJIoECCglDb2xsZWN0b3ISCgoCaWQYASABKAkSEwoLZGVz",
-            "Y3JpcHRpb24YAiABKAkSLgoKY3JlYXRlZF9hdBgDIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXASHQoVcHJlX3F1ZXVlX3dvcmtmbG93X2lkGAQg",
-            "ASgJEh4KFnBvc3RfcXVldWVfd29ya2Zsb3dfaWQYBSABKAkSNwoQY29sbGVj",
-            "dG9yX3NvdXJjZRgGIAEoCzIdLmNsYXJpZmFpLmFwaS5Db2xsZWN0b3JTb3Vy",
-            "Y2USKwoGc3RhdHVzGAcgASgLMhsuY2xhcmlmYWkuYXBpLnN0YXR1cy5TdGF0",
-            "dXMidAoPQ29sbGVjdG9yU291cmNlEmEKJ2FwaV9wb3N0X21vZGVsX291dHB1",
-            "dHNfY29sbGVjdG9yX3NvdXJjZRgCIAEoCzIwLmNsYXJpZmFpLmFwaS5BUElQ",
-            "b3N0TW9kZWxPdXRwdXRzQ29sbGVjdG9yU291cmNlIpkBCiJBUElQb3N0TW9k",
-            "ZWxPdXRwdXRzQ29sbGVjdG9yU291cmNlEhUKDW1vZGVsX3VzZXJfaWQYASAB",
-            "KAkSFAoMbW9kZWxfYXBwX2lkGAIgASgJEhAKCG1vZGVsX2lkGAMgASgJEhgK",
-            "EG1vZGVsX3ZlcnNpb25faWQYBCABKAkSGgoScG9zdF9pbnB1dHNfa2V5X2lk",
-            "GAUgASgJIlIKCVN0YXRWYWx1ZRIoCgR0aW1lGAEgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBINCgV2YWx1ZRgCIAEoAhIMCgR0YWdzGAMgAygJ",
-            "IqYBChhTdGF0VmFsdWVBZ2dyZWdhdGVSZXN1bHQSPwoVc3RhdF92YWx1ZV9h",
-            "Z2dyZWdhdGVzGAEgAygLMiAuY2xhcmlmYWkuYXBpLlN0YXRWYWx1ZUFnZ3Jl",
-            "Z2F0ZRJJChpzdGF0X3ZhbHVlX2FnZ3JlZ2F0ZV9xdWVyeRgCIAEoCzIlLmNs",
-            "YXJpZmFpLmFwaS5TdGF0VmFsdWVBZ2dyZWdhdGVRdWVyeSJ0ChJTdGF0VmFs",
-            "dWVBZ2dyZWdhdGUSKAoEdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
-            "aW1lc3RhbXASFwoPYWdncmVnYXRlX3ZhbHVlGAIgASgCEg0KBWNvdW50GAMg",
-            "ASgEEgwKBHRhZ3MYBCADKAkikQIKF1N0YXRWYWx1ZUFnZ3JlZ2F0ZVF1ZXJ5",
-            "EgwKBHRhZ3MYASADKAkSEgoKdGFnX2dyb3VwcxgCIAMoCRI7ChNzdGF0X3Zh",
-            "bHVlX2FnZ190eXBlGAMgASgOMh4uY2xhcmlmYWkuYXBpLlN0YXRWYWx1ZUFn",
-            "Z1R5cGUSOQoSc3RhdF90aW1lX2FnZ190eXBlGAQgASgOMh0uY2xhcmlmYWku",
-            "YXBpLlN0YXRUaW1lQWdnVHlwZRIuCgpzdGFydF90aW1lGAUgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgGIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAqSAoQRXhwaXJhdGlvbkFjdGlvbhId",
-            "ChlFWFBJUkFUSU9OX0FDVElPTl9OT1RfU0VUEAASCQoFREVMQVkQARIKCgZF",
-            "WFBJUlkQAipNCgxMaWNlbnNlU2NvcGUSGQoVTElDRU5TRV9TQ09QRV9OT1Rf",
-            "U0VUEAASCwoHUFJFRElDVBABEgkKBVRSQUlOEAISCgoGU0VBUkNIEAMqjwEK",
-            "D1ZhbHVlQ29tcGFyYXRvchIdChlDT05DRVBUX1RIUkVTSE9MRF9OT1RfU0VU",
-            "EAASEAoMR1JFQVRFUl9USEFOEAESGQoVR1JFQVRFUl9USEFOX09SX0VRVUFM",
-            "EAISDQoJTEVTU19USEFOEAMSFgoSTEVTU19USEFOX09SX0VRVUFMEAQSCQoF",
-            "RVFVQUwQBSozCg5FdmFsdWF0aW9uVHlwZRISCg5DbGFzc2lmaWNhdGlvbhAA",
-            "Eg0KCURldGVjdGlvbhABKmYKDEFQSUV2ZW50VHlwZRIaChZBUElfRVZFTlRf",
-            "VFlQRV9OT1RfU0VUEAASEwoPT05fUFJFTV9QUkVESUNUEAESEQoNT05fUFJF",
-            "TV9UUkFJThACEhIKDk9OX1BSRU1fU0VBUkNIEAMqPAoRVXNhZ2VJbnRlcnZh",
-            "bFR5cGUSCQoFdW5kZWYQABIHCgNkYXkQARIJCgVtb250aBACEggKBHllYXIQ",
-            "AyokChBTdGF0VmFsdWVBZ2dUeXBlEgcKA1NVTRAAEgcKA0FWRxABKmAKD1N0",
-            "YXRUaW1lQWdnVHlwZRIPCgtOT19USU1FX0FHRxAAEggKBFlFQVIQARIJCgVN",
-            "T05USBACEggKBFdFRUsQAxIHCgNEQVkQBBIICgRIT1VSEAUSCgoGTUlOVVRF",
-            "EAZCJQoVY29tLmNsYXJpZmFpLmdycGMuYXBpUAFaA2FwaaICBENBSVBiBnBy",
-            "b3RvMw=="));
+            "Z3lJbmZvEhkKEXNhbXBsZV9wZXJjZW50YWdlGAEgASgCIkMKH1Rhc2tSZXZp",
+            "ZXdDb25zZW5zdXNTdHJhdGVneUluZm8SGgoSYXBwcm92YWxfdGhyZXNob2xk",
+            "GAIgASgNSgQIARACIiYKD1Rhc2tBSUFzc2lzdGFudBITCgt3b3JrZmxvd19p",
+            "ZBgBIAEoCSKBAgoJQ29sbGVjdG9yEgoKAmlkGAEgASgJEhMKC2Rlc2NyaXB0",
+            "aW9uGAIgASgJEi4KCmNyZWF0ZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wEh0KFXByZV9xdWV1ZV93b3JrZmxvd19pZBgEIAEoCRIe",
+            "ChZwb3N0X3F1ZXVlX3dvcmtmbG93X2lkGAUgASgJEjcKEGNvbGxlY3Rvcl9z",
+            "b3VyY2UYBiABKAsyHS5jbGFyaWZhaS5hcGkuQ29sbGVjdG9yU291cmNlEisK",
+            "BnN0YXR1cxgHIAEoCzIbLmNsYXJpZmFpLmFwaS5zdGF0dXMuU3RhdHVzInQK",
+            "D0NvbGxlY3RvclNvdXJjZRJhCidhcGlfcG9zdF9tb2RlbF9vdXRwdXRzX2Nv",
+            "bGxlY3Rvcl9zb3VyY2UYAiABKAsyMC5jbGFyaWZhaS5hcGkuQVBJUG9zdE1v",
+            "ZGVsT3V0cHV0c0NvbGxlY3RvclNvdXJjZSKZAQoiQVBJUG9zdE1vZGVsT3V0",
+            "cHV0c0NvbGxlY3RvclNvdXJjZRIVCg1tb2RlbF91c2VyX2lkGAEgASgJEhQK",
+            "DG1vZGVsX2FwcF9pZBgCIAEoCRIQCghtb2RlbF9pZBgDIAEoCRIYChBtb2Rl",
+            "bF92ZXJzaW9uX2lkGAQgASgJEhoKEnBvc3RfaW5wdXRzX2tleV9pZBgFIAEo",
+            "CSJSCglTdGF0VmFsdWUSKAoEdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASDQoFdmFsdWUYAiABKAISDAoEdGFncxgDIAMoCSKmAQoY",
+            "U3RhdFZhbHVlQWdncmVnYXRlUmVzdWx0Ej8KFXN0YXRfdmFsdWVfYWdncmVn",
+            "YXRlcxgBIAMoCzIgLmNsYXJpZmFpLmFwaS5TdGF0VmFsdWVBZ2dyZWdhdGUS",
+            "SQoac3RhdF92YWx1ZV9hZ2dyZWdhdGVfcXVlcnkYAiABKAsyJS5jbGFyaWZh",
+            "aS5hcGkuU3RhdFZhbHVlQWdncmVnYXRlUXVlcnkidAoSU3RhdFZhbHVlQWdn",
+            "cmVnYXRlEigKBHRpbWUYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEhcKD2FnZ3JlZ2F0ZV92YWx1ZRgCIAEoAhINCgVjb3VudBgDIAEoBBIM",
+            "CgR0YWdzGAQgAygJIpECChdTdGF0VmFsdWVBZ2dyZWdhdGVRdWVyeRIMCgR0",
+            "YWdzGAEgAygJEhIKCnRhZ19ncm91cHMYAiADKAkSOwoTc3RhdF92YWx1ZV9h",
+            "Z2dfdHlwZRgDIAEoDjIeLmNsYXJpZmFpLmFwaS5TdGF0VmFsdWVBZ2dUeXBl",
+            "EjkKEnN0YXRfdGltZV9hZ2dfdHlwZRgEIAEoDjIdLmNsYXJpZmFpLmFwaS5T",
+            "dGF0VGltZUFnZ1R5cGUSLgoKc3RhcnRfdGltZRgFIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3RpbWUYBiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wKkgKEEV4cGlyYXRpb25BY3Rpb24SHQoZRVhQ",
+            "SVJBVElPTl9BQ1RJT05fTk9UX1NFVBAAEgkKBURFTEFZEAESCgoGRVhQSVJZ",
+            "EAIqTQoMTGljZW5zZVNjb3BlEhkKFUxJQ0VOU0VfU0NPUEVfTk9UX1NFVBAA",
+            "EgsKB1BSRURJQ1QQARIJCgVUUkFJThACEgoKBlNFQVJDSBADKo8BCg9WYWx1",
+            "ZUNvbXBhcmF0b3ISHQoZQ09OQ0VQVF9USFJFU0hPTERfTk9UX1NFVBAAEhAK",
+            "DEdSRUFURVJfVEhBThABEhkKFUdSRUFURVJfVEhBTl9PUl9FUVVBTBACEg0K",
+            "CUxFU1NfVEhBThADEhYKEkxFU1NfVEhBTl9PUl9FUVVBTBAEEgkKBUVRVUFM",
+            "EAUqMwoORXZhbHVhdGlvblR5cGUSEgoOQ2xhc3NpZmljYXRpb24QABINCglE",
+            "ZXRlY3Rpb24QASpmCgxBUElFdmVudFR5cGUSGgoWQVBJX0VWRU5UX1RZUEVf",
+            "Tk9UX1NFVBAAEhMKD09OX1BSRU1fUFJFRElDVBABEhEKDU9OX1BSRU1fVFJB",
+            "SU4QAhISCg5PTl9QUkVNX1NFQVJDSBADKjwKEVVzYWdlSW50ZXJ2YWxUeXBl",
+            "EgkKBXVuZGVmEAASBwoDZGF5EAESCQoFbW9udGgQAhIICgR5ZWFyEAMqJAoQ",
+            "U3RhdFZhbHVlQWdnVHlwZRIHCgNTVU0QABIHCgNBVkcQASpgCg9TdGF0VGlt",
+            "ZUFnZ1R5cGUSDwoLTk9fVElNRV9BR0cQABIICgRZRUFSEAESCQoFTU9OVEgQ",
+            "AhIICgRXRUVLEAMSBwoDREFZEAQSCAoESE9VUhAFEgoKBk1JTlVURRAGQiUK",
+            "FWNvbS5jbGFyaWZhaS5ncnBjLmFwaVABWgNhcGmiAgRDQUlQYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -533,7 +532,7 @@ namespace Clarifai.Api {
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.TaskInputSource), global::Clarifai.Api.TaskInputSource.Parser, new[]{ "Type", "Id" }, null, new[]{ typeof(global::Clarifai.Api.TaskInputSource.Types.TaskInputSourceType) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.TaskReview), global::Clarifai.Api.TaskReview.Parser, new[]{ "Strategy", "UserIds", "ManualStrategyInfo", "ConsensusStrategyInfo" }, new[]{ "StrategyInfo" }, new[]{ typeof(global::Clarifai.Api.TaskReview.Types.TaskReviewStrategy) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.TaskReviewManualStrategyInfo), global::Clarifai.Api.TaskReviewManualStrategyInfo.Parser, new[]{ "SamplePercentage" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.TaskReviewConsensusStrategyInfo), global::Clarifai.Api.TaskReviewConsensusStrategyInfo.Parser, new[]{ "QuorumNecessaryForApproval" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.TaskReviewConsensusStrategyInfo), global::Clarifai.Api.TaskReviewConsensusStrategyInfo.Parser, new[]{ "ApprovalThreshold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.TaskAIAssistant), global::Clarifai.Api.TaskAIAssistant.Parser, new[]{ "WorkflowId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Collector), global::Clarifai.Api.Collector.Parser, new[]{ "Id", "Description", "CreatedAt", "PreQueueWorkflowId", "PostQueueWorkflowId", "CollectorSource", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.CollectorSource), global::Clarifai.Api.CollectorSource.Parser, new[]{ "ApiPostModelOutputsCollectorSource" }, null, null, null, null),
@@ -25146,7 +25145,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TaskReviewConsensusStrategyInfo(TaskReviewConsensusStrategyInfo other) : this() {
-      quorumNecessaryForApproval_ = other.quorumNecessaryForApproval_;
+      approvalThreshold_ = other.approvalThreshold_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -25155,17 +25154,17 @@ namespace Clarifai.Api {
       return new TaskReviewConsensusStrategyInfo(this);
     }
 
-    /// <summary>Field number for the "quorum_necessary_for_approval" field.</summary>
-    public const int QuorumNecessaryForApprovalFieldNumber = 1;
-    private uint quorumNecessaryForApproval_;
+    /// <summary>Field number for the "approval_threshold" field.</summary>
+    public const int ApprovalThresholdFieldNumber = 2;
+    private uint approvalThreshold_;
     /// <summary>
     /// The number of labelers that need to agree in order to automatically approve an annotation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint QuorumNecessaryForApproval {
-      get { return quorumNecessaryForApproval_; }
+    public uint ApprovalThreshold {
+      get { return approvalThreshold_; }
       set {
-        quorumNecessaryForApproval_ = value;
+        approvalThreshold_ = value;
       }
     }
 
@@ -25182,14 +25181,14 @@ namespace Clarifai.Api {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (QuorumNecessaryForApproval != other.QuorumNecessaryForApproval) return false;
+      if (ApprovalThreshold != other.ApprovalThreshold) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (QuorumNecessaryForApproval != 0) hash ^= QuorumNecessaryForApproval.GetHashCode();
+      if (ApprovalThreshold != 0) hash ^= ApprovalThreshold.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -25203,9 +25202,9 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (QuorumNecessaryForApproval != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(QuorumNecessaryForApproval);
+      if (ApprovalThreshold != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(ApprovalThreshold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -25215,8 +25214,8 @@ namespace Clarifai.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (QuorumNecessaryForApproval != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(QuorumNecessaryForApproval);
+      if (ApprovalThreshold != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ApprovalThreshold);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -25229,8 +25228,8 @@ namespace Clarifai.Api {
       if (other == null) {
         return;
       }
-      if (other.QuorumNecessaryForApproval != 0) {
-        QuorumNecessaryForApproval = other.QuorumNecessaryForApproval;
+      if (other.ApprovalThreshold != 0) {
+        ApprovalThreshold = other.ApprovalThreshold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -25243,8 +25242,8 @@ namespace Clarifai.Api {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            QuorumNecessaryForApproval = input.ReadUInt32();
+          case 16: {
+            ApprovalThreshold = input.ReadUInt32();
             break;
           }
         }
