@@ -146,6 +146,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleAppDuplicationResponse> __Marshaller_clarifai_api_SingleAppDuplicationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleAppDuplicationResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostTasksRequest> __Marshaller_clarifai_api_PostTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostTasksRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiTaskResponse> __Marshaller_clarifai_api_MultiTaskResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiTaskResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskAnnotationsCountRequest> __Marshaller_clarifai_api_GetTaskAnnotationsCountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetTaskAnnotationsCountRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> __Marshaller_clarifai_api_SingleTaskAnnotationsCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleTaskAnnotationsCountResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskRequest> __Marshaller_clarifai_api_GetTaskRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetTaskRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskResponse> __Marshaller_clarifai_api_SingleTaskResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleTaskResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListTasksRequest> __Marshaller_clarifai_api_ListTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListTasksRequest.Parser.ParseFrom);
@@ -813,6 +815,13 @@ namespace Clarifai.Api {
         "PostTasks",
         __Marshaller_clarifai_api_PostTasksRequest,
         __Marshaller_clarifai_api_MultiTaskResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetTaskAnnotationsCountRequest, global::Clarifai.Api.SingleTaskAnnotationsCountResponse> __Method_GetTaskAnnotationsCount = new grpc::Method<global::Clarifai.Api.GetTaskAnnotationsCountRequest, global::Clarifai.Api.SingleTaskAnnotationsCountResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetTaskAnnotationsCount",
+        __Marshaller_clarifai_api_GetTaskAnnotationsCountRequest,
+        __Marshaller_clarifai_api_SingleTaskAnnotationsCountResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.GetTaskRequest, global::Clarifai.Api.SingleTaskResponse> __Method_GetTask = new grpc::Method<global::Clarifai.Api.GetTaskRequest, global::Clarifai.Api.SingleTaskResponse>(
         grpc::MethodType.Unary,
@@ -1697,8 +1706,6 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Search over the applications to find one or more you're looking for.
-      /// This leverage the "body" parameter because we also have page and
-      /// per_page as url query param variables in this request.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1930,6 +1937,17 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTaskResponse> PostTasks(global::Clarifai.Api.PostTasksRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Task annotation counts
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> GetTaskAnnotationsCount(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -5248,8 +5266,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Search over the applications to find one or more you're looking for.
-      /// This leverage the "body" parameter because we also have page and
-      /// per_page as url query param variables in this request.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -5262,8 +5278,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Search over the applications to find one or more you're looking for.
-      /// This leverage the "body" parameter because we also have page and
-      /// per_page as url query param variables in this request.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -5274,8 +5288,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Search over the applications to find one or more you're looking for.
-      /// This leverage the "body" parameter because we also have page and
-      /// per_page as url query param variables in this request.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -5288,8 +5300,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Search over the applications to find one or more you're looking for.
-      /// This leverage the "body" parameter because we also have page and
-      /// per_page as url query param variables in this request.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6199,6 +6209,50 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostTasks, null, options, request);
       }
       /// <summary>
+      /// Task annotation counts
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleTaskAnnotationsCountResponse GetTaskAnnotationsCount(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTaskAnnotationsCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Task annotation counts
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleTaskAnnotationsCountResponse GetTaskAnnotationsCount(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetTaskAnnotationsCount, null, options, request);
+      }
+      /// <summary>
+      /// Task annotation counts
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> GetTaskAnnotationsCountAsync(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTaskAnnotationsCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Task annotation counts
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> GetTaskAnnotationsCountAsync(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetTaskAnnotationsCount, null, options, request);
+      }
+      /// <summary>
       /// Get a specific task from an app.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -6755,6 +6809,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListAppDuplications, serviceImpl.ListAppDuplications)
           .AddMethod(__Method_GetAppDuplication, serviceImpl.GetAppDuplication)
           .AddMethod(__Method_PostTasks, serviceImpl.PostTasks)
+          .AddMethod(__Method_GetTaskAnnotationsCount, serviceImpl.GetTaskAnnotationsCount)
           .AddMethod(__Method_GetTask, serviceImpl.GetTask)
           .AddMethod(__Method_ListTasks, serviceImpl.ListTasks)
           .AddMethod(__Method_PatchTasks, serviceImpl.PatchTasks)
@@ -6867,6 +6922,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListAppDuplications, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAppDuplicationsRequest, global::Clarifai.Api.MultiAppDuplicationsResponse>(serviceImpl.ListAppDuplications));
       serviceBinder.AddMethod(__Method_GetAppDuplication, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAppDuplicationRequest, global::Clarifai.Api.SingleAppDuplicationResponse>(serviceImpl.GetAppDuplication));
       serviceBinder.AddMethod(__Method_PostTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.PostTasks));
+      serviceBinder.AddMethod(__Method_GetTaskAnnotationsCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetTaskAnnotationsCountRequest, global::Clarifai.Api.SingleTaskAnnotationsCountResponse>(serviceImpl.GetTaskAnnotationsCount));
       serviceBinder.AddMethod(__Method_GetTask, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetTaskRequest, global::Clarifai.Api.SingleTaskResponse>(serviceImpl.GetTask));
       serviceBinder.AddMethod(__Method_ListTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.ListTasks));
       serviceBinder.AddMethod(__Method_PatchTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.PatchTasks));

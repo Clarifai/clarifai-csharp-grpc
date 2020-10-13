@@ -27,56 +27,48 @@ namespace Clarifai.Auth.Scope {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlL3Njb3BlLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnNjb3BlGiBnb29nbGUvcHJvdG9idWYvZGVzY3JpcHRvci5w",
             "cm90byJGCglTY29wZUxpc3QSJgoGc2NvcGVzGAEgAygOMhYuY2xhcmlmYWku",
-            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSqpDwoBUxIJCgV1bmRl",
-            "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIcChBQcmVk",
-            "aWN0X0ZlZWRiYWNrEB0aBggB8JsnABIQCgZTZWFyY2gQAxoE8JsnARIbCg9T",
-            "ZWFyY2hfRmVlZGJhY2sQHBoGCAHwmycAEhgKCklucHV0c19BZGQQBBoI8Jsn",
-            "AfibJwUSFAoKSW5wdXRzX0dldBAFGgTwmycBEiAKDElucHV0c19QYXRjaBAH",
-            "Gg4IAfCbJwH4mycE+JsnBRIfCg1JbnB1dHNfRGVsZXRlEAgaDPCbJwH4mycE",
-            "+JsnBRIdCg1PdXRwdXRzX1BhdGNoEAkaCggB+JsnBfibJwISGgoMQ29uY2Vw",
-            "dHNfQWRkEAoaCPCbJwH4mycLEhYKDENvbmNlcHRzX0dldBALGgTwmycBEiIK",
-            "DkNvbmNlcHRzX1BhdGNoEAwaDggB8JsnAfibJwr4mycLEh0KD0NvbmNlcHRz",
-            "X0RlbGV0ZRANGgj4mycK+JsnCxIYCgpNb2RlbHNfQWRkEA4aCPCbJwH4mycP",
-            "EhQKCk1vZGVsc19HZXQQDxoE8JsnARIkCgxNb2RlbHNfUGF0Y2gQEBoSCAHw",
-            "mycB+JsnDvibJw/4mycaEh8KDU1vZGVsc19EZWxldGUQERoM8JsnAfibJw74",
-            "mycPEhoKDE1vZGVsc19UcmFpbhAaGgjwmycB+JsnDxIVCgtNb2RlbHNfU3lu",
-            "YxAbGgT4mycPEhsKDVdvcmtmbG93c19BZGQQEhoI8JsnAfibJxMSFwoNV29y",
-            "a2Zsb3dzX0dldBATGgTwmycBEiMKD1dvcmtmbG93c19QYXRjaBAUGg4IAfCb",
-            "JwH4mycS+JsnExIiChBXb3JrZmxvd3NfRGVsZXRlEBUaDPCbJwH4mycS+Jsn",
-            "ExIiChZUU05FVmlzdWFsaXphdGlvbnNfQWRkEBgaBggB+JsnGRIeChZUU05F",
-            "VmlzdWFsaXphdGlvbnNfR2V0EBkaAggBEh0KD0Fubm90YXRpb25zX0FkZBAl",
-            "GgjwmycB+JsnJhIZCg9Bbm5vdGF0aW9uc19HZXQQJhoE8JsnARIlChFBbm5v",
-            "dGF0aW9uc19QYXRjaBAnGg4IAfCbJwH4mycl+JsnJhIkChJBbm5vdGF0aW9u",
-            "c19EZWxldGUQKBoM8JsnAfibJyX4mycmEhwKDkNvbGxlY3RvcnNfQWRkECka",
-            "CPCbJwH4mycqEhgKDkNvbGxlY3RvcnNfR2V0ECoaBPCbJwESIwoRQ29sbGVj",
-            "dG9yc19EZWxldGUQKxoM8JsnAfibJyn4mycqEhYKCEFwcHNfQWRkECwaCPCb",
-            "JwH4myctEhIKCEFwcHNfR2V0EC0aBPCbJwESHQoLQXBwc19EZWxldGUQLhoM",
-            "8JsnAfibJyz4myctEhYKCEtleXNfQWRkEC8aCPCbJwH4mycwEhIKCEtleXNf",
-            "R2V0EDAaBPCbJwESHQoLS2V5c19EZWxldGUQMRoM8JsnAfibJy/4mycwEh8K",
-            "EUNvbGxhYm9yYXRvcnNfQWRkEDMaCPCbJwH4mycyEhsKEUNvbGxhYm9yYXRv",
-            "cnNfR2V0EDIaBPCbJwESJgoUQ29sbGFib3JhdG9yc19EZWxldGUQNBoM8Jsn",
-            "AfibJzP4mycyEhkKC01ldHJpY3NfQWRkEDYaCPCbJwH4myc1EhUKC01ldHJp",
-            "Y3NfR2V0EDUaBPCbJwESIAoOTWV0cmljc19EZWxldGUQPxoM8JsnAfibJzb4",
-            "myc1EhcKCVRhc2tzX0FkZBA3GgjwmycB+JsnOBITCglUYXNrc19HZXQQOBoE",
-            "8JsnARIeCgxUYXNrc19EZWxldGUQRhoM8JsnAfibJzf4myc4EiIKFFBhc3N3",
-            "b3JkUG9saWNpZXNfQWRkEDkaCPCbJwH4myc6Eh4KFFBhc3N3b3JkUG9saWNp",
-            "ZXNfR2V0EDoaBPCbJwESKQoXUGFzc3dvcmRQb2xpY2llc19EZWxldGUQOxoM",
-            "8JsnAfibJzn4myc6EiEKE1Bhc3N3b3JkSGlzdG9yeV9BZGQQPBoI8JsnAPib",
-            "Jz0SHQoTUGFzc3dvcmRIaXN0b3J5X0dldBA9GgTwmycAEigKFlBhc3N3b3Jk",
-            "SGlzdG9yeV9EZWxldGUQPhoM8JsnAPibJzz4myc9EhsKEU5vdGlmaWNhdGlv",
-            "bnNfR2V0EEAaBPCbJwASHwoRTm90aWZpY2F0aW9uc19BZGQQQRoI8JsnAPib",
-            "J0ASJgoUTm90aWZpY2F0aW9uc19EZWxldGUQQhoM8JsnAPibJ0H4mydAEhkK",
-            "D0xhYmVsT3JkZXJzX0dldBBDGgTwmycBEh0KD0xhYmVsT3JkZXJzX0FkZBBE",
-            "GgjwmycB+JsnQxIkChJMYWJlbE9yZGVyc19EZWxldGUQRRoM8JsnAfibJ0T4",
-            "mydDEiAKFlVzZXJGZWF0dXJlQ29uZmlnc19HZXQQRxoE8JsnARIkChZVc2Vy",
-            "RmVhdHVyZUNvbmZpZ3NfQWRkEEgaCPCbJwD4mydHEisKGVVzZXJGZWF0dXJl",
-            "Q29uZmlnc19EZWxldGUQSRoM8JsnAPibJ0j4mydHIgQIHhAeIgQIHxAfIgQI",
-            "IBAgIgQIIRAhIgQIIhAiOjwKD2NsYXJmYWlfZXhwb3NlZBIhLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbnVtVmFsdWVPcHRpb25zGL7zBCABKAg6XgoZY2xhcmlmYWlf",
-            "ZGVwZW5kaW5nX3Njb3BlcxIhLmdvb2dsZS5wcm90b2J1Zi5FbnVtVmFsdWVP",
-            "cHRpb25zGL/zBCADKA4yFi5jbGFyaWZhaS5hdXRoLnNjb3BlLlNCLgocY29t",
-            "LmNsYXJpZmFpLmdycGMuYXV0aC5zY29wZVABWgVzY29wZaICBENBSVBiBnBy",
-            "b3RvMw=="));
+            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSrJDAoBUxIJCgV1bmRl",
+            "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIQCgZTZWFy",
+            "Y2gQAxoE8JsnARIYCgpJbnB1dHNfQWRkEAQaCPCbJwH4mycFEhQKCklucHV0",
+            "c19HZXQQBRoE8JsnARIgCgxJbnB1dHNfUGF0Y2gQBxoOCAHwmycB+JsnBPib",
+            "JwUSHwoNSW5wdXRzX0RlbGV0ZRAIGgzwmycB+JsnBPibJwUSHQoNT3V0cHV0",
+            "c19QYXRjaBAJGgoIAfibJwX4mycCEhoKDENvbmNlcHRzX0FkZBAKGgjwmycB",
+            "+JsnCxIWCgxDb25jZXB0c19HZXQQCxoE8JsnARIiCg5Db25jZXB0c19QYXRj",
+            "aBAMGg4IAfCbJwH4mycK+JsnCxIdCg9Db25jZXB0c19EZWxldGUQDRoI+Jsn",
+            "CvibJwsSGAoKTW9kZWxzX0FkZBAOGgjwmycB+JsnDxIUCgpNb2RlbHNfR2V0",
+            "EA8aBPCbJwESJAoMTW9kZWxzX1BhdGNoEBAaEggB8JsnAfibJw74mycP+Jsn",
+            "GhIfCg1Nb2RlbHNfRGVsZXRlEBEaDPCbJwH4mycO+JsnDxIaCgxNb2RlbHNf",
+            "VHJhaW4QGhoI8JsnAfibJw8SFQoLTW9kZWxzX1N5bmMQGxoE+JsnDxIbCg1X",
+            "b3JrZmxvd3NfQWRkEBIaCPCbJwH4mycTEhcKDVdvcmtmbG93c19HZXQQExoE",
+            "8JsnARIjCg9Xb3JrZmxvd3NfUGF0Y2gQFBoOCAHwmycB+JsnEvibJxMSIgoQ",
+            "V29ya2Zsb3dzX0RlbGV0ZRAVGgzwmycB+JsnEvibJxMSIgoWVFNORVZpc3Vh",
+            "bGl6YXRpb25zX0FkZBAYGgYIAfibJxkSHgoWVFNORVZpc3VhbGl6YXRpb25z",
+            "X0dldBAZGgIIARIdCg9Bbm5vdGF0aW9uc19BZGQQJRoI8JsnAfibJyYSGQoP",
+            "QW5ub3RhdGlvbnNfR2V0ECYaBPCbJwESJQoRQW5ub3RhdGlvbnNfUGF0Y2gQ",
+            "JxoOCAHwmycB+JsnJfibJyYSJAoSQW5ub3RhdGlvbnNfRGVsZXRlECgaDPCb",
+            "JwH4mycl+JsnJhIcCg5Db2xsZWN0b3JzX0FkZBApGgjwmycB+JsnKhIYCg5D",
+            "b2xsZWN0b3JzX0dldBAqGgTwmycBEiMKEUNvbGxlY3RvcnNfRGVsZXRlECsa",
+            "DPCbJwH4mycp+JsnKhIWCghBcHBzX0FkZBAsGgjwmycB+JsnLRISCghBcHBz",
+            "X0dldBAtGgTwmycBEh0KC0FwcHNfRGVsZXRlEC4aDPCbJwH4mycs+JsnLRIW",
+            "CghLZXlzX0FkZBAvGgjwmycB+JsnMBISCghLZXlzX0dldBAwGgTwmycBEh0K",
+            "C0tleXNfRGVsZXRlEDEaDPCbJwH4mycv+JsnMBIfChFDb2xsYWJvcmF0b3Jz",
+            "X0FkZBAzGgjwmycB+JsnMhIbChFDb2xsYWJvcmF0b3JzX0dldBAyGgTwmycB",
+            "EiYKFENvbGxhYm9yYXRvcnNfRGVsZXRlEDQaDPCbJwH4mycz+JsnMhIZCgtN",
+            "ZXRyaWNzX0FkZBA2GgjwmycB+JsnNRIVCgtNZXRyaWNzX0dldBA1GgTwmycB",
+            "EiAKDk1ldHJpY3NfRGVsZXRlED8aDPCbJwH4myc2+JsnNRIXCglUYXNrc19B",
+            "ZGQQNxoI8JsnAfibJzgSEwoJVGFza3NfR2V0EDgaBPCbJwESHgoMVGFza3Nf",
+            "RGVsZXRlEEYaDPCbJwH4myc3+JsnOBIiChRQYXNzd29yZFBvbGljaWVzX0Fk",
+            "ZBA5GgjwmycB+JsnOhIeChRQYXNzd29yZFBvbGljaWVzX0dldBA6GgTwmycB",
+            "EikKF1Bhc3N3b3JkUG9saWNpZXNfRGVsZXRlEDsaDPCbJwH4myc5+JsnOhIZ",
+            "Cg9MYWJlbE9yZGVyc19HZXQQQxoE8JsnARIdCg9MYWJlbE9yZGVyc19BZGQQ",
+            "RBoI8JsnAfibJ0MSJAoSTGFiZWxPcmRlcnNfRGVsZXRlEEUaDPCbJwH4mydE",
+            "+JsnQxIgChZVc2VyRmVhdHVyZUNvbmZpZ3NfR2V0EEcaBPCbJwEiBAgeEB4i",
+            "BAgfEB8iBAggECAiBAghECEiBAgiECI6PAoPY2xhcmZhaV9leHBvc2VkEiEu",
+            "Z29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMYvvMEIAEoCDpeChlj",
+            "bGFyaWZhaV9kZXBlbmRpbmdfc2NvcGVzEiEuZ29vZ2xlLnByb3RvYnVmLkVu",
+            "dW1WYWx1ZU9wdGlvbnMYv/MEIAMoDjIWLmNsYXJpZmFpLmF1dGguc2NvcGUu",
+            "U0IuChxjb20uY2xhcmlmYWkuZ3JwYy5hdXRoLnNjb3BlUAFaBXNjb3BlogIE",
+            "Q0FJUGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Scope.S), }, new pb::Extension[] { ScopeExtensions.ClarfaiExposed, ScopeExtensions.ClarifaiDependingScopes }, new pbr::GeneratedClrTypeInfo[] {
@@ -132,12 +124,10 @@ namespace Clarifai.Auth.Scope {
     /// Make an rpc to our prediction services.
     /// </summary>
     [pbr::OriginalName("Predict")] Predict = 2,
-    [pbr::OriginalName("Predict_Feedback")] PredictFeedback = 29,
     /// <summary>
     /// Make an rpc to our search services.
     /// </summary>
     [pbr::OriginalName("Search")] Earch = 3,
-    [pbr::OriginalName("Search_Feedback")] EarchFeedback = 28,
     /// <summary>
     /// Write to the inputs table in the DB.
     /// </summary>
@@ -334,30 +324,6 @@ namespace Clarifai.Auth.Scope {
     /// </summary>
     [pbr::OriginalName("PasswordPolicies_Delete")] PasswordPoliciesDelete = 59,
     /// <summary>
-    /// Write to password_history table
-    /// </summary>
-    [pbr::OriginalName("PasswordHistory_Add")] PasswordHistoryAdd = 60,
-    /// <summary>
-    /// Read from password_history table
-    /// </summary>
-    [pbr::OriginalName("PasswordHistory_Get")] PasswordHistoryGet = 61,
-    /// <summary>
-    /// To delete password history we need read/write
-    /// </summary>
-    [pbr::OriginalName("PasswordHistory_Delete")] PasswordHistoryDelete = 62,
-    /// <summary>
-    /// Read from notifications table
-    /// </summary>
-    [pbr::OriginalName("Notifications_Get")] NotificationsGet = 64,
-    /// <summary>
-    /// Write to notifications table
-    /// </summary>
-    [pbr::OriginalName("Notifications_Add")] NotificationsAdd = 65,
-    /// <summary>
-    /// To delete notifications we need read/write
-    /// </summary>
-    [pbr::OriginalName("Notifications_Delete")] NotificationsDelete = 66,
-    /// <summary>
     /// Read from label orders table
     /// </summary>
     [pbr::OriginalName("LabelOrders_Get")] LabelOrdersGet = 67,
@@ -373,14 +339,6 @@ namespace Clarifai.Auth.Scope {
     /// Read from user_feature_configs table
     /// </summary>
     [pbr::OriginalName("UserFeatureConfigs_Get")] UserFeatureConfigsGet = 71,
-    /// <summary>
-    /// Write to configs table
-    /// </summary>
-    [pbr::OriginalName("UserFeatureConfigs_Add")] UserFeatureConfigsAdd = 72,
-    /// <summary>
-    /// To delete configs we need read/write
-    /// </summary>
-    [pbr::OriginalName("UserFeatureConfigs_Delete")] UserFeatureConfigsDelete = 73,
   }
 
   #endregion
