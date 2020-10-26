@@ -1,11 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Net.Http;
+using System.Net.Sockets;
 using System.Threading;
 using Clarifai.Api;
 using Clarifai.Channels;
+using Google.Protobuf;
 using Grpc.Core;
 using NUnit.Framework;
 using StatusCode = Clarifai.Api.Status.StatusCode;
+using Task = System.Threading.Tasks.Task;
 
 namespace Clarifai.IntegrationTests
 {
@@ -65,7 +70,7 @@ namespace Clarifai.IntegrationTests
         }
 
         [Test]
-        public void PostModelOutputs()
+        public void PostModelOutputsWithUrl()
         {
             var response = _client.PostModelOutputs(
                 new PostModelOutputsRequest()
@@ -79,6 +84,40 @@ namespace Clarifai.IntegrationTests
                                     Image = new Image()
                                     {
                                         Url = DOG_IMAGE_URL
+                                    }
+                                }
+                            }
+                    } }
+                },
+                _metadata
+            );
+            RaiseOnFailure(response);
+
+            Assert.AreNotEqual(0, response.Outputs[0].Data.Concepts.Count);
+        }
+
+        [Test]
+        public void PostModelOutputsWithFileBytes()
+        {
+            ByteString bytes;
+
+            using (FileStream stream = File.OpenRead("assets/red-truck.png"))
+            {
+                bytes = ByteString.FromStream(stream);
+            }
+
+            var response = _client.PostModelOutputs(
+                new PostModelOutputsRequest()
+                {
+                    ModelId = GENERAL_MODEL_ID,
+                    Inputs = { new List<Input>() {
+                            new Input()
+                            {
+                                Data = new Data()
+                                {
+                                    Image = new Image()
+                                    {
+                                        Base64 = bytes
                                     }
                                 }
                             }

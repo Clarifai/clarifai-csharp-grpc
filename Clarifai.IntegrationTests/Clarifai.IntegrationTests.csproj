@@ -16,4 +16,10 @@
       <ProjectReference Include="..\Clarifai\Clarifai.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="assets\red-truck.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
