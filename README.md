@@ -4,16 +4,16 @@
 
 This is the official Clarifai gRPC C# client for interacting with our powerful recognition
 [API](https://docs.clarifai.com).
-The Clarifai API offers image and video recognition as a service. Whether you have one image or
-billions, you are only steps away from using artificial intelligence to recognize your visual
-content.
+Clarifai provides a platform for data scientists, developers, researchers and enterprises to master the entire
+artificial intelligence lifecycle. Gather valuable business insights from images, video and text using computer vision
+and natural language processing.
 
 * Try the Clarifai demo at: https://clarifai.com/demo
 * Sign up for a free account at: https://portal.clarifai.com/signup
 * Read the documentation at: https://docs.clarifai.com/
 
 [![NuGet](https://img.shields.io/nuget/v/ClarifaiGrpc.svg)](https://www.nuget.org/packages/ClarifaiGrpc)
-![Run tests](https://github.com/Clarifai/clarifai-csharp-grpc/workflows/Run%20tests/badge.svg)
+[![Run tests](https://github.com/Clarifai/clarifai-csharp-grpc/workflows/Run%20tests/badge.svg)](https://github.com/Clarifai/clarifai-csharp-grpc/actions)
 
 ## Installation
 
