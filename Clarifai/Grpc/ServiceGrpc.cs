@@ -12,6 +12,11 @@ namespace Clarifai.Api {
   {
     static readonly string __ServiceName = "clarifai.api.V2";
 
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptRelationsRequest> __Marshaller_clarifai_api_ListConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListConceptRelationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptRelationResponse> __Marshaller_clarifai_api_MultiConceptRelationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptRelationResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptRelationsRequest> __Marshaller_clarifai_api_PostConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptRelationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteConceptRelationsRequest> __Marshaller_clarifai_api_DeleteConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteConceptRelationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.Status.BaseResponse> __Marshaller_clarifai_api_status_BaseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.Status.BaseResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptCountsRequest> __Marshaller_clarifai_api_GetConceptCountsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetConceptCountsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptCountResponse> __Marshaller_clarifai_api_MultiConceptCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptCountResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptRequest> __Marshaller_clarifai_api_GetConceptRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetConceptRequest.Parser.ParseFrom);
@@ -27,11 +32,6 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptLanguageResponse> __Marshaller_clarifai_api_MultiConceptLanguageResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptLanguageResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptLanguagesRequest> __Marshaller_clarifai_api_PostConceptLanguagesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptLanguagesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchConceptLanguagesRequest> __Marshaller_clarifai_api_PatchConceptLanguagesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchConceptLanguagesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptRelationsRequest> __Marshaller_clarifai_api_ListConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListConceptRelationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptRelationResponse> __Marshaller_clarifai_api_MultiConceptRelationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptRelationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptRelationsRequest> __Marshaller_clarifai_api_PostConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptRelationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteConceptRelationsRequest> __Marshaller_clarifai_api_DeleteConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteConceptRelationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.Status.BaseResponse> __Marshaller_clarifai_api_status_BaseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.Status.BaseResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListKnowledgeGraphsRequest> __Marshaller_clarifai_api_ListKnowledgeGraphsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListKnowledgeGraphsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiKnowledgeGraphResponse> __Marshaller_clarifai_api_MultiKnowledgeGraphResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiKnowledgeGraphResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostKnowledgeGraphsRequest> __Marshaller_clarifai_api_PostKnowledgeGraphsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostKnowledgeGraphsRequest.Parser.ParseFrom);
@@ -43,6 +43,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationResponse> __Marshaller_clarifai_api_MultiAnnotationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiAnnotationResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsRequest> __Marshaller_clarifai_api_PostAnnotationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAnnotationsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsRequest> __Marshaller_clarifai_api_PatchAnnotationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchAnnotationsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsStatusRequest> __Marshaller_clarifai_api_PatchAnnotationsStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchAnnotationsStatusRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsStatusResponse> __Marshaller_clarifai_api_PatchAnnotationsStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchAnnotationsStatusResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationRequest> __Marshaller_clarifai_api_DeleteAnnotationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteAnnotationRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationsRequest> __Marshaller_clarifai_api_DeleteAnnotationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteAnnotationsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsSearchesRequest> __Marshaller_clarifai_api_PostAnnotationsSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAnnotationsSearchesRequest.Parser.ParseFrom);
@@ -51,6 +53,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleInputCountResponse> __Marshaller_clarifai_api_SingleInputCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleInputCountResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.StreamInputsRequest> __Marshaller_clarifai_api_StreamInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.StreamInputsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiInputResponse> __Marshaller_clarifai_api_MultiInputResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiInputResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetInputSamplesRequest> __Marshaller_clarifai_api_GetInputSamplesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetInputSamplesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInputAnnotationResponse> __Marshaller_clarifai_api_MultiInputAnnotationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiInputAnnotationResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetInputRequest> __Marshaller_clarifai_api_GetInputRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetInputRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleInputResponse> __Marshaller_clarifai_api_SingleInputResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleInputResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListInputsRequest> __Marshaller_clarifai_api_ListInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListInputsRequest.Parser.ParseFrom);
@@ -146,8 +150,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleAppDuplicationResponse> __Marshaller_clarifai_api_SingleAppDuplicationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleAppDuplicationResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostTasksRequest> __Marshaller_clarifai_api_PostTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostTasksRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiTaskResponse> __Marshaller_clarifai_api_MultiTaskResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiTaskResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskAnnotationsCountRequest> __Marshaller_clarifai_api_GetTaskAnnotationsCountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetTaskAnnotationsCountRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> __Marshaller_clarifai_api_SingleTaskAnnotationsCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleTaskAnnotationsCountResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskCountRequest> __Marshaller_clarifai_api_GetTaskCountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetTaskCountRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskCountResponse> __Marshaller_clarifai_api_SingleTaskCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleTaskCountResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskRequest> __Marshaller_clarifai_api_GetTaskRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetTaskRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskResponse> __Marshaller_clarifai_api_SingleTaskResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleTaskResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListTasksRequest> __Marshaller_clarifai_api_ListTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListTasksRequest.Parser.ParseFrom);
@@ -164,6 +168,27 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueResponse> __Marshaller_clarifai_api_MultiStatValueResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiStatValueResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesAggregateRequest> __Marshaller_clarifai_api_PostStatValuesAggregateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostStatValuesAggregateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueAggregateResponse> __Marshaller_clarifai_api_MultiStatValueAggregateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiStatValueAggregateResponse.Parser.ParseFrom);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListConceptRelations",
+        __Marshaller_clarifai_api_ListConceptRelationsRequest,
+        __Marshaller_clarifai_api_MultiConceptRelationResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_PostConceptRelations = new grpc::Method<global::Clarifai.Api.PostConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostConceptRelations",
+        __Marshaller_clarifai_api_PostConceptRelationsRequest,
+        __Marshaller_clarifai_api_MultiConceptRelationResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteConceptRelationsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteConceptRelations = new grpc::Method<global::Clarifai.Api.DeleteConceptRelationsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteConceptRelations",
+        __Marshaller_clarifai_api_DeleteConceptRelationsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.GetConceptCountsRequest, global::Clarifai.Api.MultiConceptCountResponse> __Method_GetConceptCounts = new grpc::Method<global::Clarifai.Api.GetConceptCountsRequest, global::Clarifai.Api.MultiConceptCountResponse>(
         grpc::MethodType.Unary,
@@ -235,27 +260,6 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PatchConceptLanguagesRequest,
         __Marshaller_clarifai_api_MultiConceptLanguageResponse);
 
-    static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ListConceptRelations",
-        __Marshaller_clarifai_api_ListConceptRelationsRequest,
-        __Marshaller_clarifai_api_MultiConceptRelationResponse);
-
-    static readonly grpc::Method<global::Clarifai.Api.PostConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_PostConceptRelations = new grpc::Method<global::Clarifai.Api.PostConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostConceptRelations",
-        __Marshaller_clarifai_api_PostConceptRelationsRequest,
-        __Marshaller_clarifai_api_MultiConceptRelationResponse);
-
-    static readonly grpc::Method<global::Clarifai.Api.DeleteConceptRelationsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteConceptRelations = new grpc::Method<global::Clarifai.Api.DeleteConceptRelationsRequest, global::Clarifai.Api.Status.BaseResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeleteConceptRelations",
-        __Marshaller_clarifai_api_DeleteConceptRelationsRequest,
-        __Marshaller_clarifai_api_status_BaseResponse);
-
     static readonly grpc::Method<global::Clarifai.Api.ListKnowledgeGraphsRequest, global::Clarifai.Api.MultiKnowledgeGraphResponse> __Method_ListKnowledgeGraphs = new grpc::Method<global::Clarifai.Api.ListKnowledgeGraphsRequest, global::Clarifai.Api.MultiKnowledgeGraphResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -305,6 +309,13 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PatchAnnotationsRequest,
         __Marshaller_clarifai_api_MultiAnnotationResponse);
 
+    static readonly grpc::Method<global::Clarifai.Api.PatchAnnotationsStatusRequest, global::Clarifai.Api.PatchAnnotationsStatusResponse> __Method_PatchAnnotationsStatus = new grpc::Method<global::Clarifai.Api.PatchAnnotationsStatusRequest, global::Clarifai.Api.PatchAnnotationsStatusResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchAnnotationsStatus",
+        __Marshaller_clarifai_api_PatchAnnotationsStatusRequest,
+        __Marshaller_clarifai_api_PatchAnnotationsStatusResponse);
+
     static readonly grpc::Method<global::Clarifai.Api.DeleteAnnotationRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteAnnotation = new grpc::Method<global::Clarifai.Api.DeleteAnnotationRequest, global::Clarifai.Api.Status.BaseResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -339,6 +350,13 @@ namespace Clarifai.Api {
         "StreamInputs",
         __Marshaller_clarifai_api_StreamInputsRequest,
         __Marshaller_clarifai_api_MultiInputResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetInputSamplesRequest, global::Clarifai.Api.MultiInputAnnotationResponse> __Method_GetInputSamples = new grpc::Method<global::Clarifai.Api.GetInputSamplesRequest, global::Clarifai.Api.MultiInputAnnotationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetInputSamples",
+        __Marshaller_clarifai_api_GetInputSamplesRequest,
+        __Marshaller_clarifai_api_MultiInputAnnotationResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.GetInputRequest, global::Clarifai.Api.SingleInputResponse> __Method_GetInput = new grpc::Method<global::Clarifai.Api.GetInputRequest, global::Clarifai.Api.SingleInputResponse>(
         grpc::MethodType.Unary,
@@ -816,12 +834,19 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PostTasksRequest,
         __Marshaller_clarifai_api_MultiTaskResponse);
 
-    static readonly grpc::Method<global::Clarifai.Api.GetTaskAnnotationsCountRequest, global::Clarifai.Api.SingleTaskAnnotationsCountResponse> __Method_GetTaskAnnotationsCount = new grpc::Method<global::Clarifai.Api.GetTaskAnnotationsCountRequest, global::Clarifai.Api.SingleTaskAnnotationsCountResponse>(
+    static readonly grpc::Method<global::Clarifai.Api.GetTaskCountRequest, global::Clarifai.Api.SingleTaskCountResponse> __Method_GetTaskAnnotationCount = new grpc::Method<global::Clarifai.Api.GetTaskCountRequest, global::Clarifai.Api.SingleTaskCountResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetTaskAnnotationsCount",
-        __Marshaller_clarifai_api_GetTaskAnnotationsCountRequest,
-        __Marshaller_clarifai_api_SingleTaskAnnotationsCountResponse);
+        "GetTaskAnnotationCount",
+        __Marshaller_clarifai_api_GetTaskCountRequest,
+        __Marshaller_clarifai_api_SingleTaskCountResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetTaskCountRequest, global::Clarifai.Api.SingleTaskCountResponse> __Method_GetTaskInputCount = new grpc::Method<global::Clarifai.Api.GetTaskCountRequest, global::Clarifai.Api.SingleTaskCountResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetTaskInputCount",
+        __Marshaller_clarifai_api_GetTaskCountRequest,
+        __Marshaller_clarifai_api_SingleTaskCountResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.GetTaskRequest, global::Clarifai.Api.SingleTaskResponse> __Method_GetTask = new grpc::Method<global::Clarifai.Api.GetTaskRequest, global::Clarifai.Api.SingleTaskResponse>(
         grpc::MethodType.Unary,
@@ -910,6 +935,41 @@ namespace Clarifai.Api {
     [grpc::BindServiceMethod(typeof(V2), "BindService")]
     public abstract partial class V2Base
     {
+      /// <summary>
+      /// List concept relations between concepts in the platform.
+      /// MUST be above ListConcepts so that if concept_id is empty this will still match
+      /// /concepts/relations to list all the concept relations in the app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiConceptRelationResponse> ListConceptRelations(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiConceptRelationResponse> PostConceptRelations(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteConceptRelations(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       /// List all the concepts with their positive and negative counts
       /// </summary>
@@ -1024,39 +1084,6 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// List concept relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiConceptRelationResponse> ListConceptRelations(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiConceptRelationResponse> PostConceptRelations(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteConceptRelations(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
       /// List all domain graphs.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -1134,6 +1161,17 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Patch annotations status by worker id and task id.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.PatchAnnotationsStatusResponse> PatchAnnotationsStatus(global::Clarifai.Api.PatchAnnotationsStatusRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Delete a single annotation.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -1167,7 +1205,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Patch one or more inputs.
+      /// Get input count per status.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1184,6 +1222,17 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInputResponse> StreamInputs(global::Clarifai.Api.StreamInputsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific input from an app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInputAnnotationResponse> GetInputSamples(global::Clarifai.Api.GetInputSamplesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1292,6 +1341,7 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// List all the model types available in the platform.
+      /// This MUST be above ListModels so that the /models/types endpoint takes precedence.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1942,12 +1992,23 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Task annotation counts
+      /// Task annotation count
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> GetTaskAnnotationsCount(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleTaskCountResponse> GetTaskAnnotationCount(global::Clarifai.Api.GetTaskCountRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Task Input count
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleTaskCountResponse> GetTaskInputCount(global::Clarifai.Api.GetTaskCountRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -2092,6 +2153,146 @@ namespace Clarifai.Api {
       {
       }
 
+      /// <summary>
+      /// List concept relations between concepts in the platform.
+      /// MUST be above ListConcepts so that if concept_id is empty this will still match
+      /// /concepts/relations to list all the concept relations in the app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiConceptRelationResponse ListConceptRelations(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListConceptRelations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List concept relations between concepts in the platform.
+      /// MUST be above ListConcepts so that if concept_id is empty this will still match
+      /// /concepts/relations to list all the concept relations in the app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiConceptRelationResponse ListConceptRelations(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListConceptRelations, null, options, request);
+      }
+      /// <summary>
+      /// List concept relations between concepts in the platform.
+      /// MUST be above ListConcepts so that if concept_id is empty this will still match
+      /// /concepts/relations to list all the concept relations in the app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> ListConceptRelationsAsync(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListConceptRelationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List concept relations between concepts in the platform.
+      /// MUST be above ListConcepts so that if concept_id is empty this will still match
+      /// /concepts/relations to list all the concept relations in the app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> ListConceptRelationsAsync(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListConceptRelations, null, options, request);
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiConceptRelationResponse PostConceptRelations(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostConceptRelations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiConceptRelationResponse PostConceptRelations(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostConceptRelations, null, options, request);
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> PostConceptRelationsAsync(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostConceptRelationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> PostConceptRelationsAsync(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostConceptRelations, null, options, request);
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteConceptRelations(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteConceptRelations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteConceptRelations(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteConceptRelations, null, options, request);
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteConceptRelationsAsync(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteConceptRelationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post concept relations to create relations between concepts in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteConceptRelationsAsync(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteConceptRelations, null, options, request);
+      }
       /// <summary>
       /// List all the concepts with their positive and negative counts
       /// </summary>
@@ -2545,138 +2746,6 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchConceptLanguages, null, options, request);
       }
       /// <summary>
-      /// List concept relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.MultiConceptRelationResponse ListConceptRelations(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListConceptRelations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List concept relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.MultiConceptRelationResponse ListConceptRelations(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ListConceptRelations, null, options, request);
-      }
-      /// <summary>
-      /// List concept relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> ListConceptRelationsAsync(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListConceptRelationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List concept relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> ListConceptRelationsAsync(global::Clarifai.Api.ListConceptRelationsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ListConceptRelations, null, options, request);
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.MultiConceptRelationResponse PostConceptRelations(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostConceptRelations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.MultiConceptRelationResponse PostConceptRelations(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostConceptRelations, null, options, request);
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> PostConceptRelationsAsync(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostConceptRelationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptRelationResponse> PostConceptRelationsAsync(global::Clarifai.Api.PostConceptRelationsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostConceptRelations, null, options, request);
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteConceptRelations(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteConceptRelations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteConceptRelations(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteConceptRelations, null, options, request);
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteConceptRelationsAsync(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteConceptRelationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Post concept relations to create relations between concepts in the platform.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteConceptRelationsAsync(global::Clarifai.Api.DeleteConceptRelationsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteConceptRelations, null, options, request);
-      }
-      /// <summary>
       /// List all domain graphs.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -2985,6 +3054,50 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchAnnotations, null, options, request);
       }
       /// <summary>
+      /// Patch annotations status by worker id and task id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.PatchAnnotationsStatusResponse PatchAnnotationsStatus(global::Clarifai.Api.PatchAnnotationsStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationsStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch annotations status by worker id and task id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.PatchAnnotationsStatusResponse PatchAnnotationsStatus(global::Clarifai.Api.PatchAnnotationsStatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchAnnotationsStatus, null, options, request);
+      }
+      /// <summary>
+      /// Patch annotations status by worker id and task id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PatchAnnotationsStatusResponse> PatchAnnotationsStatusAsync(global::Clarifai.Api.PatchAnnotationsStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationsStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch annotations status by worker id and task id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PatchAnnotationsStatusResponse> PatchAnnotationsStatusAsync(global::Clarifai.Api.PatchAnnotationsStatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchAnnotationsStatus, null, options, request);
+      }
+      /// <summary>
       /// Delete a single annotation.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -3117,7 +3230,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostAnnotationsSearches, null, options, request);
       }
       /// <summary>
-      /// Patch one or more inputs.
+      /// Get input count per status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3129,7 +3242,7 @@ namespace Clarifai.Api {
         return GetInputCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Patch one or more inputs.
+      /// Get input count per status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3139,7 +3252,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_GetInputCount, null, options, request);
       }
       /// <summary>
-      /// Patch one or more inputs.
+      /// Get input count per status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3151,7 +3264,7 @@ namespace Clarifai.Api {
         return GetInputCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Patch one or more inputs.
+      /// Get input count per status.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3203,6 +3316,50 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInputResponse> StreamInputsAsync(global::Clarifai.Api.StreamInputsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_StreamInputs, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific input from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiInputAnnotationResponse GetInputSamples(global::Clarifai.Api.GetInputSamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetInputSamples(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific input from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiInputAnnotationResponse GetInputSamples(global::Clarifai.Api.GetInputSamplesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetInputSamples, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific input from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInputAnnotationResponse> GetInputSamplesAsync(global::Clarifai.Api.GetInputSamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetInputSamplesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific input from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInputAnnotationResponse> GetInputSamplesAsync(global::Clarifai.Api.GetInputSamplesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetInputSamples, null, options, request);
       }
       /// <summary>
       /// Get a specific input from an app.
@@ -3614,6 +3771,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List all the model types available in the platform.
+      /// This MUST be above ListModels so that the /models/types endpoint takes precedence.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3626,6 +3784,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List all the model types available in the platform.
+      /// This MUST be above ListModels so that the /models/types endpoint takes precedence.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3636,6 +3795,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List all the model types available in the platform.
+      /// This MUST be above ListModels so that the /models/types endpoint takes precedence.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3648,6 +3808,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List all the model types available in the platform.
+      /// This MUST be above ListModels so that the /models/types endpoint takes precedence.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6209,48 +6370,92 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostTasks, null, options, request);
       }
       /// <summary>
-      /// Task annotation counts
+      /// Task annotation count
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.SingleTaskAnnotationsCountResponse GetTaskAnnotationsCount(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Clarifai.Api.SingleTaskCountResponse GetTaskAnnotationCount(global::Clarifai.Api.GetTaskCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetTaskAnnotationsCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetTaskAnnotationCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Task annotation counts
+      /// Task annotation count
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.SingleTaskAnnotationsCountResponse GetTaskAnnotationsCount(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::CallOptions options)
+      public virtual global::Clarifai.Api.SingleTaskCountResponse GetTaskAnnotationCount(global::Clarifai.Api.GetTaskCountRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetTaskAnnotationsCount, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetTaskAnnotationCount, null, options, request);
       }
       /// <summary>
-      /// Task annotation counts
+      /// Task annotation count
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
       /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> GetTaskAnnotationsCountAsync(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskCountResponse> GetTaskAnnotationCountAsync(global::Clarifai.Api.GetTaskCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetTaskAnnotationsCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetTaskAnnotationCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Task annotation counts
+      /// Task annotation count
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskAnnotationsCountResponse> GetTaskAnnotationsCountAsync(global::Clarifai.Api.GetTaskAnnotationsCountRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskCountResponse> GetTaskAnnotationCountAsync(global::Clarifai.Api.GetTaskCountRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetTaskAnnotationsCount, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetTaskAnnotationCount, null, options, request);
+      }
+      /// <summary>
+      /// Task Input count
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleTaskCountResponse GetTaskInputCount(global::Clarifai.Api.GetTaskCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTaskInputCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Task Input count
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleTaskCountResponse GetTaskInputCount(global::Clarifai.Api.GetTaskCountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetTaskInputCount, null, options, request);
+      }
+      /// <summary>
+      /// Task Input count
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskCountResponse> GetTaskInputCountAsync(global::Clarifai.Api.GetTaskCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTaskInputCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Task Input count
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleTaskCountResponse> GetTaskInputCountAsync(global::Clarifai.Api.GetTaskCountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetTaskInputCount, null, options, request);
       }
       /// <summary>
       /// Get a specific task from an app.
@@ -6716,6 +6921,9 @@ namespace Clarifai.Api {
     public static grpc::ServerServiceDefinition BindService(V2Base serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_ListConceptRelations, serviceImpl.ListConceptRelations)
+          .AddMethod(__Method_PostConceptRelations, serviceImpl.PostConceptRelations)
+          .AddMethod(__Method_DeleteConceptRelations, serviceImpl.DeleteConceptRelations)
           .AddMethod(__Method_GetConceptCounts, serviceImpl.GetConceptCounts)
           .AddMethod(__Method_GetConcept, serviceImpl.GetConcept)
           .AddMethod(__Method_ListConcepts, serviceImpl.ListConcepts)
@@ -6726,9 +6934,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListConceptLanguages, serviceImpl.ListConceptLanguages)
           .AddMethod(__Method_PostConceptLanguages, serviceImpl.PostConceptLanguages)
           .AddMethod(__Method_PatchConceptLanguages, serviceImpl.PatchConceptLanguages)
-          .AddMethod(__Method_ListConceptRelations, serviceImpl.ListConceptRelations)
-          .AddMethod(__Method_PostConceptRelations, serviceImpl.PostConceptRelations)
-          .AddMethod(__Method_DeleteConceptRelations, serviceImpl.DeleteConceptRelations)
           .AddMethod(__Method_ListKnowledgeGraphs, serviceImpl.ListKnowledgeGraphs)
           .AddMethod(__Method_PostKnowledgeGraphs, serviceImpl.PostKnowledgeGraphs)
           .AddMethod(__Method_PostConceptMappingJobs, serviceImpl.PostConceptMappingJobs)
@@ -6736,11 +6941,13 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListAnnotations, serviceImpl.ListAnnotations)
           .AddMethod(__Method_PostAnnotations, serviceImpl.PostAnnotations)
           .AddMethod(__Method_PatchAnnotations, serviceImpl.PatchAnnotations)
+          .AddMethod(__Method_PatchAnnotationsStatus, serviceImpl.PatchAnnotationsStatus)
           .AddMethod(__Method_DeleteAnnotation, serviceImpl.DeleteAnnotation)
           .AddMethod(__Method_DeleteAnnotations, serviceImpl.DeleteAnnotations)
           .AddMethod(__Method_PostAnnotationsSearches, serviceImpl.PostAnnotationsSearches)
           .AddMethod(__Method_GetInputCount, serviceImpl.GetInputCount)
           .AddMethod(__Method_StreamInputs, serviceImpl.StreamInputs)
+          .AddMethod(__Method_GetInputSamples, serviceImpl.GetInputSamples)
           .AddMethod(__Method_GetInput, serviceImpl.GetInput)
           .AddMethod(__Method_ListInputs, serviceImpl.ListInputs)
           .AddMethod(__Method_PostInputs, serviceImpl.PostInputs)
@@ -6809,7 +7016,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListAppDuplications, serviceImpl.ListAppDuplications)
           .AddMethod(__Method_GetAppDuplication, serviceImpl.GetAppDuplication)
           .AddMethod(__Method_PostTasks, serviceImpl.PostTasks)
-          .AddMethod(__Method_GetTaskAnnotationsCount, serviceImpl.GetTaskAnnotationsCount)
+          .AddMethod(__Method_GetTaskAnnotationCount, serviceImpl.GetTaskAnnotationCount)
+          .AddMethod(__Method_GetTaskInputCount, serviceImpl.GetTaskInputCount)
           .AddMethod(__Method_GetTask, serviceImpl.GetTask)
           .AddMethod(__Method_ListTasks, serviceImpl.ListTasks)
           .AddMethod(__Method_PatchTasks, serviceImpl.PatchTasks)
@@ -6829,6 +7037,9 @@ namespace Clarifai.Api {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, V2Base serviceImpl)
     {
+      serviceBinder.AddMethod(__Method_ListConceptRelations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(serviceImpl.ListConceptRelations));
+      serviceBinder.AddMethod(__Method_PostConceptRelations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(serviceImpl.PostConceptRelations));
+      serviceBinder.AddMethod(__Method_DeleteConceptRelations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteConceptRelationsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteConceptRelations));
       serviceBinder.AddMethod(__Method_GetConceptCounts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetConceptCountsRequest, global::Clarifai.Api.MultiConceptCountResponse>(serviceImpl.GetConceptCounts));
       serviceBinder.AddMethod(__Method_GetConcept, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetConceptRequest, global::Clarifai.Api.SingleConceptResponse>(serviceImpl.GetConcept));
       serviceBinder.AddMethod(__Method_ListConcepts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListConceptsRequest, global::Clarifai.Api.MultiConceptResponse>(serviceImpl.ListConcepts));
@@ -6839,9 +7050,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListConceptLanguages, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListConceptLanguagesRequest, global::Clarifai.Api.MultiConceptLanguageResponse>(serviceImpl.ListConceptLanguages));
       serviceBinder.AddMethod(__Method_PostConceptLanguages, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostConceptLanguagesRequest, global::Clarifai.Api.MultiConceptLanguageResponse>(serviceImpl.PostConceptLanguages));
       serviceBinder.AddMethod(__Method_PatchConceptLanguages, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchConceptLanguagesRequest, global::Clarifai.Api.MultiConceptLanguageResponse>(serviceImpl.PatchConceptLanguages));
-      serviceBinder.AddMethod(__Method_ListConceptRelations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(serviceImpl.ListConceptRelations));
-      serviceBinder.AddMethod(__Method_PostConceptRelations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(serviceImpl.PostConceptRelations));
-      serviceBinder.AddMethod(__Method_DeleteConceptRelations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteConceptRelationsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteConceptRelations));
       serviceBinder.AddMethod(__Method_ListKnowledgeGraphs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListKnowledgeGraphsRequest, global::Clarifai.Api.MultiKnowledgeGraphResponse>(serviceImpl.ListKnowledgeGraphs));
       serviceBinder.AddMethod(__Method_PostKnowledgeGraphs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostKnowledgeGraphsRequest, global::Clarifai.Api.MultiKnowledgeGraphResponse>(serviceImpl.PostKnowledgeGraphs));
       serviceBinder.AddMethod(__Method_PostConceptMappingJobs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostConceptMappingJobsRequest, global::Clarifai.Api.MultiConceptMappingJobResponse>(serviceImpl.PostConceptMappingJobs));
@@ -6849,11 +7057,13 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.ListAnnotations));
       serviceBinder.AddMethod(__Method_PostAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PostAnnotations));
       serviceBinder.AddMethod(__Method_PatchAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PatchAnnotations));
+      serviceBinder.AddMethod(__Method_PatchAnnotationsStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsStatusRequest, global::Clarifai.Api.PatchAnnotationsStatusResponse>(serviceImpl.PatchAnnotationsStatus));
       serviceBinder.AddMethod(__Method_DeleteAnnotation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotation));
       serviceBinder.AddMethod(__Method_DeleteAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotations));
       serviceBinder.AddMethod(__Method_PostAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostAnnotationsSearches));
       serviceBinder.AddMethod(__Method_GetInputCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInputCountRequest, global::Clarifai.Api.SingleInputCountResponse>(serviceImpl.GetInputCount));
       serviceBinder.AddMethod(__Method_StreamInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.StreamInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.StreamInputs));
+      serviceBinder.AddMethod(__Method_GetInputSamples, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInputSamplesRequest, global::Clarifai.Api.MultiInputAnnotationResponse>(serviceImpl.GetInputSamples));
       serviceBinder.AddMethod(__Method_GetInput, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInputRequest, global::Clarifai.Api.SingleInputResponse>(serviceImpl.GetInput));
       serviceBinder.AddMethod(__Method_ListInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.ListInputs));
       serviceBinder.AddMethod(__Method_PostInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.PostInputs));
@@ -6922,7 +7132,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListAppDuplications, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAppDuplicationsRequest, global::Clarifai.Api.MultiAppDuplicationsResponse>(serviceImpl.ListAppDuplications));
       serviceBinder.AddMethod(__Method_GetAppDuplication, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAppDuplicationRequest, global::Clarifai.Api.SingleAppDuplicationResponse>(serviceImpl.GetAppDuplication));
       serviceBinder.AddMethod(__Method_PostTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.PostTasks));
-      serviceBinder.AddMethod(__Method_GetTaskAnnotationsCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetTaskAnnotationsCountRequest, global::Clarifai.Api.SingleTaskAnnotationsCountResponse>(serviceImpl.GetTaskAnnotationsCount));
+      serviceBinder.AddMethod(__Method_GetTaskAnnotationCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetTaskCountRequest, global::Clarifai.Api.SingleTaskCountResponse>(serviceImpl.GetTaskAnnotationCount));
+      serviceBinder.AddMethod(__Method_GetTaskInputCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetTaskCountRequest, global::Clarifai.Api.SingleTaskCountResponse>(serviceImpl.GetTaskInputCount));
       serviceBinder.AddMethod(__Method_GetTask, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetTaskRequest, global::Clarifai.Api.SingleTaskResponse>(serviceImpl.GetTask));
       serviceBinder.AddMethod(__Method_ListTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.ListTasks));
       serviceBinder.AddMethod(__Method_PatchTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.PatchTasks));
