@@ -27,7 +27,7 @@ namespace Clarifai.Auth.Scope {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlL3Njb3BlLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnNjb3BlGiBnb29nbGUvcHJvdG9idWYvZGVzY3JpcHRvci5w",
             "cm90byJGCglTY29wZUxpc3QSJgoGc2NvcGVzGAEgAygOMhYuY2xhcmlmYWku",
-            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSq1DQoBUxIJCgV1bmRl",
+            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSrIDgoBUxIJCgV1bmRl",
             "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIQCgZTZWFy",
             "Y2gQAxoE8JsnARIYCgpJbnB1dHNfQWRkEAQaCPCbJwH4mycFEhQKCklucHV0",
             "c19HZXQQBRoE8JsnARIgCgxJbnB1dHNfUGF0Y2gQBxoOCAHwmycB+JsnBPib",
@@ -65,12 +65,17 @@ namespace Clarifai.Auth.Scope {
             "EDsaDPCbJwH4myc5+JsnOhIZCg9MYWJlbE9yZGVyc19HZXQQQxoE8JsnARId",
             "Cg9MYWJlbE9yZGVyc19BZGQQRBoI8JsnAfibJ0MSJAoSTGFiZWxPcmRlcnNf",
             "RGVsZXRlEEUaDPCbJwH4mydE+JsnQxIgChZVc2VyRmVhdHVyZUNvbmZpZ3Nf",
-            "R2V0EEcaBPCbJwEiBAgeEB4iBAgfEB8iBAggECAiBAghECEiBAgiECI6PAoP",
-            "Y2xhcmZhaV9leHBvc2VkEiEuZ29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9w",
-            "dGlvbnMYvvMEIAEoCDpeChljbGFyaWZhaV9kZXBlbmRpbmdfc2NvcGVzEiEu",
-            "Z29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMYv/MEIAMoDjIWLmNs",
-            "YXJpZmFpLmF1dGguc2NvcGUuU0IuChxjb20uY2xhcmlmYWkuZ3JwYy5hdXRo",
-            "LnNjb3BlUAFaBXNjb3BlogIEQ0FJUGIGcHJvdG8z"));
+            "R2V0EEcaBPCbJwESLgogRmluZER1cGxpY2F0ZUFubm90YXRpb25zSm9ic19B",
+            "ZGQQZhoI8JsnAfibJ2cSKgogRmluZER1cGxpY2F0ZUFubm90YXRpb25zSm9i",
+            "c19HZXQQZxoE8JsnARI1CiNGaW5kRHVwbGljYXRlQW5ub3RhdGlvbnNKb2Jz",
+            "X0RlbGV0ZRBoGgzwmycB+JsnZvibJ2ciBAgeEB4iBAgfEB8iBAggECAiBAgh",
+            "ECEiBAgiECI6PAoPY2xhcmZhaV9leHBvc2VkEiEuZ29vZ2xlLnByb3RvYnVm",
+            "LkVudW1WYWx1ZU9wdGlvbnMYvvMEIAEoCDpeChljbGFyaWZhaV9kZXBlbmRp",
+            "bmdfc2NvcGVzEiEuZ29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMY",
+            "v/MEIAMoDjIWLmNsYXJpZmFpLmF1dGguc2NvcGUuU0JnChxjb20uY2xhcmlm",
+            "YWkuZ3JwYy5hdXRoLnNjb3BlUAFaPmdpdGh1Yi5jb20vQ2xhcmlmYWkvY2xh",
+            "cmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlogIEQ0FJ",
+            "UGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Scope.S), }, new pb::Extension[] { ScopeExtensions.ClarfaiExposed, ScopeExtensions.ClarifaiDependingScopes }, new pbr::GeneratedClrTypeInfo[] {
@@ -344,6 +349,12 @@ namespace Clarifai.Auth.Scope {
     /// Read from user_feature_configs table
     /// </summary>
     [pbr::OriginalName("UserFeatureConfigs_Get")] UserFeatureConfigsGet = 71,
+    /// <summary>
+    /// CRUD on FindDuplicateAnnotationsJobs table
+    /// </summary>
+    [pbr::OriginalName("FindDuplicateAnnotationsJobs_Add")] FindDuplicateAnnotationsJobsAdd = 102,
+    [pbr::OriginalName("FindDuplicateAnnotationsJobs_Get")] FindDuplicateAnnotationsJobsGet = 103,
+    [pbr::OriginalName("FindDuplicateAnnotationsJobs_Delete")] FindDuplicateAnnotationsJobsDelete = 104,
   }
 
   #endregion

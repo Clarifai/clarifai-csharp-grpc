@@ -33,8 +33,10 @@ namespace Clarifai.Api.Status {
             "ARIZChFwZXJjZW50X2NvbXBsZXRlZBgFIAEoDRIWCg50aW1lX3JlbWFpbmlu",
             "ZxgGIAEoDRIOCgZyZXFfaWQYByABKAkSHgoQaW50ZXJuYWxfZGV0YWlscxgI",
             "IAEoCUIEgJwnASI7CgxCYXNlUmVzcG9uc2USKwoGc3RhdHVzGAEgASgLMhsu",
-            "Y2xhcmlmYWkuYXBpLnN0YXR1cy5TdGF0dXNCLwocY29tLmNsYXJpZmFpLmdy",
-            "cGMuYXBpLnN0YXR1c1ABWgZzdGF0dXOiAgRDQUlQYgZwcm90bzM="));
+            "Y2xhcmlmYWkuYXBpLnN0YXR1cy5TdGF0dXNCZwocY29tLmNsYXJpZmFpLmdy",
+            "cGMuYXBpLnN0YXR1c1ABWj5naXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFp",
+            "LWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXBpL3N0YXR1c6ICBENBSVBiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

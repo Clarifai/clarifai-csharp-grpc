@@ -27,8 +27,10 @@ namespace Clarifai.Auth.Types {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3R5cGVzL3R5cGVzLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnR5cGVzKmAKCEF1dGhUeXBlEgkKBXVuZGVmEAASCgoGTm9B",
             "dXRoEAESCwoHS2V5QXV0aBACEhQKEFNlc3Npb25Ub2tlbkF1dGgQAxINCglB",
-            "ZG1pbkF1dGgQBBILCgdQQVRBdXRoEAVCLgocY29tLmNsYXJpZmFpLmdycGMu",
-            "YXV0aC50eXBlc1ABWgV0eXBlc6ICBENBSVBiBnByb3RvMw=="));
+            "ZG1pbkF1dGgQBBILCgdQQVRBdXRoEAVCZwocY29tLmNsYXJpZmFpLmdycGMu",
+            "YXV0aC50eXBlc1ABWj5naXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdv",
+            "LWdycGMvcHJvdG8vY2xhcmlmYWkvYXV0aC90eXBlc6ICBENBSVBiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Types.AuthType), }, null, null));
