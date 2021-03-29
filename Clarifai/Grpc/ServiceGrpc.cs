@@ -84,6 +84,7 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionsRequest> __Marshaller_clarifai_api_ListModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionResponse> __Marshaller_clarifai_api_MultiModelVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelVersionResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsRequest> __Marshaller_clarifai_api_PostModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelVersionsRequest> __Marshaller_clarifai_api_PatchModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionRequest> __Marshaller_clarifai_api_DeleteModelVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelVersionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionMetricsRequest> __Marshaller_clarifai_api_GetModelVersionMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelVersionMetricsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionMetricsRequest> __Marshaller_clarifai_api_PostModelVersionMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionMetricsRequest.Parser.ParseFrom);
@@ -511,6 +512,13 @@ namespace Clarifai.Api {
         "PostModelVersions",
         __Marshaller_clarifai_api_PostModelVersionsRequest,
         __Marshaller_clarifai_api_SingleModelResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse> __Method_PatchModelVersions = new grpc::Method<global::Clarifai.Api.PatchModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchModelVersions",
+        __Marshaller_clarifai_api_PatchModelVersionsRequest,
+        __Marshaller_clarifai_api_MultiModelVersionResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModelVersion = new grpc::Method<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(
         grpc::MethodType.Unary,
@@ -1284,7 +1292,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Delete a single input.  This call is synchronous.
+      /// Delete a single input asynchronously.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1296,7 +1304,7 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Delete multiple inputs in one request.
-      /// This call is asynchronous. Use DeleteInput if you want a synchronous version.
+      /// This call is asynchronous.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1484,6 +1492,11 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelResponse> PostModelVersions(global::Clarifai.Api.PostModelVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelVersionResponse> PatchModelVersions(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1685,7 +1698,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// List all auth scopes available.
+      /// List all auth scopes available to me as a user.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -3546,7 +3559,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchInputs, null, options, request);
       }
       /// <summary>
-      /// Delete a single input.  This call is synchronous.
+      /// Delete a single input asynchronously.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3558,7 +3571,7 @@ namespace Clarifai.Api {
         return DeleteInput(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete a single input.  This call is synchronous.
+      /// Delete a single input asynchronously.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3568,7 +3581,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteInput, null, options, request);
       }
       /// <summary>
-      /// Delete a single input.  This call is synchronous.
+      /// Delete a single input asynchronously.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3580,7 +3593,7 @@ namespace Clarifai.Api {
         return DeleteInputAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete a single input.  This call is synchronous.
+      /// Delete a single input asynchronously.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3591,7 +3604,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Delete multiple inputs in one request.
-      /// This call is asynchronous. Use DeleteInput if you want a synchronous version.
+      /// This call is asynchronous.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3604,7 +3617,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Delete multiple inputs in one request.
-      /// This call is asynchronous. Use DeleteInput if you want a synchronous version.
+      /// This call is asynchronous.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3615,7 +3628,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Delete multiple inputs in one request.
-      /// This call is asynchronous. Use DeleteInput if you want a synchronous version.
+      /// This call is asynchronous.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3628,7 +3641,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Delete multiple inputs in one request.
-      /// This call is asynchronous. Use DeleteInput if you want a synchronous version.
+      /// This call is asynchronous.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4364,6 +4377,22 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelResponse> PostModelVersionsAsync(global::Clarifai.Api.PostModelVersionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersions, null, options, request);
+      }
+      public virtual global::Clarifai.Api.MultiModelVersionResponse PatchModelVersions(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.MultiModelVersionResponse PatchModelVersions(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchModelVersions, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionResponse> PatchModelVersionsAsync(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionResponse> PatchModelVersionsAsync(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchModelVersions, null, options, request);
       }
       /// <summary>
       /// Delete a single model.
@@ -5146,7 +5175,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_MyScopes, null, options, request);
       }
       /// <summary>
-      /// List all auth scopes available.
+      /// List all auth scopes available to me as a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -5158,7 +5187,7 @@ namespace Clarifai.Api {
         return ListScopes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all auth scopes available.
+      /// List all auth scopes available to me as a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -5168,7 +5197,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_ListScopes, null, options, request);
       }
       /// <summary>
-      /// List all auth scopes available.
+      /// List all auth scopes available to me as a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -5180,7 +5209,7 @@ namespace Clarifai.Api {
         return ListScopesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all auth scopes available.
+      /// List all auth scopes available to me as a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6970,6 +6999,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_GetModelVersion, serviceImpl.GetModelVersion)
           .AddMethod(__Method_ListModelVersions, serviceImpl.ListModelVersions)
           .AddMethod(__Method_PostModelVersions, serviceImpl.PostModelVersions)
+          .AddMethod(__Method_PatchModelVersions, serviceImpl.PatchModelVersions)
           .AddMethod(__Method_DeleteModelVersion, serviceImpl.DeleteModelVersion)
           .AddMethod(__Method_GetModelVersionMetrics, serviceImpl.GetModelVersionMetrics)
           .AddMethod(__Method_PostModelVersionMetrics, serviceImpl.PostModelVersionMetrics)
@@ -7086,6 +7116,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersion));
       serviceBinder.AddMethod(__Method_ListModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.ListModelVersions));
       serviceBinder.AddMethod(__Method_PostModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModelVersions));
+      serviceBinder.AddMethod(__Method_PatchModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.PatchModelVersions));
       serviceBinder.AddMethod(__Method_DeleteModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersion));
       serviceBinder.AddMethod(__Method_GetModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersionMetrics));
       serviceBinder.AddMethod(__Method_PostModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.PostModelVersionMetrics));
