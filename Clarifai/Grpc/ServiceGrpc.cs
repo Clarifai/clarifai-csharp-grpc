@@ -88,6 +88,12 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionRequest> __Marshaller_clarifai_api_DeleteModelVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelVersionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionMetricsRequest> __Marshaller_clarifai_api_GetModelVersionMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelVersionMetricsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionMetricsRequest> __Marshaller_clarifai_api_PostModelVersionMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionMetricsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelReferencesRequest> __Marshaller_clarifai_api_ListModelReferencesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelReferencesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelReferenceResponse> __Marshaller_clarifai_api_MultiModelReferenceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelReferenceResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionInputExampleRequest> __Marshaller_clarifai_api_GetModelVersionInputExampleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelVersionInputExampleRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionInputExampleResponse> __Marshaller_clarifai_api_SingleModelVersionInputExampleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelVersionInputExampleResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionInputExamplesRequest> __Marshaller_clarifai_api_ListModelVersionInputExamplesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelVersionInputExamplesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionInputExampleResponse> __Marshaller_clarifai_api_MultiModelVersionInputExampleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelVersionInputExampleResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetWorkflowRequest> __Marshaller_clarifai_api_GetWorkflowRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetWorkflowRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleWorkflowResponse> __Marshaller_clarifai_api_SingleWorkflowResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleWorkflowResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowsRequest> __Marshaller_clarifai_api_ListWorkflowsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListWorkflowsRequest.Parser.ParseFrom);
@@ -540,6 +546,27 @@ namespace Clarifai.Api {
         "PostModelVersionMetrics",
         __Marshaller_clarifai_api_PostModelVersionMetricsRequest,
         __Marshaller_clarifai_api_SingleModelVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListModelReferencesRequest, global::Clarifai.Api.MultiModelReferenceResponse> __Method_ListModelReferences = new grpc::Method<global::Clarifai.Api.ListModelReferencesRequest, global::Clarifai.Api.MultiModelReferenceResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListModelReferences",
+        __Marshaller_clarifai_api_ListModelReferencesRequest,
+        __Marshaller_clarifai_api_MultiModelReferenceResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetModelVersionInputExampleRequest, global::Clarifai.Api.SingleModelVersionInputExampleResponse> __Method_GetModelVersionInputExample = new grpc::Method<global::Clarifai.Api.GetModelVersionInputExampleRequest, global::Clarifai.Api.SingleModelVersionInputExampleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetModelVersionInputExample",
+        __Marshaller_clarifai_api_GetModelVersionInputExampleRequest,
+        __Marshaller_clarifai_api_SingleModelVersionInputExampleResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListModelVersionInputExamplesRequest, global::Clarifai.Api.MultiModelVersionInputExampleResponse> __Method_ListModelVersionInputExamples = new grpc::Method<global::Clarifai.Api.ListModelVersionInputExamplesRequest, global::Clarifai.Api.MultiModelVersionInputExampleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListModelVersionInputExamples",
+        __Marshaller_clarifai_api_ListModelVersionInputExamplesRequest,
+        __Marshaller_clarifai_api_MultiModelVersionInputExampleResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.GetWorkflowRequest, global::Clarifai.Api.SingleWorkflowResponse> __Method_GetWorkflow = new grpc::Method<global::Clarifai.Api.GetWorkflowRequest, global::Clarifai.Api.SingleWorkflowResponse>(
         grpc::MethodType.Unary,
@@ -1530,6 +1557,27 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelVersionResponse> PostModelVersionMetrics(global::Clarifai.Api.PostModelVersionMetricsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Lists model references tied to a particular model id.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelReferenceResponse> ListModelReferences(global::Clarifai.Api.ListModelReferencesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelVersionInputExampleResponse> GetModelVersionInputExample(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelVersionInputExampleResponse> ListModelVersionInputExamples(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -4527,6 +4575,82 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionMetrics, null, options, request);
       }
       /// <summary>
+      /// Lists model references tied to a particular model id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelReferenceResponse ListModelReferences(global::Clarifai.Api.ListModelReferencesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModelReferences(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Lists model references tied to a particular model id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelReferenceResponse ListModelReferences(global::Clarifai.Api.ListModelReferencesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListModelReferences, null, options, request);
+      }
+      /// <summary>
+      /// Lists model references tied to a particular model id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelReferenceResponse> ListModelReferencesAsync(global::Clarifai.Api.ListModelReferencesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModelReferencesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Lists model references tied to a particular model id.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelReferenceResponse> ListModelReferencesAsync(global::Clarifai.Api.ListModelReferencesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListModelReferences, null, options, request);
+      }
+      public virtual global::Clarifai.Api.SingleModelVersionInputExampleResponse GetModelVersionInputExample(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModelVersionInputExample(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.SingleModelVersionInputExampleResponse GetModelVersionInputExample(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetModelVersionInputExample, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionInputExampleResponse> GetModelVersionInputExampleAsync(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModelVersionInputExampleAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionInputExampleResponse> GetModelVersionInputExampleAsync(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetModelVersionInputExample, null, options, request);
+      }
+      public virtual global::Clarifai.Api.MultiModelVersionInputExampleResponse ListModelVersionInputExamples(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModelVersionInputExamples(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.MultiModelVersionInputExampleResponse ListModelVersionInputExamples(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListModelVersionInputExamples, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionInputExampleResponse> ListModelVersionInputExamplesAsync(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModelVersionInputExamplesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionInputExampleResponse> ListModelVersionInputExamplesAsync(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListModelVersionInputExamples, null, options, request);
+      }
+      /// <summary>
       /// Get a specific workflow from an app.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -7003,6 +7127,9 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteModelVersion, serviceImpl.DeleteModelVersion)
           .AddMethod(__Method_GetModelVersionMetrics, serviceImpl.GetModelVersionMetrics)
           .AddMethod(__Method_PostModelVersionMetrics, serviceImpl.PostModelVersionMetrics)
+          .AddMethod(__Method_ListModelReferences, serviceImpl.ListModelReferences)
+          .AddMethod(__Method_GetModelVersionInputExample, serviceImpl.GetModelVersionInputExample)
+          .AddMethod(__Method_ListModelVersionInputExamples, serviceImpl.ListModelVersionInputExamples)
           .AddMethod(__Method_GetWorkflow, serviceImpl.GetWorkflow)
           .AddMethod(__Method_ListWorkflows, serviceImpl.ListWorkflows)
           .AddMethod(__Method_PostWorkflows, serviceImpl.PostWorkflows)
@@ -7120,6 +7247,9 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersion));
       serviceBinder.AddMethod(__Method_GetModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersionMetrics));
       serviceBinder.AddMethod(__Method_PostModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.PostModelVersionMetrics));
+      serviceBinder.AddMethod(__Method_ListModelReferences, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelReferencesRequest, global::Clarifai.Api.MultiModelReferenceResponse>(serviceImpl.ListModelReferences));
+      serviceBinder.AddMethod(__Method_GetModelVersionInputExample, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionInputExampleRequest, global::Clarifai.Api.SingleModelVersionInputExampleResponse>(serviceImpl.GetModelVersionInputExample));
+      serviceBinder.AddMethod(__Method_ListModelVersionInputExamples, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelVersionInputExamplesRequest, global::Clarifai.Api.MultiModelVersionInputExampleResponse>(serviceImpl.ListModelVersionInputExamples));
       serviceBinder.AddMethod(__Method_GetWorkflow, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetWorkflowRequest, global::Clarifai.Api.SingleWorkflowResponse>(serviceImpl.GetWorkflow));
       serviceBinder.AddMethod(__Method_ListWorkflows, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowsRequest, global::Clarifai.Api.MultiWorkflowResponse>(serviceImpl.ListWorkflows));
       serviceBinder.AddMethod(__Method_PostWorkflows, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostWorkflowsRequest, global::Clarifai.Api.MultiWorkflowResponse>(serviceImpl.PostWorkflows));
