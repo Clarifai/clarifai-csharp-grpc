@@ -67,6 +67,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiOutputResponse> __Marshaller_clarifai_api_MultiOutputResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiOutputResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetModelTypeRequest> __Marshaller_clarifai_api_GetModelTypeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelTypeRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelTypeResponse> __Marshaller_clarifai_api_SingleModelTypeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelTypeResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListOpenSourceLicensesRequest> __Marshaller_clarifai_api_ListOpenSourceLicensesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListOpenSourceLicensesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListOpenSourceLicensesResponse> __Marshaller_clarifai_api_ListOpenSourceLicensesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListOpenSourceLicensesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListModelTypesRequest> __Marshaller_clarifai_api_ListModelTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelTypesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelTypeResponse> __Marshaller_clarifai_api_MultiModelTypeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelTypeResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetModelRequest> __Marshaller_clarifai_api_GetModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelRequest.Parser.ParseFrom);
@@ -427,6 +429,13 @@ namespace Clarifai.Api {
         "GetModelType",
         __Marshaller_clarifai_api_GetModelTypeRequest,
         __Marshaller_clarifai_api_SingleModelTypeResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListOpenSourceLicensesRequest, global::Clarifai.Api.ListOpenSourceLicensesResponse> __Method_ListOpenSourceLicenses = new grpc::Method<global::Clarifai.Api.ListOpenSourceLicensesRequest, global::Clarifai.Api.ListOpenSourceLicensesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListOpenSourceLicenses",
+        __Marshaller_clarifai_api_ListOpenSourceLicensesRequest,
+        __Marshaller_clarifai_api_ListOpenSourceLicensesResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.ListModelTypesRequest, global::Clarifai.Api.MultiModelTypeResponse> __Method_ListModelTypes = new grpc::Method<global::Clarifai.Api.ListModelTypesRequest, global::Clarifai.Api.MultiModelTypeResponse>(
         grpc::MethodType.Unary,
@@ -1370,6 +1379,17 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelTypeResponse> GetModelType(global::Clarifai.Api.GetModelTypeRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the supported open source licenses in the platform.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.ListOpenSourceLicensesResponse> ListOpenSourceLicenses(global::Clarifai.Api.ListOpenSourceLicensesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -3829,6 +3849,50 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelTypeResponse> GetModelTypeAsync(global::Clarifai.Api.GetModelTypeRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetModelType, null, options, request);
+      }
+      /// <summary>
+      /// List all the supported open source licenses in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.ListOpenSourceLicensesResponse ListOpenSourceLicenses(global::Clarifai.Api.ListOpenSourceLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListOpenSourceLicenses(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the supported open source licenses in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.ListOpenSourceLicensesResponse ListOpenSourceLicenses(global::Clarifai.Api.ListOpenSourceLicensesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListOpenSourceLicenses, null, options, request);
+      }
+      /// <summary>
+      /// List all the supported open source licenses in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.ListOpenSourceLicensesResponse> ListOpenSourceLicensesAsync(global::Clarifai.Api.ListOpenSourceLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListOpenSourceLicensesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the supported open source licenses in the platform.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.ListOpenSourceLicensesResponse> ListOpenSourceLicensesAsync(global::Clarifai.Api.ListOpenSourceLicensesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListOpenSourceLicenses, null, options, request);
       }
       /// <summary>
       /// List all the model types available in the platform.
@@ -7110,6 +7174,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostInputsSearches, serviceImpl.PostInputsSearches)
           .AddMethod(__Method_PostModelOutputs, serviceImpl.PostModelOutputs)
           .AddMethod(__Method_GetModelType, serviceImpl.GetModelType)
+          .AddMethod(__Method_ListOpenSourceLicenses, serviceImpl.ListOpenSourceLicenses)
           .AddMethod(__Method_ListModelTypes, serviceImpl.ListModelTypes)
           .AddMethod(__Method_GetModel, serviceImpl.GetModel)
           .AddMethod(__Method_GetModelOutputInfo, serviceImpl.GetModelOutputInfo)
@@ -7230,6 +7295,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostInputsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostInputsSearches));
       serviceBinder.AddMethod(__Method_PostModelOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse>(serviceImpl.PostModelOutputs));
       serviceBinder.AddMethod(__Method_GetModelType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelTypeRequest, global::Clarifai.Api.SingleModelTypeResponse>(serviceImpl.GetModelType));
+      serviceBinder.AddMethod(__Method_ListOpenSourceLicenses, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListOpenSourceLicensesRequest, global::Clarifai.Api.ListOpenSourceLicensesResponse>(serviceImpl.ListOpenSourceLicenses));
       serviceBinder.AddMethod(__Method_ListModelTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelTypesRequest, global::Clarifai.Api.MultiModelTypeResponse>(serviceImpl.ListModelTypes));
       serviceBinder.AddMethod(__Method_GetModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.GetModel));
       serviceBinder.AddMethod(__Method_GetModelOutputInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.GetModelOutputInfo));
