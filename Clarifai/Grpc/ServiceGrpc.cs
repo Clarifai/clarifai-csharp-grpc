@@ -184,8 +184,6 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesAggregateRequest> __Marshaller_clarifai_api_PostStatValuesAggregateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostStatValuesAggregateRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueAggregateResponse> __Marshaller_clarifai_api_MultiStatValueAggregateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiStatValueAggregateResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostTrendingMetricsViewRequest> __Marshaller_clarifai_api_PostTrendingMetricsViewRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostTrendingMetricsViewRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListTrendingMetricsViewsRequest> __Marshaller_clarifai_api_ListTrendingMetricsViewsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListTrendingMetricsViewsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiTrendingMetricsViewResponse> __Marshaller_clarifai_api_MultiTrendingMetricsViewResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiTrendingMetricsViewResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
         grpc::MethodType.Unary,
@@ -1012,13 +1010,6 @@ namespace Clarifai.Api {
         "PostTrendingMetricsView",
         __Marshaller_clarifai_api_PostTrendingMetricsViewRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
-
-    static readonly grpc::Method<global::Clarifai.Api.ListTrendingMetricsViewsRequest, global::Clarifai.Api.MultiTrendingMetricsViewResponse> __Method_ListTrendingMetricsViews = new grpc::Method<global::Clarifai.Api.ListTrendingMetricsViewsRequest, global::Clarifai.Api.MultiTrendingMetricsViewResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ListTrendingMetricsViews",
-        __Marshaller_clarifai_api_ListTrendingMetricsViewsRequest,
-        __Marshaller_clarifai_api_MultiTrendingMetricsViewResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -2311,17 +2302,6 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostTrendingMetricsView(global::Clarifai.Api.PostTrendingMetricsViewRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// List the view metrics for a detail view
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTrendingMetricsViewResponse> ListTrendingMetricsViews(global::Clarifai.Api.ListTrendingMetricsViewsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7463,50 +7443,6 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostTrendingMetricsView, null, options, request);
       }
-      /// <summary>
-      /// List the view metrics for a detail view
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.MultiTrendingMetricsViewResponse ListTrendingMetricsViews(global::Clarifai.Api.ListTrendingMetricsViewsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListTrendingMetricsViews(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List the view metrics for a detail view
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Clarifai.Api.MultiTrendingMetricsViewResponse ListTrendingMetricsViews(global::Clarifai.Api.ListTrendingMetricsViewsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ListTrendingMetricsViews, null, options, request);
-      }
-      /// <summary>
-      /// List the view metrics for a detail view
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTrendingMetricsViewResponse> ListTrendingMetricsViewsAsync(global::Clarifai.Api.ListTrendingMetricsViewsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListTrendingMetricsViewsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List the view metrics for a detail view
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTrendingMetricsViewResponse> ListTrendingMetricsViewsAsync(global::Clarifai.Api.ListTrendingMetricsViewsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ListTrendingMetricsViews, null, options, request);
-      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
       {
@@ -7636,8 +7572,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteCollectors, serviceImpl.DeleteCollectors)
           .AddMethod(__Method_PostStatValues, serviceImpl.PostStatValues)
           .AddMethod(__Method_PostStatValuesAggregate, serviceImpl.PostStatValuesAggregate)
-          .AddMethod(__Method_PostTrendingMetricsView, serviceImpl.PostTrendingMetricsView)
-          .AddMethod(__Method_ListTrendingMetricsViews, serviceImpl.ListTrendingMetricsViews).Build();
+          .AddMethod(__Method_PostTrendingMetricsView, serviceImpl.PostTrendingMetricsView).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -7764,7 +7699,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostStatValues, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesRequest, global::Clarifai.Api.MultiStatValueResponse>(serviceImpl.PostStatValues));
       serviceBinder.AddMethod(__Method_PostStatValuesAggregate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesAggregateRequest, global::Clarifai.Api.MultiStatValueAggregateResponse>(serviceImpl.PostStatValuesAggregate));
       serviceBinder.AddMethod(__Method_PostTrendingMetricsView, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostTrendingMetricsViewRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostTrendingMetricsView));
-      serviceBinder.AddMethod(__Method_ListTrendingMetricsViews, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListTrendingMetricsViewsRequest, global::Clarifai.Api.MultiTrendingMetricsViewResponse>(serviceImpl.ListTrendingMetricsViews));
     }
 
   }
