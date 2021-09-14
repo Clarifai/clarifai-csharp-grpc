@@ -37,11 +37,18 @@ The third version number (`Z` out of `X.Y.Z`) is used by this library for any in
 Construct the client and setup your API key or Personal Access Token in the `metadata` variable.
 
 ```csharp
+using System;
+using System.Collections.Generic;
+using Clarifai.Api;
+using Clarifai.Channels;
+using Grpc.Core;
+using StatusCode = Clarifai.Api.Status.StatusCode;
+
 var client = new V2.V2Client(ClarifaiChannel.Grpc());
 
 var metadata = new Metadata
 {
-    {"Authorization", "Key {MY_CLARIFAI_API_KEY_OR_PAT}"}
+    {"Authorization", "Key {YOUR_PERSONAL_TOKEN}"}
 };
 ```
 
@@ -51,7 +58,13 @@ Predict concepts in an image:
 var response = client.PostModelOutputs(
     new PostModelOutputsRequest()
     {
-        ModelId = "aaa03c23b3724a16a56b629203edc62c",
+        UserAppId = 
+            new UserAppIDSet()
+            { 
+                UserId = "{YOUR_USER_ID}",
+                AppId = "{YOUR_APP_ID}"
+            },
+        ModelId = "aaa03c23b3724a16a56b629203edc62c", // <- This is the general model_id
         Inputs =
         {
             new List<Input>()
@@ -71,6 +84,7 @@ var response = client.PostModelOutputs(
     },
     metadata
 );
+
 if (response.Status.Code != StatusCode.Success)
     throw new Exception("Request failed, response: " + response);
 
