@@ -85,6 +85,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionResponse> __Marshaller_clarifai_api_SingleModelVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelVersionResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionsRequest> __Marshaller_clarifai_api_ListModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionResponse> __Marshaller_clarifai_api_MultiModelVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelVersionResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsPublishRequest> __Marshaller_clarifai_api_PostModelVersionsPublishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsPublishRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest> __Marshaller_clarifai_api_DeleteModelVersionsUnpublishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelVersionsUnpublishRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsRequest> __Marshaller_clarifai_api_PostModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelVersionsRequest> __Marshaller_clarifai_api_PatchModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionRequest> __Marshaller_clarifai_api_DeleteModelVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelVersionRequest.Parser.ParseFrom);
@@ -124,6 +126,10 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchKeysRequest> __Marshaller_clarifai_api_PatchKeysRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchKeysRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesRequest> __Marshaller_clarifai_api_MyScopesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MyScopesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeResponse> __Marshaller_clarifai_api_MultiScopeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesUserRequest> __Marshaller_clarifai_api_MyScopesUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MyScopesUserRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeUserResponse> __Marshaller_clarifai_api_MultiScopeUserResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeUserResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesRootRequest> __Marshaller_clarifai_api_MyScopesRootRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MyScopesRootRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeRootResponse> __Marshaller_clarifai_api_MultiScopeRootResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeRootResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListScopesRequest> __Marshaller_clarifai_api_ListScopesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListScopesRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeDepsResponse> __Marshaller_clarifai_api_MultiScopeDepsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeDepsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetAppRequest> __Marshaller_clarifai_api_GetAppRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetAppRequest.Parser.ParseFrom);
@@ -530,6 +536,20 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_ListModelVersionsRequest,
         __Marshaller_clarifai_api_MultiModelVersionResponse);
 
+    static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostModelVersionsPublish = new grpc::Method<global::Clarifai.Api.PostModelVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostModelVersionsPublish",
+        __Marshaller_clarifai_api_PostModelVersionsPublishRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModelVersionsUnPublish = new grpc::Method<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteModelVersionsUnPublish",
+        __Marshaller_clarifai_api_DeleteModelVersionsUnpublishRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
     static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse> __Method_PostModelVersions = new grpc::Method<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -718,6 +738,20 @@ namespace Clarifai.Api {
         "MyScopes",
         __Marshaller_clarifai_api_MyScopesRequest,
         __Marshaller_clarifai_api_MultiScopeResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.MyScopesUserRequest, global::Clarifai.Api.MultiScopeUserResponse> __Method_MyScopesUser = new grpc::Method<global::Clarifai.Api.MyScopesUserRequest, global::Clarifai.Api.MultiScopeUserResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "MyScopesUser",
+        __Marshaller_clarifai_api_MyScopesUserRequest,
+        __Marshaller_clarifai_api_MultiScopeUserResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.MyScopesRootRequest, global::Clarifai.Api.MultiScopeRootResponse> __Method_MyScopesRoot = new grpc::Method<global::Clarifai.Api.MyScopesRootRequest, global::Clarifai.Api.MultiScopeRootResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "MyScopesRoot",
+        __Marshaller_clarifai_api_MyScopesRootRequest,
+        __Marshaller_clarifai_api_MultiScopeRootResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.ListScopesRequest, global::Clarifai.Api.MultiScopeDepsResponse> __Method_ListScopes = new grpc::Method<global::Clarifai.Api.ListScopesRequest, global::Clarifai.Api.MultiScopeDepsResponse>(
         grpc::MethodType.Unary,
@@ -1582,6 +1616,16 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsPublish(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModelVersionsUnPublish(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       /// Create a new model version to trigger training of the model.
       /// FIXME(zeiler): this should have been a plural response.
@@ -1856,6 +1900,16 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiScopeResponse> MyScopes(global::Clarifai.Api.MyScopesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiScopeUserResponse> MyScopesUser(global::Clarifai.Api.MyScopesUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiScopeRootResponse> MyScopesRoot(global::Clarifai.Api.MyScopesRootRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -4559,6 +4613,38 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListModelVersions, null, options, request);
       }
+      public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsPublish(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModelVersionsPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsPublish(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostModelVersionsPublish, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsPublishAsync(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModelVersionsPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsPublishAsync(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsPublish, null, options, request);
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModelVersionsUnPublish(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModelVersionsUnPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModelVersionsUnPublish(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteModelVersionsUnPublish, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModelVersionsUnPublishAsync(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModelVersionsUnPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModelVersionsUnPublishAsync(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteModelVersionsUnPublish, null, options, request);
+      }
       /// <summary>
       /// Create a new model version to trigger training of the model.
       /// FIXME(zeiler): this should have been a plural response.
@@ -5654,6 +5740,38 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiScopeResponse> MyScopesAsync(global::Clarifai.Api.MyScopesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_MyScopes, null, options, request);
+      }
+      public virtual global::Clarifai.Api.MultiScopeUserResponse MyScopesUser(global::Clarifai.Api.MyScopesUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MyScopesUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.MultiScopeUserResponse MyScopesUser(global::Clarifai.Api.MyScopesUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_MyScopesUser, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiScopeUserResponse> MyScopesUserAsync(global::Clarifai.Api.MyScopesUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MyScopesUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiScopeUserResponse> MyScopesUserAsync(global::Clarifai.Api.MyScopesUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_MyScopesUser, null, options, request);
+      }
+      public virtual global::Clarifai.Api.MultiScopeRootResponse MyScopesRoot(global::Clarifai.Api.MyScopesRootRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MyScopesRoot(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.MultiScopeRootResponse MyScopesRoot(global::Clarifai.Api.MyScopesRootRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_MyScopesRoot, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiScopeRootResponse> MyScopesRootAsync(global::Clarifai.Api.MyScopesRootRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MyScopesRootAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiScopeRootResponse> MyScopesRootAsync(global::Clarifai.Api.MyScopesRootRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_MyScopesRoot, null, options, request);
       }
       /// <summary>
       /// List all auth scopes available to me as a user.
@@ -7568,6 +7686,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListModelInputs, serviceImpl.ListModelInputs)
           .AddMethod(__Method_GetModelVersion, serviceImpl.GetModelVersion)
           .AddMethod(__Method_ListModelVersions, serviceImpl.ListModelVersions)
+          .AddMethod(__Method_PostModelVersionsPublish, serviceImpl.PostModelVersionsPublish)
+          .AddMethod(__Method_DeleteModelVersionsUnPublish, serviceImpl.DeleteModelVersionsUnPublish)
           .AddMethod(__Method_PostModelVersions, serviceImpl.PostModelVersions)
           .AddMethod(__Method_PatchModelVersions, serviceImpl.PatchModelVersions)
           .AddMethod(__Method_DeleteModelVersion, serviceImpl.DeleteModelVersion)
@@ -7595,6 +7715,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostKeys, serviceImpl.PostKeys)
           .AddMethod(__Method_PatchKeys, serviceImpl.PatchKeys)
           .AddMethod(__Method_MyScopes, serviceImpl.MyScopes)
+          .AddMethod(__Method_MyScopesUser, serviceImpl.MyScopesUser)
+          .AddMethod(__Method_MyScopesRoot, serviceImpl.MyScopesRoot)
           .AddMethod(__Method_ListScopes, serviceImpl.ListScopes)
           .AddMethod(__Method_GetApp, serviceImpl.GetApp)
           .AddMethod(__Method_ListApps, serviceImpl.ListApps)
@@ -7695,6 +7817,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListModelInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.ListModelInputs));
       serviceBinder.AddMethod(__Method_GetModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersion));
       serviceBinder.AddMethod(__Method_ListModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.ListModelVersions));
+      serviceBinder.AddMethod(__Method_PostModelVersionsPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostModelVersionsPublish));
+      serviceBinder.AddMethod(__Method_DeleteModelVersionsUnPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersionsUnPublish));
       serviceBinder.AddMethod(__Method_PostModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModelVersions));
       serviceBinder.AddMethod(__Method_PatchModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.PatchModelVersions));
       serviceBinder.AddMethod(__Method_DeleteModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersion));
@@ -7722,6 +7846,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostKeys, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostKeysRequest, global::Clarifai.Api.MultiKeyResponse>(serviceImpl.PostKeys));
       serviceBinder.AddMethod(__Method_PatchKeys, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchKeysRequest, global::Clarifai.Api.MultiKeyResponse>(serviceImpl.PatchKeys));
       serviceBinder.AddMethod(__Method_MyScopes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.MyScopesRequest, global::Clarifai.Api.MultiScopeResponse>(serviceImpl.MyScopes));
+      serviceBinder.AddMethod(__Method_MyScopesUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.MyScopesUserRequest, global::Clarifai.Api.MultiScopeUserResponse>(serviceImpl.MyScopesUser));
+      serviceBinder.AddMethod(__Method_MyScopesRoot, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.MyScopesRootRequest, global::Clarifai.Api.MultiScopeRootResponse>(serviceImpl.MyScopesRoot));
       serviceBinder.AddMethod(__Method_ListScopes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListScopesRequest, global::Clarifai.Api.MultiScopeDepsResponse>(serviceImpl.ListScopes));
       serviceBinder.AddMethod(__Method_GetApp, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAppRequest, global::Clarifai.Api.SingleAppResponse>(serviceImpl.GetApp));
       serviceBinder.AddMethod(__Method_ListApps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAppsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.ListApps));
