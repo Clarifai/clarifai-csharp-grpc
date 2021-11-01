@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <PackageId>ClarifaiGrpc</PackageId>
-        <PackageVersion>7.9.0</PackageVersion>
+        <PackageVersion>7.10.0</PackageVersion>
         <PackageProjectUrl>https://github.com/Clarifai/clarifai-csharp-grpc</PackageProjectUrl>
         <PackageLicenceUrl>https://github.com/Clarifai/clarifai-csharp-grpc/blob/master/LICENSE</PackageLicenceUrl>
         <Authors>Clarifai</Authors>
@@ -17,7 +17,7 @@
     <ItemGroup>
       <PackageReference Include="Google.Api.Gax.Grpc" Version="3.0.0" />
       <PackageReference Include="Google.Protobuf" Version="3.12.3" />
-      <PackageReference Include="Grpc.Core" Version="2.30.0" />
+      <PackageReference Include="Grpc.Core" Version="2.41.1" />
     </ItemGroup>
 
 </Project>
