@@ -80,13 +80,19 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelsRequest> __Marshaller_clarifai_api_PatchModelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelRequest> __Marshaller_clarifai_api_DeleteModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelsRequest> __Marshaller_clarifai_api_DeleteModelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelToolkitsRequest> __Marshaller_clarifai_api_PatchModelToolkitsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelToolkitsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelToolkitResponse> __Marshaller_clarifai_api_MultiModelToolkitResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelToolkitResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelUseCasesRequest> __Marshaller_clarifai_api_PatchModelUseCasesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelUseCasesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelUseCaseResponse> __Marshaller_clarifai_api_MultiModelUseCaseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelUseCaseResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelLanguagesRequest> __Marshaller_clarifai_api_PatchModelLanguagesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelLanguagesRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelLanguageResponse> __Marshaller_clarifai_api_MultiModelLanguageResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelLanguageResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListModelInputsRequest> __Marshaller_clarifai_api_ListModelInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelInputsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionRequest> __Marshaller_clarifai_api_GetModelVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelVersionRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionResponse> __Marshaller_clarifai_api_SingleModelVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelVersionResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionsRequest> __Marshaller_clarifai_api_ListModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionResponse> __Marshaller_clarifai_api_MultiModelVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelVersionResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsPublishRequest> __Marshaller_clarifai_api_PostModelVersionsPublishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsPublishRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest> __Marshaller_clarifai_api_DeleteModelVersionsUnpublishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelVersionsUnpublishRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsUnPublishRequest> __Marshaller_clarifai_api_PostModelVersionsUnPublishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsUnPublishRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsRequest> __Marshaller_clarifai_api_PostModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelVersionsRequest> __Marshaller_clarifai_api_PatchModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelVersionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionRequest> __Marshaller_clarifai_api_DeleteModelVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelVersionRequest.Parser.ParseFrom);
@@ -515,6 +521,27 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_DeleteModelsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
+    static readonly grpc::Method<global::Clarifai.Api.PatchModelToolkitsRequest, global::Clarifai.Api.MultiModelToolkitResponse> __Method_PatchModelToolkits = new grpc::Method<global::Clarifai.Api.PatchModelToolkitsRequest, global::Clarifai.Api.MultiModelToolkitResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchModelToolkits",
+        __Marshaller_clarifai_api_PatchModelToolkitsRequest,
+        __Marshaller_clarifai_api_MultiModelToolkitResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchModelUseCasesRequest, global::Clarifai.Api.MultiModelUseCaseResponse> __Method_PatchModelUseCases = new grpc::Method<global::Clarifai.Api.PatchModelUseCasesRequest, global::Clarifai.Api.MultiModelUseCaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchModelUseCases",
+        __Marshaller_clarifai_api_PatchModelUseCasesRequest,
+        __Marshaller_clarifai_api_MultiModelUseCaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchModelLanguagesRequest, global::Clarifai.Api.MultiModelLanguageResponse> __Method_PatchModelLanguages = new grpc::Method<global::Clarifai.Api.PatchModelLanguagesRequest, global::Clarifai.Api.MultiModelLanguageResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchModelLanguages",
+        __Marshaller_clarifai_api_PatchModelLanguagesRequest,
+        __Marshaller_clarifai_api_MultiModelLanguageResponse);
+
     static readonly grpc::Method<global::Clarifai.Api.ListModelInputsRequest, global::Clarifai.Api.MultiInputResponse> __Method_ListModelInputs = new grpc::Method<global::Clarifai.Api.ListModelInputsRequest, global::Clarifai.Api.MultiInputResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -543,11 +570,11 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PostModelVersionsPublishRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
-    static readonly grpc::Method<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModelVersionsUnPublish = new grpc::Method<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest, global::Clarifai.Api.Status.BaseResponse>(
+    static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsUnPublishRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostModelVersionsUnPublish = new grpc::Method<global::Clarifai.Api.PostModelVersionsUnPublishRequest, global::Clarifai.Api.Status.BaseResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "DeleteModelVersionsUnPublish",
-        __Marshaller_clarifai_api_DeleteModelVersionsUnpublishRequest,
+        "PostModelVersionsUnPublish",
+        __Marshaller_clarifai_api_PostModelVersionsUnPublishRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse> __Method_PostModelVersions = new grpc::Method<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse>(
@@ -1584,6 +1611,39 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Update model toolkits tags
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelToolkitResponse> PatchModelToolkits(global::Clarifai.Api.PatchModelToolkitsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Update model use_cases tags
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelUseCaseResponse> PatchModelUseCases(global::Clarifai.Api.PatchModelUseCasesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Update model languages tags
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelLanguageResponse> PatchModelLanguages(global::Clarifai.Api.PatchModelLanguagesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// List all the inputs.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -1621,7 +1681,7 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModelVersionsUnPublish(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsUnPublish(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -4482,6 +4542,138 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteModels, null, options, request);
       }
       /// <summary>
+      /// Update model toolkits tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelToolkitResponse PatchModelToolkits(global::Clarifai.Api.PatchModelToolkitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelToolkits(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model toolkits tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelToolkitResponse PatchModelToolkits(global::Clarifai.Api.PatchModelToolkitsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchModelToolkits, null, options, request);
+      }
+      /// <summary>
+      /// Update model toolkits tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelToolkitResponse> PatchModelToolkitsAsync(global::Clarifai.Api.PatchModelToolkitsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelToolkitsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model toolkits tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelToolkitResponse> PatchModelToolkitsAsync(global::Clarifai.Api.PatchModelToolkitsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchModelToolkits, null, options, request);
+      }
+      /// <summary>
+      /// Update model use_cases tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelUseCaseResponse PatchModelUseCases(global::Clarifai.Api.PatchModelUseCasesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelUseCases(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model use_cases tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelUseCaseResponse PatchModelUseCases(global::Clarifai.Api.PatchModelUseCasesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchModelUseCases, null, options, request);
+      }
+      /// <summary>
+      /// Update model use_cases tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelUseCaseResponse> PatchModelUseCasesAsync(global::Clarifai.Api.PatchModelUseCasesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelUseCasesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model use_cases tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelUseCaseResponse> PatchModelUseCasesAsync(global::Clarifai.Api.PatchModelUseCasesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchModelUseCases, null, options, request);
+      }
+      /// <summary>
+      /// Update model languages tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelLanguageResponse PatchModelLanguages(global::Clarifai.Api.PatchModelLanguagesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelLanguages(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model languages tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelLanguageResponse PatchModelLanguages(global::Clarifai.Api.PatchModelLanguagesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchModelLanguages, null, options, request);
+      }
+      /// <summary>
+      /// Update model languages tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelLanguageResponse> PatchModelLanguagesAsync(global::Clarifai.Api.PatchModelLanguagesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelLanguagesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model languages tags
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelLanguageResponse> PatchModelLanguagesAsync(global::Clarifai.Api.PatchModelLanguagesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchModelLanguages, null, options, request);
+      }
+      /// <summary>
       /// List all the inputs.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -4629,21 +4821,21 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsPublish, null, options, request);
       }
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModelVersionsUnPublish(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsUnPublish(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return DeleteModelVersionsUnPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return PostModelVersionsUnPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModelVersionsUnPublish(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::CallOptions options)
+      public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsUnPublish(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteModelVersionsUnPublish, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_PostModelVersionsUnPublish, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModelVersionsUnPublishAsync(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsUnPublishAsync(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return DeleteModelVersionsUnPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return PostModelVersionsUnPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModelVersionsUnPublishAsync(global::Clarifai.Api.DeleteModelVersionsUnpublishRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsUnPublishAsync(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteModelVersionsUnPublish, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsUnPublish, null, options, request);
       }
       /// <summary>
       /// Create a new model version to trigger training of the model.
@@ -7683,11 +7875,14 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchModels, serviceImpl.PatchModels)
           .AddMethod(__Method_DeleteModel, serviceImpl.DeleteModel)
           .AddMethod(__Method_DeleteModels, serviceImpl.DeleteModels)
+          .AddMethod(__Method_PatchModelToolkits, serviceImpl.PatchModelToolkits)
+          .AddMethod(__Method_PatchModelUseCases, serviceImpl.PatchModelUseCases)
+          .AddMethod(__Method_PatchModelLanguages, serviceImpl.PatchModelLanguages)
           .AddMethod(__Method_ListModelInputs, serviceImpl.ListModelInputs)
           .AddMethod(__Method_GetModelVersion, serviceImpl.GetModelVersion)
           .AddMethod(__Method_ListModelVersions, serviceImpl.ListModelVersions)
           .AddMethod(__Method_PostModelVersionsPublish, serviceImpl.PostModelVersionsPublish)
-          .AddMethod(__Method_DeleteModelVersionsUnPublish, serviceImpl.DeleteModelVersionsUnPublish)
+          .AddMethod(__Method_PostModelVersionsUnPublish, serviceImpl.PostModelVersionsUnPublish)
           .AddMethod(__Method_PostModelVersions, serviceImpl.PostModelVersions)
           .AddMethod(__Method_PatchModelVersions, serviceImpl.PatchModelVersions)
           .AddMethod(__Method_DeleteModelVersion, serviceImpl.DeleteModelVersion)
@@ -7814,11 +8009,14 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchModels, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelsRequest, global::Clarifai.Api.MultiModelResponse>(serviceImpl.PatchModels));
       serviceBinder.AddMethod(__Method_DeleteModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModel));
       serviceBinder.AddMethod(__Method_DeleteModels, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModels));
+      serviceBinder.AddMethod(__Method_PatchModelToolkits, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelToolkitsRequest, global::Clarifai.Api.MultiModelToolkitResponse>(serviceImpl.PatchModelToolkits));
+      serviceBinder.AddMethod(__Method_PatchModelUseCases, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelUseCasesRequest, global::Clarifai.Api.MultiModelUseCaseResponse>(serviceImpl.PatchModelUseCases));
+      serviceBinder.AddMethod(__Method_PatchModelLanguages, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelLanguagesRequest, global::Clarifai.Api.MultiModelLanguageResponse>(serviceImpl.PatchModelLanguages));
       serviceBinder.AddMethod(__Method_ListModelInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.ListModelInputs));
       serviceBinder.AddMethod(__Method_GetModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersion));
       serviceBinder.AddMethod(__Method_ListModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.ListModelVersions));
       serviceBinder.AddMethod(__Method_PostModelVersionsPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostModelVersionsPublish));
-      serviceBinder.AddMethod(__Method_DeleteModelVersionsUnPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionsUnpublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersionsUnPublish));
+      serviceBinder.AddMethod(__Method_PostModelVersionsUnPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsUnPublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostModelVersionsUnPublish));
       serviceBinder.AddMethod(__Method_PostModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModelVersions));
       serviceBinder.AddMethod(__Method_PatchModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.PatchModelVersions));
       serviceBinder.AddMethod(__Method_DeleteModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersion));
