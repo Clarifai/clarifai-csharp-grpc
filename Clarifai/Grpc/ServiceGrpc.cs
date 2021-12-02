@@ -1217,7 +1217,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Add a new tranlsation for this concept.
+      /// Add a new translation for this concept.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1567,7 +1567,6 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Add a models to an app.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1676,11 +1675,23 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// PostModelVersionsPublish
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsPublish(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// PostModelVersionsUnPublish
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsUnPublish(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -1688,7 +1699,6 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Create a new model version to trigger training of the model.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1698,6 +1708,12 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// PatchModelVersions
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelVersionResponse> PatchModelVersions(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -1747,11 +1763,23 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// GetModelVersionInputExample
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelVersionInputExampleResponse> GetModelVersionInputExample(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// ListModelVersionInputExamples
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelVersionInputExampleResponse> ListModelVersionInputExamples(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -1834,6 +1862,12 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// Compare embeddings distances using a workflow
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> PostWorkflowResultsSimilarity(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -2143,6 +2177,12 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// DeleteAnnotationSearchMetrics
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationSearchMetrics(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -2408,11 +2448,23 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// PostStatValues
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiStatValueResponse> PostStatValues(global::Clarifai.Api.PostStatValuesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// PostStatValuesAggregate
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiStatValueAggregateResponse> PostStatValuesAggregate(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -2966,7 +3018,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListConceptLanguages, null, options, request);
       }
       /// <summary>
-      /// Add a new tranlsation for this concept.
+      /// Add a new translation for this concept.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2978,7 +3030,7 @@ namespace Clarifai.Api {
         return PostConceptLanguages(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add a new tranlsation for this concept.
+      /// Add a new translation for this concept.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2988,7 +3040,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostConceptLanguages, null, options, request);
       }
       /// <summary>
-      /// Add a new tranlsation for this concept.
+      /// Add a new translation for this concept.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3000,7 +3052,7 @@ namespace Clarifai.Api {
         return PostConceptLanguagesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add a new tranlsation for this concept.
+      /// Add a new translation for this concept.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4363,7 +4415,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a models to an app.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4376,7 +4427,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a models to an app.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4387,7 +4437,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a models to an app.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4400,7 +4449,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a models to an app.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4805,41 +4853,96 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListModelVersions, null, options, request);
       }
+      /// <summary>
+      /// PostModelVersionsPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsPublish(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostModelVersionsPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostModelVersionsPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsPublish(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostModelVersionsPublish, null, options, request);
       }
+      /// <summary>
+      /// PostModelVersionsPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsPublishAsync(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostModelVersionsPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostModelVersionsPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsPublishAsync(global::Clarifai.Api.PostModelVersionsPublishRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsPublish, null, options, request);
       }
+      /// <summary>
+      /// PostModelVersionsUnPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsUnPublish(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostModelVersionsUnPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostModelVersionsUnPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.Status.BaseResponse PostModelVersionsUnPublish(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostModelVersionsUnPublish, null, options, request);
       }
+      /// <summary>
+      /// PostModelVersionsUnPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsUnPublishAsync(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostModelVersionsUnPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostModelVersionsUnPublish
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostModelVersionsUnPublishAsync(global::Clarifai.Api.PostModelVersionsUnPublishRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsUnPublish, null, options, request);
       }
       /// <summary>
       /// Create a new model version to trigger training of the model.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4852,7 +4955,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Create a new model version to trigger training of the model.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4863,7 +4965,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Create a new model version to trigger training of the model.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4876,7 +4977,6 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Create a new model version to trigger training of the model.
-      /// FIXME(zeiler): this should have been a plural response.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4885,18 +4985,46 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersions, null, options, request);
       }
+      /// <summary>
+      /// PatchModelVersions
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiModelVersionResponse PatchModelVersions(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PatchModelVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PatchModelVersions
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiModelVersionResponse PatchModelVersions(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PatchModelVersions, null, options, request);
       }
+      /// <summary>
+      /// PatchModelVersions
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionResponse> PatchModelVersionsAsync(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PatchModelVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PatchModelVersions
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionResponse> PatchModelVersionsAsync(global::Clarifai.Api.PatchModelVersionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PatchModelVersions, null, options, request);
@@ -5077,34 +5205,90 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListModelReferences, null, options, request);
       }
+      /// <summary>
+      /// GetModelVersionInputExample
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.SingleModelVersionInputExampleResponse GetModelVersionInputExample(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetModelVersionInputExample(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// GetModelVersionInputExample
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.SingleModelVersionInputExampleResponse GetModelVersionInputExample(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetModelVersionInputExample, null, options, request);
       }
+      /// <summary>
+      /// GetModelVersionInputExample
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionInputExampleResponse> GetModelVersionInputExampleAsync(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetModelVersionInputExampleAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// GetModelVersionInputExample
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionInputExampleResponse> GetModelVersionInputExampleAsync(global::Clarifai.Api.GetModelVersionInputExampleRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetModelVersionInputExample, null, options, request);
       }
+      /// <summary>
+      /// ListModelVersionInputExamples
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiModelVersionInputExampleResponse ListModelVersionInputExamples(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ListModelVersionInputExamples(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// ListModelVersionInputExamples
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiModelVersionInputExampleResponse ListModelVersionInputExamples(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_ListModelVersionInputExamples, null, options, request);
       }
+      /// <summary>
+      /// ListModelVersionInputExamples
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionInputExampleResponse> ListModelVersionInputExamplesAsync(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ListModelVersionInputExamplesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// ListModelVersionInputExamples
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionInputExampleResponse> ListModelVersionInputExamplesAsync(global::Clarifai.Api.ListModelVersionInputExamplesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListModelVersionInputExamples, null, options, request);
@@ -5417,18 +5601,46 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostWorkflowResults, null, options, request);
       }
+      /// <summary>
+      /// Compare embeddings distances using a workflow
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.PostWorkflowResultsSimilarityResponse PostWorkflowResultsSimilarity(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostWorkflowResultsSimilarity(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Compare embeddings distances using a workflow
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.PostWorkflowResultsSimilarityResponse PostWorkflowResultsSimilarity(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostWorkflowResultsSimilarity, null, options, request);
       }
+      /// <summary>
+      /// Compare embeddings distances using a workflow
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> PostWorkflowResultsSimilarityAsync(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostWorkflowResultsSimilarityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Compare embeddings distances using a workflow
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> PostWorkflowResultsSimilarityAsync(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostWorkflowResultsSimilarity, null, options, request);
@@ -6641,18 +6853,46 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListAnnotationSearchMetrics, null, options, request);
       }
+      /// <summary>
+      /// DeleteAnnotationSearchMetrics
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationSearchMetrics(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteAnnotationSearchMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// DeleteAnnotationSearchMetrics
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationSearchMetrics(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteAnnotationSearchMetrics, null, options, request);
       }
+      /// <summary>
+      /// DeleteAnnotationSearchMetrics
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationSearchMetricsAsync(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeleteAnnotationSearchMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// DeleteAnnotationSearchMetrics
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationSearchMetricsAsync(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteAnnotationSearchMetrics, null, options, request);
@@ -7697,34 +7937,90 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteCollectors, null, options, request);
       }
+      /// <summary>
+      /// PostStatValues
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiStatValueResponse PostStatValues(global::Clarifai.Api.PostStatValuesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostStatValues(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostStatValues
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiStatValueResponse PostStatValues(global::Clarifai.Api.PostStatValuesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostStatValues, null, options, request);
       }
+      /// <summary>
+      /// PostStatValues
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueResponse> PostStatValuesAsync(global::Clarifai.Api.PostStatValuesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostStatValuesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostStatValues
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueResponse> PostStatValuesAsync(global::Clarifai.Api.PostStatValuesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostStatValues, null, options, request);
       }
+      /// <summary>
+      /// PostStatValuesAggregate
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiStatValueAggregateResponse PostStatValuesAggregate(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostStatValuesAggregate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostStatValuesAggregate
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Clarifai.Api.MultiStatValueAggregateResponse PostStatValuesAggregate(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostStatValuesAggregate, null, options, request);
       }
+      /// <summary>
+      /// PostStatValuesAggregate
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueAggregateResponse> PostStatValuesAggregateAsync(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostStatValuesAggregateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostStatValuesAggregate
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueAggregateResponse> PostStatValuesAggregateAsync(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostStatValuesAggregate, null, options, request);

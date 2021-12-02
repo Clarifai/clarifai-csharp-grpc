@@ -35,10 +35,11 @@ namespace Clarifai.Auth.Util {
             "cmlmYWkuYXV0aC5zY29wZS5TOlUKDGNsX2F1dGhfdHlwZRIeLmdvb2dsZS5w",
             "cm90b2J1Zi5NZXRob2RPcHRpb25zGMPzBCABKA4yHS5jbGFyaWZhaS5hdXRo",
             "LnR5cGVzLkF1dGhUeXBlOj0KEmNsX3ByaXZhdGVfbWVzc2FnZRIfLmdvb2ds",
-            "ZS5wcm90b2J1Zi5NZXNzYWdlT3B0aW9ucxjE8wQgASgIQmUKG2NvbS5jbGFy",
-            "aWZhaS5ncnBjLmF1dGgudXRpbFABWj1naXRodWIuY29tL0NsYXJpZmFpL2Ns",
-            "YXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXV0aC91dGlsogIEQ0FJ",
-            "UGIGcHJvdG8z"));
+            "ZS5wcm90b2J1Zi5NZXNzYWdlT3B0aW9ucxjE8wQgASgIQp4BChtjb20uY2xh",
+            "cmlmYWkuZ3JwYy5hdXRoLnV0aWxQAVp2Z2l0aHViLmNvbS9DbGFyaWZhaS9j",
+            "bGFyaWZhaS1nby1ncnBjL3Byb3RvL2NsYXJpZmFpL2F1dGgvZ2l0aHViLmNv",
+            "bS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3RvL2NsYXJpZmFpL2F1",
+            "dGgvdXRpbKICBENBSVBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Auth.Scope.ScopeReflection.Descriptor, global::Clarifai.Auth.Types.TypesReflection.Descriptor, global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pb::Extension[] { ExtensionExtensions.ClPrivateField, ExtensionExtensions.ClPrivateRpc, ExtensionExtensions.ClDependingScopes, ExtensionExtensions.ClAuthType, ExtensionExtensions.ClPrivateMessage }, null));
