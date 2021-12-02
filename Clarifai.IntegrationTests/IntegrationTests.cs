@@ -194,6 +194,7 @@ namespace Clarifai.IntegrationTests
             Assert.AreEqual(StatusCode.InputDownloadFailed, response.Outputs[1].Status.Code);
         }
 
+        [Ignore]
         [Test]
         public void PostPatchAndDeleteInput()
         {
