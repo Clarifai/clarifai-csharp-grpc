@@ -273,306 +273,299 @@ namespace Clarifai.Api {
             "dHkSDgoGYXBwX2lkGA0gASgJEg8KB3VzZXJfaWQYDiABKAkSLwoLbW9kaWZp",
             "ZWRfYXQYDyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEikKCG1l",
             "dGFkYXRhGBAgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdBIPCgdsaWNl",
-            "bnNlGBEgASgJSgQICRAKIuABChVQcmV0cmFpbmVkTW9kZWxDb25maWcSCgoC",
-            "aWQYASABKAkSDAoEdHlwZRgCIAEoCRIxChBpbnB1dF9maWVsZHNfbWFwGAMg",
-            "ASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdBIyChFvdXRwdXRfZmllbGRz",
-            "X21hcBgEIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3QSHAoUZGF0YV9w",
-            "cm92aWRlcl9wYXJhbXMYBSABKAkSFQoNbW9kZWxfemlwX3VybBgGIAEoCRIR",
-            "CglvdmVyd3JpdGUYByABKAgiPgoKVHJhaW5TdGF0cxIwCgpsb3NzX2N1cnZl",
-            "GAEgAygLMhwuY2xhcmlmYWkuYXBpLkxvc3NDdXJ2ZUVudHJ5IkIKDkxvc3ND",
-            "dXJ2ZUVudHJ5Eg0KBWVwb2NoGAEgASgNEhMKC2dsb2JhbF9zdGVwGAIgASgN",
-            "EgwKBGNvc3QYAyABKAIiMQoKTGFiZWxDb3VudBIUCgxjb25jZXB0X25hbWUY",
-            "ASABKAkSDQoFY291bnQYAiABKA0iTAoRTGFiZWxEaXN0cmlidXRpb24SNwoV",
-            "cG9zaXRpdmVfbGFiZWxfY291bnRzGAEgAygLMhguY2xhcmlmYWkuYXBpLkxh",
-            "YmVsQ291bnQiQgoXQ29vY2N1cnJlbmNlTWF0cml4RW50cnkSCwoDcm93GAEg",
-            "ASgJEgsKA2NvbBgCIAEoCRINCgVjb3VudBgDIAEoDSJgChJDb29jY3VycmVu",
-            "Y2VNYXRyaXgSNQoGbWF0cml4GAEgAygLMiUuY2xhcmlmYWkuYXBpLkNvb2Nj",
-            "dXJyZW5jZU1hdHJpeEVudHJ5EhMKC2NvbmNlcHRfaWRzGAIgAygJIk4KFENv",
-            "bmZ1c2lvbk1hdHJpeEVudHJ5EhEKCXByZWRpY3RlZBgBIAEoCRIOCgZhY3R1",
-            "YWwYAiABKAkSEwoFdmFsdWUYBCABKAJCBIC1GAEiWgoPQ29uZnVzaW9uTWF0",
-            "cml4EjIKBm1hdHJpeBgBIAMoCzIiLmNsYXJpZmFpLmFwaS5Db25mdXNpb25N",
-            "YXRyaXhFbnRyeRITCgtjb25jZXB0X2lkcxgCIAMoCSJ0CgNST0MSEQoDZnBy",
-            "GAEgAygCQgSAtRgBEhEKA3RwchgCIAMoAkIEgLUYARIYCgp0aHJlc2hvbGRz",
-            "GAMgAygCQgSAtRgBEhUKDWZwcl9wZXJfaW1hZ2UYBCADKAISFgoOZnByX3Bl",
-            "cl9vYmplY3QYBSADKAIiXwoUUHJlY2lzaW9uUmVjYWxsQ3VydmUSFAoGcmVj",
-            "YWxsGAEgAygCQgSAtRgBEhcKCXByZWNpc2lvbhgCIAMoAkIEgLUYARIYCgp0",
-            "aHJlc2hvbGRzGAMgAygCQgSAtRgBIuoCCg1CaW5hcnlNZXRyaWNzEhUKB251",
-            "bV9wb3MYASABKA1CBIC1GAESFQoHbnVtX25lZxgCIAEoDUIEgLUYARIVCgdu",
-            "dW1fdG90GAMgASgNQgSAtRgBEhUKB3JvY19hdWMYBCABKAJCBIC1GAESEAoC",
-            "ZjEYBSABKAJCBIC1GAESJgoHY29uY2VwdBgGIAEoCzIVLmNsYXJpZmFpLmFw",
-            "aS5Db25jZXB0EiQKCXJvY19jdXJ2ZRgHIAEoCzIRLmNsYXJpZmFpLmFwaS5S",
-            "T0MSQgoWcHJlY2lzaW9uX3JlY2FsbF9jdXJ2ZRgIIAEoCzIiLmNsYXJpZmFp",
-            "LmFwaS5QcmVjaXNpb25SZWNhbGxDdXJ2ZRIVCg1hdmdfcHJlY2lzaW9uGAkg",
-            "ASgCEhEKCWFyZWFfbmFtZRgKIAEoCRIQCghhcmVhX21pbhgLIAEoARIQCghh",
-            "cmVhX21heBgMIAEoARILCgNpb3UYDSABKAIikQEKDlRyYWNrZXJNZXRyaWNz",
-            "EhAKCG1vdF9tb3RhGAEgASgCEhgKEG1vdF9udW1fc3dpdGNoZXMYAiABKAUS",
-            "EgoKbW9yc2VfZnJhZxgDIAEoAhIVCg1hdmdfcHJlY2lzaW9uGAQgASgCEgwK",
-            "BGFpaWQYBSABKAkSGgoSdW5pcXVlX3N3aXRjaF9yYXRlGAYgASgCIu4BChBF",
-            "dmFsVGVzdFNldEVudHJ5Eg4KAmlkGAEgASgJQgIYARIPCgN1cmwYAiABKAlC",
-            "AhgBEiIKBWlucHV0GAYgASgLMhMuY2xhcmlmYWkuYXBpLklucHV0EjEKEnBy",
-            "ZWRpY3RlZF9jb25jZXB0cxgDIAMoCzIVLmNsYXJpZmFpLmFwaS5Db25jZXB0",
-            "EjQKFWdyb3VuZF90cnV0aF9jb25jZXB0cxgEIAMoCzIVLmNsYXJpZmFpLmFw",
-            "aS5Db25jZXB0EiwKCmFubm90YXRpb24YBSABKAsyGC5jbGFyaWZhaS5hcGku",
-            "QW5ub3RhdGlvbiLNAQoOTE9QUUV2YWxSZXN1bHQSCQoBaxgBIAEoBRIjChVy",
-            "ZWNhbGxfdnNfYnJ1dGVfZm9yY2UYAiABKAJCBIC1GAESKAoaa2VuZGFsbF90",
-            "YXVfdnNfYnJ1dGVfZm9yY2UYAyABKAJCBIC1GAESKAoabW9zdF9mcmVxdWVu",
-            "dF9jb2RlX3BlcmNlbnQYBCABKAJCBIC1GAESFwoJbG9wcV9uZGNnGAUgASgC",
-            "QgSAtRgBEh4KEGJydXRlX2ZvcmNlX25kY2cYBiABKAJCBIC1GAEijAMKDk1l",
-            "dHJpY3NTdW1tYXJ5EhkKDXRvcDFfYWNjdXJhY3kYASABKAJCAhgBEhkKDXRv",
-            "cDVfYWNjdXJhY3kYAiABKAJCAhgBEh8KEW1hY3JvX2F2Z19yb2NfYXVjGAMg",
-            "ASgCQgSAtRgBEh8KEW1hY3JvX3N0ZF9yb2NfYXVjGAQgASgCQgSAtRgBEiAK",
-            "Em1hY3JvX2F2Z19mMV9zY29yZRgFIAEoAkIEgLUYARIgChJtYWNyb19zdGRf",
-            "ZjFfc2NvcmUYBiABKAJCBIC1GAESIQoTbWFjcm9fYXZnX3ByZWNpc2lvbhgH",
-            "IAEoAkIEgLUYARIeChBtYWNyb19hdmdfcmVjYWxsGAggASgCQgSAtRgBEiEK",
-            "GW1lYW5fYXZnX3ByZWNpc2lvbl9pb3VfNTAYCiABKAISJAocbWVhbl9hdmdf",
-            "cHJlY2lzaW9uX2lvdV9yYW5nZRgLIAEoAhIyCgxsb3BxX21ldHJpY3MYCSAD",
-            "KAsyHC5jbGFyaWZhaS5hcGkuTE9QUUV2YWxSZXN1bHQirwQKC0V2YWxNZXRy",
-            "aWNzEisKBnN0YXR1cxgBIAEoCzIbLmNsYXJpZmFpLmFwaS5zdGF0dXMuU3Rh",
-            "dHVzEgoKAmlkGAogASgJEi0KB3N1bW1hcnkYAiABKAsyHC5jbGFyaWZhaS5h",
-            "cGkuTWV0cmljc1N1bW1hcnkSNwoQY29uZnVzaW9uX21hdHJpeBgDIAEoCzId",
-            "LmNsYXJpZmFpLmFwaS5Db25mdXNpb25NYXRyaXgSPQoTY29vY2N1cnJlbmNl",
-            "X21hdHJpeBgEIAEoCzIgLmNsYXJpZmFpLmFwaS5Db29jY3VycmVuY2VNYXRy",
-            "aXgSNQoMbGFiZWxfY291bnRzGAUgASgLMh8uY2xhcmlmYWkuYXBpLkxhYmVs",
-            "RGlzdHJpYnV0aW9uEjMKDmJpbmFyeV9tZXRyaWNzGAYgAygLMhsuY2xhcmlm",
-            "YWkuYXBpLkJpbmFyeU1ldHJpY3MSMAoIdGVzdF9zZXQYByADKAsyHi5jbGFy",
-            "aWZhaS5hcGkuRXZhbFRlc3RTZXRFbnRyeRI0Cg9tZXRyaWNzX2J5X2FyZWEY",
-            "CCADKAsyGy5jbGFyaWZhaS5hcGkuQmluYXJ5TWV0cmljcxI1ChBtZXRyaWNz",
-            "X2J5X2NsYXNzGAkgAygLMhsuY2xhcmlmYWkuYXBpLkJpbmFyeU1ldHJpY3MS",
-            "NQoPdHJhY2tlcl9tZXRyaWNzGAsgAygLMhwuY2xhcmlmYWkuYXBpLlRyYWNr",
-            "ZXJNZXRyaWNzIrcBCgtGaWVsZHNWYWx1ZRIYChBjb25mdXNpb25fbWF0cml4",
-            "GAEgASgIEhsKE2Nvb2NjdXJyZW5jZV9tYXRyaXgYAiABKAgSFAoMbGFiZWxf",
-            "Y291bnRzGAMgASgIEhYKDmJpbmFyeV9tZXRyaWNzGAQgASgIEhAKCHRlc3Rf",
-            "c2V0GAUgASgIEhcKD21ldHJpY3NfYnlfYXJlYRgGIAEoCBIYChBtZXRyaWNz",
-            "X2J5X2NsYXNzGAcgASgIItsBCgZPdXRwdXQSCgoCaWQYASABKAkSKwoGc3Rh",
-            "dHVzGAIgASgLMhsuY2xhcmlmYWkuYXBpLnN0YXR1cy5TdGF0dXMSLgoKY3Jl",
-            "YXRlZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASIgoF",
-            "bW9kZWwYBCABKAsyEy5jbGFyaWZhaS5hcGkuTW9kZWwSIgoFaW5wdXQYBSAB",
-            "KAsyEy5jbGFyaWZhaS5hcGkuSW5wdXQSIAoEZGF0YRgGIAEoCzISLmNsYXJp",
-            "ZmFpLmFwaS5EYXRhIjQKCVNjb3BlRGVwcxINCgVzY29wZRgBIAEoCRIYChBk",
-            "ZXBlbmRpbmdfc2NvcGVzGAIgAygJIjoKDEVuZHBvaW50RGVwcxIQCghlbmRw",
-            "b2ludBgBIAEoCRIYChBkZXBlbmRpbmdfc2NvcGVzGAIgAygJImwKA0hpdBIT",
-            "CgVzY29yZRgBIAEoAkIEgLUYARIiCgVpbnB1dBgCIAEoCzITLmNsYXJpZmFp",
-            "LmFwaS5JbnB1dBIsCgphbm5vdGF0aW9uGAMgASgLMhguY2xhcmlmYWkuYXBp",
-            "LkFubm90YXRpb24ijQEKA0FuZBIiCgVpbnB1dBgBIAEoCzITLmNsYXJpZmFp",
-            "LmFwaS5JbnB1dBIkCgZvdXRwdXQYAiABKAsyFC5jbGFyaWZhaS5hcGkuT3V0",
-            "cHV0Eg4KBm5lZ2F0ZRgDIAEoCBIsCgphbm5vdGF0aW9uGAQgASgLMhguY2xh",
-            "cmlmYWkuYXBpLkFubm90YXRpb24ihAEKBVF1ZXJ5Eh8KBGFuZHMYASADKAsy",
-            "ES5jbGFyaWZhaS5hcGkuQW5kEhAKCGxhbmd1YWdlGAIgASgJEiUKB2ZpbHRl",
-            "cnMYAyADKAsyFC5jbGFyaWZhaS5hcGkuRmlsdGVyEiEKBXJhbmtzGAQgAygL",
-            "MhIuY2xhcmlmYWkuYXBpLlJhbmsi3gIKBlNlYXJjaBIiCgVxdWVyeRgBIAEo",
-            "CzITLmNsYXJpZmFpLmFwaS5RdWVyeRIKCgJpZBgCIAEoCRIWCg5hcHBsaWNh",
-            "dGlvbl9pZBgDIAEoCRIMCgRuYW1lGAQgASgJEikKBWFzX29mGAUgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIQCghnaXRfaGFzaBgGIAEoCRIu",
-            "CgpjcmVhdGVkX2F0GAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBIvCgttb2RpZmllZF9hdBgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXASEQoJYWxnb3JpdGhtGAkgASgJEgwKBHNhdmUYCiABKAgSEQoJbWlu",
-            "X3ZhbHVlGAsgASgCEiwKCnZpc2liaWxpdHkYDCABKAsyGC5jbGFyaWZhaS5h",
-            "cGkuVmlzaWJpbGl0eSKkAQoGRmlsdGVyEg4KBm5lZ2F0ZRgDIAEoCBIsCgph",
-            "bm5vdGF0aW9uGAQgASgLMhguY2xhcmlmYWkuYXBpLkFubm90YXRpb24SIgoF",
-            "aW5wdXQYBSABKAsyEy5jbGFyaWZhaS5hcGkuSW5wdXQSOAoXbGFzdF91cGRh",
-            "dGVkX3RpbWVfcmFuZ2UYBiABKAsyFy5jbGFyaWZhaS5hcGkuVGltZVJhbmdl",
-            "ImkKCVRpbWVSYW5nZRIuCgpzdGFydF90aW1lGAEgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgCIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXAiRAoEUmFuaxIOCgZuZWdhdGUYAyABKAgSLAoK",
-            "YW5ub3RhdGlvbhgEIAEoCzIYLmNsYXJpZmFpLmFwaS5Bbm5vdGF0aW9uIo0C",
-            "ChdBbm5vdGF0aW9uU2VhcmNoTWV0cmljcxIqCgxncm91bmRfdHJ1dGgYASAB",
-            "KAsyFC5jbGFyaWZhaS5hcGkuU2VhcmNoEiwKDnNlYXJjaF90b19ldmFsGAIg",
-            "ASgLMhQuY2xhcmlmYWkuYXBpLlNlYXJjaBIqCgdtZXRyaWNzGAMgASgLMhku",
-            "Y2xhcmlmYWkuYXBpLkV2YWxNZXRyaWNzEiAKBGRhdGEYBCABKAsyEi5jbGFy",
-            "aWZhaS5hcGkuRGF0YRIcChRhY3RpdmVfY29uY2VwdF9jb3VudBgFIAEoDRIs",
-            "Cgp2aXNpYmlsaXR5GAYgASgLMhguY2xhcmlmYWkuYXBpLlZpc2liaWxpdHki",
-            "kQEKBFRleHQSCwoDcmF3GAEgASgJEgsKA3VybBgCIAEoCRIbChNhbGxvd19k",
-            "dXBsaWNhdGVfdXJsGAMgASgIEicKBmhvc3RlZBgEIAEoCzIXLmNsYXJpZmFp",
-            "LmFwaS5Ib3N0ZWRVUkwSKQoJdGV4dF9pbmZvGAUgASgLMhYuY2xhcmlmYWku",
-            "YXBpLlRleHRJbmZvIjAKCFRleHRJbmZvEhIKCmNoYXJfY291bnQYASABKAUS",
-            "EAoIZW5jb2RpbmcYAiABKAki1gUKBFVzZXISCgoCaWQYASABKAkSGQoNcHJp",
-            "bWFyeV9lbWFpbBgCIAEoCUICGAESEgoKZmlyc3RfbmFtZRgDIAEoCRIRCgls",
-            "YXN0X25hbWUYBCABKAkSFAoMY29tcGFueV9uYW1lGAUgASgJEhEKCWpvYl90",
-            "aXRsZRgTIAEoCRIQCghqb2Jfcm9sZRgUIAEoCRIVCgliaWxsX3R5cGUYByAB",
-            "KAlCAhgBEi4KCmNyZWF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wEjkKEWRhdGVfZ2Rwcl9jb25zZW50GAggASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLlRpbWVzdGFtcEICGAESOAoQZGF0ZV90b3NfY29uc2VudBgJ",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCAhgBEj4KFmRhdGVf",
-            "bWFya2V0aW5nX2NvbnNlbnQYCiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
-            "ZXN0YW1wQgIYARItCghtZXRhZGF0YRgLIAEoCzIXLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJ1Y3RCAhgBEjcKD2VtYWlsX2FkZHJlc3NlcxgMIAMoCzIaLmNsYXJp",
-            "ZmFpLmFwaS5FbWFpbEFkZHJlc3NCAhgBEhgKDGlzX29yZ19hZG1pbhgOIAEo",
-            "CEICGAESIwoXdHdvX2ZhY3Rvcl9hdXRoX2VuYWJsZWQYDyABKAhCAhgBEhcK",
-            "C3RlYW1zX2NvdW50GBAgASgNQgIYARISCgppc19zdGFycmVkGBUgASgIEhIK",
-            "CnN0YXJfY291bnQYFiABKAUSLAoKdmlzaWJpbGl0eRgRIAEoCzIYLmNsYXJp",
-            "ZmFpLmFwaS5WaXNpYmlsaXR5Ei0KC3VzZXJfZGV0YWlsGBIgASgLMhguY2xh",
-            "cmlmYWkuYXBpLlVzZXJEZXRhaWxKBAgNEA4iqwMKClVzZXJEZXRhaWwSFQoN",
-            "cHJpbWFyeV9lbWFpbBgBIAEoCRIRCgliaWxsX3R5cGUYAiABKAkSNQoRZGF0",
-            "ZV9nZHByX2NvbnNlbnQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wEjQKEGRhdGVfdG9zX2NvbnNlbnQYBCABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuVGltZXN0YW1wEjoKFmRhdGVfbWFya2V0aW5nX2NvbnNlbnQYBSABKAsy",
-            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEikKCG1ldGFkYXRhGAYgASgL",
-            "MhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdBIzCg9lbWFpbF9hZGRyZXNzZXMY",
-            "ByADKAsyGi5jbGFyaWZhaS5hcGkuRW1haWxBZGRyZXNzEhQKDGlzX29yZ19h",
-            "ZG1pbhgIIAEoCBIfChd0d29fZmFjdG9yX2F1dGhfZW5hYmxlZBgJIAEoCBIT",
-            "Cgt0ZWFtc19jb3VudBgKIAEoDRIPCgdjb3VudHJ5GAsgASgJEg0KBXN0YXRl",
-            "GAwgASgJIlIKDEVtYWlsQWRkcmVzcxITCgVlbWFpbBgBIAEoCUIEgLUYARIV",
-            "CgdwcmltYXJ5GAIgASgIQgSAtRgBEhYKCHZlcmlmaWVkGAMgASgIQgSAtRgB",
-            "Ih0KCFBhc3N3b3JkEhEKCXBsYWludGV4dBgBIAEoCSKGAwoSUGFzc3dvcmRW",
-            "aW9sYXRpb25zEhYKDm1pbmltdW1fbGVuZ3RoGAEgASgIEhYKDm1heGltdW1f",
-            "bGVuZ3RoGAIgASgIEhkKEXVwcGVyX2Nhc2VfbmVlZGVkGAMgASgIEhkKEWxv",
-            "d2VyX2Nhc2VfbmVlZGVkGAQgASgIEhYKDm51bWVyaWNfbmVlZGVkGAUgASgI",
-            "Eh8KF25vbl9hbHBoYW51bWVyaWNfbmVlZGVkGAYgASgIEhYKDnBhc3N3b3Jk",
-            "X3JldXNlGAcgASgIEhUKDWV4Y2x1ZGVfbmFtZXMYCCABKAgSFQoNZXhjbHVk",
-            "ZV9lbWFpbBgJIAEoCBIcChRub19jb25mdXNpbmdfbGV0dGVycxgKIAEoCBIb",
-            "ChNub19zaW1wbGVfcGFzc3dvcmRzGAsgASgIEhgKEG5vX2NvbW1vbl92b2Nh",
-            "YnMYDCABKAgSGwoTbm9fb3ZlcmxhcF93aXRoX29sZBgNIAEoCBIZChFwYXNz",
-            "d29yZF9saWZlc3BhbhgOIAEoCCKuAQoFVmlkZW8SCwoDdXJsGAEgASgJEg4K",
-            "BmJhc2U2NBgCIAEoDBIbChNhbGxvd19kdXBsaWNhdGVfdXJsGAQgASgIEhUK",
-            "DXRodW1ibmFpbF91cmwYBSABKAkSJwoGaG9zdGVkGAYgASgLMhcuY2xhcmlm",
-            "YWkuYXBpLkhvc3RlZFVSTBIrCgp2aWRlb19pbmZvGAcgASgLMhcuY2xhcmlm",
-            "YWkuYXBpLlZpZGVvSW5mbyKOAQoJVmlkZW9JbmZvEg0KBXdpZHRoGAEgASgF",
-            "Eg4KBmhlaWdodBgCIAEoBRILCgNmcHMYAyABKAISFAoMdmlkZW9fZm9ybWF0",
-            "GAQgASgJEhAKCGJpdF9yYXRlGAUgASgFEhMKC2ZyYW1lX2NvdW50GAYgASgF",
-            "EhgKEGR1cmF0aW9uX3NlY29uZHMYByABKAIisQMKCFdvcmtmbG93EgoKAmlk",
-            "GAEgASgJEg4KBmFwcF9pZBgCIAEoCRIuCgpjcmVhdGVkX2F0GAMgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIpCgVub2RlcxgEIAMoCzIaLmNs",
-            "YXJpZmFpLmFwaS5Xb3JrZmxvd05vZGUSKQoIbWV0YWRhdGEYBSABKAsyFy5n",
-            "b29nbGUucHJvdG9idWYuU3RydWN0EiwKCnZpc2liaWxpdHkYBiABKAsyGC5j",
-            "bGFyaWZhaS5hcGkuVmlzaWJpbGl0eRIPCgd1c2VyX2lkGAcgASgJEi8KC21v",
-            "ZGlmaWVkX2F0GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIu",
-            "Cgd2ZXJzaW9uGAkgASgLMh0uY2xhcmlmYWkuYXBpLldvcmtmbG93VmVyc2lv",
-            "bhISCgppc19zdGFycmVkGAogASgIEhIKCnN0YXJfY291bnQYCyABKAUSEwoL",
-            "ZGVzY3JpcHRpb24YDCABKAkSDQoFbm90ZXMYDSABKAkSFwoJdXNlX2Nhc2Vz",
-            "GA4gAygJQgSAtRgBIt4CCg9Xb3JrZmxvd1ZlcnNpb24SCgoCaWQYASABKAkS",
-            "EwoLd29ya2Zsb3dfaWQYAiABKAkSLgoKY3JlYXRlZF9hdBgDIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLwoLbW9kaWZpZWRfYXQYBCABKAsy",
-            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEiwKCnZpc2liaWxpdHkYBSAB",
-            "KAsyGC5jbGFyaWZhaS5hcGkuVmlzaWJpbGl0eRIpCgVub2RlcxgGIAMoCzIa",
-            "LmNsYXJpZmFpLmFwaS5Xb3JrZmxvd05vZGUSKQoIbWV0YWRhdGEYByABKAsy",
-            "Fy5nb29nbGUucHJvdG9idWYuU3RydWN0Eg4KBmFwcF9pZBgIIAEoCRIPCgd1",
-            "c2VyX2lkGAkgASgJEhMKC2Rlc2NyaXB0aW9uGAogASgJEg8KB2xpY2Vuc2UY",
-            "CyABKAkihQEKDFdvcmtmbG93Tm9kZRIKCgJpZBgBIAEoCRIiCgVtb2RlbBgC",
-            "IAEoCzITLmNsYXJpZmFpLmFwaS5Nb2RlbBIsCgtub2RlX2lucHV0cxgDIAMo",
-            "CzIXLmNsYXJpZmFpLmFwaS5Ob2RlSW5wdXQSFwoPc3VwcHJlc3Nfb3V0cHV0",
-            "GAQgASgIIhwKCU5vZGVJbnB1dBIPCgdub2RlX2lkGAEgASgJIoECCg5Xb3Jr",
-            "Zmxvd1Jlc3VsdBIKCgJpZBgBIAEoCRIrCgZzdGF0dXMYAiABKAsyGy5jbGFy",
-            "aWZhaS5hcGkuc3RhdHVzLlN0YXR1cxIuCgpjcmVhdGVkX2F0GAMgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIiCgVtb2RlbBgEIAEoCzITLmNs",
-            "YXJpZmFpLmFwaS5Nb2RlbBIiCgVpbnB1dBgFIAEoCzITLmNsYXJpZmFpLmFw",
-            "aS5JbnB1dBIlCgdvdXRwdXRzGAYgAygLMhQuY2xhcmlmYWkuYXBpLk91dHB1",
-            "dBIXCg9zdXBwcmVzc19vdXRwdXQYByABKAgiGwoNV29ya2Zsb3dTdGF0ZRIK",
-            "CgJpZBgBIAEoCSKOAgoOQXBwRHVwbGljYXRpb24SCgoCaWQYASABKAkSEgoK",
-            "bmV3X2FwcF9pZBgCIAEoCRIUCgxuZXdfYXBwX25hbWUYAyABKAkSKwoGc3Rh",
-            "dHVzGAQgASgLMhsuY2xhcmlmYWkuYXBpLnN0YXR1cy5TdGF0dXMSLgoKY3Jl",
-            "YXRlZF9hdBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNAoQ",
-            "bGFzdF9tb2RpZmllZF9hdBgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXASMwoGZmlsdGVyGAcgASgLMiMuY2xhcmlmYWkuYXBpLkFwcER1cGxp",
-            "Y2F0aW9uRmlsdGVycyKKAQoVQXBwRHVwbGljYXRpb25GaWx0ZXJzEhMKC2Nv",
-            "cHlfaW5wdXRzGAEgASgIEhUKDWNvcHlfY29uY2VwdHMYAiABKAgSGAoQY29w",
-            "eV9hbm5vdGF0aW9ucxgDIAEoCBITCgtjb3B5X21vZGVscxgEIAEoCBIWCg5j",
-            "b3B5X3dvcmtmbG93cxgFIAEoCCLNBQoEVGFzaxIKCgJpZBgBIAEoCRIuCgpj",
-            "cmVhdGVkX2F0GAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIv",
-            "Cgttb2RpZmllZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASKQoEdHlwZRgEIAEoDjIbLmNsYXJpZmFpLmFwaS5UYXNrLlRhc2tUeXBl",
-            "EhMKC2Rlc2NyaXB0aW9uGAUgASgJEigKBndvcmtlchgGIAEoCzIYLmNsYXJp",
-            "ZmFpLmFwaS5UYXNrV29ya2VyEhMKC2NvbmNlcHRfaWRzGAcgAygJEjMKDGlu",
-            "cHV0X3NvdXJjZRgIIAEoCzIdLmNsYXJpZmFpLmFwaS5UYXNrSW5wdXRTb3Vy",
-            "Y2USEQoJc2FtcGxlX21zGAkgASgNEjMKDGFpX2Fzc2lzdGFudBgKIAEoCzId",
-            "LmNsYXJpZmFpLmFwaS5UYXNrQUlBc3Npc3RhbnQSKAoGcmV2aWV3GAsgASgL",
-            "MhguY2xhcmlmYWkuYXBpLlRhc2tSZXZpZXcSKwoGc3RhdHVzGAwgASgLMhsu",
-            "Y2xhcmlmYWkuYXBpLnN0YXR1cy5TdGF0dXMSDAoEbmFtZRgNIAEoCRI6ChBh",
-            "aV9hc3Npc3RfcGFyYW1zGA4gASgLMiAuY2xhcmlmYWkuYXBpLkFpQXNzaXN0",
-            "UGFyYW1ldGVycxIsCgp2aXNpYmlsaXR5GA8gASgLMhguY2xhcmlmYWkuYXBp",
-            "LlZpc2liaWxpdHkSDgoGYXBwX2lkGBAgASgJEg8KB3VzZXJfaWQYESABKAki",
-            "bAoIVGFza1R5cGUSEAoMVFlQRV9OT1RfU0VUEAASGwoXQ09OQ0VQVFNfQ0xB",
-            "U1NJRklDQVRJT04QARIaChZCT1VORElOR19CT1hfREVURUNUSU9OEAISFQoR",
-            "UE9MWUdPTl9ERVRFQ1RJT04QAyJgChJBaUFzc2lzdFBhcmFtZXRlcnMSFQoN",
-            "bWluX3RocmVzaG9sZBgBIAEoAhIVCg1tYXhfdGhyZXNob2xkGAIgASgCEhwK",
-            "FGNvbmNlcHRfcmVsYXRpb25faWRzGAMgAygJIpgCCgpUYXNrV29ya2VyEj0K",
-            "CHN0cmF0ZWd5GAEgASgOMisuY2xhcmlmYWkuYXBpLlRhc2tXb3JrZXIuVGFz",
-            "a1dvcmtlclN0cmF0ZWd5EhAKCHVzZXJfaWRzGAIgAygJElQKGXBhcnRpdGlv",
-            "bmVkX3N0cmF0ZWd5X2luZm8YAyABKAsyLy5jbGFyaWZhaS5hcGkuVGFza1dv",
-            "cmtlclBhcnRpdGlvbmVkU3RyYXRlZ3lJbmZvSAAiUgoSVGFza1dvcmtlclN0",
-            "cmF0ZWd5EhsKF1dPUktFUl9TVFJBVEVHWV9OT1RfU0VUEAASDwoLUEFSVElU",
-            "SU9ORUQQAhIICgRGVUxMEAMiBAgBEAFCDwoNc3RyYXRlZ3lfaW5mbyKpAgoh",
-            "VGFza1dvcmtlclBhcnRpdGlvbmVkU3RyYXRlZ3lJbmZvElsKBHR5cGUYASAB",
-            "KA4yTS5jbGFyaWZhaS5hcGkuVGFza1dvcmtlclBhcnRpdGlvbmVkU3RyYXRl",
-            "Z3lJbmZvLlRhc2tXb3JrZXJQYXJ0aXRpb25lZFN0cmF0ZWd5EhkKEXdvcmtl",
-            "cnNfcGVyX2lucHV0GAIgASgFEigKB3dlaWdodHMYAyABKAsyFy5nb29nbGUu",
-            "cHJvdG9idWYuU3RydWN0ImIKHVRhc2tXb3JrZXJQYXJ0aXRpb25lZFN0cmF0",
-            "ZWd5EicKI1BBUlRJVElPTkVEX1dPUktFUl9TVFJBVEVHWV9OT1RfU0VUEAAS",
-            "CgoGRVZFTkxZEAESDAoIV0VJR0hURUQQAiK2AQoPVGFza0lucHV0U291cmNl",
-            "Ej8KBHR5cGUYASABKA4yMS5jbGFyaWZhaS5hcGkuVGFza0lucHV0U291cmNl",
-            "LlRhc2tJbnB1dFNvdXJjZVR5cGUSCgoCaWQYAiABKAkiVgoTVGFza0lucHV0",
-            "U291cmNlVHlwZRIdChlJTlBVVF9TT1VSQ0VfVFlQRV9OT1RfU0VUEAASDgoK",
-            "QUxMX0lOUFVUUxABEhAKDFNBVkVEX1NFQVJDSBACIukCCgpUYXNrUmV2aWV3",
-            "Ej0KCHN0cmF0ZWd5GAEgASgOMisuY2xhcmlmYWkuYXBpLlRhc2tSZXZpZXcu",
-            "VGFza1Jldmlld1N0cmF0ZWd5EhAKCHVzZXJfaWRzGAIgAygJEkoKFG1hbnVh",
-            "bF9zdHJhdGVneV9pbmZvGAMgASgLMiouY2xhcmlmYWkuYXBpLlRhc2tSZXZp",
-            "ZXdNYW51YWxTdHJhdGVneUluZm9IABJQChdjb25zZW5zdXNfc3RyYXRlZ3lf",
-            "aW5mbxgEIAEoCzItLmNsYXJpZmFpLmFwaS5UYXNrUmV2aWV3Q29uc2Vuc3Vz",
-            "U3RyYXRlZ3lJbmZvSAAiWwoSVGFza1Jldmlld1N0cmF0ZWd5EiAKHFRBU0tf",
-            "UkVWSUVXX1NUUkFURUdZX05PVF9TRVQQABIICgROT05FEAESCgoGTUFOVUFM",
-            "EAISDQoJQ09OU0VOU1VTEANCDwoNc3RyYXRlZ3lfaW5mbyI5ChxUYXNrUmV2",
-            "aWV3TWFudWFsU3RyYXRlZ3lJbmZvEhkKEXNhbXBsZV9wZXJjZW50YWdlGAEg",
-            "ASgCIkMKH1Rhc2tSZXZpZXdDb25zZW5zdXNTdHJhdGVneUluZm8SGgoSYXBw",
-            "cm92YWxfdGhyZXNob2xkGAIgASgNSgQIARACIiYKD1Rhc2tBSUFzc2lzdGFu",
-            "dBITCgt3b3JrZmxvd19pZBgBIAEoCSK8AQoWVGFza1N0YXR1c0NvdW50UGVy",
-            "VXNlchIPCgd1c2VyX2lkGAEgASgJEhUKB3BlbmRpbmcYAiABKA1CBIC1GAES",
-            "HQoPYXdhaXRpbmdfcmV2aWV3GAMgASgNQgSAtRgBEhUKB3N1Y2Nlc3MYBCAB",
-            "KA1CBIC1GAESGwoNcmV2aWV3X2RlbmllZBgFIAEoDUIEgLUYARInChlhd2Fp",
-            "dGluZ19jb25zZW5zdXNfcmV2aWV3GAYgASgNQgSAtRgBIoECCglDb2xsZWN0",
-            "b3ISCgoCaWQYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkSLgoKY3JlYXRl",
-            "ZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASHQoVcHJl",
-            "X3F1ZXVlX3dvcmtmbG93X2lkGAQgASgJEh4KFnBvc3RfcXVldWVfd29ya2Zs",
-            "b3dfaWQYBSABKAkSNwoQY29sbGVjdG9yX3NvdXJjZRgGIAEoCzIdLmNsYXJp",
-            "ZmFpLmFwaS5Db2xsZWN0b3JTb3VyY2USKwoGc3RhdHVzGAcgASgLMhsuY2xh",
-            "cmlmYWkuYXBpLnN0YXR1cy5TdGF0dXMidAoPQ29sbGVjdG9yU291cmNlEmEK",
-            "J2FwaV9wb3N0X21vZGVsX291dHB1dHNfY29sbGVjdG9yX3NvdXJjZRgCIAEo",
-            "CzIwLmNsYXJpZmFpLmFwaS5BUElQb3N0TW9kZWxPdXRwdXRzQ29sbGVjdG9y",
-            "U291cmNlIpkBCiJBUElQb3N0TW9kZWxPdXRwdXRzQ29sbGVjdG9yU291cmNl",
-            "EhUKDW1vZGVsX3VzZXJfaWQYASABKAkSFAoMbW9kZWxfYXBwX2lkGAIgASgJ",
-            "EhAKCG1vZGVsX2lkGAMgASgJEhgKEG1vZGVsX3ZlcnNpb25faWQYBCABKAkS",
-            "GgoScG9zdF9pbnB1dHNfa2V5X2lkGAUgASgJIlIKCVN0YXRWYWx1ZRIoCgR0",
-            "aW1lGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBINCgV2YWx1",
-            "ZRgCIAEoAhIMCgR0YWdzGAMgAygJIqYBChhTdGF0VmFsdWVBZ2dyZWdhdGVS",
-            "ZXN1bHQSPwoVc3RhdF92YWx1ZV9hZ2dyZWdhdGVzGAEgAygLMiAuY2xhcmlm",
-            "YWkuYXBpLlN0YXRWYWx1ZUFnZ3JlZ2F0ZRJJChpzdGF0X3ZhbHVlX2FnZ3Jl",
-            "Z2F0ZV9xdWVyeRgCIAEoCzIlLmNsYXJpZmFpLmFwaS5TdGF0VmFsdWVBZ2dy",
-            "ZWdhdGVRdWVyeSJ0ChJTdGF0VmFsdWVBZ2dyZWdhdGUSKAoEdGltZRgBIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASFwoPYWdncmVnYXRlX3Zh",
-            "bHVlGAIgASgCEg0KBWNvdW50GAMgASgEEgwKBHRhZ3MYBCADKAkikQIKF1N0",
-            "YXRWYWx1ZUFnZ3JlZ2F0ZVF1ZXJ5EgwKBHRhZ3MYASADKAkSEgoKdGFnX2dy",
-            "b3VwcxgCIAMoCRI7ChNzdGF0X3ZhbHVlX2FnZ190eXBlGAMgASgOMh4uY2xh",
-            "cmlmYWkuYXBpLlN0YXRWYWx1ZUFnZ1R5cGUSOQoSc3RhdF90aW1lX2FnZ190",
-            "eXBlGAQgASgOMh0uY2xhcmlmYWkuYXBpLlN0YXRUaW1lQWdnVHlwZRIuCgpz",
-            "dGFydF90aW1lGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIs",
-            "CghlbmRfdGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAi",
-            "hwEKClZpc2liaWxpdHkSMwoIZ2V0dGFibGUYASABKA4yIS5jbGFyaWZhaS5h",
-            "cGkuVmlzaWJpbGl0eS5HZXR0YWJsZSJECghHZXR0YWJsZRIWChJVTktOT1dO",
-            "X1ZJU0lCSUxJVFkQABILCgdQUklWQVRFEAoSBwoDT1JHEB4SCgoGUFVCTElD",
-            "EDIiWAoOVHJlbmRpbmdNZXRyaWMSDwoHdXNlcl9pZBgBIAEoCRIOCgZhcHBf",
-            "aWQYAiABKAkSEQoJb2JqZWN0X2lkGAMgASgJEhIKCnZpZXdfY291bnQYBCAB",
-            "KAQiZgoLVGltZVNlZ21lbnQSCgoCaWQYASABKAkSIAoEZGF0YRgCIAEoCzIS",
-            "LmNsYXJpZmFpLmFwaS5EYXRhEikKCXRpbWVfaW5mbxgDIAEoCzIWLmNsYXJp",
-            "ZmFpLmFwaS5UaW1lSW5mbyJECghUaW1lSW5mbxISCgpudW1fZnJhbWVzGAEg",
-            "ASgNEhIKCmJlZ2luX3RpbWUYAiABKA0SEAoIZW5kX3RpbWUYAyABKA0qSAoQ",
-            "RXhwaXJhdGlvbkFjdGlvbhIdChlFWFBJUkFUSU9OX0FDVElPTl9OT1RfU0VU",
-            "EAASCQoFREVMQVkQARIKCgZFWFBJUlkQAipNCgxMaWNlbnNlU2NvcGUSGQoV",
-            "TElDRU5TRV9TQ09QRV9OT1RfU0VUEAASCwoHUFJFRElDVBABEgkKBVRSQUlO",
-            "EAISCgoGU0VBUkNIEAMqjwEKD1ZhbHVlQ29tcGFyYXRvchIdChlDT05DRVBU",
-            "X1RIUkVTSE9MRF9OT1RfU0VUEAASEAoMR1JFQVRFUl9USEFOEAESGQoVR1JF",
-            "QVRFUl9USEFOX09SX0VRVUFMEAISDQoJTEVTU19USEFOEAMSFgoSTEVTU19U",
-            "SEFOX09SX0VRVUFMEAQSCQoFRVFVQUwQBSozCg5FdmFsdWF0aW9uVHlwZRIS",
-            "Cg5DbGFzc2lmaWNhdGlvbhAAEg0KCURldGVjdGlvbhABKmYKDEFQSUV2ZW50",
-            "VHlwZRIaChZBUElfRVZFTlRfVFlQRV9OT1RfU0VUEAASEwoPT05fUFJFTV9Q",
-            "UkVESUNUEAESEQoNT05fUFJFTV9UUkFJThACEhIKDk9OX1BSRU1fU0VBUkNI",
-            "EAMqPAoRVXNhZ2VJbnRlcnZhbFR5cGUSCQoFdW5kZWYQABIHCgNkYXkQARIJ",
-            "CgVtb250aBACEggKBHllYXIQAyodCghSb2xlVHlwZRIICgRURUFNEAASBwoD",
-            "T1JHEAEqJAoQU3RhdFZhbHVlQWdnVHlwZRIHCgNTVU0QABIHCgNBVkcQASpg",
-            "Cg9TdGF0VGltZUFnZ1R5cGUSDwoLTk9fVElNRV9BR0cQABIICgRZRUFSEAES",
-            "CQoFTU9OVEgQAhIICgRXRUVLEAMSBwoDREFZEAQSCAoESE9VUhAFEgoKBk1J",
-            "TlVURRAGKmIKE1ZhbGlkYXRpb25FcnJvclR5cGUSIQodVkFMSURBVElPTl9F",
-            "UlJPUl9UWVBFX05PVF9TRVQQABIOCgpSRVNUUklDVEVEEAESDAoIREFUQUJB",
-            "U0UQAhIKCgZGT1JNQVQQA0JdChVjb20uY2xhcmlmYWkuZ3JwYy5hcGlQAVo7",
-            "Z2l0aHViLmNvbS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3RvL2Ns",
-            "YXJpZmFpL2FwaS9hcGmiAgRDQUlQYgZwcm90bzM="));
+            "bnNlGBEgASgJSgQICRAKIjEKCkxhYmVsQ291bnQSFAoMY29uY2VwdF9uYW1l",
+            "GAEgASgJEg0KBWNvdW50GAIgASgNIkwKEUxhYmVsRGlzdHJpYnV0aW9uEjcK",
+            "FXBvc2l0aXZlX2xhYmVsX2NvdW50cxgBIAMoCzIYLmNsYXJpZmFpLmFwaS5M",
+            "YWJlbENvdW50IkIKF0Nvb2NjdXJyZW5jZU1hdHJpeEVudHJ5EgsKA3JvdxgB",
+            "IAEoCRILCgNjb2wYAiABKAkSDQoFY291bnQYAyABKA0iYAoSQ29vY2N1cnJl",
+            "bmNlTWF0cml4EjUKBm1hdHJpeBgBIAMoCzIlLmNsYXJpZmFpLmFwaS5Db29j",
+            "Y3VycmVuY2VNYXRyaXhFbnRyeRITCgtjb25jZXB0X2lkcxgCIAMoCSJOChRD",
+            "b25mdXNpb25NYXRyaXhFbnRyeRIRCglwcmVkaWN0ZWQYASABKAkSDgoGYWN0",
+            "dWFsGAIgASgJEhMKBXZhbHVlGAQgASgCQgSAtRgBIloKD0NvbmZ1c2lvbk1h",
+            "dHJpeBIyCgZtYXRyaXgYASADKAsyIi5jbGFyaWZhaS5hcGkuQ29uZnVzaW9u",
+            "TWF0cml4RW50cnkSEwoLY29uY2VwdF9pZHMYAiADKAkidAoDUk9DEhEKA2Zw",
+            "chgBIAMoAkIEgLUYARIRCgN0cHIYAiADKAJCBIC1GAESGAoKdGhyZXNob2xk",
+            "cxgDIAMoAkIEgLUYARIVCg1mcHJfcGVyX2ltYWdlGAQgAygCEhYKDmZwcl9w",
+            "ZXJfb2JqZWN0GAUgAygCIl8KFFByZWNpc2lvblJlY2FsbEN1cnZlEhQKBnJl",
+            "Y2FsbBgBIAMoAkIEgLUYARIXCglwcmVjaXNpb24YAiADKAJCBIC1GAESGAoK",
+            "dGhyZXNob2xkcxgDIAMoAkIEgLUYASLqAgoNQmluYXJ5TWV0cmljcxIVCgdu",
+            "dW1fcG9zGAEgASgNQgSAtRgBEhUKB251bV9uZWcYAiABKA1CBIC1GAESFQoH",
+            "bnVtX3RvdBgDIAEoDUIEgLUYARIVCgdyb2NfYXVjGAQgASgCQgSAtRgBEhAK",
+            "AmYxGAUgASgCQgSAtRgBEiYKB2NvbmNlcHQYBiABKAsyFS5jbGFyaWZhaS5h",
+            "cGkuQ29uY2VwdBIkCglyb2NfY3VydmUYByABKAsyES5jbGFyaWZhaS5hcGku",
+            "Uk9DEkIKFnByZWNpc2lvbl9yZWNhbGxfY3VydmUYCCABKAsyIi5jbGFyaWZh",
+            "aS5hcGkuUHJlY2lzaW9uUmVjYWxsQ3VydmUSFQoNYXZnX3ByZWNpc2lvbhgJ",
+            "IAEoAhIRCglhcmVhX25hbWUYCiABKAkSEAoIYXJlYV9taW4YCyABKAESEAoI",
+            "YXJlYV9tYXgYDCABKAESCwoDaW91GA0gASgCIpEBCg5UcmFja2VyTWV0cmlj",
+            "cxIQCghtb3RfbW90YRgBIAEoAhIYChBtb3RfbnVtX3N3aXRjaGVzGAIgASgF",
+            "EhIKCm1vcnNlX2ZyYWcYAyABKAISFQoNYXZnX3ByZWNpc2lvbhgEIAEoAhIM",
+            "CgRhaWlkGAUgASgJEhoKEnVuaXF1ZV9zd2l0Y2hfcmF0ZRgGIAEoAiLuAQoQ",
+            "RXZhbFRlc3RTZXRFbnRyeRIOCgJpZBgBIAEoCUICGAESDwoDdXJsGAIgASgJ",
+            "QgIYARIiCgVpbnB1dBgGIAEoCzITLmNsYXJpZmFpLmFwaS5JbnB1dBIxChJw",
+            "cmVkaWN0ZWRfY29uY2VwdHMYAyADKAsyFS5jbGFyaWZhaS5hcGkuQ29uY2Vw",
+            "dBI0ChVncm91bmRfdHJ1dGhfY29uY2VwdHMYBCADKAsyFS5jbGFyaWZhaS5h",
+            "cGkuQ29uY2VwdBIsCgphbm5vdGF0aW9uGAUgASgLMhguY2xhcmlmYWkuYXBp",
+            "LkFubm90YXRpb24izQEKDkxPUFFFdmFsUmVzdWx0EgkKAWsYASABKAUSIwoV",
+            "cmVjYWxsX3ZzX2JydXRlX2ZvcmNlGAIgASgCQgSAtRgBEigKGmtlbmRhbGxf",
+            "dGF1X3ZzX2JydXRlX2ZvcmNlGAMgASgCQgSAtRgBEigKGm1vc3RfZnJlcXVl",
+            "bnRfY29kZV9wZXJjZW50GAQgASgCQgSAtRgBEhcKCWxvcHFfbmRjZxgFIAEo",
+            "AkIEgLUYARIeChBicnV0ZV9mb3JjZV9uZGNnGAYgASgCQgSAtRgBIowDCg5N",
+            "ZXRyaWNzU3VtbWFyeRIZCg10b3AxX2FjY3VyYWN5GAEgASgCQgIYARIZCg10",
+            "b3A1X2FjY3VyYWN5GAIgASgCQgIYARIfChFtYWNyb19hdmdfcm9jX2F1YxgD",
+            "IAEoAkIEgLUYARIfChFtYWNyb19zdGRfcm9jX2F1YxgEIAEoAkIEgLUYARIg",
+            "ChJtYWNyb19hdmdfZjFfc2NvcmUYBSABKAJCBIC1GAESIAoSbWFjcm9fc3Rk",
+            "X2YxX3Njb3JlGAYgASgCQgSAtRgBEiEKE21hY3JvX2F2Z19wcmVjaXNpb24Y",
+            "ByABKAJCBIC1GAESHgoQbWFjcm9fYXZnX3JlY2FsbBgIIAEoAkIEgLUYARIh",
+            "ChltZWFuX2F2Z19wcmVjaXNpb25faW91XzUwGAogASgCEiQKHG1lYW5fYXZn",
+            "X3ByZWNpc2lvbl9pb3VfcmFuZ2UYCyABKAISMgoMbG9wcV9tZXRyaWNzGAkg",
+            "AygLMhwuY2xhcmlmYWkuYXBpLkxPUFFFdmFsUmVzdWx0Iq8ECgtFdmFsTWV0",
+            "cmljcxIrCgZzdGF0dXMYASABKAsyGy5jbGFyaWZhaS5hcGkuc3RhdHVzLlN0",
+            "YXR1cxIKCgJpZBgKIAEoCRItCgdzdW1tYXJ5GAIgASgLMhwuY2xhcmlmYWku",
+            "YXBpLk1ldHJpY3NTdW1tYXJ5EjcKEGNvbmZ1c2lvbl9tYXRyaXgYAyABKAsy",
+            "HS5jbGFyaWZhaS5hcGkuQ29uZnVzaW9uTWF0cml4Ej0KE2Nvb2NjdXJyZW5j",
+            "ZV9tYXRyaXgYBCABKAsyIC5jbGFyaWZhaS5hcGkuQ29vY2N1cnJlbmNlTWF0",
+            "cml4EjUKDGxhYmVsX2NvdW50cxgFIAEoCzIfLmNsYXJpZmFpLmFwaS5MYWJl",
+            "bERpc3RyaWJ1dGlvbhIzCg5iaW5hcnlfbWV0cmljcxgGIAMoCzIbLmNsYXJp",
+            "ZmFpLmFwaS5CaW5hcnlNZXRyaWNzEjAKCHRlc3Rfc2V0GAcgAygLMh4uY2xh",
+            "cmlmYWkuYXBpLkV2YWxUZXN0U2V0RW50cnkSNAoPbWV0cmljc19ieV9hcmVh",
+            "GAggAygLMhsuY2xhcmlmYWkuYXBpLkJpbmFyeU1ldHJpY3MSNQoQbWV0cmlj",
+            "c19ieV9jbGFzcxgJIAMoCzIbLmNsYXJpZmFpLmFwaS5CaW5hcnlNZXRyaWNz",
+            "EjUKD3RyYWNrZXJfbWV0cmljcxgLIAMoCzIcLmNsYXJpZmFpLmFwaS5UcmFj",
+            "a2VyTWV0cmljcyK3AQoLRmllbGRzVmFsdWUSGAoQY29uZnVzaW9uX21hdHJp",
+            "eBgBIAEoCBIbChNjb29jY3VycmVuY2VfbWF0cml4GAIgASgIEhQKDGxhYmVs",
+            "X2NvdW50cxgDIAEoCBIWCg5iaW5hcnlfbWV0cmljcxgEIAEoCBIQCgh0ZXN0",
+            "X3NldBgFIAEoCBIXCg9tZXRyaWNzX2J5X2FyZWEYBiABKAgSGAoQbWV0cmlj",
+            "c19ieV9jbGFzcxgHIAEoCCLbAQoGT3V0cHV0EgoKAmlkGAEgASgJEisKBnN0",
+            "YXR1cxgCIAEoCzIbLmNsYXJpZmFpLmFwaS5zdGF0dXMuU3RhdHVzEi4KCmNy",
+            "ZWF0ZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEiIK",
+            "BW1vZGVsGAQgASgLMhMuY2xhcmlmYWkuYXBpLk1vZGVsEiIKBWlucHV0GAUg",
+            "ASgLMhMuY2xhcmlmYWkuYXBpLklucHV0EiAKBGRhdGEYBiABKAsyEi5jbGFy",
+            "aWZhaS5hcGkuRGF0YSI0CglTY29wZURlcHMSDQoFc2NvcGUYASABKAkSGAoQ",
+            "ZGVwZW5kaW5nX3Njb3BlcxgCIAMoCSI6CgxFbmRwb2ludERlcHMSEAoIZW5k",
+            "cG9pbnQYASABKAkSGAoQZGVwZW5kaW5nX3Njb3BlcxgCIAMoCSJsCgNIaXQS",
+            "EwoFc2NvcmUYASABKAJCBIC1GAESIgoFaW5wdXQYAiABKAsyEy5jbGFyaWZh",
+            "aS5hcGkuSW5wdXQSLAoKYW5ub3RhdGlvbhgDIAEoCzIYLmNsYXJpZmFpLmFw",
+            "aS5Bbm5vdGF0aW9uIo0BCgNBbmQSIgoFaW5wdXQYASABKAsyEy5jbGFyaWZh",
+            "aS5hcGkuSW5wdXQSJAoGb3V0cHV0GAIgASgLMhQuY2xhcmlmYWkuYXBpLk91",
+            "dHB1dBIOCgZuZWdhdGUYAyABKAgSLAoKYW5ub3RhdGlvbhgEIAEoCzIYLmNs",
+            "YXJpZmFpLmFwaS5Bbm5vdGF0aW9uIoQBCgVRdWVyeRIfCgRhbmRzGAEgAygL",
+            "MhEuY2xhcmlmYWkuYXBpLkFuZBIQCghsYW5ndWFnZRgCIAEoCRIlCgdmaWx0",
+            "ZXJzGAMgAygLMhQuY2xhcmlmYWkuYXBpLkZpbHRlchIhCgVyYW5rcxgEIAMo",
+            "CzISLmNsYXJpZmFpLmFwaS5SYW5rIt4CCgZTZWFyY2gSIgoFcXVlcnkYASAB",
+            "KAsyEy5jbGFyaWZhaS5hcGkuUXVlcnkSCgoCaWQYAiABKAkSFgoOYXBwbGlj",
+            "YXRpb25faWQYAyABKAkSDAoEbmFtZRgEIAEoCRIpCgVhc19vZhgFIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASEAoIZ2l0X2hhc2gYBiABKAkS",
+            "LgoKY3JlYXRlZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASLwoLbW9kaWZpZWRfYXQYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
+            "ZXN0YW1wEhEKCWFsZ29yaXRobRgJIAEoCRIMCgRzYXZlGAogASgIEhEKCW1p",
+            "bl92YWx1ZRgLIAEoAhIsCgp2aXNpYmlsaXR5GAwgASgLMhguY2xhcmlmYWku",
+            "YXBpLlZpc2liaWxpdHkipAEKBkZpbHRlchIOCgZuZWdhdGUYAyABKAgSLAoK",
+            "YW5ub3RhdGlvbhgEIAEoCzIYLmNsYXJpZmFpLmFwaS5Bbm5vdGF0aW9uEiIK",
+            "BWlucHV0GAUgASgLMhMuY2xhcmlmYWkuYXBpLklucHV0EjgKF2xhc3RfdXBk",
+            "YXRlZF90aW1lX3JhbmdlGAYgASgLMhcuY2xhcmlmYWkuYXBpLlRpbWVSYW5n",
+            "ZSJpCglUaW1lUmFuZ2USLgoKc3RhcnRfdGltZRgBIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3RpbWUYAiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wIkQKBFJhbmsSDgoGbmVnYXRlGAMgASgIEiwK",
+            "CmFubm90YXRpb24YBCABKAsyGC5jbGFyaWZhaS5hcGkuQW5ub3RhdGlvbiKN",
+            "AgoXQW5ub3RhdGlvblNlYXJjaE1ldHJpY3MSKgoMZ3JvdW5kX3RydXRoGAEg",
+            "ASgLMhQuY2xhcmlmYWkuYXBpLlNlYXJjaBIsCg5zZWFyY2hfdG9fZXZhbBgC",
+            "IAEoCzIULmNsYXJpZmFpLmFwaS5TZWFyY2gSKgoHbWV0cmljcxgDIAEoCzIZ",
+            "LmNsYXJpZmFpLmFwaS5FdmFsTWV0cmljcxIgCgRkYXRhGAQgASgLMhIuY2xh",
+            "cmlmYWkuYXBpLkRhdGESHAoUYWN0aXZlX2NvbmNlcHRfY291bnQYBSABKA0S",
+            "LAoKdmlzaWJpbGl0eRgGIAEoCzIYLmNsYXJpZmFpLmFwaS5WaXNpYmlsaXR5",
+            "IpEBCgRUZXh0EgsKA3JhdxgBIAEoCRILCgN1cmwYAiABKAkSGwoTYWxsb3df",
+            "ZHVwbGljYXRlX3VybBgDIAEoCBInCgZob3N0ZWQYBCABKAsyFy5jbGFyaWZh",
+            "aS5hcGkuSG9zdGVkVVJMEikKCXRleHRfaW5mbxgFIAEoCzIWLmNsYXJpZmFp",
+            "LmFwaS5UZXh0SW5mbyIwCghUZXh0SW5mbxISCgpjaGFyX2NvdW50GAEgASgF",
+            "EhAKCGVuY29kaW5nGAIgASgJItYFCgRVc2VyEgoKAmlkGAEgASgJEhkKDXBy",
+            "aW1hcnlfZW1haWwYAiABKAlCAhgBEhIKCmZpcnN0X25hbWUYAyABKAkSEQoJ",
+            "bGFzdF9uYW1lGAQgASgJEhQKDGNvbXBhbnlfbmFtZRgFIAEoCRIRCglqb2Jf",
+            "dGl0bGUYEyABKAkSEAoIam9iX3JvbGUYFCABKAkSFQoJYmlsbF90eXBlGAcg",
+            "ASgJQgIYARIuCgpjcmVhdGVkX2F0GAYgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcBI5ChFkYXRlX2dkcHJfY29uc2VudBgIIAEoCzIaLmdvb2ds",
+            "ZS5wcm90b2J1Zi5UaW1lc3RhbXBCAhgBEjgKEGRhdGVfdG9zX2NvbnNlbnQY",
+            "CSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgIYARI+ChZkYXRl",
+            "X21hcmtldGluZ19jb25zZW50GAogASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
+            "bWVzdGFtcEICGAESLQoIbWV0YWRhdGEYCyABKAsyFy5nb29nbGUucHJvdG9i",
+            "dWYuU3RydWN0QgIYARI3Cg9lbWFpbF9hZGRyZXNzZXMYDCADKAsyGi5jbGFy",
+            "aWZhaS5hcGkuRW1haWxBZGRyZXNzQgIYARIYCgxpc19vcmdfYWRtaW4YDiAB",
+            "KAhCAhgBEiMKF3R3b19mYWN0b3JfYXV0aF9lbmFibGVkGA8gASgIQgIYARIX",
+            "Cgt0ZWFtc19jb3VudBgQIAEoDUICGAESEgoKaXNfc3RhcnJlZBgVIAEoCBIS",
+            "CgpzdGFyX2NvdW50GBYgASgFEiwKCnZpc2liaWxpdHkYESABKAsyGC5jbGFy",
+            "aWZhaS5hcGkuVmlzaWJpbGl0eRItCgt1c2VyX2RldGFpbBgSIAEoCzIYLmNs",
+            "YXJpZmFpLmFwaS5Vc2VyRGV0YWlsSgQIDRAOIqsDCgpVc2VyRGV0YWlsEhUK",
+            "DXByaW1hcnlfZW1haWwYASABKAkSEQoJYmlsbF90eXBlGAIgASgJEjUKEWRh",
+            "dGVfZ2Rwcl9jb25zZW50GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
+            "dGFtcBI0ChBkYXRlX3Rvc19jb25zZW50GAQgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcBI6ChZkYXRlX21hcmtldGluZ19jb25zZW50GAUgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIpCghtZXRhZGF0YRgGIAEo",
+            "CzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3QSMwoPZW1haWxfYWRkcmVzc2Vz",
+            "GAcgAygLMhouY2xhcmlmYWkuYXBpLkVtYWlsQWRkcmVzcxIUCgxpc19vcmdf",
+            "YWRtaW4YCCABKAgSHwoXdHdvX2ZhY3Rvcl9hdXRoX2VuYWJsZWQYCSABKAgS",
+            "EwoLdGVhbXNfY291bnQYCiABKA0SDwoHY291bnRyeRgLIAEoCRINCgVzdGF0",
+            "ZRgMIAEoCSJSCgxFbWFpbEFkZHJlc3MSEwoFZW1haWwYASABKAlCBIC1GAES",
+            "FQoHcHJpbWFyeRgCIAEoCEIEgLUYARIWCgh2ZXJpZmllZBgDIAEoCEIEgLUY",
+            "ASIdCghQYXNzd29yZBIRCglwbGFpbnRleHQYASABKAkihgMKElBhc3N3b3Jk",
+            "VmlvbGF0aW9ucxIWCg5taW5pbXVtX2xlbmd0aBgBIAEoCBIWCg5tYXhpbXVt",
+            "X2xlbmd0aBgCIAEoCBIZChF1cHBlcl9jYXNlX25lZWRlZBgDIAEoCBIZChFs",
+            "b3dlcl9jYXNlX25lZWRlZBgEIAEoCBIWCg5udW1lcmljX25lZWRlZBgFIAEo",
+            "CBIfChdub25fYWxwaGFudW1lcmljX25lZWRlZBgGIAEoCBIWCg5wYXNzd29y",
+            "ZF9yZXVzZRgHIAEoCBIVCg1leGNsdWRlX25hbWVzGAggASgIEhUKDWV4Y2x1",
+            "ZGVfZW1haWwYCSABKAgSHAoUbm9fY29uZnVzaW5nX2xldHRlcnMYCiABKAgS",
+            "GwoTbm9fc2ltcGxlX3Bhc3N3b3JkcxgLIAEoCBIYChBub19jb21tb25fdm9j",
+            "YWJzGAwgASgIEhsKE25vX292ZXJsYXBfd2l0aF9vbGQYDSABKAgSGQoRcGFz",
+            "c3dvcmRfbGlmZXNwYW4YDiABKAgirgEKBVZpZGVvEgsKA3VybBgBIAEoCRIO",
+            "CgZiYXNlNjQYAiABKAwSGwoTYWxsb3dfZHVwbGljYXRlX3VybBgEIAEoCBIV",
+            "Cg10aHVtYm5haWxfdXJsGAUgASgJEicKBmhvc3RlZBgGIAEoCzIXLmNsYXJp",
+            "ZmFpLmFwaS5Ib3N0ZWRVUkwSKwoKdmlkZW9faW5mbxgHIAEoCzIXLmNsYXJp",
+            "ZmFpLmFwaS5WaWRlb0luZm8ijgEKCVZpZGVvSW5mbxINCgV3aWR0aBgBIAEo",
+            "BRIOCgZoZWlnaHQYAiABKAUSCwoDZnBzGAMgASgCEhQKDHZpZGVvX2Zvcm1h",
+            "dBgEIAEoCRIQCghiaXRfcmF0ZRgFIAEoBRITCgtmcmFtZV9jb3VudBgGIAEo",
+            "BRIYChBkdXJhdGlvbl9zZWNvbmRzGAcgASgCIrEDCghXb3JrZmxvdxIKCgJp",
+            "ZBgBIAEoCRIOCgZhcHBfaWQYAiABKAkSLgoKY3JlYXRlZF9hdBgDIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASKQoFbm9kZXMYBCADKAsyGi5j",
+            "bGFyaWZhaS5hcGkuV29ya2Zsb3dOb2RlEikKCG1ldGFkYXRhGAUgASgLMhcu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cnVjdBIsCgp2aXNpYmlsaXR5GAYgASgLMhgu",
+            "Y2xhcmlmYWkuYXBpLlZpc2liaWxpdHkSDwoHdXNlcl9pZBgHIAEoCRIvCgtt",
+            "b2RpZmllZF9hdBgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "LgoHdmVyc2lvbhgJIAEoCzIdLmNsYXJpZmFpLmFwaS5Xb3JrZmxvd1ZlcnNp",
+            "b24SEgoKaXNfc3RhcnJlZBgKIAEoCBISCgpzdGFyX2NvdW50GAsgASgFEhMK",
+            "C2Rlc2NyaXB0aW9uGAwgASgJEg0KBW5vdGVzGA0gASgJEhcKCXVzZV9jYXNl",
+            "cxgOIAMoCUIEgLUYASLeAgoPV29ya2Zsb3dWZXJzaW9uEgoKAmlkGAEgASgJ",
+            "EhMKC3dvcmtmbG93X2lkGAIgASgJEi4KCmNyZWF0ZWRfYXQYAyABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEi8KC21vZGlmaWVkX2F0GAQgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCgp2aXNpYmlsaXR5GAUg",
+            "ASgLMhguY2xhcmlmYWkuYXBpLlZpc2liaWxpdHkSKQoFbm9kZXMYBiADKAsy",
+            "Gi5jbGFyaWZhaS5hcGkuV29ya2Zsb3dOb2RlEikKCG1ldGFkYXRhGAcgASgL",
+            "MhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdBIOCgZhcHBfaWQYCCABKAkSDwoH",
+            "dXNlcl9pZBgJIAEoCRITCgtkZXNjcmlwdGlvbhgKIAEoCRIPCgdsaWNlbnNl",
+            "GAsgASgJIoUBCgxXb3JrZmxvd05vZGUSCgoCaWQYASABKAkSIgoFbW9kZWwY",
+            "AiABKAsyEy5jbGFyaWZhaS5hcGkuTW9kZWwSLAoLbm9kZV9pbnB1dHMYAyAD",
+            "KAsyFy5jbGFyaWZhaS5hcGkuTm9kZUlucHV0EhcKD3N1cHByZXNzX291dHB1",
+            "dBgEIAEoCCIcCglOb2RlSW5wdXQSDwoHbm9kZV9pZBgBIAEoCSKBAgoOV29y",
+            "a2Zsb3dSZXN1bHQSCgoCaWQYASABKAkSKwoGc3RhdHVzGAIgASgLMhsuY2xh",
+            "cmlmYWkuYXBpLnN0YXR1cy5TdGF0dXMSLgoKY3JlYXRlZF9hdBgDIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASIgoFbW9kZWwYBCABKAsyEy5j",
+            "bGFyaWZhaS5hcGkuTW9kZWwSIgoFaW5wdXQYBSABKAsyEy5jbGFyaWZhaS5h",
+            "cGkuSW5wdXQSJQoHb3V0cHV0cxgGIAMoCzIULmNsYXJpZmFpLmFwaS5PdXRw",
+            "dXQSFwoPc3VwcHJlc3Nfb3V0cHV0GAcgASgIIhsKDVdvcmtmbG93U3RhdGUS",
+            "CgoCaWQYASABKAkijgIKDkFwcER1cGxpY2F0aW9uEgoKAmlkGAEgASgJEhIK",
+            "Cm5ld19hcHBfaWQYAiABKAkSFAoMbmV3X2FwcF9uYW1lGAMgASgJEisKBnN0",
+            "YXR1cxgEIAEoCzIbLmNsYXJpZmFpLmFwaS5zdGF0dXMuU3RhdHVzEi4KCmNy",
+            "ZWF0ZWRfYXQYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjQK",
+            "EGxhc3RfbW9kaWZpZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
+            "ZXN0YW1wEjMKBmZpbHRlchgHIAEoCzIjLmNsYXJpZmFpLmFwaS5BcHBEdXBs",
+            "aWNhdGlvbkZpbHRlcnMiigEKFUFwcER1cGxpY2F0aW9uRmlsdGVycxITCgtj",
+            "b3B5X2lucHV0cxgBIAEoCBIVCg1jb3B5X2NvbmNlcHRzGAIgASgIEhgKEGNv",
+            "cHlfYW5ub3RhdGlvbnMYAyABKAgSEwoLY29weV9tb2RlbHMYBCABKAgSFgoO",
+            "Y29weV93b3JrZmxvd3MYBSABKAgizQUKBFRhc2sSCgoCaWQYASABKAkSLgoK",
+            "Y3JlYXRlZF9hdBgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "LwoLbW9kaWZpZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEikKBHR5cGUYBCABKA4yGy5jbGFyaWZhaS5hcGkuVGFzay5UYXNrVHlw",
+            "ZRITCgtkZXNjcmlwdGlvbhgFIAEoCRIoCgZ3b3JrZXIYBiABKAsyGC5jbGFy",
+            "aWZhaS5hcGkuVGFza1dvcmtlchITCgtjb25jZXB0X2lkcxgHIAMoCRIzCgxp",
+            "bnB1dF9zb3VyY2UYCCABKAsyHS5jbGFyaWZhaS5hcGkuVGFza0lucHV0U291",
+            "cmNlEhEKCXNhbXBsZV9tcxgJIAEoDRIzCgxhaV9hc3Npc3RhbnQYCiABKAsy",
+            "HS5jbGFyaWZhaS5hcGkuVGFza0FJQXNzaXN0YW50EigKBnJldmlldxgLIAEo",
+            "CzIYLmNsYXJpZmFpLmFwaS5UYXNrUmV2aWV3EisKBnN0YXR1cxgMIAEoCzIb",
+            "LmNsYXJpZmFpLmFwaS5zdGF0dXMuU3RhdHVzEgwKBG5hbWUYDSABKAkSOgoQ",
+            "YWlfYXNzaXN0X3BhcmFtcxgOIAEoCzIgLmNsYXJpZmFpLmFwaS5BaUFzc2lz",
+            "dFBhcmFtZXRlcnMSLAoKdmlzaWJpbGl0eRgPIAEoCzIYLmNsYXJpZmFpLmFw",
+            "aS5WaXNpYmlsaXR5Eg4KBmFwcF9pZBgQIAEoCRIPCgd1c2VyX2lkGBEgASgJ",
+            "ImwKCFRhc2tUeXBlEhAKDFRZUEVfTk9UX1NFVBAAEhsKF0NPTkNFUFRTX0NM",
+            "QVNTSUZJQ0FUSU9OEAESGgoWQk9VTkRJTkdfQk9YX0RFVEVDVElPThACEhUK",
+            "EVBPTFlHT05fREVURUNUSU9OEAMiYAoSQWlBc3Npc3RQYXJhbWV0ZXJzEhUK",
+            "DW1pbl90aHJlc2hvbGQYASABKAISFQoNbWF4X3RocmVzaG9sZBgCIAEoAhIc",
+            "ChRjb25jZXB0X3JlbGF0aW9uX2lkcxgDIAMoCSKYAgoKVGFza1dvcmtlchI9",
+            "CghzdHJhdGVneRgBIAEoDjIrLmNsYXJpZmFpLmFwaS5UYXNrV29ya2VyLlRh",
+            "c2tXb3JrZXJTdHJhdGVneRIQCgh1c2VyX2lkcxgCIAMoCRJUChlwYXJ0aXRp",
+            "b25lZF9zdHJhdGVneV9pbmZvGAMgASgLMi8uY2xhcmlmYWkuYXBpLlRhc2tX",
+            "b3JrZXJQYXJ0aXRpb25lZFN0cmF0ZWd5SW5mb0gAIlIKElRhc2tXb3JrZXJT",
+            "dHJhdGVneRIbChdXT1JLRVJfU1RSQVRFR1lfTk9UX1NFVBAAEg8KC1BBUlRJ",
+            "VElPTkVEEAISCAoERlVMTBADIgQIARABQg8KDXN0cmF0ZWd5X2luZm8iqQIK",
+            "IVRhc2tXb3JrZXJQYXJ0aXRpb25lZFN0cmF0ZWd5SW5mbxJbCgR0eXBlGAEg",
+            "ASgOMk0uY2xhcmlmYWkuYXBpLlRhc2tXb3JrZXJQYXJ0aXRpb25lZFN0cmF0",
+            "ZWd5SW5mby5UYXNrV29ya2VyUGFydGl0aW9uZWRTdHJhdGVneRIZChF3b3Jr",
+            "ZXJzX3Blcl9pbnB1dBgCIAEoBRIoCgd3ZWlnaHRzGAMgASgLMhcuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cnVjdCJiCh1UYXNrV29ya2VyUGFydGl0aW9uZWRTdHJh",
+            "dGVneRInCiNQQVJUSVRJT05FRF9XT1JLRVJfU1RSQVRFR1lfTk9UX1NFVBAA",
+            "EgoKBkVWRU5MWRABEgwKCFdFSUdIVEVEEAIitgEKD1Rhc2tJbnB1dFNvdXJj",
+            "ZRI/CgR0eXBlGAEgASgOMjEuY2xhcmlmYWkuYXBpLlRhc2tJbnB1dFNvdXJj",
+            "ZS5UYXNrSW5wdXRTb3VyY2VUeXBlEgoKAmlkGAIgASgJIlYKE1Rhc2tJbnB1",
+            "dFNvdXJjZVR5cGUSHQoZSU5QVVRfU09VUkNFX1RZUEVfTk9UX1NFVBAAEg4K",
+            "CkFMTF9JTlBVVFMQARIQCgxTQVZFRF9TRUFSQ0gQAiLpAgoKVGFza1Jldmll",
+            "dxI9CghzdHJhdGVneRgBIAEoDjIrLmNsYXJpZmFpLmFwaS5UYXNrUmV2aWV3",
+            "LlRhc2tSZXZpZXdTdHJhdGVneRIQCgh1c2VyX2lkcxgCIAMoCRJKChRtYW51",
+            "YWxfc3RyYXRlZ3lfaW5mbxgDIAEoCzIqLmNsYXJpZmFpLmFwaS5UYXNrUmV2",
+            "aWV3TWFudWFsU3RyYXRlZ3lJbmZvSAASUAoXY29uc2Vuc3VzX3N0cmF0ZWd5",
+            "X2luZm8YBCABKAsyLS5jbGFyaWZhaS5hcGkuVGFza1Jldmlld0NvbnNlbnN1",
+            "c1N0cmF0ZWd5SW5mb0gAIlsKElRhc2tSZXZpZXdTdHJhdGVneRIgChxUQVNL",
+            "X1JFVklFV19TVFJBVEVHWV9OT1RfU0VUEAASCAoETk9ORRABEgoKBk1BTlVB",
+            "TBACEg0KCUNPTlNFTlNVUxADQg8KDXN0cmF0ZWd5X2luZm8iOQocVGFza1Jl",
+            "dmlld01hbnVhbFN0cmF0ZWd5SW5mbxIZChFzYW1wbGVfcGVyY2VudGFnZRgB",
+            "IAEoAiJDCh9UYXNrUmV2aWV3Q29uc2Vuc3VzU3RyYXRlZ3lJbmZvEhoKEmFw",
+            "cHJvdmFsX3RocmVzaG9sZBgCIAEoDUoECAEQAiImCg9UYXNrQUlBc3Npc3Rh",
+            "bnQSEwoLd29ya2Zsb3dfaWQYASABKAkivAEKFlRhc2tTdGF0dXNDb3VudFBl",
+            "clVzZXISDwoHdXNlcl9pZBgBIAEoCRIVCgdwZW5kaW5nGAIgASgNQgSAtRgB",
+            "Eh0KD2F3YWl0aW5nX3JldmlldxgDIAEoDUIEgLUYARIVCgdzdWNjZXNzGAQg",
+            "ASgNQgSAtRgBEhsKDXJldmlld19kZW5pZWQYBSABKA1CBIC1GAESJwoZYXdh",
+            "aXRpbmdfY29uc2Vuc3VzX3JldmlldxgGIAEoDUIEgLUYASKBAgoJQ29sbGVj",
+            "dG9yEgoKAmlkGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJEi4KCmNyZWF0",
+            "ZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEh0KFXBy",
+            "ZV9xdWV1ZV93b3JrZmxvd19pZBgEIAEoCRIeChZwb3N0X3F1ZXVlX3dvcmtm",
+            "bG93X2lkGAUgASgJEjcKEGNvbGxlY3Rvcl9zb3VyY2UYBiABKAsyHS5jbGFy",
+            "aWZhaS5hcGkuQ29sbGVjdG9yU291cmNlEisKBnN0YXR1cxgHIAEoCzIbLmNs",
+            "YXJpZmFpLmFwaS5zdGF0dXMuU3RhdHVzInQKD0NvbGxlY3RvclNvdXJjZRJh",
+            "CidhcGlfcG9zdF9tb2RlbF9vdXRwdXRzX2NvbGxlY3Rvcl9zb3VyY2UYAiAB",
+            "KAsyMC5jbGFyaWZhaS5hcGkuQVBJUG9zdE1vZGVsT3V0cHV0c0NvbGxlY3Rv",
+            "clNvdXJjZSKZAQoiQVBJUG9zdE1vZGVsT3V0cHV0c0NvbGxlY3RvclNvdXJj",
+            "ZRIVCg1tb2RlbF91c2VyX2lkGAEgASgJEhQKDG1vZGVsX2FwcF9pZBgCIAEo",
+            "CRIQCghtb2RlbF9pZBgDIAEoCRIYChBtb2RlbF92ZXJzaW9uX2lkGAQgASgJ",
+            "EhoKEnBvc3RfaW5wdXRzX2tleV9pZBgFIAEoCSJSCglTdGF0VmFsdWUSKAoE",
+            "dGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASDQoFdmFs",
+            "dWUYAiABKAISDAoEdGFncxgDIAMoCSKmAQoYU3RhdFZhbHVlQWdncmVnYXRl",
+            "UmVzdWx0Ej8KFXN0YXRfdmFsdWVfYWdncmVnYXRlcxgBIAMoCzIgLmNsYXJp",
+            "ZmFpLmFwaS5TdGF0VmFsdWVBZ2dyZWdhdGUSSQoac3RhdF92YWx1ZV9hZ2dy",
+            "ZWdhdGVfcXVlcnkYAiABKAsyJS5jbGFyaWZhaS5hcGkuU3RhdFZhbHVlQWdn",
+            "cmVnYXRlUXVlcnkidAoSU3RhdFZhbHVlQWdncmVnYXRlEigKBHRpbWUYASAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhcKD2FnZ3JlZ2F0ZV92",
+            "YWx1ZRgCIAEoAhINCgVjb3VudBgDIAEoBBIMCgR0YWdzGAQgAygJIpECChdT",
+            "dGF0VmFsdWVBZ2dyZWdhdGVRdWVyeRIMCgR0YWdzGAEgAygJEhIKCnRhZ19n",
+            "cm91cHMYAiADKAkSOwoTc3RhdF92YWx1ZV9hZ2dfdHlwZRgDIAEoDjIeLmNs",
+            "YXJpZmFpLmFwaS5TdGF0VmFsdWVBZ2dUeXBlEjkKEnN0YXRfdGltZV9hZ2df",
+            "dHlwZRgEIAEoDjIdLmNsYXJpZmFpLmFwaS5TdGF0VGltZUFnZ1R5cGUSLgoK",
+            "c3RhcnRfdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "LAoIZW5kX3RpbWUYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
+            "IocBCgpWaXNpYmlsaXR5EjMKCGdldHRhYmxlGAEgASgOMiEuY2xhcmlmYWku",
+            "YXBpLlZpc2liaWxpdHkuR2V0dGFibGUiRAoIR2V0dGFibGUSFgoSVU5LTk9X",
+            "Tl9WSVNJQklMSVRZEAASCwoHUFJJVkFURRAKEgcKA09SRxAeEgoKBlBVQkxJ",
+            "QxAyIlgKDlRyZW5kaW5nTWV0cmljEg8KB3VzZXJfaWQYASABKAkSDgoGYXBw",
+            "X2lkGAIgASgJEhEKCW9iamVjdF9pZBgDIAEoCRISCgp2aWV3X2NvdW50GAQg",
+            "ASgEImYKC1RpbWVTZWdtZW50EgoKAmlkGAEgASgJEiAKBGRhdGEYAiABKAsy",
+            "Ei5jbGFyaWZhaS5hcGkuRGF0YRIpCgl0aW1lX2luZm8YAyABKAsyFi5jbGFy",
+            "aWZhaS5hcGkuVGltZUluZm8iRAoIVGltZUluZm8SEgoKbnVtX2ZyYW1lcxgB",
+            "IAEoDRISCgpiZWdpbl90aW1lGAIgASgNEhAKCGVuZF90aW1lGAMgASgNKkgK",
+            "EEV4cGlyYXRpb25BY3Rpb24SHQoZRVhQSVJBVElPTl9BQ1RJT05fTk9UX1NF",
+            "VBAAEgkKBURFTEFZEAESCgoGRVhQSVJZEAIqTQoMTGljZW5zZVNjb3BlEhkK",
+            "FUxJQ0VOU0VfU0NPUEVfTk9UX1NFVBAAEgsKB1BSRURJQ1QQARIJCgVUUkFJ",
+            "ThACEgoKBlNFQVJDSBADKo8BCg9WYWx1ZUNvbXBhcmF0b3ISHQoZQ09OQ0VQ",
+            "VF9USFJFU0hPTERfTk9UX1NFVBAAEhAKDEdSRUFURVJfVEhBThABEhkKFUdS",
+            "RUFURVJfVEhBTl9PUl9FUVVBTBACEg0KCUxFU1NfVEhBThADEhYKEkxFU1Nf",
+            "VEhBTl9PUl9FUVVBTBAEEgkKBUVRVUFMEAUqMwoORXZhbHVhdGlvblR5cGUS",
+            "EgoOQ2xhc3NpZmljYXRpb24QABINCglEZXRlY3Rpb24QASpmCgxBUElFdmVu",
+            "dFR5cGUSGgoWQVBJX0VWRU5UX1RZUEVfTk9UX1NFVBAAEhMKD09OX1BSRU1f",
+            "UFJFRElDVBABEhEKDU9OX1BSRU1fVFJBSU4QAhISCg5PTl9QUkVNX1NFQVJD",
+            "SBADKjwKEVVzYWdlSW50ZXJ2YWxUeXBlEgkKBXVuZGVmEAASBwoDZGF5EAES",
+            "CQoFbW9udGgQAhIICgR5ZWFyEAMqHQoIUm9sZVR5cGUSCAoEVEVBTRAAEgcK",
+            "A09SRxABKiQKEFN0YXRWYWx1ZUFnZ1R5cGUSBwoDU1VNEAASBwoDQVZHEAEq",
+            "YAoPU3RhdFRpbWVBZ2dUeXBlEg8KC05PX1RJTUVfQUdHEAASCAoEWUVBUhAB",
+            "EgkKBU1PTlRIEAISCAoEV0VFSxADEgcKA0RBWRAEEggKBEhPVVIQBRIKCgZN",
+            "SU5VVEUQBipiChNWYWxpZGF0aW9uRXJyb3JUeXBlEiEKHVZBTElEQVRJT05f",
+            "RVJST1JfVFlQRV9OT1RfU0VUEAASDgoKUkVTVFJJQ1RFRBABEgwKCERBVEFC",
+            "QVNFEAISCgoGRk9STUFUEANClQEKFWNvbS5jbGFyaWZhaS5ncnBjLmFwaVAB",
+            "WnNnaXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8v",
+            "Y2xhcmlmYWkvYXBpL2dpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlmYWktZ28t",
+            "Z3JwYy9wcm90by9jbGFyaWZhaS9hcGkvYXBpogIEQ0FJUGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -637,9 +630,6 @@ namespace Clarifai.Api {
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ModelTypeEnumOption), global::Clarifai.Api.ModelTypeEnumOption.Parser, new[]{ "Id", "Description", "ModelTypeFields", "InternalOnly" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ModelQuery), global::Clarifai.Api.ModelQuery.Parser, new[]{ "Name", "Type", "ModelTypeId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ModelVersion), global::Clarifai.Api.ModelVersion.Parser, new[]{ "Id", "CreatedAt", "Status", "ActiveConceptCount", "Metrics", "TotalInputCount", "CompletedAt", "Description", "Visibility", "AppId", "UserId", "ModifiedAt", "Metadata", "License" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.PretrainedModelConfig), global::Clarifai.Api.PretrainedModelConfig.Parser, new[]{ "Id", "Type", "InputFieldsMap", "OutputFieldsMap", "DataProviderParams", "ModelZipUrl", "Overwrite" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.TrainStats), global::Clarifai.Api.TrainStats.Parser, new[]{ "LossCurve" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.LossCurveEntry), global::Clarifai.Api.LossCurveEntry.Parser, new[]{ "Epoch", "GlobalStep", "Cost" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.LabelCount), global::Clarifai.Api.LabelCount.Parser, new[]{ "ConceptName", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.LabelDistribution), global::Clarifai.Api.LabelDistribution.Parser, new[]{ "PositiveLabelCounts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.CooccurrenceMatrixEntry), global::Clarifai.Api.CooccurrenceMatrixEntry.Parser, new[]{ "Row", "Col", "Count" }, null, null, null, null),
@@ -812,9 +802,7 @@ namespace Clarifai.Api {
 
   #region Messages
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/annotation.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Annotation of an asset with metadata
   /// </summary>
   public sealed partial class Annotation : pb::IMessage<Annotation> {
     private static readonly pb::MessageParser<Annotation> _parser = new pb::MessageParser<Annotation>(() => new Annotation());
@@ -1397,9 +1385,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/app.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Application with tasks and datasets
   /// </summary>
   public sealed partial class App : pb::IMessage<App> {
     private static readonly pb::MessageParser<App> _parser = new pb::MessageParser<App>(() => new App());
@@ -1989,6 +1975,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// App query
+  /// </summary>
   public sealed partial class AppQuery : pb::IMessage<AppQuery> {
     private static readonly pb::MessageParser<AppQuery> _parser = new pb::MessageParser<AppQuery>(() => new AppQuery());
     private pb::UnknownFieldSet _unknownFields;
@@ -2122,9 +2111,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/app_sharing.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Collaborator - invited user, who shares an access to an application
   /// </summary>
   public sealed partial class Collaborator : pb::IMessage<Collaborator> {
     private static readonly pb::MessageParser<Collaborator> _parser = new pb::MessageParser<Collaborator>(() => new Collaborator());
@@ -2753,9 +2740,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/audio.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Audio asset struct
   /// </summary>
   public sealed partial class Audio : pb::IMessage<Audio> {
     private static readonly pb::MessageParser<Audio> _parser = new pb::MessageParser<Audio>(() => new Audio());
@@ -3493,9 +3478,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/cluster.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Cluster data
   /// </summary>
   public sealed partial class Cluster : pb::IMessage<Cluster> {
     private static readonly pb::MessageParser<Cluster> _parser = new pb::MessageParser<Cluster>(() => new Cluster());
@@ -3733,9 +3716,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/color.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Color data
   /// </summary>
   public sealed partial class Color : pb::IMessage<Color> {
     private static readonly pb::MessageParser<Color> _parser = new pb::MessageParser<Color>(() => new Color());
@@ -4086,9 +4067,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/common.proto
-  /////////////////////////////////////////////////////////////////////////////////
   /// Common message to identify the app in a url endpoint.
   /// </summary>
   public sealed partial class UserAppIDSet : pb::IMessage<UserAppIDSet> {
@@ -4251,6 +4229,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchAction
+  /// </summary>
   public sealed partial class PatchAction : pb::IMessage<PatchAction> {
     private static readonly pb::MessageParser<PatchAction> _parser = new pb::MessageParser<PatchAction>(() => new PatchAction());
     private pb::UnknownFieldSet _unknownFields;
@@ -4511,9 +4492,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/concept.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Concept or tag
   /// </summary>
   public sealed partial class Concept : pb::IMessage<Concept> {
     private static readonly pb::MessageParser<Concept> _parser = new pb::MessageParser<Concept>(() => new Concept());
@@ -4949,6 +4928,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ConceptCount
+  /// </summary>
   public sealed partial class ConceptCount : pb::IMessage<ConceptCount> {
     private static readonly pb::MessageParser<ConceptCount> _parser = new pb::MessageParser<ConceptCount>(() => new ConceptCount());
     private pb::UnknownFieldSet _unknownFields;
@@ -5186,6 +5168,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ConceptTypeCount
+  /// </summary>
   public sealed partial class ConceptTypeCount : pb::IMessage<ConceptTypeCount> {
     private static readonly pb::MessageParser<ConceptTypeCount> _parser = new pb::MessageParser<ConceptTypeCount>(() => new ConceptTypeCount());
     private pb::UnknownFieldSet _unknownFields;
@@ -5351,6 +5336,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DetailConceptCount
+  /// </summary>
   public sealed partial class DetailConceptCount : pb::IMessage<DetailConceptCount> {
     private static readonly pb::MessageParser<DetailConceptCount> _parser = new pb::MessageParser<DetailConceptCount>(() => new DetailConceptCount());
     private pb::UnknownFieldSet _unknownFields;
@@ -5600,6 +5588,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ConceptQuery
+  /// </summary>
   public sealed partial class ConceptQuery : pb::IMessage<ConceptQuery> {
     private static readonly pb::MessageParser<ConceptQuery> _parser = new pb::MessageParser<ConceptQuery>(() => new ConceptQuery());
     private pb::UnknownFieldSet _unknownFields;
@@ -5795,9 +5786,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/concept_graph.proto
-  /////////////////////////////////////////////////////////////////////////////////
   /// This represents a relation (i.e. edge) between the subject concept and the object concept
   /// </summary>
   public sealed partial class ConceptRelation : pb::IMessage<ConceptRelation> {
@@ -6396,6 +6384,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ConceptMappingJob
+  /// </summary>
   public sealed partial class ConceptMappingJob : pb::IMessage<ConceptMappingJob> {
     private static readonly pb::MessageParser<ConceptMappingJob> _parser = new pb::MessageParser<ConceptMappingJob>(() => new ConceptMappingJob());
     private pb::UnknownFieldSet _unknownFields;
@@ -6552,9 +6543,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/concept_language.proto
-  /////////////////////////////////////////////////////////////////////////////////
   /// This represents a link to an outside source for the given concept.
   /// The values from here are sticked into Concept message into the name and definition fields when
   /// returning from the API in your default language. The "id" field here becomes the "language"
@@ -6755,9 +6743,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/data.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Data
   /// </summary>
   public sealed partial class Data : pb::IMessage<Data> {
     private static readonly pb::MessageParser<Data> _parser = new pb::MessageParser<Data>(() => new Data());
@@ -8540,6 +8526,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// Polygon
+  /// </summary>
   public sealed partial class Polygon : pb::IMessage<Polygon> {
     private static readonly pb::MessageParser<Polygon> _parser = new pb::MessageParser<Polygon>(() => new Polygon());
     private pb::UnknownFieldSet _unknownFields;
@@ -8664,6 +8653,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// Point
+  /// </summary>
   public sealed partial class Point : pb::IMessage<Point> {
     private static readonly pb::MessageParser<Point> _parser = new pb::MessageParser<Point>(() => new Point());
     private pb::UnknownFieldSet _unknownFields;
@@ -8861,9 +8853,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/embedding.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Embedding
   /// </summary>
   public sealed partial class Embedding : pb::IMessage<Embedding> {
     private static readonly pb::MessageParser<Embedding> _parser = new pb::MessageParser<Embedding>(() => new Embedding());
@@ -9016,9 +9006,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/geo.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GeoPoint
   /// </summary>
   public sealed partial class GeoPoint : pb::IMessage<GeoPoint> {
     private static readonly pb::MessageParser<GeoPoint> _parser = new pb::MessageParser<GeoPoint>(() => new GeoPoint());
@@ -9177,6 +9165,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GeoLimit
+  /// </summary>
   public sealed partial class GeoLimit : pb::IMessage<GeoLimit> {
     private static readonly pb::MessageParser<GeoLimit> _parser = new pb::MessageParser<GeoLimit>(() => new GeoLimit());
     private pb::UnknownFieldSet _unknownFields;
@@ -9334,6 +9325,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GeoBoxedPoint
+  /// </summary>
   public sealed partial class GeoBoxedPoint : pb::IMessage<GeoBoxedPoint> {
     private static readonly pb::MessageParser<GeoBoxedPoint> _parser = new pb::MessageParser<GeoBoxedPoint>(() => new GeoBoxedPoint());
     private pb::UnknownFieldSet _unknownFields;
@@ -9469,6 +9463,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// Geo
+  /// </summary>
   public sealed partial class Geo : pb::IMessage<Geo> {
     private static readonly pb::MessageParser<Geo> _parser = new pb::MessageParser<Geo>(() => new Geo());
     private pb::UnknownFieldSet _unknownFields;
@@ -9662,9 +9659,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/image.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Image
   /// </summary>
   public sealed partial class Image : pb::IMessage<Image> {
     private static readonly pb::MessageParser<Image> _parser = new pb::MessageParser<Image>(() => new Image());
@@ -10162,6 +10157,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// HostedURL
+  /// </summary>
   public sealed partial class HostedURL : pb::IMessage<HostedURL> {
     private static readonly pb::MessageParser<HostedURL> _parser = new pb::MessageParser<HostedURL>(() => new HostedURL());
     private pb::UnknownFieldSet _unknownFields;
@@ -10382,9 +10380,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/input.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Input
   /// </summary>
   public sealed partial class Input : pb::IMessage<Input> {
     private static readonly pb::MessageParser<Input> _parser = new pb::MessageParser<Input>(() => new Input());
@@ -11023,6 +11019,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DatasetFilter
+  /// </summary>
   public sealed partial class DatasetFilter : pb::IMessage<DatasetFilter> {
     private static readonly pb::MessageParser<DatasetFilter> _parser = new pb::MessageParser<DatasetFilter>(() => new DatasetFilter());
     private pb::UnknownFieldSet _unknownFields;
@@ -11363,6 +11362,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DatasetVersion
+  /// </summary>
   public sealed partial class DatasetVersion : pb::IMessage<DatasetVersion> {
     private static readonly pb::MessageParser<DatasetVersion> _parser = new pb::MessageParser<DatasetVersion>(() => new DatasetVersion());
     private pb::UnknownFieldSet _unknownFields;
@@ -12198,6 +12200,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// WorkflowResultsSimilarity
+  /// </summary>
   public sealed partial class WorkflowResultsSimilarity : pb::IMessage<WorkflowResultsSimilarity> {
     private static readonly pb::MessageParser<WorkflowResultsSimilarity> _parser = new pb::MessageParser<WorkflowResultsSimilarity>(() => new WorkflowResultsSimilarity());
     private pb::UnknownFieldSet _unknownFields;
@@ -12357,9 +12362,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/key.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Key
   /// </summary>
   public sealed partial class Key : pb::IMessage<Key> {
     private static readonly pb::MessageParser<Key> _parser = new pb::MessageParser<Key>(() => new Key());
@@ -12727,9 +12730,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/model.proto
-  /////////////////////////////////////////////////////////////////////////////////
   /// This is the Model object which represents a created model in the platform.
   /// Each model has a particular type denoted by the model_type_id.
   /// When creating a Model with PostModels the following happens:
@@ -13568,8 +13568,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /// A link to a html/markdown/text file that stores reference material
-  /// tied to a model.
+  /// A link to a html/markdown/text file that stores reference material tied to a model.
   /// </summary>
   public sealed partial class ModelReference : pb::IMessage<ModelReference> {
     private static readonly pb::MessageParser<ModelReference> _parser = new pb::MessageParser<ModelReference>(() => new ModelReference());
@@ -13834,6 +13833,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ModelVersionInputExample
+  /// </summary>
   public sealed partial class ModelVersionInputExample : pb::IMessage<ModelVersionInputExample> {
     private static readonly pb::MessageParser<ModelVersionInputExample> _parser = new pb::MessageParser<ModelVersionInputExample>(() => new ModelVersionInputExample());
     private pb::UnknownFieldSet _unknownFields;
@@ -14485,6 +14487,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// InputInfo
+  /// </summary>
   public sealed partial class InputInfo : pb::IMessage<InputInfo> {
     private static readonly pb::MessageParser<InputInfo> _parser = new pb::MessageParser<InputInfo>(() => new InputInfo());
     private pb::UnknownFieldSet _unknownFields;
@@ -16497,6 +16502,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ModelTypeRangeInfo
+  /// </summary>
   public sealed partial class ModelTypeRangeInfo : pb::IMessage<ModelTypeRangeInfo> {
     private static readonly pb::MessageParser<ModelTypeRangeInfo> _parser = new pb::MessageParser<ModelTypeRangeInfo>(() => new ModelTypeRangeInfo());
     private pb::UnknownFieldSet _unknownFields;
@@ -16692,6 +16700,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ModelTypeEnumOption
+  /// </summary>
   public sealed partial class ModelTypeEnumOption : pb::IMessage<ModelTypeEnumOption> {
     private static readonly pb::MessageParser<ModelTypeEnumOption> _parser = new pb::MessageParser<ModelTypeEnumOption>(() => new ModelTypeEnumOption());
     private pb::UnknownFieldSet _unknownFields;
@@ -16910,6 +16921,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ModelQuery
+  /// </summary>
   public sealed partial class ModelQuery : pb::IMessage<ModelQuery> {
     private static readonly pb::MessageParser<ModelQuery> _parser = new pb::MessageParser<ModelQuery>(() => new ModelQuery());
     private pb::UnknownFieldSet _unknownFields;
@@ -17107,9 +17121,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/model_version.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// ModelVersion
   /// </summary>
   public sealed partial class ModelVersion : pb::IMessage<ModelVersion> {
     private static readonly pb::MessageParser<ModelVersion> _parser = new pb::MessageParser<ModelVersion>(() => new ModelVersion());
@@ -17679,652 +17691,9 @@ namespace Clarifai.Api {
 
   }
 
-  public sealed partial class PretrainedModelConfig : pb::IMessage<PretrainedModelConfig> {
-    private static readonly pb::MessageParser<PretrainedModelConfig> _parser = new pb::MessageParser<PretrainedModelConfig>(() => new PretrainedModelConfig());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<PretrainedModelConfig> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[61]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PretrainedModelConfig() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PretrainedModelConfig(PretrainedModelConfig other) : this() {
-      id_ = other.id_;
-      type_ = other.type_;
-      inputFieldsMap_ = other.inputFieldsMap_ != null ? other.inputFieldsMap_.Clone() : null;
-      outputFieldsMap_ = other.outputFieldsMap_ != null ? other.outputFieldsMap_.Clone() : null;
-      dataProviderParams_ = other.dataProviderParams_;
-      modelZipUrl_ = other.modelZipUrl_;
-      overwrite_ = other.overwrite_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public PretrainedModelConfig Clone() {
-      return new PretrainedModelConfig(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private string id_ = "";
-    /// <summary>
-    /// This is the internal id of the pretrained model.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Id {
-      get { return id_; }
-      set {
-        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 2;
-    private string type_ = "";
-    /// <summary>
-    /// This is the internal type of the pretrained model.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Type {
-      get { return type_; }
-      set {
-        type_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "input_fields_map" field.</summary>
-    public const int InputFieldsMapFieldNumber = 3;
-    private global::Google.Protobuf.WellKnownTypes.Struct inputFieldsMap_;
-    /// <summary>
-    /// Map from the api.Data field names to the Triton config.pbtxt input.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Struct InputFieldsMap {
-      get { return inputFieldsMap_; }
-      set {
-        inputFieldsMap_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "output_fields_map" field.</summary>
-    public const int OutputFieldsMapFieldNumber = 4;
-    private global::Google.Protobuf.WellKnownTypes.Struct outputFieldsMap_;
-    /// <summary>
-    /// Map from the api.Data field names to the Triton config.pbtxt output.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Struct OutputFieldsMap {
-      get { return outputFieldsMap_; }
-      set {
-        outputFieldsMap_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "data_provider_params" field.</summary>
-    public const int DataProviderParamsFieldNumber = 5;
-    private string dataProviderParams_ = "";
-    /// <summary>
-    /// Preprocessing steps for the model as a json string
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string DataProviderParams {
-      get { return dataProviderParams_; }
-      set {
-        dataProviderParams_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "model_zip_url" field.</summary>
-    public const int ModelZipUrlFieldNumber = 6;
-    private string modelZipUrl_ = "";
-    /// <summary>
-    /// Url to a zipped up model in triton format with only version 1
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ModelZipUrl {
-      get { return modelZipUrl_; }
-      set {
-        modelZipUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "overwrite" field.</summary>
-    public const int OverwriteFieldNumber = 7;
-    private bool overwrite_;
-    /// <summary>
-    /// Whether to overwrite the model for the existing internal id
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Overwrite {
-      get { return overwrite_; }
-      set {
-        overwrite_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as PretrainedModelConfig);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(PretrainedModelConfig other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (Type != other.Type) return false;
-      if (!object.Equals(InputFieldsMap, other.InputFieldsMap)) return false;
-      if (!object.Equals(OutputFieldsMap, other.OutputFieldsMap)) return false;
-      if (DataProviderParams != other.DataProviderParams) return false;
-      if (ModelZipUrl != other.ModelZipUrl) return false;
-      if (Overwrite != other.Overwrite) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id.Length != 0) hash ^= Id.GetHashCode();
-      if (Type.Length != 0) hash ^= Type.GetHashCode();
-      if (inputFieldsMap_ != null) hash ^= InputFieldsMap.GetHashCode();
-      if (outputFieldsMap_ != null) hash ^= OutputFieldsMap.GetHashCode();
-      if (DataProviderParams.Length != 0) hash ^= DataProviderParams.GetHashCode();
-      if (ModelZipUrl.Length != 0) hash ^= ModelZipUrl.GetHashCode();
-      if (Overwrite != false) hash ^= Overwrite.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Id.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Id);
-      }
-      if (Type.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Type);
-      }
-      if (inputFieldsMap_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(InputFieldsMap);
-      }
-      if (outputFieldsMap_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(OutputFieldsMap);
-      }
-      if (DataProviderParams.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(DataProviderParams);
-      }
-      if (ModelZipUrl.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ModelZipUrl);
-      }
-      if (Overwrite != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(Overwrite);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
-      }
-      if (Type.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
-      }
-      if (inputFieldsMap_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(InputFieldsMap);
-      }
-      if (outputFieldsMap_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OutputFieldsMap);
-      }
-      if (DataProviderParams.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(DataProviderParams);
-      }
-      if (ModelZipUrl.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ModelZipUrl);
-      }
-      if (Overwrite != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(PretrainedModelConfig other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id.Length != 0) {
-        Id = other.Id;
-      }
-      if (other.Type.Length != 0) {
-        Type = other.Type;
-      }
-      if (other.inputFieldsMap_ != null) {
-        if (inputFieldsMap_ == null) {
-          InputFieldsMap = new global::Google.Protobuf.WellKnownTypes.Struct();
-        }
-        InputFieldsMap.MergeFrom(other.InputFieldsMap);
-      }
-      if (other.outputFieldsMap_ != null) {
-        if (outputFieldsMap_ == null) {
-          OutputFieldsMap = new global::Google.Protobuf.WellKnownTypes.Struct();
-        }
-        OutputFieldsMap.MergeFrom(other.OutputFieldsMap);
-      }
-      if (other.DataProviderParams.Length != 0) {
-        DataProviderParams = other.DataProviderParams;
-      }
-      if (other.ModelZipUrl.Length != 0) {
-        ModelZipUrl = other.ModelZipUrl;
-      }
-      if (other.Overwrite != false) {
-        Overwrite = other.Overwrite;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Id = input.ReadString();
-            break;
-          }
-          case 18: {
-            Type = input.ReadString();
-            break;
-          }
-          case 26: {
-            if (inputFieldsMap_ == null) {
-              InputFieldsMap = new global::Google.Protobuf.WellKnownTypes.Struct();
-            }
-            input.ReadMessage(InputFieldsMap);
-            break;
-          }
-          case 34: {
-            if (outputFieldsMap_ == null) {
-              OutputFieldsMap = new global::Google.Protobuf.WellKnownTypes.Struct();
-            }
-            input.ReadMessage(OutputFieldsMap);
-            break;
-          }
-          case 42: {
-            DataProviderParams = input.ReadString();
-            break;
-          }
-          case 50: {
-            ModelZipUrl = input.ReadString();
-            break;
-          }
-          case 56: {
-            Overwrite = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class TrainStats : pb::IMessage<TrainStats> {
-    private static readonly pb::MessageParser<TrainStats> _parser = new pb::MessageParser<TrainStats>(() => new TrainStats());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<TrainStats> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[62]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TrainStats() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TrainStats(TrainStats other) : this() {
-      lossCurve_ = other.lossCurve_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public TrainStats Clone() {
-      return new TrainStats(this);
-    }
-
-    /// <summary>Field number for the "loss_curve" field.</summary>
-    public const int LossCurveFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Clarifai.Api.LossCurveEntry> _repeated_lossCurve_codec
-        = pb::FieldCodec.ForMessage(10, global::Clarifai.Api.LossCurveEntry.Parser);
-    private readonly pbc::RepeatedField<global::Clarifai.Api.LossCurveEntry> lossCurve_ = new pbc::RepeatedField<global::Clarifai.Api.LossCurveEntry>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Clarifai.Api.LossCurveEntry> LossCurve {
-      get { return lossCurve_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as TrainStats);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(TrainStats other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!lossCurve_.Equals(other.lossCurve_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= lossCurve_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      lossCurve_.WriteTo(output, _repeated_lossCurve_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += lossCurve_.CalculateSize(_repeated_lossCurve_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(TrainStats other) {
-      if (other == null) {
-        return;
-      }
-      lossCurve_.Add(other.lossCurve_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            lossCurve_.AddEntriesFrom(input, _repeated_lossCurve_codec);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class LossCurveEntry : pb::IMessage<LossCurveEntry> {
-    private static readonly pb::MessageParser<LossCurveEntry> _parser = new pb::MessageParser<LossCurveEntry>(() => new LossCurveEntry());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<LossCurveEntry> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[63]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LossCurveEntry() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LossCurveEntry(LossCurveEntry other) : this() {
-      epoch_ = other.epoch_;
-      globalStep_ = other.globalStep_;
-      cost_ = other.cost_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LossCurveEntry Clone() {
-      return new LossCurveEntry(this);
-    }
-
-    /// <summary>Field number for the "epoch" field.</summary>
-    public const int EpochFieldNumber = 1;
-    private uint epoch_;
-    /// <summary>
-    /// current epoch
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint Epoch {
-      get { return epoch_; }
-      set {
-        epoch_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "global_step" field.</summary>
-    public const int GlobalStepFieldNumber = 2;
-    private uint globalStep_;
-    /// <summary>
-    /// current global step
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint GlobalStep {
-      get { return globalStep_; }
-      set {
-        globalStep_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cost" field.</summary>
-    public const int CostFieldNumber = 3;
-    private float cost_;
-    /// <summary>
-    /// current cost
-    /// FIXME(rigel): this should be loss instead of cost.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Cost {
-      get { return cost_; }
-      set {
-        cost_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as LossCurveEntry);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(LossCurveEntry other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Epoch != other.Epoch) return false;
-      if (GlobalStep != other.GlobalStep) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Cost, other.Cost)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Epoch != 0) hash ^= Epoch.GetHashCode();
-      if (GlobalStep != 0) hash ^= GlobalStep.GetHashCode();
-      if (Cost != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Cost);
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Epoch != 0) {
-        output.WriteRawTag(8);
-        output.WriteUInt32(Epoch);
-      }
-      if (GlobalStep != 0) {
-        output.WriteRawTag(16);
-        output.WriteUInt32(GlobalStep);
-      }
-      if (Cost != 0F) {
-        output.WriteRawTag(29);
-        output.WriteFloat(Cost);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Epoch != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Epoch);
-      }
-      if (GlobalStep != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GlobalStep);
-      }
-      if (Cost != 0F) {
-        size += 1 + 4;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(LossCurveEntry other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Epoch != 0) {
-        Epoch = other.Epoch;
-      }
-      if (other.GlobalStep != 0) {
-        GlobalStep = other.GlobalStep;
-      }
-      if (other.Cost != 0F) {
-        Cost = other.Cost;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Epoch = input.ReadUInt32();
-            break;
-          }
-          case 16: {
-            GlobalStep = input.ReadUInt32();
-            break;
-          }
-          case 29: {
-            Cost = input.ReadFloat();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
+  /// <summary>
+  /// LabelCount
+  /// </summary>
   public sealed partial class LabelCount : pb::IMessage<LabelCount> {
     private static readonly pb::MessageParser<LabelCount> _parser = new pb::MessageParser<LabelCount>(() => new LabelCount());
     private pb::UnknownFieldSet _unknownFields;
@@ -18333,7 +17702,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[64]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[61]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18486,6 +17855,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// LabelDistribution
+  /// </summary>
   public sealed partial class LabelDistribution : pb::IMessage<LabelDistribution> {
     private static readonly pb::MessageParser<LabelDistribution> _parser = new pb::MessageParser<LabelDistribution>(() => new LabelDistribution());
     private pb::UnknownFieldSet _unknownFields;
@@ -18494,7 +17866,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[65]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[62]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18618,7 +17990,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[66]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18801,6 +18173,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// CooccurrenceMatrix
+  /// </summary>
   public sealed partial class CooccurrenceMatrix : pb::IMessage<CooccurrenceMatrix> {
     private static readonly pb::MessageParser<CooccurrenceMatrix> _parser = new pb::MessageParser<CooccurrenceMatrix>(() => new CooccurrenceMatrix());
     private pb::UnknownFieldSet _unknownFields;
@@ -18809,7 +18184,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[67]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18945,6 +18320,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ConfusionMatrixEntry
+  /// </summary>
   public sealed partial class ConfusionMatrixEntry : pb::IMessage<ConfusionMatrixEntry> {
     private static readonly pb::MessageParser<ConfusionMatrixEntry> _parser = new pb::MessageParser<ConfusionMatrixEntry>(() => new ConfusionMatrixEntry());
     private pb::UnknownFieldSet _unknownFields;
@@ -18953,7 +18331,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[68]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19130,6 +18508,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ConfusionMatrix
+  /// </summary>
   public sealed partial class ConfusionMatrix : pb::IMessage<ConfusionMatrix> {
     private static readonly pb::MessageParser<ConfusionMatrix> _parser = new pb::MessageParser<ConfusionMatrix>(() => new ConfusionMatrix());
     private pb::UnknownFieldSet _unknownFields;
@@ -19138,7 +18519,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[69]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19274,6 +18655,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ROC
+  /// </summary>
   public sealed partial class ROC : pb::IMessage<ROC> {
     private static readonly pb::MessageParser<ROC> _parser = new pb::MessageParser<ROC>(() => new ROC());
     private pb::UnknownFieldSet _unknownFields;
@@ -19282,7 +18666,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[70]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19480,6 +18864,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PrecisionRecallCurve
+  /// </summary>
   public sealed partial class PrecisionRecallCurve : pb::IMessage<PrecisionRecallCurve> {
     private static readonly pb::MessageParser<PrecisionRecallCurve> _parser = new pb::MessageParser<PrecisionRecallCurve>(() => new PrecisionRecallCurve());
     private pb::UnknownFieldSet _unknownFields;
@@ -19488,7 +18875,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[71]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[68]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19644,6 +19031,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// BinaryMetrics
+  /// </summary>
   public sealed partial class BinaryMetrics : pb::IMessage<BinaryMetrics> {
     private static readonly pb::MessageParser<BinaryMetrics> _parser = new pb::MessageParser<BinaryMetrics>(() => new BinaryMetrics());
     private pb::UnknownFieldSet _unknownFields;
@@ -19652,7 +19042,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[72]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[69]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20127,6 +19517,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TrackerMetrics
+  /// </summary>
   public sealed partial class TrackerMetrics : pb::IMessage<TrackerMetrics> {
     private static readonly pb::MessageParser<TrackerMetrics> _parser = new pb::MessageParser<TrackerMetrics>(() => new TrackerMetrics());
     private pb::UnknownFieldSet _unknownFields;
@@ -20135,7 +19528,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[73]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[70]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20414,6 +19807,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// EvalTestSetEntry
+  /// </summary>
   public sealed partial class EvalTestSetEntry : pb::IMessage<EvalTestSetEntry> {
     private static readonly pb::MessageParser<EvalTestSetEntry> _parser = new pb::MessageParser<EvalTestSetEntry>(() => new EvalTestSetEntry());
     private pb::UnknownFieldSet _unknownFields;
@@ -20422,7 +19818,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[74]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[71]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20696,8 +20092,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /// NOTE(Janvier): We copy this from proto/utils/lopq_service.proto instead of importing it because
-  /// we should not import internal protos in public protos.
+  /// LOPQEvalResult
   /// </summary>
   public sealed partial class LOPQEvalResult : pb::IMessage<LOPQEvalResult> {
     private static readonly pb::MessageParser<LOPQEvalResult> _parser = new pb::MessageParser<LOPQEvalResult>(() => new LOPQEvalResult());
@@ -20707,7 +20102,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[75]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[72]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21006,7 +20401,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /// FIXME: copy this into an internal proto since it is stored in DB and field names can't change.
+  /// MetricsSummary
   /// </summary>
   public sealed partial class MetricsSummary : pb::IMessage<MetricsSummary> {
     private static readonly pb::MessageParser<MetricsSummary> _parser = new pb::MessageParser<MetricsSummary>(() => new MetricsSummary());
@@ -21016,7 +20411,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[76]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[73]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21411,6 +20806,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// EvalMetrics
+  /// </summary>
   public sealed partial class EvalMetrics : pb::IMessage<EvalMetrics> {
     private static readonly pb::MessageParser<EvalMetrics> _parser = new pb::MessageParser<EvalMetrics>(() => new EvalMetrics());
     private pb::UnknownFieldSet _unknownFields;
@@ -21419,7 +20817,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[77]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[74]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21810,6 +21208,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// FieldsValue
+  /// </summary>
   public sealed partial class FieldsValue : pb::IMessage<FieldsValue> {
     private static readonly pb::MessageParser<FieldsValue> _parser = new pb::MessageParser<FieldsValue>(() => new FieldsValue());
     private pb::UnknownFieldSet _unknownFields;
@@ -21818,7 +21219,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[78]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[75]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22108,9 +21509,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/output.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Output
   /// </summary>
   public sealed partial class Output : pb::IMessage<Output> {
     private static readonly pb::MessageParser<Output> _parser = new pb::MessageParser<Output>(() => new Output());
@@ -22120,7 +21519,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[79]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[76]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22433,9 +21832,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/scope.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// ScopeDeps
   /// </summary>
   public sealed partial class ScopeDeps : pb::IMessage<ScopeDeps> {
     private static readonly pb::MessageParser<ScopeDeps> _parser = new pb::MessageParser<ScopeDeps>(() => new ScopeDeps());
@@ -22445,7 +21842,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[80]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[77]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22592,6 +21989,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// EndpointDeps
+  /// </summary>
   public sealed partial class EndpointDeps : pb::IMessage<EndpointDeps> {
     private static readonly pb::MessageParser<EndpointDeps> _parser = new pb::MessageParser<EndpointDeps>(() => new EndpointDeps());
     private pb::UnknownFieldSet _unknownFields;
@@ -22600,7 +22000,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[81]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[78]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22748,9 +22148,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/search.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Hit
   /// </summary>
   public sealed partial class Hit : pb::IMessage<Hit> {
     private static readonly pb::MessageParser<Hit> _parser = new pb::MessageParser<Hit>(() => new Hit());
@@ -22760,7 +22158,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[82]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[79]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22987,7 +22385,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[83]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[80]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23256,7 +22654,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[84]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[81]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23465,7 +22863,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[85]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[82]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23971,6 +23369,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// Filter
+  /// </summary>
   public sealed partial class Filter : pb::IMessage<Filter> {
     private static readonly pb::MessageParser<Filter> _parser = new pb::MessageParser<Filter>(() => new Filter());
     private pb::UnknownFieldSet _unknownFields;
@@ -23979,7 +23380,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[86]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[83]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24216,6 +23617,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TimeRange
+  /// </summary>
   public sealed partial class TimeRange : pb::IMessage<TimeRange> {
     private static readonly pb::MessageParser<TimeRange> _parser = new pb::MessageParser<TimeRange>(() => new TimeRange());
     private pb::UnknownFieldSet _unknownFields;
@@ -24224,7 +23628,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[87]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[84]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24391,6 +23795,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// Rank
+  /// </summary>
   public sealed partial class Rank : pb::IMessage<Rank> {
     private static readonly pb::MessageParser<Rank> _parser = new pb::MessageParser<Rank>(() => new Rank());
     private pb::UnknownFieldSet _unknownFields;
@@ -24399,7 +23806,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[88]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[85]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24561,6 +23968,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// AnnotationSearchMetrics
+  /// </summary>
   public sealed partial class AnnotationSearchMetrics : pb::IMessage<AnnotationSearchMetrics> {
     private static readonly pb::MessageParser<AnnotationSearchMetrics> _parser = new pb::MessageParser<AnnotationSearchMetrics>(() => new AnnotationSearchMetrics());
     private pb::UnknownFieldSet _unknownFields;
@@ -24569,7 +23979,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[89]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[86]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24881,9 +24291,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/text.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Text
   /// </summary>
   public sealed partial class Text : pb::IMessage<Text> {
     private static readonly pb::MessageParser<Text> _parser = new pb::MessageParser<Text>(() => new Text());
@@ -24893,7 +24301,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[90]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[87]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25159,7 +24567,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[91]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[88]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25315,9 +24723,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/user.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// User
   /// </summary>
   public sealed partial class User : pb::IMessage<User> {
     private static readonly pb::MessageParser<User> _parser = new pb::MessageParser<User>(() => new User());
@@ -25327,7 +24733,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[92]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[89]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26093,7 +25499,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[93]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[90]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26542,6 +25948,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// EmailAddress
+  /// </summary>
   public sealed partial class EmailAddress : pb::IMessage<EmailAddress> {
     private static readonly pb::MessageParser<EmailAddress> _parser = new pb::MessageParser<EmailAddress>(() => new EmailAddress());
     private pb::UnknownFieldSet _unknownFields;
@@ -26550,7 +25959,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[94]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[91]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26727,6 +26136,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// Password
+  /// </summary>
   public sealed partial class Password : pb::IMessage<Password> {
     private static readonly pb::MessageParser<Password> _parser = new pb::MessageParser<Password>(() => new Password());
     private pb::UnknownFieldSet _unknownFields;
@@ -26735,7 +26147,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[95]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[92]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26765,7 +26177,6 @@ namespace Clarifai.Api {
     public const int PlaintextFieldNumber = 1;
     private string plaintext_ = "";
     /// <summary>
-    /// TODO(lawrence): merge this with message UserPassword above
     /// unencrypted password string
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26860,6 +26271,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PasswordViolations
+  /// </summary>
   public sealed partial class PasswordViolations : pb::IMessage<PasswordViolations> {
     private static readonly pb::MessageParser<PasswordViolations> _parser = new pb::MessageParser<PasswordViolations>(() => new PasswordViolations());
     private pb::UnknownFieldSet _unknownFields;
@@ -26868,7 +26282,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[96]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[93]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27396,9 +26810,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/video.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Video
   /// </summary>
   public sealed partial class Video : pb::IMessage<Video> {
     private static readonly pb::MessageParser<Video> _parser = new pb::MessageParser<Video>(() => new Video());
@@ -27408,7 +26820,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[97]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[94]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27712,7 +27124,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[98]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[95]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28023,9 +27435,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Messages from /proto/clarifai/api/workflow.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// Workflow
   /// </summary>
   public sealed partial class Workflow : pb::IMessage<Workflow> {
     private static readonly pb::MessageParser<Workflow> _parser = new pb::MessageParser<Workflow>(() => new Workflow());
@@ -28035,7 +27445,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[99]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[96]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28587,6 +27997,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// WorkflowVersion
+  /// </summary>
   public sealed partial class WorkflowVersion : pb::IMessage<WorkflowVersion> {
     private static readonly pb::MessageParser<WorkflowVersion> _parser = new pb::MessageParser<WorkflowVersion>(() => new WorkflowVersion());
     private pb::UnknownFieldSet _unknownFields;
@@ -28595,7 +28008,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[100]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[97]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29053,6 +28466,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// WorkflowNode
+  /// </summary>
   public sealed partial class WorkflowNode : pb::IMessage<WorkflowNode> {
     private static readonly pb::MessageParser<WorkflowNode> _parser = new pb::MessageParser<WorkflowNode>(() => new WorkflowNode());
     private pb::UnknownFieldSet _unknownFields;
@@ -29061,7 +28477,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[101]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[98]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29290,7 +28706,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[102]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[99]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29414,6 +28830,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// WorkflowResult
+  /// </summary>
   public sealed partial class WorkflowResult : pb::IMessage<WorkflowResult> {
     private static readonly pb::MessageParser<WorkflowResult> _parser = new pb::MessageParser<WorkflowResult>(() => new WorkflowResult());
     private pb::UnknownFieldSet _unknownFields;
@@ -29422,7 +28841,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[103]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[100]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29737,6 +29156,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// WorkflowState
+  /// </summary>
   public sealed partial class WorkflowState : pb::IMessage<WorkflowState> {
     private static readonly pb::MessageParser<WorkflowState> _parser = new pb::MessageParser<WorkflowState>(() => new WorkflowState());
     private pb::UnknownFieldSet _unknownFields;
@@ -29745,7 +29167,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[104]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[101]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29872,6 +29294,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// AppDuplication
+  /// </summary>
   public sealed partial class AppDuplication : pb::IMessage<AppDuplication> {
     private static readonly pb::MessageParser<AppDuplication> _parser = new pb::MessageParser<AppDuplication>(() => new AppDuplication());
     private pb::UnknownFieldSet _unknownFields;
@@ -29880,7 +29305,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[105]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[102]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30214,6 +29639,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// AppDuplicationFilters
+  /// </summary>
   public sealed partial class AppDuplicationFilters : pb::IMessage<AppDuplicationFilters> {
     private static readonly pb::MessageParser<AppDuplicationFilters> _parser = new pb::MessageParser<AppDuplicationFilters>(() => new AppDuplicationFilters());
     private pb::UnknownFieldSet _unknownFields;
@@ -30222,7 +29650,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[106]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[103]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30481,7 +29909,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[107]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[104]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31173,6 +30601,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// AiAssistParameters
+  /// </summary>
   public sealed partial class AiAssistParameters : pb::IMessage<AiAssistParameters> {
     private static readonly pb::MessageParser<AiAssistParameters> _parser = new pb::MessageParser<AiAssistParameters>(() => new AiAssistParameters());
     private pb::UnknownFieldSet _unknownFields;
@@ -31181,7 +30612,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[108]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[105]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31356,6 +30787,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskWorker
+  /// </summary>
   public sealed partial class TaskWorker : pb::IMessage<TaskWorker> {
     private static readonly pb::MessageParser<TaskWorker> _parser = new pb::MessageParser<TaskWorker>(() => new TaskWorker());
     private pb::UnknownFieldSet _unknownFields;
@@ -31364,7 +30798,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[109]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[106]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31595,6 +31029,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskWorkerPartitionedStrategyInfo
+  /// </summary>
   public sealed partial class TaskWorkerPartitionedStrategyInfo : pb::IMessage<TaskWorkerPartitionedStrategyInfo> {
     private static readonly pb::MessageParser<TaskWorkerPartitionedStrategyInfo> _parser = new pb::MessageParser<TaskWorkerPartitionedStrategyInfo>(() => new TaskWorkerPartitionedStrategyInfo());
     private pb::UnknownFieldSet _unknownFields;
@@ -31603,7 +31040,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[110]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[107]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31836,6 +31273,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskInputSource
+  /// </summary>
   public sealed partial class TaskInputSource : pb::IMessage<TaskInputSource> {
     private static readonly pb::MessageParser<TaskInputSource> _parser = new pb::MessageParser<TaskInputSource>(() => new TaskInputSource());
     private pb::UnknownFieldSet _unknownFields;
@@ -31844,7 +31284,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[111]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[108]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32018,6 +31458,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskReview
+  /// </summary>
   public sealed partial class TaskReview : pb::IMessage<TaskReview> {
     private static readonly pb::MessageParser<TaskReview> _parser = new pb::MessageParser<TaskReview>(() => new TaskReview());
     private pb::UnknownFieldSet _unknownFields;
@@ -32026,7 +31469,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[112]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[109]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32299,6 +31742,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskReviewManualStrategyInfo
+  /// </summary>
   public sealed partial class TaskReviewManualStrategyInfo : pb::IMessage<TaskReviewManualStrategyInfo> {
     private static readonly pb::MessageParser<TaskReviewManualStrategyInfo> _parser = new pb::MessageParser<TaskReviewManualStrategyInfo>(() => new TaskReviewManualStrategyInfo());
     private pb::UnknownFieldSet _unknownFields;
@@ -32307,7 +31753,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[113]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[110]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32431,6 +31877,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskReviewConsensusStrategyInfo
+  /// </summary>
   public sealed partial class TaskReviewConsensusStrategyInfo : pb::IMessage<TaskReviewConsensusStrategyInfo> {
     private static readonly pb::MessageParser<TaskReviewConsensusStrategyInfo> _parser = new pb::MessageParser<TaskReviewConsensusStrategyInfo>(() => new TaskReviewConsensusStrategyInfo());
     private pb::UnknownFieldSet _unknownFields;
@@ -32439,7 +31888,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[114]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[111]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32563,6 +32012,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskAIAssistant
+  /// </summary>
   public sealed partial class TaskAIAssistant : pb::IMessage<TaskAIAssistant> {
     private static readonly pb::MessageParser<TaskAIAssistant> _parser = new pb::MessageParser<TaskAIAssistant>(() => new TaskAIAssistant());
     private pb::UnknownFieldSet _unknownFields;
@@ -32571,7 +32023,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[115]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[112]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32697,6 +32149,10 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TaskStatusCountPerUser can represents count of human created annotations for a user for each valid status,
+  /// count of inputs (anchor annotation) for a user for each valid status
+  /// </summary>
   public sealed partial class TaskStatusCountPerUser : pb::IMessage<TaskStatusCountPerUser> {
     private static readonly pb::MessageParser<TaskStatusCountPerUser> _parser = new pb::MessageParser<TaskStatusCountPerUser>(() => new TaskStatusCountPerUser());
     private pb::UnknownFieldSet _unknownFields;
@@ -32705,7 +32161,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[116]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[113]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32978,7 +32434,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[117]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[114]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -33338,7 +32794,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[118]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[115]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -33481,7 +32937,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[119]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[116]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -33734,9 +33190,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Stats Collection Objects.
-  /////////////////////////////////////////////////////////////////////////////////
+  /// StatValue
   /// </summary>
   public sealed partial class StatValue : pb::IMessage<StatValue> {
     private static readonly pb::MessageParser<StatValue> _parser = new pb::MessageParser<StatValue>(() => new StatValue());
@@ -33746,7 +33200,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[120]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[117]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -33933,6 +33387,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// StatValueAggregateResult
+  /// </summary>
   public sealed partial class StatValueAggregateResult : pb::IMessage<StatValueAggregateResult> {
     private static readonly pb::MessageParser<StatValueAggregateResult> _parser = new pb::MessageParser<StatValueAggregateResult>(() => new StatValueAggregateResult());
     private pb::UnknownFieldSet _unknownFields;
@@ -33941,7 +33398,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[121]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[118]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -34094,6 +33551,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// StatValueAggregate
+  /// </summary>
   public sealed partial class StatValueAggregate : pb::IMessage<StatValueAggregate> {
     private static readonly pb::MessageParser<StatValueAggregate> _parser = new pb::MessageParser<StatValueAggregate>(() => new StatValueAggregate());
     private pb::UnknownFieldSet _unknownFields;
@@ -34102,7 +33562,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[122]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[119]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -34320,6 +33780,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// StatValueAggregateQuery
+  /// </summary>
   public sealed partial class StatValueAggregateQuery : pb::IMessage<StatValueAggregateQuery> {
     private static readonly pb::MessageParser<StatValueAggregateQuery> _parser = new pb::MessageParser<StatValueAggregateQuery>(() => new StatValueAggregateQuery());
     private pb::UnknownFieldSet _unknownFields;
@@ -34328,7 +33791,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[123]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[120]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -34620,9 +34083,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  //////////////////////////////
-  /// Visibilty of the resource.
-  //////////////////////////////
   /// Visibility represents how visible the given resource is to other users.
   /// When authenticating a request we can tell if a user is a collaborator or a teammate for the
   /// the app that contains the resource and set their allowed visibility. We use that to restrict
@@ -34639,7 +34099,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[124]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[121]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -34791,6 +34251,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TrendingMetric
+  /// </summary>
   public sealed partial class TrendingMetric : pb::IMessage<TrendingMetric> {
     private static readonly pb::MessageParser<TrendingMetric> _parser = new pb::MessageParser<TrendingMetric>(() => new TrendingMetric());
     private pb::UnknownFieldSet _unknownFields;
@@ -34799,7 +34262,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[125]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[122]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -35004,6 +34467,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TimeSegment
+  /// </summary>
   public sealed partial class TimeSegment : pb::IMessage<TimeSegment> {
     private static readonly pb::MessageParser<TimeSegment> _parser = new pb::MessageParser<TimeSegment>(() => new TimeSegment());
     private pb::UnknownFieldSet _unknownFields;
@@ -35012,7 +34478,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[126]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[123]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -35204,6 +34670,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// TimeInfo
+  /// </summary>
   public sealed partial class TimeInfo : pb::IMessage<TimeInfo> {
     private static readonly pb::MessageParser<TimeInfo> _parser = new pb::MessageParser<TimeInfo>(() => new TimeInfo());
     private pb::UnknownFieldSet _unknownFields;
@@ -35212,7 +34681,7 @@ namespace Clarifai.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[127]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[124]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

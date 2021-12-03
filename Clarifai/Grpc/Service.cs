@@ -1226,10 +1226,11 @@ namespace Clarifai.Api {
             "Z01ldHJpY3NWaWV3UmVzcG9uc2UikwGC0+STAogBElwvdjIvdXNlcnMve3Vz",
             "ZXJfYXBwX2lkLnVzZXJfaWR9L2FwcHMve3VzZXJfYXBwX2lkLmFwcF9pZH0v",
             "dHJlbmRpbmdfbWV0cmljcy92aWV3cy97dmlld190eXBlfVooEiYvdjIvdHJl",
-            "bmRpbmdfbWV0cmljcy92aWV3cy97dmlld190eXBlfZicJwJCXQoVY29tLmNs",
-            "YXJpZmFpLmdycGMuYXBpUAFaO2dpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlm",
-            "YWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hcGkvYXBpogIEQ0FJUGIGcHJv",
-            "dG8z"));
+            "bmRpbmdfbWV0cmljcy92aWV3cy97dmlld190eXBlfZicJwJClQEKFWNvbS5j",
+            "bGFyaWZhaS5ncnBjLmFwaVABWnNnaXRodWIuY29tL0NsYXJpZmFpL2NsYXJp",
+            "ZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXBpL2dpdGh1Yi5jb20vQ2xh",
+            "cmlmYWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hcGkvYXBp",
+            "ogIEQ0FJUGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.ResourcesReflection.Descriptor, global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::Clarifai.Auth.Scope.ScopeReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.OrganizationInvitationStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1606,9 +1607,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/annotation.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetAnnotationRequest
   /// </summary>
   public sealed partial class GetAnnotationRequest : pb::IMessage<GetAnnotationRequest> {
     private static readonly pb::MessageParser<GetAnnotationRequest> _parser = new pb::MessageParser<GetAnnotationRequest>(() => new GetAnnotationRequest());
@@ -1801,6 +1800,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListAnnotationsRequest
+  /// </summary>
   public sealed partial class ListAnnotationsRequest : pb::IMessage<ListAnnotationsRequest> {
     private static readonly pb::MessageParser<ListAnnotationsRequest> _parser = new pb::MessageParser<ListAnnotationsRequest>(() => new ListAnnotationsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2193,6 +2195,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostAnnotationsRequest
+  /// </summary>
   public sealed partial class PostAnnotationsRequest : pb::IMessage<PostAnnotationsRequest> {
     private static readonly pb::MessageParser<PostAnnotationsRequest> _parser = new pb::MessageParser<PostAnnotationsRequest>(() => new PostAnnotationsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2348,6 +2353,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchAnnotationsRequest
+  /// </summary>
   public sealed partial class PatchAnnotationsRequest : pb::IMessage<PatchAnnotationsRequest> {
     private static readonly pb::MessageParser<PatchAnnotationsRequest> _parser = new pb::MessageParser<PatchAnnotationsRequest>(() => new PatchAnnotationsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2535,6 +2543,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchAnnotationsStatusRequest
+  /// </summary>
   public sealed partial class PatchAnnotationsStatusRequest : pb::IMessage<PatchAnnotationsStatusRequest> {
     private static readonly pb::MessageParser<PatchAnnotationsStatusRequest> _parser = new pb::MessageParser<PatchAnnotationsStatusRequest>(() => new PatchAnnotationsStatusRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2780,6 +2791,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchAnnotationsStatusResponse
+  /// </summary>
   public sealed partial class PatchAnnotationsStatusResponse : pb::IMessage<PatchAnnotationsStatusResponse> {
     private static readonly pb::MessageParser<PatchAnnotationsStatusResponse> _parser = new pb::MessageParser<PatchAnnotationsStatusResponse>(() => new PatchAnnotationsStatusResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -2963,6 +2977,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteAnnotationRequest
+  /// </summary>
   public sealed partial class DeleteAnnotationRequest : pb::IMessage<DeleteAnnotationRequest> {
     private static readonly pb::MessageParser<DeleteAnnotationRequest> _parser = new pb::MessageParser<DeleteAnnotationRequest>(() => new DeleteAnnotationRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -3343,6 +3360,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleAnnotationResponse
+  /// </summary>
   public sealed partial class SingleAnnotationResponse : pb::IMessage<SingleAnnotationResponse> {
     private static readonly pb::MessageParser<SingleAnnotationResponse> _parser = new pb::MessageParser<SingleAnnotationResponse>(() => new SingleAnnotationResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -3512,6 +3532,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiAnnotationResponse
+  /// </summary>
   public sealed partial class MultiAnnotationResponse : pb::IMessage<MultiAnnotationResponse> {
     private static readonly pb::MessageParser<MultiAnnotationResponse> _parser = new pb::MessageParser<MultiAnnotationResponse>(() => new MultiAnnotationResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -3668,9 +3691,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/app.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetAppRequest
   /// </summary>
   public sealed partial class GetAppRequest : pb::IMessage<GetAppRequest> {
     private static readonly pb::MessageParser<GetAppRequest> _parser = new pb::MessageParser<GetAppRequest>(() => new GetAppRequest());
@@ -3830,6 +3851,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListAppsRequest
+  /// </summary>
   public sealed partial class ListAppsRequest : pb::IMessage<ListAppsRequest> {
     private static readonly pb::MessageParser<ListAppsRequest> _parser = new pb::MessageParser<ListAppsRequest>(() => new ListAppsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -4305,6 +4329,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostAppsRequest
+  /// </summary>
   public sealed partial class PostAppsRequest : pb::IMessage<PostAppsRequest> {
     private static readonly pb::MessageParser<PostAppsRequest> _parser = new pb::MessageParser<PostAppsRequest>(() => new PostAppsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -4460,6 +4487,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteAppRequest
+  /// </summary>
   public sealed partial class DeleteAppRequest : pb::IMessage<DeleteAppRequest> {
     private static readonly pb::MessageParser<DeleteAppRequest> _parser = new pb::MessageParser<DeleteAppRequest>(() => new DeleteAppRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -4595,6 +4625,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchAppsRequest
+  /// </summary>
   public sealed partial class PatchAppsRequest : pb::IMessage<PatchAppsRequest> {
     private static readonly pb::MessageParser<PatchAppsRequest> _parser = new pb::MessageParser<PatchAppsRequest>(() => new PatchAppsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -5063,6 +5096,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleAppResponse
+  /// </summary>
   public sealed partial class SingleAppResponse : pb::IMessage<SingleAppResponse> {
     private static readonly pb::MessageParser<SingleAppResponse> _parser = new pb::MessageParser<SingleAppResponse>(() => new SingleAppResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -5232,6 +5268,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiAppResponse
+  /// </summary>
   public sealed partial class MultiAppResponse : pb::IMessage<MultiAppResponse> {
     private static readonly pb::MessageParser<MultiAppResponse> _parser = new pb::MessageParser<MultiAppResponse>(() => new MultiAppResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -5388,9 +5427,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/app_sharing.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// ListCollaboratorsRequest
   /// </summary>
   public sealed partial class ListCollaboratorsRequest : pb::IMessage<ListCollaboratorsRequest> {
     private static readonly pb::MessageParser<ListCollaboratorsRequest> _parser = new pb::MessageParser<ListCollaboratorsRequest>(() => new ListCollaboratorsRequest());
@@ -5559,6 +5596,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostCollaboratorsRequest
+  /// </summary>
   public sealed partial class PostCollaboratorsRequest : pb::IMessage<PostCollaboratorsRequest> {
     private static readonly pb::MessageParser<PostCollaboratorsRequest> _parser = new pb::MessageParser<PostCollaboratorsRequest>(() => new PostCollaboratorsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -5714,6 +5754,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchCollaboratorsRequest
+  /// </summary>
   public sealed partial class PatchCollaboratorsRequest : pb::IMessage<PatchCollaboratorsRequest> {
     private static readonly pb::MessageParser<PatchCollaboratorsRequest> _parser = new pb::MessageParser<PatchCollaboratorsRequest>(() => new PatchCollaboratorsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -5901,6 +5944,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteCollaboratorsRequest
+  /// </summary>
   public sealed partial class DeleteCollaboratorsRequest : pb::IMessage<DeleteCollaboratorsRequest> {
     private static readonly pb::MessageParser<DeleteCollaboratorsRequest> _parser = new pb::MessageParser<DeleteCollaboratorsRequest>(() => new DeleteCollaboratorsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -6076,6 +6122,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiCollaboratorsResponse
+  /// </summary>
   public sealed partial class MultiCollaboratorsResponse : pb::IMessage<MultiCollaboratorsResponse> {
     private static readonly pb::MessageParser<MultiCollaboratorsResponse> _parser = new pb::MessageParser<MultiCollaboratorsResponse>(() => new MultiCollaboratorsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -6231,6 +6280,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListCollaborationsRequest
+  /// </summary>
   public sealed partial class ListCollaborationsRequest : pb::IMessage<ListCollaborationsRequest> {
     private static readonly pb::MessageParser<ListCollaborationsRequest> _parser = new pb::MessageParser<ListCollaborationsRequest>(() => new ListCollaborationsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -6430,6 +6482,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiCollaborationsResponse
+  /// </summary>
   public sealed partial class MultiCollaborationsResponse : pb::IMessage<MultiCollaborationsResponse> {
     private static readonly pb::MessageParser<MultiCollaborationsResponse> _parser = new pb::MessageParser<MultiCollaborationsResponse>(() => new MultiCollaborationsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -6586,9 +6641,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/code.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetStatusCodeRequest
   /// </summary>
   public sealed partial class GetStatusCodeRequest : pb::IMessage<GetStatusCodeRequest> {
     private static readonly pb::MessageParser<GetStatusCodeRequest> _parser = new pb::MessageParser<GetStatusCodeRequest>(() => new GetStatusCodeRequest());
@@ -6719,6 +6772,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListStatusCodesRequest
+  /// </summary>
   public sealed partial class ListStatusCodesRequest : pb::IMessage<ListStatusCodesRequest> {
     private static readonly pb::MessageParser<ListStatusCodesRequest> _parser = new pb::MessageParser<ListStatusCodesRequest>(() => new ListStatusCodesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -6820,6 +6876,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleStatusCodeResponse
+  /// </summary>
   public sealed partial class SingleStatusCodeResponse : pb::IMessage<SingleStatusCodeResponse> {
     private static readonly pb::MessageParser<SingleStatusCodeResponse> _parser = new pb::MessageParser<SingleStatusCodeResponse>(() => new SingleStatusCodeResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -6958,6 +7017,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiStatusCodeResponse
+  /// </summary>
   public sealed partial class MultiStatusCodeResponse : pb::IMessage<MultiStatusCodeResponse> {
     private static readonly pb::MessageParser<MultiStatusCodeResponse> _parser = new pb::MessageParser<MultiStatusCodeResponse>(() => new MultiStatusCodeResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -7114,9 +7176,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/concept.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetConceptRequest
   /// </summary>
   public sealed partial class GetConceptRequest : pb::IMessage<GetConceptRequest> {
     private static readonly pb::MessageParser<GetConceptRequest> _parser = new pb::MessageParser<GetConceptRequest>(() => new GetConceptRequest());
@@ -7284,6 +7344,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListConceptsRequest
+  /// </summary>
   public sealed partial class ListConceptsRequest : pb::IMessage<ListConceptsRequest> {
     private static readonly pb::MessageParser<ListConceptsRequest> _parser = new pb::MessageParser<ListConceptsRequest>(() => new ListConceptsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -7483,6 +7546,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostConceptsSearchesRequest
+  /// </summary>
   public sealed partial class PostConceptsSearchesRequest : pb::IMessage<PostConceptsSearchesRequest> {
     private static readonly pb::MessageParser<PostConceptsSearchesRequest> _parser = new pb::MessageParser<PostConceptsSearchesRequest>(() => new PostConceptsSearchesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -7696,6 +7762,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostConceptsRequest
+  /// </summary>
   public sealed partial class PostConceptsRequest : pb::IMessage<PostConceptsRequest> {
     private static readonly pb::MessageParser<PostConceptsRequest> _parser = new pb::MessageParser<PostConceptsRequest>(() => new PostConceptsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -7854,6 +7923,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchConceptsRequest
+  /// </summary>
   public sealed partial class PatchConceptsRequest : pb::IMessage<PatchConceptsRequest> {
     private static readonly pb::MessageParser<PatchConceptsRequest> _parser = new pb::MessageParser<PatchConceptsRequest>(() => new PatchConceptsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -8044,6 +8116,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GetConceptCountsRequest
+  /// </summary>
   public sealed partial class GetConceptCountsRequest : pb::IMessage<GetConceptCountsRequest> {
     private static readonly pb::MessageParser<GetConceptCountsRequest> _parser = new pb::MessageParser<GetConceptCountsRequest>(() => new GetConceptCountsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -8243,6 +8318,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleConceptResponse
+  /// </summary>
   public sealed partial class SingleConceptResponse : pb::IMessage<SingleConceptResponse> {
     private static readonly pb::MessageParser<SingleConceptResponse> _parser = new pb::MessageParser<SingleConceptResponse>(() => new SingleConceptResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -8418,6 +8496,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiConceptResponse
+  /// </summary>
   public sealed partial class MultiConceptResponse : pb::IMessage<MultiConceptResponse> {
     private static readonly pb::MessageParser<MultiConceptResponse> _parser = new pb::MessageParser<MultiConceptResponse>(() => new MultiConceptResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -8579,6 +8660,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiConceptCountResponse
+  /// </summary>
   public sealed partial class MultiConceptCountResponse : pb::IMessage<MultiConceptCountResponse> {
     private static readonly pb::MessageParser<MultiConceptCountResponse> _parser = new pb::MessageParser<MultiConceptCountResponse>(() => new MultiConceptCountResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -8741,14 +8825,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/concept_graph.proto
-  /////////////////////////////////////////////////////////////////////////////////
-  ///////////////////////
-  /// Responses
-  ///////////////////////
-  /// Requests
-  ///////////////////////
   /// GET all relations such that the concept_id refers to the subject of the relation
   /// </summary>
   public sealed partial class ListConceptRelationsRequest : pb::IMessage<ListConceptRelationsRequest> {
@@ -9921,6 +9997,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiConceptRelationResponse
+  /// </summary>
   public sealed partial class MultiConceptRelationResponse : pb::IMessage<MultiConceptRelationResponse> {
     private static readonly pb::MessageParser<MultiConceptRelationResponse> _parser = new pb::MessageParser<MultiConceptRelationResponse>(() => new MultiConceptRelationResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -10082,6 +10161,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiKnowledgeGraphResponse
+  /// </summary>
   public sealed partial class MultiKnowledgeGraphResponse : pb::IMessage<MultiKnowledgeGraphResponse> {
     private static readonly pb::MessageParser<MultiKnowledgeGraphResponse> _parser = new pb::MessageParser<MultiKnowledgeGraphResponse>(() => new MultiKnowledgeGraphResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -10243,6 +10325,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiConceptMappingJobResponse
+  /// </summary>
   public sealed partial class MultiConceptMappingJobResponse : pb::IMessage<MultiConceptMappingJobResponse> {
     private static readonly pb::MessageParser<MultiConceptMappingJobResponse> _parser = new pb::MessageParser<MultiConceptMappingJobResponse>(() => new MultiConceptMappingJobResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -10405,9 +10490,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/concept_language.proto
-  /////////////////////////////////////////////////////////////////////////////////
   /// GET single concept language for the given concept.
   /// </summary>
   public sealed partial class GetConceptLanguageRequest : pb::IMessage<GetConceptLanguageRequest> {
@@ -11237,6 +11319,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleConceptLanguageResponse
+  /// </summary>
   public sealed partial class SingleConceptLanguageResponse : pb::IMessage<SingleConceptLanguageResponse> {
     private static readonly pb::MessageParser<SingleConceptLanguageResponse> _parser = new pb::MessageParser<SingleConceptLanguageResponse>(() => new SingleConceptLanguageResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -11406,6 +11491,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiConceptLanguageResponse
+  /// </summary>
   public sealed partial class MultiConceptLanguageResponse : pb::IMessage<MultiConceptLanguageResponse> {
     private static readonly pb::MessageParser<MultiConceptLanguageResponse> _parser = new pb::MessageParser<MultiConceptLanguageResponse>(() => new MultiConceptLanguageResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -11562,9 +11650,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/input.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetInputRequest
   /// </summary>
   public sealed partial class GetInputRequest : pb::IMessage<GetInputRequest> {
     private static readonly pb::MessageParser<GetInputRequest> _parser = new pb::MessageParser<GetInputRequest>(() => new GetInputRequest());
@@ -11729,6 +11815,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GetInputSamplesRequest
+  /// </summary>
   public sealed partial class GetInputSamplesRequest : pb::IMessage<GetInputSamplesRequest> {
     private static readonly pb::MessageParser<GetInputSamplesRequest> _parser = new pb::MessageParser<GetInputSamplesRequest>(() => new GetInputSamplesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -11915,6 +12004,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListInputsRequest
+  /// </summary>
   public sealed partial class ListInputsRequest : pb::IMessage<ListInputsRequest> {
     private static readonly pb::MessageParser<ListInputsRequest> _parser = new pb::MessageParser<ListInputsRequest>(() => new ListInputsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -12171,6 +12263,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// StreamInputsRequest
+  /// </summary>
   public sealed partial class StreamInputsRequest : pb::IMessage<StreamInputsRequest> {
     private static readonly pb::MessageParser<StreamInputsRequest> _parser = new pb::MessageParser<StreamInputsRequest>(() => new StreamInputsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -12394,6 +12489,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostInputsRequest
+  /// </summary>
   public sealed partial class PostInputsRequest : pb::IMessage<PostInputsRequest> {
     private static readonly pb::MessageParser<PostInputsRequest> _parser = new pb::MessageParser<PostInputsRequest>(() => new PostInputsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -12549,6 +12647,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchInputsRequest
+  /// </summary>
   public sealed partial class PatchInputsRequest : pb::IMessage<PatchInputsRequest> {
     private static readonly pb::MessageParser<PatchInputsRequest> _parser = new pb::MessageParser<PatchInputsRequest>(() => new PatchInputsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -12736,6 +12837,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteInputRequest
+  /// </summary>
   public sealed partial class DeleteInputRequest : pb::IMessage<DeleteInputRequest> {
     private static readonly pb::MessageParser<DeleteInputRequest> _parser = new pb::MessageParser<DeleteInputRequest>(() => new DeleteInputRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -13057,6 +13161,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleInputResponse
+  /// </summary>
   public sealed partial class SingleInputResponse : pb::IMessage<SingleInputResponse> {
     private static readonly pb::MessageParser<SingleInputResponse> _parser = new pb::MessageParser<SingleInputResponse>(() => new SingleInputResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -13226,6 +13333,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiInputResponse
+  /// </summary>
   public sealed partial class MultiInputResponse : pb::IMessage<MultiInputResponse> {
     private static readonly pb::MessageParser<MultiInputResponse> _parser = new pb::MessageParser<MultiInputResponse>(() => new MultiInputResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -13381,6 +13491,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiInputAnnotationResponse
+  /// </summary>
   public sealed partial class MultiInputAnnotationResponse : pb::IMessage<MultiInputAnnotationResponse> {
     private static readonly pb::MessageParser<MultiInputAnnotationResponse> _parser = new pb::MessageParser<MultiInputAnnotationResponse>(() => new MultiInputAnnotationResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -13536,6 +13649,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleInputCountResponse
+  /// </summary>
   public sealed partial class SingleInputCountResponse : pb::IMessage<SingleInputCountResponse> {
     private static readonly pb::MessageParser<SingleInputCountResponse> _parser = new pb::MessageParser<SingleInputCountResponse>(() => new SingleInputCountResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -13585,9 +13701,6 @@ namespace Clarifai.Api {
     /// <summary>Field number for the "counts" field.</summary>
     public const int CountsFieldNumber = 2;
     private global::Clarifai.Api.InputCount counts_;
-    /// <summary>
-    /// NOTE: inconsistency: not named after the object name.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Clarifai.Api.InputCount Counts {
       get { return counts_; }
@@ -13708,6 +13821,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GetInputCountRequest
+  /// </summary>
   public sealed partial class GetInputCountRequest : pb::IMessage<GetInputCountRequest> {
     private static readonly pb::MessageParser<GetInputCountRequest> _parser = new pb::MessageParser<GetInputCountRequest>(() => new GetInputCountRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -14357,9 +14473,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/key.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetKeyRequest
   /// </summary>
   public sealed partial class GetKeyRequest : pb::IMessage<GetKeyRequest> {
     private static readonly pb::MessageParser<GetKeyRequest> _parser = new pb::MessageParser<GetKeyRequest>(() => new GetKeyRequest());
@@ -14524,6 +14638,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListKeysRequest
+  /// </summary>
   public sealed partial class ListKeysRequest : pb::IMessage<ListKeysRequest> {
     private static readonly pb::MessageParser<ListKeysRequest> _parser = new pb::MessageParser<ListKeysRequest>(() => new ListKeysRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -14723,6 +14840,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListAppKeysRequest
+  /// </summary>
   public sealed partial class ListAppKeysRequest : pb::IMessage<ListAppKeysRequest> {
     private static readonly pb::MessageParser<ListAppKeysRequest> _parser = new pb::MessageParser<ListAppKeysRequest>(() => new ListAppKeysRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -14922,6 +15042,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostKeysRequest
+  /// </summary>
   public sealed partial class PostKeysRequest : pb::IMessage<PostKeysRequest> {
     private static readonly pb::MessageParser<PostKeysRequest> _parser = new pb::MessageParser<PostKeysRequest>(() => new PostKeysRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -15077,6 +15200,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteKeyRequest
+  /// </summary>
   public sealed partial class DeleteKeyRequest : pb::IMessage<DeleteKeyRequest> {
     private static readonly pb::MessageParser<DeleteKeyRequest> _parser = new pb::MessageParser<DeleteKeyRequest>(() => new DeleteKeyRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -15240,6 +15366,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchKeysRequest
+  /// </summary>
   public sealed partial class PatchKeysRequest : pb::IMessage<PatchKeysRequest> {
     private static readonly pb::MessageParser<PatchKeysRequest> _parser = new pb::MessageParser<PatchKeysRequest>(() => new PatchKeysRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -15427,6 +15556,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleKeyResponse
+  /// </summary>
   public sealed partial class SingleKeyResponse : pb::IMessage<SingleKeyResponse> {
     private static readonly pb::MessageParser<SingleKeyResponse> _parser = new pb::MessageParser<SingleKeyResponse>(() => new SingleKeyResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -15596,6 +15728,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiKeyResponse
+  /// </summary>
   public sealed partial class MultiKeyResponse : pb::IMessage<MultiKeyResponse> {
     private static readonly pb::MessageParser<MultiKeyResponse> _parser = new pb::MessageParser<MultiKeyResponse>(() => new MultiKeyResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -15752,9 +15887,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/model.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetModelRequest
   /// </summary>
   public sealed partial class GetModelRequest : pb::IMessage<GetModelRequest> {
     private static readonly pb::MessageParser<GetModelRequest> _parser = new pb::MessageParser<GetModelRequest>(() => new GetModelRequest());
@@ -16030,6 +16163,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListModelsRequest
+  /// </summary>
   public sealed partial class ListModelsRequest : pb::IMessage<ListModelsRequest> {
     private static readonly pb::MessageParser<ListModelsRequest> _parser = new pb::MessageParser<ListModelsRequest>(() => new ListModelsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -17857,6 +17993,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostModelsRequest
+  /// </summary>
   public sealed partial class PostModelsRequest : pb::IMessage<PostModelsRequest> {
     private static readonly pb::MessageParser<PostModelsRequest> _parser = new pb::MessageParser<PostModelsRequest>(() => new PostModelsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -18056,6 +18195,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchModelsRequest
+  /// </summary>
   public sealed partial class PatchModelsRequest : pb::IMessage<PatchModelsRequest> {
     private static readonly pb::MessageParser<PatchModelsRequest> _parser = new pb::MessageParser<PatchModelsRequest>(() => new PatchModelsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -18243,6 +18385,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteModelRequest
+  /// </summary>
   public sealed partial class DeleteModelRequest : pb::IMessage<DeleteModelRequest> {
     private static readonly pb::MessageParser<DeleteModelRequest> _parser = new pb::MessageParser<DeleteModelRequest>(() => new DeleteModelRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -18808,6 +18953,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleModelResponse
+  /// </summary>
   public sealed partial class SingleModelResponse : pb::IMessage<SingleModelResponse> {
     private static readonly pb::MessageParser<SingleModelResponse> _parser = new pb::MessageParser<SingleModelResponse>(() => new SingleModelResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -18977,6 +19125,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiModelResponse
+  /// </summary>
   public sealed partial class MultiModelResponse : pb::IMessage<MultiModelResponse> {
     private static readonly pb::MessageParser<MultiModelResponse> _parser = new pb::MessageParser<MultiModelResponse>(() => new MultiModelResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -19133,9 +19284,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/model_version.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// PatchModelVersionsRequest
   /// </summary>
   public sealed partial class PatchModelVersionsRequest : pb::IMessage<PatchModelVersionsRequest> {
     private static readonly pb::MessageParser<PatchModelVersionsRequest> _parser = new pb::MessageParser<PatchModelVersionsRequest>(() => new PatchModelVersionsRequest());
@@ -19353,7 +19502,6 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /// NOTE: this is same as GetModelRequest but backend doesn't support sharing same
   /// request for different endpoints currently.
   /// </summary>
   public sealed partial class GetModelVersionRequest : pb::IMessage<GetModelVersionRequest> {
@@ -19547,6 +19695,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListModelVersionsRequest
+  /// </summary>
   public sealed partial class ListModelVersionsRequest : pb::IMessage<ListModelVersionsRequest> {
     private static readonly pb::MessageParser<ListModelVersionsRequest> _parser = new pb::MessageParser<ListModelVersionsRequest>(() => new ListModelVersionsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -19797,6 +19948,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteModelVersionRequest
+  /// </summary>
   public sealed partial class DeleteModelVersionRequest : pb::IMessage<DeleteModelVersionRequest> {
     private static readonly pb::MessageParser<DeleteModelVersionRequest> _parser = new pb::MessageParser<DeleteModelVersionRequest>(() => new DeleteModelVersionRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -19988,6 +20142,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleModelVersionResponse
+  /// </summary>
   public sealed partial class SingleModelVersionResponse : pb::IMessage<SingleModelVersionResponse> {
     private static readonly pb::MessageParser<SingleModelVersionResponse> _parser = new pb::MessageParser<SingleModelVersionResponse>(() => new SingleModelVersionResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -20157,6 +20314,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiModelVersionResponse
+  /// </summary>
   public sealed partial class MultiModelVersionResponse : pb::IMessage<MultiModelVersionResponse> {
     private static readonly pb::MessageParser<MultiModelVersionResponse> _parser = new pb::MessageParser<MultiModelVersionResponse>(() => new MultiModelVersionResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -20721,6 +20881,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ModelVersionPublishRequest
+  /// </summary>
   public sealed partial class ModelVersionPublishRequest : pb::IMessage<ModelVersionPublishRequest> {
     private static readonly pb::MessageParser<ModelVersionPublishRequest> _parser = new pb::MessageParser<ModelVersionPublishRequest>(() => new ModelVersionPublishRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -20850,6 +21013,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostModelVersionsPublishRequest
+  /// </summary>
   public sealed partial class PostModelVersionsPublishRequest : pb::IMessage<PostModelVersionsPublishRequest> {
     private static readonly pb::MessageParser<PostModelVersionsPublishRequest> _parser = new pb::MessageParser<PostModelVersionsPublishRequest>(() => new PostModelVersionsPublishRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -21033,6 +21199,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ModelVersionUnpublishRequest
+  /// </summary>
   public sealed partial class ModelVersionUnpublishRequest : pb::IMessage<ModelVersionUnpublishRequest> {
     private static readonly pb::MessageParser<ModelVersionUnpublishRequest> _parser = new pb::MessageParser<ModelVersionUnpublishRequest>(() => new ModelVersionUnpublishRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -21162,6 +21331,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostModelVersionsUnPublishRequest
+  /// </summary>
   public sealed partial class PostModelVersionsUnPublishRequest : pb::IMessage<PostModelVersionsUnPublishRequest> {
     private static readonly pb::MessageParser<PostModelVersionsUnPublishRequest> _parser = new pb::MessageParser<PostModelVersionsUnPublishRequest>(() => new PostModelVersionsUnPublishRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -21836,6 +22008,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GetModelTypeRequest
+  /// </summary>
   public sealed partial class GetModelTypeRequest : pb::IMessage<GetModelTypeRequest> {
     private static readonly pb::MessageParser<GetModelTypeRequest> _parser = new pb::MessageParser<GetModelTypeRequest>(() => new GetModelTypeRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -22005,6 +22180,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListModelTypesRequest
+  /// </summary>
   public sealed partial class ListModelTypesRequest : pb::IMessage<ListModelTypesRequest> {
     private static readonly pb::MessageParser<ListModelTypesRequest> _parser = new pb::MessageParser<ListModelTypesRequest>(() => new ListModelTypesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -22207,6 +22385,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListOpenSourceLicensesRequest
+  /// </summary>
   public sealed partial class ListOpenSourceLicensesRequest : pb::IMessage<ListOpenSourceLicensesRequest> {
     private static readonly pb::MessageParser<ListOpenSourceLicensesRequest> _parser = new pb::MessageParser<ListOpenSourceLicensesRequest>(() => new ListOpenSourceLicensesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -22308,6 +22489,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListOpenSourceLicensesResponse
+  /// </summary>
   public sealed partial class ListOpenSourceLicensesResponse : pb::IMessage<ListOpenSourceLicensesResponse> {
     private static readonly pb::MessageParser<ListOpenSourceLicensesResponse> _parser = new pb::MessageParser<ListOpenSourceLicensesResponse>(() => new ListOpenSourceLicensesResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -22463,6 +22647,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleModelTypeResponse
+  /// </summary>
   public sealed partial class SingleModelTypeResponse : pb::IMessage<SingleModelTypeResponse> {
     private static readonly pb::MessageParser<SingleModelTypeResponse> _parser = new pb::MessageParser<SingleModelTypeResponse>(() => new SingleModelTypeResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -22638,6 +22825,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiModelTypeResponse
+  /// </summary>
   public sealed partial class MultiModelTypeResponse : pb::IMessage<MultiModelTypeResponse> {
     private static readonly pb::MessageParser<MultiModelTypeResponse> _parser = new pb::MessageParser<MultiModelTypeResponse>(() => new MultiModelTypeResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -22800,9 +22990,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses for Model Version Input Examples
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetModelVersionInputExampleRequest
   /// </summary>
   public sealed partial class GetModelVersionInputExampleRequest : pb::IMessage<GetModelVersionInputExampleRequest> {
     private static readonly pb::MessageParser<GetModelVersionInputExampleRequest> _parser = new pb::MessageParser<GetModelVersionInputExampleRequest>(() => new GetModelVersionInputExampleRequest());
@@ -23035,6 +23223,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListModelVersionInputExamplesRequest
+  /// </summary>
   public sealed partial class ListModelVersionInputExamplesRequest : pb::IMessage<ListModelVersionInputExamplesRequest> {
     private static readonly pb::MessageParser<ListModelVersionInputExamplesRequest> _parser = new pb::MessageParser<ListModelVersionInputExamplesRequest>(() => new ListModelVersionInputExamplesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -23297,6 +23488,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleModelVersionInputExampleResponse
+  /// </summary>
   public sealed partial class SingleModelVersionInputExampleResponse : pb::IMessage<SingleModelVersionInputExampleResponse> {
     private static readonly pb::MessageParser<SingleModelVersionInputExampleResponse> _parser = new pb::MessageParser<SingleModelVersionInputExampleResponse>(() => new SingleModelVersionInputExampleResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -23472,6 +23666,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiModelVersionInputExampleResponse
+  /// </summary>
   public sealed partial class MultiModelVersionInputExampleResponse : pb::IMessage<MultiModelVersionInputExampleResponse> {
     private static readonly pb::MessageParser<MultiModelVersionInputExampleResponse> _parser = new pb::MessageParser<MultiModelVersionInputExampleResponse>(() => new MultiModelVersionInputExampleResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -23633,6 +23830,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListModelReferencesRequest
+  /// </summary>
   public sealed partial class ListModelReferencesRequest : pb::IMessage<ListModelReferencesRequest> {
     private static readonly pb::MessageParser<ListModelReferencesRequest> _parser = new pb::MessageParser<ListModelReferencesRequest>(() => new ListModelReferencesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -23858,6 +24058,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiModelReferenceResponse
+  /// </summary>
   public sealed partial class MultiModelReferenceResponse : pb::IMessage<MultiModelReferenceResponse> {
     private static readonly pb::MessageParser<MultiModelReferenceResponse> _parser = new pb::MessageParser<MultiModelReferenceResponse>(() => new MultiModelReferenceResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -24014,12 +24217,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/output.proto
-  /////////////////////////////////////////////////////////////////////////////////
-  /////////////////////////////////////////////////////
-  /// Outputs related requests
-  /////////////////////////////////////////////////////
+  /// MultiOutputResponse
   /// </summary>
   public sealed partial class MultiOutputResponse : pb::IMessage<MultiOutputResponse> {
     private static readonly pb::MessageParser<MultiOutputResponse> _parser = new pb::MessageParser<MultiOutputResponse>(() => new MultiOutputResponse());
@@ -24177,9 +24375,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/scope.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// ListScopesRequest
   /// </summary>
   public sealed partial class ListScopesRequest : pb::IMessage<ListScopesRequest> {
     private static readonly pb::MessageParser<ListScopesRequest> _parser = new pb::MessageParser<ListScopesRequest>(() => new ListScopesRequest());
@@ -24351,6 +24547,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MyScopesRequest
+  /// </summary>
   public sealed partial class MyScopesRequest : pb::IMessage<MyScopesRequest> {
     private static readonly pb::MessageParser<MyScopesRequest> _parser = new pb::MessageParser<MyScopesRequest>(() => new MyScopesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -24486,6 +24685,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MyScopesUserRequest
+  /// </summary>
   public sealed partial class MyScopesUserRequest : pb::IMessage<MyScopesUserRequest> {
     private static readonly pb::MessageParser<MyScopesUserRequest> _parser = new pb::MessageParser<MyScopesUserRequest>(() => new MyScopesUserRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -24621,6 +24823,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MyScopesRootRequest
+  /// </summary>
   public sealed partial class MyScopesRootRequest : pb::IMessage<MyScopesRootRequest> {
     private static readonly pb::MessageParser<MyScopesRootRequest> _parser = new pb::MessageParser<MyScopesRootRequest>(() => new MyScopesRootRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -24722,6 +24927,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiScopeDepsResponse
+  /// </summary>
   public sealed partial class MultiScopeDepsResponse : pb::IMessage<MultiScopeDepsResponse> {
     private static readonly pb::MessageParser<MultiScopeDepsResponse> _parser = new pb::MessageParser<MultiScopeDepsResponse>(() => new MultiScopeDepsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -24908,6 +25116,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiScopeResponse
+  /// </summary>
   public sealed partial class MultiScopeResponse : pb::IMessage<MultiScopeResponse> {
     private static readonly pb::MessageParser<MultiScopeResponse> _parser = new pb::MessageParser<MultiScopeResponse>(() => new MultiScopeResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -25129,6 +25340,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiScopeUserResponse
+  /// </summary>
   public sealed partial class MultiScopeUserResponse : pb::IMessage<MultiScopeUserResponse> {
     private static readonly pb::MessageParser<MultiScopeUserResponse> _parser = new pb::MessageParser<MultiScopeUserResponse>(() => new MultiScopeUserResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -25313,6 +25527,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiScopeRootResponse
+  /// </summary>
   public sealed partial class MultiScopeRootResponse : pb::IMessage<MultiScopeRootResponse> {
     private static readonly pb::MessageParser<MultiScopeRootResponse> _parser = new pb::MessageParser<MultiScopeRootResponse>(() => new MultiScopeRootResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -25498,9 +25715,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/search.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetSearchRequest
   /// </summary>
   public sealed partial class GetSearchRequest : pb::IMessage<GetSearchRequest> {
     private static readonly pb::MessageParser<GetSearchRequest> _parser = new pb::MessageParser<GetSearchRequest>(() => new GetSearchRequest());
@@ -25665,6 +25880,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListSearchesRequest
+  /// </summary>
   public sealed partial class ListSearchesRequest : pb::IMessage<ListSearchesRequest> {
     private static readonly pb::MessageParser<ListSearchesRequest> _parser = new pb::MessageParser<ListSearchesRequest>(() => new ListSearchesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -25864,6 +26082,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostSearchesRequest
+  /// </summary>
   public sealed partial class PostSearchesRequest : pb::IMessage<PostSearchesRequest> {
     private static readonly pb::MessageParser<PostSearchesRequest> _parser = new pb::MessageParser<PostSearchesRequest>(() => new PostSearchesRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -26308,6 +26529,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteSearchRequest
+  /// </summary>
   public sealed partial class DeleteSearchRequest : pb::IMessage<DeleteSearchRequest> {
     private static readonly pb::MessageParser<DeleteSearchRequest> _parser = new pb::MessageParser<DeleteSearchRequest>(() => new DeleteSearchRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -26673,6 +26897,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteAnnotationSearchMetricsRequest
+  /// </summary>
   public sealed partial class DeleteAnnotationSearchMetricsRequest : pb::IMessage<DeleteAnnotationSearchMetricsRequest> {
     private static readonly pb::MessageParser<DeleteAnnotationSearchMetricsRequest> _parser = new pb::MessageParser<DeleteAnnotationSearchMetricsRequest>(() => new DeleteAnnotationSearchMetricsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -27212,6 +27439,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiSearchResponse
+  /// </summary>
   public sealed partial class MultiSearchResponse : pb::IMessage<MultiSearchResponse> {
     private static readonly pb::MessageParser<MultiSearchResponse> _parser = new pb::MessageParser<MultiSearchResponse>(() => new MultiSearchResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -27464,6 +27694,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostAnnotationSearchMetricsRequest
+  /// </summary>
   public sealed partial class PostAnnotationSearchMetricsRequest : pb::IMessage<PostAnnotationSearchMetricsRequest> {
     private static readonly pb::MessageParser<PostAnnotationSearchMetricsRequest> _parser = new pb::MessageParser<PostAnnotationSearchMetricsRequest>(() => new PostAnnotationSearchMetricsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -27773,6 +28006,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GetAnnotationSearchMetricsRequest
+  /// </summary>
   public sealed partial class GetAnnotationSearchMetricsRequest : pb::IMessage<GetAnnotationSearchMetricsRequest> {
     private static readonly pb::MessageParser<GetAnnotationSearchMetricsRequest> _parser = new pb::MessageParser<GetAnnotationSearchMetricsRequest>(() => new GetAnnotationSearchMetricsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -27939,6 +28175,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListAnnotationSearchMetricsRequest
+  /// </summary>
   public sealed partial class ListAnnotationSearchMetricsRequest : pb::IMessage<ListAnnotationSearchMetricsRequest> {
     private static readonly pb::MessageParser<ListAnnotationSearchMetricsRequest> _parser = new pb::MessageParser<ListAnnotationSearchMetricsRequest>(() => new ListAnnotationSearchMetricsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -28074,6 +28313,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiAnnotationSearchMetricsResponse
+  /// </summary>
   public sealed partial class MultiAnnotationSearchMetricsResponse : pb::IMessage<MultiAnnotationSearchMetricsResponse> {
     private static readonly pb::MessageParser<MultiAnnotationSearchMetricsResponse> _parser = new pb::MessageParser<MultiAnnotationSearchMetricsResponse>(() => new MultiAnnotationSearchMetricsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -28232,6 +28474,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostValidatePasswordRequest
+  /// </summary>
   public sealed partial class PostValidatePasswordRequest : pb::IMessage<PostValidatePasswordRequest> {
     private static readonly pb::MessageParser<PostValidatePasswordRequest> _parser = new pb::MessageParser<PostValidatePasswordRequest>(() => new PostValidatePasswordRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -28404,6 +28649,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SinglePasswordValidationResponse
+  /// </summary>
   public sealed partial class SinglePasswordValidationResponse : pb::IMessage<SinglePasswordValidationResponse> {
     private static readonly pb::MessageParser<SinglePasswordValidationResponse> _parser = new pb::MessageParser<SinglePasswordValidationResponse>(() => new SinglePasswordValidationResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -28577,9 +28825,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Requests / Responses from /proto/clarifai/api/workflow.proto
-  /////////////////////////////////////////////////////////////////////////////////
+  /// GetWorkflowRequest
   /// </summary>
   public sealed partial class GetWorkflowRequest : pb::IMessage<GetWorkflowRequest> {
     private static readonly pb::MessageParser<GetWorkflowRequest> _parser = new pb::MessageParser<GetWorkflowRequest>(() => new GetWorkflowRequest());
@@ -28803,6 +29049,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListWorkflowsRequest
+  /// </summary>
   public sealed partial class ListWorkflowsRequest : pb::IMessage<ListWorkflowsRequest> {
     private static readonly pb::MessageParser<ListWorkflowsRequest> _parser = new pb::MessageParser<ListWorkflowsRequest>(() => new ListWorkflowsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -29277,6 +29526,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostWorkflowsRequest
+  /// </summary>
   public sealed partial class PostWorkflowsRequest : pb::IMessage<PostWorkflowsRequest> {
     private static readonly pb::MessageParser<PostWorkflowsRequest> _parser = new pb::MessageParser<PostWorkflowsRequest>(() => new PostWorkflowsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -29432,6 +29684,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchWorkflowsRequest
+  /// </summary>
   public sealed partial class PatchWorkflowsRequest : pb::IMessage<PatchWorkflowsRequest> {
     private static readonly pb::MessageParser<PatchWorkflowsRequest> _parser = new pb::MessageParser<PatchWorkflowsRequest>(() => new PatchWorkflowsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -29619,6 +29874,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteWorkflowRequest
+  /// </summary>
   public sealed partial class DeleteWorkflowRequest : pb::IMessage<DeleteWorkflowRequest> {
     private static readonly pb::MessageParser<DeleteWorkflowRequest> _parser = new pb::MessageParser<DeleteWorkflowRequest>(() => new DeleteWorkflowRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -29968,6 +30226,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleWorkflowResponse
+  /// </summary>
   public sealed partial class SingleWorkflowResponse : pb::IMessage<SingleWorkflowResponse> {
     private static readonly pb::MessageParser<SingleWorkflowResponse> _parser = new pb::MessageParser<SingleWorkflowResponse>(() => new SingleWorkflowResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -30137,6 +30398,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiWorkflowResponse
+  /// </summary>
   public sealed partial class MultiWorkflowResponse : pb::IMessage<MultiWorkflowResponse> {
     private static readonly pb::MessageParser<MultiWorkflowResponse> _parser = new pb::MessageParser<MultiWorkflowResponse>(() => new MultiWorkflowResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -30292,6 +30556,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostWorkflowResultsRequest
+  /// </summary>
   public sealed partial class PostWorkflowResultsRequest : pb::IMessage<PostWorkflowResultsRequest> {
     private static readonly pb::MessageParser<PostWorkflowResultsRequest> _parser = new pb::MessageParser<PostWorkflowResultsRequest>(() => new PostWorkflowResultsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -30624,6 +30891,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostWorkflowResultsResponse
+  /// </summary>
   public sealed partial class PostWorkflowResultsResponse : pb::IMessage<PostWorkflowResultsResponse> {
     private static readonly pb::MessageParser<PostWorkflowResultsResponse> _parser = new pb::MessageParser<PostWorkflowResultsResponse>(() => new PostWorkflowResultsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -30863,6 +31133,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostWorkflowResultsSimilarityRequest
+  /// </summary>
   public sealed partial class PostWorkflowResultsSimilarityRequest : pb::IMessage<PostWorkflowResultsSimilarityRequest> {
     private static readonly pb::MessageParser<PostWorkflowResultsSimilarityRequest> _parser = new pb::MessageParser<PostWorkflowResultsSimilarityRequest>(() => new PostWorkflowResultsSimilarityRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -31166,6 +31439,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostWorkflowResultsSimilarityResponse
+  /// </summary>
   public sealed partial class PostWorkflowResultsSimilarityResponse : pb::IMessage<PostWorkflowResultsSimilarityResponse> {
     private static readonly pb::MessageParser<PostWorkflowResultsSimilarityResponse> _parser = new pb::MessageParser<PostWorkflowResultsSimilarityResponse>(() => new PostWorkflowResultsSimilarityResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -31321,6 +31597,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListWorkflowVersionsRequest
+  /// </summary>
   public sealed partial class ListWorkflowVersionsRequest : pb::IMessage<ListWorkflowVersionsRequest> {
     private static readonly pb::MessageParser<ListWorkflowVersionsRequest> _parser = new pb::MessageParser<ListWorkflowVersionsRequest>(() => new ListWorkflowVersionsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -31551,6 +31830,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// GetWorkflowVersionRequest
+  /// </summary>
   public sealed partial class GetWorkflowVersionRequest : pb::IMessage<GetWorkflowVersionRequest> {
     private static readonly pb::MessageParser<GetWorkflowVersionRequest> _parser = new pb::MessageParser<GetWorkflowVersionRequest>(() => new GetWorkflowVersionRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -31748,6 +32030,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// DeleteWorkflowVersionsRequest
+  /// </summary>
   public sealed partial class DeleteWorkflowVersionsRequest : pb::IMessage<DeleteWorkflowVersionsRequest> {
     private static readonly pb::MessageParser<DeleteWorkflowVersionsRequest> _parser = new pb::MessageParser<DeleteWorkflowVersionsRequest>(() => new DeleteWorkflowVersionsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -31937,6 +32222,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchWorkflowVersionsRequest
+  /// </summary>
   public sealed partial class PatchWorkflowVersionsRequest : pb::IMessage<PatchWorkflowVersionsRequest> {
     private static readonly pb::MessageParser<PatchWorkflowVersionsRequest> _parser = new pb::MessageParser<PatchWorkflowVersionsRequest>(() => new PatchWorkflowVersionsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -32158,6 +32446,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiWorkflowVersionResponse
+  /// </summary>
   public sealed partial class MultiWorkflowVersionResponse : pb::IMessage<MultiWorkflowVersionResponse> {
     private static readonly pb::MessageParser<MultiWorkflowVersionResponse> _parser = new pb::MessageParser<MultiWorkflowVersionResponse>(() => new MultiWorkflowVersionResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -32313,6 +32604,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleWorkflowVersionResponse
+  /// </summary>
   public sealed partial class SingleWorkflowVersionResponse : pb::IMessage<SingleWorkflowVersionResponse> {
     private static readonly pb::MessageParser<SingleWorkflowVersionResponse> _parser = new pb::MessageParser<SingleWorkflowVersionResponse>(() => new SingleWorkflowVersionResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -33011,6 +33305,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiAppDuplicationsResponse
+  /// </summary>
   public sealed partial class MultiAppDuplicationsResponse : pb::IMessage<MultiAppDuplicationsResponse> {
     private static readonly pb::MessageParser<MultiAppDuplicationsResponse> _parser = new pb::MessageParser<MultiAppDuplicationsResponse>(() => new MultiAppDuplicationsResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -33166,6 +33463,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// SingleAppDuplicationResponse
+  /// </summary>
   public sealed partial class SingleAppDuplicationResponse : pb::IMessage<SingleAppDuplicationResponse> {
     private static readonly pb::MessageParser<SingleAppDuplicationResponse> _parser = new pb::MessageParser<SingleAppDuplicationResponse>(() => new SingleAppDuplicationResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -34003,7 +34303,7 @@ namespace Clarifai.Api {
     private string action_ = "";
     /// <summary>
     /// The action to perform on the patched objects
-    /// For now only 'overwrite' action is supported
+    /// For now actions 'merge', 'overwrite', and 'remove' are supported
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Action {
@@ -35182,6 +35482,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PatchCollectorsRequest
+  /// </summary>
   public sealed partial class PatchCollectorsRequest : pb::IMessage<PatchCollectorsRequest> {
     private static readonly pb::MessageParser<PatchCollectorsRequest> _parser = new pb::MessageParser<PatchCollectorsRequest>(() => new PatchCollectorsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -36257,9 +36560,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /////////////////////////////////////////////////////////////////////////////////
-  /// Stats Collection Endpoints.
-  /////////////////////////////////////////////////////////////////////////////////
+  /// PostStatValuesRequest
   /// </summary>
   public sealed partial class PostStatValuesRequest : pb::IMessage<PostStatValuesRequest> {
     private static readonly pb::MessageParser<PostStatValuesRequest> _parser = new pb::MessageParser<PostStatValuesRequest>(() => new PostStatValuesRequest());
@@ -36422,6 +36723,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiStatValueResponse
+  /// </summary>
   public sealed partial class MultiStatValueResponse : pb::IMessage<MultiStatValueResponse> {
     private static readonly pb::MessageParser<MultiStatValueResponse> _parser = new pb::MessageParser<MultiStatValueResponse>(() => new MultiStatValueResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -36583,6 +36887,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostStatValuesAggregateRequest
+  /// </summary>
   public sealed partial class PostStatValuesAggregateRequest : pb::IMessage<PostStatValuesAggregateRequest> {
     private static readonly pb::MessageParser<PostStatValuesAggregateRequest> _parser = new pb::MessageParser<PostStatValuesAggregateRequest>(() => new PostStatValuesAggregateRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -36744,6 +37051,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiStatValueAggregateResponse
+  /// </summary>
   public sealed partial class MultiStatValueAggregateResponse : pb::IMessage<MultiStatValueAggregateResponse> {
     private static readonly pb::MessageParser<MultiStatValueAggregateResponse> _parser = new pb::MessageParser<MultiStatValueAggregateResponse>(() => new MultiStatValueAggregateResponse());
     private pb::UnknownFieldSet _unknownFields;
@@ -36905,6 +37215,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// PostTrendingMetricsViewRequest
+  /// </summary>
   public sealed partial class PostTrendingMetricsViewRequest : pb::IMessage<PostTrendingMetricsViewRequest> {
     private static readonly pb::MessageParser<PostTrendingMetricsViewRequest> _parser = new pb::MessageParser<PostTrendingMetricsViewRequest>(() => new PostTrendingMetricsViewRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -37105,6 +37418,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// ListTrendingMetricsViewsRequest
+  /// </summary>
   public sealed partial class ListTrendingMetricsViewsRequest : pb::IMessage<ListTrendingMetricsViewsRequest> {
     private static readonly pb::MessageParser<ListTrendingMetricsViewsRequest> _parser = new pb::MessageParser<ListTrendingMetricsViewsRequest>(() => new ListTrendingMetricsViewsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -37338,6 +37654,9 @@ namespace Clarifai.Api {
 
   }
 
+  /// <summary>
+  /// MultiTrendingMetricsViewResponse
+  /// </summary>
   public sealed partial class MultiTrendingMetricsViewResponse : pb::IMessage<MultiTrendingMetricsViewResponse> {
     private static readonly pb::MessageParser<MultiTrendingMetricsViewResponse> _parser = new pb::MessageParser<MultiTrendingMetricsViewResponse>(() => new MultiTrendingMetricsViewResponse());
     private pb::UnknownFieldSet _unknownFields;
