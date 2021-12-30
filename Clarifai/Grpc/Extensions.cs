@@ -30,10 +30,9 @@ namespace Clarifai.Api.Utils {
             "LkZpZWxkT3B0aW9ucxjQhgMgASgIOjQKC2NsX21vcmV0YWdzEh0uZ29vZ2xl",
             "LnByb3RvYnVmLkZpZWxkT3B0aW9ucxjRhgMgASgJOjkKEGNsX2RlZmF1bHRf",
             "ZmxvYXQSHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGNqGAyABKAJC",
-            "nQEKG2NvbS5jbGFyaWZhaS5ncnBjLmFwaS51dGlsc1ABWnVnaXRodWIuY29t",
-            "L0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXBp",
-            "L2dpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90by9j",
-            "bGFyaWZhaS9hcGkvdXRpbHOiAgRDQUlQYgZwcm90bzM="));
+            "ZQobY29tLmNsYXJpZmFpLmdycGMuYXBpLnV0aWxzUAFaPWdpdGh1Yi5jb20v",
+            "Q2xhcmlmYWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hcGkv",
+            "dXRpbHOiAgRDQUlQYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pb::Extension[] { ExtensionsExtensions.ClShowIfEmpty, ExtensionsExtensions.ClMoretags, ExtensionsExtensions.ClDefaultFloat }, null));
