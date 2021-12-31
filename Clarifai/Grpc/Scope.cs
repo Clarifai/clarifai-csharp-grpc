@@ -72,11 +72,10 @@ namespace Clarifai.Auth.Scope {
             "ECEiBAgiECI6PAoPY2xhcmZhaV9leHBvc2VkEiEuZ29vZ2xlLnByb3RvYnVm",
             "LkVudW1WYWx1ZU9wdGlvbnMYvvMEIAEoCDpeChljbGFyaWZhaV9kZXBlbmRp",
             "bmdfc2NvcGVzEiEuZ29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMY",
-            "v/MEIAMoDjIWLmNsYXJpZmFpLmF1dGguc2NvcGUuU0KgAQocY29tLmNsYXJp",
-            "ZmFpLmdycGMuYXV0aC5zY29wZVABWndnaXRodWIuY29tL0NsYXJpZmFpL2Ns",
-            "YXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXV0aC9naXRodWIuY29t",
-            "L0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXV0",
-            "aC9zY29wZaICBENBSVBiBnByb3RvMw=="));
+            "v/MEIAMoDjIWLmNsYXJpZmFpLmF1dGguc2NvcGUuU0JnChxjb20uY2xhcmlm",
+            "YWkuZ3JwYy5hdXRoLnNjb3BlUAFaPmdpdGh1Yi5jb20vQ2xhcmlmYWkvY2xh",
+            "cmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlogIEQ0FJ",
+            "UGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Scope.S), }, new pb::Extension[] { ScopeExtensions.ClarfaiExposed, ScopeExtensions.ClarifaiDependingScopes }, new pbr::GeneratedClrTypeInfo[] {
@@ -110,13 +109,13 @@ namespace Clarifai.Auth.Scope {
   /// scope_test.go
   ///
   /// The dependencies listed for each scope are simply recommendations so that a user
-  /// cannot make a key that would be useless. Beyond the key creation they are not enforcee
+  /// cannot make a key that would be useless. Beyond the key creation they are not enforced
   /// but rather the scopes are enforce when data is accessed.
   ///
-  /// There is the following conventions in place, make sure you add them to the socpes for all new
+  /// There is the following conventions in place, make sure you add them to the scopes for all new
   /// resource types:
   ///
-  /// 1. *_Add required the corresponding _Get.
+  /// 1. *_Add requires the corresponding _Get.
   /// 2. *_Delete requires the corresponding _Add and _Get.
   /// 3. *_Patch is deprecated and not check anywhere.
   /// </summary>

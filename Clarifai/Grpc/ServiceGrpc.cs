@@ -184,6 +184,13 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.ListTasksRequest> __Marshaller_clarifai_api_ListTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListTasksRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchTasksRequest> __Marshaller_clarifai_api_PatchTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchTasksRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteTasksRequest> __Marshaller_clarifai_api_DeleteTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteTasksRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostLabelOrdersRequest> __Marshaller_clarifai_api_PostLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostLabelOrdersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiLabelOrderResponse> __Marshaller_clarifai_api_MultiLabelOrderResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiLabelOrderResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetLabelOrderRequest> __Marshaller_clarifai_api_GetLabelOrderRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetLabelOrderRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleLabelOrderResponse> __Marshaller_clarifai_api_SingleLabelOrderResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleLabelOrderResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListLabelOrdersRequest> __Marshaller_clarifai_api_ListLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListLabelOrdersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchLabelOrdersRequest> __Marshaller_clarifai_api_PatchLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchLabelOrdersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteLabelOrdersRequest> __Marshaller_clarifai_api_DeleteLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteLabelOrdersRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.PostCollectorsRequest> __Marshaller_clarifai_api_PostCollectorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostCollectorsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollectorResponse> __Marshaller_clarifai_api_MultiCollectorResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiCollectorResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Clarifai.Api.GetCollectorRequest> __Marshaller_clarifai_api_GetCollectorRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetCollectorRequest.Parser.ParseFrom);
@@ -1016,6 +1023,41 @@ namespace Clarifai.Api {
         __ServiceName,
         "DeleteTasks",
         __Marshaller_clarifai_api_DeleteTasksRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse> __Method_PostLabelOrders = new grpc::Method<global::Clarifai.Api.PostLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostLabelOrders",
+        __Marshaller_clarifai_api_PostLabelOrdersRequest,
+        __Marshaller_clarifai_api_MultiLabelOrderResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetLabelOrderRequest, global::Clarifai.Api.SingleLabelOrderResponse> __Method_GetLabelOrder = new grpc::Method<global::Clarifai.Api.GetLabelOrderRequest, global::Clarifai.Api.SingleLabelOrderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetLabelOrder",
+        __Marshaller_clarifai_api_GetLabelOrderRequest,
+        __Marshaller_clarifai_api_SingleLabelOrderResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse> __Method_ListLabelOrders = new grpc::Method<global::Clarifai.Api.ListLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListLabelOrders",
+        __Marshaller_clarifai_api_ListLabelOrdersRequest,
+        __Marshaller_clarifai_api_MultiLabelOrderResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse> __Method_PatchLabelOrders = new grpc::Method<global::Clarifai.Api.PatchLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchLabelOrders",
+        __Marshaller_clarifai_api_PatchLabelOrdersRequest,
+        __Marshaller_clarifai_api_MultiLabelOrderResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteLabelOrdersRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteLabelOrders = new grpc::Method<global::Clarifai.Api.DeleteLabelOrdersRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteLabelOrders",
+        __Marshaller_clarifai_api_DeleteLabelOrdersRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.PostCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse> __Method_PostCollectors = new grpc::Method<global::Clarifai.Api.PostCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(
@@ -2383,6 +2425,62 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteTasks(global::Clarifai.Api.DeleteTasksRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add Label orders.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiLabelOrderResponse> PostLabelOrders(global::Clarifai.Api.PostLabelOrdersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a label order.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleLabelOrderResponse> GetLabelOrder(global::Clarifai.Api.GetLabelOrderRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List label orders.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiLabelOrderResponse> ListLabelOrders(global::Clarifai.Api.ListLabelOrdersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch one or more label orders.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiLabelOrderResponse> PatchLabelOrders(global::Clarifai.Api.PatchLabelOrdersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete multiple label orders in one request.
+      /// this do not change task status
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteLabelOrders(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7694,6 +7792,230 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteTasks, null, options, request);
       }
       /// <summary>
+      /// Add Label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiLabelOrderResponse PostLabelOrders(global::Clarifai.Api.PostLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostLabelOrders(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add Label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiLabelOrderResponse PostLabelOrders(global::Clarifai.Api.PostLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostLabelOrders, null, options, request);
+      }
+      /// <summary>
+      /// Add Label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLabelOrderResponse> PostLabelOrdersAsync(global::Clarifai.Api.PostLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostLabelOrdersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add Label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLabelOrderResponse> PostLabelOrdersAsync(global::Clarifai.Api.PostLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostLabelOrders, null, options, request);
+      }
+      /// <summary>
+      /// Get a label order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleLabelOrderResponse GetLabelOrder(global::Clarifai.Api.GetLabelOrderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetLabelOrder(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a label order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleLabelOrderResponse GetLabelOrder(global::Clarifai.Api.GetLabelOrderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetLabelOrder, null, options, request);
+      }
+      /// <summary>
+      /// Get a label order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleLabelOrderResponse> GetLabelOrderAsync(global::Clarifai.Api.GetLabelOrderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetLabelOrderAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a label order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleLabelOrderResponse> GetLabelOrderAsync(global::Clarifai.Api.GetLabelOrderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetLabelOrder, null, options, request);
+      }
+      /// <summary>
+      /// List label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiLabelOrderResponse ListLabelOrders(global::Clarifai.Api.ListLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListLabelOrders(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiLabelOrderResponse ListLabelOrders(global::Clarifai.Api.ListLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListLabelOrders, null, options, request);
+      }
+      /// <summary>
+      /// List label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLabelOrderResponse> ListLabelOrdersAsync(global::Clarifai.Api.ListLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListLabelOrdersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLabelOrderResponse> ListLabelOrdersAsync(global::Clarifai.Api.ListLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListLabelOrders, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiLabelOrderResponse PatchLabelOrders(global::Clarifai.Api.PatchLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchLabelOrders(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiLabelOrderResponse PatchLabelOrders(global::Clarifai.Api.PatchLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchLabelOrders, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLabelOrderResponse> PatchLabelOrdersAsync(global::Clarifai.Api.PatchLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchLabelOrdersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more label orders.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLabelOrderResponse> PatchLabelOrdersAsync(global::Clarifai.Api.PatchLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchLabelOrders, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple label orders in one request.
+      /// this do not change task status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteLabelOrders(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteLabelOrders(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple label orders in one request.
+      /// this do not change task status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteLabelOrders(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteLabelOrders, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple label orders in one request.
+      /// this do not change task status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteLabelOrdersAsync(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteLabelOrdersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple label orders in one request.
+      /// this do not change task status
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteLabelOrdersAsync(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteLabelOrders, null, options, request);
+      }
+      /// <summary>
       /// Add a list of Collectors to an app.
       /// In the handler of this endpoint we also check for all the scopes of the  POST /inputs
       /// endpoint.
@@ -8242,6 +8564,11 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListTasks, serviceImpl.ListTasks)
           .AddMethod(__Method_PatchTasks, serviceImpl.PatchTasks)
           .AddMethod(__Method_DeleteTasks, serviceImpl.DeleteTasks)
+          .AddMethod(__Method_PostLabelOrders, serviceImpl.PostLabelOrders)
+          .AddMethod(__Method_GetLabelOrder, serviceImpl.GetLabelOrder)
+          .AddMethod(__Method_ListLabelOrders, serviceImpl.ListLabelOrders)
+          .AddMethod(__Method_PatchLabelOrders, serviceImpl.PatchLabelOrders)
+          .AddMethod(__Method_DeleteLabelOrders, serviceImpl.DeleteLabelOrders)
           .AddMethod(__Method_PostCollectors, serviceImpl.PostCollectors)
           .AddMethod(__Method_GetCollector, serviceImpl.GetCollector)
           .AddMethod(__Method_ListCollectors, serviceImpl.ListCollectors)
@@ -8376,6 +8703,11 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.ListTasks));
       serviceBinder.AddMethod(__Method_PatchTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchTasksRequest, global::Clarifai.Api.MultiTaskResponse>(serviceImpl.PatchTasks));
       serviceBinder.AddMethod(__Method_DeleteTasks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteTasksRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteTasks));
+      serviceBinder.AddMethod(__Method_PostLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(serviceImpl.PostLabelOrders));
+      serviceBinder.AddMethod(__Method_GetLabelOrder, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetLabelOrderRequest, global::Clarifai.Api.SingleLabelOrderResponse>(serviceImpl.GetLabelOrder));
+      serviceBinder.AddMethod(__Method_ListLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(serviceImpl.ListLabelOrders));
+      serviceBinder.AddMethod(__Method_PatchLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(serviceImpl.PatchLabelOrders));
+      serviceBinder.AddMethod(__Method_DeleteLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteLabelOrdersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteLabelOrders));
       serviceBinder.AddMethod(__Method_PostCollectors, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(serviceImpl.PostCollectors));
       serviceBinder.AddMethod(__Method_GetCollector, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetCollectorRequest, global::Clarifai.Api.SingleCollectorResponse>(serviceImpl.GetCollector));
       serviceBinder.AddMethod(__Method_ListCollectors, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(serviceImpl.ListCollectors));
