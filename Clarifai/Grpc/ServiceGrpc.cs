@@ -12,199 +12,306 @@ namespace Clarifai.Api {
   {
     static readonly string __ServiceName = "clarifai.api.V2";
 
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptRelationsRequest> __Marshaller_clarifai_api_ListConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListConceptRelationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptRelationResponse> __Marshaller_clarifai_api_MultiConceptRelationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptRelationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptRelationsRequest> __Marshaller_clarifai_api_PostConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptRelationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteConceptRelationsRequest> __Marshaller_clarifai_api_DeleteConceptRelationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteConceptRelationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.Status.BaseResponse> __Marshaller_clarifai_api_status_BaseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.Status.BaseResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptCountsRequest> __Marshaller_clarifai_api_GetConceptCountsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetConceptCountsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptCountResponse> __Marshaller_clarifai_api_MultiConceptCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptCountResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptRequest> __Marshaller_clarifai_api_GetConceptRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetConceptRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleConceptResponse> __Marshaller_clarifai_api_SingleConceptResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleConceptResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptsRequest> __Marshaller_clarifai_api_ListConceptsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListConceptsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptResponse> __Marshaller_clarifai_api_MultiConceptResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptsSearchesRequest> __Marshaller_clarifai_api_PostConceptsSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptsSearchesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptsRequest> __Marshaller_clarifai_api_PostConceptsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchConceptsRequest> __Marshaller_clarifai_api_PatchConceptsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchConceptsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptLanguageRequest> __Marshaller_clarifai_api_GetConceptLanguageRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetConceptLanguageRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleConceptLanguageResponse> __Marshaller_clarifai_api_SingleConceptLanguageResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleConceptLanguageResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptLanguagesRequest> __Marshaller_clarifai_api_ListConceptLanguagesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListConceptLanguagesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptLanguageResponse> __Marshaller_clarifai_api_MultiConceptLanguageResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptLanguageResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptLanguagesRequest> __Marshaller_clarifai_api_PostConceptLanguagesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptLanguagesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchConceptLanguagesRequest> __Marshaller_clarifai_api_PatchConceptLanguagesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchConceptLanguagesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListKnowledgeGraphsRequest> __Marshaller_clarifai_api_ListKnowledgeGraphsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListKnowledgeGraphsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiKnowledgeGraphResponse> __Marshaller_clarifai_api_MultiKnowledgeGraphResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiKnowledgeGraphResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostKnowledgeGraphsRequest> __Marshaller_clarifai_api_PostKnowledgeGraphsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostKnowledgeGraphsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptMappingJobsRequest> __Marshaller_clarifai_api_PostConceptMappingJobsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostConceptMappingJobsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptMappingJobResponse> __Marshaller_clarifai_api_MultiConceptMappingJobResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiConceptMappingJobResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetAnnotationRequest> __Marshaller_clarifai_api_GetAnnotationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetAnnotationRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleAnnotationResponse> __Marshaller_clarifai_api_SingleAnnotationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleAnnotationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationsRequest> __Marshaller_clarifai_api_ListAnnotationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListAnnotationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationResponse> __Marshaller_clarifai_api_MultiAnnotationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiAnnotationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsRequest> __Marshaller_clarifai_api_PostAnnotationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAnnotationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsRequest> __Marshaller_clarifai_api_PatchAnnotationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchAnnotationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsStatusRequest> __Marshaller_clarifai_api_PatchAnnotationsStatusRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchAnnotationsStatusRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsStatusResponse> __Marshaller_clarifai_api_PatchAnnotationsStatusResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchAnnotationsStatusResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationRequest> __Marshaller_clarifai_api_DeleteAnnotationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteAnnotationRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationsRequest> __Marshaller_clarifai_api_DeleteAnnotationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteAnnotationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsSearchesRequest> __Marshaller_clarifai_api_PostAnnotationsSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAnnotationsSearchesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiSearchResponse> __Marshaller_clarifai_api_MultiSearchResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiSearchResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetInputCountRequest> __Marshaller_clarifai_api_GetInputCountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetInputCountRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleInputCountResponse> __Marshaller_clarifai_api_SingleInputCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleInputCountResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.StreamInputsRequest> __Marshaller_clarifai_api_StreamInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.StreamInputsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInputResponse> __Marshaller_clarifai_api_MultiInputResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiInputResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetInputSamplesRequest> __Marshaller_clarifai_api_GetInputSamplesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetInputSamplesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInputAnnotationResponse> __Marshaller_clarifai_api_MultiInputAnnotationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiInputAnnotationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetInputRequest> __Marshaller_clarifai_api_GetInputRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetInputRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleInputResponse> __Marshaller_clarifai_api_SingleInputResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleInputResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListInputsRequest> __Marshaller_clarifai_api_ListInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListInputsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostInputsRequest> __Marshaller_clarifai_api_PostInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostInputsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchInputsRequest> __Marshaller_clarifai_api_PatchInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchInputsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteInputRequest> __Marshaller_clarifai_api_DeleteInputRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteInputRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteInputsRequest> __Marshaller_clarifai_api_DeleteInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteInputsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostInputsSearchesRequest> __Marshaller_clarifai_api_PostInputsSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostInputsSearchesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelOutputsRequest> __Marshaller_clarifai_api_PostModelOutputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelOutputsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiOutputResponse> __Marshaller_clarifai_api_MultiOutputResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiOutputResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelTypeRequest> __Marshaller_clarifai_api_GetModelTypeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelTypeRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelTypeResponse> __Marshaller_clarifai_api_SingleModelTypeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelTypeResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListOpenSourceLicensesRequest> __Marshaller_clarifai_api_ListOpenSourceLicensesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListOpenSourceLicensesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListOpenSourceLicensesResponse> __Marshaller_clarifai_api_ListOpenSourceLicensesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListOpenSourceLicensesResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelTypesRequest> __Marshaller_clarifai_api_ListModelTypesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelTypesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelTypeResponse> __Marshaller_clarifai_api_MultiModelTypeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelTypeResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelRequest> __Marshaller_clarifai_api_GetModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelResponse> __Marshaller_clarifai_api_SingleModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelsRequest> __Marshaller_clarifai_api_ListModelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelResponse> __Marshaller_clarifai_api_MultiModelResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelsSearchesRequest> __Marshaller_clarifai_api_PostModelsSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelsSearchesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelsRequest> __Marshaller_clarifai_api_PostModelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelsRequest> __Marshaller_clarifai_api_PatchModelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelRequest> __Marshaller_clarifai_api_DeleteModelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelsRequest> __Marshaller_clarifai_api_DeleteModelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelToolkitsRequest> __Marshaller_clarifai_api_PatchModelToolkitsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelToolkitsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelToolkitResponse> __Marshaller_clarifai_api_MultiModelToolkitResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelToolkitResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelUseCasesRequest> __Marshaller_clarifai_api_PatchModelUseCasesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelUseCasesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelUseCaseResponse> __Marshaller_clarifai_api_MultiModelUseCaseResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelUseCaseResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelLanguagesRequest> __Marshaller_clarifai_api_PatchModelLanguagesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelLanguagesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelLanguageResponse> __Marshaller_clarifai_api_MultiModelLanguageResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelLanguageResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelInputsRequest> __Marshaller_clarifai_api_ListModelInputsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelInputsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionRequest> __Marshaller_clarifai_api_GetModelVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelVersionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionResponse> __Marshaller_clarifai_api_SingleModelVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelVersionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionsRequest> __Marshaller_clarifai_api_ListModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelVersionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionResponse> __Marshaller_clarifai_api_MultiModelVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelVersionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsPublishRequest> __Marshaller_clarifai_api_PostModelVersionsPublishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsPublishRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsUnPublishRequest> __Marshaller_clarifai_api_PostModelVersionsUnPublishRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsUnPublishRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsRequest> __Marshaller_clarifai_api_PostModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelVersionsRequest> __Marshaller_clarifai_api_PatchModelVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchModelVersionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionRequest> __Marshaller_clarifai_api_DeleteModelVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteModelVersionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionMetricsRequest> __Marshaller_clarifai_api_GetModelVersionMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelVersionMetricsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionMetricsRequest> __Marshaller_clarifai_api_PostModelVersionMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostModelVersionMetricsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelReferencesRequest> __Marshaller_clarifai_api_ListModelReferencesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelReferencesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelReferenceResponse> __Marshaller_clarifai_api_MultiModelReferenceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelReferenceResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionInputExampleRequest> __Marshaller_clarifai_api_GetModelVersionInputExampleRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetModelVersionInputExampleRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionInputExampleResponse> __Marshaller_clarifai_api_SingleModelVersionInputExampleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleModelVersionInputExampleResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionInputExamplesRequest> __Marshaller_clarifai_api_ListModelVersionInputExamplesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListModelVersionInputExamplesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionInputExampleResponse> __Marshaller_clarifai_api_MultiModelVersionInputExampleResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiModelVersionInputExampleResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetWorkflowRequest> __Marshaller_clarifai_api_GetWorkflowRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetWorkflowRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleWorkflowResponse> __Marshaller_clarifai_api_SingleWorkflowResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleWorkflowResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowsRequest> __Marshaller_clarifai_api_ListWorkflowsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListWorkflowsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowResponse> __Marshaller_clarifai_api_MultiWorkflowResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiWorkflowResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowsRequest> __Marshaller_clarifai_api_PostWorkflowsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostWorkflowsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchWorkflowsRequest> __Marshaller_clarifai_api_PatchWorkflowsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchWorkflowsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteWorkflowRequest> __Marshaller_clarifai_api_DeleteWorkflowRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteWorkflowRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteWorkflowsRequest> __Marshaller_clarifai_api_DeleteWorkflowsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteWorkflowsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsRequest> __Marshaller_clarifai_api_PostWorkflowResultsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostWorkflowResultsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsResponse> __Marshaller_clarifai_api_PostWorkflowResultsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostWorkflowResultsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsSimilarityRequest> __Marshaller_clarifai_api_PostWorkflowResultsSimilarityRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostWorkflowResultsSimilarityRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> __Marshaller_clarifai_api_PostWorkflowResultsSimilarityResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostWorkflowResultsSimilarityResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowVersionsRequest> __Marshaller_clarifai_api_ListWorkflowVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListWorkflowVersionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowVersionResponse> __Marshaller_clarifai_api_MultiWorkflowVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiWorkflowVersionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetWorkflowVersionRequest> __Marshaller_clarifai_api_GetWorkflowVersionRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetWorkflowVersionRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleWorkflowVersionResponse> __Marshaller_clarifai_api_SingleWorkflowVersionResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleWorkflowVersionResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteWorkflowVersionsRequest> __Marshaller_clarifai_api_DeleteWorkflowVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteWorkflowVersionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchWorkflowVersionsRequest> __Marshaller_clarifai_api_PatchWorkflowVersionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchWorkflowVersionsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetKeyRequest> __Marshaller_clarifai_api_GetKeyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetKeyRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleKeyResponse> __Marshaller_clarifai_api_SingleKeyResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleKeyResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListKeysRequest> __Marshaller_clarifai_api_ListKeysRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListKeysRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiKeyResponse> __Marshaller_clarifai_api_MultiKeyResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiKeyResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListAppKeysRequest> __Marshaller_clarifai_api_ListAppKeysRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListAppKeysRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteKeyRequest> __Marshaller_clarifai_api_DeleteKeyRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteKeyRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostKeysRequest> __Marshaller_clarifai_api_PostKeysRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostKeysRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchKeysRequest> __Marshaller_clarifai_api_PatchKeysRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchKeysRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesRequest> __Marshaller_clarifai_api_MyScopesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MyScopesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeResponse> __Marshaller_clarifai_api_MultiScopeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesUserRequest> __Marshaller_clarifai_api_MyScopesUserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MyScopesUserRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeUserResponse> __Marshaller_clarifai_api_MultiScopeUserResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeUserResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesRootRequest> __Marshaller_clarifai_api_MyScopesRootRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MyScopesRootRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeRootResponse> __Marshaller_clarifai_api_MultiScopeRootResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeRootResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListScopesRequest> __Marshaller_clarifai_api_ListScopesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListScopesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeDepsResponse> __Marshaller_clarifai_api_MultiScopeDepsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiScopeDepsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetAppRequest> __Marshaller_clarifai_api_GetAppRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetAppRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleAppResponse> __Marshaller_clarifai_api_SingleAppResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleAppResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListAppsRequest> __Marshaller_clarifai_api_ListAppsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListAppsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAppResponse> __Marshaller_clarifai_api_MultiAppResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiAppResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAppRequest> __Marshaller_clarifai_api_DeleteAppRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteAppRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostAppsRequest> __Marshaller_clarifai_api_PostAppsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAppsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppsRequest> __Marshaller_clarifai_api_PatchAppsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchAppsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostAppsSearchesRequest> __Marshaller_clarifai_api_PostAppsSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAppsSearchesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostValidatePasswordRequest> __Marshaller_clarifai_api_PostValidatePasswordRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostValidatePasswordRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SinglePasswordValidationResponse> __Marshaller_clarifai_api_SinglePasswordValidationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SinglePasswordValidationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetSearchRequest> __Marshaller_clarifai_api_GetSearchRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetSearchRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleSearchResponse> __Marshaller_clarifai_api_SingleSearchResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleSearchResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListSearchesRequest> __Marshaller_clarifai_api_ListSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListSearchesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostSearchesRequest> __Marshaller_clarifai_api_PostSearchesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostSearchesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostSearchesByIDRequest> __Marshaller_clarifai_api_PostSearchesByIDRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostSearchesByIDRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_PostAnnotationSearchMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAnnotationSearchMetricsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> __Marshaller_clarifai_api_MultiAnnotationSearchMetricsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiAnnotationSearchMetricsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_GetAnnotationSearchMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetAnnotationSearchMetricsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_ListAnnotationSearchMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListAnnotationSearchMetricsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_DeleteAnnotationSearchMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteSearchRequest> __Marshaller_clarifai_api_DeleteSearchRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteSearchRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListStatusCodesRequest> __Marshaller_clarifai_api_ListStatusCodesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListStatusCodesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatusCodeResponse> __Marshaller_clarifai_api_MultiStatusCodeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiStatusCodeResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetStatusCodeRequest> __Marshaller_clarifai_api_GetStatusCodeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetStatusCodeRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleStatusCodeResponse> __Marshaller_clarifai_api_SingleStatusCodeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleStatusCodeResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListCollaboratorsRequest> __Marshaller_clarifai_api_ListCollaboratorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListCollaboratorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollaboratorsResponse> __Marshaller_clarifai_api_MultiCollaboratorsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiCollaboratorsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostCollaboratorsRequest> __Marshaller_clarifai_api_PostCollaboratorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostCollaboratorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchCollaboratorsRequest> __Marshaller_clarifai_api_PatchCollaboratorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchCollaboratorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteCollaboratorsRequest> __Marshaller_clarifai_api_DeleteCollaboratorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteCollaboratorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListCollaborationsRequest> __Marshaller_clarifai_api_ListCollaborationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListCollaborationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollaborationsResponse> __Marshaller_clarifai_api_MultiCollaborationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiCollaborationsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostAppDuplicationsRequest> __Marshaller_clarifai_api_PostAppDuplicationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostAppDuplicationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAppDuplicationsResponse> __Marshaller_clarifai_api_MultiAppDuplicationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiAppDuplicationsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListAppDuplicationsRequest> __Marshaller_clarifai_api_ListAppDuplicationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListAppDuplicationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetAppDuplicationRequest> __Marshaller_clarifai_api_GetAppDuplicationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetAppDuplicationRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleAppDuplicationResponse> __Marshaller_clarifai_api_SingleAppDuplicationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleAppDuplicationResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostTasksRequest> __Marshaller_clarifai_api_PostTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostTasksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiTaskResponse> __Marshaller_clarifai_api_MultiTaskResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiTaskResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskCountRequest> __Marshaller_clarifai_api_GetTaskCountRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetTaskCountRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskCountResponse> __Marshaller_clarifai_api_SingleTaskCountResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleTaskCountResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskRequest> __Marshaller_clarifai_api_GetTaskRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetTaskRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskResponse> __Marshaller_clarifai_api_SingleTaskResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleTaskResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListTasksRequest> __Marshaller_clarifai_api_ListTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListTasksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchTasksRequest> __Marshaller_clarifai_api_PatchTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchTasksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteTasksRequest> __Marshaller_clarifai_api_DeleteTasksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteTasksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostLabelOrdersRequest> __Marshaller_clarifai_api_PostLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostLabelOrdersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiLabelOrderResponse> __Marshaller_clarifai_api_MultiLabelOrderResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiLabelOrderResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetLabelOrderRequest> __Marshaller_clarifai_api_GetLabelOrderRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetLabelOrderRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleLabelOrderResponse> __Marshaller_clarifai_api_SingleLabelOrderResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleLabelOrderResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListLabelOrdersRequest> __Marshaller_clarifai_api_ListLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListLabelOrdersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchLabelOrdersRequest> __Marshaller_clarifai_api_PatchLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchLabelOrdersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteLabelOrdersRequest> __Marshaller_clarifai_api_DeleteLabelOrdersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteLabelOrdersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostCollectorsRequest> __Marshaller_clarifai_api_PostCollectorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostCollectorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollectorResponse> __Marshaller_clarifai_api_MultiCollectorResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiCollectorResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetCollectorRequest> __Marshaller_clarifai_api_GetCollectorRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.GetCollectorRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleCollectorResponse> __Marshaller_clarifai_api_SingleCollectorResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.SingleCollectorResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListCollectorsRequest> __Marshaller_clarifai_api_ListCollectorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListCollectorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchCollectorsRequest> __Marshaller_clarifai_api_PatchCollectorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PatchCollectorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteCollectorsRequest> __Marshaller_clarifai_api_DeleteCollectorsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.DeleteCollectorsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesRequest> __Marshaller_clarifai_api_PostStatValuesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostStatValuesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueResponse> __Marshaller_clarifai_api_MultiStatValueResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiStatValueResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesAggregateRequest> __Marshaller_clarifai_api_PostStatValuesAggregateRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostStatValuesAggregateRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueAggregateResponse> __Marshaller_clarifai_api_MultiStatValueAggregateResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiStatValueAggregateResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostTrendingMetricsViewRequest> __Marshaller_clarifai_api_PostTrendingMetricsViewRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.PostTrendingMetricsViewRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListTrendingMetricsViewsRequest> __Marshaller_clarifai_api_ListTrendingMetricsViewsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.ListTrendingMetricsViewsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiTrendingMetricsViewResponse> __Marshaller_clarifai_api_MultiTrendingMetricsViewResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Clarifai.Api.MultiTrendingMetricsViewResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptRelationsRequest> __Marshaller_clarifai_api_ListConceptRelationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListConceptRelationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptRelationResponse> __Marshaller_clarifai_api_MultiConceptRelationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiConceptRelationResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptRelationsRequest> __Marshaller_clarifai_api_PostConceptRelationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostConceptRelationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteConceptRelationsRequest> __Marshaller_clarifai_api_DeleteConceptRelationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteConceptRelationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.Status.BaseResponse> __Marshaller_clarifai_api_status_BaseResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.Status.BaseResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptCountsRequest> __Marshaller_clarifai_api_GetConceptCountsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetConceptCountsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptCountResponse> __Marshaller_clarifai_api_MultiConceptCountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiConceptCountResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptRequest> __Marshaller_clarifai_api_GetConceptRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetConceptRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleConceptResponse> __Marshaller_clarifai_api_SingleConceptResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleConceptResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptsRequest> __Marshaller_clarifai_api_ListConceptsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListConceptsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptResponse> __Marshaller_clarifai_api_MultiConceptResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiConceptResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptsSearchesRequest> __Marshaller_clarifai_api_PostConceptsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostConceptsSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptsRequest> __Marshaller_clarifai_api_PostConceptsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostConceptsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchConceptsRequest> __Marshaller_clarifai_api_PatchConceptsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchConceptsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetConceptLanguageRequest> __Marshaller_clarifai_api_GetConceptLanguageRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetConceptLanguageRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleConceptLanguageResponse> __Marshaller_clarifai_api_SingleConceptLanguageResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleConceptLanguageResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListConceptLanguagesRequest> __Marshaller_clarifai_api_ListConceptLanguagesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListConceptLanguagesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptLanguageResponse> __Marshaller_clarifai_api_MultiConceptLanguageResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiConceptLanguageResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptLanguagesRequest> __Marshaller_clarifai_api_PostConceptLanguagesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostConceptLanguagesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchConceptLanguagesRequest> __Marshaller_clarifai_api_PatchConceptLanguagesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchConceptLanguagesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListKnowledgeGraphsRequest> __Marshaller_clarifai_api_ListKnowledgeGraphsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListKnowledgeGraphsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiKnowledgeGraphResponse> __Marshaller_clarifai_api_MultiKnowledgeGraphResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiKnowledgeGraphResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostKnowledgeGraphsRequest> __Marshaller_clarifai_api_PostKnowledgeGraphsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostKnowledgeGraphsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptMappingJobsRequest> __Marshaller_clarifai_api_PostConceptMappingJobsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostConceptMappingJobsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptMappingJobResponse> __Marshaller_clarifai_api_MultiConceptMappingJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiConceptMappingJobResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetAnnotationRequest> __Marshaller_clarifai_api_GetAnnotationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetAnnotationRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleAnnotationResponse> __Marshaller_clarifai_api_SingleAnnotationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleAnnotationResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationsRequest> __Marshaller_clarifai_api_ListAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAnnotationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationResponse> __Marshaller_clarifai_api_MultiAnnotationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAnnotationResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsRequest> __Marshaller_clarifai_api_PostAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsRequest> __Marshaller_clarifai_api_PatchAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsStatusRequest> __Marshaller_clarifai_api_PatchAnnotationsStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationsStatusRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsStatusResponse> __Marshaller_clarifai_api_PatchAnnotationsStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationsStatusResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationRequest> __Marshaller_clarifai_api_DeleteAnnotationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAnnotationRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationsRequest> __Marshaller_clarifai_api_DeleteAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAnnotationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsSearchesRequest> __Marshaller_clarifai_api_PatchAnnotationsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationsSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiSearchResponse> __Marshaller_clarifai_api_MultiSearchResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiSearchResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsSearchesRequest> __Marshaller_clarifai_api_PostAnnotationsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationsSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetInputCountRequest> __Marshaller_clarifai_api_GetInputCountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetInputCountRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleInputCountResponse> __Marshaller_clarifai_api_SingleInputCountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleInputCountResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.StreamInputsRequest> __Marshaller_clarifai_api_StreamInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.StreamInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInputResponse> __Marshaller_clarifai_api_MultiInputResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiInputResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetInputSamplesRequest> __Marshaller_clarifai_api_GetInputSamplesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetInputSamplesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInputAnnotationResponse> __Marshaller_clarifai_api_MultiInputAnnotationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiInputAnnotationResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetInputRequest> __Marshaller_clarifai_api_GetInputRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetInputRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleInputResponse> __Marshaller_clarifai_api_SingleInputResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleInputResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListInputsRequest> __Marshaller_clarifai_api_ListInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostInputsRequest> __Marshaller_clarifai_api_PostInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchInputsRequest> __Marshaller_clarifai_api_PatchInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteInputRequest> __Marshaller_clarifai_api_DeleteInputRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteInputRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteInputsRequest> __Marshaller_clarifai_api_DeleteInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchInputsSearchesRequest> __Marshaller_clarifai_api_PatchInputsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchInputsSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostInputsSearchesRequest> __Marshaller_clarifai_api_PostInputsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostInputsSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelOutputsRequest> __Marshaller_clarifai_api_PostModelOutputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelOutputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiOutputResponse> __Marshaller_clarifai_api_MultiOutputResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiOutputResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListDatasetsRequest> __Marshaller_clarifai_api_ListDatasetsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListDatasetsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiDatasetResponse> __Marshaller_clarifai_api_MultiDatasetResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiDatasetResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetDatasetRequest> __Marshaller_clarifai_api_GetDatasetRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetDatasetRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleDatasetResponse> __Marshaller_clarifai_api_SingleDatasetResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleDatasetResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostDatasetsRequest> __Marshaller_clarifai_api_PostDatasetsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostDatasetsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchDatasetsRequest> __Marshaller_clarifai_api_PatchDatasetsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchDatasetsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteDatasetsRequest> __Marshaller_clarifai_api_DeleteDatasetsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteDatasetsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListDatasetInputsRequest> __Marshaller_clarifai_api_ListDatasetInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListDatasetInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiDatasetInputResponse> __Marshaller_clarifai_api_MultiDatasetInputResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiDatasetInputResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetDatasetInputRequest> __Marshaller_clarifai_api_GetDatasetInputRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetDatasetInputRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleDatasetInputResponse> __Marshaller_clarifai_api_SingleDatasetInputResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleDatasetInputResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostDatasetInputsRequest> __Marshaller_clarifai_api_PostDatasetInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostDatasetInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteDatasetInputsRequest> __Marshaller_clarifai_api_DeleteDatasetInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteDatasetInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListDatasetVersionsRequest> __Marshaller_clarifai_api_ListDatasetVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListDatasetVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiDatasetVersionResponse> __Marshaller_clarifai_api_MultiDatasetVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiDatasetVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetDatasetVersionRequest> __Marshaller_clarifai_api_GetDatasetVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetDatasetVersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleDatasetVersionResponse> __Marshaller_clarifai_api_SingleDatasetVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleDatasetVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest> __Marshaller_clarifai_api_ListDatasetVersionMetricsGroupsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse> __Marshaller_clarifai_api_MultiDatasetVersionMetricsGroupResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostDatasetVersionsRequest> __Marshaller_clarifai_api_PostDatasetVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostDatasetVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchDatasetVersionsRequest> __Marshaller_clarifai_api_PatchDatasetVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchDatasetVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteDatasetVersionsRequest> __Marshaller_clarifai_api_DeleteDatasetVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteDatasetVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PutDatasetVersionExportsRequest> __Marshaller_clarifai_api_PutDatasetVersionExportsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PutDatasetVersionExportsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiDatasetVersionExportResponse> __Marshaller_clarifai_api_MultiDatasetVersionExportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiDatasetVersionExportResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelTypeRequest> __Marshaller_clarifai_api_GetModelTypeRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModelTypeRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelTypeResponse> __Marshaller_clarifai_api_SingleModelTypeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModelTypeResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListOpenSourceLicensesRequest> __Marshaller_clarifai_api_ListOpenSourceLicensesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListOpenSourceLicensesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListOpenSourceLicensesResponse> __Marshaller_clarifai_api_ListOpenSourceLicensesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListOpenSourceLicensesResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelTypesRequest> __Marshaller_clarifai_api_ListModelTypesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModelTypesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelTypeResponse> __Marshaller_clarifai_api_MultiModelTypeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelTypeResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelRequest> __Marshaller_clarifai_api_GetModelRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModelRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelResponse> __Marshaller_clarifai_api_SingleModelResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModelResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelsRequest> __Marshaller_clarifai_api_ListModelsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModelsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelResponse> __Marshaller_clarifai_api_MultiModelResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelsSearchesRequest> __Marshaller_clarifai_api_PostModelsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelsSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelsRequest> __Marshaller_clarifai_api_PostModelsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelsRequest> __Marshaller_clarifai_api_PatchModelsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModelsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelIdsRequest> __Marshaller_clarifai_api_PatchModelIdsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModelIdsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelRequest> __Marshaller_clarifai_api_DeleteModelRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModelRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelsRequest> __Marshaller_clarifai_api_DeleteModelsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModelsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelCheckConsentsRequest> __Marshaller_clarifai_api_PatchModelCheckConsentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModelCheckConsentsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelCheckConsentResponse> __Marshaller_clarifai_api_MultiModelCheckConsentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelCheckConsentResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelToolkitsRequest> __Marshaller_clarifai_api_PatchModelToolkitsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModelToolkitsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelToolkitResponse> __Marshaller_clarifai_api_MultiModelToolkitResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelToolkitResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelUseCasesRequest> __Marshaller_clarifai_api_PatchModelUseCasesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModelUseCasesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelUseCaseResponse> __Marshaller_clarifai_api_MultiModelUseCaseResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelUseCaseResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelLanguagesRequest> __Marshaller_clarifai_api_PatchModelLanguagesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModelLanguagesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelLanguageResponse> __Marshaller_clarifai_api_MultiModelLanguageResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelLanguageResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelInputsRequest> __Marshaller_clarifai_api_ListModelInputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModelInputsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionRequest> __Marshaller_clarifai_api_GetModelVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModelVersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionResponse> __Marshaller_clarifai_api_SingleModelVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModelVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionsRequest> __Marshaller_clarifai_api_ListModelVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModelVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionResponse> __Marshaller_clarifai_api_MultiModelVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest> __Marshaller_clarifai_api_PostWorkflowVersionsUnPublishRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowVersionsPublishRequest> __Marshaller_clarifai_api_PostWorkflowVersionsPublishRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowVersionsPublishRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsPublishRequest> __Marshaller_clarifai_api_PostModelVersionsPublishRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsPublishRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsUnPublishRequest> __Marshaller_clarifai_api_PostModelVersionsUnPublishRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsUnPublishRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsRequest> __Marshaller_clarifai_api_PostModelVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModelVersionsRequest> __Marshaller_clarifai_api_PatchModelVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModelVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionRequest> __Marshaller_clarifai_api_DeleteModelVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModelVersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionMetricsRequest> __Marshaller_clarifai_api_GetModelVersionMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModelVersionMetricsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionMetricsRequest> __Marshaller_clarifai_api_PostModelVersionMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionMetricsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelReferencesRequest> __Marshaller_clarifai_api_ListModelReferencesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModelReferencesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelReferenceResponse> __Marshaller_clarifai_api_MultiModelReferenceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelReferenceResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionInputExampleRequest> __Marshaller_clarifai_api_GetModelVersionInputExampleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModelVersionInputExampleRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionInputExampleResponse> __Marshaller_clarifai_api_SingleModelVersionInputExampleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModelVersionInputExampleResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModelVersionInputExamplesRequest> __Marshaller_clarifai_api_ListModelVersionInputExamplesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModelVersionInputExamplesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModelVersionInputExampleResponse> __Marshaller_clarifai_api_MultiModelVersionInputExampleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModelVersionInputExampleResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetWorkflowRequest> __Marshaller_clarifai_api_GetWorkflowRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetWorkflowRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleWorkflowResponse> __Marshaller_clarifai_api_SingleWorkflowResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleWorkflowResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowsRequest> __Marshaller_clarifai_api_ListWorkflowsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowResponse> __Marshaller_clarifai_api_MultiWorkflowResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkflowResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowsRequest> __Marshaller_clarifai_api_PostWorkflowsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchWorkflowsRequest> __Marshaller_clarifai_api_PatchWorkflowsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchWorkflowsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteWorkflowRequest> __Marshaller_clarifai_api_DeleteWorkflowRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteWorkflowRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteWorkflowsRequest> __Marshaller_clarifai_api_DeleteWorkflowsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteWorkflowsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsRequest> __Marshaller_clarifai_api_PostWorkflowResultsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowResultsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsResponse> __Marshaller_clarifai_api_PostWorkflowResultsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowResultsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsSimilarityRequest> __Marshaller_clarifai_api_PostWorkflowResultsSimilarityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowResultsSimilarityRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> __Marshaller_clarifai_api_PostWorkflowResultsSimilarityResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowResultsSimilarityResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowVersionsRequest> __Marshaller_clarifai_api_ListWorkflowVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowVersionResponse> __Marshaller_clarifai_api_MultiWorkflowVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkflowVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetWorkflowVersionRequest> __Marshaller_clarifai_api_GetWorkflowVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetWorkflowVersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleWorkflowVersionResponse> __Marshaller_clarifai_api_SingleWorkflowVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleWorkflowVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteWorkflowVersionsRequest> __Marshaller_clarifai_api_DeleteWorkflowVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteWorkflowVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchWorkflowVersionsRequest> __Marshaller_clarifai_api_PatchWorkflowVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchWorkflowVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetKeyRequest> __Marshaller_clarifai_api_GetKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetKeyRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleKeyResponse> __Marshaller_clarifai_api_SingleKeyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleKeyResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListKeysRequest> __Marshaller_clarifai_api_ListKeysRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListKeysRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiKeyResponse> __Marshaller_clarifai_api_MultiKeyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiKeyResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAppKeysRequest> __Marshaller_clarifai_api_ListAppKeysRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAppKeysRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteKeyRequest> __Marshaller_clarifai_api_DeleteKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteKeyRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostKeysRequest> __Marshaller_clarifai_api_PostKeysRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostKeysRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchKeysRequest> __Marshaller_clarifai_api_PatchKeysRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchKeysRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesRequest> __Marshaller_clarifai_api_MyScopesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MyScopesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeResponse> __Marshaller_clarifai_api_MultiScopeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiScopeResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesUserRequest> __Marshaller_clarifai_api_MyScopesUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MyScopesUserRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeUserResponse> __Marshaller_clarifai_api_MultiScopeUserResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiScopeUserResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MyScopesRootRequest> __Marshaller_clarifai_api_MyScopesRootRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MyScopesRootRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeRootResponse> __Marshaller_clarifai_api_MultiScopeRootResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiScopeRootResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListScopesRequest> __Marshaller_clarifai_api_ListScopesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListScopesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiScopeDepsResponse> __Marshaller_clarifai_api_MultiScopeDepsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiScopeDepsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetAppRequest> __Marshaller_clarifai_api_GetAppRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetAppRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleAppResponse> __Marshaller_clarifai_api_SingleAppResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleAppResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAppsRequest> __Marshaller_clarifai_api_ListAppsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAppsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAppResponse> __Marshaller_clarifai_api_MultiAppResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAppResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAppRequest> __Marshaller_clarifai_api_DeleteAppRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAppRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAppsRequest> __Marshaller_clarifai_api_PostAppsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAppsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppsRequest> __Marshaller_clarifai_api_PatchAppsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAppsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppsIdsRequest> __Marshaller_clarifai_api_PatchAppsIdsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAppsIdsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppRequest> __Marshaller_clarifai_api_PatchAppRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAppRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAppsSearchesRequest> __Marshaller_clarifai_api_PostAppsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAppsSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostValidatePasswordRequest> __Marshaller_clarifai_api_PostValidatePasswordRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostValidatePasswordRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SinglePasswordValidationResponse> __Marshaller_clarifai_api_SinglePasswordValidationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SinglePasswordValidationResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetSearchRequest> __Marshaller_clarifai_api_GetSearchRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetSearchRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleSearchResponse> __Marshaller_clarifai_api_SingleSearchResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleSearchResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListSearchesRequest> __Marshaller_clarifai_api_ListSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchSearchesRequest> __Marshaller_clarifai_api_PatchSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostSearchesRequest> __Marshaller_clarifai_api_PostSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostSearchesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostSearchesByIDRequest> __Marshaller_clarifai_api_PostSearchesByIDRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostSearchesByIDRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_PostAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationSearchMetricsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> __Marshaller_clarifai_api_MultiAnnotationSearchMetricsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_GetAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetAnnotationSearchMetricsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_ListAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAnnotationSearchMetricsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_DeleteAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteSearchRequest> __Marshaller_clarifai_api_DeleteSearchRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteSearchRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationFiltersRequest> __Marshaller_clarifai_api_ListAnnotationFiltersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAnnotationFiltersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationFilterResponse> __Marshaller_clarifai_api_MultiAnnotationFilterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAnnotationFilterResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetAnnotationFilterRequest> __Marshaller_clarifai_api_GetAnnotationFilterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetAnnotationFilterRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleAnnotationFilterResponse> __Marshaller_clarifai_api_SingleAnnotationFilterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleAnnotationFilterResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationFiltersRequest> __Marshaller_clarifai_api_PostAnnotationFiltersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationFiltersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationFiltersRequest> __Marshaller_clarifai_api_PatchAnnotationFiltersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationFiltersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationFiltersRequest> __Marshaller_clarifai_api_DeleteAnnotationFiltersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAnnotationFiltersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListStatusCodesRequest> __Marshaller_clarifai_api_ListStatusCodesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListStatusCodesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatusCodeResponse> __Marshaller_clarifai_api_MultiStatusCodeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiStatusCodeResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetStatusCodeRequest> __Marshaller_clarifai_api_GetStatusCodeRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetStatusCodeRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleStatusCodeResponse> __Marshaller_clarifai_api_SingleStatusCodeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleStatusCodeResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListCollaboratorsRequest> __Marshaller_clarifai_api_ListCollaboratorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCollaboratorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollaboratorsResponse> __Marshaller_clarifai_api_MultiCollaboratorsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCollaboratorsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostCollaboratorsRequest> __Marshaller_clarifai_api_PostCollaboratorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostCollaboratorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchCollaboratorsRequest> __Marshaller_clarifai_api_PatchCollaboratorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchCollaboratorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteCollaboratorsRequest> __Marshaller_clarifai_api_DeleteCollaboratorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteCollaboratorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListCollaborationsRequest> __Marshaller_clarifai_api_ListCollaborationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCollaborationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollaborationsResponse> __Marshaller_clarifai_api_MultiCollaborationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCollaborationsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAppDuplicationsRequest> __Marshaller_clarifai_api_PostAppDuplicationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAppDuplicationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAppDuplicationsResponse> __Marshaller_clarifai_api_MultiAppDuplicationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAppDuplicationsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAppDuplicationsRequest> __Marshaller_clarifai_api_ListAppDuplicationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAppDuplicationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetAppDuplicationRequest> __Marshaller_clarifai_api_GetAppDuplicationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetAppDuplicationRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleAppDuplicationResponse> __Marshaller_clarifai_api_SingleAppDuplicationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleAppDuplicationResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostTasksRequest> __Marshaller_clarifai_api_PostTasksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostTasksRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiTaskResponse> __Marshaller_clarifai_api_MultiTaskResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiTaskResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskCountRequest> __Marshaller_clarifai_api_GetTaskCountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetTaskCountRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskCountResponse> __Marshaller_clarifai_api_SingleTaskCountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleTaskCountResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetTaskRequest> __Marshaller_clarifai_api_GetTaskRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetTaskRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleTaskResponse> __Marshaller_clarifai_api_SingleTaskResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleTaskResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListTasksRequest> __Marshaller_clarifai_api_ListTasksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListTasksRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchTasksRequest> __Marshaller_clarifai_api_PatchTasksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchTasksRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteTasksRequest> __Marshaller_clarifai_api_DeleteTasksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteTasksRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostLabelOrdersRequest> __Marshaller_clarifai_api_PostLabelOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostLabelOrdersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiLabelOrderResponse> __Marshaller_clarifai_api_MultiLabelOrderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiLabelOrderResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetLabelOrderRequest> __Marshaller_clarifai_api_GetLabelOrderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetLabelOrderRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleLabelOrderResponse> __Marshaller_clarifai_api_SingleLabelOrderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleLabelOrderResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListLabelOrdersRequest> __Marshaller_clarifai_api_ListLabelOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListLabelOrdersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchLabelOrdersRequest> __Marshaller_clarifai_api_PatchLabelOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchLabelOrdersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteLabelOrdersRequest> __Marshaller_clarifai_api_DeleteLabelOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteLabelOrdersRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostCollectorsRequest> __Marshaller_clarifai_api_PostCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostCollectorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollectorResponse> __Marshaller_clarifai_api_MultiCollectorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCollectorResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetCollectorRequest> __Marshaller_clarifai_api_GetCollectorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetCollectorRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleCollectorResponse> __Marshaller_clarifai_api_SingleCollectorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleCollectorResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListCollectorsRequest> __Marshaller_clarifai_api_ListCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCollectorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchCollectorsRequest> __Marshaller_clarifai_api_PatchCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchCollectorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteCollectorsRequest> __Marshaller_clarifai_api_DeleteCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteCollectorsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesRequest> __Marshaller_clarifai_api_PostStatValuesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostStatValuesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueResponse> __Marshaller_clarifai_api_MultiStatValueResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiStatValueResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesAggregateRequest> __Marshaller_clarifai_api_PostStatValuesAggregateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostStatValuesAggregateRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueAggregateResponse> __Marshaller_clarifai_api_MultiStatValueAggregateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiStatValueAggregateResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostTrendingMetricsViewRequest> __Marshaller_clarifai_api_PostTrendingMetricsViewRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostTrendingMetricsViewRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListTrendingMetricsViewsRequest> __Marshaller_clarifai_api_ListTrendingMetricsViewsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListTrendingMetricsViewsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiTrendingMetricsViewResponse> __Marshaller_clarifai_api_MultiTrendingMetricsViewResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiTrendingMetricsViewResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModuleRequest> __Marshaller_clarifai_api_GetModuleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModuleRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModuleResponse> __Marshaller_clarifai_api_SingleModuleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModuleResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModulesRequest> __Marshaller_clarifai_api_ListModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModulesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModuleResponse> __Marshaller_clarifai_api_MultiModuleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModuleResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModulesRequest> __Marshaller_clarifai_api_PostModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModulesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModulesRequest> __Marshaller_clarifai_api_PatchModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModulesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModulesRequest> __Marshaller_clarifai_api_DeleteModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModulesRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModuleVersionRequest> __Marshaller_clarifai_api_GetModuleVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModuleVersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModuleVersionResponse> __Marshaller_clarifai_api_SingleModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModuleVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListModuleVersionsRequest> __Marshaller_clarifai_api_ListModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModuleVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModuleVersionResponse> __Marshaller_clarifai_api_MultiModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModuleVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModuleVersionsRequest> __Marshaller_clarifai_api_PostModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModuleVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModuleVersionsRequest> __Marshaller_clarifai_api_DeleteModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModuleVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetInstalledModuleVersionRequest> __Marshaller_clarifai_api_GetInstalledModuleVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetInstalledModuleVersionRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleInstalledModuleVersionResponse> __Marshaller_clarifai_api_SingleInstalledModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleInstalledModuleVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListInstalledModuleVersionsRequest> __Marshaller_clarifai_api_ListInstalledModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListInstalledModuleVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInstalledModuleVersionResponse> __Marshaller_clarifai_api_MultiInstalledModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiInstalledModuleVersionResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostInstalledModuleVersionsRequest> __Marshaller_clarifai_api_PostInstalledModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostInstalledModuleVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest> __Marshaller_clarifai_api_DeleteInstalledModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteInstalledModuleVersionsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest> __Marshaller_clarifai_api_PostInstalledModuleVersionsKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostBulkOperationsRequest> __Marshaller_clarifai_api_PostBulkOperationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostBulkOperationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiBulkOperationsResponse> __Marshaller_clarifai_api_MultiBulkOperationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiBulkOperationsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListBulkOperationsRequest> __Marshaller_clarifai_api_ListBulkOperationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListBulkOperationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetBulkOperationRequest> __Marshaller_clarifai_api_GetBulkOperationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetBulkOperationRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleBulkOperationsResponse> __Marshaller_clarifai_api_SingleBulkOperationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleBulkOperationsResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.CancelBulkOperationRequest> __Marshaller_clarifai_api_CancelBulkOperationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.CancelBulkOperationRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteBulkOperationRequest> __Marshaller_clarifai_api_DeleteBulkOperationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteBulkOperationRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest> __Marshaller_clarifai_api_GetDatasetInputsSearchAddJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> __Marshaller_clarifai_api_SingleDatasetInputsSearchAddJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostUploadsRequest> __Marshaller_clarifai_api_PostUploadsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostUploadsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiUploadResponse> __Marshaller_clarifai_api_MultiUploadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiUploadResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.PutUploadContentPartsRequest> __Marshaller_clarifai_api_PutUploadContentPartsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PutUploadContentPartsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleUploadResponse> __Marshaller_clarifai_api_SingleUploadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleUploadResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetUploadRequest> __Marshaller_clarifai_api_GetUploadRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetUploadRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListUploadsRequest> __Marshaller_clarifai_api_ListUploadsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListUploadsRequest.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteUploadsRequest> __Marshaller_clarifai_api_DeleteUploadsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteUploadsRequest.Parser));
 
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
         grpc::MethodType.Unary,
@@ -367,6 +474,13 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_DeleteAnnotationsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
+    static readonly grpc::Method<global::Clarifai.Api.PatchAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse> __Method_PatchAnnotationsSearches = new grpc::Method<global::Clarifai.Api.PatchAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchAnnotationsSearches",
+        __Marshaller_clarifai_api_PatchAnnotationsSearchesRequest,
+        __Marshaller_clarifai_api_MultiSearchResponse);
+
     static readonly grpc::Method<global::Clarifai.Api.PostAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse> __Method_PostAnnotationsSearches = new grpc::Method<global::Clarifai.Api.PostAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -437,6 +551,13 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_DeleteInputsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
+    static readonly grpc::Method<global::Clarifai.Api.PatchInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse> __Method_PatchInputsSearches = new grpc::Method<global::Clarifai.Api.PatchInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchInputsSearches",
+        __Marshaller_clarifai_api_PatchInputsSearchesRequest,
+        __Marshaller_clarifai_api_MultiSearchResponse);
+
     static readonly grpc::Method<global::Clarifai.Api.PostInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse> __Method_PostInputsSearches = new grpc::Method<global::Clarifai.Api.PostInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -450,6 +571,118 @@ namespace Clarifai.Api {
         "PostModelOutputs",
         __Marshaller_clarifai_api_PostModelOutputsRequest,
         __Marshaller_clarifai_api_MultiOutputResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse> __Method_ListDatasets = new grpc::Method<global::Clarifai.Api.ListDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListDatasets",
+        __Marshaller_clarifai_api_ListDatasetsRequest,
+        __Marshaller_clarifai_api_MultiDatasetResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetDatasetRequest, global::Clarifai.Api.SingleDatasetResponse> __Method_GetDataset = new grpc::Method<global::Clarifai.Api.GetDatasetRequest, global::Clarifai.Api.SingleDatasetResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDataset",
+        __Marshaller_clarifai_api_GetDatasetRequest,
+        __Marshaller_clarifai_api_SingleDatasetResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse> __Method_PostDatasets = new grpc::Method<global::Clarifai.Api.PostDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostDatasets",
+        __Marshaller_clarifai_api_PostDatasetsRequest,
+        __Marshaller_clarifai_api_MultiDatasetResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse> __Method_PatchDatasets = new grpc::Method<global::Clarifai.Api.PatchDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchDatasets",
+        __Marshaller_clarifai_api_PatchDatasetsRequest,
+        __Marshaller_clarifai_api_MultiDatasetResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteDatasetsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteDatasets = new grpc::Method<global::Clarifai.Api.DeleteDatasetsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteDatasets",
+        __Marshaller_clarifai_api_DeleteDatasetsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListDatasetInputsRequest, global::Clarifai.Api.MultiDatasetInputResponse> __Method_ListDatasetInputs = new grpc::Method<global::Clarifai.Api.ListDatasetInputsRequest, global::Clarifai.Api.MultiDatasetInputResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListDatasetInputs",
+        __Marshaller_clarifai_api_ListDatasetInputsRequest,
+        __Marshaller_clarifai_api_MultiDatasetInputResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetDatasetInputRequest, global::Clarifai.Api.SingleDatasetInputResponse> __Method_GetDatasetInput = new grpc::Method<global::Clarifai.Api.GetDatasetInputRequest, global::Clarifai.Api.SingleDatasetInputResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDatasetInput",
+        __Marshaller_clarifai_api_GetDatasetInputRequest,
+        __Marshaller_clarifai_api_SingleDatasetInputResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostDatasetInputsRequest, global::Clarifai.Api.MultiDatasetInputResponse> __Method_PostDatasetInputs = new grpc::Method<global::Clarifai.Api.PostDatasetInputsRequest, global::Clarifai.Api.MultiDatasetInputResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostDatasetInputs",
+        __Marshaller_clarifai_api_PostDatasetInputsRequest,
+        __Marshaller_clarifai_api_MultiDatasetInputResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteDatasetInputsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteDatasetInputs = new grpc::Method<global::Clarifai.Api.DeleteDatasetInputsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteDatasetInputs",
+        __Marshaller_clarifai_api_DeleteDatasetInputsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse> __Method_ListDatasetVersions = new grpc::Method<global::Clarifai.Api.ListDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListDatasetVersions",
+        __Marshaller_clarifai_api_ListDatasetVersionsRequest,
+        __Marshaller_clarifai_api_MultiDatasetVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetDatasetVersionRequest, global::Clarifai.Api.SingleDatasetVersionResponse> __Method_GetDatasetVersion = new grpc::Method<global::Clarifai.Api.GetDatasetVersionRequest, global::Clarifai.Api.SingleDatasetVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDatasetVersion",
+        __Marshaller_clarifai_api_GetDatasetVersionRequest,
+        __Marshaller_clarifai_api_SingleDatasetVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest, global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse> __Method_ListDatasetVersionMetricsGroups = new grpc::Method<global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest, global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListDatasetVersionMetricsGroups",
+        __Marshaller_clarifai_api_ListDatasetVersionMetricsGroupsRequest,
+        __Marshaller_clarifai_api_MultiDatasetVersionMetricsGroupResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse> __Method_PostDatasetVersions = new grpc::Method<global::Clarifai.Api.PostDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostDatasetVersions",
+        __Marshaller_clarifai_api_PostDatasetVersionsRequest,
+        __Marshaller_clarifai_api_MultiDatasetVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse> __Method_PatchDatasetVersions = new grpc::Method<global::Clarifai.Api.PatchDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchDatasetVersions",
+        __Marshaller_clarifai_api_PatchDatasetVersionsRequest,
+        __Marshaller_clarifai_api_MultiDatasetVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteDatasetVersionsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteDatasetVersions = new grpc::Method<global::Clarifai.Api.DeleteDatasetVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteDatasetVersions",
+        __Marshaller_clarifai_api_DeleteDatasetVersionsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PutDatasetVersionExportsRequest, global::Clarifai.Api.MultiDatasetVersionExportResponse> __Method_PutDatasetVersionExports = new grpc::Method<global::Clarifai.Api.PutDatasetVersionExportsRequest, global::Clarifai.Api.MultiDatasetVersionExportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PutDatasetVersionExports",
+        __Marshaller_clarifai_api_PutDatasetVersionExportsRequest,
+        __Marshaller_clarifai_api_MultiDatasetVersionExportResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.GetModelTypeRequest, global::Clarifai.Api.SingleModelTypeResponse> __Method_GetModelType = new grpc::Method<global::Clarifai.Api.GetModelTypeRequest, global::Clarifai.Api.SingleModelTypeResponse>(
         grpc::MethodType.Unary,
@@ -514,6 +747,13 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PatchModelsRequest,
         __Marshaller_clarifai_api_MultiModelResponse);
 
+    static readonly grpc::Method<global::Clarifai.Api.PatchModelIdsRequest, global::Clarifai.Api.MultiModelResponse> __Method_PatchModelIds = new grpc::Method<global::Clarifai.Api.PatchModelIdsRequest, global::Clarifai.Api.MultiModelResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchModelIds",
+        __Marshaller_clarifai_api_PatchModelIdsRequest,
+        __Marshaller_clarifai_api_MultiModelResponse);
+
     static readonly grpc::Method<global::Clarifai.Api.DeleteModelRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModel = new grpc::Method<global::Clarifai.Api.DeleteModelRequest, global::Clarifai.Api.Status.BaseResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -527,6 +767,13 @@ namespace Clarifai.Api {
         "DeleteModels",
         __Marshaller_clarifai_api_DeleteModelsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchModelCheckConsentsRequest, global::Clarifai.Api.MultiModelCheckConsentResponse> __Method_PatchModelCheckConsents = new grpc::Method<global::Clarifai.Api.PatchModelCheckConsentsRequest, global::Clarifai.Api.MultiModelCheckConsentResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchModelCheckConsents",
+        __Marshaller_clarifai_api_PatchModelCheckConsentsRequest,
+        __Marshaller_clarifai_api_MultiModelCheckConsentResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.PatchModelToolkitsRequest, global::Clarifai.Api.MultiModelToolkitResponse> __Method_PatchModelToolkits = new grpc::Method<global::Clarifai.Api.PatchModelToolkitsRequest, global::Clarifai.Api.MultiModelToolkitResponse>(
         grpc::MethodType.Unary,
@@ -569,6 +816,20 @@ namespace Clarifai.Api {
         "ListModelVersions",
         __Marshaller_clarifai_api_ListModelVersionsRequest,
         __Marshaller_clarifai_api_MultiModelVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostWorkflowVersionsUnPublish = new grpc::Method<global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostWorkflowVersionsUnPublish",
+        __Marshaller_clarifai_api_PostWorkflowVersionsUnPublishRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostWorkflowVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostWorkflowVersionsPublish = new grpc::Method<global::Clarifai.Api.PostWorkflowVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostWorkflowVersionsPublish",
+        __Marshaller_clarifai_api_PostWorkflowVersionsPublishRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostModelVersionsPublish = new grpc::Method<global::Clarifai.Api.PostModelVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse>(
         grpc::MethodType.Unary,
@@ -829,6 +1090,20 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PatchAppsRequest,
         __Marshaller_clarifai_api_MultiAppResponse);
 
+    static readonly grpc::Method<global::Clarifai.Api.PatchAppsIdsRequest, global::Clarifai.Api.MultiAppResponse> __Method_PatchAppsIds = new grpc::Method<global::Clarifai.Api.PatchAppsIdsRequest, global::Clarifai.Api.MultiAppResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchAppsIds",
+        __Marshaller_clarifai_api_PatchAppsIdsRequest,
+        __Marshaller_clarifai_api_MultiAppResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchAppRequest, global::Clarifai.Api.SingleAppResponse> __Method_PatchApp = new grpc::Method<global::Clarifai.Api.PatchAppRequest, global::Clarifai.Api.SingleAppResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchApp",
+        __Marshaller_clarifai_api_PatchAppRequest,
+        __Marshaller_clarifai_api_SingleAppResponse);
+
     static readonly grpc::Method<global::Clarifai.Api.PostAppsSearchesRequest, global::Clarifai.Api.MultiAppResponse> __Method_PostAppsSearches = new grpc::Method<global::Clarifai.Api.PostAppsSearchesRequest, global::Clarifai.Api.MultiAppResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -855,6 +1130,13 @@ namespace Clarifai.Api {
         __ServiceName,
         "ListSearches",
         __Marshaller_clarifai_api_ListSearchesRequest,
+        __Marshaller_clarifai_api_MultiSearchResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchSearchesRequest, global::Clarifai.Api.MultiSearchResponse> __Method_PatchSearches = new grpc::Method<global::Clarifai.Api.PatchSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchSearches",
+        __Marshaller_clarifai_api_PatchSearchesRequest,
         __Marshaller_clarifai_api_MultiSearchResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.PostSearchesRequest, global::Clarifai.Api.MultiSearchResponse> __Method_PostSearches = new grpc::Method<global::Clarifai.Api.PostSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(
@@ -904,6 +1186,41 @@ namespace Clarifai.Api {
         __ServiceName,
         "DeleteSearch",
         __Marshaller_clarifai_api_DeleteSearchRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse> __Method_ListAnnotationFilters = new grpc::Method<global::Clarifai.Api.ListAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListAnnotationFilters",
+        __Marshaller_clarifai_api_ListAnnotationFiltersRequest,
+        __Marshaller_clarifai_api_MultiAnnotationFilterResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetAnnotationFilterRequest, global::Clarifai.Api.SingleAnnotationFilterResponse> __Method_GetAnnotationFilter = new grpc::Method<global::Clarifai.Api.GetAnnotationFilterRequest, global::Clarifai.Api.SingleAnnotationFilterResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAnnotationFilter",
+        __Marshaller_clarifai_api_GetAnnotationFilterRequest,
+        __Marshaller_clarifai_api_SingleAnnotationFilterResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse> __Method_PostAnnotationFilters = new grpc::Method<global::Clarifai.Api.PostAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostAnnotationFilters",
+        __Marshaller_clarifai_api_PostAnnotationFiltersRequest,
+        __Marshaller_clarifai_api_MultiAnnotationFilterResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse> __Method_PatchAnnotationFilters = new grpc::Method<global::Clarifai.Api.PatchAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchAnnotationFilters",
+        __Marshaller_clarifai_api_PatchAnnotationFiltersRequest,
+        __Marshaller_clarifai_api_MultiAnnotationFilterResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteAnnotationFiltersRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteAnnotationFilters = new grpc::Method<global::Clarifai.Api.DeleteAnnotationFiltersRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteAnnotationFilters",
+        __Marshaller_clarifai_api_DeleteAnnotationFiltersRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
     static readonly grpc::Method<global::Clarifai.Api.ListStatusCodesRequest, global::Clarifai.Api.MultiStatusCodeResponse> __Method_ListStatusCodes = new grpc::Method<global::Clarifai.Api.ListStatusCodesRequest, global::Clarifai.Api.MultiStatusCodeResponse>(
@@ -1122,6 +1439,181 @@ namespace Clarifai.Api {
         "ListTrendingMetricsViews",
         __Marshaller_clarifai_api_ListTrendingMetricsViewsRequest,
         __Marshaller_clarifai_api_MultiTrendingMetricsViewResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetModuleRequest, global::Clarifai.Api.SingleModuleResponse> __Method_GetModule = new grpc::Method<global::Clarifai.Api.GetModuleRequest, global::Clarifai.Api.SingleModuleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetModule",
+        __Marshaller_clarifai_api_GetModuleRequest,
+        __Marshaller_clarifai_api_SingleModuleResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListModulesRequest, global::Clarifai.Api.MultiModuleResponse> __Method_ListModules = new grpc::Method<global::Clarifai.Api.ListModulesRequest, global::Clarifai.Api.MultiModuleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListModules",
+        __Marshaller_clarifai_api_ListModulesRequest,
+        __Marshaller_clarifai_api_MultiModuleResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostModulesRequest, global::Clarifai.Api.MultiModuleResponse> __Method_PostModules = new grpc::Method<global::Clarifai.Api.PostModulesRequest, global::Clarifai.Api.MultiModuleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostModules",
+        __Marshaller_clarifai_api_PostModulesRequest,
+        __Marshaller_clarifai_api_MultiModuleResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PatchModulesRequest, global::Clarifai.Api.MultiModuleResponse> __Method_PatchModules = new grpc::Method<global::Clarifai.Api.PatchModulesRequest, global::Clarifai.Api.MultiModuleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchModules",
+        __Marshaller_clarifai_api_PatchModulesRequest,
+        __Marshaller_clarifai_api_MultiModuleResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteModulesRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModules = new grpc::Method<global::Clarifai.Api.DeleteModulesRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteModules",
+        __Marshaller_clarifai_api_DeleteModulesRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetModuleVersionRequest, global::Clarifai.Api.SingleModuleVersionResponse> __Method_GetModuleVersion = new grpc::Method<global::Clarifai.Api.GetModuleVersionRequest, global::Clarifai.Api.SingleModuleVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetModuleVersion",
+        __Marshaller_clarifai_api_GetModuleVersionRequest,
+        __Marshaller_clarifai_api_SingleModuleVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse> __Method_ListModuleVersions = new grpc::Method<global::Clarifai.Api.ListModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListModuleVersions",
+        __Marshaller_clarifai_api_ListModuleVersionsRequest,
+        __Marshaller_clarifai_api_MultiModuleVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse> __Method_PostModuleVersions = new grpc::Method<global::Clarifai.Api.PostModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostModuleVersions",
+        __Marshaller_clarifai_api_PostModuleVersionsRequest,
+        __Marshaller_clarifai_api_MultiModuleVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModuleVersions = new grpc::Method<global::Clarifai.Api.DeleteModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteModuleVersions",
+        __Marshaller_clarifai_api_DeleteModuleVersionsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse> __Method_GetInstalledModuleVersion = new grpc::Method<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetInstalledModuleVersion",
+        __Marshaller_clarifai_api_GetInstalledModuleVersionRequest,
+        __Marshaller_clarifai_api_SingleInstalledModuleVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse> __Method_ListInstalledModuleVersions = new grpc::Method<global::Clarifai.Api.ListInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListInstalledModuleVersions",
+        __Marshaller_clarifai_api_ListInstalledModuleVersionsRequest,
+        __Marshaller_clarifai_api_MultiInstalledModuleVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse> __Method_PostInstalledModuleVersions = new grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostInstalledModuleVersions",
+        __Marshaller_clarifai_api_PostInstalledModuleVersionsRequest,
+        __Marshaller_clarifai_api_MultiInstalledModuleVersionResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteInstalledModuleVersions = new grpc::Method<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteInstalledModuleVersions",
+        __Marshaller_clarifai_api_DeleteInstalledModuleVersionsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest, global::Clarifai.Api.SingleKeyResponse> __Method_PostInstalledModuleVersionsKey = new grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest, global::Clarifai.Api.SingleKeyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostInstalledModuleVersionsKey",
+        __Marshaller_clarifai_api_PostInstalledModuleVersionsKeyRequest,
+        __Marshaller_clarifai_api_SingleKeyResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse> __Method_PostBulkOperations = new grpc::Method<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostBulkOperations",
+        __Marshaller_clarifai_api_PostBulkOperationsRequest,
+        __Marshaller_clarifai_api_MultiBulkOperationsResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse> __Method_ListBulkOperations = new grpc::Method<global::Clarifai.Api.ListBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListBulkOperations",
+        __Marshaller_clarifai_api_ListBulkOperationsRequest,
+        __Marshaller_clarifai_api_MultiBulkOperationsResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetBulkOperationRequest, global::Clarifai.Api.SingleBulkOperationsResponse> __Method_GetBulkOperation = new grpc::Method<global::Clarifai.Api.GetBulkOperationRequest, global::Clarifai.Api.SingleBulkOperationsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBulkOperation",
+        __Marshaller_clarifai_api_GetBulkOperationRequest,
+        __Marshaller_clarifai_api_SingleBulkOperationsResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.CancelBulkOperationRequest, global::Clarifai.Api.MultiBulkOperationsResponse> __Method_CancelBulkOperations = new grpc::Method<global::Clarifai.Api.CancelBulkOperationRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CancelBulkOperations",
+        __Marshaller_clarifai_api_CancelBulkOperationRequest,
+        __Marshaller_clarifai_api_MultiBulkOperationsResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteBulkOperationRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteBulkOperations = new grpc::Method<global::Clarifai.Api.DeleteBulkOperationRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteBulkOperations",
+        __Marshaller_clarifai_api_DeleteBulkOperationRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> __Method_GetDatasetInputsSearchAddJob = new grpc::Method<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDatasetInputsSearchAddJob",
+        __Marshaller_clarifai_api_GetDatasetInputsSearchAddJobRequest,
+        __Marshaller_clarifai_api_SingleDatasetInputsSearchAddJobResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PostUploadsRequest, global::Clarifai.Api.MultiUploadResponse> __Method_PostUploads = new grpc::Method<global::Clarifai.Api.PostUploadsRequest, global::Clarifai.Api.MultiUploadResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostUploads",
+        __Marshaller_clarifai_api_PostUploadsRequest,
+        __Marshaller_clarifai_api_MultiUploadResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.PutUploadContentPartsRequest, global::Clarifai.Api.SingleUploadResponse> __Method_PutUploadContentParts = new grpc::Method<global::Clarifai.Api.PutUploadContentPartsRequest, global::Clarifai.Api.SingleUploadResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PutUploadContentParts",
+        __Marshaller_clarifai_api_PutUploadContentPartsRequest,
+        __Marshaller_clarifai_api_SingleUploadResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.GetUploadRequest, global::Clarifai.Api.SingleUploadResponse> __Method_GetUpload = new grpc::Method<global::Clarifai.Api.GetUploadRequest, global::Clarifai.Api.SingleUploadResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetUpload",
+        __Marshaller_clarifai_api_GetUploadRequest,
+        __Marshaller_clarifai_api_SingleUploadResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.ListUploadsRequest, global::Clarifai.Api.MultiUploadResponse> __Method_ListUploads = new grpc::Method<global::Clarifai.Api.ListUploadsRequest, global::Clarifai.Api.MultiUploadResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListUploads",
+        __Marshaller_clarifai_api_ListUploadsRequest,
+        __Marshaller_clarifai_api_MultiUploadResponse);
+
+    static readonly grpc::Method<global::Clarifai.Api.DeleteUploadsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteUploads = new grpc::Method<global::Clarifai.Api.DeleteUploadsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteUploads",
+        __Marshaller_clarifai_api_DeleteUploadsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -1392,7 +1884,18 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Execute a search over annotation
+      /// Patch saved annotations searches by ids.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiSearchResponse> PatchAnnotationsSearches(global::Clarifai.Api.PatchAnnotationsSearchesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Execute a search over annotations
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1505,7 +2008,18 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Execute a search over input
+      /// Patch saved inputs searches by ids.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiSearchResponse> PatchInputsSearches(global::Clarifai.Api.PatchInputsSearchesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Execute a search over inputs
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1522,6 +2036,189 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiOutputResponse> PostModelOutputs(global::Clarifai.Api.PostModelOutputsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the datasets.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetResponse> ListDatasets(global::Clarifai.Api.ListDatasetsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific dataset.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleDatasetResponse> GetDataset(global::Clarifai.Api.GetDatasetRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add datasets to an app.
+      /// The process is atomic, i.e. either all or no datasets are added.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetResponse> PostDatasets(global::Clarifai.Api.PostDatasetsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch one or more datasets.
+      /// The process is atomic, i.e. either all or no datasets are patched.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetResponse> PatchDatasets(global::Clarifai.Api.PatchDatasetsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete one or more datasets in a single request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteDatasets(global::Clarifai.Api.DeleteDatasetsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the dataset inputs in a dataset.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetInputResponse> ListDatasetInputs(global::Clarifai.Api.ListDatasetInputsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific dataset input.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleDatasetInputResponse> GetDatasetInput(global::Clarifai.Api.GetDatasetInputRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add dataset inputs to a dataset.
+      /// The process is not atomic, i.e. if there are errors with some dataset
+      /// inputs, others might still be added. The response reports
+      ///   - SUCCESS if all dataset inputs were added,
+      ///   - MIXED_STATUS if only some dataset inputs were added, and
+      ///   - FAILURE if no dataset inputs were added.
+      /// Each individual dataset input in the response has the status set to
+      /// indicate if it was successful or if there was an error.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetInputResponse> PostDatasetInputs(global::Clarifai.Api.PostDatasetInputsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete one or more dataset inputs in a single request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetInputs(global::Clarifai.Api.DeleteDatasetInputsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the dataset versions.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetVersionResponse> ListDatasetVersions(global::Clarifai.Api.ListDatasetVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific dataset version.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleDatasetVersionResponse> GetDatasetVersion(global::Clarifai.Api.GetDatasetVersionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse> ListDatasetVersionMetricsGroups(global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add dataset versions to a dataset.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetVersionResponse> PostDatasetVersions(global::Clarifai.Api.PostDatasetVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch one or more dataset versions.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetVersionResponse> PatchDatasetVersions(global::Clarifai.Api.PatchDatasetVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete one or more dataset versions in a single request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetVersions(global::Clarifai.Api.DeleteDatasetVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Create export of a dataset version.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDatasetVersionExportResponse> PutDatasetVersionExports(global::Clarifai.Api.PutDatasetVersionExportsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1630,6 +2327,17 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Patch one or more models.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelResponse> PatchModelIds(global::Clarifai.Api.PatchModelIdsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Delete a single model.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -1647,6 +2355,17 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModels(global::Clarifai.Api.DeleteModelsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Update model check consents
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelCheckConsentResponse> PatchModelCheckConsents(global::Clarifai.Api.PatchModelCheckConsentsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1713,6 +2432,16 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModelVersionResponse> ListModelVersions(global::Clarifai.Api.ListModelVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostWorkflowVersionsUnPublish(global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostWorkflowVersionsPublish(global::Clarifai.Api.PostWorkflowVersionsPublishRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -2121,6 +2850,28 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Patch apps ids.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAppResponse> PatchAppsIds(global::Clarifai.Api.PatchAppsIdsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch one app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleAppResponse> PatchApp(global::Clarifai.Api.PatchAppRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Search over the applications to find one or more you're looking for.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -2143,7 +2894,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Get a saved search.
+      /// Get a saved legacy search.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -2154,12 +2905,23 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// List all saved searches.
+      /// List all saved legacy searches.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiSearchResponse> ListSearches(global::Clarifai.Api.ListSearchesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch saved legacy searches by ids.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiSearchResponse> PatchSearches(global::Clarifai.Api.PatchSearchesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -2176,7 +2938,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Execute a previously saved search.
+      /// Execute a previously saved legacy search.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -2237,6 +2999,61 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteSearch(global::Clarifai.Api.DeleteSearchRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the annotation filters.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationFilterResponse> ListAnnotationFilters(global::Clarifai.Api.ListAnnotationFiltersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific annotation filter.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleAnnotationFilterResponse> GetAnnotationFilter(global::Clarifai.Api.GetAnnotationFilterRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add annotation filters.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationFilterResponse> PostAnnotationFilters(global::Clarifai.Api.PostAnnotationFiltersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch one or more annotation filters.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationFilterResponse> PatchAnnotationFilters(global::Clarifai.Api.PatchAnnotationFiltersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete one or more annotation filters in a single request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationFilters(global::Clarifai.Api.DeleteAnnotationFiltersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -2586,6 +3403,256 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTrendingMetricsViewResponse> ListTrendingMetricsViews(global::Clarifai.Api.ListTrendingMetricsViewsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific module from an app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModuleResponse> GetModule(global::Clarifai.Api.GetModuleRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the modules in community, by user or by app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleResponse> ListModules(global::Clarifai.Api.ListModulesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add a modules to an app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleResponse> PostModules(global::Clarifai.Api.PostModulesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch one or more modules.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleResponse> PatchModules(global::Clarifai.Api.PatchModulesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete multiple modules in one request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModules(global::Clarifai.Api.DeleteModulesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific module version for a module.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModuleVersionResponse> GetModuleVersion(global::Clarifai.Api.GetModuleVersionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the modules versions for a given module.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleVersionResponse> ListModuleVersions(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Create a new module version to trigger training of the module.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleVersionResponse> PostModuleVersions(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete a multiple module version.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModuleVersions(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleInstalledModuleVersionResponse> GetInstalledModuleVersion(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInstalledModuleVersionResponse> ListInstalledModuleVersions(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInstalledModuleVersionResponse> PostInstalledModuleVersions(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
+      /// in the url.
+      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteInstalledModuleVersions(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Assign a key that the caller owns to be used when accessing this installed module version
+      /// If this endpoint is called with a different key then it overwrites what is there.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleKeyResponse> PostInstalledModuleVersionsKey(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Perform bulk operations on a list of inputs based on input source.
+      /// Operation include add, update, delete of concepts, metadata and geo data.
+      /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiBulkOperationsResponse> PostBulkOperations(global::Clarifai.Api.PostBulkOperationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the bulk operations
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiBulkOperationsResponse> ListBulkOperations(global::Clarifai.Api.ListBulkOperationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get the bulk operation details by ID
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleBulkOperationsResponse> GetBulkOperation(global::Clarifai.Api.GetBulkOperationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Cancel one or more bulk operations
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiBulkOperationsResponse> CancelBulkOperations(global::Clarifai.Api.CancelBulkOperationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// delete one or more terminated bulk operations
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteBulkOperations(global::Clarifai.Api.DeleteBulkOperationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get a specific job.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> GetDatasetInputsSearchAddJob(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiUploadResponse> PostUploads(global::Clarifai.Api.PostUploadsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleUploadResponse> PutUploadContentParts(global::Clarifai.Api.PutUploadContentPartsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleUploadResponse> GetUpload(global::Clarifai.Api.GetUploadRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiUploadResponse> ListUploads(global::Clarifai.Api.ListUploadsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteUploads(global::Clarifai.Api.DeleteUploadsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -3648,7 +4715,51 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteAnnotations, null, options, request);
       }
       /// <summary>
-      /// Execute a search over annotation
+      /// Patch saved annotations searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiSearchResponse PatchAnnotationsSearches(global::Clarifai.Api.PatchAnnotationsSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationsSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch saved annotations searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiSearchResponse PatchAnnotationsSearches(global::Clarifai.Api.PatchAnnotationsSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchAnnotationsSearches, null, options, request);
+      }
+      /// <summary>
+      /// Patch saved annotations searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> PatchAnnotationsSearchesAsync(global::Clarifai.Api.PatchAnnotationsSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationsSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch saved annotations searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> PatchAnnotationsSearchesAsync(global::Clarifai.Api.PatchAnnotationsSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchAnnotationsSearches, null, options, request);
+      }
+      /// <summary>
+      /// Execute a search over annotations
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3660,7 +4771,7 @@ namespace Clarifai.Api {
         return PostAnnotationsSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Execute a search over annotation
+      /// Execute a search over annotations
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3670,7 +4781,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostAnnotationsSearches, null, options, request);
       }
       /// <summary>
-      /// Execute a search over annotation
+      /// Execute a search over annotations
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3682,7 +4793,7 @@ namespace Clarifai.Api {
         return PostAnnotationsSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Execute a search over annotation
+      /// Execute a search over annotations
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4100,7 +5211,51 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteInputs, null, options, request);
       }
       /// <summary>
-      /// Execute a search over input
+      /// Patch saved inputs searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiSearchResponse PatchInputsSearches(global::Clarifai.Api.PatchInputsSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchInputsSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch saved inputs searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiSearchResponse PatchInputsSearches(global::Clarifai.Api.PatchInputsSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchInputsSearches, null, options, request);
+      }
+      /// <summary>
+      /// Patch saved inputs searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> PatchInputsSearchesAsync(global::Clarifai.Api.PatchInputsSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchInputsSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch saved inputs searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> PatchInputsSearchesAsync(global::Clarifai.Api.PatchInputsSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchInputsSearches, null, options, request);
+      }
+      /// <summary>
+      /// Execute a search over inputs
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4112,7 +5267,7 @@ namespace Clarifai.Api {
         return PostInputsSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Execute a search over input
+      /// Execute a search over inputs
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4122,7 +5277,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostInputsSearches, null, options, request);
       }
       /// <summary>
-      /// Execute a search over input
+      /// Execute a search over inputs
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4134,7 +5289,7 @@ namespace Clarifai.Api {
         return PostInputsSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Execute a search over input
+      /// Execute a search over inputs
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4186,6 +5341,734 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiOutputResponse> PostModelOutputsAsync(global::Clarifai.Api.PostModelOutputsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelOutputs, null, options, request);
+      }
+      /// <summary>
+      /// List all the datasets.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetResponse ListDatasets(global::Clarifai.Api.ListDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the datasets.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetResponse ListDatasets(global::Clarifai.Api.ListDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListDatasets, null, options, request);
+      }
+      /// <summary>
+      /// List all the datasets.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetResponse> ListDatasetsAsync(global::Clarifai.Api.ListDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasetsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the datasets.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetResponse> ListDatasetsAsync(global::Clarifai.Api.ListDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListDatasets, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetResponse GetDataset(global::Clarifai.Api.GetDatasetRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDataset(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetResponse GetDataset(global::Clarifai.Api.GetDatasetRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDataset, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetResponse> GetDatasetAsync(global::Clarifai.Api.GetDatasetRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDatasetAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetResponse> GetDatasetAsync(global::Clarifai.Api.GetDatasetRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDataset, null, options, request);
+      }
+      /// <summary>
+      /// Add datasets to an app.
+      /// The process is atomic, i.e. either all or no datasets are added.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetResponse PostDatasets(global::Clarifai.Api.PostDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDatasets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add datasets to an app.
+      /// The process is atomic, i.e. either all or no datasets are added.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetResponse PostDatasets(global::Clarifai.Api.PostDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostDatasets, null, options, request);
+      }
+      /// <summary>
+      /// Add datasets to an app.
+      /// The process is atomic, i.e. either all or no datasets are added.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetResponse> PostDatasetsAsync(global::Clarifai.Api.PostDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDatasetsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add datasets to an app.
+      /// The process is atomic, i.e. either all or no datasets are added.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetResponse> PostDatasetsAsync(global::Clarifai.Api.PostDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostDatasets, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more datasets.
+      /// The process is atomic, i.e. either all or no datasets are patched.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetResponse PatchDatasets(global::Clarifai.Api.PatchDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchDatasets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more datasets.
+      /// The process is atomic, i.e. either all or no datasets are patched.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetResponse PatchDatasets(global::Clarifai.Api.PatchDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchDatasets, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more datasets.
+      /// The process is atomic, i.e. either all or no datasets are patched.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetResponse> PatchDatasetsAsync(global::Clarifai.Api.PatchDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchDatasetsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more datasets.
+      /// The process is atomic, i.e. either all or no datasets are patched.
+      /// If there is an error for one dataset,
+      /// the process will stop, revert the transaction and return the error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetResponse> PatchDatasetsAsync(global::Clarifai.Api.PatchDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchDatasets, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more datasets in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDatasets(global::Clarifai.Api.DeleteDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDatasets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more datasets in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDatasets(global::Clarifai.Api.DeleteDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteDatasets, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more datasets in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetsAsync(global::Clarifai.Api.DeleteDatasetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDatasetsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more datasets in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetsAsync(global::Clarifai.Api.DeleteDatasetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteDatasets, null, options, request);
+      }
+      /// <summary>
+      /// List all the dataset inputs in a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetInputResponse ListDatasetInputs(global::Clarifai.Api.ListDatasetInputsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasetInputs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the dataset inputs in a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetInputResponse ListDatasetInputs(global::Clarifai.Api.ListDatasetInputsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListDatasetInputs, null, options, request);
+      }
+      /// <summary>
+      /// List all the dataset inputs in a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetInputResponse> ListDatasetInputsAsync(global::Clarifai.Api.ListDatasetInputsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasetInputsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the dataset inputs in a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetInputResponse> ListDatasetInputsAsync(global::Clarifai.Api.ListDatasetInputsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListDatasetInputs, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific dataset input.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetInputResponse GetDatasetInput(global::Clarifai.Api.GetDatasetInputRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDatasetInput(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific dataset input.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetInputResponse GetDatasetInput(global::Clarifai.Api.GetDatasetInputRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDatasetInput, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific dataset input.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetInputResponse> GetDatasetInputAsync(global::Clarifai.Api.GetDatasetInputRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDatasetInputAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific dataset input.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetInputResponse> GetDatasetInputAsync(global::Clarifai.Api.GetDatasetInputRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDatasetInput, null, options, request);
+      }
+      /// <summary>
+      /// Add dataset inputs to a dataset.
+      /// The process is not atomic, i.e. if there are errors with some dataset
+      /// inputs, others might still be added. The response reports
+      ///   - SUCCESS if all dataset inputs were added,
+      ///   - MIXED_STATUS if only some dataset inputs were added, and
+      ///   - FAILURE if no dataset inputs were added.
+      /// Each individual dataset input in the response has the status set to
+      /// indicate if it was successful or if there was an error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetInputResponse PostDatasetInputs(global::Clarifai.Api.PostDatasetInputsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDatasetInputs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add dataset inputs to a dataset.
+      /// The process is not atomic, i.e. if there are errors with some dataset
+      /// inputs, others might still be added. The response reports
+      ///   - SUCCESS if all dataset inputs were added,
+      ///   - MIXED_STATUS if only some dataset inputs were added, and
+      ///   - FAILURE if no dataset inputs were added.
+      /// Each individual dataset input in the response has the status set to
+      /// indicate if it was successful or if there was an error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetInputResponse PostDatasetInputs(global::Clarifai.Api.PostDatasetInputsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostDatasetInputs, null, options, request);
+      }
+      /// <summary>
+      /// Add dataset inputs to a dataset.
+      /// The process is not atomic, i.e. if there are errors with some dataset
+      /// inputs, others might still be added. The response reports
+      ///   - SUCCESS if all dataset inputs were added,
+      ///   - MIXED_STATUS if only some dataset inputs were added, and
+      ///   - FAILURE if no dataset inputs were added.
+      /// Each individual dataset input in the response has the status set to
+      /// indicate if it was successful or if there was an error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetInputResponse> PostDatasetInputsAsync(global::Clarifai.Api.PostDatasetInputsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDatasetInputsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add dataset inputs to a dataset.
+      /// The process is not atomic, i.e. if there are errors with some dataset
+      /// inputs, others might still be added. The response reports
+      ///   - SUCCESS if all dataset inputs were added,
+      ///   - MIXED_STATUS if only some dataset inputs were added, and
+      ///   - FAILURE if no dataset inputs were added.
+      /// Each individual dataset input in the response has the status set to
+      /// indicate if it was successful or if there was an error.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetInputResponse> PostDatasetInputsAsync(global::Clarifai.Api.PostDatasetInputsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostDatasetInputs, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more dataset inputs in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDatasetInputs(global::Clarifai.Api.DeleteDatasetInputsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDatasetInputs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more dataset inputs in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDatasetInputs(global::Clarifai.Api.DeleteDatasetInputsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteDatasetInputs, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more dataset inputs in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetInputsAsync(global::Clarifai.Api.DeleteDatasetInputsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDatasetInputsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more dataset inputs in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetInputsAsync(global::Clarifai.Api.DeleteDatasetInputsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteDatasetInputs, null, options, request);
+      }
+      /// <summary>
+      /// List all the dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionResponse ListDatasetVersions(global::Clarifai.Api.ListDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasetVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionResponse ListDatasetVersions(global::Clarifai.Api.ListDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// List all the dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionResponse> ListDatasetVersionsAsync(global::Clarifai.Api.ListDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasetVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionResponse> ListDatasetVersionsAsync(global::Clarifai.Api.ListDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetVersionResponse GetDatasetVersion(global::Clarifai.Api.GetDatasetVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDatasetVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetVersionResponse GetDatasetVersion(global::Clarifai.Api.GetDatasetVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDatasetVersion, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetVersionResponse> GetDatasetVersionAsync(global::Clarifai.Api.GetDatasetVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDatasetVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetVersionResponse> GetDatasetVersionAsync(global::Clarifai.Api.GetDatasetVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDatasetVersion, null, options, request);
+      }
+      public virtual global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse ListDatasetVersionMetricsGroups(global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasetVersionMetricsGroups(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse ListDatasetVersionMetricsGroups(global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListDatasetVersionMetricsGroups, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse> ListDatasetVersionMetricsGroupsAsync(global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDatasetVersionMetricsGroupsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse> ListDatasetVersionMetricsGroupsAsync(global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListDatasetVersionMetricsGroups, null, options, request);
+      }
+      /// <summary>
+      /// Add dataset versions to a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionResponse PostDatasetVersions(global::Clarifai.Api.PostDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDatasetVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add dataset versions to a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionResponse PostDatasetVersions(global::Clarifai.Api.PostDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// Add dataset versions to a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionResponse> PostDatasetVersionsAsync(global::Clarifai.Api.PostDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDatasetVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add dataset versions to a dataset.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionResponse> PostDatasetVersionsAsync(global::Clarifai.Api.PostDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionResponse PatchDatasetVersions(global::Clarifai.Api.PatchDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchDatasetVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionResponse PatchDatasetVersions(global::Clarifai.Api.PatchDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionResponse> PatchDatasetVersionsAsync(global::Clarifai.Api.PatchDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchDatasetVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more dataset versions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionResponse> PatchDatasetVersionsAsync(global::Clarifai.Api.PatchDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more dataset versions in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDatasetVersions(global::Clarifai.Api.DeleteDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDatasetVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more dataset versions in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDatasetVersions(global::Clarifai.Api.DeleteDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more dataset versions in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetVersionsAsync(global::Clarifai.Api.DeleteDatasetVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDatasetVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more dataset versions in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDatasetVersionsAsync(global::Clarifai.Api.DeleteDatasetVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteDatasetVersions, null, options, request);
+      }
+      /// <summary>
+      /// Create export of a dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionExportResponse PutDatasetVersionExports(global::Clarifai.Api.PutDatasetVersionExportsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PutDatasetVersionExports(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Create export of a dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiDatasetVersionExportResponse PutDatasetVersionExports(global::Clarifai.Api.PutDatasetVersionExportsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PutDatasetVersionExports, null, options, request);
+      }
+      /// <summary>
+      /// Create export of a dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionExportResponse> PutDatasetVersionExportsAsync(global::Clarifai.Api.PutDatasetVersionExportsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PutDatasetVersionExportsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Create export of a dataset version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDatasetVersionExportResponse> PutDatasetVersionExportsAsync(global::Clarifai.Api.PutDatasetVersionExportsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PutDatasetVersionExports, null, options, request);
       }
       /// <summary>
       /// Get a specific model type.
@@ -4600,6 +6483,50 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchModels, null, options, request);
       }
       /// <summary>
+      /// Patch one or more models.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelResponse PatchModelIds(global::Clarifai.Api.PatchModelIdsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelIds(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more models.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelResponse PatchModelIds(global::Clarifai.Api.PatchModelIdsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchModelIds, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more models.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelResponse> PatchModelIdsAsync(global::Clarifai.Api.PatchModelIdsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelIdsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more models.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelResponse> PatchModelIdsAsync(global::Clarifai.Api.PatchModelIdsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchModelIds, null, options, request);
+      }
+      /// <summary>
       /// Delete a single model.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -4686,6 +6613,50 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModelsAsync(global::Clarifai.Api.DeleteModelsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteModels, null, options, request);
+      }
+      /// <summary>
+      /// Update model check consents
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelCheckConsentResponse PatchModelCheckConsents(global::Clarifai.Api.PatchModelCheckConsentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelCheckConsents(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model check consents
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModelCheckConsentResponse PatchModelCheckConsents(global::Clarifai.Api.PatchModelCheckConsentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchModelCheckConsents, null, options, request);
+      }
+      /// <summary>
+      /// Update model check consents
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelCheckConsentResponse> PatchModelCheckConsentsAsync(global::Clarifai.Api.PatchModelCheckConsentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModelCheckConsentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update model check consents
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelCheckConsentResponse> PatchModelCheckConsentsAsync(global::Clarifai.Api.PatchModelCheckConsentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchModelCheckConsents, null, options, request);
       }
       /// <summary>
       /// Update model toolkits tags
@@ -4950,6 +6921,38 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModelVersionResponse> ListModelVersionsAsync(global::Clarifai.Api.ListModelVersionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListModelVersions, null, options, request);
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse PostWorkflowVersionsUnPublish(global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostWorkflowVersionsUnPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse PostWorkflowVersionsUnPublish(global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostWorkflowVersionsUnPublish, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostWorkflowVersionsUnPublishAsync(global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostWorkflowVersionsUnPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostWorkflowVersionsUnPublishAsync(global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostWorkflowVersionsUnPublish, null, options, request);
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse PostWorkflowVersionsPublish(global::Clarifai.Api.PostWorkflowVersionsPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostWorkflowVersionsPublish(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse PostWorkflowVersionsPublish(global::Clarifai.Api.PostWorkflowVersionsPublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostWorkflowVersionsPublish, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostWorkflowVersionsPublishAsync(global::Clarifai.Api.PostWorkflowVersionsPublishRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostWorkflowVersionsPublishAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostWorkflowVersionsPublishAsync(global::Clarifai.Api.PostWorkflowVersionsPublishRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostWorkflowVersionsPublish, null, options, request);
       }
       /// <summary>
       /// PostModelVersionsPublish
@@ -6556,6 +8559,94 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchApps, null, options, request);
       }
       /// <summary>
+      /// Patch apps ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAppResponse PatchAppsIds(global::Clarifai.Api.PatchAppsIdsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAppsIds(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch apps ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAppResponse PatchAppsIds(global::Clarifai.Api.PatchAppsIdsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchAppsIds, null, options, request);
+      }
+      /// <summary>
+      /// Patch apps ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAppResponse> PatchAppsIdsAsync(global::Clarifai.Api.PatchAppsIdsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAppsIdsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch apps ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAppResponse> PatchAppsIdsAsync(global::Clarifai.Api.PatchAppsIdsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchAppsIds, null, options, request);
+      }
+      /// <summary>
+      /// Patch one app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleAppResponse PatchApp(global::Clarifai.Api.PatchAppRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchApp(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleAppResponse PatchApp(global::Clarifai.Api.PatchAppRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchApp, null, options, request);
+      }
+      /// <summary>
+      /// Patch one app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleAppResponse> PatchAppAsync(global::Clarifai.Api.PatchAppRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAppAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleAppResponse> PatchAppAsync(global::Clarifai.Api.PatchAppRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchApp, null, options, request);
+      }
+      /// <summary>
       /// Search over the applications to find one or more you're looking for.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -6644,7 +8735,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostValidatePassword, null, options, request);
       }
       /// <summary>
-      /// Get a saved search.
+      /// Get a saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6656,7 +8747,7 @@ namespace Clarifai.Api {
         return GetSearch(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get a saved search.
+      /// Get a saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6666,7 +8757,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_GetSearch, null, options, request);
       }
       /// <summary>
-      /// Get a saved search.
+      /// Get a saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6678,7 +8769,7 @@ namespace Clarifai.Api {
         return GetSearchAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get a saved search.
+      /// Get a saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6688,7 +8779,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_GetSearch, null, options, request);
       }
       /// <summary>
-      /// List all saved searches.
+      /// List all saved legacy searches.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6700,7 +8791,7 @@ namespace Clarifai.Api {
         return ListSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all saved searches.
+      /// List all saved legacy searches.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6710,7 +8801,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_ListSearches, null, options, request);
       }
       /// <summary>
-      /// List all saved searches.
+      /// List all saved legacy searches.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6722,7 +8813,7 @@ namespace Clarifai.Api {
         return ListSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all saved searches.
+      /// List all saved legacy searches.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6730,6 +8821,50 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> ListSearchesAsync(global::Clarifai.Api.ListSearchesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListSearches, null, options, request);
+      }
+      /// <summary>
+      /// Patch saved legacy searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiSearchResponse PatchSearches(global::Clarifai.Api.PatchSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch saved legacy searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiSearchResponse PatchSearches(global::Clarifai.Api.PatchSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchSearches, null, options, request);
+      }
+      /// <summary>
+      /// Patch saved legacy searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> PatchSearchesAsync(global::Clarifai.Api.PatchSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch saved legacy searches by ids.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> PatchSearchesAsync(global::Clarifai.Api.PatchSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchSearches, null, options, request);
       }
       /// <summary>
       /// Execute a new search and optionally save it.
@@ -6776,7 +8911,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostSearches, null, options, request);
       }
       /// <summary>
-      /// Execute a previously saved search.
+      /// Execute a previously saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6788,7 +8923,7 @@ namespace Clarifai.Api {
         return PostSearchesByID(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Execute a previously saved search.
+      /// Execute a previously saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6798,7 +8933,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostSearchesByID, null, options, request);
       }
       /// <summary>
-      /// Execute a previously saved search.
+      /// Execute a previously saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6810,7 +8945,7 @@ namespace Clarifai.Api {
         return PostSearchesByIDAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Execute a previously saved search.
+      /// Execute a previously saved legacy search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7038,6 +9173,226 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteSearchAsync(global::Clarifai.Api.DeleteSearchRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteSearch, null, options, request);
+      }
+      /// <summary>
+      /// List all the annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAnnotationFilterResponse ListAnnotationFilters(global::Clarifai.Api.ListAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListAnnotationFilters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAnnotationFilterResponse ListAnnotationFilters(global::Clarifai.Api.ListAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListAnnotationFilters, null, options, request);
+      }
+      /// <summary>
+      /// List all the annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationFilterResponse> ListAnnotationFiltersAsync(global::Clarifai.Api.ListAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListAnnotationFiltersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationFilterResponse> ListAnnotationFiltersAsync(global::Clarifai.Api.ListAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListAnnotationFilters, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific annotation filter.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleAnnotationFilterResponse GetAnnotationFilter(global::Clarifai.Api.GetAnnotationFilterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAnnotationFilter(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific annotation filter.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleAnnotationFilterResponse GetAnnotationFilter(global::Clarifai.Api.GetAnnotationFilterRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAnnotationFilter, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific annotation filter.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleAnnotationFilterResponse> GetAnnotationFilterAsync(global::Clarifai.Api.GetAnnotationFilterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAnnotationFilterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific annotation filter.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleAnnotationFilterResponse> GetAnnotationFilterAsync(global::Clarifai.Api.GetAnnotationFilterRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAnnotationFilter, null, options, request);
+      }
+      /// <summary>
+      /// Add annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAnnotationFilterResponse PostAnnotationFilters(global::Clarifai.Api.PostAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostAnnotationFilters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAnnotationFilterResponse PostAnnotationFilters(global::Clarifai.Api.PostAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostAnnotationFilters, null, options, request);
+      }
+      /// <summary>
+      /// Add annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationFilterResponse> PostAnnotationFiltersAsync(global::Clarifai.Api.PostAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostAnnotationFiltersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationFilterResponse> PostAnnotationFiltersAsync(global::Clarifai.Api.PostAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostAnnotationFilters, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAnnotationFilterResponse PatchAnnotationFilters(global::Clarifai.Api.PatchAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationFilters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiAnnotationFilterResponse PatchAnnotationFilters(global::Clarifai.Api.PatchAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchAnnotationFilters, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationFilterResponse> PatchAnnotationFiltersAsync(global::Clarifai.Api.PatchAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationFiltersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more annotation filters.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationFilterResponse> PatchAnnotationFiltersAsync(global::Clarifai.Api.PatchAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchAnnotationFilters, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more annotation filters in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationFilters(global::Clarifai.Api.DeleteAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteAnnotationFilters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more annotation filters in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationFilters(global::Clarifai.Api.DeleteAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteAnnotationFilters, null, options, request);
+      }
+      /// <summary>
+      /// Delete one or more annotation filters in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationFiltersAsync(global::Clarifai.Api.DeleteAnnotationFiltersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteAnnotationFiltersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete one or more annotation filters in a single request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationFiltersAsync(global::Clarifai.Api.DeleteAnnotationFiltersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteAnnotationFilters, null, options, request);
       }
       /// <summary>
       /// List all status codes.
@@ -8435,6 +10790,986 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListTrendingMetricsViews, null, options, request);
       }
+      /// <summary>
+      /// Get a specific module from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleModuleResponse GetModule(global::Clarifai.Api.GetModuleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModule(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific module from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleModuleResponse GetModule(global::Clarifai.Api.GetModuleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetModule, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific module from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleResponse> GetModuleAsync(global::Clarifai.Api.GetModuleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModuleAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific module from an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleResponse> GetModuleAsync(global::Clarifai.Api.GetModuleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetModule, null, options, request);
+      }
+      /// <summary>
+      /// List all the modules in community, by user or by app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleResponse ListModules(global::Clarifai.Api.ListModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the modules in community, by user or by app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleResponse ListModules(global::Clarifai.Api.ListModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListModules, null, options, request);
+      }
+      /// <summary>
+      /// List all the modules in community, by user or by app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> ListModulesAsync(global::Clarifai.Api.ListModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the modules in community, by user or by app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> ListModulesAsync(global::Clarifai.Api.ListModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListModules, null, options, request);
+      }
+      /// <summary>
+      /// Add a modules to an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleResponse PostModules(global::Clarifai.Api.PostModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a modules to an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleResponse PostModules(global::Clarifai.Api.PostModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostModules, null, options, request);
+      }
+      /// <summary>
+      /// Add a modules to an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PostModulesAsync(global::Clarifai.Api.PostModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a modules to an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PostModulesAsync(global::Clarifai.Api.PostModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostModules, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more modules.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleResponse PatchModules(global::Clarifai.Api.PatchModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more modules.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleResponse PatchModules(global::Clarifai.Api.PatchModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchModules, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more modules.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PatchModulesAsync(global::Clarifai.Api.PatchModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more modules.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PatchModulesAsync(global::Clarifai.Api.PatchModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchModules, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple modules in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModules(global::Clarifai.Api.DeleteModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple modules in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModules(global::Clarifai.Api.DeleteModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteModules, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple modules in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModulesAsync(global::Clarifai.Api.DeleteModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple modules in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModulesAsync(global::Clarifai.Api.DeleteModulesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteModules, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific module version for a module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleModuleVersionResponse GetModuleVersion(global::Clarifai.Api.GetModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModuleVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific module version for a module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleModuleVersionResponse GetModuleVersion(global::Clarifai.Api.GetModuleVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetModuleVersion, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific module version for a module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionResponse> GetModuleVersionAsync(global::Clarifai.Api.GetModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModuleVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific module version for a module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionResponse> GetModuleVersionAsync(global::Clarifai.Api.GetModuleVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetModuleVersion, null, options, request);
+      }
+      /// <summary>
+      /// List all the modules versions for a given module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleVersionResponse ListModuleVersions(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the modules versions for a given module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleVersionResponse ListModuleVersions(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// List all the modules versions for a given module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> ListModuleVersionsAsync(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the modules versions for a given module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> ListModuleVersionsAsync(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Create a new module version to trigger training of the module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleVersionResponse PostModuleVersions(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Create a new module version to trigger training of the module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiModuleVersionResponse PostModuleVersions(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Create a new module version to trigger training of the module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> PostModuleVersionsAsync(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Create a new module version to trigger training of the module.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> PostModuleVersionsAsync(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Delete a multiple module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModuleVersions(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete a multiple module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModuleVersions(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Delete a multiple module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModuleVersionsAsync(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete a multiple module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModuleVersionsAsync(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Get installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleInstalledModuleVersionResponse GetInstalledModuleVersion(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetInstalledModuleVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleInstalledModuleVersionResponse GetInstalledModuleVersion(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetInstalledModuleVersion, null, options, request);
+      }
+      /// <summary>
+      /// Get installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleInstalledModuleVersionResponse> GetInstalledModuleVersionAsync(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetInstalledModuleVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleInstalledModuleVersionResponse> GetInstalledModuleVersionAsync(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetInstalledModuleVersion, null, options, request);
+      }
+      /// <summary>
+      /// List installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse ListInstalledModuleVersions(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListInstalledModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse ListInstalledModuleVersions(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListInstalledModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// List installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> ListInstalledModuleVersionsAsync(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListInstalledModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List installed modules vesrions for an app.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> ListInstalledModuleVersionsAsync(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListInstalledModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse PostInstalledModuleVersions(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostInstalledModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse PostInstalledModuleVersions(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostInstalledModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> PostInstalledModuleVersionsAsync(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostInstalledModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> PostInstalledModuleVersionsAsync(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostInstalledModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
+      /// in the url.
+      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteInstalledModuleVersions(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteInstalledModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
+      /// in the url.
+      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteInstalledModuleVersions(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteInstalledModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
+      /// in the url.
+      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteInstalledModuleVersionsAsync(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteInstalledModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
+      /// in the url.
+      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteInstalledModuleVersionsAsync(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteInstalledModuleVersions, null, options, request);
+      }
+      /// <summary>
+      /// Assign a key that the caller owns to be used when accessing this installed module version
+      /// If this endpoint is called with a different key then it overwrites what is there.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleKeyResponse PostInstalledModuleVersionsKey(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostInstalledModuleVersionsKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Assign a key that the caller owns to be used when accessing this installed module version
+      /// If this endpoint is called with a different key then it overwrites what is there.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleKeyResponse PostInstalledModuleVersionsKey(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostInstalledModuleVersionsKey, null, options, request);
+      }
+      /// <summary>
+      /// Assign a key that the caller owns to be used when accessing this installed module version
+      /// If this endpoint is called with a different key then it overwrites what is there.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleKeyResponse> PostInstalledModuleVersionsKeyAsync(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostInstalledModuleVersionsKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Assign a key that the caller owns to be used when accessing this installed module version
+      /// If this endpoint is called with a different key then it overwrites what is there.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleKeyResponse> PostInstalledModuleVersionsKeyAsync(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostInstalledModuleVersionsKey, null, options, request);
+      }
+      /// <summary>
+      /// Perform bulk operations on a list of inputs based on input source.
+      /// Operation include add, update, delete of concepts, metadata and geo data.
+      /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiBulkOperationsResponse PostBulkOperations(global::Clarifai.Api.PostBulkOperationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostBulkOperations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Perform bulk operations on a list of inputs based on input source.
+      /// Operation include add, update, delete of concepts, metadata and geo data.
+      /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiBulkOperationsResponse PostBulkOperations(global::Clarifai.Api.PostBulkOperationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// Perform bulk operations on a list of inputs based on input source.
+      /// Operation include add, update, delete of concepts, metadata and geo data.
+      /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiBulkOperationsResponse> PostBulkOperationsAsync(global::Clarifai.Api.PostBulkOperationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostBulkOperationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Perform bulk operations on a list of inputs based on input source.
+      /// Operation include add, update, delete of concepts, metadata and geo data.
+      /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiBulkOperationsResponse> PostBulkOperationsAsync(global::Clarifai.Api.PostBulkOperationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// List all the bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiBulkOperationsResponse ListBulkOperations(global::Clarifai.Api.ListBulkOperationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListBulkOperations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiBulkOperationsResponse ListBulkOperations(global::Clarifai.Api.ListBulkOperationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// List all the bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiBulkOperationsResponse> ListBulkOperationsAsync(global::Clarifai.Api.ListBulkOperationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListBulkOperationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiBulkOperationsResponse> ListBulkOperationsAsync(global::Clarifai.Api.ListBulkOperationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// Get the bulk operation details by ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleBulkOperationsResponse GetBulkOperation(global::Clarifai.Api.GetBulkOperationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBulkOperation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the bulk operation details by ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleBulkOperationsResponse GetBulkOperation(global::Clarifai.Api.GetBulkOperationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBulkOperation, null, options, request);
+      }
+      /// <summary>
+      /// Get the bulk operation details by ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleBulkOperationsResponse> GetBulkOperationAsync(global::Clarifai.Api.GetBulkOperationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBulkOperationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the bulk operation details by ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleBulkOperationsResponse> GetBulkOperationAsync(global::Clarifai.Api.GetBulkOperationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBulkOperation, null, options, request);
+      }
+      /// <summary>
+      /// Cancel one or more bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiBulkOperationsResponse CancelBulkOperations(global::Clarifai.Api.CancelBulkOperationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CancelBulkOperations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Cancel one or more bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.MultiBulkOperationsResponse CancelBulkOperations(global::Clarifai.Api.CancelBulkOperationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CancelBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// Cancel one or more bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiBulkOperationsResponse> CancelBulkOperationsAsync(global::Clarifai.Api.CancelBulkOperationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CancelBulkOperationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Cancel one or more bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiBulkOperationsResponse> CancelBulkOperationsAsync(global::Clarifai.Api.CancelBulkOperationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CancelBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// delete one or more terminated bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteBulkOperations(global::Clarifai.Api.DeleteBulkOperationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteBulkOperations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// delete one or more terminated bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteBulkOperations(global::Clarifai.Api.DeleteBulkOperationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// delete one or more terminated bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteBulkOperationsAsync(global::Clarifai.Api.DeleteBulkOperationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteBulkOperationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// delete one or more terminated bulk operations
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteBulkOperationsAsync(global::Clarifai.Api.DeleteBulkOperationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteBulkOperations, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific job.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse GetDatasetInputsSearchAddJob(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDatasetInputsSearchAddJob(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific job.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse GetDatasetInputsSearchAddJob(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDatasetInputsSearchAddJob, null, options, request);
+      }
+      /// <summary>
+      /// Get a specific job.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> GetDatasetInputsSearchAddJobAsync(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDatasetInputsSearchAddJobAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get a specific job.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> GetDatasetInputsSearchAddJobAsync(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDatasetInputsSearchAddJob, null, options, request);
+      }
+      public virtual global::Clarifai.Api.MultiUploadResponse PostUploads(global::Clarifai.Api.PostUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostUploads(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.MultiUploadResponse PostUploads(global::Clarifai.Api.PostUploadsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostUploads, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiUploadResponse> PostUploadsAsync(global::Clarifai.Api.PostUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostUploadsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiUploadResponse> PostUploadsAsync(global::Clarifai.Api.PostUploadsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostUploads, null, options, request);
+      }
+      public virtual global::Clarifai.Api.SingleUploadResponse PutUploadContentParts(global::Clarifai.Api.PutUploadContentPartsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PutUploadContentParts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.SingleUploadResponse PutUploadContentParts(global::Clarifai.Api.PutUploadContentPartsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PutUploadContentParts, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleUploadResponse> PutUploadContentPartsAsync(global::Clarifai.Api.PutUploadContentPartsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PutUploadContentPartsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleUploadResponse> PutUploadContentPartsAsync(global::Clarifai.Api.PutUploadContentPartsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PutUploadContentParts, null, options, request);
+      }
+      public virtual global::Clarifai.Api.SingleUploadResponse GetUpload(global::Clarifai.Api.GetUploadRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetUpload(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.SingleUploadResponse GetUpload(global::Clarifai.Api.GetUploadRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetUpload, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleUploadResponse> GetUploadAsync(global::Clarifai.Api.GetUploadRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetUploadAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleUploadResponse> GetUploadAsync(global::Clarifai.Api.GetUploadRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetUpload, null, options, request);
+      }
+      public virtual global::Clarifai.Api.MultiUploadResponse ListUploads(global::Clarifai.Api.ListUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListUploads(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.MultiUploadResponse ListUploads(global::Clarifai.Api.ListUploadsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListUploads, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiUploadResponse> ListUploadsAsync(global::Clarifai.Api.ListUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListUploadsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiUploadResponse> ListUploadsAsync(global::Clarifai.Api.ListUploadsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListUploads, null, options, request);
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteUploads(global::Clarifai.Api.DeleteUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteUploads(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteUploads(global::Clarifai.Api.DeleteUploadsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteUploads, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteUploadsAsync(global::Clarifai.Api.DeleteUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteUploadsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteUploadsAsync(global::Clarifai.Api.DeleteUploadsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteUploads, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
       {
@@ -8470,6 +11805,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchAnnotationsStatus, serviceImpl.PatchAnnotationsStatus)
           .AddMethod(__Method_DeleteAnnotation, serviceImpl.DeleteAnnotation)
           .AddMethod(__Method_DeleteAnnotations, serviceImpl.DeleteAnnotations)
+          .AddMethod(__Method_PatchAnnotationsSearches, serviceImpl.PatchAnnotationsSearches)
           .AddMethod(__Method_PostAnnotationsSearches, serviceImpl.PostAnnotationsSearches)
           .AddMethod(__Method_GetInputCount, serviceImpl.GetInputCount)
           .AddMethod(__Method_StreamInputs, serviceImpl.StreamInputs)
@@ -8480,8 +11816,25 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchInputs, serviceImpl.PatchInputs)
           .AddMethod(__Method_DeleteInput, serviceImpl.DeleteInput)
           .AddMethod(__Method_DeleteInputs, serviceImpl.DeleteInputs)
+          .AddMethod(__Method_PatchInputsSearches, serviceImpl.PatchInputsSearches)
           .AddMethod(__Method_PostInputsSearches, serviceImpl.PostInputsSearches)
           .AddMethod(__Method_PostModelOutputs, serviceImpl.PostModelOutputs)
+          .AddMethod(__Method_ListDatasets, serviceImpl.ListDatasets)
+          .AddMethod(__Method_GetDataset, serviceImpl.GetDataset)
+          .AddMethod(__Method_PostDatasets, serviceImpl.PostDatasets)
+          .AddMethod(__Method_PatchDatasets, serviceImpl.PatchDatasets)
+          .AddMethod(__Method_DeleteDatasets, serviceImpl.DeleteDatasets)
+          .AddMethod(__Method_ListDatasetInputs, serviceImpl.ListDatasetInputs)
+          .AddMethod(__Method_GetDatasetInput, serviceImpl.GetDatasetInput)
+          .AddMethod(__Method_PostDatasetInputs, serviceImpl.PostDatasetInputs)
+          .AddMethod(__Method_DeleteDatasetInputs, serviceImpl.DeleteDatasetInputs)
+          .AddMethod(__Method_ListDatasetVersions, serviceImpl.ListDatasetVersions)
+          .AddMethod(__Method_GetDatasetVersion, serviceImpl.GetDatasetVersion)
+          .AddMethod(__Method_ListDatasetVersionMetricsGroups, serviceImpl.ListDatasetVersionMetricsGroups)
+          .AddMethod(__Method_PostDatasetVersions, serviceImpl.PostDatasetVersions)
+          .AddMethod(__Method_PatchDatasetVersions, serviceImpl.PatchDatasetVersions)
+          .AddMethod(__Method_DeleteDatasetVersions, serviceImpl.DeleteDatasetVersions)
+          .AddMethod(__Method_PutDatasetVersionExports, serviceImpl.PutDatasetVersionExports)
           .AddMethod(__Method_GetModelType, serviceImpl.GetModelType)
           .AddMethod(__Method_ListOpenSourceLicenses, serviceImpl.ListOpenSourceLicenses)
           .AddMethod(__Method_ListModelTypes, serviceImpl.ListModelTypes)
@@ -8491,14 +11844,18 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostModelsSearches, serviceImpl.PostModelsSearches)
           .AddMethod(__Method_PostModels, serviceImpl.PostModels)
           .AddMethod(__Method_PatchModels, serviceImpl.PatchModels)
+          .AddMethod(__Method_PatchModelIds, serviceImpl.PatchModelIds)
           .AddMethod(__Method_DeleteModel, serviceImpl.DeleteModel)
           .AddMethod(__Method_DeleteModels, serviceImpl.DeleteModels)
+          .AddMethod(__Method_PatchModelCheckConsents, serviceImpl.PatchModelCheckConsents)
           .AddMethod(__Method_PatchModelToolkits, serviceImpl.PatchModelToolkits)
           .AddMethod(__Method_PatchModelUseCases, serviceImpl.PatchModelUseCases)
           .AddMethod(__Method_PatchModelLanguages, serviceImpl.PatchModelLanguages)
           .AddMethod(__Method_ListModelInputs, serviceImpl.ListModelInputs)
           .AddMethod(__Method_GetModelVersion, serviceImpl.GetModelVersion)
           .AddMethod(__Method_ListModelVersions, serviceImpl.ListModelVersions)
+          .AddMethod(__Method_PostWorkflowVersionsUnPublish, serviceImpl.PostWorkflowVersionsUnPublish)
+          .AddMethod(__Method_PostWorkflowVersionsPublish, serviceImpl.PostWorkflowVersionsPublish)
           .AddMethod(__Method_PostModelVersionsPublish, serviceImpl.PostModelVersionsPublish)
           .AddMethod(__Method_PostModelVersionsUnPublish, serviceImpl.PostModelVersionsUnPublish)
           .AddMethod(__Method_PostModelVersions, serviceImpl.PostModelVersions)
@@ -8536,10 +11893,13 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteApp, serviceImpl.DeleteApp)
           .AddMethod(__Method_PostApps, serviceImpl.PostApps)
           .AddMethod(__Method_PatchApps, serviceImpl.PatchApps)
+          .AddMethod(__Method_PatchAppsIds, serviceImpl.PatchAppsIds)
+          .AddMethod(__Method_PatchApp, serviceImpl.PatchApp)
           .AddMethod(__Method_PostAppsSearches, serviceImpl.PostAppsSearches)
           .AddMethod(__Method_PostValidatePassword, serviceImpl.PostValidatePassword)
           .AddMethod(__Method_GetSearch, serviceImpl.GetSearch)
           .AddMethod(__Method_ListSearches, serviceImpl.ListSearches)
+          .AddMethod(__Method_PatchSearches, serviceImpl.PatchSearches)
           .AddMethod(__Method_PostSearches, serviceImpl.PostSearches)
           .AddMethod(__Method_PostSearchesByID, serviceImpl.PostSearchesByID)
           .AddMethod(__Method_PostAnnotationSearchMetrics, serviceImpl.PostAnnotationSearchMetrics)
@@ -8547,6 +11907,11 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListAnnotationSearchMetrics, serviceImpl.ListAnnotationSearchMetrics)
           .AddMethod(__Method_DeleteAnnotationSearchMetrics, serviceImpl.DeleteAnnotationSearchMetrics)
           .AddMethod(__Method_DeleteSearch, serviceImpl.DeleteSearch)
+          .AddMethod(__Method_ListAnnotationFilters, serviceImpl.ListAnnotationFilters)
+          .AddMethod(__Method_GetAnnotationFilter, serviceImpl.GetAnnotationFilter)
+          .AddMethod(__Method_PostAnnotationFilters, serviceImpl.PostAnnotationFilters)
+          .AddMethod(__Method_PatchAnnotationFilters, serviceImpl.PatchAnnotationFilters)
+          .AddMethod(__Method_DeleteAnnotationFilters, serviceImpl.DeleteAnnotationFilters)
           .AddMethod(__Method_ListStatusCodes, serviceImpl.ListStatusCodes)
           .AddMethod(__Method_GetStatusCode, serviceImpl.GetStatusCode)
           .AddMethod(__Method_ListCollaborators, serviceImpl.ListCollaborators)
@@ -8577,7 +11942,32 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostStatValues, serviceImpl.PostStatValues)
           .AddMethod(__Method_PostStatValuesAggregate, serviceImpl.PostStatValuesAggregate)
           .AddMethod(__Method_PostTrendingMetricsView, serviceImpl.PostTrendingMetricsView)
-          .AddMethod(__Method_ListTrendingMetricsViews, serviceImpl.ListTrendingMetricsViews).Build();
+          .AddMethod(__Method_ListTrendingMetricsViews, serviceImpl.ListTrendingMetricsViews)
+          .AddMethod(__Method_GetModule, serviceImpl.GetModule)
+          .AddMethod(__Method_ListModules, serviceImpl.ListModules)
+          .AddMethod(__Method_PostModules, serviceImpl.PostModules)
+          .AddMethod(__Method_PatchModules, serviceImpl.PatchModules)
+          .AddMethod(__Method_DeleteModules, serviceImpl.DeleteModules)
+          .AddMethod(__Method_GetModuleVersion, serviceImpl.GetModuleVersion)
+          .AddMethod(__Method_ListModuleVersions, serviceImpl.ListModuleVersions)
+          .AddMethod(__Method_PostModuleVersions, serviceImpl.PostModuleVersions)
+          .AddMethod(__Method_DeleteModuleVersions, serviceImpl.DeleteModuleVersions)
+          .AddMethod(__Method_GetInstalledModuleVersion, serviceImpl.GetInstalledModuleVersion)
+          .AddMethod(__Method_ListInstalledModuleVersions, serviceImpl.ListInstalledModuleVersions)
+          .AddMethod(__Method_PostInstalledModuleVersions, serviceImpl.PostInstalledModuleVersions)
+          .AddMethod(__Method_DeleteInstalledModuleVersions, serviceImpl.DeleteInstalledModuleVersions)
+          .AddMethod(__Method_PostInstalledModuleVersionsKey, serviceImpl.PostInstalledModuleVersionsKey)
+          .AddMethod(__Method_PostBulkOperations, serviceImpl.PostBulkOperations)
+          .AddMethod(__Method_ListBulkOperations, serviceImpl.ListBulkOperations)
+          .AddMethod(__Method_GetBulkOperation, serviceImpl.GetBulkOperation)
+          .AddMethod(__Method_CancelBulkOperations, serviceImpl.CancelBulkOperations)
+          .AddMethod(__Method_DeleteBulkOperations, serviceImpl.DeleteBulkOperations)
+          .AddMethod(__Method_GetDatasetInputsSearchAddJob, serviceImpl.GetDatasetInputsSearchAddJob)
+          .AddMethod(__Method_PostUploads, serviceImpl.PostUploads)
+          .AddMethod(__Method_PutUploadContentParts, serviceImpl.PutUploadContentParts)
+          .AddMethod(__Method_GetUpload, serviceImpl.GetUpload)
+          .AddMethod(__Method_ListUploads, serviceImpl.ListUploads)
+          .AddMethod(__Method_DeleteUploads, serviceImpl.DeleteUploads).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -8609,6 +11999,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchAnnotationsStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsStatusRequest, global::Clarifai.Api.PatchAnnotationsStatusResponse>(serviceImpl.PatchAnnotationsStatus));
       serviceBinder.AddMethod(__Method_DeleteAnnotation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotation));
       serviceBinder.AddMethod(__Method_DeleteAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotations));
+      serviceBinder.AddMethod(__Method_PatchAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PatchAnnotationsSearches));
       serviceBinder.AddMethod(__Method_PostAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostAnnotationsSearches));
       serviceBinder.AddMethod(__Method_GetInputCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInputCountRequest, global::Clarifai.Api.SingleInputCountResponse>(serviceImpl.GetInputCount));
       serviceBinder.AddMethod(__Method_StreamInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.StreamInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.StreamInputs));
@@ -8619,8 +12010,25 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.PatchInputs));
       serviceBinder.AddMethod(__Method_DeleteInput, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteInputRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteInput));
       serviceBinder.AddMethod(__Method_DeleteInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteInputsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteInputs));
+      serviceBinder.AddMethod(__Method_PatchInputsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PatchInputsSearches));
       serviceBinder.AddMethod(__Method_PostInputsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostInputsSearches));
       serviceBinder.AddMethod(__Method_PostModelOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse>(serviceImpl.PostModelOutputs));
+      serviceBinder.AddMethod(__Method_ListDatasets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(serviceImpl.ListDatasets));
+      serviceBinder.AddMethod(__Method_GetDataset, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDatasetRequest, global::Clarifai.Api.SingleDatasetResponse>(serviceImpl.GetDataset));
+      serviceBinder.AddMethod(__Method_PostDatasets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(serviceImpl.PostDatasets));
+      serviceBinder.AddMethod(__Method_PatchDatasets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(serviceImpl.PatchDatasets));
+      serviceBinder.AddMethod(__Method_DeleteDatasets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDatasetsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDatasets));
+      serviceBinder.AddMethod(__Method_ListDatasetInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListDatasetInputsRequest, global::Clarifai.Api.MultiDatasetInputResponse>(serviceImpl.ListDatasetInputs));
+      serviceBinder.AddMethod(__Method_GetDatasetInput, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDatasetInputRequest, global::Clarifai.Api.SingleDatasetInputResponse>(serviceImpl.GetDatasetInput));
+      serviceBinder.AddMethod(__Method_PostDatasetInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDatasetInputsRequest, global::Clarifai.Api.MultiDatasetInputResponse>(serviceImpl.PostDatasetInputs));
+      serviceBinder.AddMethod(__Method_DeleteDatasetInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDatasetInputsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDatasetInputs));
+      serviceBinder.AddMethod(__Method_ListDatasetVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse>(serviceImpl.ListDatasetVersions));
+      serviceBinder.AddMethod(__Method_GetDatasetVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDatasetVersionRequest, global::Clarifai.Api.SingleDatasetVersionResponse>(serviceImpl.GetDatasetVersion));
+      serviceBinder.AddMethod(__Method_ListDatasetVersionMetricsGroups, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListDatasetVersionMetricsGroupsRequest, global::Clarifai.Api.MultiDatasetVersionMetricsGroupResponse>(serviceImpl.ListDatasetVersionMetricsGroups));
+      serviceBinder.AddMethod(__Method_PostDatasetVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse>(serviceImpl.PostDatasetVersions));
+      serviceBinder.AddMethod(__Method_PatchDatasetVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchDatasetVersionsRequest, global::Clarifai.Api.MultiDatasetVersionResponse>(serviceImpl.PatchDatasetVersions));
+      serviceBinder.AddMethod(__Method_DeleteDatasetVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDatasetVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDatasetVersions));
+      serviceBinder.AddMethod(__Method_PutDatasetVersionExports, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutDatasetVersionExportsRequest, global::Clarifai.Api.MultiDatasetVersionExportResponse>(serviceImpl.PutDatasetVersionExports));
       serviceBinder.AddMethod(__Method_GetModelType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelTypeRequest, global::Clarifai.Api.SingleModelTypeResponse>(serviceImpl.GetModelType));
       serviceBinder.AddMethod(__Method_ListOpenSourceLicenses, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListOpenSourceLicensesRequest, global::Clarifai.Api.ListOpenSourceLicensesResponse>(serviceImpl.ListOpenSourceLicenses));
       serviceBinder.AddMethod(__Method_ListModelTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelTypesRequest, global::Clarifai.Api.MultiModelTypeResponse>(serviceImpl.ListModelTypes));
@@ -8630,14 +12038,18 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostModelsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelsSearchesRequest, global::Clarifai.Api.MultiModelResponse>(serviceImpl.PostModelsSearches));
       serviceBinder.AddMethod(__Method_PostModels, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelsRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModels));
       serviceBinder.AddMethod(__Method_PatchModels, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelsRequest, global::Clarifai.Api.MultiModelResponse>(serviceImpl.PatchModels));
+      serviceBinder.AddMethod(__Method_PatchModelIds, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelIdsRequest, global::Clarifai.Api.MultiModelResponse>(serviceImpl.PatchModelIds));
       serviceBinder.AddMethod(__Method_DeleteModel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModel));
       serviceBinder.AddMethod(__Method_DeleteModels, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModels));
+      serviceBinder.AddMethod(__Method_PatchModelCheckConsents, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelCheckConsentsRequest, global::Clarifai.Api.MultiModelCheckConsentResponse>(serviceImpl.PatchModelCheckConsents));
       serviceBinder.AddMethod(__Method_PatchModelToolkits, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelToolkitsRequest, global::Clarifai.Api.MultiModelToolkitResponse>(serviceImpl.PatchModelToolkits));
       serviceBinder.AddMethod(__Method_PatchModelUseCases, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelUseCasesRequest, global::Clarifai.Api.MultiModelUseCaseResponse>(serviceImpl.PatchModelUseCases));
       serviceBinder.AddMethod(__Method_PatchModelLanguages, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelLanguagesRequest, global::Clarifai.Api.MultiModelLanguageResponse>(serviceImpl.PatchModelLanguages));
       serviceBinder.AddMethod(__Method_ListModelInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.ListModelInputs));
       serviceBinder.AddMethod(__Method_GetModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersion));
       serviceBinder.AddMethod(__Method_ListModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.ListModelVersions));
+      serviceBinder.AddMethod(__Method_PostWorkflowVersionsUnPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostWorkflowVersionsUnPublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostWorkflowVersionsUnPublish));
+      serviceBinder.AddMethod(__Method_PostWorkflowVersionsPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostWorkflowVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostWorkflowVersionsPublish));
       serviceBinder.AddMethod(__Method_PostModelVersionsPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsPublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostModelVersionsPublish));
       serviceBinder.AddMethod(__Method_PostModelVersionsUnPublish, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsUnPublishRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostModelVersionsUnPublish));
       serviceBinder.AddMethod(__Method_PostModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModelVersions));
@@ -8675,10 +12087,13 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteApp, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAppRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteApp));
       serviceBinder.AddMethod(__Method_PostApps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAppsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PostApps));
       serviceBinder.AddMethod(__Method_PatchApps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAppsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PatchApps));
+      serviceBinder.AddMethod(__Method_PatchAppsIds, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAppsIdsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PatchAppsIds));
+      serviceBinder.AddMethod(__Method_PatchApp, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAppRequest, global::Clarifai.Api.SingleAppResponse>(serviceImpl.PatchApp));
       serviceBinder.AddMethod(__Method_PostAppsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAppsSearchesRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PostAppsSearches));
       serviceBinder.AddMethod(__Method_PostValidatePassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostValidatePasswordRequest, global::Clarifai.Api.SinglePasswordValidationResponse>(serviceImpl.PostValidatePassword));
       serviceBinder.AddMethod(__Method_GetSearch, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetSearchRequest, global::Clarifai.Api.SingleSearchResponse>(serviceImpl.GetSearch));
       serviceBinder.AddMethod(__Method_ListSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.ListSearches));
+      serviceBinder.AddMethod(__Method_PatchSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PatchSearches));
       serviceBinder.AddMethod(__Method_PostSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostSearches));
       serviceBinder.AddMethod(__Method_PostSearchesByID, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostSearchesByIDRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostSearchesByID));
       serviceBinder.AddMethod(__Method_PostAnnotationSearchMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(serviceImpl.PostAnnotationSearchMetrics));
@@ -8686,6 +12101,11 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListAnnotationSearchMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(serviceImpl.ListAnnotationSearchMetrics));
       serviceBinder.AddMethod(__Method_DeleteAnnotationSearchMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotationSearchMetrics));
       serviceBinder.AddMethod(__Method_DeleteSearch, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteSearchRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteSearch));
+      serviceBinder.AddMethod(__Method_ListAnnotationFilters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse>(serviceImpl.ListAnnotationFilters));
+      serviceBinder.AddMethod(__Method_GetAnnotationFilter, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAnnotationFilterRequest, global::Clarifai.Api.SingleAnnotationFilterResponse>(serviceImpl.GetAnnotationFilter));
+      serviceBinder.AddMethod(__Method_PostAnnotationFilters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse>(serviceImpl.PostAnnotationFilters));
+      serviceBinder.AddMethod(__Method_PatchAnnotationFilters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse>(serviceImpl.PatchAnnotationFilters));
+      serviceBinder.AddMethod(__Method_DeleteAnnotationFilters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationFiltersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotationFilters));
       serviceBinder.AddMethod(__Method_ListStatusCodes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListStatusCodesRequest, global::Clarifai.Api.MultiStatusCodeResponse>(serviceImpl.ListStatusCodes));
       serviceBinder.AddMethod(__Method_GetStatusCode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetStatusCodeRequest, global::Clarifai.Api.SingleStatusCodeResponse>(serviceImpl.GetStatusCode));
       serviceBinder.AddMethod(__Method_ListCollaborators, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(serviceImpl.ListCollaborators));
@@ -8717,6 +12137,31 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostStatValuesAggregate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesAggregateRequest, global::Clarifai.Api.MultiStatValueAggregateResponse>(serviceImpl.PostStatValuesAggregate));
       serviceBinder.AddMethod(__Method_PostTrendingMetricsView, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostTrendingMetricsViewRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostTrendingMetricsView));
       serviceBinder.AddMethod(__Method_ListTrendingMetricsViews, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListTrendingMetricsViewsRequest, global::Clarifai.Api.MultiTrendingMetricsViewResponse>(serviceImpl.ListTrendingMetricsViews));
+      serviceBinder.AddMethod(__Method_GetModule, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModuleRequest, global::Clarifai.Api.SingleModuleResponse>(serviceImpl.GetModule));
+      serviceBinder.AddMethod(__Method_ListModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModulesRequest, global::Clarifai.Api.MultiModuleResponse>(serviceImpl.ListModules));
+      serviceBinder.AddMethod(__Method_PostModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModulesRequest, global::Clarifai.Api.MultiModuleResponse>(serviceImpl.PostModules));
+      serviceBinder.AddMethod(__Method_PatchModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModulesRequest, global::Clarifai.Api.MultiModuleResponse>(serviceImpl.PatchModules));
+      serviceBinder.AddMethod(__Method_DeleteModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModulesRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModules));
+      serviceBinder.AddMethod(__Method_GetModuleVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModuleVersionRequest, global::Clarifai.Api.SingleModuleVersionResponse>(serviceImpl.GetModuleVersion));
+      serviceBinder.AddMethod(__Method_ListModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(serviceImpl.ListModuleVersions));
+      serviceBinder.AddMethod(__Method_PostModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(serviceImpl.PostModuleVersions));
+      serviceBinder.AddMethod(__Method_DeleteModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModuleVersions));
+      serviceBinder.AddMethod(__Method_GetInstalledModuleVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse>(serviceImpl.GetInstalledModuleVersion));
+      serviceBinder.AddMethod(__Method_ListInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(serviceImpl.ListInstalledModuleVersions));
+      serviceBinder.AddMethod(__Method_PostInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(serviceImpl.PostInstalledModuleVersions));
+      serviceBinder.AddMethod(__Method_DeleteInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteInstalledModuleVersions));
+      serviceBinder.AddMethod(__Method_PostInstalledModuleVersionsKey, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest, global::Clarifai.Api.SingleKeyResponse>(serviceImpl.PostInstalledModuleVersionsKey));
+      serviceBinder.AddMethod(__Method_PostBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.PostBulkOperations));
+      serviceBinder.AddMethod(__Method_ListBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.ListBulkOperations));
+      serviceBinder.AddMethod(__Method_GetBulkOperation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetBulkOperationRequest, global::Clarifai.Api.SingleBulkOperationsResponse>(serviceImpl.GetBulkOperation));
+      serviceBinder.AddMethod(__Method_CancelBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.CancelBulkOperationRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.CancelBulkOperations));
+      serviceBinder.AddMethod(__Method_DeleteBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteBulkOperationRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteBulkOperations));
+      serviceBinder.AddMethod(__Method_GetDatasetInputsSearchAddJob, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse>(serviceImpl.GetDatasetInputsSearchAddJob));
+      serviceBinder.AddMethod(__Method_PostUploads, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostUploadsRequest, global::Clarifai.Api.MultiUploadResponse>(serviceImpl.PostUploads));
+      serviceBinder.AddMethod(__Method_PutUploadContentParts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutUploadContentPartsRequest, global::Clarifai.Api.SingleUploadResponse>(serviceImpl.PutUploadContentParts));
+      serviceBinder.AddMethod(__Method_GetUpload, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetUploadRequest, global::Clarifai.Api.SingleUploadResponse>(serviceImpl.GetUpload));
+      serviceBinder.AddMethod(__Method_ListUploads, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListUploadsRequest, global::Clarifai.Api.MultiUploadResponse>(serviceImpl.ListUploads));
+      serviceBinder.AddMethod(__Method_DeleteUploads, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteUploadsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteUploads));
     }
 
   }
