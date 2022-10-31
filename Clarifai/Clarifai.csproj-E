@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <PackageId>ClarifaiGrpc</PackageId>
+        <PackageVersion>8.0.0</PackageVersion>
+        <PackageProjectUrl>https://github.com/Clarifai/clarifai-csharp-grpc</PackageProjectUrl>
+        <PackageLicenceUrl>https://github.com/Clarifai/clarifai-csharp-grpc/blob/master/LICENSE</PackageLicenceUrl>
+        <Authors>Clarifai</Authors>
+        <Description>The gRPC C# client for the Clarifai API.</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Copyright>This project is licensed under the Apache 2.0 License - see the LICENSE file for details.</Copyright>
+        <PackageTags>clarifai api prediction deep machine learning computer vision</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Api.Gax.Grpc" Version="3.0.0" />
+      <PackageReference Include="Google.Protobuf" Version="3.12.3" />
+      <PackageReference Include="Grpc.Core" Version="2.41.1" />
+    </ItemGroup>
+
+</Project>
