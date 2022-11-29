@@ -27,55 +27,96 @@ namespace Clarifai.Auth.Scope {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlL3Njb3BlLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnNjb3BlGiBnb29nbGUvcHJvdG9idWYvZGVzY3JpcHRvci5w",
             "cm90byJGCglTY29wZUxpc3QSJgoGc2NvcGVzGAEgAygOMhYuY2xhcmlmYWku",
-            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSrIDgoBUxIJCgV1bmRl",
-            "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIQCgZTZWFy",
-            "Y2gQAxoE8JsnARIYCgpJbnB1dHNfQWRkEAQaCPCbJwH4mycFEhQKCklucHV0",
-            "c19HZXQQBRoE8JsnARIgCgxJbnB1dHNfUGF0Y2gQBxoOCAHwmycB+JsnBPib",
-            "JwUSHwoNSW5wdXRzX0RlbGV0ZRAIGgzwmycB+JsnBPibJwUSHQoNT3V0cHV0",
-            "c19QYXRjaBAJGgoIAfibJwX4mycCEhoKDENvbmNlcHRzX0FkZBAKGgjwmycB",
-            "+JsnCxIWCgxDb25jZXB0c19HZXQQCxoE8JsnARIiCg5Db25jZXB0c19QYXRj",
-            "aBAMGg4IAfCbJwH4mycK+JsnCxIdCg9Db25jZXB0c19EZWxldGUQDRoI+Jsn",
-            "CvibJwsSGAoKTW9kZWxzX0FkZBAOGgjwmycB+JsnDxIUCgpNb2RlbHNfR2V0",
-            "EA8aBPCbJwESJAoMTW9kZWxzX1BhdGNoEBAaEggB8JsnAfibJw74mycP+Jsn",
-            "GhIfCg1Nb2RlbHNfRGVsZXRlEBEaDPCbJwH4mycO+JsnDxIaCgxNb2RlbHNf",
-            "VHJhaW4QGhoI8JsnAfibJw8SFQoLTW9kZWxzX1N5bmMQGxoE+JsnDxIbCg1X",
-            "b3JrZmxvd3NfQWRkEBIaCPCbJwH4mycTEhcKDVdvcmtmbG93c19HZXQQExoE",
-            "8JsnARIjCg9Xb3JrZmxvd3NfUGF0Y2gQFBoOCAHwmycB+JsnEvibJxMSIgoQ",
-            "V29ya2Zsb3dzX0RlbGV0ZRAVGgzwmycB+JsnEvibJxMSHQoTV29ya2Zsb3dN",
-            "ZXRyaWNzX0dldBBgGgTwmycBEiEKE1dvcmtmbG93TWV0cmljc19BZGQQYRoI",
-            "8JsnAfibJ2ASKAoWV29ya2Zsb3dNZXRyaWNzX0RlbGV0ZRBiGgzwmycB+Jsn",
-            "YfibJ2ASIgoWVFNORVZpc3VhbGl6YXRpb25zX0FkZBAYGgYIAfibJxkSHgoW",
-            "VFNORVZpc3VhbGl6YXRpb25zX0dldBAZGgIIARIdCg9Bbm5vdGF0aW9uc19B",
-            "ZGQQJRoI8JsnAfibJyYSGQoPQW5ub3RhdGlvbnNfR2V0ECYaBPCbJwESJQoR",
-            "QW5ub3RhdGlvbnNfUGF0Y2gQJxoOCAHwmycB+JsnJfibJyYSJAoSQW5ub3Rh",
-            "dGlvbnNfRGVsZXRlECgaDPCbJwH4mycl+JsnJhIcCg5Db2xsZWN0b3JzX0Fk",
-            "ZBApGgjwmycB+JsnKhIYCg5Db2xsZWN0b3JzX0dldBAqGgTwmycBEiMKEUNv",
-            "bGxlY3RvcnNfRGVsZXRlECsaDPCbJwH4mycp+JsnKhIWCghBcHBzX0FkZBAs",
-            "GgjwmycB+JsnLRISCghBcHBzX0dldBAtGgTwmycBEh0KC0FwcHNfRGVsZXRl",
-            "EC4aDPCbJwH4mycs+JsnLRIWCghLZXlzX0FkZBAvGgjwmycB+JsnMBISCghL",
-            "ZXlzX0dldBAwGgTwmycBEh0KC0tleXNfRGVsZXRlEDEaDPCbJwH4mycv+Jsn",
-            "MBIfChFDb2xsYWJvcmF0b3JzX0FkZBAzGgjwmycB+JsnMhIbChFDb2xsYWJv",
-            "cmF0b3JzX0dldBAyGgTwmycBEiYKFENvbGxhYm9yYXRvcnNfRGVsZXRlEDQa",
-            "DPCbJwH4mycz+JsnMhIZCgtNZXRyaWNzX0FkZBA2GgjwmycB+JsnNRIVCgtN",
-            "ZXRyaWNzX0dldBA1GgTwmycBEiAKDk1ldHJpY3NfRGVsZXRlED8aDPCbJwH4",
-            "myc2+JsnNRIXCglUYXNrc19BZGQQNxoI8JsnAfibJzgSEwoJVGFza3NfR2V0",
-            "EDgaBPCbJwESHgoMVGFza3NfRGVsZXRlEEYaDPCbJwH4myc3+JsnOBIiChRQ",
-            "YXNzd29yZFBvbGljaWVzX0FkZBA5GgjwmycB+JsnOhIeChRQYXNzd29yZFBv",
-            "bGljaWVzX0dldBA6GgTwmycBEikKF1Bhc3N3b3JkUG9saWNpZXNfRGVsZXRl",
-            "EDsaDPCbJwH4myc5+JsnOhIZCg9MYWJlbE9yZGVyc19HZXQQQxoE8JsnARId",
-            "Cg9MYWJlbE9yZGVyc19BZGQQRBoI8JsnAfibJ0MSJAoSTGFiZWxPcmRlcnNf",
-            "RGVsZXRlEEUaDPCbJwH4mydE+JsnQxIgChZVc2VyRmVhdHVyZUNvbmZpZ3Nf",
-            "R2V0EEcaBPCbJwESLgogRmluZER1cGxpY2F0ZUFubm90YXRpb25zSm9ic19B",
-            "ZGQQZhoI8JsnAfibJ2cSKgogRmluZER1cGxpY2F0ZUFubm90YXRpb25zSm9i",
-            "c19HZXQQZxoE8JsnARI1CiNGaW5kRHVwbGljYXRlQW5ub3RhdGlvbnNKb2Jz",
-            "X0RlbGV0ZRBoGgzwmycB+JsnZvibJ2ciBAgeEB4iBAgfEB8iBAggECAiBAgh",
-            "ECEiBAgiECI6PAoPY2xhcmZhaV9leHBvc2VkEiEuZ29vZ2xlLnByb3RvYnVm",
-            "LkVudW1WYWx1ZU9wdGlvbnMYvvMEIAEoCDpeChljbGFyaWZhaV9kZXBlbmRp",
-            "bmdfc2NvcGVzEiEuZ29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMY",
-            "v/MEIAMoDjIWLmNsYXJpZmFpLmF1dGguc2NvcGUuU0JnChxjb20uY2xhcmlm",
-            "YWkuZ3JwYy5hdXRoLnNjb3BlUAFaPmdpdGh1Yi5jb20vQ2xhcmlmYWkvY2xh",
-            "cmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlogIEQ0FJ",
-            "UGIGcHJvdG8z"));
+            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSqpHQoBUxIJCgV1bmRl",
+            "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIcChBQcmVk",
+            "aWN0X0ZlZWRiYWNrEB0aBggB8JsnABIYCgpJbnB1dHNfQWRkEAQaCPCbJwH4",
+            "mycFEhQKCklucHV0c19HZXQQBRoE8JsnARIgCgxJbnB1dHNfUGF0Y2gQBxoO",
+            "CAHwmycB+JsnBPibJwUSHwoNSW5wdXRzX0RlbGV0ZRAIGgzwmycB+JsnBPib",
+            "JwUSHQoNT3V0cHV0c19QYXRjaBAJGgoIAfibJwX4mycCEhoKDENvbmNlcHRz",
+            "X0FkZBAKGgjwmycB+JsnCxIWCgxDb25jZXB0c19HZXQQCxoE8JsnARIiCg5D",
+            "b25jZXB0c19QYXRjaBAMGg4IAfCbJwH4mycK+JsnCxIdCg9Db25jZXB0c19E",
+            "ZWxldGUQDRoI+JsnCvibJwsSGAoKTW9kZWxzX0FkZBAOGgjwmycB+JsnDxIU",
+            "CgpNb2RlbHNfR2V0EA8aBPCbJwESJAoMTW9kZWxzX1BhdGNoEBAaEggB8Jsn",
+            "AfibJw74mycP+JsnGhIfCg1Nb2RlbHNfRGVsZXRlEBEaDPCbJwH4mycO+Jsn",
+            "DxIaCgxNb2RlbHNfVHJhaW4QGhoI8JsnAfibJw8SFQoLTW9kZWxzX1N5bmMQ",
+            "GxoE+JsnDxIbCg1Xb3JrZmxvd3NfQWRkEBIaCPCbJwH4mycTEhcKDVdvcmtm",
+            "bG93c19HZXQQExoE8JsnARIjCg9Xb3JrZmxvd3NfUGF0Y2gQFBoOCAHwmycB",
+            "+JsnEvibJxMSIgoQV29ya2Zsb3dzX0RlbGV0ZRAVGgzwmycB+JsnEvibJxMS",
+            "HQoTV29ya2Zsb3dNZXRyaWNzX0dldBBgGgTwmycBEiEKE1dvcmtmbG93TWV0",
+            "cmljc19BZGQQYRoI8JsnAfibJ2ASKAoWV29ya2Zsb3dNZXRyaWNzX0RlbGV0",
+            "ZRBiGgzwmycB+JsnYfibJ2ASIgoWVFNORVZpc3VhbGl6YXRpb25zX0FkZBAY",
+            "GgYIAfibJxkSHgoWVFNORVZpc3VhbGl6YXRpb25zX0dldBAZGgIIARIdCg9B",
+            "bm5vdGF0aW9uc19BZGQQJRoI8JsnAfibJyYSGQoPQW5ub3RhdGlvbnNfR2V0",
+            "ECYaBPCbJwESJQoRQW5ub3RhdGlvbnNfUGF0Y2gQJxoOCAHwmycB+JsnJfib",
+            "JyYSJAoSQW5ub3RhdGlvbnNfRGVsZXRlECgaDPCbJwH4mycl+JsnJhIcCg5D",
+            "b2xsZWN0b3JzX0FkZBApGgjwmycB+JsnKhIYCg5Db2xsZWN0b3JzX0dldBAq",
+            "GgTwmycBEiMKEUNvbGxlY3RvcnNfRGVsZXRlECsaDPCbJwH4mycp+JsnKhIW",
+            "CghBcHBzX0FkZBAsGgjwmycB+JsnLRISCghBcHBzX0dldBAtGgTwmycBEh0K",
+            "C0FwcHNfRGVsZXRlEC4aDPCbJwH4mycs+JsnLRIWCghLZXlzX0FkZBAvGgjw",
+            "mycB+JsnMBISCghLZXlzX0dldBAwGgTwmycBEh0KC0tleXNfRGVsZXRlEDEa",
+            "DPCbJwH4mycv+JsnMBIfChFDb2xsYWJvcmF0b3JzX0FkZBAzGgjwmycB+Jsn",
+            "MhIbChFDb2xsYWJvcmF0b3JzX0dldBAyGgTwmycBEiYKFENvbGxhYm9yYXRv",
+            "cnNfRGVsZXRlEDQaDPCbJwH4mycz+JsnMhIZCgtNZXRyaWNzX0FkZBA2Ggjw",
+            "mycB+JsnNRIVCgtNZXRyaWNzX0dldBA1GgTwmycBEiAKDk1ldHJpY3NfRGVs",
+            "ZXRlED8aDPCbJwH4myc2+JsnNRIXCglUYXNrc19BZGQQNxoI8JsnAfibJzgS",
+            "EwoJVGFza3NfR2V0EDgaBPCbJwESHgoMVGFza3NfRGVsZXRlEEYaDPCbJwH4",
+            "myc3+JsnOBIiChRQYXNzd29yZFBvbGljaWVzX0FkZBA5GgjwmycB+JsnOhIe",
+            "ChRQYXNzd29yZFBvbGljaWVzX0dldBA6GgTwmycBEikKF1Bhc3N3b3JkUG9s",
+            "aWNpZXNfRGVsZXRlEDsaDPCbJwH4myc5+JsnOhIhChNQYXNzd29yZEhpc3Rv",
+            "cnlfQWRkEDwaCPCbJwD4myc9Eh0KE1Bhc3N3b3JkSGlzdG9yeV9HZXQQPRoE",
+            "8JsnABIoChZQYXNzd29yZEhpc3RvcnlfRGVsZXRlED4aDPCbJwD4myc8+Jsn",
+            "PRIbChFOb3RpZmljYXRpb25zX0dldBBAGgTwmycAEh8KEU5vdGlmaWNhdGlv",
+            "bnNfQWRkEEEaCPCbJwD4mydAEiYKFE5vdGlmaWNhdGlvbnNfRGVsZXRlEEIa",
+            "DPCbJwD4mydB+JsnQBIZCg9MYWJlbE9yZGVyc19HZXQQQxoE8JsnARIdCg9M",
+            "YWJlbE9yZGVyc19BZGQQRBoI8JsnAfibJ0MSJAoSTGFiZWxPcmRlcnNfRGVs",
+            "ZXRlEEUaDPCbJwH4mydE+JsnQxIgChZVc2VyRmVhdHVyZUNvbmZpZ3NfR2V0",
+            "EEcaBPCbJwESJAoWVXNlckZlYXR1cmVDb25maWdzX0FkZBBIGgjwmycA+Jsn",
+            "RxIrChlVc2VyRmVhdHVyZUNvbmZpZ3NfRGVsZXRlEEkaDPCbJwD4mydI+Jsn",
+            "RxITCglUZWFtc19HZXQQShoE8JsnABIXCglUZWFtc19BZGQQSxoI8JsnAPib",
+            "J0oSHgoMVGVhbXNfRGVsZXRlEEwaDPCbJwD4mydK+JsnSxIXCg1UZWFtVXNl",
+            "cnNfR2V0EE0aBPCbJwASGwoNVGVhbVVzZXJzX0FkZBBOGgjwmycA+JsnTRIi",
+            "ChBUZWFtVXNlcnNfRGVsZXRlEE8aDPCbJwD4mydN+JsnThIWCgxUZWFtQXBw",
+            "c19HZXQQUxoE8JsnABIaCgxUZWFtQXBwc19BZGQQVBoI8JsnAPibJ1MSIQoP",
+            "VGVhbUFwcHNfRGVsZXRlEFUaDPCbJwD4mydT+JsnVBITCglSb2xlc19HZXQQ",
+            "UBoE8JsnABIbChFPcmdhbml6YXRpb25zX0dldBBWGgTwmycAEh8KEU9yZ2Fu",
+            "aXphdGlvbnNfQWRkEFcaCPCbJwD4mydWEiYKFE9yZ2FuaXphdGlvbnNfRGVs",
+            "ZXRlEFgaDPCbJwD4mydW+JsnVxIfChVJZGVudGl0eVByb3ZpZGVyc19HZXQQ",
+            "WRoE8JsnABIjChVJZGVudGl0eVByb3ZpZGVyc19BZGQQWhoI8JsnAPibJ1kS",
+            "KgoYSWRlbnRpdHlQcm92aWRlcnNfRGVsZXRlEFsaDPCbJwD4mydZ+JsnWhIZ",
+            "Cg9PcmdfTGlzdEFsbEFwcHMQXBoE8JsnABIkChpPcmdhbml6YXRpb25NZW1i",
+            "ZXJzX0RlbGV0ZRBdGgTwmycAEiEKF09yZ2FuaXphdGlvbk1lbWJlcnNfQWRk",
+            "EF4aBPCbJwASIgoYT3JnYW5pemF0aW9uTWVtYmVyc19MaXN0EGMaBPCbJwAS",
+            "HwoVVXNlck9yZ2FuaXphdGlvbnNfR2V0EF8aBPCbJwASJQobT3JnYW5pemF0",
+            "aW9uSW52aXRhdGlvbnNfQWRkEGQaBPCbJwASJQobT3JnYW5pemF0aW9uSW52",
+            "aXRhdGlvbnNfR2V0EGUaBPCbJwASLgogRmluZER1cGxpY2F0ZUFubm90YXRp",
+            "b25zSm9ic19BZGQQZhoI8JsnAfibJ2cSKgogRmluZER1cGxpY2F0ZUFubm90",
+            "YXRpb25zSm9ic19HZXQQZxoE8JsnARI1CiNGaW5kRHVwbGljYXRlQW5ub3Rh",
+            "dGlvbnNKb2JzX0RlbGV0ZRBoGgzwmycB+JsnZvibJ2cSFgoMRGF0YXNldHNf",
+            "R2V0EGkaBPCbJwESGgoMRGF0YXNldHNfQWRkEGoaCPCbJwH4mydpEiEKD0Rh",
+            "dGFzZXRzX0RlbGV0ZRBrGgzwmycB+JsnafibJ2oSGQoLTW9kdWxlc19BZGQQ",
+            "bBoI8JsnAfibJ20SFQoLTW9kdWxlc19HZXQQbRoE8JsnARIgCg5Nb2R1bGVz",
+            "X0RlbGV0ZRBuGgzwmycB+JsnbPibJ20SLQobSW5zdGFsbGVkTW9kdWxlVmVy",
+            "c2lvbnNfQWRkEG8aDPCbJwH4mydw+JsnbRIpChtJbnN0YWxsZWRNb2R1bGVW",
+            "ZXJzaW9uc19HZXQQcBoI8JsnAfibJ20SNAoeSW5zdGFsbGVkTW9kdWxlVmVy",
+            "c2lvbnNfRGVsZXRlEHEaEPCbJwH4mydv+JsncPibJ20SEAoGU2VhcmNoEAMa",
+            "BPCbJwESGwoPU2VhcmNoX0ZlZWRiYWNrEBwaBggB8JsnABIZCg9TYXZlZFNl",
+            "YXJjaF9HZXQQchoE8JsnARIdCg9TYXZlZFNlYXJjaF9BZGQQcxoI8JsnAfib",
+            "J3ISJAoSU2F2ZWRTZWFyY2hfRGVsZXRlEHQaDPCbJwH4mydy+JsncxImChxN",
+            "b2RlbFZlcnNpb25QdWJsaWNhdGlvbnNfQWRkEHUaBPCbJwESKQofTW9kZWxW",
+            "ZXJzaW9uUHVibGljYXRpb25zX0RlbGV0ZRB2GgTwmycBEiIKGFdvcmtmbG93",
+            "UHVibGljYXRpb25zX0FkZBB3GgTwmycBEiUKG1dvcmtmbG93UHVibGljYXRp",
+            "b25zX0RlbGV0ZRB4GgTwmycBEh8KEUJ1bGtPcGVyYXRpb25fQWRkEHkaCPCb",
+            "JwH4myd6EhsKEUJ1bGtPcGVyYXRpb25fR2V0EHoaBPCbJwESJgoUQnVsa09w",
+            "ZXJhdGlvbl9EZWxldGUQexoM8JsnAfibJ3n4myd6EhcKE0hpc3RvcmljYWxV",
+            "c2FnZV9HZXQQfBIWCgtVcGxvYWRzX0dldBCAARoE8JsnARIbCgtVcGxvYWRz",
+            "X0FkZBCBARoJ8JsnAfibJ4ABEiMKDlVwbG9hZHNfRGVsZXRlEIIBGg7wmycB",
+            "+JsngAH4myeBASIECB4QHiIECB8QHyIECCAQICIECCEQISIECCIQIiIECH0Q",
+            "fSIECH4Qfjo8Cg9jbGFyZmFpX2V4cG9zZWQSIS5nb29nbGUucHJvdG9idWYu",
+            "RW51bVZhbHVlT3B0aW9ucxi+8wQgASgIOl4KGWNsYXJpZmFpX2RlcGVuZGlu",
+            "Z19zY29wZXMSIS5nb29nbGUucHJvdG9idWYuRW51bVZhbHVlT3B0aW9ucxi/",
+            "8wQgAygOMhYuY2xhcmlmYWkuYXV0aC5zY29wZS5TQjwKHGNvbS5jbGFyaWZh",
+            "aS5ncnBjLmF1dGguc2NvcGVQAVoTY2xhcmlmYWkvYXV0aC9zY29wZaICBENB",
+            "SVBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Scope.S), }, new pb::Extension[] { ScopeExtensions.ClarfaiExposed, ScopeExtensions.ClarifaiDependingScopes }, new pbr::GeneratedClrTypeInfo[] {
@@ -118,6 +159,17 @@ namespace Clarifai.Auth.Scope {
   /// 1. *_Add requires the corresponding _Get.
   /// 2. *_Delete requires the corresponding _Add and _Get.
   /// 3. *_Patch is deprecated and not check anywhere.
+  ///
+  /// Think of the dependencies in this file at the DB level. If you cannot make a DB call to Get, Add
+  /// or Delete a resource without having access to another resource then you should add it here. That
+  /// should for the most part be the same resource type. In service.proto for the API level you will
+  /// also specify cl_depending_scopes for each API endpoint. Those cover cases where an endpoint
+  /// might need to access more than just that one resource type in order to operate (ie. API handlers
+  /// that make multiple DB calls of various resource types likely have more cl_depending_scopes than
+  /// the ones listed below). For example: PostCollectors to create a collector we make sure that you
+  /// can do model predictions, get concepts, etc. so that you don't have a collector that would be
+  /// useless at the end of that API handler but below you can see that the dependencies of Collector
+  /// scopes are only on other Collector scopes.
   /// </summary>
   public enum S {
     /// <summary>
@@ -131,10 +183,7 @@ namespace Clarifai.Auth.Scope {
     /// Make an rpc to our prediction services.
     /// </summary>
     [pbr::OriginalName("Predict")] Predict = 2,
-    /// <summary>
-    /// Make an rpc to our search services.
-    /// </summary>
-    [pbr::OriginalName("Search")] Earch = 3,
+    [pbr::OriginalName("Predict_Feedback")] PredictFeedback = 29,
     /// <summary>
     /// Write to the inputs table in the DB.
     /// </summary>
@@ -334,6 +383,30 @@ namespace Clarifai.Auth.Scope {
     /// </summary>
     [pbr::OriginalName("PasswordPolicies_Delete")] PasswordPoliciesDelete = 59,
     /// <summary>
+    /// Write to password_history table
+    /// </summary>
+    [pbr::OriginalName("PasswordHistory_Add")] PasswordHistoryAdd = 60,
+    /// <summary>
+    /// Read from password_history table
+    /// </summary>
+    [pbr::OriginalName("PasswordHistory_Get")] PasswordHistoryGet = 61,
+    /// <summary>
+    /// To delete password history we need read/write
+    /// </summary>
+    [pbr::OriginalName("PasswordHistory_Delete")] PasswordHistoryDelete = 62,
+    /// <summary>
+    /// Read from notifications table
+    /// </summary>
+    [pbr::OriginalName("Notifications_Get")] NotificationsGet = 64,
+    /// <summary>
+    /// Write to notifications table
+    /// </summary>
+    [pbr::OriginalName("Notifications_Add")] NotificationsAdd = 65,
+    /// <summary>
+    /// To delete notifications we need read/write
+    /// </summary>
+    [pbr::OriginalName("Notifications_Delete")] NotificationsDelete = 66,
+    /// <summary>
     /// Read from label orders table
     /// </summary>
     [pbr::OriginalName("LabelOrders_Get")] LabelOrdersGet = 67,
@@ -350,33 +423,184 @@ namespace Clarifai.Auth.Scope {
     /// </summary>
     [pbr::OriginalName("UserFeatureConfigs_Get")] UserFeatureConfigsGet = 71,
     /// <summary>
+    /// Write to configs table
+    /// </summary>
+    [pbr::OriginalName("UserFeatureConfigs_Add")] UserFeatureConfigsAdd = 72,
+    /// <summary>
+    /// To delete configs we need read/write
+    /// </summary>
+    [pbr::OriginalName("UserFeatureConfigs_Delete")] UserFeatureConfigsDelete = 73,
+    /// <summary>
+    /// Read from teams table
+    /// </summary>
+    [pbr::OriginalName("Teams_Get")] TeamsGet = 74,
+    /// <summary>
+    /// Write to teams table
+    /// </summary>
+    [pbr::OriginalName("Teams_Add")] TeamsAdd = 75,
+    /// <summary>
+    /// To delete teams we need read/write
+    /// </summary>
+    [pbr::OriginalName("Teams_Delete")] TeamsDelete = 76,
+    /// <summary>
+    /// Read from team_users table
+    /// </summary>
+    [pbr::OriginalName("TeamUsers_Get")] TeamUsersGet = 77,
+    /// <summary>
+    /// Write to team_users table
+    /// </summary>
+    [pbr::OriginalName("TeamUsers_Add")] TeamUsersAdd = 78,
+    /// <summary>
+    /// To delete team_users we need read/write
+    /// </summary>
+    [pbr::OriginalName("TeamUsers_Delete")] TeamUsersDelete = 79,
+    [pbr::OriginalName("TeamApps_Get")] TeamAppsGet = 83,
+    [pbr::OriginalName("TeamApps_Add")] TeamAppsAdd = 84,
+    [pbr::OriginalName("TeamApps_Delete")] TeamAppsDelete = 85,
+    /// <summary>
+    /// Read from roles table
+    /// </summary>
+    [pbr::OriginalName("Roles_Get")] RolesGet = 80,
+    /// <summary>
+    /// Read from organizations table
+    /// </summary>
+    [pbr::OriginalName("Organizations_Get")] OrganizationsGet = 86,
+    /// <summary>
+    /// Write to organizations table
+    /// </summary>
+    [pbr::OriginalName("Organizations_Add")] OrganizationsAdd = 87,
+    /// <summary>
+    /// To delete organizations we need read/write
+    /// </summary>
+    [pbr::OriginalName("Organizations_Delete")] OrganizationsDelete = 88,
+    /// <summary>
+    /// Read from identity_providers table
+    /// </summary>
+    [pbr::OriginalName("IdentityProviders_Get")] IdentityProvidersGet = 89,
+    /// <summary>
+    /// Write to identity_providers table
+    /// </summary>
+    [pbr::OriginalName("IdentityProviders_Add")] IdentityProvidersAdd = 90,
+    /// <summary>
+    /// To delete identity_providers we need read/write
+    /// </summary>
+    [pbr::OriginalName("IdentityProviders_Delete")] IdentityProvidersDelete = 91,
+    [pbr::OriginalName("Org_ListAllApps")] OrgListAllApps = 92,
+    [pbr::OriginalName("OrganizationMembers_Delete")] OrganizationMembersDelete = 93,
+    [pbr::OriginalName("OrganizationMembers_Add")] OrganizationMembersAdd = 94,
+    [pbr::OriginalName("OrganizationMembers_List")] OrganizationMembersList = 99,
+    [pbr::OriginalName("UserOrganizations_Get")] UserOrganizationsGet = 95,
+    [pbr::OriginalName("OrganizationInvitations_Add")] OrganizationInvitationsAdd = 100,
+    [pbr::OriginalName("OrganizationInvitations_Get")] OrganizationInvitationsGet = 101,
+    /// <summary>
     /// CRUD on FindDuplicateAnnotationsJobs table
     /// </summary>
     [pbr::OriginalName("FindDuplicateAnnotationsJobs_Add")] FindDuplicateAnnotationsJobsAdd = 102,
     [pbr::OriginalName("FindDuplicateAnnotationsJobs_Get")] FindDuplicateAnnotationsJobsGet = 103,
     [pbr::OriginalName("FindDuplicateAnnotationsJobs_Delete")] FindDuplicateAnnotationsJobsDelete = 104,
+    [pbr::OriginalName("Datasets_Get")] DatasetsGet = 105,
+    [pbr::OriginalName("Datasets_Add")] DatasetsAdd = 106,
+    [pbr::OriginalName("Datasets_Delete")] DatasetsDelete = 107,
+    /// <summary>
+    /// Write to the modules DB tables.
+    /// </summary>
+    [pbr::OriginalName("Modules_Add")] ModulesAdd = 108,
+    /// <summary>
+    /// Read from the modules and modules versions DB tables.
+    /// </summary>
+    [pbr::OriginalName("Modules_Get")] ModulesGet = 109,
+    /// <summary>
+    /// To delete we need read/write.
+    /// </summary>
+    [pbr::OriginalName("Modules_Delete")] ModulesDelete = 110,
+    /// <summary>
+    /// Write to the InstalledModuleVersions DB tables.
+    /// </summary>
+    [pbr::OriginalName("InstalledModuleVersions_Add")] InstalledModuleVersionsAdd = 111,
+    /// <summary>
+    /// Read from the InstalledModuleVersions and InstalledModuleVersions versions DB tables.
+    /// </summary>
+    [pbr::OriginalName("InstalledModuleVersions_Get")] InstalledModuleVersionsGet = 112,
+    /// <summary>
+    /// To delete we need read/write.
+    /// </summary>
+    [pbr::OriginalName("InstalledModuleVersions_Delete")] InstalledModuleVersionsDelete = 113,
+    /// <summary>
+    /// Make an rpc to our search services.
+    /// </summary>
+    [pbr::OriginalName("Search")] Earch = 3,
+    [pbr::OriginalName("Search_Feedback")] EarchFeedback = 28,
+    /// <summary>
+    /// To get a saved search.
+    /// </summary>
+    [pbr::OriginalName("SavedSearch_Get")] AvedSearchGet = 114,
+    /// <summary>
+    /// To add a saved search
+    /// </summary>
+    [pbr::OriginalName("SavedSearch_Add")] AvedSearchAdd = 115,
+    /// <summary>
+    /// To delete a saved search
+    /// </summary>
+    [pbr::OriginalName("SavedSearch_Delete")] AvedSearchDelete = 116,
+    [pbr::OriginalName("ModelVersionPublications_Add")] ModelVersionPublicationsAdd = 117,
+    [pbr::OriginalName("ModelVersionPublications_Delete")] ModelVersionPublicationsDelete = 118,
+    [pbr::OriginalName("WorkflowPublications_Add")] WorkflowPublicationsAdd = 119,
+    [pbr::OriginalName("WorkflowPublications_Delete")] WorkflowPublicationsDelete = 120,
+    /// <summary>
+    /// To write bulk operations to the DB
+    /// </summary>
+    [pbr::OriginalName("BulkOperation_Add")] BulkOperationAdd = 121,
+    /// <summary>
+    /// To Read Bulk Operations from the DB
+    /// </summary>
+    [pbr::OriginalName("BulkOperation_Get")] BulkOperationGet = 122,
+    /// <summary>
+    /// To Delete Bulk Operations from the DB
+    /// </summary>
+    [pbr::OriginalName("BulkOperation_Delete")] BulkOperationDelete = 123,
+    /// <summary>
+    /// To read historical usage from usage.dashboard_items table
+    /// </summary>
+    [pbr::OriginalName("HistoricalUsage_Get")] HistoricalUsageGet = 124,
+    /// <summary>
+    /// To read uploaded files and archives info from Uploads endpoints
+    /// </summary>
+    [pbr::OriginalName("Uploads_Get")] UploadsGet = 128,
+    /// <summary>
+    /// To upload files or archives through the Uploads endpoints
+    /// </summary>
+    [pbr::OriginalName("Uploads_Add")] UploadsAdd = 129,
+    [pbr::OriginalName("Uploads_Delete")] UploadsDelete = 130,
   }
 
   #endregion
 
   #region Messages
-  public sealed partial class ScopeList : pb::IMessage<ScopeList> {
+  public sealed partial class ScopeList : pb::IMessage<ScopeList>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ScopeList> _parser = new pb::MessageParser<ScopeList>(() => new ScopeList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ScopeList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Clarifai.Auth.Scope.ScopeReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScopeList() {
       OnConstruction();
     }
@@ -384,6 +608,7 @@ namespace Clarifai.Auth.Scope {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScopeList(ScopeList other) : this() {
       scopes_ = other.scopes_.Clone();
       endpoints_ = other.endpoints_.Clone();
@@ -391,6 +616,7 @@ namespace Clarifai.Auth.Scope {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ScopeList Clone() {
       return new ScopeList(this);
     }
@@ -404,6 +630,7 @@ namespace Clarifai.Auth.Scope {
     /// These are the list of low-level scopes to check from the enum below.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Clarifai.Auth.Scope.S> Scopes {
       get { return scopes_; }
     }
@@ -417,16 +644,19 @@ namespace Clarifai.Auth.Scope {
     /// This is a list of fully qualified grpc names to check.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Endpoints {
       get { return endpoints_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ScopeList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ScopeList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -440,6 +670,7 @@ namespace Clarifai.Auth.Scope {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= scopes_.GetHashCode();
@@ -451,20 +682,39 @@ namespace Clarifai.Auth.Scope {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       scopes_.WriteTo(output, _repeated_scopes_codec);
       endpoints_.WriteTo(output, _repeated_endpoints_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      scopes_.WriteTo(ref output, _repeated_scopes_codec);
+      endpoints_.WriteTo(ref output, _repeated_endpoints_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += scopes_.CalculateSize(_repeated_scopes_codec);
@@ -476,6 +726,7 @@ namespace Clarifai.Auth.Scope {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ScopeList other) {
       if (other == null) {
         return;
@@ -486,7 +737,11 @@ namespace Clarifai.Auth.Scope {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -504,7 +759,32 @@ namespace Clarifai.Auth.Scope {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            scopes_.AddEntriesFrom(ref input, _repeated_scopes_codec);
+            break;
+          }
+          case 18: {
+            endpoints_.AddEntriesFrom(ref input, _repeated_endpoints_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

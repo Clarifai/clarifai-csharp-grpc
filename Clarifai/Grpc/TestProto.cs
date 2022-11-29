@@ -32,9 +32,8 @@ namespace Clarifai.Api.Utils {
             "cmluZ19vbmVvZhgFIAEoCUgAEhQKCmJvb2xfb25lb2YYBiABKAhIABI3Cg1t",
             "ZXNzYWdlX29uZW9mGAcgASgLMh4uY2xhcmlmYWkuYXBpLnV0aWxzLlRlc3RQ",
             "cm90bzJIAEIOCgxvbmVfb2ZfZmllbGQiJgoKVGVzdFByb3RvMhIKCgJpZBgB",
-            "IAEoCRIMCgRmbGlwGAIgASgIQmUKG2NvbS5jbGFyaWZhaS5ncnBjLmFwaS51",
-            "dGlsc1ABWj1naXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdycGMv",
-            "cHJvdG8vY2xhcmlmYWkvYXBpL3V0aWxzogIEQ0FJUGIGcHJvdG8z"));
+            "IAEoCRIMCgRmbGlwGAIgASgIQjoKG2NvbS5jbGFyaWZhaS5ncnBjLmFwaS51",
+            "dGlsc1ABWhJjbGFyaWZhaS9hcGkvdXRpbHOiAgRDQUlQYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -46,23 +45,31 @@ namespace Clarifai.Api.Utils {
 
   }
   #region Messages
-  public sealed partial class TestProto : pb::IMessage<TestProto> {
+  public sealed partial class TestProto : pb::IMessage<TestProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TestProto> _parser = new pb::MessageParser<TestProto>(() => new TestProto());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TestProto> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Clarifai.Api.Utils.TestProtoReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestProto() {
       OnConstruction();
     }
@@ -70,6 +77,7 @@ namespace Clarifai.Api.Utils {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestProto(TestProto other) : this() {
       id_ = other.id_;
       message_ = other.message_;
@@ -91,6 +99,7 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestProto Clone() {
       return new TestProto(this);
     }
@@ -99,6 +108,7 @@ namespace Clarifai.Api.Utils {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -110,6 +120,7 @@ namespace Clarifai.Api.Utils {
     public const int MessageFieldNumber = 2;
     private string message_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Message {
       get { return message_; }
       set {
@@ -121,6 +132,7 @@ namespace Clarifai.Api.Utils {
     public const int ValueFieldNumber = 3;
     private double value_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double Value {
       get { return value_; }
       set {
@@ -132,6 +144,7 @@ namespace Clarifai.Api.Utils {
     public const int ImageBytesFieldNumber = 4;
     private pb::ByteString imageBytes_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString ImageBytes {
       get { return imageBytes_; }
       set {
@@ -142,6 +155,7 @@ namespace Clarifai.Api.Utils {
     /// <summary>Field number for the "string_oneof" field.</summary>
     public const int StringOneofFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string StringOneof {
       get { return oneOfFieldCase_ == OneOfFieldOneofCase.StringOneof ? (string) oneOfField_ : ""; }
       set {
@@ -153,6 +167,7 @@ namespace Clarifai.Api.Utils {
     /// <summary>Field number for the "bool_oneof" field.</summary>
     public const int BoolOneofFieldNumber = 6;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool BoolOneof {
       get { return oneOfFieldCase_ == OneOfFieldOneofCase.BoolOneof ? (bool) oneOfField_ : false; }
       set {
@@ -164,6 +179,7 @@ namespace Clarifai.Api.Utils {
     /// <summary>Field number for the "message_oneof" field.</summary>
     public const int MessageOneofFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Clarifai.Api.Utils.TestProto2 MessageOneof {
       get { return oneOfFieldCase_ == OneOfFieldOneofCase.MessageOneof ? (global::Clarifai.Api.Utils.TestProto2) oneOfField_ : null; }
       set {
@@ -182,22 +198,26 @@ namespace Clarifai.Api.Utils {
     }
     private OneOfFieldOneofCase oneOfFieldCase_ = OneOfFieldOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OneOfFieldOneofCase OneOfFieldCase {
       get { return oneOfFieldCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearOneOfField() {
       oneOfFieldCase_ = OneOfFieldOneofCase.None;
       oneOfField_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TestProto);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TestProto other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -217,6 +237,7 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -234,12 +255,17 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Id);
@@ -271,9 +297,49 @@ namespace Clarifai.Api.Utils {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Message.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Message);
+      }
+      if (Value != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(Value);
+      }
+      if (ImageBytes.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteBytes(ImageBytes);
+      }
+      if (oneOfFieldCase_ == OneOfFieldOneofCase.StringOneof) {
+        output.WriteRawTag(42);
+        output.WriteString(StringOneof);
+      }
+      if (oneOfFieldCase_ == OneOfFieldOneofCase.BoolOneof) {
+        output.WriteRawTag(48);
+        output.WriteBool(BoolOneof);
+      }
+      if (oneOfFieldCase_ == OneOfFieldOneofCase.MessageOneof) {
+        output.WriteRawTag(58);
+        output.WriteMessage(MessageOneof);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -304,6 +370,7 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TestProto other) {
       if (other == null) {
         return;
@@ -339,7 +406,11 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -381,27 +452,84 @@ namespace Clarifai.Api.Utils {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            Message = input.ReadString();
+            break;
+          }
+          case 25: {
+            Value = input.ReadDouble();
+            break;
+          }
+          case 34: {
+            ImageBytes = input.ReadBytes();
+            break;
+          }
+          case 42: {
+            StringOneof = input.ReadString();
+            break;
+          }
+          case 48: {
+            BoolOneof = input.ReadBool();
+            break;
+          }
+          case 58: {
+            global::Clarifai.Api.Utils.TestProto2 subBuilder = new global::Clarifai.Api.Utils.TestProto2();
+            if (oneOfFieldCase_ == OneOfFieldOneofCase.MessageOneof) {
+              subBuilder.MergeFrom(MessageOneof);
+            }
+            input.ReadMessage(subBuilder);
+            MessageOneof = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  public sealed partial class TestProto2 : pb::IMessage<TestProto2> {
+  public sealed partial class TestProto2 : pb::IMessage<TestProto2>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TestProto2> _parser = new pb::MessageParser<TestProto2>(() => new TestProto2());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TestProto2> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Clarifai.Api.Utils.TestProtoReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestProto2() {
       OnConstruction();
     }
@@ -409,6 +537,7 @@ namespace Clarifai.Api.Utils {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestProto2(TestProto2 other) : this() {
       id_ = other.id_;
       flip_ = other.flip_;
@@ -416,6 +545,7 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TestProto2 Clone() {
       return new TestProto2(this);
     }
@@ -424,6 +554,7 @@ namespace Clarifai.Api.Utils {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_; }
       set {
@@ -435,6 +566,7 @@ namespace Clarifai.Api.Utils {
     public const int FlipFieldNumber = 2;
     private bool flip_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Flip {
       get { return flip_; }
       set {
@@ -443,11 +575,13 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TestProto2);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TestProto2 other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -461,6 +595,7 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
@@ -472,12 +607,17 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Id.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Id);
@@ -489,9 +629,29 @@ namespace Clarifai.Api.Utils {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Flip != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(Flip);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Id.Length != 0) {
@@ -507,6 +667,7 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TestProto2 other) {
       if (other == null) {
         return;
@@ -521,7 +682,11 @@ namespace Clarifai.Api.Utils {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -538,7 +703,31 @@ namespace Clarifai.Api.Utils {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Flip = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
