@@ -47,7 +47,7 @@ namespace Clarifai.IntegrationTests
             );
             RaiseOnFailure(response);
 
-            Assert.AreEqual("general", response.Model.Name);
+            Assert.AreEqual("Image Recognition", response.Model.Name);
         }
 
         [Test]
