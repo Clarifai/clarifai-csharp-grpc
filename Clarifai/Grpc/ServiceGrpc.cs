@@ -124,6 +124,10 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsSearchesRequest> __Marshaller_clarifai_api_PostAnnotationsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationsSearchesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationWorkersRequest> __Marshaller_clarifai_api_ListAnnotationWorkersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAnnotationWorkersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkerResponse> __Marshaller_clarifai_api_MultiWorkerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkerResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetInputCountRequest> __Marshaller_clarifai_api_GetInputCountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetInputCountRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleInputCountResponse> __Marshaller_clarifai_api_SingleInputCountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleInputCountResponse.Parser));
@@ -873,6 +877,14 @@ namespace Clarifai.Api {
         "PostAnnotationsSearches",
         __Marshaller_clarifai_api_PostAnnotationsSearchesRequest,
         __Marshaller_clarifai_api_MultiSearchResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListAnnotationWorkersRequest, global::Clarifai.Api.MultiWorkerResponse> __Method_ListAnnotationWorkers = new grpc::Method<global::Clarifai.Api.ListAnnotationWorkersRequest, global::Clarifai.Api.MultiWorkerResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListAnnotationWorkers",
+        __Marshaller_clarifai_api_ListAnnotationWorkersRequest,
+        __Marshaller_clarifai_api_MultiWorkerResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetInputCountRequest, global::Clarifai.Api.SingleInputCountResponse> __Method_GetInputCount = new grpc::Method<global::Clarifai.Api.GetInputCountRequest, global::Clarifai.Api.SingleInputCountResponse>(
@@ -2693,6 +2705,19 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiSearchResponse> PostAnnotationsSearches(global::Clarifai.Api.PostAnnotationsSearchesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// ListAnnotationWorkers lists users, models, and workflows (collectively
+      /// known as "workers") that have added annotations to the application.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkerResponse> ListAnnotationWorkers(global::Clarifai.Api.ListAnnotationWorkersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -6222,6 +6247,58 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiSearchResponse> PostAnnotationsSearchesAsync(global::Clarifai.Api.PostAnnotationsSearchesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostAnnotationsSearches, null, options, request);
+      }
+      /// <summary>
+      /// ListAnnotationWorkers lists users, models, and workflows (collectively
+      /// known as "workers") that have added annotations to the application.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkerResponse ListAnnotationWorkers(global::Clarifai.Api.ListAnnotationWorkersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListAnnotationWorkers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// ListAnnotationWorkers lists users, models, and workflows (collectively
+      /// known as "workers") that have added annotations to the application.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkerResponse ListAnnotationWorkers(global::Clarifai.Api.ListAnnotationWorkersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListAnnotationWorkers, null, options, request);
+      }
+      /// <summary>
+      /// ListAnnotationWorkers lists users, models, and workflows (collectively
+      /// known as "workers") that have added annotations to the application.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkerResponse> ListAnnotationWorkersAsync(global::Clarifai.Api.ListAnnotationWorkersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListAnnotationWorkersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// ListAnnotationWorkers lists users, models, and workflows (collectively
+      /// known as "workers") that have added annotations to the application.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkerResponse> ListAnnotationWorkersAsync(global::Clarifai.Api.ListAnnotationWorkersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListAnnotationWorkers, null, options, request);
       }
       /// <summary>
       /// Get input count per status.
@@ -15127,6 +15204,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteAnnotations, serviceImpl.DeleteAnnotations)
           .AddMethod(__Method_PatchAnnotationsSearches, serviceImpl.PatchAnnotationsSearches)
           .AddMethod(__Method_PostAnnotationsSearches, serviceImpl.PostAnnotationsSearches)
+          .AddMethod(__Method_ListAnnotationWorkers, serviceImpl.ListAnnotationWorkers)
           .AddMethod(__Method_GetInputCount, serviceImpl.GetInputCount)
           .AddMethod(__Method_StreamInputs, serviceImpl.StreamInputs)
           .AddMethod(__Method_GetInputSamples, serviceImpl.GetInputSamples)
@@ -15349,6 +15427,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotations));
       serviceBinder.AddMethod(__Method_PatchAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PatchAnnotationsSearches));
       serviceBinder.AddMethod(__Method_PostAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostAnnotationsSearches));
+      serviceBinder.AddMethod(__Method_ListAnnotationWorkers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationWorkersRequest, global::Clarifai.Api.MultiWorkerResponse>(serviceImpl.ListAnnotationWorkers));
       serviceBinder.AddMethod(__Method_GetInputCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInputCountRequest, global::Clarifai.Api.SingleInputCountResponse>(serviceImpl.GetInputCount));
       serviceBinder.AddMethod(__Method_StreamInputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.StreamInputsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.StreamInputs));
       serviceBinder.AddMethod(__Method_GetInputSamples, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInputSamplesRequest, global::Clarifai.Api.MultiInputAnnotationResponse>(serviceImpl.GetInputSamples));
