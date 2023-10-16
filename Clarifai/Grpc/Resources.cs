@@ -41694,6 +41694,7 @@ namespace Clarifai.Api {
     ///  - model_version_id
     ///  - status.code
     ///  - task_id
+    ///  - trusted
     ///  - user_id
     ///  - workflow_version_id
     /// </summary>
