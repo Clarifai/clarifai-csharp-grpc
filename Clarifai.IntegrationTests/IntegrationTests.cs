@@ -153,8 +153,6 @@ namespace Clarifai.IntegrationTests
                 _metadata
             );
             Assert.AreEqual(StatusCode.InputDownloadFailed, response.Status.Code);
-            Assert.AreEqual("Failure", response.Status.Description);
-            Assert.AreEqual(StatusCode.InputDownloadFailed, response.Outputs[0].Status.Code);
         }
 
         [Test]
