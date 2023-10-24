@@ -669,6 +669,10 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PostRunnerItemOutputsRequest> __Marshaller_clarifai_api_PostRunnerItemOutputsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostRunnerItemOutputsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiRunnerItemOutputResponse> __Marshaller_clarifai_api_MultiRunnerItemOutputResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiRunnerItemOutputResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest> __Marshaller_clarifai_api_PostModelVersionsTrainingTimeEstimateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiTrainingTimeEstimateResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2381,6 +2385,14 @@ namespace Clarifai.Api {
         "PostRunnerItemOutputs",
         __Marshaller_clarifai_api_PostRunnerItemOutputsRequest,
         __Marshaller_clarifai_api_MultiRunnerItemOutputResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse> __Method_PostModelVersionsTrainingTimeEstimate = new grpc::Method<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostModelVersionsTrainingTimeEstimate",
+        __Marshaller_clarifai_api_PostModelVersionsTrainingTimeEstimateRequest,
+        __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -4947,6 +4959,12 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiRunnerItemOutputResponse> PostRunnerItemOutputs(global::Clarifai.Api.PostRunnerItemOutputsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -15164,6 +15182,26 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostRunnerItemOutputs, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiTrainingTimeEstimateResponse PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModelVersionsTrainingTimeEstimate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiTrainingTimeEstimateResponse PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostModelVersionsTrainingTimeEstimate, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimateAsync(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModelVersionsTrainingTimeEstimateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimateAsync(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsTrainingTimeEstimate, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -15391,7 +15429,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostRunners, serviceImpl.PostRunners)
           .AddMethod(__Method_DeleteRunners, serviceImpl.DeleteRunners)
           .AddMethod(__Method_ListRunnerItems, serviceImpl.ListRunnerItems)
-          .AddMethod(__Method_PostRunnerItemOutputs, serviceImpl.PostRunnerItemOutputs).Build();
+          .AddMethod(__Method_PostRunnerItemOutputs, serviceImpl.PostRunnerItemOutputs)
+          .AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl.PostModelVersionsTrainingTimeEstimate).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -15615,6 +15654,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteRunners, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteRunnersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteRunners));
       serviceBinder.AddMethod(__Method_ListRunnerItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListRunnerItemsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(serviceImpl.ListRunnerItems));
       serviceBinder.AddMethod(__Method_PostRunnerItemOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemOutputResponse>(serviceImpl.PostRunnerItemOutputs));
+      serviceBinder.AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse>(serviceImpl.PostModelVersionsTrainingTimeEstimate));
     }
 
   }
