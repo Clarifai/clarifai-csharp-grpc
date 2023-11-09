@@ -7851,7 +7851,10 @@ namespace Clarifai.Api {
     private string action_ = "";
     /// <summary>
     /// The action to perform on the patched App objects except App.Metadata
-    /// For now only action 'overwrite' is supported
+    /// Supported values: 'overwrite' and 'remove'.
+    ///
+    /// Note that 'remove' can only be used to remove the app image by setting
+    /// 'image.url' in the request to the current value returned for that app.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8209,7 +8212,10 @@ namespace Clarifai.Api {
     private string action_ = "";
     /// <summary>
     /// The action to perform on the patched App object except App.Metadata
-    /// For now only action 'overwrite' is supported
+    /// Supported values: 'overwrite' and 'remove'.
+    ///
+    /// Note that 'remove' can only be used to remove the app image by setting
+    /// 'image.url' in the request to the current value returned for the app.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -24356,7 +24362,10 @@ namespace Clarifai.Api {
     private string action_ = "";
     /// <summary>
     /// The action to perform on the patched objects
-    /// Supported values: 'overwrite' and 'merge'
+    /// Supported values: 'overwrite', 'merge', and 'remove'.
+    ///
+    /// Note that 'remove' can only be used to remove the dataset image by setting
+    /// 'image.url' in the request to the current value returned for that dataset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -37992,6 +38001,10 @@ namespace Clarifai.Api {
     /// <summary>
     /// The action to perform on the patched objects
     /// For now actions 'merge', 'overwrite', and 'remove' are supported
+    ///
+    /// Note that 'remove' can be used to remove the model image by setting
+    /// 'image.url' in the request to the current value returned for that model.
+    /// This cannot be used in a request that is patching other fields as well.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -62153,6 +62166,10 @@ namespace Clarifai.Api {
     /// <summary>
     /// The action to perform on the patched objects
     /// For now actions 'merge', 'overwrite', and 'remove' are supported
+    ///
+    /// Note that 'remove' can be used to remove the workflow image by setting
+    /// 'image.url' in the request to the current value returned for that workflow.
+    /// This cannot be used in a request that is patching other fields as well.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -76964,7 +76981,10 @@ namespace Clarifai.Api {
     private string action_ = "";
     /// <summary>
     /// The action to perform on the patched objects
-    /// For now actions 'merge', 'overwrite', and 'remove' are supported
+    /// Supported values: 'overwrite' and 'remove'.
+    ///
+    /// Note that 'remove' can only be used to remove the module image by setting
+    /// 'image.url' in the request to the current value returned for that module.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
