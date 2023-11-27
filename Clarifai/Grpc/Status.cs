@@ -27,23 +27,24 @@ namespace Clarifai.Api.Status {
             "CiZwcm90by9jbGFyaWZhaS9hcGkvc3RhdHVzL3N0YXR1cy5wcm90bxITY2xh",
             "cmlmYWkuYXBpLnN0YXR1cxoocHJvdG8vY2xhcmlmYWkvYXV0aC91dGlsL2V4",
             "dGVuc2lvbi5wcm90bxorcHJvdG8vY2xhcmlmYWkvYXBpL3N0YXR1cy9zdGF0",
-            "dXNfY29kZS5wcm90byKbAgoGU3RhdHVzEi0KBGNvZGUYASABKA4yHy5jbGFy",
+            "dXNfY29kZS5wcm90byK0AgoGU3RhdHVzEi0KBGNvZGUYASABKA4yHy5jbGFy",
             "aWZhaS5hcGkuc3RhdHVzLlN0YXR1c0NvZGUSEwoLZGVzY3JpcHRpb24YAiAB",
             "KAkSDwoHZGV0YWlscxgDIAEoCRIZCgtzdGFja190cmFjZRgEIAMoCUIEgJwn",
             "ARIZChFwZXJjZW50X2NvbXBsZXRlZBgFIAEoDRIWCg50aW1lX3JlbWFpbmlu",
             "ZxgGIAEoDRIOCgZyZXFfaWQYByABKAkSHgoQaW50ZXJuYWxfZGV0YWlscxgI",
             "IAEoCUIEgJwnARI+Cg1yZWRpcmVjdF9pbmZvGAkgASgLMiEuY2xhcmlmYWku",
-            "YXBpLnN0YXR1cy5SZWRpcmVjdEluZm9CBICcJwEiZAoMUmVkaXJlY3RJbmZv",
-            "EgsKA3VybBgBIAEoCRIVCg1yZXNvdXJjZV90eXBlGAIgASgJEhcKD29sZF9y",
-            "ZXNvdXJjZV9pZBgDIAEoCRIXCg9uZXdfcmVzb3VyY2VfaWQYBCABKAkiOwoM",
-            "QmFzZVJlc3BvbnNlEisKBnN0YXR1cxgBIAEoCzIbLmNsYXJpZmFpLmFwaS5z",
-            "dGF0dXMuU3RhdHVzQmcKHGNvbS5jbGFyaWZhaS5ncnBjLmFwaS5zdGF0dXNQ",
-            "AVo+Z2l0aHViLmNvbS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3Rv",
-            "L2NsYXJpZmFpL2FwaS9zdGF0dXOiAgRDQUlQYgZwcm90bzM="));
+            "YXBpLnN0YXR1cy5SZWRpcmVjdEluZm9CBICcJwESFwoPZGV2ZWxvcGVyX25v",
+            "dGVzGAogASgJImQKDFJlZGlyZWN0SW5mbxILCgN1cmwYASABKAkSFQoNcmVz",
+            "b3VyY2VfdHlwZRgCIAEoCRIXCg9vbGRfcmVzb3VyY2VfaWQYAyABKAkSFwoP",
+            "bmV3X3Jlc291cmNlX2lkGAQgASgJIjsKDEJhc2VSZXNwb25zZRIrCgZzdGF0",
+            "dXMYASABKAsyGy5jbGFyaWZhaS5hcGkuc3RhdHVzLlN0YXR1c0JnChxjb20u",
+            "Y2xhcmlmYWkuZ3JwYy5hcGkuc3RhdHVzUAFaPmdpdGh1Yi5jb20vQ2xhcmlm",
+            "YWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hcGkvc3RhdHVz",
+            "ogIEQ0FJUGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Status.Status), global::Clarifai.Api.Status.Status.Parser, new[]{ "Code", "Description", "Details", "StackTrace", "PercentCompleted", "TimeRemaining", "ReqId", "InternalDetails", "RedirectInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Status.Status), global::Clarifai.Api.Status.Status.Parser, new[]{ "Code", "Description", "Details", "StackTrace", "PercentCompleted", "TimeRemaining", "ReqId", "InternalDetails", "RedirectInfo", "DeveloperNotes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Status.RedirectInfo), global::Clarifai.Api.Status.RedirectInfo.Parser, new[]{ "Url", "ResourceType", "OldResourceId", "NewResourceId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Status.BaseResponse), global::Clarifai.Api.Status.BaseResponse.Parser, new[]{ "Status" }, null, null, null, null)
           }));
@@ -95,6 +96,7 @@ namespace Clarifai.Api.Status {
       reqId_ = other.reqId_;
       internalDetails_ = other.internalDetails_;
       redirectInfo_ = other.redirectInfo_ != null ? other.redirectInfo_.Clone() : null;
+      developerNotes_ = other.developerNotes_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -239,6 +241,21 @@ namespace Clarifai.Api.Status {
       }
     }
 
+    /// <summary>Field number for the "developer_notes" field.</summary>
+    public const int DeveloperNotesFieldNumber = 10;
+    private string developerNotes_ = "";
+    /// <summary>
+    /// Notes for developer.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DeveloperNotes {
+      get { return developerNotes_; }
+      set {
+        developerNotes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -263,6 +280,7 @@ namespace Clarifai.Api.Status {
       if (ReqId != other.ReqId) return false;
       if (InternalDetails != other.InternalDetails) return false;
       if (!object.Equals(RedirectInfo, other.RedirectInfo)) return false;
+      if (DeveloperNotes != other.DeveloperNotes) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -279,6 +297,7 @@ namespace Clarifai.Api.Status {
       if (ReqId.Length != 0) hash ^= ReqId.GetHashCode();
       if (InternalDetails.Length != 0) hash ^= InternalDetails.GetHashCode();
       if (redirectInfo_ != null) hash ^= RedirectInfo.GetHashCode();
+      if (DeveloperNotes.Length != 0) hash ^= DeveloperNotes.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -330,6 +349,10 @@ namespace Clarifai.Api.Status {
         output.WriteRawTag(74);
         output.WriteMessage(RedirectInfo);
       }
+      if (DeveloperNotes.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(DeveloperNotes);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -373,6 +396,10 @@ namespace Clarifai.Api.Status {
         output.WriteRawTag(74);
         output.WriteMessage(RedirectInfo);
       }
+      if (DeveloperNotes.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(DeveloperNotes);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -407,6 +434,9 @@ namespace Clarifai.Api.Status {
       }
       if (redirectInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RedirectInfo);
+      }
+      if (DeveloperNotes.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeveloperNotes);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -447,6 +477,9 @@ namespace Clarifai.Api.Status {
           RedirectInfo = new global::Clarifai.Api.Status.RedirectInfo();
         }
         RedirectInfo.MergeFrom(other.RedirectInfo);
+      }
+      if (other.DeveloperNotes.Length != 0) {
+        DeveloperNotes = other.DeveloperNotes;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -502,6 +535,10 @@ namespace Clarifai.Api.Status {
             input.ReadMessage(RedirectInfo);
             break;
           }
+          case 82: {
+            DeveloperNotes = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -554,6 +591,10 @@ namespace Clarifai.Api.Status {
               RedirectInfo = new global::Clarifai.Api.Status.RedirectInfo();
             }
             input.ReadMessage(RedirectInfo);
+            break;
+          }
+          case 82: {
+            DeveloperNotes = input.ReadString();
             break;
           }
         }
