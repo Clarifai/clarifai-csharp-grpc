@@ -604,10 +604,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteBulkOperationRequest> __Marshaller_clarifai_api_DeleteBulkOperationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteBulkOperationRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest> __Marshaller_clarifai_api_GetDatasetInputsSearchAddJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> __Marshaller_clarifai_api_SingleDatasetInputsSearchAddJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListNextTaskAssignmentsRequest> __Marshaller_clarifai_api_ListNextTaskAssignmentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListNextTaskAssignmentsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PutTaskAssignmentsRequest> __Marshaller_clarifai_api_PutTaskAssignmentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PutTaskAssignmentsRequest.Parser));
@@ -2209,14 +2205,6 @@ namespace Clarifai.Api {
         "DeleteBulkOperations",
         __Marshaller_clarifai_api_DeleteBulkOperationRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> __Method_GetDatasetInputsSearchAddJob = new grpc::Method<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetDatasetInputsSearchAddJob",
-        __Marshaller_clarifai_api_GetDatasetInputsSearchAddJobRequest,
-        __Marshaller_clarifai_api_SingleDatasetInputsSearchAddJobResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListNextTaskAssignmentsRequest, global::Clarifai.Api.MultiInputResponse> __Method_ListNextTaskAssignments = new grpc::Method<global::Clarifai.Api.ListNextTaskAssignmentsRequest, global::Clarifai.Api.MultiInputResponse>(
@@ -4708,18 +4696,6 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteBulkOperations(global::Clarifai.Api.DeleteBulkOperationRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Get a specific job.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> GetDatasetInputsSearchAddJob(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -14199,54 +14175,6 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteBulkOperations, null, options, request);
       }
       /// <summary>
-      /// Get a specific job.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse GetDatasetInputsSearchAddJob(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetDatasetInputsSearchAddJob(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific job.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse GetDatasetInputsSearchAddJob(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetDatasetInputsSearchAddJob, null, options, request);
-      }
-      /// <summary>
-      /// Get a specific job.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> GetDatasetInputsSearchAddJobAsync(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetDatasetInputsSearchAddJobAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific job.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse> GetDatasetInputsSearchAddJobAsync(global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetDatasetInputsSearchAddJob, null, options, request);
-      }
-      /// <summary>
       /// List next non-labeled and unassigned inputs from task's dataset
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -15408,7 +15336,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_GetBulkOperation, serviceImpl.GetBulkOperation)
           .AddMethod(__Method_CancelBulkOperations, serviceImpl.CancelBulkOperations)
           .AddMethod(__Method_DeleteBulkOperations, serviceImpl.DeleteBulkOperations)
-          .AddMethod(__Method_GetDatasetInputsSearchAddJob, serviceImpl.GetDatasetInputsSearchAddJob)
           .AddMethod(__Method_ListNextTaskAssignments, serviceImpl.ListNextTaskAssignments)
           .AddMethod(__Method_PutTaskAssignments, serviceImpl.PutTaskAssignments)
           .AddMethod(__Method_ListInputsAddJobs, serviceImpl.ListInputsAddJobs)
@@ -15632,7 +15559,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetBulkOperation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetBulkOperationRequest, global::Clarifai.Api.SingleBulkOperationsResponse>(serviceImpl.GetBulkOperation));
       serviceBinder.AddMethod(__Method_CancelBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.CancelBulkOperationRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.CancelBulkOperations));
       serviceBinder.AddMethod(__Method_DeleteBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteBulkOperationRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteBulkOperations));
-      serviceBinder.AddMethod(__Method_GetDatasetInputsSearchAddJob, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDatasetInputsSearchAddJobRequest, global::Clarifai.Api.SingleDatasetInputsSearchAddJobResponse>(serviceImpl.GetDatasetInputsSearchAddJob));
       serviceBinder.AddMethod(__Method_ListNextTaskAssignments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListNextTaskAssignmentsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.ListNextTaskAssignments));
       serviceBinder.AddMethod(__Method_PutTaskAssignments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutTaskAssignmentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PutTaskAssignments));
       serviceBinder.AddMethod(__Method_ListInputsAddJobs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInputsAddJobsRequest, global::Clarifai.Api.MultiInputsAddJobResponse>(serviceImpl.ListInputsAddJobs));
