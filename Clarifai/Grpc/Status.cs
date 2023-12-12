@@ -125,7 +125,7 @@ namespace Clarifai.Api.Status {
     public const int DescriptionFieldNumber = 2;
     private string description_ = "";
     /// <summary>
-    /// A longer description of the error.
+    /// A short description of the error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -141,6 +141,8 @@ namespace Clarifai.Api.Status {
     private string details_ = "";
     /// <summary>
     /// More details of the given error.
+    /// These details may be exposed to non-technical users.
+    /// For technical details, try to use developer_notes field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -200,7 +202,7 @@ namespace Clarifai.Api.Status {
     public const int ReqIdFieldNumber = 7;
     private string reqId_ = "";
     /// <summary>
-    /// If we want to return a request id in the base status field
+    /// A request ID may be present, to help monitoring and tracking requests
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -246,6 +248,8 @@ namespace Clarifai.Api.Status {
     private string developerNotes_ = "";
     /// <summary>
     /// Notes for developer.
+    /// These notes are rather technical details for developers how to interpret the status,
+    /// e.g. why an error occurred and how to avoid getting the error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
