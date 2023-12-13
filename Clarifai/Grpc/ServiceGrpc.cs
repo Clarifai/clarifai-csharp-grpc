@@ -4172,8 +4172,17 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// start to duplicate an app which copies all the inputs, annotations, models, concepts etc. to a new app.
-      /// this is an async process, you should use ListAppDuplications or GetAppDuplication to check the status.
+      /// PostAppDuplications starts async app duplication jobs which copy resources
+      /// (inputs, annotations, models etc) from one application to another. It can
+      /// also create the destination application if it does not exist, with fields
+      /// (description, metadata etc) copied from the source application.
+      ///
+      /// A duplication job can be started by any user that can read from the source
+      /// application (the target of this call) and can create and write to the
+      /// destination application. The duplication is associated with the user that
+      /// created it, so in order to read the status and progress of the job, that
+      /// user's ID has to be used in the call to GetAppDuplication, which might be
+      /// different to the source application owner ID in this call.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4185,7 +4194,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// list all the app duplications user triggers
+      /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4197,7 +4206,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// get the app duplication status
+      /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -12059,8 +12068,17 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListCollaborations, null, options, request);
       }
       /// <summary>
-      /// start to duplicate an app which copies all the inputs, annotations, models, concepts etc. to a new app.
-      /// this is an async process, you should use ListAppDuplications or GetAppDuplication to check the status.
+      /// PostAppDuplications starts async app duplication jobs which copy resources
+      /// (inputs, annotations, models etc) from one application to another. It can
+      /// also create the destination application if it does not exist, with fields
+      /// (description, metadata etc) copied from the source application.
+      ///
+      /// A duplication job can be started by any user that can read from the source
+      /// application (the target of this call) and can create and write to the
+      /// destination application. The duplication is associated with the user that
+      /// created it, so in order to read the status and progress of the job, that
+      /// user's ID has to be used in the call to GetAppDuplication, which might be
+      /// different to the source application owner ID in this call.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12073,8 +12091,17 @@ namespace Clarifai.Api {
         return PostAppDuplications(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// start to duplicate an app which copies all the inputs, annotations, models, concepts etc. to a new app.
-      /// this is an async process, you should use ListAppDuplications or GetAppDuplication to check the status.
+      /// PostAppDuplications starts async app duplication jobs which copy resources
+      /// (inputs, annotations, models etc) from one application to another. It can
+      /// also create the destination application if it does not exist, with fields
+      /// (description, metadata etc) copied from the source application.
+      ///
+      /// A duplication job can be started by any user that can read from the source
+      /// application (the target of this call) and can create and write to the
+      /// destination application. The duplication is associated with the user that
+      /// created it, so in order to read the status and progress of the job, that
+      /// user's ID has to be used in the call to GetAppDuplication, which might be
+      /// different to the source application owner ID in this call.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12085,8 +12112,17 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostAppDuplications, null, options, request);
       }
       /// <summary>
-      /// start to duplicate an app which copies all the inputs, annotations, models, concepts etc. to a new app.
-      /// this is an async process, you should use ListAppDuplications or GetAppDuplication to check the status.
+      /// PostAppDuplications starts async app duplication jobs which copy resources
+      /// (inputs, annotations, models etc) from one application to another. It can
+      /// also create the destination application if it does not exist, with fields
+      /// (description, metadata etc) copied from the source application.
+      ///
+      /// A duplication job can be started by any user that can read from the source
+      /// application (the target of this call) and can create and write to the
+      /// destination application. The duplication is associated with the user that
+      /// created it, so in order to read the status and progress of the job, that
+      /// user's ID has to be used in the call to GetAppDuplication, which might be
+      /// different to the source application owner ID in this call.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12099,8 +12135,17 @@ namespace Clarifai.Api {
         return PostAppDuplicationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// start to duplicate an app which copies all the inputs, annotations, models, concepts etc. to a new app.
-      /// this is an async process, you should use ListAppDuplications or GetAppDuplication to check the status.
+      /// PostAppDuplications starts async app duplication jobs which copy resources
+      /// (inputs, annotations, models etc) from one application to another. It can
+      /// also create the destination application if it does not exist, with fields
+      /// (description, metadata etc) copied from the source application.
+      ///
+      /// A duplication job can be started by any user that can read from the source
+      /// application (the target of this call) and can create and write to the
+      /// destination application. The duplication is associated with the user that
+      /// created it, so in order to read the status and progress of the job, that
+      /// user's ID has to be used in the call to GetAppDuplication, which might be
+      /// different to the source application owner ID in this call.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12111,7 +12156,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostAppDuplications, null, options, request);
       }
       /// <summary>
-      /// list all the app duplications user triggers
+      /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12124,7 +12169,7 @@ namespace Clarifai.Api {
         return ListAppDuplications(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// list all the app duplications user triggers
+      /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12135,7 +12180,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_ListAppDuplications, null, options, request);
       }
       /// <summary>
-      /// list all the app duplications user triggers
+      /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12148,7 +12193,7 @@ namespace Clarifai.Api {
         return ListAppDuplicationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// list all the app duplications user triggers
+      /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12159,7 +12204,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListAppDuplications, null, options, request);
       }
       /// <summary>
-      /// get the app duplication status
+      /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12172,7 +12217,7 @@ namespace Clarifai.Api {
         return GetAppDuplication(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// get the app duplication status
+      /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12183,7 +12228,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_GetAppDuplication, null, options, request);
       }
       /// <summary>
-      /// get the app duplication status
+      /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12196,7 +12241,7 @@ namespace Clarifai.Api {
         return GetAppDuplicationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// get the app duplication status
+      /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

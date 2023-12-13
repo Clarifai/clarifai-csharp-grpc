@@ -66471,7 +66471,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  ///Request to start a app duplication process
+  /// Request to start app duplication jobs.
   /// </summary>
   public sealed partial class PostAppDuplicationsRequest : pb::IMessage<PostAppDuplicationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -66521,6 +66521,9 @@ namespace Clarifai.Api {
     /// <summary>Field number for the "user_app_id" field.</summary>
     public const int UserAppIdFieldNumber = 1;
     private global::Clarifai.Api.UserAppIDSet userAppId_;
+    /// <summary>
+    /// The user and application ID of the source application to duplicate.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Clarifai.Api.UserAppIDSet UserAppId {
@@ -66698,7 +66701,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  ///Request to check app duplication status
+  /// Request to get an app duplication job.
   /// </summary>
   public sealed partial class GetAppDuplicationRequest : pb::IMessage<GetAppDuplicationRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -66748,6 +66751,9 @@ namespace Clarifai.Api {
     /// <summary>Field number for the "user_app_id" field.</summary>
     public const int UserAppIdFieldNumber = 1;
     private global::Clarifai.Api.UserAppIDSet userAppId_;
+    /// <summary>
+    /// The ID of the user that created the app duplication job.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Clarifai.Api.UserAppIDSet UserAppId {
@@ -66760,9 +66766,6 @@ namespace Clarifai.Api {
     /// <summary>Field number for the "app_duplication_id" field.</summary>
     public const int AppDuplicationIdFieldNumber = 2;
     private string appDuplicationId_ = "";
-    /// <summary>
-    ///The app duplication id
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AppDuplicationId {
@@ -66939,7 +66942,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  ///Request to list all the app duplication that user triggered.
+  /// Request to list all the app duplication jobs that a user created.
   /// </summary>
   public sealed partial class ListAppDuplicationsRequest : pb::IMessage<ListAppDuplicationsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -66990,6 +66993,9 @@ namespace Clarifai.Api {
     /// <summary>Field number for the "user_app_id" field.</summary>
     public const int UserAppIdFieldNumber = 1;
     private global::Clarifai.Api.UserAppIDSet userAppId_;
+    /// <summary>
+    /// The ID of the user whose app duplication jobs to list.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Clarifai.Api.UserAppIDSet UserAppId {
