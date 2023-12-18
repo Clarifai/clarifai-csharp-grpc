@@ -576,6 +576,10 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModuleVersionsRequest> __Marshaller_clarifai_api_DeleteModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModuleVersionsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModuleVersionUsageCountRequest> __Marshaller_clarifai_api_GetModuleVersionUsageCountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModuleVersionUsageCountRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> __Marshaller_clarifai_api_SingleModuleVersionUsageCountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModuleVersionUsageCountResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetInstalledModuleVersionRequest> __Marshaller_clarifai_api_GetInstalledModuleVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetInstalledModuleVersionRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleInstalledModuleVersionResponse> __Marshaller_clarifai_api_SingleInstalledModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleInstalledModuleVersionResponse.Parser));
@@ -2125,6 +2129,14 @@ namespace Clarifai.Api {
         "DeleteModuleVersions",
         __Marshaller_clarifai_api_DeleteModuleVersionsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetModuleVersionUsageCountRequest, global::Clarifai.Api.SingleModuleVersionUsageCountResponse> __Method_GetModuleVersionUsageCount = new grpc::Method<global::Clarifai.Api.GetModuleVersionUsageCountRequest, global::Clarifai.Api.SingleModuleVersionUsageCountResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetModuleVersionUsageCount",
+        __Marshaller_clarifai_api_GetModuleVersionUsageCountRequest,
+        __Marshaller_clarifai_api_SingleModuleVersionUsageCountResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse> __Method_GetInstalledModuleVersion = new grpc::Method<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse>(
@@ -4580,6 +4592,18 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModuleVersions(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get usage count for specific module version.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> GetModuleVersionUsageCount(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -13720,6 +13744,54 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteModuleVersions, null, options, request);
       }
       /// <summary>
+      /// Get usage count for specific module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModuleVersionUsageCountResponse GetModuleVersionUsageCount(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModuleVersionUsageCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get usage count for specific module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModuleVersionUsageCountResponse GetModuleVersionUsageCount(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetModuleVersionUsageCount, null, options, request);
+      }
+      /// <summary>
+      /// Get usage count for specific module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> GetModuleVersionUsageCountAsync(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModuleVersionUsageCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get usage count for specific module version.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> GetModuleVersionUsageCountAsync(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetModuleVersionUsageCount, null, options, request);
+      }
+      /// <summary>
       /// Get installed modules vesrions for an app.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -15371,6 +15443,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListModuleVersions, serviceImpl.ListModuleVersions)
           .AddMethod(__Method_PostModuleVersions, serviceImpl.PostModuleVersions)
           .AddMethod(__Method_DeleteModuleVersions, serviceImpl.DeleteModuleVersions)
+          .AddMethod(__Method_GetModuleVersionUsageCount, serviceImpl.GetModuleVersionUsageCount)
           .AddMethod(__Method_GetInstalledModuleVersion, serviceImpl.GetInstalledModuleVersion)
           .AddMethod(__Method_ListInstalledModuleVersions, serviceImpl.ListInstalledModuleVersions)
           .AddMethod(__Method_PostInstalledModuleVersions, serviceImpl.PostInstalledModuleVersions)
@@ -15594,6 +15667,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(serviceImpl.ListModuleVersions));
       serviceBinder.AddMethod(__Method_PostModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(serviceImpl.PostModuleVersions));
       serviceBinder.AddMethod(__Method_DeleteModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModuleVersions));
+      serviceBinder.AddMethod(__Method_GetModuleVersionUsageCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModuleVersionUsageCountRequest, global::Clarifai.Api.SingleModuleVersionUsageCountResponse>(serviceImpl.GetModuleVersionUsageCount));
       serviceBinder.AddMethod(__Method_GetInstalledModuleVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse>(serviceImpl.GetInstalledModuleVersion));
       serviceBinder.AddMethod(__Method_ListInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(serviceImpl.ListInstalledModuleVersions));
       serviceBinder.AddMethod(__Method_PostInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(serviceImpl.PostInstalledModuleVersions));
