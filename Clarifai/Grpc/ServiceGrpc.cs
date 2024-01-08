@@ -3300,7 +3300,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// List all the inputs.
+      /// Deprecated: Unmaintained and ideally replaced with usage of datasets
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -8584,7 +8584,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchModelLanguages, null, options, request);
       }
       /// <summary>
-      /// List all the inputs.
+      /// Deprecated: Unmaintained and ideally replaced with usage of datasets
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -8597,7 +8597,7 @@ namespace Clarifai.Api {
         return ListModelInputs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all the inputs.
+      /// Deprecated: Unmaintained and ideally replaced with usage of datasets
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -8608,7 +8608,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_ListModelInputs, null, options, request);
       }
       /// <summary>
-      /// List all the inputs.
+      /// Deprecated: Unmaintained and ideally replaced with usage of datasets
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -8621,7 +8621,7 @@ namespace Clarifai.Api {
         return ListModelInputsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all the inputs.
+      /// Deprecated: Unmaintained and ideally replaced with usage of datasets
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
