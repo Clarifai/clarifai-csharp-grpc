@@ -28193,9 +28193,8 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /// ModelSpec is a definition of a Model type. This is used in model mode of portal
-  /// to list out the possible models that can be created and can be used to understand more about
-  /// the possible models in our platform.
+  /// ModelType is a definition of a set of models that generally have the same input and output fields. 
+  /// This is used to understand more about the possible models in our platform.
   /// </summary>
   public sealed partial class ModelType : pb::IMessage<ModelType>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -28257,9 +28256,7 @@ namespace Clarifai.Api {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// A unique identifies for this model type. This is differnt than the 'type' field below because
-    /// the 'type' can be re-used for differnet input and output combinations whereas 'id' is always
-    /// unique.
+    /// A unique identifier for this model type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -28274,7 +28271,7 @@ namespace Clarifai.Api {
     public const int TitleFieldNumber = 2;
     private string title_ = "";
     /// <summary>
-    /// title for this model in model gallery
+    /// A display title for this model.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -28306,8 +28303,8 @@ namespace Clarifai.Api {
         = pb::FieldCodec.ForString(42);
     private readonly pbc::RepeatedField<string> inputFields_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The list of input fields that this model accepts. These are the keys of the Model's
-    /// InputInfo.fields_map
+    /// The list of input fields that this model expects as inputs.
+    /// Used to validate that request input data has the expected fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -28321,8 +28318,7 @@ namespace Clarifai.Api {
         = pb::FieldCodec.ForString(50);
     private readonly pbc::RepeatedField<string> outputFields_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The list of output fields that this model accepts. These are the keys of the Model's
-    /// OutputInfo.fields_map
+    /// The list of output fields that this model accepts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -28383,10 +28379,6 @@ namespace Clarifai.Api {
     private readonly pbc::RepeatedField<global::Clarifai.Api.ModelTypeField> modelTypeFields_ = new pbc::RepeatedField<global::Clarifai.Api.ModelTypeField>();
     /// <summary>
     /// The remaining fields are definitions of the configurable fields that exist.
-    /// Each field has path into the Model object such as "name" as a top level or "output_info.data"
-    /// if it's the Data object within the OutputInfo object. We decided to not break these up
-    /// into input_info, train_info and output_info related parameters and instead use the path
-    /// so that they are most flexible.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -28416,7 +28408,7 @@ namespace Clarifai.Api {
         = pb::FieldCodec.ForMessage(130, global::Clarifai.Api.ModelLayerInfo.Parser);
     private readonly pbc::RepeatedField<global::Clarifai.Api.ModelLayerInfo> expectedInputLayers_ = new pbc::RepeatedField<global::Clarifai.Api.ModelLayerInfo>();
     /// <summary>
-    /// Expected input layers of an uploaded model
+    /// Expected input layers of an uploaded model.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -28441,6 +28433,9 @@ namespace Clarifai.Api {
     /// <summary>Field number for the "evaluation_type" field.</summary>
     public const int EvaluationTypeFieldNumber = 18;
     private global::Clarifai.Api.EvaluationType evaluationType_ = global::Clarifai.Api.EvaluationType.Undefined;
+    /// <summary>
+    /// What type of evaluation is supported for this model type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Clarifai.Api.EvaluationType EvaluationType {
@@ -29702,7 +29697,7 @@ namespace Clarifai.Api {
     public const int PathFieldNumber = 1;
     private string path_ = "";
     /// <summary>
-    /// The path where the value of the field will be stored.
+    /// The path where the value of the field will be stored in the model version object.
     /// Example:
     /// "output_info.data" would be the Data message in the OutputInfo message.
     /// "output_info.output_config.language" is in the OutputConfig message within OutputInfo
@@ -31673,7 +31668,9 @@ namespace Clarifai.Api {
     public const int OutputInfoFieldNumber = 19;
     private global::Clarifai.Api.OutputInfo outputInfo_;
     /// <summary>
-    /// Info about the model's output and configuration.
+    /// Info about the model's output. Besides `output_info.data`, these fields should
+    /// be reserved for parameters that affect the models outputs when inferencing.
+    /// `output_info.data` is used to specify the training concepts for this model version.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -31688,7 +31685,8 @@ namespace Clarifai.Api {
     public const int InputInfoFieldNumber = 20;
     private global::Clarifai.Api.InputInfo inputInfo_;
     /// <summary>
-    /// Info about the models' input and configuration of them.
+    /// Info about preprocessing the models inputs, before they are sent to this model for training or inferencing.
+    /// E.g.: `input_info.base_embed_model` lets us know inputs should be ran through a base model before being sent to an embedding-classifier.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -31703,7 +31701,7 @@ namespace Clarifai.Api {
     public const int TrainInfoFieldNumber = 21;
     private global::Clarifai.Api.TrainInfo trainInfo_;
     /// <summary>
-    /// Configuration for the training process of this model.
+    /// Configuration for the training process of this model version.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
