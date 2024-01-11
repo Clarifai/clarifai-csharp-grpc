@@ -78789,7 +78789,7 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
-  /// Request to get the number of installations (by all users) for the module version 
+  /// Request to get the number of installations (by all users) for the module version
   /// </summary>
   public sealed partial class GetModuleVersionUsageCountRequest : pb::IMessage<GetModuleVersionUsageCountRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
