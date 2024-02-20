@@ -68031,7 +68031,7 @@ namespace Clarifai.Api {
     private readonly pbc::RepeatedField<string> additionalFields_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// (optional URL parameter) List of additional fields to be included in the response.
-    /// Currently supported: all, worker.users, review.users.
+    /// Currently supported: all, worker.users, review.users, metrics.estimated_labeled_inputs_count.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -68383,7 +68383,7 @@ namespace Clarifai.Api {
     private readonly pbc::RepeatedField<string> additionalFields_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// (optional URL parameter) List of additional fields to be included in the response.
-    /// Currently supported: all, worker.users, review.users.
+    /// Currently supported: all, worker.users, review.users, metrics.estimated_labeled_inputs_count.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
