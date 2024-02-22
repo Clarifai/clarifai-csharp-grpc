@@ -50791,6 +50791,9 @@ namespace Clarifai.Api {
     private static readonly pb::FieldCodec<global::Clarifai.Api.Output> _repeated_outputs_codec
         = pb::FieldCodec.ForMessage(18, global::Clarifai.Api.Output.Parser);
     private readonly pbc::RepeatedField<global::Clarifai.Api.Output> outputs_ = new pbc::RepeatedField<global::Clarifai.Api.Output>();
+    /// <summary>
+    /// For each input processed during model prediction we create one output.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Clarifai.Api.Output> Outputs {

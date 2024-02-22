@@ -3561,6 +3561,11 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Add a workflow to an app.
+      /// Note(zeiler): the order of the workflows that are returned from this endpoint
+      /// may be different than the order in which the user provides them. This is because
+      /// we reorder by a sort that optimizes for performance of the graph and its dependencies.
+      /// When using the workflow in any future call the order returned by this endpoint
+      /// will be used.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -9587,6 +9592,11 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a workflow to an app.
+      /// Note(zeiler): the order of the workflows that are returned from this endpoint
+      /// may be different than the order in which the user provides them. This is because
+      /// we reorder by a sort that optimizes for performance of the graph and its dependencies.
+      /// When using the workflow in any future call the order returned by this endpoint
+      /// will be used.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9600,6 +9610,11 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a workflow to an app.
+      /// Note(zeiler): the order of the workflows that are returned from this endpoint
+      /// may be different than the order in which the user provides them. This is because
+      /// we reorder by a sort that optimizes for performance of the graph and its dependencies.
+      /// When using the workflow in any future call the order returned by this endpoint
+      /// will be used.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9611,6 +9626,11 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a workflow to an app.
+      /// Note(zeiler): the order of the workflows that are returned from this endpoint
+      /// may be different than the order in which the user provides them. This is because
+      /// we reorder by a sort that optimizes for performance of the graph and its dependencies.
+      /// When using the workflow in any future call the order returned by this endpoint
+      /// will be used.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9624,6 +9644,11 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Add a workflow to an app.
+      /// Note(zeiler): the order of the workflows that are returned from this endpoint
+      /// may be different than the order in which the user provides them. This is because
+      /// we reorder by a sort that optimizes for performance of the graph and its dependencies.
+      /// When using the workflow in any future call the order returned by this endpoint
+      /// will be used.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
