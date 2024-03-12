@@ -290,6 +290,16 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelVersionRequest> __Marshaller_clarifai_api_DeleteModelVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModelVersionRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsUploadRequest> __Marshaller_clarifai_api_PostModelVersionsUploadRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsUploadRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsUploadResponse> __Marshaller_clarifai_api_PostModelVersionsUploadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsUploadResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PutModelVersionExportsRequest> __Marshaller_clarifai_api_PutModelVersionExportsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PutModelVersionExportsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionExportResponse> __Marshaller_clarifai_api_SingleModelVersionExportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModelVersionExportResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionExportRequest> __Marshaller_clarifai_api_GetModelVersionExportRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModelVersionExportRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetModelVersionMetricsRequest> __Marshaller_clarifai_api_GetModelVersionMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModelVersionMetricsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionMetricsRequest> __Marshaller_clarifai_api_PostModelVersionMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionMetricsRequest.Parser));
@@ -466,6 +476,10 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleStatusCodeResponse> __Marshaller_clarifai_api_SingleStatusCodeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleStatusCodeResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetResourcePriceRequest> __Marshaller_clarifai_api_GetResourcePriceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetResourcePriceRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetResourcePriceResponse> __Marshaller_clarifai_api_GetResourcePriceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetResourcePriceResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListCollaboratorsRequest> __Marshaller_clarifai_api_ListCollaboratorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCollaboratorsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollaboratorsResponse> __Marshaller_clarifai_api_MultiCollaboratorsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCollaboratorsResponse.Parser));
@@ -613,6 +627,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.ListNextTaskAssignmentsRequest> __Marshaller_clarifai_api_ListNextTaskAssignmentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListNextTaskAssignmentsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PutTaskAssignmentsRequest> __Marshaller_clarifai_api_PutTaskAssignmentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PutTaskAssignmentsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiTaskAssignmentResponse> __Marshaller_clarifai_api_MultiTaskAssignmentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiTaskAssignmentResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListInputsAddJobsRequest> __Marshaller_clarifai_api_ListInputsAddJobsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListInputsAddJobsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -1341,6 +1357,30 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse> __Method_PostModelVersionsUpload = new grpc::Method<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "PostModelVersionsUpload",
+        __Marshaller_clarifai_api_PostModelVersionsUploadRequest,
+        __Marshaller_clarifai_api_PostModelVersionsUploadResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PutModelVersionExportsRequest, global::Clarifai.Api.SingleModelVersionExportResponse> __Method_PutModelVersionExports = new grpc::Method<global::Clarifai.Api.PutModelVersionExportsRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PutModelVersionExports",
+        __Marshaller_clarifai_api_PutModelVersionExportsRequest,
+        __Marshaller_clarifai_api_SingleModelVersionExportResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetModelVersionExportRequest, global::Clarifai.Api.SingleModelVersionExportResponse> __Method_GetModelVersionExport = new grpc::Method<global::Clarifai.Api.GetModelVersionExportRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetModelVersionExport",
+        __Marshaller_clarifai_api_GetModelVersionExportRequest,
+        __Marshaller_clarifai_api_SingleModelVersionExportResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse> __Method_GetModelVersionMetrics = new grpc::Method<global::Clarifai.Api.GetModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -1829,6 +1869,14 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_SingleStatusCodeResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetResourcePriceRequest, global::Clarifai.Api.GetResourcePriceResponse> __Method_GetResourcePrice = new grpc::Method<global::Clarifai.Api.GetResourcePriceRequest, global::Clarifai.Api.GetResourcePriceResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetResourcePrice",
+        __Marshaller_clarifai_api_GetResourcePriceRequest,
+        __Marshaller_clarifai_api_GetResourcePriceResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse> __Method_ListCollaborators = new grpc::Method<global::Clarifai.Api.ListCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -2237,12 +2285,12 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiInputResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PutTaskAssignmentsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PutTaskAssignments = new grpc::Method<global::Clarifai.Api.PutTaskAssignmentsRequest, global::Clarifai.Api.Status.BaseResponse>(
+    static readonly grpc::Method<global::Clarifai.Api.PutTaskAssignmentsRequest, global::Clarifai.Api.MultiTaskAssignmentResponse> __Method_PutTaskAssignments = new grpc::Method<global::Clarifai.Api.PutTaskAssignmentsRequest, global::Clarifai.Api.MultiTaskAssignmentResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PutTaskAssignments",
         __Marshaller_clarifai_api_PutTaskAssignmentsRequest,
-        __Marshaller_clarifai_api_status_BaseResponse);
+        __Marshaller_clarifai_api_MultiTaskAssignmentResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListInputsAddJobsRequest, global::Clarifai.Api.MultiInputsAddJobResponse> __Method_ListInputsAddJobs = new grpc::Method<global::Clarifai.Api.ListInputsAddJobsRequest, global::Clarifai.Api.MultiInputsAddJobResponse>(
@@ -3418,6 +3466,47 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the model_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the model_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the model_version_id specified for your model_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the model_bytes.
+      /// </summary>
+      /// <param name="requestStream">Used for reading requests from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task PostModelVersionsUpload(grpc::IAsyncStreamReader<global::Clarifai.Api.PostModelVersionsUploadRequest> requestStream, grpc::IServerStreamWriter<global::Clarifai.Api.PostModelVersionsUploadResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Export a model
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelVersionExportResponse> PutModelVersionExports(global::Clarifai.Api.PutModelVersionExportsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// GetModelVersionExport
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelVersionExportResponse> GetModelVersionExport(global::Clarifai.Api.GetModelVersionExportRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Deprecated: Use GetEvaluation instead
       /// Get the evaluation metrics for a model version.
       /// </summary>
@@ -4138,6 +4227,12 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.GetResourcePriceResponse> GetResourcePrice(global::Clarifai.Api.GetResourcePriceRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       /// owner list users who the app is shared with
       /// </summary>
@@ -4779,7 +4874,7 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PutTaskAssignments(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTaskAssignmentResponse> PutTaskAssignments(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -9035,6 +9130,132 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteModelVersion, null, options, request);
       }
       /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the model_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the model_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the model_version_id specified for your model_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the model_bytes.
+      /// </summary>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse> PostModelVersionsUpload(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModelVersionsUpload(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the model_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the model_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the model_version_id specified for your model_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the model_bytes.
+      /// </summary>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse> PostModelVersionsUpload(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_PostModelVersionsUpload, null, options);
+      }
+      /// <summary>
+      /// Export a model
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelVersionExportResponse PutModelVersionExports(global::Clarifai.Api.PutModelVersionExportsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PutModelVersionExports(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Export a model
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelVersionExportResponse PutModelVersionExports(global::Clarifai.Api.PutModelVersionExportsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PutModelVersionExports, null, options, request);
+      }
+      /// <summary>
+      /// Export a model
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionExportResponse> PutModelVersionExportsAsync(global::Clarifai.Api.PutModelVersionExportsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PutModelVersionExportsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Export a model
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionExportResponse> PutModelVersionExportsAsync(global::Clarifai.Api.PutModelVersionExportsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PutModelVersionExports, null, options, request);
+      }
+      /// <summary>
+      /// GetModelVersionExport
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelVersionExportResponse GetModelVersionExport(global::Clarifai.Api.GetModelVersionExportRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModelVersionExport(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// GetModelVersionExport
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelVersionExportResponse GetModelVersionExport(global::Clarifai.Api.GetModelVersionExportRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetModelVersionExport, null, options, request);
+      }
+      /// <summary>
+      /// GetModelVersionExport
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionExportResponse> GetModelVersionExportAsync(global::Clarifai.Api.GetModelVersionExportRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetModelVersionExportAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// GetModelVersionExport
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelVersionExportResponse> GetModelVersionExportAsync(global::Clarifai.Api.GetModelVersionExportRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetModelVersionExport, null, options, request);
+      }
+      /// <summary>
       /// Deprecated: Use GetEvaluation instead
       /// Get the evaluation metrics for a model version.
       /// </summary>
@@ -11898,6 +12119,26 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetStatusCode, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.GetResourcePriceResponse GetResourcePrice(global::Clarifai.Api.GetResourcePriceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetResourcePrice(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.GetResourcePriceResponse GetResourcePrice(global::Clarifai.Api.GetResourcePriceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetResourcePrice, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.GetResourcePriceResponse> GetResourcePriceAsync(global::Clarifai.Api.GetResourcePriceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetResourcePriceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.GetResourcePriceResponse> GetResourcePriceAsync(global::Clarifai.Api.GetResourcePriceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetResourcePrice, null, options, request);
+      }
       /// <summary>
       /// owner list users who the app is shared with
       /// </summary>
@@ -14443,7 +14684,7 @@ namespace Clarifai.Api {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse PutTaskAssignments(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Clarifai.Api.MultiTaskAssignmentResponse PutTaskAssignments(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PutTaskAssignments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -14454,7 +14695,7 @@ namespace Clarifai.Api {
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse PutTaskAssignments(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::CallOptions options)
+      public virtual global::Clarifai.Api.MultiTaskAssignmentResponse PutTaskAssignments(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PutTaskAssignments, null, options, request);
       }
@@ -14467,7 +14708,7 @@ namespace Clarifai.Api {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PutTaskAssignmentsAsync(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTaskAssignmentResponse> PutTaskAssignmentsAsync(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PutTaskAssignmentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -14478,7 +14719,7 @@ namespace Clarifai.Api {
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PutTaskAssignmentsAsync(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTaskAssignmentResponse> PutTaskAssignmentsAsync(global::Clarifai.Api.PutTaskAssignmentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PutTaskAssignments, null, options, request);
       }
@@ -15439,6 +15680,9 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostModelVersions, serviceImpl.PostModelVersions)
           .AddMethod(__Method_PatchModelVersions, serviceImpl.PatchModelVersions)
           .AddMethod(__Method_DeleteModelVersion, serviceImpl.DeleteModelVersion)
+          .AddMethod(__Method_PostModelVersionsUpload, serviceImpl.PostModelVersionsUpload)
+          .AddMethod(__Method_PutModelVersionExports, serviceImpl.PutModelVersionExports)
+          .AddMethod(__Method_GetModelVersionExport, serviceImpl.GetModelVersionExport)
           .AddMethod(__Method_GetModelVersionMetrics, serviceImpl.GetModelVersionMetrics)
           .AddMethod(__Method_PostModelVersionMetrics, serviceImpl.PostModelVersionMetrics)
           .AddMethod(__Method_PostModelVersionEvaluations, serviceImpl.PostModelVersionEvaluations)
@@ -15500,6 +15744,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteAnnotationFilters, serviceImpl.DeleteAnnotationFilters)
           .AddMethod(__Method_ListStatusCodes, serviceImpl.ListStatusCodes)
           .AddMethod(__Method_GetStatusCode, serviceImpl.GetStatusCode)
+          .AddMethod(__Method_GetResourcePrice, serviceImpl.GetResourcePrice)
           .AddMethod(__Method_ListCollaborators, serviceImpl.ListCollaborators)
           .AddMethod(__Method_PostCollaborators, serviceImpl.PostCollaborators)
           .AddMethod(__Method_PatchCollaborators, serviceImpl.PatchCollaborators)
@@ -15664,6 +15909,9 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModelVersions));
       serviceBinder.AddMethod(__Method_PatchModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.PatchModelVersions));
       serviceBinder.AddMethod(__Method_DeleteModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersion));
+      serviceBinder.AddMethod(__Method_PostModelVersionsUpload, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse>(serviceImpl.PostModelVersionsUpload));
+      serviceBinder.AddMethod(__Method_PutModelVersionExports, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutModelVersionExportsRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(serviceImpl.PutModelVersionExports));
+      serviceBinder.AddMethod(__Method_GetModelVersionExport, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionExportRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(serviceImpl.GetModelVersionExport));
       serviceBinder.AddMethod(__Method_GetModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersionMetrics));
       serviceBinder.AddMethod(__Method_PostModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.PostModelVersionMetrics));
       serviceBinder.AddMethod(__Method_PostModelVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionEvaluationsRequest, global::Clarifai.Api.MultiEvalMetricsResponse>(serviceImpl.PostModelVersionEvaluations));
@@ -15725,6 +15973,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteAnnotationFilters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationFiltersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotationFilters));
       serviceBinder.AddMethod(__Method_ListStatusCodes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListStatusCodesRequest, global::Clarifai.Api.MultiStatusCodeResponse>(serviceImpl.ListStatusCodes));
       serviceBinder.AddMethod(__Method_GetStatusCode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetStatusCodeRequest, global::Clarifai.Api.SingleStatusCodeResponse>(serviceImpl.GetStatusCode));
+      serviceBinder.AddMethod(__Method_GetResourcePrice, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetResourcePriceRequest, global::Clarifai.Api.GetResourcePriceResponse>(serviceImpl.GetResourcePrice));
       serviceBinder.AddMethod(__Method_ListCollaborators, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(serviceImpl.ListCollaborators));
       serviceBinder.AddMethod(__Method_PostCollaborators, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(serviceImpl.PostCollaborators));
       serviceBinder.AddMethod(__Method_PatchCollaborators, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(serviceImpl.PatchCollaborators));
@@ -15776,7 +16025,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_CancelBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.CancelBulkOperationRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.CancelBulkOperations));
       serviceBinder.AddMethod(__Method_DeleteBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteBulkOperationRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteBulkOperations));
       serviceBinder.AddMethod(__Method_ListNextTaskAssignments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListNextTaskAssignmentsRequest, global::Clarifai.Api.MultiInputResponse>(serviceImpl.ListNextTaskAssignments));
-      serviceBinder.AddMethod(__Method_PutTaskAssignments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutTaskAssignmentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PutTaskAssignments));
+      serviceBinder.AddMethod(__Method_PutTaskAssignments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutTaskAssignmentsRequest, global::Clarifai.Api.MultiTaskAssignmentResponse>(serviceImpl.PutTaskAssignments));
       serviceBinder.AddMethod(__Method_ListInputsAddJobs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInputsAddJobsRequest, global::Clarifai.Api.MultiInputsAddJobResponse>(serviceImpl.ListInputsAddJobs));
       serviceBinder.AddMethod(__Method_GetInputsAddJob, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInputsAddJobRequest, global::Clarifai.Api.SingleInputsAddJobResponse>(serviceImpl.GetInputsAddJob));
       serviceBinder.AddMethod(__Method_CancelInputsAddJob, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.CancelInputsAddJobRequest, global::Clarifai.Api.SingleInputsAddJobResponse>(serviceImpl.CancelInputsAddJob));
