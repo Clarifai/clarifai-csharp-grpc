@@ -476,10 +476,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleStatusCodeResponse> __Marshaller_clarifai_api_SingleStatusCodeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleStatusCodeResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetResourcePriceRequest> __Marshaller_clarifai_api_GetResourcePriceRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetResourcePriceRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetResourcePriceResponse> __Marshaller_clarifai_api_GetResourcePriceResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetResourcePriceResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListCollaboratorsRequest> __Marshaller_clarifai_api_ListCollaboratorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCollaboratorsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollaboratorsResponse> __Marshaller_clarifai_api_MultiCollaboratorsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCollaboratorsResponse.Parser));
@@ -1867,14 +1863,6 @@ namespace Clarifai.Api {
         "GetStatusCode",
         __Marshaller_clarifai_api_GetStatusCodeRequest,
         __Marshaller_clarifai_api_SingleStatusCodeResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetResourcePriceRequest, global::Clarifai.Api.GetResourcePriceResponse> __Method_GetResourcePrice = new grpc::Method<global::Clarifai.Api.GetResourcePriceRequest, global::Clarifai.Api.GetResourcePriceResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetResourcePrice",
-        __Marshaller_clarifai_api_GetResourcePriceRequest,
-        __Marshaller_clarifai_api_GetResourcePriceResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse> __Method_ListCollaborators = new grpc::Method<global::Clarifai.Api.ListCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(
@@ -4227,12 +4215,6 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.GetResourcePriceResponse> GetResourcePrice(global::Clarifai.Api.GetResourcePriceRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       /// <summary>
       /// owner list users who the app is shared with
       /// </summary>
@@ -4868,7 +4850,9 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// PutTaskAssignments evaluates all the annotations by labeler (authenticated user) for given task (task_id) and input (input_id).
+      /// PutTaskAssignments performs an action for the task assignments in given task.
+      /// All the actions are theoretically idempotent, but practically, in the current implementation,
+      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5023,7 +5007,8 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Get a specific runner from an app.
+      /// Get a specific runner.
+      /// TODO(zeiler): runner_id is a UUID so can list globally as well.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5035,7 +5020,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// List all the runners in community, by user or by app.
+      /// List all the runners for the user.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5047,7 +5032,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Add a runners to an app.
+      /// Add a runners to a user.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5072,6 +5057,7 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// List items for the remote runner to work on.
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5084,6 +5070,7 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Post back outputs from remote runners
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -12119,26 +12106,6 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetStatusCode, null, options, request);
       }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.GetResourcePriceResponse GetResourcePrice(global::Clarifai.Api.GetResourcePriceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetResourcePrice(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.GetResourcePriceResponse GetResourcePrice(global::Clarifai.Api.GetResourcePriceRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetResourcePrice, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.GetResourcePriceResponse> GetResourcePriceAsync(global::Clarifai.Api.GetResourcePriceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetResourcePriceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.GetResourcePriceResponse> GetResourcePriceAsync(global::Clarifai.Api.GetResourcePriceRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetResourcePrice, null, options, request);
-      }
       /// <summary>
       /// owner list users who the app is shared with
       /// </summary>
@@ -14676,7 +14643,9 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListNextTaskAssignments, null, options, request);
       }
       /// <summary>
-      /// PutTaskAssignments evaluates all the annotations by labeler (authenticated user) for given task (task_id) and input (input_id).
+      /// PutTaskAssignments performs an action for the task assignments in given task.
+      /// All the actions are theoretically idempotent, but practically, in the current implementation,
+      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14689,7 +14658,9 @@ namespace Clarifai.Api {
         return PutTaskAssignments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// PutTaskAssignments evaluates all the annotations by labeler (authenticated user) for given task (task_id) and input (input_id).
+      /// PutTaskAssignments performs an action for the task assignments in given task.
+      /// All the actions are theoretically idempotent, but practically, in the current implementation,
+      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14700,7 +14671,9 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PutTaskAssignments, null, options, request);
       }
       /// <summary>
-      /// PutTaskAssignments evaluates all the annotations by labeler (authenticated user) for given task (task_id) and input (input_id).
+      /// PutTaskAssignments performs an action for the task assignments in given task.
+      /// All the actions are theoretically idempotent, but practically, in the current implementation,
+      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14713,7 +14686,9 @@ namespace Clarifai.Api {
         return PutTaskAssignmentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// PutTaskAssignments evaluates all the annotations by labeler (authenticated user) for given task (task_id) and input (input_id).
+      /// PutTaskAssignments performs an action for the task assignments in given task.
+      /// All the actions are theoretically idempotent, but practically, in the current implementation,
+      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15276,7 +15251,8 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostInputsUploads, null, options, request);
       }
       /// <summary>
-      /// Get a specific runner from an app.
+      /// Get a specific runner.
+      /// TODO(zeiler): runner_id is a UUID so can list globally as well.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15289,7 +15265,8 @@ namespace Clarifai.Api {
         return GetRunner(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get a specific runner from an app.
+      /// Get a specific runner.
+      /// TODO(zeiler): runner_id is a UUID so can list globally as well.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15300,7 +15277,8 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_GetRunner, null, options, request);
       }
       /// <summary>
-      /// Get a specific runner from an app.
+      /// Get a specific runner.
+      /// TODO(zeiler): runner_id is a UUID so can list globally as well.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15313,7 +15291,8 @@ namespace Clarifai.Api {
         return GetRunnerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get a specific runner from an app.
+      /// Get a specific runner.
+      /// TODO(zeiler): runner_id is a UUID so can list globally as well.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15324,7 +15303,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_GetRunner, null, options, request);
       }
       /// <summary>
-      /// List all the runners in community, by user or by app.
+      /// List all the runners for the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15337,7 +15316,7 @@ namespace Clarifai.Api {
         return ListRunners(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all the runners in community, by user or by app.
+      /// List all the runners for the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15348,7 +15327,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_ListRunners, null, options, request);
       }
       /// <summary>
-      /// List all the runners in community, by user or by app.
+      /// List all the runners for the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15361,7 +15340,7 @@ namespace Clarifai.Api {
         return ListRunnersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List all the runners in community, by user or by app.
+      /// List all the runners for the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15372,7 +15351,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListRunners, null, options, request);
       }
       /// <summary>
-      /// Add a runners to an app.
+      /// Add a runners to a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15385,7 +15364,7 @@ namespace Clarifai.Api {
         return PostRunners(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add a runners to an app.
+      /// Add a runners to a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15396,7 +15375,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostRunners, null, options, request);
       }
       /// <summary>
-      /// Add a runners to an app.
+      /// Add a runners to a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15409,7 +15388,7 @@ namespace Clarifai.Api {
         return PostRunnersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add a runners to an app.
+      /// Add a runners to a user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15469,6 +15448,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List items for the remote runner to work on.
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15482,6 +15462,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List items for the remote runner to work on.
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15493,6 +15474,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List items for the remote runner to work on.
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15506,6 +15488,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// List items for the remote runner to work on.
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15517,6 +15500,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Post back outputs from remote runners
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15530,6 +15514,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Post back outputs from remote runners
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15541,6 +15526,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Post back outputs from remote runners
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15554,6 +15540,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Post back outputs from remote runners
+      /// since the runner_id is a UUID we can access it directly too.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15744,7 +15731,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteAnnotationFilters, serviceImpl.DeleteAnnotationFilters)
           .AddMethod(__Method_ListStatusCodes, serviceImpl.ListStatusCodes)
           .AddMethod(__Method_GetStatusCode, serviceImpl.GetStatusCode)
-          .AddMethod(__Method_GetResourcePrice, serviceImpl.GetResourcePrice)
           .AddMethod(__Method_ListCollaborators, serviceImpl.ListCollaborators)
           .AddMethod(__Method_PostCollaborators, serviceImpl.PostCollaborators)
           .AddMethod(__Method_PatchCollaborators, serviceImpl.PatchCollaborators)
@@ -15973,7 +15959,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteAnnotationFilters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationFiltersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotationFilters));
       serviceBinder.AddMethod(__Method_ListStatusCodes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListStatusCodesRequest, global::Clarifai.Api.MultiStatusCodeResponse>(serviceImpl.ListStatusCodes));
       serviceBinder.AddMethod(__Method_GetStatusCode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetStatusCodeRequest, global::Clarifai.Api.SingleStatusCodeResponse>(serviceImpl.GetStatusCode));
-      serviceBinder.AddMethod(__Method_GetResourcePrice, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetResourcePriceRequest, global::Clarifai.Api.GetResourcePriceResponse>(serviceImpl.GetResourcePrice));
       serviceBinder.AddMethod(__Method_ListCollaborators, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(serviceImpl.ListCollaborators));
       serviceBinder.AddMethod(__Method_PostCollaborators, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(serviceImpl.PostCollaborators));
       serviceBinder.AddMethod(__Method_PatchCollaborators, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchCollaboratorsRequest, global::Clarifai.Api.MultiCollaboratorsResponse>(serviceImpl.PatchCollaborators));
