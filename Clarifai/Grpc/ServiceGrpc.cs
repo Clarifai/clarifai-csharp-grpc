@@ -1009,6 +1009,22 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiOutputResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse> __Method_GenerateModelOutputs = new grpc::Method<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GenerateModelOutputs",
+        __Marshaller_clarifai_api_PostModelOutputsRequest,
+        __Marshaller_clarifai_api_MultiOutputResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse> __Method_StreamModelOutputs = new grpc::Method<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "StreamModelOutputs",
+        __Marshaller_clarifai_api_PostModelOutputsRequest,
+        __Marshaller_clarifai_api_MultiOutputResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse> __Method_ListDatasets = new grpc::Method<global::Clarifai.Api.ListDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -2433,6 +2449,14 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiRunnerItemOutputResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse> __Method_ProcessRunnerItems = new grpc::Method<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "ProcessRunnerItems",
+        __Marshaller_clarifai_api_PostRunnerItemOutputsRequest,
+        __Marshaller_clarifai_api_MultiRunnerItemResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse> __Method_PostModelVersionsTrainingTimeEstimate = new grpc::Method<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -2709,6 +2733,9 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Patch annotations status by worker id and task id.
+      /// Deprecated: Use PutTaskAssignments to update task annotations.
+      ///   For example, you can use PutTaskAssignments with action REVIEW_APPROVE
+      ///   to approve task assignments and associated annotations in bulk.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -2934,6 +2961,33 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiOutputResponse> PostModelOutputs(global::Clarifai.Api.PostModelOutputsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// TODO(zeiler): will need to
+      /// Single request but streaming resopnses.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task GenerateModelOutputs(global::Clarifai.Api.PostModelOutputsRequest request, grpc::IServerStreamWriter<global::Clarifai.Api.MultiOutputResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Stream of requests and stream of responses
+      /// </summary>
+      /// <param name="requestStream">Used for reading requests from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task StreamModelOutputs(grpc::IAsyncStreamReader<global::Clarifai.Api.PostModelOutputsRequest> requestStream, grpc::IServerStreamWriter<global::Clarifai.Api.MultiOutputResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -3347,6 +3401,7 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// Deprecated: Unmaintained and ideally replaced with usage of datasets
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -3495,8 +3550,9 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Deprecated: Use GetEvaluation instead
       /// Get the evaluation metrics for a model version.
+      /// Deprecated: Use GetEvaluation instead
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4049,6 +4105,7 @@ namespace Clarifai.Api {
       /// Execute a new search and optionally save it.
       ///
       /// Deprecated: Use PostInputsSearches or PostAnnotationsSearches instead.
+      ///  The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4838,7 +4895,11 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// List next non-labeled and unassigned inputs from task's dataset
+      /// Deprecated: Use PutTaskAssignments with action=LABEL_START.
+      ///   This endpoint has initially been designed as a GET request,
+      ///   but has been re-designed to serve a PUT logic.
+      ///   In order to clearly highlight that this endpoint serves a PUT request,
+      ///   this endpoint has been deprecated and replaced by PutTaskAssignments with action=LABEL_START.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5081,6 +5142,30 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// This maintains a single request for asking the API if there is any work to be done, processing
+      /// it and streaming back results.
+      /// To do that first handshake the MultiRunnerItemOutputResponse will have RUNNER_STREAM_START
+      /// status filled in so that the API knows to respond with a MultiRunnerItemResponse.
+      /// For now there will only be one of those if the model prediction only has one request.
+      /// NOTE(zeiler): downside of this is you can't use HTTP REST requests to do runner work.
+      /// </summary>
+      /// <param name="requestStream">Used for reading requests from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task ProcessRunnerItems(grpc::IAsyncStreamReader<global::Clarifai.Api.PostRunnerItemOutputsRequest> requestStream, grpc::IServerStreamWriter<global::Clarifai.Api.MultiRunnerItemResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get the training time estimate based off train request and estimated input count.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::ServerCallContext context)
       {
@@ -6146,6 +6231,9 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Patch annotations status by worker id and task id.
+      /// Deprecated: Use PutTaskAssignments to update task annotations.
+      ///   For example, you can use PutTaskAssignments with action REVIEW_APPROVE
+      ///   to approve task assignments and associated annotations in bulk.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6159,6 +6247,9 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Patch annotations status by worker id and task id.
+      /// Deprecated: Use PutTaskAssignments to update task annotations.
+      ///   For example, you can use PutTaskAssignments with action REVIEW_APPROVE
+      ///   to approve task assignments and associated annotations in bulk.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6170,6 +6261,9 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Patch annotations status by worker id and task id.
+      /// Deprecated: Use PutTaskAssignments to update task annotations.
+      ///   For example, you can use PutTaskAssignments with action REVIEW_APPROVE
+      ///   to approve task assignments and associated annotations in bulk.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6183,6 +6277,9 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Patch annotations status by worker id and task id.
+      /// Deprecated: Use PutTaskAssignments to update task annotations.
+      ///   For example, you can use PutTaskAssignments with action REVIEW_APPROVE
+      ///   to approve task assignments and associated annotations in bulk.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7067,6 +7164,54 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiOutputResponse> PostModelOutputsAsync(global::Clarifai.Api.PostModelOutputsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelOutputs, null, options, request);
+      }
+      /// <summary>
+      /// TODO(zeiler): will need to
+      /// Single request but streaming resopnses.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.MultiOutputResponse> GenerateModelOutputs(global::Clarifai.Api.PostModelOutputsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateModelOutputs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// TODO(zeiler): will need to
+      /// Single request but streaming resopnses.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.MultiOutputResponse> GenerateModelOutputs(global::Clarifai.Api.PostModelOutputsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_GenerateModelOutputs, null, options, request);
+      }
+      /// <summary>
+      /// Stream of requests and stream of responses
+      /// </summary>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse> StreamModelOutputs(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return StreamModelOutputs(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Stream of requests and stream of responses
+      /// </summary>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse> StreamModelOutputs(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_StreamModelOutputs, null, options);
       }
       /// <summary>
       /// List all the datasets.
@@ -8694,6 +8839,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Deprecated: Unmaintained and ideally replaced with usage of datasets
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -8707,6 +8853,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Deprecated: Unmaintained and ideally replaced with usage of datasets
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -8718,6 +8865,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Deprecated: Unmaintained and ideally replaced with usage of datasets
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -8731,6 +8879,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// Deprecated: Unmaintained and ideally replaced with usage of datasets
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9243,8 +9392,9 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_GetModelVersionExport, null, options, request);
       }
       /// <summary>
-      /// Deprecated: Use GetEvaluation instead
       /// Get the evaluation metrics for a model version.
+      /// Deprecated: Use GetEvaluation instead
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9257,8 +9407,9 @@ namespace Clarifai.Api {
         return GetModelVersionMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deprecated: Use GetEvaluation instead
       /// Get the evaluation metrics for a model version.
+      /// Deprecated: Use GetEvaluation instead
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9269,8 +9420,9 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_GetModelVersionMetrics, null, options, request);
       }
       /// <summary>
-      /// Deprecated: Use GetEvaluation instead
       /// Get the evaluation metrics for a model version.
+      /// Deprecated: Use GetEvaluation instead
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9283,8 +9435,9 @@ namespace Clarifai.Api {
         return GetModelVersionMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deprecated: Use GetEvaluation instead
       /// Get the evaluation metrics for a model version.
+      /// Deprecated: Use GetEvaluation instead
+      ///   The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11430,6 +11583,7 @@ namespace Clarifai.Api {
       /// Execute a new search and optionally save it.
       ///
       /// Deprecated: Use PostInputsSearches or PostAnnotationsSearches instead.
+      ///  The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11445,6 +11599,7 @@ namespace Clarifai.Api {
       /// Execute a new search and optionally save it.
       ///
       /// Deprecated: Use PostInputsSearches or PostAnnotationsSearches instead.
+      ///  The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11458,6 +11613,7 @@ namespace Clarifai.Api {
       /// Execute a new search and optionally save it.
       ///
       /// Deprecated: Use PostInputsSearches or PostAnnotationsSearches instead.
+      ///  The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11473,6 +11629,7 @@ namespace Clarifai.Api {
       /// Execute a new search and optionally save it.
       ///
       /// Deprecated: Use PostInputsSearches or PostAnnotationsSearches instead.
+      ///  The server may refuse to accept requests to this endpoint.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14595,7 +14752,11 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteBulkOperations, null, options, request);
       }
       /// <summary>
-      /// List next non-labeled and unassigned inputs from task's dataset
+      /// Deprecated: Use PutTaskAssignments with action=LABEL_START.
+      ///   This endpoint has initially been designed as a GET request,
+      ///   but has been re-designed to serve a PUT logic.
+      ///   In order to clearly highlight that this endpoint serves a PUT request,
+      ///   this endpoint has been deprecated and replaced by PutTaskAssignments with action=LABEL_START.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14608,7 +14769,11 @@ namespace Clarifai.Api {
         return ListNextTaskAssignments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List next non-labeled and unassigned inputs from task's dataset
+      /// Deprecated: Use PutTaskAssignments with action=LABEL_START.
+      ///   This endpoint has initially been designed as a GET request,
+      ///   but has been re-designed to serve a PUT logic.
+      ///   In order to clearly highlight that this endpoint serves a PUT request,
+      ///   this endpoint has been deprecated and replaced by PutTaskAssignments with action=LABEL_START.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14619,7 +14784,11 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_ListNextTaskAssignments, null, options, request);
       }
       /// <summary>
-      /// List next non-labeled and unassigned inputs from task's dataset
+      /// Deprecated: Use PutTaskAssignments with action=LABEL_START.
+      ///   This endpoint has initially been designed as a GET request,
+      ///   but has been re-designed to serve a PUT logic.
+      ///   In order to clearly highlight that this endpoint serves a PUT request,
+      ///   this endpoint has been deprecated and replaced by PutTaskAssignments with action=LABEL_START.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14632,7 +14801,11 @@ namespace Clarifai.Api {
         return ListNextTaskAssignmentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List next non-labeled and unassigned inputs from task's dataset
+      /// Deprecated: Use PutTaskAssignments with action=LABEL_START.
+      ///   This endpoint has initially been designed as a GET request,
+      ///   but has been re-designed to serve a PUT logic.
+      ///   In order to clearly highlight that this endpoint serves a PUT request,
+      ///   this endpoint has been deprecated and replaced by PutTaskAssignments with action=LABEL_START.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15550,21 +15723,81 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostRunnerItemOutputs, null, options, request);
       }
+      /// <summary>
+      /// This maintains a single request for asking the API if there is any work to be done, processing
+      /// it and streaming back results.
+      /// To do that first handshake the MultiRunnerItemOutputResponse will have RUNNER_STREAM_START
+      /// status filled in so that the API knows to respond with a MultiRunnerItemResponse.
+      /// For now there will only be one of those if the model prediction only has one request.
+      /// NOTE(zeiler): downside of this is you can't use HTTP REST requests to do runner work.
+      /// </summary>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse> ProcessRunnerItems(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ProcessRunnerItems(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// This maintains a single request for asking the API if there is any work to be done, processing
+      /// it and streaming back results.
+      /// To do that first handshake the MultiRunnerItemOutputResponse will have RUNNER_STREAM_START
+      /// status filled in so that the API knows to respond with a MultiRunnerItemResponse.
+      /// For now there will only be one of those if the model prediction only has one request.
+      /// NOTE(zeiler): downside of this is you can't use HTTP REST requests to do runner work.
+      /// </summary>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse> ProcessRunnerItems(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_ProcessRunnerItems, null, options);
+      }
+      /// <summary>
+      /// Get the training time estimate based off train request and estimated input count.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiTrainingTimeEstimateResponse PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostModelVersionsTrainingTimeEstimate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get the training time estimate based off train request and estimated input count.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiTrainingTimeEstimateResponse PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostModelVersionsTrainingTimeEstimate, null, options, request);
       }
+      /// <summary>
+      /// Get the training time estimate based off train request and estimated input count.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimateAsync(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostModelVersionsTrainingTimeEstimateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get the training time estimate based off train request and estimated input count.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimateAsync(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::CallOptions options)
       {
@@ -15624,6 +15857,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchInputsSearches, serviceImpl.PatchInputsSearches)
           .AddMethod(__Method_PostInputsSearches, serviceImpl.PostInputsSearches)
           .AddMethod(__Method_PostModelOutputs, serviceImpl.PostModelOutputs)
+          .AddMethod(__Method_GenerateModelOutputs, serviceImpl.GenerateModelOutputs)
+          .AddMethod(__Method_StreamModelOutputs, serviceImpl.StreamModelOutputs)
           .AddMethod(__Method_ListDatasets, serviceImpl.ListDatasets)
           .AddMethod(__Method_GetDataset, serviceImpl.GetDataset)
           .AddMethod(__Method_PostDatasets, serviceImpl.PostDatasets)
@@ -15802,6 +16037,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteRunners, serviceImpl.DeleteRunners)
           .AddMethod(__Method_ListRunnerItems, serviceImpl.ListRunnerItems)
           .AddMethod(__Method_PostRunnerItemOutputs, serviceImpl.PostRunnerItemOutputs)
+          .AddMethod(__Method_ProcessRunnerItems, serviceImpl.ProcessRunnerItems)
           .AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl.PostModelVersionsTrainingTimeEstimate).Build();
     }
 
@@ -15852,6 +16088,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchInputsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PatchInputsSearches));
       serviceBinder.AddMethod(__Method_PostInputsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInputsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostInputsSearches));
       serviceBinder.AddMethod(__Method_PostModelOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse>(serviceImpl.PostModelOutputs));
+      serviceBinder.AddMethod(__Method_GenerateModelOutputs, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse>(serviceImpl.GenerateModelOutputs));
+      serviceBinder.AddMethod(__Method_StreamModelOutputs, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostModelOutputsRequest, global::Clarifai.Api.MultiOutputResponse>(serviceImpl.StreamModelOutputs));
       serviceBinder.AddMethod(__Method_ListDatasets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(serviceImpl.ListDatasets));
       serviceBinder.AddMethod(__Method_GetDataset, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDatasetRequest, global::Clarifai.Api.SingleDatasetResponse>(serviceImpl.GetDataset));
       serviceBinder.AddMethod(__Method_PostDatasets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDatasetsRequest, global::Clarifai.Api.MultiDatasetResponse>(serviceImpl.PostDatasets));
@@ -16030,6 +16268,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteRunners, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteRunnersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteRunners));
       serviceBinder.AddMethod(__Method_ListRunnerItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListRunnerItemsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(serviceImpl.ListRunnerItems));
       serviceBinder.AddMethod(__Method_PostRunnerItemOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemOutputResponse>(serviceImpl.PostRunnerItemOutputs));
+      serviceBinder.AddMethod(__Method_ProcessRunnerItems, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(serviceImpl.ProcessRunnerItems));
       serviceBinder.AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse>(serviceImpl.PostModelVersionsTrainingTimeEstimate));
     }
 
