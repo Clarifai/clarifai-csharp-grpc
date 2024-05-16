@@ -687,6 +687,20 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest> __Marshaller_clarifai_api_PostModelVersionsTrainingTimeEstimateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiTrainingTimeEstimateResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetNodepoolRequest> __Marshaller_clarifai_api_GetNodepoolRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetNodepoolRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleNodepoolResponse> __Marshaller_clarifai_api_SingleNodepoolResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleNodepoolResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListNodepoolsRequest> __Marshaller_clarifai_api_ListNodepoolsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListNodepoolsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiNodepoolResponse> __Marshaller_clarifai_api_MultiNodepoolResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiNodepoolResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostNodepoolsRequest> __Marshaller_clarifai_api_PostNodepoolsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostNodepoolsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchNodepoolsRequest> __Marshaller_clarifai_api_PatchNodepoolsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchNodepoolsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteNodepoolsRequest> __Marshaller_clarifai_api_DeleteNodepoolsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteNodepoolsRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2463,6 +2477,46 @@ namespace Clarifai.Api {
         "PostModelVersionsTrainingTimeEstimate",
         __Marshaller_clarifai_api_PostModelVersionsTrainingTimeEstimateRequest,
         __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetNodepoolRequest, global::Clarifai.Api.SingleNodepoolResponse> __Method_GetNodepool = new grpc::Method<global::Clarifai.Api.GetNodepoolRequest, global::Clarifai.Api.SingleNodepoolResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetNodepool",
+        __Marshaller_clarifai_api_GetNodepoolRequest,
+        __Marshaller_clarifai_api_SingleNodepoolResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse> __Method_ListNodepools = new grpc::Method<global::Clarifai.Api.ListNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListNodepools",
+        __Marshaller_clarifai_api_ListNodepoolsRequest,
+        __Marshaller_clarifai_api_MultiNodepoolResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse> __Method_PostNodepools = new grpc::Method<global::Clarifai.Api.PostNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostNodepools",
+        __Marshaller_clarifai_api_PostNodepoolsRequest,
+        __Marshaller_clarifai_api_MultiNodepoolResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PatchNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse> __Method_PatchNodepools = new grpc::Method<global::Clarifai.Api.PatchNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchNodepools",
+        __Marshaller_clarifai_api_PatchNodepoolsRequest,
+        __Marshaller_clarifai_api_MultiNodepoolResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeleteNodepoolsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteNodepools = new grpc::Method<global::Clarifai.Api.DeleteNodepoolsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteNodepools",
+        __Marshaller_clarifai_api_DeleteNodepoolsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -5168,6 +5222,48 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Nodepools CRUD
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleNodepoolResponse> GetNodepool(global::Clarifai.Api.GetNodepoolRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiNodepoolResponse> ListNodepools(global::Clarifai.Api.ListNodepoolsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiNodepoolResponse> PostNodepools(global::Clarifai.Api.PostNodepoolsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiNodepoolResponse> PatchNodepools(global::Clarifai.Api.PatchNodepoolsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete multiple nodepools in one request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteNodepools(global::Clarifai.Api.DeleteNodepoolsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -15803,6 +15899,162 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsTrainingTimeEstimate, null, options, request);
       }
+      /// <summary>
+      /// Nodepools CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleNodepoolResponse GetNodepool(global::Clarifai.Api.GetNodepoolRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetNodepool(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Nodepools CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleNodepoolResponse GetNodepool(global::Clarifai.Api.GetNodepoolRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetNodepool, null, options, request);
+      }
+      /// <summary>
+      /// Nodepools CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleNodepoolResponse> GetNodepoolAsync(global::Clarifai.Api.GetNodepoolRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetNodepoolAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Nodepools CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleNodepoolResponse> GetNodepoolAsync(global::Clarifai.Api.GetNodepoolRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetNodepool, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiNodepoolResponse ListNodepools(global::Clarifai.Api.ListNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListNodepools(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiNodepoolResponse ListNodepools(global::Clarifai.Api.ListNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListNodepools, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiNodepoolResponse> ListNodepoolsAsync(global::Clarifai.Api.ListNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListNodepoolsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiNodepoolResponse> ListNodepoolsAsync(global::Clarifai.Api.ListNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListNodepools, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiNodepoolResponse PostNodepools(global::Clarifai.Api.PostNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostNodepools(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiNodepoolResponse PostNodepools(global::Clarifai.Api.PostNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostNodepools, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiNodepoolResponse> PostNodepoolsAsync(global::Clarifai.Api.PostNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostNodepoolsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiNodepoolResponse> PostNodepoolsAsync(global::Clarifai.Api.PostNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostNodepools, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiNodepoolResponse PatchNodepools(global::Clarifai.Api.PatchNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchNodepools(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiNodepoolResponse PatchNodepools(global::Clarifai.Api.PatchNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchNodepools, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiNodepoolResponse> PatchNodepoolsAsync(global::Clarifai.Api.PatchNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchNodepoolsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiNodepoolResponse> PatchNodepoolsAsync(global::Clarifai.Api.PatchNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchNodepools, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple nodepools in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteNodepools(global::Clarifai.Api.DeleteNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteNodepools(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple nodepools in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteNodepools(global::Clarifai.Api.DeleteNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteNodepools, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple nodepools in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteNodepoolsAsync(global::Clarifai.Api.DeleteNodepoolsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteNodepoolsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple nodepools in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteNodepoolsAsync(global::Clarifai.Api.DeleteNodepoolsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteNodepools, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -16038,7 +16290,12 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListRunnerItems, serviceImpl.ListRunnerItems)
           .AddMethod(__Method_PostRunnerItemOutputs, serviceImpl.PostRunnerItemOutputs)
           .AddMethod(__Method_ProcessRunnerItems, serviceImpl.ProcessRunnerItems)
-          .AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl.PostModelVersionsTrainingTimeEstimate).Build();
+          .AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl.PostModelVersionsTrainingTimeEstimate)
+          .AddMethod(__Method_GetNodepool, serviceImpl.GetNodepool)
+          .AddMethod(__Method_ListNodepools, serviceImpl.ListNodepools)
+          .AddMethod(__Method_PostNodepools, serviceImpl.PostNodepools)
+          .AddMethod(__Method_PatchNodepools, serviceImpl.PatchNodepools)
+          .AddMethod(__Method_DeleteNodepools, serviceImpl.DeleteNodepools).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -16270,6 +16527,11 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostRunnerItemOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemOutputResponse>(serviceImpl.PostRunnerItemOutputs));
       serviceBinder.AddMethod(__Method_ProcessRunnerItems, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(serviceImpl.ProcessRunnerItems));
       serviceBinder.AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse>(serviceImpl.PostModelVersionsTrainingTimeEstimate));
+      serviceBinder.AddMethod(__Method_GetNodepool, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetNodepoolRequest, global::Clarifai.Api.SingleNodepoolResponse>(serviceImpl.GetNodepool));
+      serviceBinder.AddMethod(__Method_ListNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.ListNodepools));
+      serviceBinder.AddMethod(__Method_PostNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.PostNodepools));
+      serviceBinder.AddMethod(__Method_PatchNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.PatchNodepools));
+      serviceBinder.AddMethod(__Method_DeleteNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteNodepoolsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteNodepools));
     }
 
   }
