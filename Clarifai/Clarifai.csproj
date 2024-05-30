@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <PackageId>ClarifaiGrpc</PackageId>
-        <PackageVersion>10.3.3</PackageVersion>
+        <PackageVersion>10.4.0</PackageVersion>
         <PackageProjectUrl>https://github.com/Clarifai/clarifai-csharp-grpc</PackageProjectUrl>
         <PackageLicenceUrl>https://github.com/Clarifai/clarifai-csharp-grpc/blob/master/LICENSE</PackageLicenceUrl>
         <Authors>Clarifai</Authors>
