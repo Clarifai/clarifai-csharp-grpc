@@ -27,7 +27,7 @@ namespace Clarifai.Auth.Scope {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlL3Njb3BlLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnNjb3BlGiBnb29nbGUvcHJvdG9idWYvZGVzY3JpcHRvci5w",
             "cm90byJGCglTY29wZUxpc3QSJgoGc2NvcGVzGAEgAygOMhYuY2xhcmlmYWku",
-            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSqOGAoBUxIJCgV1bmRl",
+            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSr0GAoBUxIJCgV1bmRl",
             "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIYCgpJbnB1",
             "dHNfQWRkEAQaCPCbJwH4mycFEhQKCklucHV0c19HZXQQBRoE8JsnARIgCgxJ",
             "bnB1dHNfUGF0Y2gQBxoOCAHwmycB+JsnBPibJwUSHwoNSW5wdXRzX0RlbGV0",
@@ -95,14 +95,16 @@ namespace Clarifai.Auth.Scope {
             "EiUKEE5vZGVwb29sc19EZWxldGUQigEaDvCbJwH4myeIAfibJ4kBEh4KE0Nv",
             "bXB1dGVDbHVzdGVyc19HZXQQiwEaBPCbJwESIwoTQ29tcHV0ZUNsdXN0ZXJz",
             "X0FkZBCMARoJ8JsnAfibJ4sBEisKFkNvbXB1dGVDbHVzdGVyc19EZWxldGUQ",
-            "jQEaDvCbJwH4myeLAfibJ4wBIgQIHhAeIgQIHxAfIgQIIBAgIgQIIRAhIgQI",
-            "IhAiIgQIfRB9IgQIfhB+OjwKD2NsYXJmYWlfZXhwb3NlZBIhLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbnVtVmFsdWVPcHRpb25zGL7zBCABKAg6XgoZY2xhcmlmYWlf",
-            "ZGVwZW5kaW5nX3Njb3BlcxIhLmdvb2dsZS5wcm90b2J1Zi5FbnVtVmFsdWVP",
-            "cHRpb25zGL/zBCADKA4yFi5jbGFyaWZhaS5hdXRoLnNjb3BlLlNCZwocY29t",
-            "LmNsYXJpZmFpLmdycGMuYXV0aC5zY29wZVABWj5naXRodWIuY29tL0NsYXJp",
-            "ZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXV0aC9zY29w",
-            "ZaICBENBSVBiBnByb3RvMw=="));
+            "jQEaDvCbJwH4myeLAfibJ4wBEhoKD0RlcGxveW1lbnRzX0dldBCQARoE8Jsn",
+            "ARIfCg9EZXBsb3ltZW50c19BZGQQkQEaCfCbJwH4myeQARInChJEZXBsb3lt",
+            "ZW50c19EZWxldGUQkgEaDvCbJwH4myeQAfibJ5EBIgQIHhAeIgQIHxAfIgQI",
+            "IBAgIgQIIRAhIgQIIhAiIgQIfRB9IgQIfhB+OjwKD2NsYXJmYWlfZXhwb3Nl",
+            "ZBIhLmdvb2dsZS5wcm90b2J1Zi5FbnVtVmFsdWVPcHRpb25zGL7zBCABKAg6",
+            "XgoZY2xhcmlmYWlfZGVwZW5kaW5nX3Njb3BlcxIhLmdvb2dsZS5wcm90b2J1",
+            "Zi5FbnVtVmFsdWVPcHRpb25zGL/zBCADKA4yFi5jbGFyaWZhaS5hdXRoLnNj",
+            "b3BlLlNCZwocY29tLmNsYXJpZmFpLmdycGMuYXV0aC5zY29wZVABWj5naXRo",
+            "dWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlm",
+            "YWkvYXV0aC9zY29wZaICBENBSVBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Scope.S), }, new pb::Extension[] { ScopeExtensions.ClarfaiExposed, ScopeExtensions.ClarifaiDependingScopes }, new pbr::GeneratedClrTypeInfo[] {
@@ -489,6 +491,12 @@ namespace Clarifai.Auth.Scope {
     [pbr::OriginalName("ComputeClusters_Get")] ComputeClustersGet = 139,
     [pbr::OriginalName("ComputeClusters_Add")] ComputeClustersAdd = 140,
     [pbr::OriginalName("ComputeClusters_Delete")] ComputeClustersDelete = 141,
+    /// <summary>
+    /// How to autoscale resources within nodepools.
+    /// </summary>
+    [pbr::OriginalName("Deployments_Get")] DeploymentsGet = 144,
+    [pbr::OriginalName("Deployments_Add")] DeploymentsAdd = 145,
+    [pbr::OriginalName("Deployments_Delete")] DeploymentsDelete = 146,
   }
 
   #endregion

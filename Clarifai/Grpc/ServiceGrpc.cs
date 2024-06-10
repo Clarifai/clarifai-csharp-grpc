@@ -94,10 +94,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostKnowledgeGraphsRequest> __Marshaller_clarifai_api_PostKnowledgeGraphsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostKnowledgeGraphsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostConceptMappingJobsRequest> __Marshaller_clarifai_api_PostConceptMappingJobsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostConceptMappingJobsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiConceptMappingJobResponse> __Marshaller_clarifai_api_MultiConceptMappingJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiConceptMappingJobResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetAnnotationRequest> __Marshaller_clarifai_api_GetAnnotationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetAnnotationRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleAnnotationResponse> __Marshaller_clarifai_api_SingleAnnotationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleAnnotationResponse.Parser));
@@ -713,6 +709,20 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchNodepoolsRequest> __Marshaller_clarifai_api_PatchNodepoolsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchNodepoolsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteNodepoolsRequest> __Marshaller_clarifai_api_DeleteNodepoolsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteNodepoolsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetDeploymentRequest> __Marshaller_clarifai_api_GetDeploymentRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetDeploymentRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleDeploymentResponse> __Marshaller_clarifai_api_SingleDeploymentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleDeploymentResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListDeploymentsRequest> __Marshaller_clarifai_api_ListDeploymentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListDeploymentsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiDeploymentResponse> __Marshaller_clarifai_api_MultiDeploymentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiDeploymentResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostDeploymentsRequest> __Marshaller_clarifai_api_PostDeploymentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostDeploymentsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchDeploymentsRequest> __Marshaller_clarifai_api_PatchDeploymentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchDeploymentsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteDeploymentsRequest> __Marshaller_clarifai_api_DeleteDeploymentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteDeploymentsRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -841,14 +851,6 @@ namespace Clarifai.Api {
         "PostKnowledgeGraphs",
         __Marshaller_clarifai_api_PostKnowledgeGraphsRequest,
         __Marshaller_clarifai_api_MultiKnowledgeGraphResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostConceptMappingJobsRequest, global::Clarifai.Api.MultiConceptMappingJobResponse> __Method_PostConceptMappingJobs = new grpc::Method<global::Clarifai.Api.PostConceptMappingJobsRequest, global::Clarifai.Api.MultiConceptMappingJobResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostConceptMappingJobs",
-        __Marshaller_clarifai_api_PostConceptMappingJobsRequest,
-        __Marshaller_clarifai_api_MultiConceptMappingJobResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetAnnotationRequest, global::Clarifai.Api.SingleAnnotationResponse> __Method_GetAnnotation = new grpc::Method<global::Clarifai.Api.GetAnnotationRequest, global::Clarifai.Api.SingleAnnotationResponse>(
@@ -2562,6 +2564,46 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_DeleteNodepoolsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetDeploymentRequest, global::Clarifai.Api.SingleDeploymentResponse> __Method_GetDeployment = new grpc::Method<global::Clarifai.Api.GetDeploymentRequest, global::Clarifai.Api.SingleDeploymentResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDeployment",
+        __Marshaller_clarifai_api_GetDeploymentRequest,
+        __Marshaller_clarifai_api_SingleDeploymentResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse> __Method_ListDeployments = new grpc::Method<global::Clarifai.Api.ListDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListDeployments",
+        __Marshaller_clarifai_api_ListDeploymentsRequest,
+        __Marshaller_clarifai_api_MultiDeploymentResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse> __Method_PostDeployments = new grpc::Method<global::Clarifai.Api.PostDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostDeployments",
+        __Marshaller_clarifai_api_PostDeploymentsRequest,
+        __Marshaller_clarifai_api_MultiDeploymentResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PatchDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse> __Method_PatchDeployments = new grpc::Method<global::Clarifai.Api.PatchDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchDeployments",
+        __Marshaller_clarifai_api_PatchDeploymentsRequest,
+        __Marshaller_clarifai_api_MultiDeploymentResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteDeployments = new grpc::Method<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteDeployments",
+        __Marshaller_clarifai_api_DeleteDeploymentsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -2765,18 +2807,6 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiKnowledgeGraphResponse> PostKnowledgeGraphs(global::Clarifai.Api.PostKnowledgeGraphsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Start concept mapping jobs.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiConceptMappingJobResponse> PostConceptMappingJobs(global::Clarifai.Api.PostConceptMappingJobsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -5348,6 +5378,48 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// Deployments CRUD
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleDeploymentResponse> GetDeployment(global::Clarifai.Api.GetDeploymentRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDeploymentResponse> ListDeployments(global::Clarifai.Api.ListDeploymentsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDeploymentResponse> PostDeployments(global::Clarifai.Api.PostDeploymentsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiDeploymentResponse> PatchDeployments(global::Clarifai.Api.PatchDeploymentsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete multiple deployments in one request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteDeployments(global::Clarifai.Api.DeleteDeploymentsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Client for V2</summary>
@@ -6164,54 +6236,6 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiKnowledgeGraphResponse> PostKnowledgeGraphsAsync(global::Clarifai.Api.PostKnowledgeGraphsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostKnowledgeGraphs, null, options, request);
-      }
-      /// <summary>
-      /// Start concept mapping jobs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiConceptMappingJobResponse PostConceptMappingJobs(global::Clarifai.Api.PostConceptMappingJobsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostConceptMappingJobs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Start concept mapping jobs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiConceptMappingJobResponse PostConceptMappingJobs(global::Clarifai.Api.PostConceptMappingJobsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostConceptMappingJobs, null, options, request);
-      }
-      /// <summary>
-      /// Start concept mapping jobs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptMappingJobResponse> PostConceptMappingJobsAsync(global::Clarifai.Api.PostConceptMappingJobsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostConceptMappingJobsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Start concept mapping jobs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiConceptMappingJobResponse> PostConceptMappingJobsAsync(global::Clarifai.Api.PostConceptMappingJobsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostConceptMappingJobs, null, options, request);
       }
       /// <summary>
       /// Get a specific annotation from an app.
@@ -16271,6 +16295,162 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteNodepools, null, options, request);
       }
+      /// <summary>
+      /// Deployments CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleDeploymentResponse GetDeployment(global::Clarifai.Api.GetDeploymentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDeployment(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deployments CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleDeploymentResponse GetDeployment(global::Clarifai.Api.GetDeploymentRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDeployment, null, options, request);
+      }
+      /// <summary>
+      /// Deployments CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDeploymentResponse> GetDeploymentAsync(global::Clarifai.Api.GetDeploymentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDeploymentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deployments CRUD
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleDeploymentResponse> GetDeploymentAsync(global::Clarifai.Api.GetDeploymentRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDeployment, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiDeploymentResponse ListDeployments(global::Clarifai.Api.ListDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDeployments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiDeploymentResponse ListDeployments(global::Clarifai.Api.ListDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListDeployments, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDeploymentResponse> ListDeploymentsAsync(global::Clarifai.Api.ListDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListDeploymentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDeploymentResponse> ListDeploymentsAsync(global::Clarifai.Api.ListDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListDeployments, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiDeploymentResponse PostDeployments(global::Clarifai.Api.PostDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDeployments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiDeploymentResponse PostDeployments(global::Clarifai.Api.PostDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostDeployments, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDeploymentResponse> PostDeploymentsAsync(global::Clarifai.Api.PostDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostDeploymentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDeploymentResponse> PostDeploymentsAsync(global::Clarifai.Api.PostDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostDeployments, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiDeploymentResponse PatchDeployments(global::Clarifai.Api.PatchDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchDeployments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiDeploymentResponse PatchDeployments(global::Clarifai.Api.PatchDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchDeployments, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDeploymentResponse> PatchDeploymentsAsync(global::Clarifai.Api.PatchDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchDeploymentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiDeploymentResponse> PatchDeploymentsAsync(global::Clarifai.Api.PatchDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchDeployments, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple deployments in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDeployments(global::Clarifai.Api.DeleteDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDeployments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple deployments in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteDeployments(global::Clarifai.Api.DeleteDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteDeployments, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple deployments in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDeploymentsAsync(global::Clarifai.Api.DeleteDeploymentsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteDeploymentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple deployments in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteDeploymentsAsync(global::Clarifai.Api.DeleteDeploymentsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteDeployments, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -16301,7 +16481,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchConceptLanguages, serviceImpl.PatchConceptLanguages)
           .AddMethod(__Method_ListKnowledgeGraphs, serviceImpl.ListKnowledgeGraphs)
           .AddMethod(__Method_PostKnowledgeGraphs, serviceImpl.PostKnowledgeGraphs)
-          .AddMethod(__Method_PostConceptMappingJobs, serviceImpl.PostConceptMappingJobs)
           .AddMethod(__Method_GetAnnotation, serviceImpl.GetAnnotation)
           .AddMethod(__Method_ListAnnotations, serviceImpl.ListAnnotations)
           .AddMethod(__Method_PostAnnotations, serviceImpl.PostAnnotations)
@@ -16515,7 +16694,12 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListNodepools, serviceImpl.ListNodepools)
           .AddMethod(__Method_PostNodepools, serviceImpl.PostNodepools)
           .AddMethod(__Method_PatchNodepools, serviceImpl.PatchNodepools)
-          .AddMethod(__Method_DeleteNodepools, serviceImpl.DeleteNodepools).Build();
+          .AddMethod(__Method_DeleteNodepools, serviceImpl.DeleteNodepools)
+          .AddMethod(__Method_GetDeployment, serviceImpl.GetDeployment)
+          .AddMethod(__Method_ListDeployments, serviceImpl.ListDeployments)
+          .AddMethod(__Method_PostDeployments, serviceImpl.PostDeployments)
+          .AddMethod(__Method_PatchDeployments, serviceImpl.PatchDeployments)
+          .AddMethod(__Method_DeleteDeployments, serviceImpl.DeleteDeployments).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -16541,7 +16725,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchConceptLanguages, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchConceptLanguagesRequest, global::Clarifai.Api.MultiConceptLanguageResponse>(serviceImpl.PatchConceptLanguages));
       serviceBinder.AddMethod(__Method_ListKnowledgeGraphs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListKnowledgeGraphsRequest, global::Clarifai.Api.MultiKnowledgeGraphResponse>(serviceImpl.ListKnowledgeGraphs));
       serviceBinder.AddMethod(__Method_PostKnowledgeGraphs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostKnowledgeGraphsRequest, global::Clarifai.Api.MultiKnowledgeGraphResponse>(serviceImpl.PostKnowledgeGraphs));
-      serviceBinder.AddMethod(__Method_PostConceptMappingJobs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostConceptMappingJobsRequest, global::Clarifai.Api.MultiConceptMappingJobResponse>(serviceImpl.PostConceptMappingJobs));
       serviceBinder.AddMethod(__Method_GetAnnotation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAnnotationRequest, global::Clarifai.Api.SingleAnnotationResponse>(serviceImpl.GetAnnotation));
       serviceBinder.AddMethod(__Method_ListAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.ListAnnotations));
       serviceBinder.AddMethod(__Method_PostAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PostAnnotations));
@@ -16756,6 +16939,11 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.PostNodepools));
       serviceBinder.AddMethod(__Method_PatchNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.PatchNodepools));
       serviceBinder.AddMethod(__Method_DeleteNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteNodepoolsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteNodepools));
+      serviceBinder.AddMethod(__Method_GetDeployment, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDeploymentRequest, global::Clarifai.Api.SingleDeploymentResponse>(serviceImpl.GetDeployment));
+      serviceBinder.AddMethod(__Method_ListDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.ListDeployments));
+      serviceBinder.AddMethod(__Method_PostDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PostDeployments));
+      serviceBinder.AddMethod(__Method_PatchDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PatchDeployments));
+      serviceBinder.AddMethod(__Method_DeleteDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDeployments));
     }
 
   }
