@@ -412,6 +412,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppsRequest> __Marshaller_clarifai_api_PatchAppsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAppsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppsDetailsRequest> __Marshaller_clarifai_api_PatchAppsDetailsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAppsDetailsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppsIdsRequest> __Marshaller_clarifai_api_PatchAppsIdsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAppsIdsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchAppRequest> __Marshaller_clarifai_api_PatchAppRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAppRequest.Parser));
@@ -1730,6 +1732,14 @@ namespace Clarifai.Api {
         __ServiceName,
         "PatchApps",
         __Marshaller_clarifai_api_PatchAppsRequest,
+        __Marshaller_clarifai_api_MultiAppResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PatchAppsDetailsRequest, global::Clarifai.Api.MultiAppResponse> __Method_PatchAppsDetails = new grpc::Method<global::Clarifai.Api.PatchAppsDetailsRequest, global::Clarifai.Api.MultiAppResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchAppsDetails",
+        __Marshaller_clarifai_api_PatchAppsDetailsRequest,
         __Marshaller_clarifai_api_MultiAppResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -4129,6 +4139,19 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAppResponse> PatchApps(global::Clarifai.Api.PatchAppsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Allows to Patch only the below fields in one or more apps.
+      /// Allowed fields are notes, description and image
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAppResponse> PatchAppsDetails(global::Clarifai.Api.PatchAppsDetailsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -11396,6 +11419,58 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchApps, null, options, request);
       }
       /// <summary>
+      /// Allows to Patch only the below fields in one or more apps.
+      /// Allowed fields are notes, description and image
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAppResponse PatchAppsDetails(global::Clarifai.Api.PatchAppsDetailsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAppsDetails(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Allows to Patch only the below fields in one or more apps.
+      /// Allowed fields are notes, description and image
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAppResponse PatchAppsDetails(global::Clarifai.Api.PatchAppsDetailsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchAppsDetails, null, options, request);
+      }
+      /// <summary>
+      /// Allows to Patch only the below fields in one or more apps.
+      /// Allowed fields are notes, description and image
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAppResponse> PatchAppsDetailsAsync(global::Clarifai.Api.PatchAppsDetailsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAppsDetailsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Allows to Patch only the below fields in one or more apps.
+      /// Allowed fields are notes, description and image
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAppResponse> PatchAppsDetailsAsync(global::Clarifai.Api.PatchAppsDetailsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchAppsDetails, null, options, request);
+      }
+      /// <summary>
       /// Patch apps ids.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -16591,6 +16666,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteApp, serviceImpl.DeleteApp)
           .AddMethod(__Method_PostApps, serviceImpl.PostApps)
           .AddMethod(__Method_PatchApps, serviceImpl.PatchApps)
+          .AddMethod(__Method_PatchAppsDetails, serviceImpl.PatchAppsDetails)
           .AddMethod(__Method_PatchAppsIds, serviceImpl.PatchAppsIds)
           .AddMethod(__Method_PatchApp, serviceImpl.PatchApp)
           .AddMethod(__Method_PostAppsSearches, serviceImpl.PostAppsSearches)
@@ -16835,6 +16911,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteApp, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAppRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteApp));
       serviceBinder.AddMethod(__Method_PostApps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAppsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PostApps));
       serviceBinder.AddMethod(__Method_PatchApps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAppsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PatchApps));
+      serviceBinder.AddMethod(__Method_PatchAppsDetails, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAppsDetailsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PatchAppsDetails));
       serviceBinder.AddMethod(__Method_PatchAppsIds, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAppsIdsRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PatchAppsIds));
       serviceBinder.AddMethod(__Method_PatchApp, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAppRequest, global::Clarifai.Api.SingleAppResponse>(serviceImpl.PatchApp));
       serviceBinder.AddMethod(__Method_PostAppsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAppsSearchesRequest, global::Clarifai.Api.MultiAppResponse>(serviceImpl.PostAppsSearches));

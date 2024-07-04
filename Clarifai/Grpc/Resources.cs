@@ -891,110 +891,111 @@ namespace Clarifai.Api {
             "DgoGYXBwX2lkGAIgASgJEg8KB3VzZXJfaWQYAyABKAkSQAoNcmVzb3VyY2Vf",
             "dHlwZRgEIAEoDjIpLmNsYXJpZmFpLmFwaS5Cb29rbWFya09yaWdpbi5Cb29r",
             "bWFya1R5cGUiTQoMQm9va21hcmtUeXBlEgsKB3Vua25vd24QABIJCgVtb2Rl",
-            "bBABEgwKCHdvcmtmbG93EAISCwoHZGF0YXNldBADEgoKBm1vZHVsZRAEIvEC",
+            "bBABEgwKCHdvcmtmbG93EAISCwoHZGF0YXNldBADEgoKBm1vZHVsZRAEIuYC",
             "CgZSdW5uZXISCgoCaWQYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkSLgoK",
             "Y3JlYXRlZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
             "LwoLbW9kaWZpZWRfYXQYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
             "YW1wEikKCG1ldGFkYXRhGAUgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVj",
-            "dBIPCgd1c2VyX2lkGAYgASgJEhIKBmxhYmVscxgHIAMoCUICGAESJAoGd29y",
-            "a2VyGAggASgLMhQuY2xhcmlmYWkuYXBpLldvcmtlchIoCghub2RlcG9vbBgJ",
-            "IAEoCzIWLmNsYXJpZmFpLmFwaS5Ob2RlcG9vbBIvCgxjb21wdXRlX2luZm8Y",
-            "CiABKAsyGS5jbGFyaWZhaS5hcGkuQ29tcHV0ZUluZm8SFAoMbnVtX3JlcGxp",
-            "Y2FzGAsgASgNIssDCghOb2RlcG9vbBIKCgJpZBgBIAEoCRITCgtkZXNjcmlw",
-            "dGlvbhgCIAEoCRIuCgpjcmVhdGVkX2F0GAMgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcBIvCgttb2RpZmllZF9hdBgEIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXASDwoHdXNlcl9pZBgFIAEoCRI1Cg9jb21wdXRl",
-            "X2NsdXN0ZXIYBiABKAsyHC5jbGFyaWZhaS5hcGkuQ29tcHV0ZUNsdXN0ZXIS",
-            "OgoSbm9kZV9jYXBhY2l0eV90eXBlGAcgASgLMh4uY2xhcmlmYWkuYXBpLk5v",
-            "ZGVDYXBhY2l0eVR5cGUSMgoOaW5zdGFuY2VfdHlwZXMYCCADKAsyGi5jbGFy",
-            "aWZhaS5hcGkuSW5zdGFuY2VUeXBlEhUKDW1pbl9pbnN0YW5jZXMYCSABKA0S",
-            "FQoNbWF4X2luc3RhbmNlcxgKIAEoDRIsCgp2aXNpYmlsaXR5GAsgASgLMhgu",
-            "Y2xhcmlmYWkuYXBpLlZpc2liaWxpdHkSKQoIbWV0YWRhdGEYDCABKAsyFy5n",
-            "b29nbGUucHJvdG9idWYuU3RydWN0IqQBChBOb2RlQ2FwYWNpdHlUeXBlEkMK",
-            "DmNhcGFjaXR5X3R5cGVzGAEgAygOMisuY2xhcmlmYWkuYXBpLk5vZGVDYXBh",
-            "Y2l0eVR5cGUuQ2FwYWNpdHlUeXBlIksKDENhcGFjaXR5VHlwZRIYChRVS05P",
-            "V05fQ0FQQUNJVFlfVFlQRRAAEhIKDk9OX0RFTUFORF9UWVBFEAESDQoJU1BP",
-            "VF9UWVBFEAIiYAoMSW5zdGFuY2VUeXBlEgoKAmlkGAEgASgJEhMKC2Rlc2Ny",
-            "aXB0aW9uGAIgASgJEi8KDGNvbXB1dGVfaW5mbxgDIAEoCzIZLmNsYXJpZmFp",
-            "LmFwaS5Db21wdXRlSW5mbyIpCg1DbG91ZFByb3ZpZGVyEgoKAmlkGAEgASgJ",
-            "EgwKBG5hbWUYAiABKAki6AEKDkNvbXB1dGVDbHVzdGVyEgoKAmlkGAEgASgJ",
-            "EhMKC2Rlc2NyaXB0aW9uGAIgASgJEjMKDmNsb3VkX3Byb3ZpZGVyGAMgASgL",
-            "MhsuY2xhcmlmYWkuYXBpLkNsb3VkUHJvdmlkZXISDgoGcmVnaW9uGAQgASgJ",
-            "Eg8KB3VzZXJfaWQYBSABKAkSLgoKY3JlYXRlZF9hdBgGIAEoCzIaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5UaW1lc3RhbXASLwoLbW9kaWZpZWRfYXQYByABKAsyGi5n",
-            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wIoMBCgtDb21wdXRlSW5mbxIQCghu",
-            "dW1fY3B1cxgBIAEoDRISCgpjcHVfbWVtb3J5GAIgASgJEhgKEG51bV9hY2Nl",
-            "bGVyYXRvcnMYAyABKA0SGgoSYWNjZWxlcmF0b3JfbWVtb3J5GAQgASgJEhgK",
-            "EGFjY2VsZXJhdG9yX3R5cGUYBSADKAkiuAEKD0F1dG9zY2FsZUNvbmZpZxIU",
-            "CgxtaW5fcmVwbGljYXMYASABKA0SFAoMbWF4X3JlcGxpY2FzGAIgASgNEh8K",
-            "F3RyYWZmaWNfaGlzdG9yeV9zZWNvbmRzGAMgASgNEiAKGHNjYWxlX2Rvd25f",
-            "ZGVsYXlfc2Vjb25kcxgEIAEoDRIeChZzY2FsZV91cF9kZWxheV9zZWNvbmRz",
-            "GAUgASgNEhYKDmVuYWJsZV9wYWNraW5nGAYgASgIIv4ECgpEZXBsb3ltZW50",
-            "EgoKAmlkGAEgASgJEg8KB3VzZXJfaWQYAiABKAkSNwoQYXV0b3NjYWxlX2Nv",
-            "bmZpZxgDIAEoCzIdLmNsYXJpZmFpLmFwaS5BdXRvc2NhbGVDb25maWcSKQoJ",
-            "bm9kZXBvb2xzGAQgAygLMhYuY2xhcmlmYWkuYXBpLk5vZGVwb29sEkQKEXNj",
-            "aGVkdWxpbmdfY2hvaWNlGAcgASgOMikuY2xhcmlmYWkuYXBpLkRlcGxveW1l",
-            "bnQuU2NoZWR1bGluZ0Nob2ljZRIsCgp2aXNpYmlsaXR5GAggASgLMhguY2xh",
-            "cmlmYWkuYXBpLlZpc2liaWxpdHkSKQoIbWV0YWRhdGEYCSABKAsyFy5nb29n",
-            "bGUucHJvdG9idWYuU3RydWN0EhMKC2Rlc2NyaXB0aW9uGAogASgJEiQKBndv",
-            "cmtlchgLIAEoCzIULmNsYXJpZmFpLmFwaS5Xb3JrZXISLgoKY3JlYXRlZF9h",
-            "dBgMIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLwoLbW9kaWZp",
-            "ZWRfYXQYDSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIqcBChBT",
-            "Y2hlZHVsaW5nQ2hvaWNlEh0KGVVOS05PV05fU0NIRURVTElOR19DSE9JQ0UQ",
-            "ABIICgRGQUlMEAESCgoGUkFORE9NEAISCQoFUFJJQ0UQAxIPCgtQRVJGT1JN",
-            "QU5DRRAEEgsKB05FVFdPUksQBRIPCgtVVElMSVpBVElPThAGEg8KC1BSRUZF",
-            "Ul9TUE9UEAcSEwoPUFJFRkVSX09OREVNQU5EEAhKBAgFEAZKBAgGEAcijgEK",
-            "DlJ1bm5lclNlbGVjdG9yEigKCG5vZGVwb29sGAEgASgLMhYuY2xhcmlmYWku",
-            "YXBpLk5vZGVwb29sEiQKBnJ1bm5lchgCIAEoCzIULmNsYXJpZmFpLmFwaS5S",
-            "dW5uZXISLAoKZGVwbG95bWVudBgDIAEoCzIYLmNsYXJpZmFpLmFwaS5EZXBs",
-            "b3ltZW50InkKDlByb2Nlc3NpbmdJbmZvEjoKEnJ1bm5lcl9tZXRob2RfdHlw",
-            "ZRgBIAEoDjIeLmNsYXJpZmFpLmFwaS5SdW5uZXJNZXRob2RUeXBlEisKBnN0",
-            "YXR1cxgCIAEoCzIbLmNsYXJpZmFpLmFwaS5zdGF0dXMuU3RhdHVzKl4KFFdv",
-            "cmtmbG93TW9kZWxVc2VDYXNlEiMKH1dPUktGTE9XX01PREVMX1VTRV9DQVNF",
-            "X05PVF9TRVQQABISCg5DTEFTU0lGSUNBVElPThABEg0KCURFVEVDVElPThAC",
-            "KpABChtEYXRhc2V0VmVyc2lvblJlcXVlc3RPcmlnaW4SKgomREFUQVNFVF9W",
-            "RVJTSU9OX1JFUVVFU1RfT1JJR0lOX05PVF9TRVQQABIKCgZNQU5VQUwQARIM",
-            "CghUUkFJTklORxACEhUKEUVWQUxfR1JPVU5EX1RSVVRIEAMSFAoQRVZBTF9Q",
-            "UkVESUNUSU9OUxAEKvkBCh5EYXRhc2V0VmVyc2lvbk1ldHJpY3NHcm91cFR5",
-            "cGUSLgoqREFUQVNFVF9WRVJTSU9OX01FVFJJQ1NfR1JPVVBfVFlQRV9OT1Rf",
-            "U0VUEAASDgoKSU5QVVRfVFlQRRACEg4KCkNPTkNFUFRfSUQQChISCg5DT05D",
-            "RVBUU19DT1VOVBALEhgKFEJPVU5ESU5HX0JPWEVTX0NPVU5UEBQSEgoOUE9M",
-            "WUdPTlNfQ09VTlQQFRIQCgxQT0lOVFNfQ09VTlQQFhIPCgtNQVNLU19DT1VO",
-            "VBAXEhAKDFBJWEVMU19DT1VOVBAeEhAKDEFTUEVDVF9SQVRJTxAfKoUBChpE",
-            "YXRhc2V0VmVyc2lvbkV4cG9ydEZvcm1hdBIpCiVEQVRBU0VUX1ZFUlNJT05f",
-            "RVhQT1JUX0ZPUk1BVF9OT1RfU0VUEAASGgoWQ0xBUklGQUlfREFUQV9QUk9U",
-            "T0JVRhABEhYKEkNMQVJJRkFJX0RBVEFfSlNPThADEggKBENPQ08QAipIChBF",
-            "eHBpcmF0aW9uQWN0aW9uEh0KGUVYUElSQVRJT05fQUNUSU9OX05PVF9TRVQQ",
-            "ABIJCgVERUxBWRABEgoKBkVYUElSWRACKk0KDExpY2Vuc2VTY29wZRIZChVM",
-            "SUNFTlNFX1NDT1BFX05PVF9TRVQQABILCgdQUkVESUNUEAESCQoFVFJBSU4Q",
-            "AhIKCgZTRUFSQ0gQAypQCghEYXRhVHlwZRINCglVTkRFRklORUQQABIKCgZT",
-            "VFJJTkcQARIJCgVVSU5UOBACEgkKBUlOVDMyEAMSCQoFSU5UNjQQBBIICgRG",
-            "UDMyEAUqjwEKD1ZhbHVlQ29tcGFyYXRvchIdChlDT05DRVBUX1RIUkVTSE9M",
-            "RF9OT1RfU0VUEAASEAoMR1JFQVRFUl9USEFOEAESGQoVR1JFQVRFUl9USEFO",
-            "X09SX0VRVUFMEAISDQoJTEVTU19USEFOEAMSFgoSTEVTU19USEFOX09SX0VR",
-            "VUFMEAQSCQoFRVFVQUwQBSqBAQoORXZhbHVhdGlvblR5cGUSDQoJVW5kZWZp",
-            "bmVkEAASEgoOQ2xhc3NpZmljYXRpb24QARINCglEZXRlY3Rpb24QAhIQCgxT",
-            "ZWdtZW50YXRpb24QAxIOCgpDbHVzdGVyaW5nEAQSCwoHVHJhY2tlchAFEg4K",
-            "CkdlbmVyYXRpb24QBipmCgxBUElFdmVudFR5cGUSGgoWQVBJX0VWRU5UX1RZ",
-            "UEVfTk9UX1NFVBAAEhMKD09OX1BSRU1fUFJFRElDVBABEhEKDU9OX1BSRU1f",
-            "VFJBSU4QAhISCg5PTl9QUkVNX1NFQVJDSBADKjwKEVVzYWdlSW50ZXJ2YWxU",
-            "eXBlEgkKBXVuZGVmEAASBwoDZGF5EAESCQoFbW9udGgQAhIICgR5ZWFyEAMq",
-            "fQoSQW5ub3RhdGlvbkRhdGFUeXBlEiAKHEFOTk9UQVRJT05fREFUQV9UWVBF",
-            "X05PVF9TRVQQABIHCgNUQUcQARIQCgxCT1VORElOR19CT1gQAhILCgdQT0xZ",
-            "R09OEAQSCQoFUE9JTlQQCBIICgRTUEFOEBASCAoETUFTSxAgKh0KCFJvbGVU",
-            "eXBlEggKBFRFQU0QABIHCgNPUkcQASokChBTdGF0VmFsdWVBZ2dUeXBlEgcK",
-            "A1NVTRAAEgcKA0FWRxABKmAKD1N0YXRUaW1lQWdnVHlwZRIPCgtOT19USU1F",
-            "X0FHRxAAEggKBFlFQVIQARIJCgVNT05USBACEggKBFdFRUsQAxIHCgNEQVkQ",
-            "BBIICgRIT1VSEAUSCgoGTUlOVVRFEAYqYgoTVmFsaWRhdGlvbkVycm9yVHlw",
-            "ZRIhCh1WQUxJREFUSU9OX0VSUk9SX1RZUEVfTk9UX1NFVBAAEg4KClJFU1RS",
-            "SUNURUQQARIMCghEQVRBQkFTRRACEgoKBkZPUk1BVBADKlsKGUlucHV0SURD",
-            "b25mbGljdFJlc29sdXRpb24SKAokSU5QVVRfSURfQ09ORkxJQ1RfUkVTT0xV",
-            "VElPTl9OT1RfU0VUEAASCAoEU0tJUBABEgoKBlNVRkZJWBACKnMKEFJ1bm5l",
-            "ck1ldGhvZFR5cGUSCwoHVU5LTk9XThAAEg8KC1VOQVJZX1VOQVJZEAESEwoP",
-            "VU5BUllfU1RSRUFNSU5HEAISEwoPU1RSRUFNSU5HX1VOQVJZEAMSFwoTU1RS",
-            "RUFNSU5HX1NUUkVBTUlORxAEQlkKFWNvbS5jbGFyaWZhaS5ncnBjLmFwaVAB",
-            "WjdnaXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8v",
-            "Y2xhcmlmYWkvYXBpogIEQ0FJUGIGcHJvdG8z"));
+            "dBISCgZsYWJlbHMYByADKAlCAhgBEiQKBndvcmtlchgIIAEoCzIULmNsYXJp",
+            "ZmFpLmFwaS5Xb3JrZXISKAoIbm9kZXBvb2wYCSABKAsyFi5jbGFyaWZhaS5h",
+            "cGkuTm9kZXBvb2wSLwoMY29tcHV0ZV9pbmZvGAogASgLMhkuY2xhcmlmYWku",
+            "YXBpLkNvbXB1dGVJbmZvEhQKDG51bV9yZXBsaWNhcxgLIAEoDUoECAYQByLA",
+            "AwoITm9kZXBvb2wSCgoCaWQYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkS",
+            "LgoKY3JlYXRlZF9hdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASLwoLbW9kaWZpZWRfYXQYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
+            "ZXN0YW1wEjUKD2NvbXB1dGVfY2x1c3RlchgGIAEoCzIcLmNsYXJpZmFpLmFw",
+            "aS5Db21wdXRlQ2x1c3RlchI6ChJub2RlX2NhcGFjaXR5X3R5cGUYByABKAsy",
+            "Hi5jbGFyaWZhaS5hcGkuTm9kZUNhcGFjaXR5VHlwZRIyCg5pbnN0YW5jZV90",
+            "eXBlcxgIIAMoCzIaLmNsYXJpZmFpLmFwaS5JbnN0YW5jZVR5cGUSFQoNbWlu",
+            "X2luc3RhbmNlcxgJIAEoDRIVCg1tYXhfaW5zdGFuY2VzGAogASgNEiwKCnZp",
+            "c2liaWxpdHkYCyABKAsyGC5jbGFyaWZhaS5hcGkuVmlzaWJpbGl0eRIpCght",
+            "ZXRhZGF0YRgMIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RKBAgFEAYi",
+            "pAEKEE5vZGVDYXBhY2l0eVR5cGUSQwoOY2FwYWNpdHlfdHlwZXMYASADKA4y",
+            "Ky5jbGFyaWZhaS5hcGkuTm9kZUNhcGFjaXR5VHlwZS5DYXBhY2l0eVR5cGUi",
+            "SwoMQ2FwYWNpdHlUeXBlEhgKFFVLTk9XTl9DQVBBQ0lUWV9UWVBFEAASEgoO",
+            "T05fREVNQU5EX1RZUEUQARINCglTUE9UX1RZUEUQAiJgCgxJbnN0YW5jZVR5",
+            "cGUSCgoCaWQYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkSLwoMY29tcHV0",
+            "ZV9pbmZvGAMgASgLMhkuY2xhcmlmYWkuYXBpLkNvbXB1dGVJbmZvIikKDUNs",
+            "b3VkUHJvdmlkZXISCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCSKWAgoOQ29t",
+            "cHV0ZUNsdXN0ZXISCgoCaWQYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkS",
+            "MwoOY2xvdWRfcHJvdmlkZXIYAyABKAsyGy5jbGFyaWZhaS5hcGkuQ2xvdWRQ",
+            "cm92aWRlchIOCgZyZWdpb24YBCABKAkSDwoHdXNlcl9pZBgFIAEoCRIuCgpj",
+            "cmVhdGVkX2F0GAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIv",
+            "Cgttb2RpZmllZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASLAoKdmlzaWJpbGl0eRgIIAEoCzIYLmNsYXJpZmFpLmFwaS5WaXNpYmls",
+            "aXR5IoMBCgtDb21wdXRlSW5mbxIQCghudW1fY3B1cxgBIAEoDRISCgpjcHVf",
+            "bWVtb3J5GAIgASgJEhgKEG51bV9hY2NlbGVyYXRvcnMYAyABKA0SGgoSYWNj",
+            "ZWxlcmF0b3JfbWVtb3J5GAQgASgJEhgKEGFjY2VsZXJhdG9yX3R5cGUYBSAD",
+            "KAkiuAEKD0F1dG9zY2FsZUNvbmZpZxIUCgxtaW5fcmVwbGljYXMYASABKA0S",
+            "FAoMbWF4X3JlcGxpY2FzGAIgASgNEh8KF3RyYWZmaWNfaGlzdG9yeV9zZWNv",
+            "bmRzGAMgASgNEiAKGHNjYWxlX2Rvd25fZGVsYXlfc2Vjb25kcxgEIAEoDRIe",
+            "ChZzY2FsZV91cF9kZWxheV9zZWNvbmRzGAUgASgNEhYKDmVuYWJsZV9wYWNr",
+            "aW5nGAYgASgIIv4ECgpEZXBsb3ltZW50EgoKAmlkGAEgASgJEg8KB3VzZXJf",
+            "aWQYAiABKAkSNwoQYXV0b3NjYWxlX2NvbmZpZxgDIAEoCzIdLmNsYXJpZmFp",
+            "LmFwaS5BdXRvc2NhbGVDb25maWcSKQoJbm9kZXBvb2xzGAQgAygLMhYuY2xh",
+            "cmlmYWkuYXBpLk5vZGVwb29sEkQKEXNjaGVkdWxpbmdfY2hvaWNlGAcgASgO",
+            "MikuY2xhcmlmYWkuYXBpLkRlcGxveW1lbnQuU2NoZWR1bGluZ0Nob2ljZRIs",
+            "Cgp2aXNpYmlsaXR5GAggASgLMhguY2xhcmlmYWkuYXBpLlZpc2liaWxpdHkS",
+            "KQoIbWV0YWRhdGEYCSABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0EhMK",
+            "C2Rlc2NyaXB0aW9uGAogASgJEiQKBndvcmtlchgLIAEoCzIULmNsYXJpZmFp",
+            "LmFwaS5Xb3JrZXISLgoKY3JlYXRlZF9hdBgMIAEoCzIaLmdvb2dsZS5wcm90",
+            "b2J1Zi5UaW1lc3RhbXASLwoLbW9kaWZpZWRfYXQYDSABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wIqcBChBTY2hlZHVsaW5nQ2hvaWNlEh0KGVVO",
+            "S05PV05fU0NIRURVTElOR19DSE9JQ0UQABIICgRGQUlMEAESCgoGUkFORE9N",
+            "EAISCQoFUFJJQ0UQAxIPCgtQRVJGT1JNQU5DRRAEEgsKB05FVFdPUksQBRIP",
+            "CgtVVElMSVpBVElPThAGEg8KC1BSRUZFUl9TUE9UEAcSEwoPUFJFRkVSX09O",
+            "REVNQU5EEAhKBAgFEAZKBAgGEAcijgEKDlJ1bm5lclNlbGVjdG9yEigKCG5v",
+            "ZGVwb29sGAEgASgLMhYuY2xhcmlmYWkuYXBpLk5vZGVwb29sEiQKBnJ1bm5l",
+            "chgCIAEoCzIULmNsYXJpZmFpLmFwaS5SdW5uZXISLAoKZGVwbG95bWVudBgD",
+            "IAEoCzIYLmNsYXJpZmFpLmFwaS5EZXBsb3ltZW50InkKDlByb2Nlc3NpbmdJ",
+            "bmZvEjoKEnJ1bm5lcl9tZXRob2RfdHlwZRgBIAEoDjIeLmNsYXJpZmFpLmFw",
+            "aS5SdW5uZXJNZXRob2RUeXBlEisKBnN0YXR1cxgCIAEoCzIbLmNsYXJpZmFp",
+            "LmFwaS5zdGF0dXMuU3RhdHVzKl4KFFdvcmtmbG93TW9kZWxVc2VDYXNlEiMK",
+            "H1dPUktGTE9XX01PREVMX1VTRV9DQVNFX05PVF9TRVQQABISCg5DTEFTU0lG",
+            "SUNBVElPThABEg0KCURFVEVDVElPThACKpABChtEYXRhc2V0VmVyc2lvblJl",
+            "cXVlc3RPcmlnaW4SKgomREFUQVNFVF9WRVJTSU9OX1JFUVVFU1RfT1JJR0lO",
+            "X05PVF9TRVQQABIKCgZNQU5VQUwQARIMCghUUkFJTklORxACEhUKEUVWQUxf",
+            "R1JPVU5EX1RSVVRIEAMSFAoQRVZBTF9QUkVESUNUSU9OUxAEKvkBCh5EYXRh",
+            "c2V0VmVyc2lvbk1ldHJpY3NHcm91cFR5cGUSLgoqREFUQVNFVF9WRVJTSU9O",
+            "X01FVFJJQ1NfR1JPVVBfVFlQRV9OT1RfU0VUEAASDgoKSU5QVVRfVFlQRRAC",
+            "Eg4KCkNPTkNFUFRfSUQQChISCg5DT05DRVBUU19DT1VOVBALEhgKFEJPVU5E",
+            "SU5HX0JPWEVTX0NPVU5UEBQSEgoOUE9MWUdPTlNfQ09VTlQQFRIQCgxQT0lO",
+            "VFNfQ09VTlQQFhIPCgtNQVNLU19DT1VOVBAXEhAKDFBJWEVMU19DT1VOVBAe",
+            "EhAKDEFTUEVDVF9SQVRJTxAfKoUBChpEYXRhc2V0VmVyc2lvbkV4cG9ydEZv",
+            "cm1hdBIpCiVEQVRBU0VUX1ZFUlNJT05fRVhQT1JUX0ZPUk1BVF9OT1RfU0VU",
+            "EAASGgoWQ0xBUklGQUlfREFUQV9QUk9UT0JVRhABEhYKEkNMQVJJRkFJX0RB",
+            "VEFfSlNPThADEggKBENPQ08QAipIChBFeHBpcmF0aW9uQWN0aW9uEh0KGUVY",
+            "UElSQVRJT05fQUNUSU9OX05PVF9TRVQQABIJCgVERUxBWRABEgoKBkVYUElS",
+            "WRACKk0KDExpY2Vuc2VTY29wZRIZChVMSUNFTlNFX1NDT1BFX05PVF9TRVQQ",
+            "ABILCgdQUkVESUNUEAESCQoFVFJBSU4QAhIKCgZTRUFSQ0gQAypQCghEYXRh",
+            "VHlwZRINCglVTkRFRklORUQQABIKCgZTVFJJTkcQARIJCgVVSU5UOBACEgkK",
+            "BUlOVDMyEAMSCQoFSU5UNjQQBBIICgRGUDMyEAUqjwEKD1ZhbHVlQ29tcGFy",
+            "YXRvchIdChlDT05DRVBUX1RIUkVTSE9MRF9OT1RfU0VUEAASEAoMR1JFQVRF",
+            "Ul9USEFOEAESGQoVR1JFQVRFUl9USEFOX09SX0VRVUFMEAISDQoJTEVTU19U",
+            "SEFOEAMSFgoSTEVTU19USEFOX09SX0VRVUFMEAQSCQoFRVFVQUwQBSqBAQoO",
+            "RXZhbHVhdGlvblR5cGUSDQoJVW5kZWZpbmVkEAASEgoOQ2xhc3NpZmljYXRp",
+            "b24QARINCglEZXRlY3Rpb24QAhIQCgxTZWdtZW50YXRpb24QAxIOCgpDbHVz",
+            "dGVyaW5nEAQSCwoHVHJhY2tlchAFEg4KCkdlbmVyYXRpb24QBipmCgxBUElF",
+            "dmVudFR5cGUSGgoWQVBJX0VWRU5UX1RZUEVfTk9UX1NFVBAAEhMKD09OX1BS",
+            "RU1fUFJFRElDVBABEhEKDU9OX1BSRU1fVFJBSU4QAhISCg5PTl9QUkVNX1NF",
+            "QVJDSBADKjwKEVVzYWdlSW50ZXJ2YWxUeXBlEgkKBXVuZGVmEAASBwoDZGF5",
+            "EAESCQoFbW9udGgQAhIICgR5ZWFyEAMqfQoSQW5ub3RhdGlvbkRhdGFUeXBl",
+            "EiAKHEFOTk9UQVRJT05fREFUQV9UWVBFX05PVF9TRVQQABIHCgNUQUcQARIQ",
+            "CgxCT1VORElOR19CT1gQAhILCgdQT0xZR09OEAQSCQoFUE9JTlQQCBIICgRT",
+            "UEFOEBASCAoETUFTSxAgKh0KCFJvbGVUeXBlEggKBFRFQU0QABIHCgNPUkcQ",
+            "ASokChBTdGF0VmFsdWVBZ2dUeXBlEgcKA1NVTRAAEgcKA0FWRxABKmAKD1N0",
+            "YXRUaW1lQWdnVHlwZRIPCgtOT19USU1FX0FHRxAAEggKBFlFQVIQARIJCgVN",
+            "T05USBACEggKBFdFRUsQAxIHCgNEQVkQBBIICgRIT1VSEAUSCgoGTUlOVVRF",
+            "EAYqYgoTVmFsaWRhdGlvbkVycm9yVHlwZRIhCh1WQUxJREFUSU9OX0VSUk9S",
+            "X1RZUEVfTk9UX1NFVBAAEg4KClJFU1RSSUNURUQQARIMCghEQVRBQkFTRRAC",
+            "EgoKBkZPUk1BVBADKlsKGUlucHV0SURDb25mbGljdFJlc29sdXRpb24SKAok",
+            "SU5QVVRfSURfQ09ORkxJQ1RfUkVTT0xVVElPTl9OT1RfU0VUEAASCAoEU0tJ",
+            "UBABEgoKBlNVRkZJWBACKnMKEFJ1bm5lck1ldGhvZFR5cGUSCwoHVU5LTk9X",
+            "ThAAEg8KC1VOQVJZX1VOQVJZEAESEwoPVU5BUllfU1RSRUFNSU5HEAISEwoP",
+            "U1RSRUFNSU5HX1VOQVJZEAMSFwoTU1RSRUFNSU5HX1NUUkVBTUlORxAEQlkK",
+            "FWNvbS5jbGFyaWZhaS5ncnBjLmFwaVABWjdnaXRodWIuY29tL0NsYXJpZmFp",
+            "L2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXBpogIEQ0FJUGIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::MatrixReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.WorkflowModelUseCase), typeof(global::Clarifai.Api.DatasetVersionRequestOrigin), typeof(global::Clarifai.Api.DatasetVersionMetricsGroupType), typeof(global::Clarifai.Api.DatasetVersionExportFormat), typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.DataType), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.AnnotationDataType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), typeof(global::Clarifai.Api.InputIDConflictResolution), typeof(global::Clarifai.Api.RunnerMethodType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1198,12 +1199,12 @@ namespace Clarifai.Api {
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AzureBlobCreds), global::Clarifai.Api.AzureBlobCreds.Parser, new[]{ "AccountName", "AccountKey" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.InputsUpload), global::Clarifai.Api.InputsUpload.Parser, new[]{ "InputsAddJobId", "AppPat", "Upload", "InputIdConflictResolution", "InputTemplate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.BookmarkOrigin), global::Clarifai.Api.BookmarkOrigin.Parser, new[]{ "Id", "AppId", "UserId", "ResourceType" }, null, new[]{ typeof(global::Clarifai.Api.BookmarkOrigin.Types.BookmarkType) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Runner), global::Clarifai.Api.Runner.Parser, new[]{ "Id", "Description", "CreatedAt", "ModifiedAt", "Metadata", "UserId", "Labels", "Worker", "Nodepool", "ComputeInfo", "NumReplicas" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Nodepool), global::Clarifai.Api.Nodepool.Parser, new[]{ "Id", "Description", "CreatedAt", "ModifiedAt", "UserId", "ComputeCluster", "NodeCapacityType", "InstanceTypes", "MinInstances", "MaxInstances", "Visibility", "Metadata" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Runner), global::Clarifai.Api.Runner.Parser, new[]{ "Id", "Description", "CreatedAt", "ModifiedAt", "Metadata", "Labels", "Worker", "Nodepool", "ComputeInfo", "NumReplicas" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Nodepool), global::Clarifai.Api.Nodepool.Parser, new[]{ "Id", "Description", "CreatedAt", "ModifiedAt", "ComputeCluster", "NodeCapacityType", "InstanceTypes", "MinInstances", "MaxInstances", "Visibility", "Metadata" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.NodeCapacityType), global::Clarifai.Api.NodeCapacityType.Parser, new[]{ "CapacityTypes" }, null, new[]{ typeof(global::Clarifai.Api.NodeCapacityType.Types.CapacityType) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.InstanceType), global::Clarifai.Api.InstanceType.Parser, new[]{ "Id", "Description", "ComputeInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.CloudProvider), global::Clarifai.Api.CloudProvider.Parser, new[]{ "Id", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputeCluster), global::Clarifai.Api.ComputeCluster.Parser, new[]{ "Id", "Description", "CloudProvider", "Region", "UserId", "CreatedAt", "ModifiedAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputeCluster), global::Clarifai.Api.ComputeCluster.Parser, new[]{ "Id", "Description", "CloudProvider", "Region", "UserId", "CreatedAt", "ModifiedAt", "Visibility" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputeInfo), global::Clarifai.Api.ComputeInfo.Parser, new[]{ "NumCpus", "CpuMemory", "NumAccelerators", "AcceleratorMemory", "AcceleratorType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AutoscaleConfig), global::Clarifai.Api.AutoscaleConfig.Parser, new[]{ "MinReplicas", "MaxReplicas", "TrafficHistorySeconds", "ScaleDownDelaySeconds", "ScaleUpDelaySeconds", "EnablePacking" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Deployment), global::Clarifai.Api.Deployment.Parser, new[]{ "Id", "UserId", "AutoscaleConfig", "Nodepools", "SchedulingChoice", "Visibility", "Metadata", "Description", "Worker", "CreatedAt", "ModifiedAt" }, null, new[]{ typeof(global::Clarifai.Api.Deployment.Types.SchedulingChoice) }, null, null),
@@ -75564,7 +75565,6 @@ namespace Clarifai.Api {
       createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
       modifiedAt_ = other.modifiedAt_ != null ? other.modifiedAt_.Clone() : null;
       metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
-      userId_ = other.userId_;
       labels_ = other.labels_.Clone();
       worker_ = other.worker_ != null ? other.worker_.Clone() : null;
       nodepool_ = other.nodepool_ != null ? other.nodepool_.Clone() : null;
@@ -75654,21 +75654,6 @@ namespace Clarifai.Api {
       get { return metadata_; }
       set {
         metadata_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "user_id" field.</summary>
-    public const int UserIdFieldNumber = 6;
-    private string userId_ = "";
-    /// <summary>
-    /// The owner of the runner. Runners belong to a user/org account.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
-      get { return userId_; }
-      set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -75779,7 +75764,6 @@ namespace Clarifai.Api {
       if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
       if (!object.Equals(ModifiedAt, other.ModifiedAt)) return false;
       if (!object.Equals(Metadata, other.Metadata)) return false;
-      if (UserId != other.UserId) return false;
       if(!labels_.Equals(other.labels_)) return false;
       if (!object.Equals(Worker, other.Worker)) return false;
       if (!object.Equals(Nodepool, other.Nodepool)) return false;
@@ -75797,7 +75781,6 @@ namespace Clarifai.Api {
       if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
       if (modifiedAt_ != null) hash ^= ModifiedAt.GetHashCode();
       if (metadata_ != null) hash ^= Metadata.GetHashCode();
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
       hash ^= labels_.GetHashCode();
       if (worker_ != null) hash ^= Worker.GetHashCode();
       if (nodepool_ != null) hash ^= Nodepool.GetHashCode();
@@ -75840,10 +75823,6 @@ namespace Clarifai.Api {
       if (metadata_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Metadata);
-      }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(UserId);
       }
       labels_.WriteTo(output, _repeated_labels_codec);
       if (worker_ != null) {
@@ -75892,10 +75871,6 @@ namespace Clarifai.Api {
         output.WriteRawTag(42);
         output.WriteMessage(Metadata);
       }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(UserId);
-      }
       labels_.WriteTo(ref output, _repeated_labels_codec);
       if (worker_ != null) {
         output.WriteRawTag(66);
@@ -75937,9 +75912,6 @@ namespace Clarifai.Api {
       }
       if (metadata_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
-      }
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
       }
       size += labels_.CalculateSize(_repeated_labels_codec);
       if (worker_ != null) {
@@ -75989,9 +75961,6 @@ namespace Clarifai.Api {
           Metadata = new global::Google.Protobuf.WellKnownTypes.Struct();
         }
         Metadata.MergeFrom(other.Metadata);
-      }
-      if (other.UserId.Length != 0) {
-        UserId = other.UserId;
       }
       labels_.Add(other.labels_);
       if (other.worker_ != null) {
@@ -76057,10 +76026,6 @@ namespace Clarifai.Api {
               Metadata = new global::Google.Protobuf.WellKnownTypes.Struct();
             }
             input.ReadMessage(Metadata);
-            break;
-          }
-          case 50: {
-            UserId = input.ReadString();
             break;
           }
           case 58: {
@@ -76134,10 +76099,6 @@ namespace Clarifai.Api {
               Metadata = new global::Google.Protobuf.WellKnownTypes.Struct();
             }
             input.ReadMessage(Metadata);
-            break;
-          }
-          case 50: {
-            UserId = input.ReadString();
             break;
           }
           case 58: {
@@ -76219,7 +76180,6 @@ namespace Clarifai.Api {
       description_ = other.description_;
       createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
       modifiedAt_ = other.modifiedAt_ != null ? other.modifiedAt_.Clone() : null;
-      userId_ = other.userId_;
       computeCluster_ = other.computeCluster_ != null ? other.computeCluster_.Clone() : null;
       nodeCapacityType_ = other.nodeCapacityType_ != null ? other.nodeCapacityType_.Clone() : null;
       instanceTypes_ = other.instanceTypes_.Clone();
@@ -76293,21 +76253,6 @@ namespace Clarifai.Api {
       get { return modifiedAt_; }
       set {
         modifiedAt_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "user_id" field.</summary>
-    public const int UserIdFieldNumber = 5;
-    private string userId_ = "";
-    /// <summary>
-    /// The user/org that this nodepool belongs to.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
-      get { return userId_; }
-      set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -76433,7 +76378,6 @@ namespace Clarifai.Api {
       if (Description != other.Description) return false;
       if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
       if (!object.Equals(ModifiedAt, other.ModifiedAt)) return false;
-      if (UserId != other.UserId) return false;
       if (!object.Equals(ComputeCluster, other.ComputeCluster)) return false;
       if (!object.Equals(NodeCapacityType, other.NodeCapacityType)) return false;
       if(!instanceTypes_.Equals(other.instanceTypes_)) return false;
@@ -76452,7 +76396,6 @@ namespace Clarifai.Api {
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
       if (modifiedAt_ != null) hash ^= ModifiedAt.GetHashCode();
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
       if (computeCluster_ != null) hash ^= ComputeCluster.GetHashCode();
       if (nodeCapacityType_ != null) hash ^= NodeCapacityType.GetHashCode();
       hash ^= instanceTypes_.GetHashCode();
@@ -76493,10 +76436,6 @@ namespace Clarifai.Api {
       if (modifiedAt_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(ModifiedAt);
-      }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(UserId);
       }
       if (computeCluster_ != null) {
         output.WriteRawTag(50);
@@ -76549,10 +76488,6 @@ namespace Clarifai.Api {
         output.WriteRawTag(34);
         output.WriteMessage(ModifiedAt);
       }
-      if (UserId.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(UserId);
-      }
       if (computeCluster_ != null) {
         output.WriteRawTag(50);
         output.WriteMessage(ComputeCluster);
@@ -76599,9 +76534,6 @@ namespace Clarifai.Api {
       }
       if (modifiedAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ModifiedAt);
-      }
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
       }
       if (computeCluster_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ComputeCluster);
@@ -76651,9 +76583,6 @@ namespace Clarifai.Api {
           ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         ModifiedAt.MergeFrom(other.ModifiedAt);
-      }
-      if (other.UserId.Length != 0) {
-        UserId = other.UserId;
       }
       if (other.computeCluster_ != null) {
         if (computeCluster_ == null) {
@@ -76721,10 +76650,6 @@ namespace Clarifai.Api {
               ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(ModifiedAt);
-            break;
-          }
-          case 42: {
-            UserId = input.ReadString();
             break;
           }
           case 50: {
@@ -76802,10 +76727,6 @@ namespace Clarifai.Api {
               ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(ModifiedAt);
-            break;
-          }
-          case 42: {
-            UserId = input.ReadString();
             break;
           }
           case 50: {
@@ -77617,6 +77538,7 @@ namespace Clarifai.Api {
       userId_ = other.userId_;
       createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
       modifiedAt_ = other.modifiedAt_ != null ? other.modifiedAt_.Clone() : null;
+      visibility_ = other.visibility_ != null ? other.visibility_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -77726,6 +77648,23 @@ namespace Clarifai.Api {
       }
     }
 
+    /// <summary>Field number for the "visibility" field.</summary>
+    public const int VisibilityFieldNumber = 8;
+    private global::Clarifai.Api.Visibility visibility_;
+    /// <summary>
+    /// The visibility field represents whether this message is privately/publicly visible.
+    /// To be visible to the public the App that contains it AND the User that contains the App must
+    /// also be publicly visible.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.Visibility Visibility {
+      get { return visibility_; }
+      set {
+        visibility_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -77748,6 +77687,7 @@ namespace Clarifai.Api {
       if (UserId != other.UserId) return false;
       if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
       if (!object.Equals(ModifiedAt, other.ModifiedAt)) return false;
+      if (!object.Equals(Visibility, other.Visibility)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -77762,6 +77702,7 @@ namespace Clarifai.Api {
       if (UserId.Length != 0) hash ^= UserId.GetHashCode();
       if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
       if (modifiedAt_ != null) hash ^= ModifiedAt.GetHashCode();
+      if (visibility_ != null) hash ^= Visibility.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -77808,6 +77749,10 @@ namespace Clarifai.Api {
         output.WriteRawTag(58);
         output.WriteMessage(ModifiedAt);
       }
+      if (visibility_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Visibility);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -77846,6 +77791,10 @@ namespace Clarifai.Api {
         output.WriteRawTag(58);
         output.WriteMessage(ModifiedAt);
       }
+      if (visibility_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Visibility);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -77876,6 +77825,9 @@ namespace Clarifai.Api {
       }
       if (modifiedAt_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ModifiedAt);
+      }
+      if (visibility_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Visibility);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -77918,6 +77870,12 @@ namespace Clarifai.Api {
           ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         ModifiedAt.MergeFrom(other.ModifiedAt);
+      }
+      if (other.visibility_ != null) {
+        if (visibility_ == null) {
+          Visibility = new global::Clarifai.Api.Visibility();
+        }
+        Visibility.MergeFrom(other.Visibility);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -77971,6 +77929,13 @@ namespace Clarifai.Api {
             input.ReadMessage(ModifiedAt);
             break;
           }
+          case 66: {
+            if (visibility_ == null) {
+              Visibility = new global::Clarifai.Api.Visibility();
+            }
+            input.ReadMessage(Visibility);
+            break;
+          }
         }
       }
     #endif
@@ -78021,6 +77986,13 @@ namespace Clarifai.Api {
               ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(ModifiedAt);
+            break;
+          }
+          case 66: {
+            if (visibility_ == null) {
+              Visibility = new global::Clarifai.Api.Visibility();
+            }
+            input.ReadMessage(Visibility);
             break;
           }
         }
