@@ -916,86 +916,87 @@ namespace Clarifai.Api {
             "T05fREVNQU5EX1RZUEUQARINCglTUE9UX1RZUEUQAiJgCgxJbnN0YW5jZVR5",
             "cGUSCgoCaWQYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkSLwoMY29tcHV0",
             "ZV9pbmZvGAMgASgLMhkuY2xhcmlmYWkuYXBpLkNvbXB1dGVJbmZvIikKDUNs",
-            "b3VkUHJvdmlkZXISCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCSKWAgoOQ29t",
+            "b3VkUHJvdmlkZXISCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCSLgAgoOQ29t",
             "cHV0ZUNsdXN0ZXISCgoCaWQYASABKAkSEwoLZGVzY3JpcHRpb24YAiABKAkS",
             "MwoOY2xvdWRfcHJvdmlkZXIYAyABKAsyGy5jbGFyaWZhaS5hcGkuQ2xvdWRQ",
             "cm92aWRlchIOCgZyZWdpb24YBCABKAkSDwoHdXNlcl9pZBgFIAEoCRIuCgpj",
             "cmVhdGVkX2F0GAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIv",
             "Cgttb2RpZmllZF9hdBgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
             "bXASLAoKdmlzaWJpbGl0eRgIIAEoCzIYLmNsYXJpZmFpLmFwaS5WaXNpYmls",
-            "aXR5IoMBCgtDb21wdXRlSW5mbxIQCghudW1fY3B1cxgBIAEoDRISCgpjcHVf",
-            "bWVtb3J5GAIgASgJEhgKEG51bV9hY2NlbGVyYXRvcnMYAyABKA0SGgoSYWNj",
-            "ZWxlcmF0b3JfbWVtb3J5GAQgASgJEhgKEGFjY2VsZXJhdG9yX3R5cGUYBSAD",
-            "KAkiuAEKD0F1dG9zY2FsZUNvbmZpZxIUCgxtaW5fcmVwbGljYXMYASABKA0S",
-            "FAoMbWF4X3JlcGxpY2FzGAIgASgNEh8KF3RyYWZmaWNfaGlzdG9yeV9zZWNv",
-            "bmRzGAMgASgNEiAKGHNjYWxlX2Rvd25fZGVsYXlfc2Vjb25kcxgEIAEoDRIe",
-            "ChZzY2FsZV91cF9kZWxheV9zZWNvbmRzGAUgASgNEhYKDmVuYWJsZV9wYWNr",
-            "aW5nGAYgASgIIv4ECgpEZXBsb3ltZW50EgoKAmlkGAEgASgJEg8KB3VzZXJf",
-            "aWQYAiABKAkSNwoQYXV0b3NjYWxlX2NvbmZpZxgDIAEoCzIdLmNsYXJpZmFp",
-            "LmFwaS5BdXRvc2NhbGVDb25maWcSKQoJbm9kZXBvb2xzGAQgAygLMhYuY2xh",
-            "cmlmYWkuYXBpLk5vZGVwb29sEkQKEXNjaGVkdWxpbmdfY2hvaWNlGAcgASgO",
-            "MikuY2xhcmlmYWkuYXBpLkRlcGxveW1lbnQuU2NoZWR1bGluZ0Nob2ljZRIs",
-            "Cgp2aXNpYmlsaXR5GAggASgLMhguY2xhcmlmYWkuYXBpLlZpc2liaWxpdHkS",
-            "KQoIbWV0YWRhdGEYCSABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0EhMK",
-            "C2Rlc2NyaXB0aW9uGAogASgJEiQKBndvcmtlchgLIAEoCzIULmNsYXJpZmFp",
-            "LmFwaS5Xb3JrZXISLgoKY3JlYXRlZF9hdBgMIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASLwoLbW9kaWZpZWRfYXQYDSABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuVGltZXN0YW1wIqcBChBTY2hlZHVsaW5nQ2hvaWNlEh0KGVVO",
-            "S05PV05fU0NIRURVTElOR19DSE9JQ0UQABIICgRGQUlMEAESCgoGUkFORE9N",
-            "EAISCQoFUFJJQ0UQAxIPCgtQRVJGT1JNQU5DRRAEEgsKB05FVFdPUksQBRIP",
-            "CgtVVElMSVpBVElPThAGEg8KC1BSRUZFUl9TUE9UEAcSEwoPUFJFRkVSX09O",
-            "REVNQU5EEAhKBAgFEAZKBAgGEAcijgEKDlJ1bm5lclNlbGVjdG9yEigKCG5v",
-            "ZGVwb29sGAEgASgLMhYuY2xhcmlmYWkuYXBpLk5vZGVwb29sEiQKBnJ1bm5l",
-            "chgCIAEoCzIULmNsYXJpZmFpLmFwaS5SdW5uZXISLAoKZGVwbG95bWVudBgD",
-            "IAEoCzIYLmNsYXJpZmFpLmFwaS5EZXBsb3ltZW50InkKDlByb2Nlc3NpbmdJ",
-            "bmZvEjoKEnJ1bm5lcl9tZXRob2RfdHlwZRgBIAEoDjIeLmNsYXJpZmFpLmFw",
-            "aS5SdW5uZXJNZXRob2RUeXBlEisKBnN0YXR1cxgCIAEoCzIbLmNsYXJpZmFp",
-            "LmFwaS5zdGF0dXMuU3RhdHVzKl4KFFdvcmtmbG93TW9kZWxVc2VDYXNlEiMK",
-            "H1dPUktGTE9XX01PREVMX1VTRV9DQVNFX05PVF9TRVQQABISCg5DTEFTU0lG",
-            "SUNBVElPThABEg0KCURFVEVDVElPThACKpABChtEYXRhc2V0VmVyc2lvblJl",
-            "cXVlc3RPcmlnaW4SKgomREFUQVNFVF9WRVJTSU9OX1JFUVVFU1RfT1JJR0lO",
-            "X05PVF9TRVQQABIKCgZNQU5VQUwQARIMCghUUkFJTklORxACEhUKEUVWQUxf",
-            "R1JPVU5EX1RSVVRIEAMSFAoQRVZBTF9QUkVESUNUSU9OUxAEKvkBCh5EYXRh",
-            "c2V0VmVyc2lvbk1ldHJpY3NHcm91cFR5cGUSLgoqREFUQVNFVF9WRVJTSU9O",
-            "X01FVFJJQ1NfR1JPVVBfVFlQRV9OT1RfU0VUEAASDgoKSU5QVVRfVFlQRRAC",
-            "Eg4KCkNPTkNFUFRfSUQQChISCg5DT05DRVBUU19DT1VOVBALEhgKFEJPVU5E",
-            "SU5HX0JPWEVTX0NPVU5UEBQSEgoOUE9MWUdPTlNfQ09VTlQQFRIQCgxQT0lO",
-            "VFNfQ09VTlQQFhIPCgtNQVNLU19DT1VOVBAXEhAKDFBJWEVMU19DT1VOVBAe",
-            "EhAKDEFTUEVDVF9SQVRJTxAfKoUBChpEYXRhc2V0VmVyc2lvbkV4cG9ydEZv",
-            "cm1hdBIpCiVEQVRBU0VUX1ZFUlNJT05fRVhQT1JUX0ZPUk1BVF9OT1RfU0VU",
-            "EAASGgoWQ0xBUklGQUlfREFUQV9QUk9UT0JVRhABEhYKEkNMQVJJRkFJX0RB",
-            "VEFfSlNPThADEggKBENPQ08QAipIChBFeHBpcmF0aW9uQWN0aW9uEh0KGUVY",
-            "UElSQVRJT05fQUNUSU9OX05PVF9TRVQQABIJCgVERUxBWRABEgoKBkVYUElS",
-            "WRACKk0KDExpY2Vuc2VTY29wZRIZChVMSUNFTlNFX1NDT1BFX05PVF9TRVQQ",
-            "ABILCgdQUkVESUNUEAESCQoFVFJBSU4QAhIKCgZTRUFSQ0gQAypQCghEYXRh",
-            "VHlwZRINCglVTkRFRklORUQQABIKCgZTVFJJTkcQARIJCgVVSU5UOBACEgkK",
-            "BUlOVDMyEAMSCQoFSU5UNjQQBBIICgRGUDMyEAUqjwEKD1ZhbHVlQ29tcGFy",
-            "YXRvchIdChlDT05DRVBUX1RIUkVTSE9MRF9OT1RfU0VUEAASEAoMR1JFQVRF",
-            "Ul9USEFOEAESGQoVR1JFQVRFUl9USEFOX09SX0VRVUFMEAISDQoJTEVTU19U",
-            "SEFOEAMSFgoSTEVTU19USEFOX09SX0VRVUFMEAQSCQoFRVFVQUwQBSqBAQoO",
-            "RXZhbHVhdGlvblR5cGUSDQoJVW5kZWZpbmVkEAASEgoOQ2xhc3NpZmljYXRp",
-            "b24QARINCglEZXRlY3Rpb24QAhIQCgxTZWdtZW50YXRpb24QAxIOCgpDbHVz",
-            "dGVyaW5nEAQSCwoHVHJhY2tlchAFEg4KCkdlbmVyYXRpb24QBipmCgxBUElF",
-            "dmVudFR5cGUSGgoWQVBJX0VWRU5UX1RZUEVfTk9UX1NFVBAAEhMKD09OX1BS",
-            "RU1fUFJFRElDVBABEhEKDU9OX1BSRU1fVFJBSU4QAhISCg5PTl9QUkVNX1NF",
-            "QVJDSBADKjwKEVVzYWdlSW50ZXJ2YWxUeXBlEgkKBXVuZGVmEAASBwoDZGF5",
-            "EAESCQoFbW9udGgQAhIICgR5ZWFyEAMqfQoSQW5ub3RhdGlvbkRhdGFUeXBl",
-            "EiAKHEFOTk9UQVRJT05fREFUQV9UWVBFX05PVF9TRVQQABIHCgNUQUcQARIQ",
-            "CgxCT1VORElOR19CT1gQAhILCgdQT0xZR09OEAQSCQoFUE9JTlQQCBIICgRT",
-            "UEFOEBASCAoETUFTSxAgKh0KCFJvbGVUeXBlEggKBFRFQU0QABIHCgNPUkcQ",
-            "ASokChBTdGF0VmFsdWVBZ2dUeXBlEgcKA1NVTRAAEgcKA0FWRxABKmAKD1N0",
-            "YXRUaW1lQWdnVHlwZRIPCgtOT19USU1FX0FHRxAAEggKBFlFQVIQARIJCgVN",
-            "T05USBACEggKBFdFRUsQAxIHCgNEQVkQBBIICgRIT1VSEAUSCgoGTUlOVVRF",
-            "EAYqYgoTVmFsaWRhdGlvbkVycm9yVHlwZRIhCh1WQUxJREFUSU9OX0VSUk9S",
-            "X1RZUEVfTk9UX1NFVBAAEg4KClJFU1RSSUNURUQQARIMCghEQVRBQkFTRRAC",
-            "EgoKBkZPUk1BVBADKlsKGUlucHV0SURDb25mbGljdFJlc29sdXRpb24SKAok",
-            "SU5QVVRfSURfQ09ORkxJQ1RfUkVTT0xVVElPTl9OT1RfU0VUEAASCAoEU0tJ",
-            "UBABEgoKBlNVRkZJWBACKnMKEFJ1bm5lck1ldGhvZFR5cGUSCwoHVU5LTk9X",
-            "ThAAEg8KC1VOQVJZX1VOQVJZEAESEwoPVU5BUllfU1RSRUFNSU5HEAISEwoP",
-            "U1RSRUFNSU5HX1VOQVJZEAMSFwoTU1RSRUFNSU5HX1NUUkVBTUlORxAEQlkK",
-            "FWNvbS5jbGFyaWZhaS5ncnBjLmFwaVABWjdnaXRodWIuY29tL0NsYXJpZmFp",
-            "L2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXBpogIEQ0FJUGIG",
-            "cHJvdG8z"));
+            "aXR5EhQKDGNsdXN0ZXJfdHlwZRgJIAEoCRISCgptYW5hZ2VkX2J5GAogASgJ",
+            "Eh4KA2tleRgLIAEoCzIRLmNsYXJpZmFpLmFwaS5LZXkigwEKC0NvbXB1dGVJ",
+            "bmZvEhAKCG51bV9jcHVzGAEgASgNEhIKCmNwdV9tZW1vcnkYAiABKAkSGAoQ",
+            "bnVtX2FjY2VsZXJhdG9ycxgDIAEoDRIaChJhY2NlbGVyYXRvcl9tZW1vcnkY",
+            "BCABKAkSGAoQYWNjZWxlcmF0b3JfdHlwZRgFIAMoCSK4AQoPQXV0b3NjYWxl",
+            "Q29uZmlnEhQKDG1pbl9yZXBsaWNhcxgBIAEoDRIUCgxtYXhfcmVwbGljYXMY",
+            "AiABKA0SHwoXdHJhZmZpY19oaXN0b3J5X3NlY29uZHMYAyABKA0SIAoYc2Nh",
+            "bGVfZG93bl9kZWxheV9zZWNvbmRzGAQgASgNEh4KFnNjYWxlX3VwX2RlbGF5",
+            "X3NlY29uZHMYBSABKA0SFgoOZW5hYmxlX3BhY2tpbmcYBiABKAgi/gQKCkRl",
+            "cGxveW1lbnQSCgoCaWQYASABKAkSDwoHdXNlcl9pZBgCIAEoCRI3ChBhdXRv",
+            "c2NhbGVfY29uZmlnGAMgASgLMh0uY2xhcmlmYWkuYXBpLkF1dG9zY2FsZUNv",
+            "bmZpZxIpCglub2RlcG9vbHMYBCADKAsyFi5jbGFyaWZhaS5hcGkuTm9kZXBv",
+            "b2wSRAoRc2NoZWR1bGluZ19jaG9pY2UYByABKA4yKS5jbGFyaWZhaS5hcGku",
+            "RGVwbG95bWVudC5TY2hlZHVsaW5nQ2hvaWNlEiwKCnZpc2liaWxpdHkYCCAB",
+            "KAsyGC5jbGFyaWZhaS5hcGkuVmlzaWJpbGl0eRIpCghtZXRhZGF0YRgJIAEo",
+            "CzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3QSEwoLZGVzY3JpcHRpb24YCiAB",
+            "KAkSJAoGd29ya2VyGAsgASgLMhQuY2xhcmlmYWkuYXBpLldvcmtlchIuCgpj",
+            "cmVhdGVkX2F0GAwgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIv",
+            "Cgttb2RpZmllZF9hdBgNIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXAipwEKEFNjaGVkdWxpbmdDaG9pY2USHQoZVU5LTk9XTl9TQ0hFRFVMSU5H",
+            "X0NIT0lDRRAAEggKBEZBSUwQARIKCgZSQU5ET00QAhIJCgVQUklDRRADEg8K",
+            "C1BFUkZPUk1BTkNFEAQSCwoHTkVUV09SSxAFEg8KC1VUSUxJWkFUSU9OEAYS",
+            "DwoLUFJFRkVSX1NQT1QQBxITCg9QUkVGRVJfT05ERU1BTkQQCEoECAUQBkoE",
+            "CAYQByKOAQoOUnVubmVyU2VsZWN0b3ISKAoIbm9kZXBvb2wYASABKAsyFi5j",
+            "bGFyaWZhaS5hcGkuTm9kZXBvb2wSJAoGcnVubmVyGAIgASgLMhQuY2xhcmlm",
+            "YWkuYXBpLlJ1bm5lchIsCgpkZXBsb3ltZW50GAMgASgLMhguY2xhcmlmYWku",
+            "YXBpLkRlcGxveW1lbnQieQoOUHJvY2Vzc2luZ0luZm8SOgoScnVubmVyX21l",
+            "dGhvZF90eXBlGAEgASgOMh4uY2xhcmlmYWkuYXBpLlJ1bm5lck1ldGhvZFR5",
+            "cGUSKwoGc3RhdHVzGAIgASgLMhsuY2xhcmlmYWkuYXBpLnN0YXR1cy5TdGF0",
+            "dXMqXgoUV29ya2Zsb3dNb2RlbFVzZUNhc2USIwofV09SS0ZMT1dfTU9ERUxf",
+            "VVNFX0NBU0VfTk9UX1NFVBAAEhIKDkNMQVNTSUZJQ0FUSU9OEAESDQoJREVU",
+            "RUNUSU9OEAIqkAEKG0RhdGFzZXRWZXJzaW9uUmVxdWVzdE9yaWdpbhIqCiZE",
+            "QVRBU0VUX1ZFUlNJT05fUkVRVUVTVF9PUklHSU5fTk9UX1NFVBAAEgoKBk1B",
+            "TlVBTBABEgwKCFRSQUlOSU5HEAISFQoRRVZBTF9HUk9VTkRfVFJVVEgQAxIU",
+            "ChBFVkFMX1BSRURJQ1RJT05TEAQq+QEKHkRhdGFzZXRWZXJzaW9uTWV0cmlj",
+            "c0dyb3VwVHlwZRIuCipEQVRBU0VUX1ZFUlNJT05fTUVUUklDU19HUk9VUF9U",
+            "WVBFX05PVF9TRVQQABIOCgpJTlBVVF9UWVBFEAISDgoKQ09OQ0VQVF9JRBAK",
+            "EhIKDkNPTkNFUFRTX0NPVU5UEAsSGAoUQk9VTkRJTkdfQk9YRVNfQ09VTlQQ",
+            "FBISCg5QT0xZR09OU19DT1VOVBAVEhAKDFBPSU5UU19DT1VOVBAWEg8KC01B",
+            "U0tTX0NPVU5UEBcSEAoMUElYRUxTX0NPVU5UEB4SEAoMQVNQRUNUX1JBVElP",
+            "EB8qhQEKGkRhdGFzZXRWZXJzaW9uRXhwb3J0Rm9ybWF0EikKJURBVEFTRVRf",
+            "VkVSU0lPTl9FWFBPUlRfRk9STUFUX05PVF9TRVQQABIaChZDTEFSSUZBSV9E",
+            "QVRBX1BST1RPQlVGEAESFgoSQ0xBUklGQUlfREFUQV9KU09OEAMSCAoEQ09D",
+            "TxACKkgKEEV4cGlyYXRpb25BY3Rpb24SHQoZRVhQSVJBVElPTl9BQ1RJT05f",
+            "Tk9UX1NFVBAAEgkKBURFTEFZEAESCgoGRVhQSVJZEAIqTQoMTGljZW5zZVNj",
+            "b3BlEhkKFUxJQ0VOU0VfU0NPUEVfTk9UX1NFVBAAEgsKB1BSRURJQ1QQARIJ",
+            "CgVUUkFJThACEgoKBlNFQVJDSBADKlAKCERhdGFUeXBlEg0KCVVOREVGSU5F",
+            "RBAAEgoKBlNUUklORxABEgkKBVVJTlQ4EAISCQoFSU5UMzIQAxIJCgVJTlQ2",
+            "NBAEEggKBEZQMzIQBSqPAQoPVmFsdWVDb21wYXJhdG9yEh0KGUNPTkNFUFRf",
+            "VEhSRVNIT0xEX05PVF9TRVQQABIQCgxHUkVBVEVSX1RIQU4QARIZChVHUkVB",
+            "VEVSX1RIQU5fT1JfRVFVQUwQAhINCglMRVNTX1RIQU4QAxIWChJMRVNTX1RI",
+            "QU5fT1JfRVFVQUwQBBIJCgVFUVVBTBAFKoEBCg5FdmFsdWF0aW9uVHlwZRIN",
+            "CglVbmRlZmluZWQQABISCg5DbGFzc2lmaWNhdGlvbhABEg0KCURldGVjdGlv",
+            "bhACEhAKDFNlZ21lbnRhdGlvbhADEg4KCkNsdXN0ZXJpbmcQBBILCgdUcmFj",
+            "a2VyEAUSDgoKR2VuZXJhdGlvbhAGKmYKDEFQSUV2ZW50VHlwZRIaChZBUElf",
+            "RVZFTlRfVFlQRV9OT1RfU0VUEAASEwoPT05fUFJFTV9QUkVESUNUEAESEQoN",
+            "T05fUFJFTV9UUkFJThACEhIKDk9OX1BSRU1fU0VBUkNIEAMqPAoRVXNhZ2VJ",
+            "bnRlcnZhbFR5cGUSCQoFdW5kZWYQABIHCgNkYXkQARIJCgVtb250aBACEggK",
+            "BHllYXIQAyp9ChJBbm5vdGF0aW9uRGF0YVR5cGUSIAocQU5OT1RBVElPTl9E",
+            "QVRBX1RZUEVfTk9UX1NFVBAAEgcKA1RBRxABEhAKDEJPVU5ESU5HX0JPWBAC",
+            "EgsKB1BPTFlHT04QBBIJCgVQT0lOVBAIEggKBFNQQU4QEBIICgRNQVNLECAq",
+            "HQoIUm9sZVR5cGUSCAoEVEVBTRAAEgcKA09SRxABKiQKEFN0YXRWYWx1ZUFn",
+            "Z1R5cGUSBwoDU1VNEAASBwoDQVZHEAEqYAoPU3RhdFRpbWVBZ2dUeXBlEg8K",
+            "C05PX1RJTUVfQUdHEAASCAoEWUVBUhABEgkKBU1PTlRIEAISCAoEV0VFSxAD",
+            "EgcKA0RBWRAEEggKBEhPVVIQBRIKCgZNSU5VVEUQBipiChNWYWxpZGF0aW9u",
+            "RXJyb3JUeXBlEiEKHVZBTElEQVRJT05fRVJST1JfVFlQRV9OT1RfU0VUEAAS",
+            "DgoKUkVTVFJJQ1RFRBABEgwKCERBVEFCQVNFEAISCgoGRk9STUFUEAMqWwoZ",
+            "SW5wdXRJRENvbmZsaWN0UmVzb2x1dGlvbhIoCiRJTlBVVF9JRF9DT05GTElD",
+            "VF9SRVNPTFVUSU9OX05PVF9TRVQQABIICgRTS0lQEAESCgoGU1VGRklYEAIq",
+            "cwoQUnVubmVyTWV0aG9kVHlwZRILCgdVTktOT1dOEAASDwoLVU5BUllfVU5B",
+            "UlkQARITCg9VTkFSWV9TVFJFQU1JTkcQAhITCg9TVFJFQU1JTkdfVU5BUlkQ",
+            "AxIXChNTVFJFQU1JTkdfU1RSRUFNSU5HEARCWQoVY29tLmNsYXJpZmFpLmdy",
+            "cGMuYXBpUAFaN2dpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlmYWktZ28tZ3Jw",
+            "Yy9wcm90by9jbGFyaWZhaS9hcGmiAgRDQUlQYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::MatrixReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.WorkflowModelUseCase), typeof(global::Clarifai.Api.DatasetVersionRequestOrigin), typeof(global::Clarifai.Api.DatasetVersionMetricsGroupType), typeof(global::Clarifai.Api.DatasetVersionExportFormat), typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.DataType), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.AnnotationDataType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), typeof(global::Clarifai.Api.InputIDConflictResolution), typeof(global::Clarifai.Api.RunnerMethodType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1204,7 +1205,7 @@ namespace Clarifai.Api {
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.NodeCapacityType), global::Clarifai.Api.NodeCapacityType.Parser, new[]{ "CapacityTypes" }, null, new[]{ typeof(global::Clarifai.Api.NodeCapacityType.Types.CapacityType) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.InstanceType), global::Clarifai.Api.InstanceType.Parser, new[]{ "Id", "Description", "ComputeInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.CloudProvider), global::Clarifai.Api.CloudProvider.Parser, new[]{ "Id", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputeCluster), global::Clarifai.Api.ComputeCluster.Parser, new[]{ "Id", "Description", "CloudProvider", "Region", "UserId", "CreatedAt", "ModifiedAt", "Visibility" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputeCluster), global::Clarifai.Api.ComputeCluster.Parser, new[]{ "Id", "Description", "CloudProvider", "Region", "UserId", "CreatedAt", "ModifiedAt", "Visibility", "ClusterType", "ManagedBy", "Key" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputeInfo), global::Clarifai.Api.ComputeInfo.Parser, new[]{ "NumCpus", "CpuMemory", "NumAccelerators", "AcceleratorMemory", "AcceleratorType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AutoscaleConfig), global::Clarifai.Api.AutoscaleConfig.Parser, new[]{ "MinReplicas", "MaxReplicas", "TrafficHistorySeconds", "ScaleDownDelaySeconds", "ScaleUpDelaySeconds", "EnablePacking" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Deployment), global::Clarifai.Api.Deployment.Parser, new[]{ "Id", "UserId", "AutoscaleConfig", "Nodepools", "SchedulingChoice", "Visibility", "Metadata", "Description", "Worker", "CreatedAt", "ModifiedAt" }, null, new[]{ typeof(global::Clarifai.Api.Deployment.Types.SchedulingChoice) }, null, null),
@@ -77539,6 +77540,9 @@ namespace Clarifai.Api {
       createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
       modifiedAt_ = other.modifiedAt_ != null ? other.modifiedAt_.Clone() : null;
       visibility_ = other.visibility_ != null ? other.visibility_.Clone() : null;
+      clusterType_ = other.clusterType_;
+      managedBy_ = other.managedBy_;
+      key_ = other.key_ != null ? other.key_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -77578,6 +77582,10 @@ namespace Clarifai.Api {
     /// <summary>Field number for the "cloud_provider" field.</summary>
     public const int CloudProviderFieldNumber = 3;
     private global::Clarifai.Api.CloudProvider cloudProvider_;
+    /// <summary>
+    /// The cloud provider where this cluster is hosted.
+    /// Some example cloud provider IDs may be aws, gcp, azure, local, kubernetes, etc.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Clarifai.Api.CloudProvider CloudProvider {
@@ -77665,6 +77673,65 @@ namespace Clarifai.Api {
       }
     }
 
+    /// <summary>Field number for the "cluster_type" field.</summary>
+    public const int ClusterTypeFieldNumber = 9;
+    private string clusterType_ = "";
+    /// <summary>
+    /// We offer different types of compute clusters such as:
+    /// 'serverless' which only Clarifai can create.
+    /// 'dedicated' where you're in control of defining the nodepools within the cluster
+    /// 'local-dev' which means you're responsible for starting runners manually which is great for local
+    /// development but not recommended for production use cases.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClusterType {
+      get { return clusterType_; }
+      set {
+        clusterType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "managed_by" field.</summary>
+    public const int ManagedByFieldNumber = 10;
+    private string managedBy_ = "";
+    /// <summary>
+    /// Managed by represents who is responsible for the cluster.
+    /// This is currently either "clarifai" where we fully manage the infrastructure.
+    /// Or, "user" where the user is responsible for the underlying infrastructure.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ManagedBy {
+      get { return managedBy_; }
+      set {
+        managedBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "key" field.</summary>
+    public const int KeyFieldNumber = 11;
+    private global::Clarifai.Api.Key key_;
+    /// <summary>
+    /// Key to use within the compute cluster for all requests to the API.
+    /// You can post with the key.id filled in to set the key for the compute cluster.
+    /// The responses will intentionaly only return the description of the key for security
+    /// purposes since you may have other people through orgs/teams having access to this compute
+    /// cluster who should not view your key.
+    /// This must be a valid key created before creating the ComputeCluster.
+    /// Deleting this key will not be prevented, which means all resources in this ComputeCluster
+    /// will lose connection to the API, so delete keys at your own risk.
+    /// The user_id who owns the key must match the user_id provided in the ComputeCluster.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.Key Key {
+      get { return key_; }
+      set {
+        key_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -77688,6 +77755,9 @@ namespace Clarifai.Api {
       if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
       if (!object.Equals(ModifiedAt, other.ModifiedAt)) return false;
       if (!object.Equals(Visibility, other.Visibility)) return false;
+      if (ClusterType != other.ClusterType) return false;
+      if (ManagedBy != other.ManagedBy) return false;
+      if (!object.Equals(Key, other.Key)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -77703,6 +77773,9 @@ namespace Clarifai.Api {
       if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
       if (modifiedAt_ != null) hash ^= ModifiedAt.GetHashCode();
       if (visibility_ != null) hash ^= Visibility.GetHashCode();
+      if (ClusterType.Length != 0) hash ^= ClusterType.GetHashCode();
+      if (ManagedBy.Length != 0) hash ^= ManagedBy.GetHashCode();
+      if (key_ != null) hash ^= Key.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -77753,6 +77826,18 @@ namespace Clarifai.Api {
         output.WriteRawTag(66);
         output.WriteMessage(Visibility);
       }
+      if (ClusterType.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ClusterType);
+      }
+      if (ManagedBy.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(ManagedBy);
+      }
+      if (key_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Key);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -77795,6 +77880,18 @@ namespace Clarifai.Api {
         output.WriteRawTag(66);
         output.WriteMessage(Visibility);
       }
+      if (ClusterType.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ClusterType);
+      }
+      if (ManagedBy.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(ManagedBy);
+      }
+      if (key_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Key);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -77828,6 +77925,15 @@ namespace Clarifai.Api {
       }
       if (visibility_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Visibility);
+      }
+      if (ClusterType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClusterType);
+      }
+      if (ManagedBy.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ManagedBy);
+      }
+      if (key_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Key);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -77876,6 +77982,18 @@ namespace Clarifai.Api {
           Visibility = new global::Clarifai.Api.Visibility();
         }
         Visibility.MergeFrom(other.Visibility);
+      }
+      if (other.ClusterType.Length != 0) {
+        ClusterType = other.ClusterType;
+      }
+      if (other.ManagedBy.Length != 0) {
+        ManagedBy = other.ManagedBy;
+      }
+      if (other.key_ != null) {
+        if (key_ == null) {
+          Key = new global::Clarifai.Api.Key();
+        }
+        Key.MergeFrom(other.Key);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -77936,6 +78054,21 @@ namespace Clarifai.Api {
             input.ReadMessage(Visibility);
             break;
           }
+          case 74: {
+            ClusterType = input.ReadString();
+            break;
+          }
+          case 82: {
+            ManagedBy = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (key_ == null) {
+              Key = new global::Clarifai.Api.Key();
+            }
+            input.ReadMessage(Key);
+            break;
+          }
         }
       }
     #endif
@@ -77993,6 +78126,21 @@ namespace Clarifai.Api {
               Visibility = new global::Clarifai.Api.Visibility();
             }
             input.ReadMessage(Visibility);
+            break;
+          }
+          case 74: {
+            ClusterType = input.ReadString();
+            break;
+          }
+          case 82: {
+            ManagedBy = input.ReadString();
+            break;
+          }
+          case 90: {
+            if (key_ == null) {
+              Key = new global::Clarifai.Api.Key();
+            }
+            input.ReadMessage(Key);
             break;
           }
         }
