@@ -686,6 +686,10 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiTrainingTimeEstimateResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListInstanceTypesRequest> __Marshaller_clarifai_api_ListInstanceTypesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListInstanceTypesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInstanceTypeResponse> __Marshaller_clarifai_api_MultiInstanceTypeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiInstanceTypeResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetComputeClusterRequest> __Marshaller_clarifai_api_GetComputeClusterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetComputeClusterRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleComputeClusterResponse> __Marshaller_clarifai_api_SingleComputeClusterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleComputeClusterResponse.Parser));
@@ -2501,6 +2505,14 @@ namespace Clarifai.Api {
         "PostModelVersionsTrainingTimeEstimate",
         __Marshaller_clarifai_api_PostModelVersionsTrainingTimeEstimateRequest,
         __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListInstanceTypesRequest, global::Clarifai.Api.MultiInstanceTypeResponse> __Method_ListInstanceTypes = new grpc::Method<global::Clarifai.Api.ListInstanceTypesRequest, global::Clarifai.Api.MultiInstanceTypeResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListInstanceTypes",
+        __Marshaller_clarifai_api_ListInstanceTypesRequest,
+        __Marshaller_clarifai_api_MultiInstanceTypeResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetComputeClusterRequest, global::Clarifai.Api.SingleComputeClusterResponse> __Method_GetComputeCluster = new grpc::Method<global::Clarifai.Api.GetComputeClusterRequest, global::Clarifai.Api.SingleComputeClusterResponse>(
@@ -5319,6 +5331,18 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> PostModelVersionsTrainingTimeEstimate(global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Get InstanceTypes given Cloud Provider and Region
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInstanceTypeResponse> ListInstanceTypes(global::Clarifai.Api.ListInstanceTypesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -16079,6 +16103,54 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsTrainingTimeEstimate, null, options, request);
       }
       /// <summary>
+      /// Get InstanceTypes given Cloud Provider and Region
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiInstanceTypeResponse ListInstanceTypes(global::Clarifai.Api.ListInstanceTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListInstanceTypes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get InstanceTypes given Cloud Provider and Region
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiInstanceTypeResponse ListInstanceTypes(global::Clarifai.Api.ListInstanceTypesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListInstanceTypes, null, options, request);
+      }
+      /// <summary>
+      /// Get InstanceTypes given Cloud Provider and Region
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstanceTypeResponse> ListInstanceTypesAsync(global::Clarifai.Api.ListInstanceTypesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListInstanceTypesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get InstanceTypes given Cloud Provider and Region
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstanceTypeResponse> ListInstanceTypesAsync(global::Clarifai.Api.ListInstanceTypesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListInstanceTypes, null, options, request);
+      }
+      /// <summary>
       /// ComputeCluster CRUD
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -16762,6 +16834,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostRunnerItemOutputs, serviceImpl.PostRunnerItemOutputs)
           .AddMethod(__Method_ProcessRunnerItems, serviceImpl.ProcessRunnerItems)
           .AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl.PostModelVersionsTrainingTimeEstimate)
+          .AddMethod(__Method_ListInstanceTypes, serviceImpl.ListInstanceTypes)
           .AddMethod(__Method_GetComputeCluster, serviceImpl.GetComputeCluster)
           .AddMethod(__Method_ListComputeClusters, serviceImpl.ListComputeClusters)
           .AddMethod(__Method_PostComputeClusters, serviceImpl.PostComputeClusters)
@@ -17007,6 +17080,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostRunnerItemOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemOutputResponse>(serviceImpl.PostRunnerItemOutputs));
       serviceBinder.AddMethod(__Method_ProcessRunnerItems, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(serviceImpl.ProcessRunnerItems));
       serviceBinder.AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse>(serviceImpl.PostModelVersionsTrainingTimeEstimate));
+      serviceBinder.AddMethod(__Method_ListInstanceTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInstanceTypesRequest, global::Clarifai.Api.MultiInstanceTypeResponse>(serviceImpl.ListInstanceTypes));
       serviceBinder.AddMethod(__Method_GetComputeCluster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetComputeClusterRequest, global::Clarifai.Api.SingleComputeClusterResponse>(serviceImpl.GetComputeCluster));
       serviceBinder.AddMethod(__Method_ListComputeClusters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse>(serviceImpl.ListComputeClusters));
       serviceBinder.AddMethod(__Method_PostComputeClusters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse>(serviceImpl.PostComputeClusters));
