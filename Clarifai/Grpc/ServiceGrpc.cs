@@ -3006,7 +3006,12 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Get a video input manifest.
+      /// Get a MPEG-DASH manifest for video-type inputs that were added via PostInputs and successfully processed
+      /// Experimental. Manifest is used by browser and desktop clients that implement an efficient streaming playback
+      /// This means client can switch between low-resolution and high-resolution video streams
+      /// Depending on network bandwidth or user's preference
+      /// This also means that reencoded video streams are reencoded in a uniform way, not relying on original format
+      /// Alternative to MPEG-dash is to stream original file with byte-range header
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -3030,8 +3035,12 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Add 1 or more input to an app.
-      /// The actual inputs processing is asynchronous.
+      /// PostInputs adds one or more inputs to the app.
+      /// Takes a list of image/video/audio/text URLs, image/video/audio bytes or raw text
+      /// Optionally, include concepts or dataset ids to link them
+      /// Optionally, include metadata for search
+      /// Note that inputs processing is asynchronous process
+      /// See ListInputs, StreamInputs or PostInputSearches to list results
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5123,6 +5132,16 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// PostUploads is used to upload files. Note that this does not create inputs.
+      /// returns job with uploadID, job has UPLOAD_IN_PROGRESS status
+      /// Actual upload content can be done in multiple calls with PutUploadContentParts
+      /// You can get status of upload with GetUpload or ListUploads endpoints
+      /// See also PostInputsUploads
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiUploadResponse> PostUploads(global::Clarifai.Api.PostUploadsRequest request, grpc::ServerCallContext context)
       {
@@ -5215,11 +5234,12 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Start uploading a file archive containing inputs.
-      /// Will create and return an inputs-add-job for tracking progress.
-      ///
-      /// Associated inputs-add-job contains an upload id which should be completed through `PutUploadContentParts` endpoint.
+      /// Create new upload job with a file archive containing inputs (images, videos, text, audio)
+      /// Actual file upload happens in next steps by calling `PutUploadContentParts` endpoint
+      /// and providing the file content in the request body.
+      /// This endpoint creates and return an inputs-add-job which contains an upload id needed for upload and further status tracking
       /// Completing the upload will automatically begin unpacking the archive and uploading the contents as inputs.
+      /// See also GetInputsAddJob and then GetInputsExtractionJob
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -6973,7 +6993,12 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_GetInput, null, options, request);
       }
       /// <summary>
-      /// Get a video input manifest.
+      /// Get a MPEG-DASH manifest for video-type inputs that were added via PostInputs and successfully processed
+      /// Experimental. Manifest is used by browser and desktop clients that implement an efficient streaming playback
+      /// This means client can switch between low-resolution and high-resolution video streams
+      /// Depending on network bandwidth or user's preference
+      /// This also means that reencoded video streams are reencoded in a uniform way, not relying on original format
+      /// Alternative to MPEG-dash is to stream original file with byte-range header
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6986,7 +7011,12 @@ namespace Clarifai.Api {
         return GetInputVideoManifest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get a video input manifest.
+      /// Get a MPEG-DASH manifest for video-type inputs that were added via PostInputs and successfully processed
+      /// Experimental. Manifest is used by browser and desktop clients that implement an efficient streaming playback
+      /// This means client can switch between low-resolution and high-resolution video streams
+      /// Depending on network bandwidth or user's preference
+      /// This also means that reencoded video streams are reencoded in a uniform way, not relying on original format
+      /// Alternative to MPEG-dash is to stream original file with byte-range header
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6997,7 +7027,12 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_GetInputVideoManifest, null, options, request);
       }
       /// <summary>
-      /// Get a video input manifest.
+      /// Get a MPEG-DASH manifest for video-type inputs that were added via PostInputs and successfully processed
+      /// Experimental. Manifest is used by browser and desktop clients that implement an efficient streaming playback
+      /// This means client can switch between low-resolution and high-resolution video streams
+      /// Depending on network bandwidth or user's preference
+      /// This also means that reencoded video streams are reencoded in a uniform way, not relying on original format
+      /// Alternative to MPEG-dash is to stream original file with byte-range header
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7010,7 +7045,12 @@ namespace Clarifai.Api {
         return GetInputVideoManifestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get a video input manifest.
+      /// Get a MPEG-DASH manifest for video-type inputs that were added via PostInputs and successfully processed
+      /// Experimental. Manifest is used by browser and desktop clients that implement an efficient streaming playback
+      /// This means client can switch between low-resolution and high-resolution video streams
+      /// Depending on network bandwidth or user's preference
+      /// This also means that reencoded video streams are reencoded in a uniform way, not relying on original format
+      /// Alternative to MPEG-dash is to stream original file with byte-range header
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7069,8 +7109,12 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListInputs, null, options, request);
       }
       /// <summary>
-      /// Add 1 or more input to an app.
-      /// The actual inputs processing is asynchronous.
+      /// PostInputs adds one or more inputs to the app.
+      /// Takes a list of image/video/audio/text URLs, image/video/audio bytes or raw text
+      /// Optionally, include concepts or dataset ids to link them
+      /// Optionally, include metadata for search
+      /// Note that inputs processing is asynchronous process
+      /// See ListInputs, StreamInputs or PostInputSearches to list results
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7083,8 +7127,12 @@ namespace Clarifai.Api {
         return PostInputs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add 1 or more input to an app.
-      /// The actual inputs processing is asynchronous.
+      /// PostInputs adds one or more inputs to the app.
+      /// Takes a list of image/video/audio/text URLs, image/video/audio bytes or raw text
+      /// Optionally, include concepts or dataset ids to link them
+      /// Optionally, include metadata for search
+      /// Note that inputs processing is asynchronous process
+      /// See ListInputs, StreamInputs or PostInputSearches to list results
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7095,8 +7143,12 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostInputs, null, options, request);
       }
       /// <summary>
-      /// Add 1 or more input to an app.
-      /// The actual inputs processing is asynchronous.
+      /// PostInputs adds one or more inputs to the app.
+      /// Takes a list of image/video/audio/text URLs, image/video/audio bytes or raw text
+      /// Optionally, include concepts or dataset ids to link them
+      /// Optionally, include metadata for search
+      /// Note that inputs processing is asynchronous process
+      /// See ListInputs, StreamInputs or PostInputSearches to list results
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7109,8 +7161,12 @@ namespace Clarifai.Api {
         return PostInputsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add 1 or more input to an app.
-      /// The actual inputs processing is asynchronous.
+      /// PostInputs adds one or more inputs to the app.
+      /// Takes a list of image/video/audio/text URLs, image/video/audio bytes or raw text
+      /// Optionally, include concepts or dataset ids to link them
+      /// Optionally, include metadata for search
+      /// Note that inputs processing is asynchronous process
+      /// See ListInputs, StreamInputs or PostInputSearches to list results
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15314,21 +15370,65 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelInputsAddJob, null, options, request);
       }
+      /// <summary>
+      /// PostUploads is used to upload files. Note that this does not create inputs.
+      /// returns job with uploadID, job has UPLOAD_IN_PROGRESS status
+      /// Actual upload content can be done in multiple calls with PutUploadContentParts
+      /// You can get status of upload with GetUpload or ListUploads endpoints
+      /// See also PostInputsUploads
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiUploadResponse PostUploads(global::Clarifai.Api.PostUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostUploads(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostUploads is used to upload files. Note that this does not create inputs.
+      /// returns job with uploadID, job has UPLOAD_IN_PROGRESS status
+      /// Actual upload content can be done in multiple calls with PutUploadContentParts
+      /// You can get status of upload with GetUpload or ListUploads endpoints
+      /// See also PostInputsUploads
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiUploadResponse PostUploads(global::Clarifai.Api.PostUploadsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostUploads, null, options, request);
       }
+      /// <summary>
+      /// PostUploads is used to upload files. Note that this does not create inputs.
+      /// returns job with uploadID, job has UPLOAD_IN_PROGRESS status
+      /// Actual upload content can be done in multiple calls with PutUploadContentParts
+      /// You can get status of upload with GetUpload or ListUploads endpoints
+      /// See also PostInputsUploads
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiUploadResponse> PostUploadsAsync(global::Clarifai.Api.PostUploadsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostUploadsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// PostUploads is used to upload files. Note that this does not create inputs.
+      /// returns job with uploadID, job has UPLOAD_IN_PROGRESS status
+      /// Actual upload content can be done in multiple calls with PutUploadContentParts
+      /// You can get status of upload with GetUpload or ListUploads endpoints
+      /// See also PostInputsUploads
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiUploadResponse> PostUploadsAsync(global::Clarifai.Api.PostUploadsRequest request, grpc::CallOptions options)
       {
@@ -15659,11 +15759,12 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_CancelInputsExtractionJobs, null, options, request);
       }
       /// <summary>
-      /// Start uploading a file archive containing inputs.
-      /// Will create and return an inputs-add-job for tracking progress.
-      ///
-      /// Associated inputs-add-job contains an upload id which should be completed through `PutUploadContentParts` endpoint.
+      /// Create new upload job with a file archive containing inputs (images, videos, text, audio)
+      /// Actual file upload happens in next steps by calling `PutUploadContentParts` endpoint
+      /// and providing the file content in the request body.
+      /// This endpoint creates and return an inputs-add-job which contains an upload id needed for upload and further status tracking
       /// Completing the upload will automatically begin unpacking the archive and uploading the contents as inputs.
+      /// See also GetInputsAddJob and then GetInputsExtractionJob
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15676,11 +15777,12 @@ namespace Clarifai.Api {
         return PostInputsUploads(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Start uploading a file archive containing inputs.
-      /// Will create and return an inputs-add-job for tracking progress.
-      ///
-      /// Associated inputs-add-job contains an upload id which should be completed through `PutUploadContentParts` endpoint.
+      /// Create new upload job with a file archive containing inputs (images, videos, text, audio)
+      /// Actual file upload happens in next steps by calling `PutUploadContentParts` endpoint
+      /// and providing the file content in the request body.
+      /// This endpoint creates and return an inputs-add-job which contains an upload id needed for upload and further status tracking
       /// Completing the upload will automatically begin unpacking the archive and uploading the contents as inputs.
+      /// See also GetInputsAddJob and then GetInputsExtractionJob
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15691,11 +15793,12 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostInputsUploads, null, options, request);
       }
       /// <summary>
-      /// Start uploading a file archive containing inputs.
-      /// Will create and return an inputs-add-job for tracking progress.
-      ///
-      /// Associated inputs-add-job contains an upload id which should be completed through `PutUploadContentParts` endpoint.
+      /// Create new upload job with a file archive containing inputs (images, videos, text, audio)
+      /// Actual file upload happens in next steps by calling `PutUploadContentParts` endpoint
+      /// and providing the file content in the request body.
+      /// This endpoint creates and return an inputs-add-job which contains an upload id needed for upload and further status tracking
       /// Completing the upload will automatically begin unpacking the archive and uploading the contents as inputs.
+      /// See also GetInputsAddJob and then GetInputsExtractionJob
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15708,11 +15811,12 @@ namespace Clarifai.Api {
         return PostInputsUploadsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Start uploading a file archive containing inputs.
-      /// Will create and return an inputs-add-job for tracking progress.
-      ///
-      /// Associated inputs-add-job contains an upload id which should be completed through `PutUploadContentParts` endpoint.
+      /// Create new upload job with a file archive containing inputs (images, videos, text, audio)
+      /// Actual file upload happens in next steps by calling `PutUploadContentParts` endpoint
+      /// and providing the file content in the request body.
+      /// This endpoint creates and return an inputs-add-job which contains an upload id needed for upload and further status tracking
       /// Completing the upload will automatically begin unpacking the archive and uploading the contents as inputs.
+      /// See also GetInputsAddJob and then GetInputsExtractionJob
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
