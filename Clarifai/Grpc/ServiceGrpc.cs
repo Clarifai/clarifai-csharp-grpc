@@ -729,6 +729,10 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchDeploymentsRequest> __Marshaller_clarifai_api_PatchDeploymentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchDeploymentsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteDeploymentsRequest> __Marshaller_clarifai_api_DeleteDeploymentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteDeploymentsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAuditLogSearchesRequest> __Marshaller_clarifai_api_PostAuditLogSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAuditLogSearchesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAuditLogSearchResponse> __Marshaller_clarifai_api_MultiAuditLogSearchResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAuditLogSearchResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2625,6 +2629,14 @@ namespace Clarifai.Api {
         "DeleteDeployments",
         __Marshaller_clarifai_api_DeleteDeploymentsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogSearchResponse> __Method_PostAuditLogSearches = new grpc::Method<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogSearchResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostAuditLogSearches",
+        __Marshaller_clarifai_api_PostAuditLogSearchesRequest,
+        __Marshaller_clarifai_api_MultiAuditLogSearchResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -5483,6 +5495,12 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteDeployments(global::Clarifai.Api.DeleteDeploymentsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAuditLogSearchResponse> PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -16702,6 +16720,26 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteDeployments, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAuditLogSearchResponse PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostAuditLogSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAuditLogSearchResponse PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostAuditLogSearches, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAuditLogSearchResponse> PostAuditLogSearchesAsync(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostAuditLogSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAuditLogSearchResponse> PostAuditLogSearchesAsync(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostAuditLogSearches, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -16952,7 +16990,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListDeployments, serviceImpl.ListDeployments)
           .AddMethod(__Method_PostDeployments, serviceImpl.PostDeployments)
           .AddMethod(__Method_PatchDeployments, serviceImpl.PatchDeployments)
-          .AddMethod(__Method_DeleteDeployments, serviceImpl.DeleteDeployments).Build();
+          .AddMethod(__Method_DeleteDeployments, serviceImpl.DeleteDeployments)
+          .AddMethod(__Method_PostAuditLogSearches, serviceImpl.PostAuditLogSearches).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -17199,6 +17238,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PostDeployments));
       serviceBinder.AddMethod(__Method_PatchDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PatchDeployments));
       serviceBinder.AddMethod(__Method_DeleteDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDeployments));
+      serviceBinder.AddMethod(__Method_PostAuditLogSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogSearchResponse>(serviceImpl.PostAuditLogSearches));
     }
 
   }
