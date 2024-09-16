@@ -350,10 +350,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsResponse> __Marshaller_clarifai_api_PostWorkflowResultsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowResultsResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsSimilarityRequest> __Marshaller_clarifai_api_PostWorkflowResultsSimilarityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowResultsSimilarityRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> __Marshaller_clarifai_api_PostWorkflowResultsSimilarityResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowResultsSimilarityResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowVersionsRequest> __Marshaller_clarifai_api_ListWorkflowVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowVersionsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowVersionResponse> __Marshaller_clarifai_api_MultiWorkflowVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkflowVersionResponse.Parser));
@@ -732,7 +728,7 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostAuditLogSearchesRequest> __Marshaller_clarifai_api_PostAuditLogSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAuditLogSearchesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAuditLogSearchResponse> __Marshaller_clarifai_api_MultiAuditLogSearchResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAuditLogSearchResponse.Parser));
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAuditLogEntryResponse> __Marshaller_clarifai_api_MultiAuditLogEntryResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAuditLogEntryResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -1581,14 +1577,6 @@ namespace Clarifai.Api {
         "PostWorkflowResults",
         __Marshaller_clarifai_api_PostWorkflowResultsRequest,
         __Marshaller_clarifai_api_PostWorkflowResultsResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostWorkflowResultsSimilarityRequest, global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> __Method_PostWorkflowResultsSimilarity = new grpc::Method<global::Clarifai.Api.PostWorkflowResultsSimilarityRequest, global::Clarifai.Api.PostWorkflowResultsSimilarityResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostWorkflowResultsSimilarity",
-        __Marshaller_clarifai_api_PostWorkflowResultsSimilarityRequest,
-        __Marshaller_clarifai_api_PostWorkflowResultsSimilarityResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListWorkflowVersionsRequest, global::Clarifai.Api.MultiWorkflowVersionResponse> __Method_ListWorkflowVersions = new grpc::Method<global::Clarifai.Api.ListWorkflowVersionsRequest, global::Clarifai.Api.MultiWorkflowVersionResponse>(
@@ -2631,12 +2619,12 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogSearchResponse> __Method_PostAuditLogSearches = new grpc::Method<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogSearchResponse>(
+    static readonly grpc::Method<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogEntryResponse> __Method_PostAuditLogSearches = new grpc::Method<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogEntryResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PostAuditLogSearches",
         __Marshaller_clarifai_api_PostAuditLogSearchesRequest,
-        __Marshaller_clarifai_api_MultiAuditLogSearchResponse);
+        __Marshaller_clarifai_api_MultiAuditLogEntryResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -3936,18 +3924,6 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.PostWorkflowResultsResponse> PostWorkflowResults(global::Clarifai.Api.PostWorkflowResultsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Compare embeddings distances using a workflow
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> PostWorkflowResultsSimilarity(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -5500,7 +5476,7 @@ namespace Clarifai.Api {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAuditLogSearchResponse> PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAuditLogEntryResponse> PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -10579,54 +10555,6 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PostWorkflowResultsResponse> PostWorkflowResultsAsync(global::Clarifai.Api.PostWorkflowResultsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostWorkflowResults, null, options, request);
-      }
-      /// <summary>
-      /// Compare embeddings distances using a workflow
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.PostWorkflowResultsSimilarityResponse PostWorkflowResultsSimilarity(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostWorkflowResultsSimilarity(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Compare embeddings distances using a workflow
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.PostWorkflowResultsSimilarityResponse PostWorkflowResultsSimilarity(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostWorkflowResultsSimilarity, null, options, request);
-      }
-      /// <summary>
-      /// Compare embeddings distances using a workflow
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> PostWorkflowResultsSimilarityAsync(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostWorkflowResultsSimilarityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Compare embeddings distances using a workflow
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PostWorkflowResultsSimilarityResponse> PostWorkflowResultsSimilarityAsync(global::Clarifai.Api.PostWorkflowResultsSimilarityRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostWorkflowResultsSimilarity, null, options, request);
       }
       /// <summary>
       /// List workflow versions.
@@ -16721,22 +16649,22 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteDeployments, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAuditLogSearchResponse PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Clarifai.Api.MultiAuditLogEntryResponse PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostAuditLogSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAuditLogSearchResponse PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::CallOptions options)
+      public virtual global::Clarifai.Api.MultiAuditLogEntryResponse PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PostAuditLogSearches, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAuditLogSearchResponse> PostAuditLogSearchesAsync(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAuditLogEntryResponse> PostAuditLogSearchesAsync(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PostAuditLogSearchesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAuditLogSearchResponse> PostAuditLogSearchesAsync(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAuditLogEntryResponse> PostAuditLogSearchesAsync(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostAuditLogSearches, null, options, request);
       }
@@ -16860,7 +16788,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteWorkflow, serviceImpl.DeleteWorkflow)
           .AddMethod(__Method_DeleteWorkflows, serviceImpl.DeleteWorkflows)
           .AddMethod(__Method_PostWorkflowResults, serviceImpl.PostWorkflowResults)
-          .AddMethod(__Method_PostWorkflowResultsSimilarity, serviceImpl.PostWorkflowResultsSimilarity)
           .AddMethod(__Method_ListWorkflowVersions, serviceImpl.ListWorkflowVersions)
           .AddMethod(__Method_GetWorkflowVersion, serviceImpl.GetWorkflowVersion)
           .AddMethod(__Method_DeleteWorkflowVersions, serviceImpl.DeleteWorkflowVersions)
@@ -17107,7 +17034,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteWorkflow, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteWorkflowRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteWorkflow));
       serviceBinder.AddMethod(__Method_DeleteWorkflows, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteWorkflowsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteWorkflows));
       serviceBinder.AddMethod(__Method_PostWorkflowResults, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostWorkflowResultsRequest, global::Clarifai.Api.PostWorkflowResultsResponse>(serviceImpl.PostWorkflowResults));
-      serviceBinder.AddMethod(__Method_PostWorkflowResultsSimilarity, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostWorkflowResultsSimilarityRequest, global::Clarifai.Api.PostWorkflowResultsSimilarityResponse>(serviceImpl.PostWorkflowResultsSimilarity));
       serviceBinder.AddMethod(__Method_ListWorkflowVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowVersionsRequest, global::Clarifai.Api.MultiWorkflowVersionResponse>(serviceImpl.ListWorkflowVersions));
       serviceBinder.AddMethod(__Method_GetWorkflowVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetWorkflowVersionRequest, global::Clarifai.Api.SingleWorkflowVersionResponse>(serviceImpl.GetWorkflowVersion));
       serviceBinder.AddMethod(__Method_DeleteWorkflowVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteWorkflowVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteWorkflowVersions));
@@ -17238,7 +17164,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PostDeployments));
       serviceBinder.AddMethod(__Method_PatchDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PatchDeployments));
       serviceBinder.AddMethod(__Method_DeleteDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDeployments));
-      serviceBinder.AddMethod(__Method_PostAuditLogSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogSearchResponse>(serviceImpl.PostAuditLogSearches));
+      serviceBinder.AddMethod(__Method_PostAuditLogSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogEntryResponse>(serviceImpl.PostAuditLogSearches));
     }
 
   }
