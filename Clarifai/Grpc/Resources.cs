@@ -1020,10 +1020,11 @@ namespace Clarifai.Api {
             "U0tJUBABEgoKBlNVRkZJWBACKnMKEFJ1bm5lck1ldGhvZFR5cGUSCwoHVU5L",
             "Tk9XThAAEg8KC1VOQVJZX1VOQVJZEAESEwoPVU5BUllfU1RSRUFNSU5HEAIS",
             "EwoPU1RSRUFNSU5HX1VOQVJZEAMSFwoTU1RSRUFNSU5HX1NUUkVBTUlORxAE",
-            "KjsKCUV2ZW50VHlwZRIWChJFVkVOVF9UWVBFX05PVF9TRVQQABIWChJBUFBM",
-            "SUNBVElPTl9DUkVBVEUQZEJZChVjb20uY2xhcmlmYWkuZ3JwYy5hcGlQAVo3",
-            "Z2l0aHViLmNvbS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3RvL2Ns",
-            "YXJpZmFpL2FwaaICBENBSVBiBnByb3RvMw=="));
+            "KmIKCUV2ZW50VHlwZRIWChJFVkVOVF9UWVBFX05PVF9TRVQQABI9ChJBUFBM",
+            "SUNBVElPTl9DUkVBVEUQZBolwj4iT3BlcmF0aW9uIHRvIGNyZWF0ZSBhbiBB",
+            "cHBsaWNhdGlvbkJZChVjb20uY2xhcmlmYWkuZ3JwYy5hcGlQAVo3Z2l0aHVi",
+            "LmNvbS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3RvL2NsYXJpZmFp",
+            "L2FwaaICBENBSVBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::MatrixReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.WorkflowModelUseCase), typeof(global::Clarifai.Api.DatasetVersionRequestOrigin), typeof(global::Clarifai.Api.DatasetVersionMetricsGroupType), typeof(global::Clarifai.Api.DatasetVersionExportFormat), typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.LicenseType), typeof(global::Clarifai.Api.DataType), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.AnnotationDataType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), typeof(global::Clarifai.Api.InputIDConflictResolution), typeof(global::Clarifai.Api.RunnerMethodType), typeof(global::Clarifai.Api.EventType), }, null, new pbr::GeneratedClrTypeInfo[] {

@@ -29,13 +29,14 @@ namespace Clarifai.Api.Utils {
             "ci5wcm90bzo5ChBjbF9zaG93X2lmX2VtcHR5Eh0uZ29vZ2xlLnByb3RvYnVm",
             "LkZpZWxkT3B0aW9ucxjQhgMgASgIOjQKC2NsX21vcmV0YWdzEh0uZ29vZ2xl",
             "LnByb3RvYnVmLkZpZWxkT3B0aW9ucxjRhgMgASgJOjkKEGNsX2RlZmF1bHRf",
-            "ZmxvYXQSHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGNqGAyABKAJC",
-            "ZQobY29tLmNsYXJpZmFpLmdycGMuYXBpLnV0aWxzUAFaPWdpdGh1Yi5jb20v",
-            "Q2xhcmlmYWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hcGkv",
-            "dXRpbHOiAgRDQUlQYgZwcm90bzM="));
+            "ZmxvYXQSHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGNqGAyABKAI6",
+            "NwoLZGVzY3JpcHRpb24SIS5nb29nbGUucHJvdG9idWYuRW51bVZhbHVlT3B0",
+            "aW9ucxjoByABKAlCZQobY29tLmNsYXJpZmFpLmdycGMuYXBpLnV0aWxzUAFa",
+            "PWdpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90by9j",
+            "bGFyaWZhaS9hcGkvdXRpbHOiAgRDQUlQYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pb::Extension[] { ExtensionsExtensions.ClShowIfEmpty, ExtensionsExtensions.ClMoretags, ExtensionsExtensions.ClDefaultFloat }, null));
+          new pbr::GeneratedClrTypeInfo(null, new pb::Extension[] { ExtensionsExtensions.ClShowIfEmpty, ExtensionsExtensions.ClMoretags, ExtensionsExtensions.ClDefaultFloat, ExtensionsExtensions.Description }, null));
     }
     #endregion
 
@@ -59,6 +60,11 @@ namespace Clarifai.Api.Utils {
     /// </summary>
     public static readonly pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, float> ClDefaultFloat =
       new pb::Extension<global::Google.Protobuf.Reflection.FieldOptions, float>(50010, pb::FieldCodec.ForFloat(400085, 0F));
+    /// <summary>
+    /// A description of the enum value.
+    /// </summary>
+    public static readonly pb::Extension<global::Google.Protobuf.Reflection.EnumValueOptions, string> Description =
+      new pb::Extension<global::Google.Protobuf.Reflection.EnumValueOptions, string>(1000, pb::FieldCodec.ForString(8002, ""));
   }
 
 }
