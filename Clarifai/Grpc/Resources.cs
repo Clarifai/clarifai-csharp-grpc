@@ -45678,7 +45678,7 @@ namespace Clarifai.Api {
     public const int ImageFieldNumber = 26;
     private global::Clarifai.Api.Image image_;
     /// <summary>
-    /// Representative image for this User (a.k.a. Profile or cover photo) 
+    /// Representative image for this User (a.k.a. Profile or cover photo)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
