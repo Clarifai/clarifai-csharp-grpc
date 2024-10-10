@@ -1,4 +1,5 @@
-![Clarifai logo](docs/logo.png)
+![image](https://github.com/user-attachments/assets/c6087cf2-e4d4-4064-a111-1fa5887f4466)
+
 
 # Clarifai C# gRPC Client
 
