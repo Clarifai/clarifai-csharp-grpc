@@ -729,6 +729,10 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PostAuditLogSearchesRequest> __Marshaller_clarifai_api_PostAuditLogSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAuditLogSearchesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiAuditLogEntryResponse> __Marshaller_clarifai_api_MultiAuditLogEntryResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAuditLogEntryResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest> __Marshaller_clarifai_api_ListWorkflowEvaluationTemplatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> __Marshaller_clarifai_api_MultiWorkflowEvaluationTemplateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2626,6 +2630,14 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PostAuditLogSearchesRequest,
         __Marshaller_clarifai_api_MultiAuditLogEntryResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> __Method_ListWorkflowEvaluationTemplates = new grpc::Method<global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListWorkflowEvaluationTemplates",
+        __Marshaller_clarifai_api_ListWorkflowEvaluationTemplatesRequest,
+        __Marshaller_clarifai_api_MultiWorkflowEvaluationTemplateResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -2981,12 +2993,6 @@ namespace Clarifai.Api {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      /// <summary>
-      /// Get a specific input from an app.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInputAnnotationResponse> GetInputSamples(global::Clarifai.Api.GetInputSamplesRequest request, grpc::ServerCallContext context)
       {
@@ -5071,9 +5077,8 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// PutTaskAssignments performs an action for the task assignments in given task.
-      /// All the actions are theoretically idempotent, but practically, in the current implementation,
-      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
+      /// PutTaskAssignments performs an idempotent action for the task assignments in given task.
+      /// See PutTaskAssignmentsRequestAction for more details about possible actions.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5477,6 +5482,12 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAuditLogEntryResponse> PostAuditLogSearches(global::Clarifai.Api.PostAuditLogSearchesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> ListWorkflowEvaluationTemplates(global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -6890,49 +6901,21 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_StreamInputs, null, options, request);
       }
-      /// <summary>
-      /// Get a specific input from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiInputAnnotationResponse GetInputSamples(global::Clarifai.Api.GetInputSamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetInputSamples(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Get a specific input from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiInputAnnotationResponse GetInputSamples(global::Clarifai.Api.GetInputSamplesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetInputSamples, null, options, request);
       }
-      /// <summary>
-      /// Get a specific input from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInputAnnotationResponse> GetInputSamplesAsync(global::Clarifai.Api.GetInputSamplesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetInputSamplesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Get a specific input from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInputAnnotationResponse> GetInputSamplesAsync(global::Clarifai.Api.GetInputSamplesRequest request, grpc::CallOptions options)
       {
@@ -15117,9 +15100,8 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListNextTaskAssignments, null, options, request);
       }
       /// <summary>
-      /// PutTaskAssignments performs an action for the task assignments in given task.
-      /// All the actions are theoretically idempotent, but practically, in the current implementation,
-      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
+      /// PutTaskAssignments performs an idempotent action for the task assignments in given task.
+      /// See PutTaskAssignmentsRequestAction for more details about possible actions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15132,9 +15114,8 @@ namespace Clarifai.Api {
         return PutTaskAssignments(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// PutTaskAssignments performs an action for the task assignments in given task.
-      /// All the actions are theoretically idempotent, but practically, in the current implementation,
-      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
+      /// PutTaskAssignments performs an idempotent action for the task assignments in given task.
+      /// See PutTaskAssignmentsRequestAction for more details about possible actions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15145,9 +15126,8 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PutTaskAssignments, null, options, request);
       }
       /// <summary>
-      /// PutTaskAssignments performs an action for the task assignments in given task.
-      /// All the actions are theoretically idempotent, but practically, in the current implementation,
-      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
+      /// PutTaskAssignments performs an idempotent action for the task assignments in given task.
+      /// See PutTaskAssignmentsRequestAction for more details about possible actions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15160,9 +15140,8 @@ namespace Clarifai.Api {
         return PutTaskAssignmentsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// PutTaskAssignments performs an action for the task assignments in given task.
-      /// All the actions are theoretically idempotent, but practically, in the current implementation,
-      /// the REVIEW_START action is not idempotent. See PutTaskAssignmentsRequestAction for more details.
+      /// PutTaskAssignments performs an idempotent action for the task assignments in given task.
+      /// See PutTaskAssignmentsRequestAction for more details about possible actions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -16668,6 +16647,26 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostAuditLogSearches, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse ListWorkflowEvaluationTemplates(global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListWorkflowEvaluationTemplates(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse ListWorkflowEvaluationTemplates(global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListWorkflowEvaluationTemplates, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> ListWorkflowEvaluationTemplatesAsync(global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListWorkflowEvaluationTemplatesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> ListWorkflowEvaluationTemplatesAsync(global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListWorkflowEvaluationTemplates, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -16918,7 +16917,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostDeployments, serviceImpl.PostDeployments)
           .AddMethod(__Method_PatchDeployments, serviceImpl.PatchDeployments)
           .AddMethod(__Method_DeleteDeployments, serviceImpl.DeleteDeployments)
-          .AddMethod(__Method_PostAuditLogSearches, serviceImpl.PostAuditLogSearches).Build();
+          .AddMethod(__Method_PostAuditLogSearches, serviceImpl.PostAuditLogSearches)
+          .AddMethod(__Method_ListWorkflowEvaluationTemplates, serviceImpl.ListWorkflowEvaluationTemplates).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -17165,6 +17165,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PatchDeployments));
       serviceBinder.AddMethod(__Method_DeleteDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDeployments));
       serviceBinder.AddMethod(__Method_PostAuditLogSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogEntryResponse>(serviceImpl.PostAuditLogSearches));
+      serviceBinder.AddMethod(__Method_ListWorkflowEvaluationTemplates, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse>(serviceImpl.ListWorkflowEvaluationTemplates));
     }
 
   }
