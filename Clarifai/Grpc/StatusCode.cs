@@ -577,7 +577,13 @@ namespace Clarifai.Api.Status {
     [pbr::OriginalName("ANNOTATION_UNKNOWN_STATUS")] AnnotationUnknownStatus = 24154,
     [pbr::OriginalName("ANNOTATION_INVALID_ARGUMENT")] AnnotationInvalidArgument = 24155,
     [pbr::OriginalName("ANNOTATION_PERMISSION_DENIED")] AnnotationPermissionDenied = 24156,
+    /// <summary>
+    /// Annotation is awaiting review from task REVIEWERS.
+    /// </summary>
     [pbr::OriginalName("ANNOTATION_AWAITING_REVIEW")] AnnotationAwaitingReview = 24157,
+    /// <summary>
+    /// Annotation is awaiting consensus review from task LABELERS.
+    /// </summary>
     [pbr::OriginalName("ANNOTATION_AWAITING_CONSENSUS_REVIEW")] AnnotationAwaitingConsensusReview = 24159,
     [pbr::OriginalName("ANNOTATION_REVIEW_DENIED")] AnnotationReviewDenied = 24158,
     [pbr::OriginalName("ANNOTATION_MODIFY_SUCCESS")] AnnotationModifySuccess = 24250,
