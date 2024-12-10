@@ -676,6 +676,14 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiTrainingTimeEstimateResponse> __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiTrainingTimeEstimateResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListCloudProvidersRequest> __Marshaller_clarifai_api_ListCloudProvidersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCloudProvidersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCloudProviderResponse> __Marshaller_clarifai_api_MultiCloudProviderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCloudProviderResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListCloudRegionsRequest> __Marshaller_clarifai_api_ListCloudRegionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCloudRegionsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCloudRegionResponse> __Marshaller_clarifai_api_MultiCloudRegionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCloudRegionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListInstanceTypesRequest> __Marshaller_clarifai_api_ListInstanceTypesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListInstanceTypesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiInstanceTypeResponse> __Marshaller_clarifai_api_MultiInstanceTypeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiInstanceTypeResponse.Parser));
@@ -727,6 +735,10 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest> __Marshaller_clarifai_api_ListWorkflowEvaluationTemplatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> __Marshaller_clarifai_api_MultiWorkflowEvaluationTemplateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListLogEntriesRequest> __Marshaller_clarifai_api_ListLogEntriesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListLogEntriesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiLogEntryResponse> __Marshaller_clarifai_api_MultiLogEntryResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiLogEntryResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2481,6 +2493,22 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiTrainingTimeEstimateResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListCloudProvidersRequest, global::Clarifai.Api.MultiCloudProviderResponse> __Method_ListCloudProviders = new grpc::Method<global::Clarifai.Api.ListCloudProvidersRequest, global::Clarifai.Api.MultiCloudProviderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListCloudProviders",
+        __Marshaller_clarifai_api_ListCloudProvidersRequest,
+        __Marshaller_clarifai_api_MultiCloudProviderResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListCloudRegionsRequest, global::Clarifai.Api.MultiCloudRegionResponse> __Method_ListCloudRegions = new grpc::Method<global::Clarifai.Api.ListCloudRegionsRequest, global::Clarifai.Api.MultiCloudRegionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListCloudRegions",
+        __Marshaller_clarifai_api_ListCloudRegionsRequest,
+        __Marshaller_clarifai_api_MultiCloudRegionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListInstanceTypesRequest, global::Clarifai.Api.MultiInstanceTypeResponse> __Method_ListInstanceTypes = new grpc::Method<global::Clarifai.Api.ListInstanceTypesRequest, global::Clarifai.Api.MultiInstanceTypeResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -2615,6 +2643,14 @@ namespace Clarifai.Api {
         "ListWorkflowEvaluationTemplates",
         __Marshaller_clarifai_api_ListWorkflowEvaluationTemplatesRequest,
         __Marshaller_clarifai_api_MultiWorkflowEvaluationTemplateResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse> __Method_ListLogEntries = new grpc::Method<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListLogEntries",
+        __Marshaller_clarifai_api_ListLogEntriesRequest,
+        __Marshaller_clarifai_api_MultiLogEntryResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -5303,6 +5339,30 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// List Available Cloud Providers
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiCloudProviderResponse> ListCloudProviders(global::Clarifai.Api.ListCloudProvidersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List Regions for given Cloud Provider
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiCloudRegionResponse> ListCloudRegions(global::Clarifai.Api.ListCloudRegionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Get InstanceTypes given Cloud Provider and Region
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -5442,6 +5502,12 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> ListWorkflowEvaluationTemplates(global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiLogEntryResponse> ListLogEntries(global::Clarifai.Api.ListLogEntriesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -15990,6 +16056,102 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelVersionsTrainingTimeEstimate, null, options, request);
       }
       /// <summary>
+      /// List Available Cloud Providers
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiCloudProviderResponse ListCloudProviders(global::Clarifai.Api.ListCloudProvidersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListCloudProviders(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Available Cloud Providers
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiCloudProviderResponse ListCloudProviders(global::Clarifai.Api.ListCloudProvidersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListCloudProviders, null, options, request);
+      }
+      /// <summary>
+      /// List Available Cloud Providers
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCloudProviderResponse> ListCloudProvidersAsync(global::Clarifai.Api.ListCloudProvidersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListCloudProvidersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Available Cloud Providers
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCloudProviderResponse> ListCloudProvidersAsync(global::Clarifai.Api.ListCloudProvidersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListCloudProviders, null, options, request);
+      }
+      /// <summary>
+      /// List Regions for given Cloud Provider
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiCloudRegionResponse ListCloudRegions(global::Clarifai.Api.ListCloudRegionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListCloudRegions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Regions for given Cloud Provider
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiCloudRegionResponse ListCloudRegions(global::Clarifai.Api.ListCloudRegionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListCloudRegions, null, options, request);
+      }
+      /// <summary>
+      /// List Regions for given Cloud Provider
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCloudRegionResponse> ListCloudRegionsAsync(global::Clarifai.Api.ListCloudRegionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListCloudRegionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Regions for given Cloud Provider
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCloudRegionResponse> ListCloudRegionsAsync(global::Clarifai.Api.ListCloudRegionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListCloudRegions, null, options, request);
+      }
+      /// <summary>
       /// Get InstanceTypes given Cloud Provider and Region
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -16525,6 +16687,26 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListWorkflowEvaluationTemplates, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiLogEntryResponse ListLogEntries(global::Clarifai.Api.ListLogEntriesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListLogEntries(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiLogEntryResponse ListLogEntries(global::Clarifai.Api.ListLogEntriesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListLogEntries, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLogEntryResponse> ListLogEntriesAsync(global::Clarifai.Api.ListLogEntriesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListLogEntriesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLogEntryResponse> ListLogEntriesAsync(global::Clarifai.Api.ListLogEntriesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListLogEntries, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -16758,6 +16940,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostRunnerItemOutputs, serviceImpl.PostRunnerItemOutputs)
           .AddMethod(__Method_ProcessRunnerItems, serviceImpl.ProcessRunnerItems)
           .AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl.PostModelVersionsTrainingTimeEstimate)
+          .AddMethod(__Method_ListCloudProviders, serviceImpl.ListCloudProviders)
+          .AddMethod(__Method_ListCloudRegions, serviceImpl.ListCloudRegions)
           .AddMethod(__Method_ListInstanceTypes, serviceImpl.ListInstanceTypes)
           .AddMethod(__Method_GetComputeCluster, serviceImpl.GetComputeCluster)
           .AddMethod(__Method_ListComputeClusters, serviceImpl.ListComputeClusters)
@@ -16774,7 +16958,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchDeployments, serviceImpl.PatchDeployments)
           .AddMethod(__Method_DeleteDeployments, serviceImpl.DeleteDeployments)
           .AddMethod(__Method_PostAuditLogSearches, serviceImpl.PostAuditLogSearches)
-          .AddMethod(__Method_ListWorkflowEvaluationTemplates, serviceImpl.ListWorkflowEvaluationTemplates).Build();
+          .AddMethod(__Method_ListWorkflowEvaluationTemplates, serviceImpl.ListWorkflowEvaluationTemplates)
+          .AddMethod(__Method_ListLogEntries, serviceImpl.ListLogEntries).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -17003,6 +17188,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostRunnerItemOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemOutputResponse>(serviceImpl.PostRunnerItemOutputs));
       serviceBinder.AddMethod(__Method_ProcessRunnerItems, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(serviceImpl.ProcessRunnerItems));
       serviceBinder.AddMethod(__Method_PostModelVersionsTrainingTimeEstimate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelVersionsTrainingTimeEstimateRequest, global::Clarifai.Api.MultiTrainingTimeEstimateResponse>(serviceImpl.PostModelVersionsTrainingTimeEstimate));
+      serviceBinder.AddMethod(__Method_ListCloudProviders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListCloudProvidersRequest, global::Clarifai.Api.MultiCloudProviderResponse>(serviceImpl.ListCloudProviders));
+      serviceBinder.AddMethod(__Method_ListCloudRegions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListCloudRegionsRequest, global::Clarifai.Api.MultiCloudRegionResponse>(serviceImpl.ListCloudRegions));
       serviceBinder.AddMethod(__Method_ListInstanceTypes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInstanceTypesRequest, global::Clarifai.Api.MultiInstanceTypeResponse>(serviceImpl.ListInstanceTypes));
       serviceBinder.AddMethod(__Method_GetComputeCluster, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetComputeClusterRequest, global::Clarifai.Api.SingleComputeClusterResponse>(serviceImpl.GetComputeCluster));
       serviceBinder.AddMethod(__Method_ListComputeClusters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse>(serviceImpl.ListComputeClusters));
@@ -17020,6 +17207,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDeployments));
       serviceBinder.AddMethod(__Method_PostAuditLogSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogEntryResponse>(serviceImpl.PostAuditLogSearches));
       serviceBinder.AddMethod(__Method_ListWorkflowEvaluationTemplates, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse>(serviceImpl.ListWorkflowEvaluationTemplates));
+      serviceBinder.AddMethod(__Method_ListLogEntries, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(serviceImpl.ListLogEntries));
     }
 
   }
