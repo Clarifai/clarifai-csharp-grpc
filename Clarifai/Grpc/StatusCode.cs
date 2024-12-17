@@ -25,7 +25,7 @@ namespace Clarifai.Api.Status {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citwcm90by9jbGFyaWZhaS9hcGkvc3RhdHVzL3N0YXR1c19jb2RlLnByb3Rv",
-            "EhNjbGFyaWZhaS5hcGkuc3RhdHVzKutdCgpTdGF0dXNDb2RlEggKBFpFUk8Q",
+            "EhNjbGFyaWZhaS5hcGkuc3RhdHVzKpJeCgpTdGF0dXNDb2RlEggKBFpFUk8Q",
             "ABIMCgdTVUNDRVNTEJBOEhEKDE1JWEVEX1NUQVRVUxCaThIMCgdGQUlMVVJF",
             "EKROEg4KCVRSWV9BR0FJThCuThIUCg9OT1RfSU1QTEVNRU5URUQQuE4SCgoF",
             "TU9WRUQQwk4SCwoGVEVBUE9UEMxOEhgKE0NPTk5fQUNDT1VOVF9JU1NVRVMQ",
@@ -281,20 +281,21 @@ namespace Clarifai.Api.Status {
             "TEFCTEUQ3f0FEiEKG0lOVEVSTkFMX1JFU09VUkNFX0VYSEFVU1RFRBDe/QUS",
             "IgocSU5URVJOQUxfUkVESVNfVU5DQVRFR09SSVpFRBDf/QUSIAoaSU5URVJO",
             "QUxfQVdTX1VOQ0FURUdPUklaRUQQ4P0FEiIKHElOVEVSTkFMX0FaVVJFX1VO",
-            "Q0FURUdPUklaRUQQ4f0FEhgKEkNPTk5fVU5DQVRFR09SSVpFRBC5hQYSGQoT",
-            "TU9ERUxfVU5DQVRFR09SSVpFRBC6hQYSGQoTSU5QVVRfVU5DQVRFR09SSVpF",
-            "RBC7hQYSHgoYQU5OT1RBVElPTl9VTkNBVEVHT1JJWkVEELyFBhIbChVCSUxM",
-            "SU5HX1VOQ0FURUdPUklaRUQQvYUGEhwKFklOVEVSTkFMX1VOQ0FURUdPUkla",
-            "RUQQwYUGEhEKC0JBRF9SRVFVRVNUEKDCBRISCgxTRVJWRVJfRVJST1IQhMMF",
-            "IggIv8YBEL/GASIICOiBAhDogQIiCAjpgQIQ6YECIggI6oECEOqBAiIICMyC",
-            "AhDMggIiCAjNggIQzYICIggIzoICEM6CAiIICM+CAhDPggIiCAjQggIQ0IIC",
-            "IggI0YICENGCAiIICNKCAhDSggIiCAiwgwIQsIMCIggIsYMCELGDAiIICLOD",
-            "AhCzgwIiCAi6gwIQuoMCIggIu7gCELu4AiIICNK4AhDSuAIiCAjTuAIQ07gC",
-            "IggI8MECEPDBAiIICPHBAhDxwQIiCAjywQIQ8sECIggI88ECEPPBAiIICPTB",
-            "AhD0wQIiCAicxwEQnMcBIggInccBEJ3HASIICJ7HARCexwEiCAifxwEQn8cB",
-            "IggIoccBEKHHASIICKLHARCixwFCZwocY29tLmNsYXJpZmFpLmdycGMuYXBp",
-            "LnN0YXR1c1ABWj5naXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdy",
-            "cGMvcHJvdG8vY2xhcmlmYWkvYXBpL3N0YXR1c6ICBENBSVBiBnByb3RvMw=="));
+            "Q0FURUdPUklaRUQQ4f0FEiUKH0lOVEVSTkFMX1ZFQ1RPUkRCX1VOQ0FURUdP",
+            "UklaRUQQ4v0FEhgKEkNPTk5fVU5DQVRFR09SSVpFRBC5hQYSGQoTTU9ERUxf",
+            "VU5DQVRFR09SSVpFRBC6hQYSGQoTSU5QVVRfVU5DQVRFR09SSVpFRBC7hQYS",
+            "HgoYQU5OT1RBVElPTl9VTkNBVEVHT1JJWkVEELyFBhIbChVCSUxMSU5HX1VO",
+            "Q0FURUdPUklaRUQQvYUGEhwKFklOVEVSTkFMX1VOQ0FURUdPUklaRUQQwYUG",
+            "EhEKC0JBRF9SRVFVRVNUEKDCBRISCgxTRVJWRVJfRVJST1IQhMMFIggIv8YB",
+            "EL/GASIICOiBAhDogQIiCAjpgQIQ6YECIggI6oECEOqBAiIICMyCAhDMggIi",
+            "CAjNggIQzYICIggIzoICEM6CAiIICM+CAhDPggIiCAjQggIQ0IICIggI0YIC",
+            "ENGCAiIICNKCAhDSggIiCAiwgwIQsIMCIggIsYMCELGDAiIICLODAhCzgwIi",
+            "CAi6gwIQuoMCIggIu7gCELu4AiIICNK4AhDSuAIiCAjTuAIQ07gCIggI8MEC",
+            "EPDBAiIICPHBAhDxwQIiCAjywQIQ8sECIggI88ECEPPBAiIICPTBAhD0wQIi",
+            "CAicxwEQnMcBIggInccBEJ3HASIICJ7HARCexwEiCAifxwEQn8cBIggIoccB",
+            "EKHHASIICKLHARCixwFCZwocY29tLmNsYXJpZmFpLmdycGMuYXBpLnN0YXR1",
+            "c1ABWj5naXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJv",
+            "dG8vY2xhcmlmYWkvYXBpL3N0YXR1c6ICBENBSVBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.Status.StatusCode), }, null, null));
@@ -1077,6 +1078,7 @@ namespace Clarifai.Api.Status {
     [pbr::OriginalName("INTERNAL_REDIS_UNCATEGORIZED")] InternalRedisUncategorized = 98015,
     [pbr::OriginalName("INTERNAL_AWS_UNCATEGORIZED")] InternalAwsUncategorized = 98016,
     [pbr::OriginalName("INTERNAL_AZURE_UNCATEGORIZED")] InternalAzureUncategorized = 98017,
+    [pbr::OriginalName("INTERNAL_VECTORDB_UNCATEGORIZED")] InternalVectordbUncategorized = 98018,
     /// <summary>
     /// Uncategorized: 99xxx: move off as soon as known
     /// </summary>

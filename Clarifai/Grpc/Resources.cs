@@ -985,127 +985,140 @@ namespace Clarifai.Api {
             "GC5jbGFyaWZhaS5hcGkuRGVwbG95bWVudCKQAQoOUHJvY2Vzc2luZ0luZm8S",
             "OgoScnVubmVyX21ldGhvZF90eXBlGAEgASgOMh4uY2xhcmlmYWkuYXBpLlJ1",
             "bm5lck1ldGhvZFR5cGUSKwoGc3RhdHVzGAIgASgLMhsuY2xhcmlmYWkuYXBp",
-            "LnN0YXR1cy5TdGF0dXMSFQoNcHJvY2Vzc2luZ19pZBgDIAEoCSKHAgoOQXVk",
+            "LnN0YXR1cy5TdGF0dXMSFQoNcHJvY2Vzc2luZ19pZBgDIAEoCSLuAgoOQXVk",
             "aXRMb2dUYXJnZXQSIgoEdXNlchgBIAEoCzISLmNsYXJpZmFpLmFwaS5Vc2Vy",
             "SAASIgoEcm9sZRgCIAEoCzISLmNsYXJpZmFpLmFwaS5Sb2xlSAASIgoEdGVh",
             "bRgDIAEoCzISLmNsYXJpZmFpLmFwaS5UZWFtSAASIAoDYXBwGAQgASgLMhEu",
             "Y2xhcmlmYWkuYXBpLkFwcEgAEiYKBm1vZHVsZRgFIAEoCzIULmNsYXJpZmFp",
             "LmFwaS5Nb2R1bGVIABI1Cg5tb2R1bGVfdmVyc2lvbhgGIAEoCzIbLmNsYXJp",
-            "ZmFpLmFwaS5Nb2R1bGVWZXJzaW9uSABCCAoGdGFyZ2V0IpsCCg1BdWRpdExv",
-            "Z0VudHJ5Ei0KCXRpbWVzdGFtcBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
-            "aW1lc3RhbXASIAoEdXNlchgCIAEoCzISLmNsYXJpZmFpLmFwaS5Vc2VyEioK",
-            "CW9wZXJhdGlvbhgDIAEoDjIXLmNsYXJpZmFpLmFwaS5FdmVudFR5cGUSEwoL",
-            "ZGVzY3JpcHRpb24YBCABKAkSLQoHdGFyZ2V0cxgFIAMoCzIcLmNsYXJpZmFp",
-            "LmFwaS5BdWRpdExvZ1RhcmdldBIPCgdkZXRhaWxzGAYgAygJEhUKB3N1Y2Nl",
-            "c3MYByABKAhCBIC1GAESDgoGcmVxX2lkGAggASgJEhEKCXNvdXJjZV9pcBgJ",
-            "IAEoCSKkAgoNQXVkaXRMb2dRdWVyeRIyCg50aW1lc3RhbXBfZnJvbRgBIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMAoMdGltZXN0YW1wX3Rv",
-            "GAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIQCgh1c2VyX2lk",
-            "cxgDIAMoCRIrCgpvcGVyYXRpb25zGAQgAygOMhcuY2xhcmlmYWkuYXBpLkV2",
-            "ZW50VHlwZRItCgd0YXJnZXRzGAUgAygLMhwuY2xhcmlmYWkuYXBpLkF1ZGl0",
-            "TG9nVGFyZ2V0EisKB3N1Y2Nlc3MYBiABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "Qm9vbFZhbHVlEhIKCnNvdXJjZV9pcHMYByADKAkiowMKH1dvcmtmbG93VmVy",
-            "c2lvbkV2YWx1YXRpb25NZXRyaWMSCgoCaWQYASABKAkSDwoHc3VtbWFyeRgC",
-            "IAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRJJCglkYXRhX3R5cGUYBCABKA4y",
-            "Ni5jbGFyaWZhaS5hcGkuV29ya2Zsb3dWZXJzaW9uRXZhbHVhdGlvbk1ldHJp",
-            "Yy5EYXRhVHlwZRJbChJ2aXN1YWxpc2F0aW9uX3R5cGUYBSABKA4yPy5jbGFy",
-            "aWZhaS5hcGkuV29ya2Zsb3dWZXJzaW9uRXZhbHVhdGlvbk1ldHJpYy5WaXN1",
-            "YWxpc2F0aW9uVHlwZSIsCghEYXRhVHlwZRIVChFEQVRBX1RZUEVfTk9UX1NF",
-            "VBAAEgkKBUZMT0FUEAEieAoRVmlzdWFsaXNhdGlvblR5cGUSHgoaVklTVUFM",
-            "SVpBVElPTl9UWVBFX05PVF9TRVQQABIUChBDT05GVVNJT05fTUFUUklYEAES",
-            "GgoWUFJFQ0lTSU9OX1JFQ0FMTF9DVVJWRRACEhEKDVJPQ19BVUNfQ1VSVkUQ",
-            "AyKqAgohV29ya2Zsb3dWZXJzaW9uRXZhbHVhdGlvblRlbXBsYXRlEgoKAmlk",
-            "GAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJEkwKCnRhc2tfdHlwZXMYAyAD",
-            "KA4yOC5jbGFyaWZhaS5hcGkuV29ya2Zsb3dWZXJzaW9uRXZhbHVhdGlvblRl",
-            "bXBsYXRlLlRhc2tUeXBlEloKI3dvcmtmbG93X3ZlcnNpb25fZXZhbHVhdGlv",
-            "bl9tZXRyaWNzGAQgAygLMi0uY2xhcmlmYWkuYXBpLldvcmtmbG93VmVyc2lv",
-            "bkV2YWx1YXRpb25NZXRyaWMiOgoIVGFza1R5cGUSFQoRVEFTS19UWVBFX05P",
-            "VF9TRVQQABIXChNURVhUX0NMQVNTSUZJQ0FUSU9OEAEiiwEKCExvZ0VudHJ5",
-            "Eg8KB21lc3NhZ2UYASABKAkSEAoIbG9nX3R5cGUYAiABKAkSCwoDdXJsGAMg",
-            "ASgJEjEKBG1ldGEYCSABKAsyIy5jbGFyaWZhaS5hcGkuQ29tcHV0ZVNvdXJj",
-            "ZU1ldGFkYXRhSgQIBBAFSgQIBRAGSgQIBhAHSgQIBxAISgQICBAJItMBChVD",
-            "b21wdXRlU291cmNlTWV0YWRhdGESLwoLdXNlcl9hcHBfaWQYASABKAsyGi5j",
-            "bGFyaWZhaS5hcGkuVXNlckFwcElEU2V0EhAKCG1vZGVsX2lkGAIgASgJEhgK",
-            "EG1vZGVsX3ZlcnNpb25faWQYAyABKAkSEwoLd29ya2Zsb3dfaWQYBCABKAkS",
-            "GgoSY29tcHV0ZV9jbHVzdGVyX2lkGAYgASgJEhMKC25vZGVwb29sX2lkGAcg",
-            "ASgJEhEKCXJ1bm5lcl9pZBgIIAEoCUoECAUQBipeChRXb3JrZmxvd01vZGVs",
-            "VXNlQ2FzZRIjCh9XT1JLRkxPV19NT0RFTF9VU0VfQ0FTRV9OT1RfU0VUEAAS",
-            "EgoOQ0xBU1NJRklDQVRJT04QARINCglERVRFQ1RJT04QAiqQAQobRGF0YXNl",
-            "dFZlcnNpb25SZXF1ZXN0T3JpZ2luEioKJkRBVEFTRVRfVkVSU0lPTl9SRVFV",
-            "RVNUX09SSUdJTl9OT1RfU0VUEAASCgoGTUFOVUFMEAESDAoIVFJBSU5JTkcQ",
-            "AhIVChFFVkFMX0dST1VORF9UUlVUSBADEhQKEEVWQUxfUFJFRElDVElPTlMQ",
-            "BCr5AQoeRGF0YXNldFZlcnNpb25NZXRyaWNzR3JvdXBUeXBlEi4KKkRBVEFT",
-            "RVRfVkVSU0lPTl9NRVRSSUNTX0dST1VQX1RZUEVfTk9UX1NFVBAAEg4KCklO",
-            "UFVUX1RZUEUQAhIOCgpDT05DRVBUX0lEEAoSEgoOQ09OQ0VQVFNfQ09VTlQQ",
-            "CxIYChRCT1VORElOR19CT1hFU19DT1VOVBAUEhIKDlBPTFlHT05TX0NPVU5U",
-            "EBUSEAoMUE9JTlRTX0NPVU5UEBYSDwoLTUFTS1NfQ09VTlQQFxIQCgxQSVhF",
-            "TFNfQ09VTlQQHhIQCgxBU1BFQ1RfUkFUSU8QHyqFAQoaRGF0YXNldFZlcnNp",
-            "b25FeHBvcnRGb3JtYXQSKQolREFUQVNFVF9WRVJTSU9OX0VYUE9SVF9GT1JN",
-            "QVRfTk9UX1NFVBAAEhoKFkNMQVJJRkFJX0RBVEFfUFJPVE9CVUYQARIWChJD",
-            "TEFSSUZBSV9EQVRBX0pTT04QAxIICgRDT0NPEAIqSAoQRXhwaXJhdGlvbkFj",
-            "dGlvbhIdChlFWFBJUkFUSU9OX0FDVElPTl9OT1RfU0VUEAASCQoFREVMQVkQ",
-            "ARIKCgZFWFBJUlkQAipNCgxMaWNlbnNlU2NvcGUSGQoVTElDRU5TRV9TQ09Q",
-            "RV9OT1RfU0VUEAASCwoHUFJFRElDVBABEgkKBVRSQUlOEAISCgoGU0VBUkNI",
-            "EAMqXAoLTGljZW5zZVR5cGUSGAoUVU5LTk9XTl9MSUNFTlNFX1RZUEUQABIP",
-            "CgtGSVJTVF9QQVJUWRABEg8KC09QRU5fU09VUkNFEAISEQoNQ0xPU0VEX1NP",
-            "VVJDRRADKlAKCERhdGFUeXBlEg0KCVVOREVGSU5FRBAAEgoKBlNUUklORxAB",
-            "EgkKBVVJTlQ4EAISCQoFSU5UMzIQAxIJCgVJTlQ2NBAEEggKBEZQMzIQBSqP",
-            "AQoPVmFsdWVDb21wYXJhdG9yEh0KGUNPTkNFUFRfVEhSRVNIT0xEX05PVF9T",
-            "RVQQABIQCgxHUkVBVEVSX1RIQU4QARIZChVHUkVBVEVSX1RIQU5fT1JfRVFV",
-            "QUwQAhINCglMRVNTX1RIQU4QAxIWChJMRVNTX1RIQU5fT1JfRVFVQUwQBBIJ",
-            "CgVFUVVBTBAFKoEBCg5FdmFsdWF0aW9uVHlwZRINCglVbmRlZmluZWQQABIS",
-            "Cg5DbGFzc2lmaWNhdGlvbhABEg0KCURldGVjdGlvbhACEhAKDFNlZ21lbnRh",
-            "dGlvbhADEg4KCkNsdXN0ZXJpbmcQBBILCgdUcmFja2VyEAUSDgoKR2VuZXJh",
-            "dGlvbhAGKmYKDEFQSUV2ZW50VHlwZRIaChZBUElfRVZFTlRfVFlQRV9OT1Rf",
-            "U0VUEAASEwoPT05fUFJFTV9QUkVESUNUEAESEQoNT05fUFJFTV9UUkFJThAC",
-            "EhIKDk9OX1BSRU1fU0VBUkNIEAMqPAoRVXNhZ2VJbnRlcnZhbFR5cGUSCQoF",
-            "dW5kZWYQABIHCgNkYXkQARIJCgVtb250aBACEggKBHllYXIQAyp9ChJBbm5v",
-            "dGF0aW9uRGF0YVR5cGUSIAocQU5OT1RBVElPTl9EQVRBX1RZUEVfTk9UX1NF",
-            "VBAAEgcKA1RBRxABEhAKDEJPVU5ESU5HX0JPWBACEgsKB1BPTFlHT04QBBIJ",
-            "CgVQT0lOVBAIEggKBFNQQU4QEBIICgRNQVNLECAqHQoIUm9sZVR5cGUSCAoE",
-            "VEVBTRAAEgcKA09SRxABKiQKEFN0YXRWYWx1ZUFnZ1R5cGUSBwoDU1VNEAAS",
-            "BwoDQVZHEAEqYAoPU3RhdFRpbWVBZ2dUeXBlEg8KC05PX1RJTUVfQUdHEAAS",
-            "CAoEWUVBUhABEgkKBU1PTlRIEAISCAoEV0VFSxADEgcKA0RBWRAEEggKBEhP",
-            "VVIQBRIKCgZNSU5VVEUQBipiChNWYWxpZGF0aW9uRXJyb3JUeXBlEiEKHVZB",
-            "TElEQVRJT05fRVJST1JfVFlQRV9OT1RfU0VUEAASDgoKUkVTVFJJQ1RFRBAB",
-            "EgwKCERBVEFCQVNFEAISCgoGRk9STUFUEAMqWwoZSW5wdXRJRENvbmZsaWN0",
-            "UmVzb2x1dGlvbhIoCiRJTlBVVF9JRF9DT05GTElDVF9SRVNPTFVUSU9OX05P",
-            "VF9TRVQQABIICgRTS0lQEAESCgoGU1VGRklYEAIqcwoQUnVubmVyTWV0aG9k",
-            "VHlwZRILCgdVTktOT1dOEAASDwoLVU5BUllfVU5BUlkQARITCg9VTkFSWV9T",
-            "VFJFQU1JTkcQAhITCg9TVFJFQU1JTkdfVU5BUlkQAxIXChNTVFJFQU1JTkdf",
-            "U1RSRUFNSU5HEAQqxQoKCUV2ZW50VHlwZRIWChJFVkVOVF9UWVBFX05PVF9T",
-            "RVQQABI6ChdPUkdBTklaQVRJT05fTUVNQkVSX0FERBBkGh3CPhpPcmdhbml6",
-            "YXRpb24gbWVtYmVycyBhZGRlZBJGChpPUkdBTklaQVRJT05fTUVNQkVSX0NI",
-            "QU5HRRBlGibCPiNPcmdhbml6YXRpb24gbWVtYmVycycgcm9sZXMgY2hhbmdl",
-            "ZBI/ChpPUkdBTklaQVRJT05fTUVNQkVSX1JFTU9WRRBmGh/CPhxPcmdhbml6",
-            "YXRpb24gbWVtYmVycyByZW1vdmVkElUKJU9SR0FOSVpBVElPTl9NRU1CRVJf",
-            "SU5WSVRBVElPTl9DUkVBVEUQZxoqwj4nT3JnYW5pemF0aW9uIG1lbWJlciBp",
-            "bnZpdGF0aW9ucyBjcmVhdGVkElYKJU9SR0FOSVpBVElPTl9NRU1CRVJfSU5W",
-            "SVRBVElPTl9DQU5DRUwQaBorwj4oT3JnYW5pemF0aW9uIG1lbWJlciBpbnZp",
-            "dGF0aW9ucyBjYW5jZWxlZBJWCiVPUkdBTklaQVRJT05fTUVNQkVSX0lOVklU",
-            "QVRJT05fQUNDRVBUEGkaK8I+KE9yZ2FuaXphdGlvbiBtZW1iZXIgaW52aXRh",
-            "dGlvbnMgYWNjZXB0ZWQSVwomT1JHQU5JWkFUSU9OX01FTUJFUl9JTlZJVEFU",
-            "SU9OX0RFQ0xJTkUQahorwj4oT3JnYW5pemF0aW9uIG1lbWJlciBpbnZpdGF0",
-            "aW9ucyBkZWNsaW5lZBI7ChhPUkdBTklaQVRJT05fVEVBTV9DUkVBVEUQaxod",
-            "wj4aT3JnYW5pemF0aW9uIHRlYW1zIGNyZWF0ZWQSOwoYT1JHQU5JWkFUSU9O",
-            "X1RFQU1fVVBEQVRFEGwaHcI+Gk9yZ2FuaXphdGlvbiB0ZWFtcyB1cGRhdGVk",
-            "EjsKGE9SR0FOSVpBVElPTl9URUFNX0RFTEVURRBtGh3CPhpPcmdhbml6YXRp",
-            "b24gdGVhbXMgZGVsZXRlZBJEChxPUkdBTklaQVRJT05fVEVBTV9NRU1CRVJf",
-            "QUREEG4aIsI+H09yZ2FuaXphdGlvbiB0ZWFtIG1lbWJlcnMgYWRkZWQSSQof",
-            "T1JHQU5JWkFUSU9OX1RFQU1fTUVNQkVSX1JFTU9WRRBvGiTCPiFPcmdhbml6",
-            "YXRpb24gdGVhbSBtZW1iZXJzIHJlbW92ZWQSRgoZT1JHQU5JWkFUSU9OX1RF",
-            "QU1fQVBQX0FERBBwGifCPiRPcmdhbml6YXRpb24gdGVhbSBhcHBsaWNhdGlv",
-            "bnMgYWRkZWQSSwocT1JHQU5JWkFUSU9OX1RFQU1fQVBQX1JFTU9WRRBxGinC",
-            "PiZPcmdhbml6YXRpb24gdGVhbSBhcHBsaWNhdGlvbnMgcmVtb3ZlZBImCg1N",
-            "T0RVTEVfQ1JFQVRFEMgBGhLCPg9Nb2R1bGVzIGNyZWF0ZWQSJgoNTU9EVUxF",
-            "X1VQREFURRDJARoSwj4PTW9kdWxlcyB1cGRhdGVkEiYKDU1PRFVMRV9ERUxF",
-            "VEUQygEaEsI+D01vZHVsZXMgZGVsZXRlZBI2ChVNT0RVTEVfVkVSU0lPTl9D",
-            "UkVBVEUQywEaGsI+F01vZHVsZSB2ZXJzaW9ucyBjcmVhdGVkEjYKFU1PRFVM",
-            "RV9WRVJTSU9OX1VQREFURRDMARoawj4XTW9kdWxlIHZlcnNpb25zIHVwZGF0",
-            "ZWQSNgoVTU9EVUxFX1ZFUlNJT05fREVMRVRFEM0BGhrCPhdNb2R1bGUgdmVy",
-            "c2lvbnMgZGVsZXRlZEJZChVjb20uY2xhcmlmYWkuZ3JwYy5hcGlQAVo3Z2l0",
-            "aHViLmNvbS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3RvL2NsYXJp",
-            "ZmFpL2FwaaICBENBSVBiBnByb3RvMw=="));
+            "ZmFpLmFwaS5Nb2R1bGVWZXJzaW9uSAASKgoId29ya2Zsb3cYByABKAsyFi5j",
+            "bGFyaWZhaS5hcGkuV29ya2Zsb3dIABI5ChB3b3JrZmxvd192ZXJzaW9uGAgg",
+            "ASgLMh0uY2xhcmlmYWkuYXBpLldvcmtmbG93VmVyc2lvbkgAQggKBnRhcmdl",
+            "dCKbAgoNQXVkaXRMb2dFbnRyeRItCgl0aW1lc3RhbXAYASABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEiAKBHVzZXIYAiABKAsyEi5jbGFyaWZh",
+            "aS5hcGkuVXNlchIqCglvcGVyYXRpb24YAyABKA4yFy5jbGFyaWZhaS5hcGku",
+            "RXZlbnRUeXBlEhMKC2Rlc2NyaXB0aW9uGAQgASgJEi0KB3RhcmdldHMYBSAD",
+            "KAsyHC5jbGFyaWZhaS5hcGkuQXVkaXRMb2dUYXJnZXQSDwoHZGV0YWlscxgG",
+            "IAMoCRIVCgdzdWNjZXNzGAcgASgIQgSAtRgBEg4KBnJlcV9pZBgIIAEoCRIR",
+            "Cglzb3VyY2VfaXAYCSABKAkipAIKDUF1ZGl0TG9nUXVlcnkSMgoOdGltZXN0",
+            "YW1wX2Zyb20YASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEjAK",
+            "DHRpbWVzdGFtcF90bxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASEAoIdXNlcl9pZHMYAyADKAkSKwoKb3BlcmF0aW9ucxgEIAMoDjIXLmNs",
+            "YXJpZmFpLmFwaS5FdmVudFR5cGUSLQoHdGFyZ2V0cxgFIAMoCzIcLmNsYXJp",
+            "ZmFpLmFwaS5BdWRpdExvZ1RhcmdldBIrCgdzdWNjZXNzGAYgASgLMhouZ29v",
+            "Z2xlLnByb3RvYnVmLkJvb2xWYWx1ZRISCgpzb3VyY2VfaXBzGAcgAygJIqMD",
+            "Ch9Xb3JrZmxvd1ZlcnNpb25FdmFsdWF0aW9uTWV0cmljEgoKAmlkGAEgASgJ",
+            "Eg8KB3N1bW1hcnkYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSSQoJZGF0",
+            "YV90eXBlGAQgASgOMjYuY2xhcmlmYWkuYXBpLldvcmtmbG93VmVyc2lvbkV2",
+            "YWx1YXRpb25NZXRyaWMuRGF0YVR5cGUSWwoSdmlzdWFsaXNhdGlvbl90eXBl",
+            "GAUgASgOMj8uY2xhcmlmYWkuYXBpLldvcmtmbG93VmVyc2lvbkV2YWx1YXRp",
+            "b25NZXRyaWMuVmlzdWFsaXNhdGlvblR5cGUiLAoIRGF0YVR5cGUSFQoRREFU",
+            "QV9UWVBFX05PVF9TRVQQABIJCgVGTE9BVBABIngKEVZpc3VhbGlzYXRpb25U",
+            "eXBlEh4KGlZJU1VBTElaQVRJT05fVFlQRV9OT1RfU0VUEAASFAoQQ09ORlVT",
+            "SU9OX01BVFJJWBABEhoKFlBSRUNJU0lPTl9SRUNBTExfQ1VSVkUQAhIRCg1S",
+            "T0NfQVVDX0NVUlZFEAMiqgIKIVdvcmtmbG93VmVyc2lvbkV2YWx1YXRpb25U",
+            "ZW1wbGF0ZRIKCgJpZBgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCRJMCgp0",
+            "YXNrX3R5cGVzGAMgAygOMjguY2xhcmlmYWkuYXBpLldvcmtmbG93VmVyc2lv",
+            "bkV2YWx1YXRpb25UZW1wbGF0ZS5UYXNrVHlwZRJaCiN3b3JrZmxvd192ZXJz",
+            "aW9uX2V2YWx1YXRpb25fbWV0cmljcxgEIAMoCzItLmNsYXJpZmFpLmFwaS5X",
+            "b3JrZmxvd1ZlcnNpb25FdmFsdWF0aW9uTWV0cmljIjoKCFRhc2tUeXBlEhUK",
+            "EVRBU0tfVFlQRV9OT1RfU0VUEAASFwoTVEVYVF9DTEFTU0lGSUNBVElPThAB",
+            "IosBCghMb2dFbnRyeRIPCgdtZXNzYWdlGAEgASgJEhAKCGxvZ190eXBlGAIg",
+            "ASgJEgsKA3VybBgDIAEoCRIxCgRtZXRhGAkgASgLMiMuY2xhcmlmYWkuYXBp",
+            "LkNvbXB1dGVTb3VyY2VNZXRhZGF0YUoECAQQBUoECAUQBkoECAYQB0oECAcQ",
+            "CEoECAgQCSLTAQoVQ29tcHV0ZVNvdXJjZU1ldGFkYXRhEi8KC3VzZXJfYXBw",
+            "X2lkGAEgASgLMhouY2xhcmlmYWkuYXBpLlVzZXJBcHBJRFNldBIQCghtb2Rl",
+            "bF9pZBgCIAEoCRIYChBtb2RlbF92ZXJzaW9uX2lkGAMgASgJEhMKC3dvcmtm",
+            "bG93X2lkGAQgASgJEhoKEmNvbXB1dGVfY2x1c3Rlcl9pZBgGIAEoCRITCgtu",
+            "b2RlcG9vbF9pZBgHIAEoCRIRCglydW5uZXJfaWQYCCABKAlKBAgFEAYqXgoU",
+            "V29ya2Zsb3dNb2RlbFVzZUNhc2USIwofV09SS0ZMT1dfTU9ERUxfVVNFX0NB",
+            "U0VfTk9UX1NFVBAAEhIKDkNMQVNTSUZJQ0FUSU9OEAESDQoJREVURUNUSU9O",
+            "EAIqkAEKG0RhdGFzZXRWZXJzaW9uUmVxdWVzdE9yaWdpbhIqCiZEQVRBU0VU",
+            "X1ZFUlNJT05fUkVRVUVTVF9PUklHSU5fTk9UX1NFVBAAEgoKBk1BTlVBTBAB",
+            "EgwKCFRSQUlOSU5HEAISFQoRRVZBTF9HUk9VTkRfVFJVVEgQAxIUChBFVkFM",
+            "X1BSRURJQ1RJT05TEAQq+QEKHkRhdGFzZXRWZXJzaW9uTWV0cmljc0dyb3Vw",
+            "VHlwZRIuCipEQVRBU0VUX1ZFUlNJT05fTUVUUklDU19HUk9VUF9UWVBFX05P",
+            "VF9TRVQQABIOCgpJTlBVVF9UWVBFEAISDgoKQ09OQ0VQVF9JRBAKEhIKDkNP",
+            "TkNFUFRTX0NPVU5UEAsSGAoUQk9VTkRJTkdfQk9YRVNfQ09VTlQQFBISCg5Q",
+            "T0xZR09OU19DT1VOVBAVEhAKDFBPSU5UU19DT1VOVBAWEg8KC01BU0tTX0NP",
+            "VU5UEBcSEAoMUElYRUxTX0NPVU5UEB4SEAoMQVNQRUNUX1JBVElPEB8qhQEK",
+            "GkRhdGFzZXRWZXJzaW9uRXhwb3J0Rm9ybWF0EikKJURBVEFTRVRfVkVSU0lP",
+            "Tl9FWFBPUlRfRk9STUFUX05PVF9TRVQQABIaChZDTEFSSUZBSV9EQVRBX1BS",
+            "T1RPQlVGEAESFgoSQ0xBUklGQUlfREFUQV9KU09OEAMSCAoEQ09DTxACKkgK",
+            "EEV4cGlyYXRpb25BY3Rpb24SHQoZRVhQSVJBVElPTl9BQ1RJT05fTk9UX1NF",
+            "VBAAEgkKBURFTEFZEAESCgoGRVhQSVJZEAIqTQoMTGljZW5zZVNjb3BlEhkK",
+            "FUxJQ0VOU0VfU0NPUEVfTk9UX1NFVBAAEgsKB1BSRURJQ1QQARIJCgVUUkFJ",
+            "ThACEgoKBlNFQVJDSBADKlwKC0xpY2Vuc2VUeXBlEhgKFFVOS05PV05fTElD",
+            "RU5TRV9UWVBFEAASDwoLRklSU1RfUEFSVFkQARIPCgtPUEVOX1NPVVJDRRAC",
+            "EhEKDUNMT1NFRF9TT1VSQ0UQAypQCghEYXRhVHlwZRINCglVTkRFRklORUQQ",
+            "ABIKCgZTVFJJTkcQARIJCgVVSU5UOBACEgkKBUlOVDMyEAMSCQoFSU5UNjQQ",
+            "BBIICgRGUDMyEAUqjwEKD1ZhbHVlQ29tcGFyYXRvchIdChlDT05DRVBUX1RI",
+            "UkVTSE9MRF9OT1RfU0VUEAASEAoMR1JFQVRFUl9USEFOEAESGQoVR1JFQVRF",
+            "Ul9USEFOX09SX0VRVUFMEAISDQoJTEVTU19USEFOEAMSFgoSTEVTU19USEFO",
+            "X09SX0VRVUFMEAQSCQoFRVFVQUwQBSqBAQoORXZhbHVhdGlvblR5cGUSDQoJ",
+            "VW5kZWZpbmVkEAASEgoOQ2xhc3NpZmljYXRpb24QARINCglEZXRlY3Rpb24Q",
+            "AhIQCgxTZWdtZW50YXRpb24QAxIOCgpDbHVzdGVyaW5nEAQSCwoHVHJhY2tl",
+            "chAFEg4KCkdlbmVyYXRpb24QBipmCgxBUElFdmVudFR5cGUSGgoWQVBJX0VW",
+            "RU5UX1RZUEVfTk9UX1NFVBAAEhMKD09OX1BSRU1fUFJFRElDVBABEhEKDU9O",
+            "X1BSRU1fVFJBSU4QAhISCg5PTl9QUkVNX1NFQVJDSBADKjwKEVVzYWdlSW50",
+            "ZXJ2YWxUeXBlEgkKBXVuZGVmEAASBwoDZGF5EAESCQoFbW9udGgQAhIICgR5",
+            "ZWFyEAMqfQoSQW5ub3RhdGlvbkRhdGFUeXBlEiAKHEFOTk9UQVRJT05fREFU",
+            "QV9UWVBFX05PVF9TRVQQABIHCgNUQUcQARIQCgxCT1VORElOR19CT1gQAhIL",
+            "CgdQT0xZR09OEAQSCQoFUE9JTlQQCBIICgRTUEFOEBASCAoETUFTSxAgKh0K",
+            "CFJvbGVUeXBlEggKBFRFQU0QABIHCgNPUkcQASokChBTdGF0VmFsdWVBZ2dU",
+            "eXBlEgcKA1NVTRAAEgcKA0FWRxABKmAKD1N0YXRUaW1lQWdnVHlwZRIPCgtO",
+            "T19USU1FX0FHRxAAEggKBFlFQVIQARIJCgVNT05USBACEggKBFdFRUsQAxIH",
+            "CgNEQVkQBBIICgRIT1VSEAUSCgoGTUlOVVRFEAYqYgoTVmFsaWRhdGlvbkVy",
+            "cm9yVHlwZRIhCh1WQUxJREFUSU9OX0VSUk9SX1RZUEVfTk9UX1NFVBAAEg4K",
+            "ClJFU1RSSUNURUQQARIMCghEQVRBQkFTRRACEgoKBkZPUk1BVBADKlsKGUlu",
+            "cHV0SURDb25mbGljdFJlc29sdXRpb24SKAokSU5QVVRfSURfQ09ORkxJQ1Rf",
+            "UkVTT0xVVElPTl9OT1RfU0VUEAASCAoEU0tJUBABEgoKBlNVRkZJWBACKnMK",
+            "EFJ1bm5lck1ldGhvZFR5cGUSCwoHVU5LTk9XThAAEg8KC1VOQVJZX1VOQVJZ",
+            "EAESEwoPVU5BUllfU1RSRUFNSU5HEAISEwoPU1RSRUFNSU5HX1VOQVJZEAMS",
+            "FwoTU1RSRUFNSU5HX1NUUkVBTUlORxAEKpQOCglFdmVudFR5cGUSFgoSRVZF",
+            "TlRfVFlQRV9OT1RfU0VUEAASOgoXT1JHQU5JWkFUSU9OX01FTUJFUl9BREQQ",
+            "ZBodwj4aT3JnYW5pemF0aW9uIG1lbWJlcnMgYWRkZWQSRgoaT1JHQU5JWkFU",
+            "SU9OX01FTUJFUl9DSEFOR0UQZRomwj4jT3JnYW5pemF0aW9uIG1lbWJlcnMn",
+            "IHJvbGVzIGNoYW5nZWQSPwoaT1JHQU5JWkFUSU9OX01FTUJFUl9SRU1PVkUQ",
+            "Zhofwj4cT3JnYW5pemF0aW9uIG1lbWJlcnMgcmVtb3ZlZBJVCiVPUkdBTkla",
+            "QVRJT05fTUVNQkVSX0lOVklUQVRJT05fQ1JFQVRFEGcaKsI+J09yZ2FuaXph",
+            "dGlvbiBtZW1iZXIgaW52aXRhdGlvbnMgY3JlYXRlZBJWCiVPUkdBTklaQVRJ",
+            "T05fTUVNQkVSX0lOVklUQVRJT05fQ0FOQ0VMEGgaK8I+KE9yZ2FuaXphdGlv",
+            "biBtZW1iZXIgaW52aXRhdGlvbnMgY2FuY2VsZWQSVgolT1JHQU5JWkFUSU9O",
+            "X01FTUJFUl9JTlZJVEFUSU9OX0FDQ0VQVBBpGivCPihPcmdhbml6YXRpb24g",
+            "bWVtYmVyIGludml0YXRpb25zIGFjY2VwdGVkElcKJk9SR0FOSVpBVElPTl9N",
+            "RU1CRVJfSU5WSVRBVElPTl9ERUNMSU5FEGoaK8I+KE9yZ2FuaXphdGlvbiBt",
+            "ZW1iZXIgaW52aXRhdGlvbnMgZGVjbGluZWQSOwoYT1JHQU5JWkFUSU9OX1RF",
+            "QU1fQ1JFQVRFEGsaHcI+Gk9yZ2FuaXphdGlvbiB0ZWFtcyBjcmVhdGVkEjsK",
+            "GE9SR0FOSVpBVElPTl9URUFNX1VQREFURRBsGh3CPhpPcmdhbml6YXRpb24g",
+            "dGVhbXMgdXBkYXRlZBI7ChhPUkdBTklaQVRJT05fVEVBTV9ERUxFVEUQbRod",
+            "wj4aT3JnYW5pemF0aW9uIHRlYW1zIGRlbGV0ZWQSRAocT1JHQU5JWkFUSU9O",
+            "X1RFQU1fTUVNQkVSX0FERBBuGiLCPh9Pcmdhbml6YXRpb24gdGVhbSBtZW1i",
+            "ZXJzIGFkZGVkEkkKH09SR0FOSVpBVElPTl9URUFNX01FTUJFUl9SRU1PVkUQ",
+            "bxokwj4hT3JnYW5pemF0aW9uIHRlYW0gbWVtYmVycyByZW1vdmVkEkYKGU9S",
+            "R0FOSVpBVElPTl9URUFNX0FQUF9BREQQcBonwj4kT3JnYW5pemF0aW9uIHRl",
+            "YW0gYXBwbGljYXRpb25zIGFkZGVkEksKHE9SR0FOSVpBVElPTl9URUFNX0FQ",
+            "UF9SRU1PVkUQcRopwj4mT3JnYW5pemF0aW9uIHRlYW0gYXBwbGljYXRpb25z",
+            "IHJlbW92ZWQSJgoNTU9EVUxFX0NSRUFURRDIARoSwj4PTW9kdWxlcyBjcmVh",
+            "dGVkEiYKDU1PRFVMRV9VUERBVEUQyQEaEsI+D01vZHVsZXMgdXBkYXRlZBIm",
+            "Cg1NT0RVTEVfREVMRVRFEMoBGhLCPg9Nb2R1bGVzIGRlbGV0ZWQSNgoVTU9E",
+            "VUxFX1ZFUlNJT05fQ1JFQVRFEMsBGhrCPhdNb2R1bGUgdmVyc2lvbnMgY3Jl",
+            "YXRlZBI2ChVNT0RVTEVfVkVSU0lPTl9VUERBVEUQzAEaGsI+F01vZHVsZSB2",
+            "ZXJzaW9ucyB1cGRhdGVkEjYKFU1PRFVMRV9WRVJTSU9OX0RFTEVURRDNARoa",
+            "wj4XTW9kdWxlIHZlcnNpb25zIGRlbGV0ZWQSKgoPV09SS0ZMT1dfQ1JFQVRF",
+            "EJADGhTCPhFXb3JrZmxvd3MgY3JlYXRlZBIqCg9XT1JLRkxPV19VUERBVEUQ",
+            "kQMaFMI+EVdvcmtmbG93cyB1cGRhdGVkEioKD1dPUktGTE9XX0RFTEVURRCS",
+            "AxoUwj4RV29ya2Zsb3dzIGRlbGV0ZWQSOgoXV09SS0ZMT1dfVkVSU0lPTl9D",
+            "UkVBVEUQkwMaHMI+GVdvcmtmbG93IHZlcnNpb25zIGNyZWF0ZWQSOgoXV09S",
+            "S0ZMT1dfVkVSU0lPTl9VUERBVEUQlAMaHMI+GVdvcmtmbG93IHZlcnNpb25z",
+            "IHVwZGF0ZWQSOgoXV09SS0ZMT1dfVkVSU0lPTl9ERUxFVEUQlQMaHMI+GVdv",
+            "cmtmbG93IHZlcnNpb25zIGRlbGV0ZWQSLQoQQ09MTEFCT1JBVE9SX0FERBC8",
+            "BRoWwj4TQ29sbGFib3JhdG9ycyBhZGRlZBIyChNDT0xMQUJPUkFUT1JfVVBE",
+            "QVRFEL0FGhjCPhVDb2xsYWJvcmF0b3JzIHVwZGF0ZWQSMgoTQ09MTEFCT1JB",
+            "VE9SX1JFTU9WRRC+BRoYwj4VQ29sbGFib3JhdG9ycyByZW1vdmVkQlkKFWNv",
+            "bS5jbGFyaWZhaS5ncnBjLmFwaVABWjdnaXRodWIuY29tL0NsYXJpZmFpL2Ns",
+            "YXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXBpogIEQ0FJUGIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::MatrixReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.WorkflowModelUseCase), typeof(global::Clarifai.Api.DatasetVersionRequestOrigin), typeof(global::Clarifai.Api.DatasetVersionMetricsGroupType), typeof(global::Clarifai.Api.DatasetVersionExportFormat), typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.LicenseType), typeof(global::Clarifai.Api.DataType), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.AnnotationDataType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), typeof(global::Clarifai.Api.InputIDConflictResolution), typeof(global::Clarifai.Api.RunnerMethodType), typeof(global::Clarifai.Api.EventType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1322,7 +1335,7 @@ namespace Clarifai.Api {
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.Deployment), global::Clarifai.Api.Deployment.Parser, new[]{ "Id", "UserId", "AutoscaleConfig", "Nodepools", "SchedulingChoice", "Visibility", "Metadata", "Description", "Worker", "CreatedAt", "ModifiedAt" }, null, new[]{ typeof(global::Clarifai.Api.Deployment.Types.SchedulingChoice) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.RunnerSelector), global::Clarifai.Api.RunnerSelector.Parser, new[]{ "Nodepool", "Runner", "Deployment" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ProcessingInfo), global::Clarifai.Api.ProcessingInfo.Parser, new[]{ "RunnerMethodType", "Status", "ProcessingId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AuditLogTarget), global::Clarifai.Api.AuditLogTarget.Parser, new[]{ "User", "Role", "Team", "App", "Module", "ModuleVersion" }, new[]{ "Target" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AuditLogTarget), global::Clarifai.Api.AuditLogTarget.Parser, new[]{ "User", "Role", "Team", "App", "Module", "ModuleVersion", "Workflow", "WorkflowVersion" }, new[]{ "Target" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AuditLogEntry), global::Clarifai.Api.AuditLogEntry.Parser, new[]{ "Timestamp", "User", "Operation", "Description", "Targets", "Details", "Success", "ReqId", "SourceIp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AuditLogQuery), global::Clarifai.Api.AuditLogQuery.Parser, new[]{ "TimestampFrom", "TimestampTo", "UserIds", "Operations", "Targets", "Success", "SourceIps" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.WorkflowVersionEvaluationMetric), global::Clarifai.Api.WorkflowVersionEvaluationMetric.Parser, new[]{ "Id", "Summary", "Description", "DataType", "VisualisationType" }, null, new[]{ typeof(global::Clarifai.Api.WorkflowVersionEvaluationMetric.Types.DataType), typeof(global::Clarifai.Api.WorkflowVersionEvaluationMetric.Types.VisualisationType) }, null, null),
@@ -1627,6 +1640,21 @@ namespace Clarifai.Api {
     [pbr::OriginalName("MODULE_VERSION_CREATE")] ModuleVersionCreate = 203,
     [pbr::OriginalName("MODULE_VERSION_UPDATE")] ModuleVersionUpdate = 204,
     [pbr::OriginalName("MODULE_VERSION_DELETE")] ModuleVersionDelete = 205,
+    /// <summary>
+    /// Event types related to workflows: 400 - 499
+    /// </summary>
+    [pbr::OriginalName("WORKFLOW_CREATE")] WorkflowCreate = 400,
+    [pbr::OriginalName("WORKFLOW_UPDATE")] WorkflowUpdate = 401,
+    [pbr::OriginalName("WORKFLOW_DELETE")] WorkflowDelete = 402,
+    [pbr::OriginalName("WORKFLOW_VERSION_CREATE")] WorkflowVersionCreate = 403,
+    [pbr::OriginalName("WORKFLOW_VERSION_UPDATE")] WorkflowVersionUpdate = 404,
+    [pbr::OriginalName("WORKFLOW_VERSION_DELETE")] WorkflowVersionDelete = 405,
+    /// <summary>
+    /// Event types related to collaborators: 700 - 799
+    /// </summary>
+    [pbr::OriginalName("COLLABORATOR_ADD")] CollaboratorAdd = 700,
+    [pbr::OriginalName("COLLABORATOR_UPDATE")] CollaboratorUpdate = 701,
+    [pbr::OriginalName("COLLABORATOR_REMOVE")] CollaboratorRemove = 702,
   }
 
   #endregion
@@ -82079,6 +82107,12 @@ namespace Clarifai.Api {
         case TargetOneofCase.ModuleVersion:
           ModuleVersion = other.ModuleVersion.Clone();
           break;
+        case TargetOneofCase.Workflow:
+          Workflow = other.Workflow.Clone();
+          break;
+        case TargetOneofCase.WorkflowVersion:
+          WorkflowVersion = other.WorkflowVersion.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -82162,6 +82196,30 @@ namespace Clarifai.Api {
       }
     }
 
+    /// <summary>Field number for the "workflow" field.</summary>
+    public const int WorkflowFieldNumber = 7;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.Workflow Workflow {
+      get { return targetCase_ == TargetOneofCase.Workflow ? (global::Clarifai.Api.Workflow) target_ : null; }
+      set {
+        target_ = value;
+        targetCase_ = value == null ? TargetOneofCase.None : TargetOneofCase.Workflow;
+      }
+    }
+
+    /// <summary>Field number for the "workflow_version" field.</summary>
+    public const int WorkflowVersionFieldNumber = 8;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.WorkflowVersion WorkflowVersion {
+      get { return targetCase_ == TargetOneofCase.WorkflowVersion ? (global::Clarifai.Api.WorkflowVersion) target_ : null; }
+      set {
+        target_ = value;
+        targetCase_ = value == null ? TargetOneofCase.None : TargetOneofCase.WorkflowVersion;
+      }
+    }
+
     private object target_;
     /// <summary>Enum of possible cases for the "target" oneof.</summary>
     public enum TargetOneofCase {
@@ -82172,6 +82230,8 @@ namespace Clarifai.Api {
       App = 4,
       Module = 5,
       ModuleVersion = 6,
+      Workflow = 7,
+      WorkflowVersion = 8,
     }
     private TargetOneofCase targetCase_ = TargetOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -82208,6 +82268,8 @@ namespace Clarifai.Api {
       if (!object.Equals(App, other.App)) return false;
       if (!object.Equals(Module, other.Module)) return false;
       if (!object.Equals(ModuleVersion, other.ModuleVersion)) return false;
+      if (!object.Equals(Workflow, other.Workflow)) return false;
+      if (!object.Equals(WorkflowVersion, other.WorkflowVersion)) return false;
       if (TargetCase != other.TargetCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -82222,6 +82284,8 @@ namespace Clarifai.Api {
       if (targetCase_ == TargetOneofCase.App) hash ^= App.GetHashCode();
       if (targetCase_ == TargetOneofCase.Module) hash ^= Module.GetHashCode();
       if (targetCase_ == TargetOneofCase.ModuleVersion) hash ^= ModuleVersion.GetHashCode();
+      if (targetCase_ == TargetOneofCase.Workflow) hash ^= Workflow.GetHashCode();
+      if (targetCase_ == TargetOneofCase.WorkflowVersion) hash ^= WorkflowVersion.GetHashCode();
       hash ^= (int) targetCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -82265,6 +82329,14 @@ namespace Clarifai.Api {
         output.WriteRawTag(50);
         output.WriteMessage(ModuleVersion);
       }
+      if (targetCase_ == TargetOneofCase.Workflow) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Workflow);
+      }
+      if (targetCase_ == TargetOneofCase.WorkflowVersion) {
+        output.WriteRawTag(66);
+        output.WriteMessage(WorkflowVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -82299,6 +82371,14 @@ namespace Clarifai.Api {
         output.WriteRawTag(50);
         output.WriteMessage(ModuleVersion);
       }
+      if (targetCase_ == TargetOneofCase.Workflow) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Workflow);
+      }
+      if (targetCase_ == TargetOneofCase.WorkflowVersion) {
+        output.WriteRawTag(66);
+        output.WriteMessage(WorkflowVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -82326,6 +82406,12 @@ namespace Clarifai.Api {
       }
       if (targetCase_ == TargetOneofCase.ModuleVersion) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ModuleVersion);
+      }
+      if (targetCase_ == TargetOneofCase.Workflow) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Workflow);
+      }
+      if (targetCase_ == TargetOneofCase.WorkflowVersion) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WorkflowVersion);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -82375,6 +82461,18 @@ namespace Clarifai.Api {
             ModuleVersion = new global::Clarifai.Api.ModuleVersion();
           }
           ModuleVersion.MergeFrom(other.ModuleVersion);
+          break;
+        case TargetOneofCase.Workflow:
+          if (Workflow == null) {
+            Workflow = new global::Clarifai.Api.Workflow();
+          }
+          Workflow.MergeFrom(other.Workflow);
+          break;
+        case TargetOneofCase.WorkflowVersion:
+          if (WorkflowVersion == null) {
+            WorkflowVersion = new global::Clarifai.Api.WorkflowVersion();
+          }
+          WorkflowVersion.MergeFrom(other.WorkflowVersion);
           break;
       }
 
@@ -82447,6 +82545,24 @@ namespace Clarifai.Api {
             ModuleVersion = subBuilder;
             break;
           }
+          case 58: {
+            global::Clarifai.Api.Workflow subBuilder = new global::Clarifai.Api.Workflow();
+            if (targetCase_ == TargetOneofCase.Workflow) {
+              subBuilder.MergeFrom(Workflow);
+            }
+            input.ReadMessage(subBuilder);
+            Workflow = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Clarifai.Api.WorkflowVersion subBuilder = new global::Clarifai.Api.WorkflowVersion();
+            if (targetCase_ == TargetOneofCase.WorkflowVersion) {
+              subBuilder.MergeFrom(WorkflowVersion);
+            }
+            input.ReadMessage(subBuilder);
+            WorkflowVersion = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -82514,6 +82630,24 @@ namespace Clarifai.Api {
             }
             input.ReadMessage(subBuilder);
             ModuleVersion = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Clarifai.Api.Workflow subBuilder = new global::Clarifai.Api.Workflow();
+            if (targetCase_ == TargetOneofCase.Workflow) {
+              subBuilder.MergeFrom(Workflow);
+            }
+            input.ReadMessage(subBuilder);
+            Workflow = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Clarifai.Api.WorkflowVersion subBuilder = new global::Clarifai.Api.WorkflowVersion();
+            if (targetCase_ == TargetOneofCase.WorkflowVersion) {
+              subBuilder.MergeFrom(WorkflowVersion);
+            }
+            input.ReadMessage(subBuilder);
+            WorkflowVersion = subBuilder;
             break;
           }
         }
