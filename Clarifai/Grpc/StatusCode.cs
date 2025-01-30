@@ -25,7 +25,7 @@ namespace Clarifai.Api.Status {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citwcm90by9jbGFyaWZhaS9hcGkvc3RhdHVzL3N0YXR1c19jb2RlLnByb3Rv",
-            "EhNjbGFyaWZhaS5hcGkuc3RhdHVzKrFfCgpTdGF0dXNDb2RlEggKBFpFUk8Q",
+            "EhNjbGFyaWZhaS5hcGkuc3RhdHVzKt5fCgpTdGF0dXNDb2RlEggKBFpFUk8Q",
             "ABIMCgdTVUNDRVNTEJBOEhEKDE1JWEVEX1NUQVRVUxCaThIMCgdGQUlMVVJF",
             "EKROEg4KCVRSWV9BR0FJThCuThIUCg9OT1RfSU1QTEVNRU5URUQQuE4SCgoF",
             "TU9WRUQQwk4SCwoGVEVBUE9UEMxOEhgKE0NPTk5fQUNDT1VOVF9JU1NVRVMQ",
@@ -136,7 +136,8 @@ namespace Clarifai.Api.Status {
             "WU1FTlRfSU5WQUxJRF9BUkdVTUVOVBCtygESIAoaREVQTE9ZTUVOVF9JTlZB",
             "TElEX1JFUVVFU1QQrsoBEiIKHElOU1RBTkNFX1RZUEVfRE9FU19OT1RfRVhJ",
             "U1QQkMsBEiQKHklOU1RBTkNFX1RZUEVfSU5WQUxJRF9BUkdVTUVOVBCRywES",
-            "IwodSU5TVEFOQ0VfVFlQRV9JTlZBTElEX1JFUVVFU1QQkssBEhMKDUlOUFVU",
+            "IwodSU5TVEFOQ0VfVFlQRV9JTlZBTElEX1JFUVVFU1QQkssBEisKJUNPTVBV",
+            "VEVfUExBTkVfTUVUUklDU19JTlZBTElEX1JFUVVFU1QQ9MsBEhMKDUlOUFVU",
             "X1NVQ0NFU1MQsOoBEhMKDUlOUFVUX1BFTkRJTkcQseoBEhIKDElOUFVUX0ZB",
             "SUxFRBCy6gESFwoRSU5QVVRfSU5fUFJPR1JFU1MQs+oBEiAKFklOUFVUX0RP",
             "V05MT0FEX1NVQ0NFU1MQsOoBGgIIARIgChZJTlBVVF9ET1dOTE9BRF9QRU5E",
@@ -695,6 +696,10 @@ namespace Clarifai.Api.Status {
     [pbr::OriginalName("INSTANCE_TYPE_DOES_NOT_EXIST")] InstanceTypeDoesNotExist = 26000,
     [pbr::OriginalName("INSTANCE_TYPE_INVALID_ARGUMENT")] InstanceTypeInvalidArgument = 26001,
     [pbr::OriginalName("INSTANCE_TYPE_INVALID_REQUEST")] InstanceTypeInvalidRequest = 26002,
+    /// <summary>
+    /// Compute plane related codes 261xx
+    /// </summary>
+    [pbr::OriginalName("COMPUTE_PLANE_METRICS_INVALID_REQUEST")] ComputePlaneMetricsInvalidRequest = 26100,
     /// <summary>
     /// Input:Image related 30xxx
     /// </summary>
