@@ -1032,112 +1032,123 @@ namespace Clarifai.Api {
             "I3dvcmtmbG93X3ZlcnNpb25fZXZhbHVhdGlvbl9tZXRyaWNzGAQgAygLMi0u",
             "Y2xhcmlmYWkuYXBpLldvcmtmbG93VmVyc2lvbkV2YWx1YXRpb25NZXRyaWMi",
             "OgoIVGFza1R5cGUSFQoRVEFTS19UWVBFX05PVF9TRVQQABIXChNURVhUX0NM",
-            "QVNTSUZJQ0FUSU9OEAEiiwEKCExvZ0VudHJ5Eg8KB21lc3NhZ2UYASABKAkS",
-            "EAoIbG9nX3R5cGUYAiABKAkSCwoDdXJsGAMgASgJEjEKBG1ldGEYCSABKAsy",
-            "Iy5jbGFyaWZhaS5hcGkuQ29tcHV0ZVNvdXJjZU1ldGFkYXRhSgQIBBAFSgQI",
-            "BRAGSgQIBhAHSgQIBxAISgQICBAJItMBChVDb21wdXRlU291cmNlTWV0YWRh",
-            "dGESLwoLdXNlcl9hcHBfaWQYASABKAsyGi5jbGFyaWZhaS5hcGkuVXNlckFw",
-            "cElEU2V0EhAKCG1vZGVsX2lkGAIgASgJEhgKEG1vZGVsX3ZlcnNpb25faWQY",
-            "AyABKAkSEwoLd29ya2Zsb3dfaWQYBCABKAkSGgoSY29tcHV0ZV9jbHVzdGVy",
-            "X2lkGAYgASgJEhMKC25vZGVwb29sX2lkGAcgASgJEhEKCXJ1bm5lcl9pZBgI",
-            "IAEoCUoECAUQBipeChRXb3JrZmxvd01vZGVsVXNlQ2FzZRIjCh9XT1JLRkxP",
-            "V19NT0RFTF9VU0VfQ0FTRV9OT1RfU0VUEAASEgoOQ0xBU1NJRklDQVRJT04Q",
-            "ARINCglERVRFQ1RJT04QAiqQAQobRGF0YXNldFZlcnNpb25SZXF1ZXN0T3Jp",
-            "Z2luEioKJkRBVEFTRVRfVkVSU0lPTl9SRVFVRVNUX09SSUdJTl9OT1RfU0VU",
-            "EAASCgoGTUFOVUFMEAESDAoIVFJBSU5JTkcQAhIVChFFVkFMX0dST1VORF9U",
-            "UlVUSBADEhQKEEVWQUxfUFJFRElDVElPTlMQBCr5AQoeRGF0YXNldFZlcnNp",
-            "b25NZXRyaWNzR3JvdXBUeXBlEi4KKkRBVEFTRVRfVkVSU0lPTl9NRVRSSUNT",
-            "X0dST1VQX1RZUEVfTk9UX1NFVBAAEg4KCklOUFVUX1RZUEUQAhIOCgpDT05D",
-            "RVBUX0lEEAoSEgoOQ09OQ0VQVFNfQ09VTlQQCxIYChRCT1VORElOR19CT1hF",
-            "U19DT1VOVBAUEhIKDlBPTFlHT05TX0NPVU5UEBUSEAoMUE9JTlRTX0NPVU5U",
-            "EBYSDwoLTUFTS1NfQ09VTlQQFxIQCgxQSVhFTFNfQ09VTlQQHhIQCgxBU1BF",
-            "Q1RfUkFUSU8QHyqFAQoaRGF0YXNldFZlcnNpb25FeHBvcnRGb3JtYXQSKQol",
-            "REFUQVNFVF9WRVJTSU9OX0VYUE9SVF9GT1JNQVRfTk9UX1NFVBAAEhoKFkNM",
-            "QVJJRkFJX0RBVEFfUFJPVE9CVUYQARIWChJDTEFSSUZBSV9EQVRBX0pTT04Q",
-            "AxIICgRDT0NPEAIqSAoQRXhwaXJhdGlvbkFjdGlvbhIdChlFWFBJUkFUSU9O",
-            "X0FDVElPTl9OT1RfU0VUEAASCQoFREVMQVkQARIKCgZFWFBJUlkQAipNCgxM",
-            "aWNlbnNlU2NvcGUSGQoVTElDRU5TRV9TQ09QRV9OT1RfU0VUEAASCwoHUFJF",
-            "RElDVBABEgkKBVRSQUlOEAISCgoGU0VBUkNIEAMqXAoLTGljZW5zZVR5cGUS",
-            "GAoUVU5LTk9XTl9MSUNFTlNFX1RZUEUQABIPCgtGSVJTVF9QQVJUWRABEg8K",
-            "C09QRU5fU09VUkNFEAISEQoNQ0xPU0VEX1NPVVJDRRADKlAKCERhdGFUeXBl",
-            "Eg0KCVVOREVGSU5FRBAAEgoKBlNUUklORxABEgkKBVVJTlQ4EAISCQoFSU5U",
-            "MzIQAxIJCgVJTlQ2NBAEEggKBEZQMzIQBSqPAQoPVmFsdWVDb21wYXJhdG9y",
-            "Eh0KGUNPTkNFUFRfVEhSRVNIT0xEX05PVF9TRVQQABIQCgxHUkVBVEVSX1RI",
-            "QU4QARIZChVHUkVBVEVSX1RIQU5fT1JfRVFVQUwQAhINCglMRVNTX1RIQU4Q",
-            "AxIWChJMRVNTX1RIQU5fT1JfRVFVQUwQBBIJCgVFUVVBTBAFKoEBCg5FdmFs",
-            "dWF0aW9uVHlwZRINCglVbmRlZmluZWQQABISCg5DbGFzc2lmaWNhdGlvbhAB",
-            "Eg0KCURldGVjdGlvbhACEhAKDFNlZ21lbnRhdGlvbhADEg4KCkNsdXN0ZXJp",
-            "bmcQBBILCgdUcmFja2VyEAUSDgoKR2VuZXJhdGlvbhAGKmYKDEFQSUV2ZW50",
-            "VHlwZRIaChZBUElfRVZFTlRfVFlQRV9OT1RfU0VUEAASEwoPT05fUFJFTV9Q",
-            "UkVESUNUEAESEQoNT05fUFJFTV9UUkFJThACEhIKDk9OX1BSRU1fU0VBUkNI",
-            "EAMqPAoRVXNhZ2VJbnRlcnZhbFR5cGUSCQoFdW5kZWYQABIHCgNkYXkQARIJ",
-            "CgVtb250aBACEggKBHllYXIQAyp9ChJBbm5vdGF0aW9uRGF0YVR5cGUSIAoc",
-            "QU5OT1RBVElPTl9EQVRBX1RZUEVfTk9UX1NFVBAAEgcKA1RBRxABEhAKDEJP",
-            "VU5ESU5HX0JPWBACEgsKB1BPTFlHT04QBBIJCgVQT0lOVBAIEggKBFNQQU4Q",
-            "EBIICgRNQVNLECAqHQoIUm9sZVR5cGUSCAoEVEVBTRAAEgcKA09SRxABKiQK",
-            "EFN0YXRWYWx1ZUFnZ1R5cGUSBwoDU1VNEAASBwoDQVZHEAEqYAoPU3RhdFRp",
-            "bWVBZ2dUeXBlEg8KC05PX1RJTUVfQUdHEAASCAoEWUVBUhABEgkKBU1PTlRI",
-            "EAISCAoEV0VFSxADEgcKA0RBWRAEEggKBEhPVVIQBRIKCgZNSU5VVEUQBipi",
-            "ChNWYWxpZGF0aW9uRXJyb3JUeXBlEiEKHVZBTElEQVRJT05fRVJST1JfVFlQ",
-            "RV9OT1RfU0VUEAASDgoKUkVTVFJJQ1RFRBABEgwKCERBVEFCQVNFEAISCgoG",
-            "Rk9STUFUEAMqWwoZSW5wdXRJRENvbmZsaWN0UmVzb2x1dGlvbhIoCiRJTlBV",
-            "VF9JRF9DT05GTElDVF9SRVNPTFVUSU9OX05PVF9TRVQQABIICgRTS0lQEAES",
-            "CgoGU1VGRklYEAIqcwoQUnVubmVyTWV0aG9kVHlwZRILCgdVTktOT1dOEAAS",
-            "DwoLVU5BUllfVU5BUlkQARITCg9VTkFSWV9TVFJFQU1JTkcQAhITCg9TVFJF",
-            "QU1JTkdfVU5BUlkQAxIXChNTVFJFQU1JTkdfU1RSRUFNSU5HEAQq4hEKCUV2",
-            "ZW50VHlwZRIWChJFVkVOVF9UWVBFX05PVF9TRVQQABI6ChdPUkdBTklaQVRJ",
-            "T05fTUVNQkVSX0FERBBkGh3CPhpPcmdhbml6YXRpb24gbWVtYmVycyBhZGRl",
-            "ZBJGChpPUkdBTklaQVRJT05fTUVNQkVSX0NIQU5HRRBlGibCPiNPcmdhbml6",
-            "YXRpb24gbWVtYmVycycgcm9sZXMgY2hhbmdlZBI/ChpPUkdBTklaQVRJT05f",
-            "TUVNQkVSX1JFTU9WRRBmGh/CPhxPcmdhbml6YXRpb24gbWVtYmVycyByZW1v",
-            "dmVkElUKJU9SR0FOSVpBVElPTl9NRU1CRVJfSU5WSVRBVElPTl9DUkVBVEUQ",
-            "Zxoqwj4nT3JnYW5pemF0aW9uIG1lbWJlciBpbnZpdGF0aW9ucyBjcmVhdGVk",
-            "ElYKJU9SR0FOSVpBVElPTl9NRU1CRVJfSU5WSVRBVElPTl9DQU5DRUwQaBor",
-            "wj4oT3JnYW5pemF0aW9uIG1lbWJlciBpbnZpdGF0aW9ucyBjYW5jZWxlZBJW",
-            "CiVPUkdBTklaQVRJT05fTUVNQkVSX0lOVklUQVRJT05fQUNDRVBUEGkaK8I+",
-            "KE9yZ2FuaXphdGlvbiBtZW1iZXIgaW52aXRhdGlvbnMgYWNjZXB0ZWQSVwom",
-            "T1JHQU5JWkFUSU9OX01FTUJFUl9JTlZJVEFUSU9OX0RFQ0xJTkUQahorwj4o",
-            "T3JnYW5pemF0aW9uIG1lbWJlciBpbnZpdGF0aW9ucyBkZWNsaW5lZBI7ChhP",
-            "UkdBTklaQVRJT05fVEVBTV9DUkVBVEUQaxodwj4aT3JnYW5pemF0aW9uIHRl",
-            "YW1zIGNyZWF0ZWQSOwoYT1JHQU5JWkFUSU9OX1RFQU1fVVBEQVRFEGwaHcI+",
-            "Gk9yZ2FuaXphdGlvbiB0ZWFtcyB1cGRhdGVkEjsKGE9SR0FOSVpBVElPTl9U",
-            "RUFNX0RFTEVURRBtGh3CPhpPcmdhbml6YXRpb24gdGVhbXMgZGVsZXRlZBJE",
-            "ChxPUkdBTklaQVRJT05fVEVBTV9NRU1CRVJfQUREEG4aIsI+H09yZ2FuaXph",
-            "dGlvbiB0ZWFtIG1lbWJlcnMgYWRkZWQSSQofT1JHQU5JWkFUSU9OX1RFQU1f",
-            "TUVNQkVSX1JFTU9WRRBvGiTCPiFPcmdhbml6YXRpb24gdGVhbSBtZW1iZXJz",
-            "IHJlbW92ZWQSRgoZT1JHQU5JWkFUSU9OX1RFQU1fQVBQX0FERBBwGifCPiRP",
-            "cmdhbml6YXRpb24gdGVhbSBhcHBsaWNhdGlvbnMgYWRkZWQSSwocT1JHQU5J",
-            "WkFUSU9OX1RFQU1fQVBQX1JFTU9WRRBxGinCPiZPcmdhbml6YXRpb24gdGVh",
-            "bSBhcHBsaWNhdGlvbnMgcmVtb3ZlZBImCg1NT0RVTEVfQ1JFQVRFEMgBGhLC",
-            "Pg9Nb2R1bGVzIGNyZWF0ZWQSJgoNTU9EVUxFX1VQREFURRDJARoSwj4PTW9k",
-            "dWxlcyB1cGRhdGVkEiYKDU1PRFVMRV9ERUxFVEUQygEaEsI+D01vZHVsZXMg",
-            "ZGVsZXRlZBI2ChVNT0RVTEVfVkVSU0lPTl9DUkVBVEUQywEaGsI+F01vZHVs",
-            "ZSB2ZXJzaW9ucyBjcmVhdGVkEjYKFU1PRFVMRV9WRVJTSU9OX1VQREFURRDM",
-            "ARoawj4XTW9kdWxlIHZlcnNpb25zIHVwZGF0ZWQSNgoVTU9EVUxFX1ZFUlNJ",
-            "T05fREVMRVRFEM0BGhrCPhdNb2R1bGUgdmVyc2lvbnMgZGVsZXRlZBIkCgxN",
-            "T0RFTF9DUkVBVEUQrAIaEcI+Dk1vZGVscyBjcmVhdGVkEiQKDE1PREVMX1VQ",
-            "REFURRCtAhoRwj4OTW9kZWxzIHVwZGF0ZWQSJAoMTU9ERUxfREVMRVRFEK4C",
-            "GhHCPg5Nb2RlbHMgZGVsZXRlZBI0ChRNT0RFTF9WRVJTSU9OX0NSRUFURRCv",
-            "AhoZwj4WTW9kZWwgdmVyc2lvbnMgY3JlYXRlZBI0ChRNT0RFTF9WRVJTSU9O",
-            "X1VQREFURRCwAhoZwj4WTW9kZWwgdmVyc2lvbnMgdXBkYXRlZBI0ChRNT0RF",
-            "TF9WRVJTSU9OX0RFTEVURRCxAhoZwj4WTW9kZWwgdmVyc2lvbnMgZGVsZXRl",
-            "ZBIqCg9XT1JLRkxPV19DUkVBVEUQkAMaFMI+EVdvcmtmbG93cyBjcmVhdGVk",
-            "EioKD1dPUktGTE9XX1VQREFURRCRAxoUwj4RV29ya2Zsb3dzIHVwZGF0ZWQS",
-            "KgoPV09SS0ZMT1dfREVMRVRFEJIDGhTCPhFXb3JrZmxvd3MgZGVsZXRlZBI6",
-            "ChdXT1JLRkxPV19WRVJTSU9OX0NSRUFURRCTAxocwj4ZV29ya2Zsb3cgdmVy",
-            "c2lvbnMgY3JlYXRlZBI6ChdXT1JLRkxPV19WRVJTSU9OX1VQREFURRCUAxoc",
-            "wj4ZV29ya2Zsb3cgdmVyc2lvbnMgdXBkYXRlZBI6ChdXT1JLRkxPV19WRVJT",
-            "SU9OX0RFTEVURRCVAxocwj4ZV29ya2Zsb3cgdmVyc2lvbnMgZGVsZXRlZBIw",
-            "ChJBUFBMSUNBVElPTl9DUkVBVEUQ2AQaF8I+FEFwcGxpY2F0aW9ucyBjcmVh",
-            "dGVkEjAKEkFQUExJQ0FUSU9OX1VQREFURRDZBBoXwj4UQXBwbGljYXRpb25z",
-            "IHVwZGF0ZWQSMAoSQVBQTElDQVRJT05fREVMRVRFENoEGhfCPhRBcHBsaWNh",
-            "dGlvbnMgZGVsZXRlZBItChBDT0xMQUJPUkFUT1JfQUREELwFGhbCPhNDb2xs",
-            "YWJvcmF0b3JzIGFkZGVkEjIKE0NPTExBQk9SQVRPUl9VUERBVEUQvQUaGMI+",
-            "FUNvbGxhYm9yYXRvcnMgdXBkYXRlZBIyChNDT0xMQUJPUkFUT1JfUkVNT1ZF",
-            "EL4FGhjCPhVDb2xsYWJvcmF0b3JzIHJlbW92ZWQSIgoLVVNFUl9VUERBVEUQ",
-            "oAYaEMI+DVVzZXJzIHVwZGF0ZWRCWQoVY29tLmNsYXJpZmFpLmdycGMuYXBp",
-            "UAFaN2dpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90",
-            "by9jbGFyaWZhaS9hcGmiAgRDQUlQYgZwcm90bzM="));
+            "QVNTSUZJQ0FUSU9OEAEiygIKE0NvbXB1dGVQbGFuZU1ldHJpY3MSMQoEbWV0",
+            "YRgBIAEoCzIjLmNsYXJpZmFpLmFwaS5Db21wdXRlU291cmNlTWV0YWRhdGES",
+            "DQoFY2xvdWQYAiABKAkSDgoGcmVnaW9uGAMgASgJEhUKDWluc3RhbmNlX3R5",
+            "cGUYBCABKAkSGAoQcmVzZXJ2YXRpb25fdHlwZRgFIAEoCRIZChFyZXNlcnZh",
+            "dGlvbl9wcmljZRgGIAEoAhIRCglydW50aW1lX3MYByABKAUSLQoJdGltZXN0",
+            "YW1wGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBISCgpldmVu",
+            "dF90eXBlGAkgASgJEi0KC2dwdV9tZXRyaWNzGAogAygLMhguY2xhcmlmYWku",
+            "YXBpLkdwdU1ldHJpY3MSEAoIaG9zdG5hbWUYCyABKAkihwEKCkdwdU1ldHJp",
+            "Y3MSDAoEdXVpZBgBIAEoCRISCgptb2RlbF9uYW1lGAIgASgJEhcKD3V0aWxp",
+            "emF0aW9uX3BjdBgDIAEoAhIeChZ0ZW5zb3JfdXRpbGl6YXRpb25fcGN0GAQg",
+            "ASgCEh4KFm1lbW9yeV91dGlsaXphdGlvbl9wY3QYBSABKAIiiwEKCExvZ0Vu",
+            "dHJ5Eg8KB21lc3NhZ2UYASABKAkSEAoIbG9nX3R5cGUYAiABKAkSCwoDdXJs",
+            "GAMgASgJEjEKBG1ldGEYCSABKAsyIy5jbGFyaWZhaS5hcGkuQ29tcHV0ZVNv",
+            "dXJjZU1ldGFkYXRhSgQIBBAFSgQIBRAGSgQIBhAHSgQIBxAISgQICBAJItMB",
+            "ChVDb21wdXRlU291cmNlTWV0YWRhdGESLwoLdXNlcl9hcHBfaWQYASABKAsy",
+            "Gi5jbGFyaWZhaS5hcGkuVXNlckFwcElEU2V0EhAKCG1vZGVsX2lkGAIgASgJ",
+            "EhgKEG1vZGVsX3ZlcnNpb25faWQYAyABKAkSEwoLd29ya2Zsb3dfaWQYBCAB",
+            "KAkSGgoSY29tcHV0ZV9jbHVzdGVyX2lkGAYgASgJEhMKC25vZGVwb29sX2lk",
+            "GAcgASgJEhEKCXJ1bm5lcl9pZBgIIAEoCUoECAUQBipeChRXb3JrZmxvd01v",
+            "ZGVsVXNlQ2FzZRIjCh9XT1JLRkxPV19NT0RFTF9VU0VfQ0FTRV9OT1RfU0VU",
+            "EAASEgoOQ0xBU1NJRklDQVRJT04QARINCglERVRFQ1RJT04QAiqQAQobRGF0",
+            "YXNldFZlcnNpb25SZXF1ZXN0T3JpZ2luEioKJkRBVEFTRVRfVkVSU0lPTl9S",
+            "RVFVRVNUX09SSUdJTl9OT1RfU0VUEAASCgoGTUFOVUFMEAESDAoIVFJBSU5J",
+            "TkcQAhIVChFFVkFMX0dST1VORF9UUlVUSBADEhQKEEVWQUxfUFJFRElDVElP",
+            "TlMQBCr5AQoeRGF0YXNldFZlcnNpb25NZXRyaWNzR3JvdXBUeXBlEi4KKkRB",
+            "VEFTRVRfVkVSU0lPTl9NRVRSSUNTX0dST1VQX1RZUEVfTk9UX1NFVBAAEg4K",
+            "CklOUFVUX1RZUEUQAhIOCgpDT05DRVBUX0lEEAoSEgoOQ09OQ0VQVFNfQ09V",
+            "TlQQCxIYChRCT1VORElOR19CT1hFU19DT1VOVBAUEhIKDlBPTFlHT05TX0NP",
+            "VU5UEBUSEAoMUE9JTlRTX0NPVU5UEBYSDwoLTUFTS1NfQ09VTlQQFxIQCgxQ",
+            "SVhFTFNfQ09VTlQQHhIQCgxBU1BFQ1RfUkFUSU8QHyqFAQoaRGF0YXNldFZl",
+            "cnNpb25FeHBvcnRGb3JtYXQSKQolREFUQVNFVF9WRVJTSU9OX0VYUE9SVF9G",
+            "T1JNQVRfTk9UX1NFVBAAEhoKFkNMQVJJRkFJX0RBVEFfUFJPVE9CVUYQARIW",
+            "ChJDTEFSSUZBSV9EQVRBX0pTT04QAxIICgRDT0NPEAIqSAoQRXhwaXJhdGlv",
+            "bkFjdGlvbhIdChlFWFBJUkFUSU9OX0FDVElPTl9OT1RfU0VUEAASCQoFREVM",
+            "QVkQARIKCgZFWFBJUlkQAipNCgxMaWNlbnNlU2NvcGUSGQoVTElDRU5TRV9T",
+            "Q09QRV9OT1RfU0VUEAASCwoHUFJFRElDVBABEgkKBVRSQUlOEAISCgoGU0VB",
+            "UkNIEAMqXAoLTGljZW5zZVR5cGUSGAoUVU5LTk9XTl9MSUNFTlNFX1RZUEUQ",
+            "ABIPCgtGSVJTVF9QQVJUWRABEg8KC09QRU5fU09VUkNFEAISEQoNQ0xPU0VE",
+            "X1NPVVJDRRADKlAKCERhdGFUeXBlEg0KCVVOREVGSU5FRBAAEgoKBlNUUklO",
+            "RxABEgkKBVVJTlQ4EAISCQoFSU5UMzIQAxIJCgVJTlQ2NBAEEggKBEZQMzIQ",
+            "BSqPAQoPVmFsdWVDb21wYXJhdG9yEh0KGUNPTkNFUFRfVEhSRVNIT0xEX05P",
+            "VF9TRVQQABIQCgxHUkVBVEVSX1RIQU4QARIZChVHUkVBVEVSX1RIQU5fT1Jf",
+            "RVFVQUwQAhINCglMRVNTX1RIQU4QAxIWChJMRVNTX1RIQU5fT1JfRVFVQUwQ",
+            "BBIJCgVFUVVBTBAFKoEBCg5FdmFsdWF0aW9uVHlwZRINCglVbmRlZmluZWQQ",
+            "ABISCg5DbGFzc2lmaWNhdGlvbhABEg0KCURldGVjdGlvbhACEhAKDFNlZ21l",
+            "bnRhdGlvbhADEg4KCkNsdXN0ZXJpbmcQBBILCgdUcmFja2VyEAUSDgoKR2Vu",
+            "ZXJhdGlvbhAGKmYKDEFQSUV2ZW50VHlwZRIaChZBUElfRVZFTlRfVFlQRV9O",
+            "T1RfU0VUEAASEwoPT05fUFJFTV9QUkVESUNUEAESEQoNT05fUFJFTV9UUkFJ",
+            "ThACEhIKDk9OX1BSRU1fU0VBUkNIEAMqPAoRVXNhZ2VJbnRlcnZhbFR5cGUS",
+            "CQoFdW5kZWYQABIHCgNkYXkQARIJCgVtb250aBACEggKBHllYXIQAyp9ChJB",
+            "bm5vdGF0aW9uRGF0YVR5cGUSIAocQU5OT1RBVElPTl9EQVRBX1RZUEVfTk9U",
+            "X1NFVBAAEgcKA1RBRxABEhAKDEJPVU5ESU5HX0JPWBACEgsKB1BPTFlHT04Q",
+            "BBIJCgVQT0lOVBAIEggKBFNQQU4QEBIICgRNQVNLECAqHQoIUm9sZVR5cGUS",
+            "CAoEVEVBTRAAEgcKA09SRxABKiQKEFN0YXRWYWx1ZUFnZ1R5cGUSBwoDU1VN",
+            "EAASBwoDQVZHEAEqYAoPU3RhdFRpbWVBZ2dUeXBlEg8KC05PX1RJTUVfQUdH",
+            "EAASCAoEWUVBUhABEgkKBU1PTlRIEAISCAoEV0VFSxADEgcKA0RBWRAEEggK",
+            "BEhPVVIQBRIKCgZNSU5VVEUQBipiChNWYWxpZGF0aW9uRXJyb3JUeXBlEiEK",
+            "HVZBTElEQVRJT05fRVJST1JfVFlQRV9OT1RfU0VUEAASDgoKUkVTVFJJQ1RF",
+            "RBABEgwKCERBVEFCQVNFEAISCgoGRk9STUFUEAMqWwoZSW5wdXRJRENvbmZs",
+            "aWN0UmVzb2x1dGlvbhIoCiRJTlBVVF9JRF9DT05GTElDVF9SRVNPTFVUSU9O",
+            "X05PVF9TRVQQABIICgRTS0lQEAESCgoGU1VGRklYEAIqcwoQUnVubmVyTWV0",
+            "aG9kVHlwZRILCgdVTktOT1dOEAASDwoLVU5BUllfVU5BUlkQARITCg9VTkFS",
+            "WV9TVFJFQU1JTkcQAhITCg9TVFJFQU1JTkdfVU5BUlkQAxIXChNTVFJFQU1J",
+            "TkdfU1RSRUFNSU5HEAQq4hEKCUV2ZW50VHlwZRIWChJFVkVOVF9UWVBFX05P",
+            "VF9TRVQQABI6ChdPUkdBTklaQVRJT05fTUVNQkVSX0FERBBkGh3CPhpPcmdh",
+            "bml6YXRpb24gbWVtYmVycyBhZGRlZBJGChpPUkdBTklaQVRJT05fTUVNQkVS",
+            "X0NIQU5HRRBlGibCPiNPcmdhbml6YXRpb24gbWVtYmVycycgcm9sZXMgY2hh",
+            "bmdlZBI/ChpPUkdBTklaQVRJT05fTUVNQkVSX1JFTU9WRRBmGh/CPhxPcmdh",
+            "bml6YXRpb24gbWVtYmVycyByZW1vdmVkElUKJU9SR0FOSVpBVElPTl9NRU1C",
+            "RVJfSU5WSVRBVElPTl9DUkVBVEUQZxoqwj4nT3JnYW5pemF0aW9uIG1lbWJl",
+            "ciBpbnZpdGF0aW9ucyBjcmVhdGVkElYKJU9SR0FOSVpBVElPTl9NRU1CRVJf",
+            "SU5WSVRBVElPTl9DQU5DRUwQaBorwj4oT3JnYW5pemF0aW9uIG1lbWJlciBp",
+            "bnZpdGF0aW9ucyBjYW5jZWxlZBJWCiVPUkdBTklaQVRJT05fTUVNQkVSX0lO",
+            "VklUQVRJT05fQUNDRVBUEGkaK8I+KE9yZ2FuaXphdGlvbiBtZW1iZXIgaW52",
+            "aXRhdGlvbnMgYWNjZXB0ZWQSVwomT1JHQU5JWkFUSU9OX01FTUJFUl9JTlZJ",
+            "VEFUSU9OX0RFQ0xJTkUQahorwj4oT3JnYW5pemF0aW9uIG1lbWJlciBpbnZp",
+            "dGF0aW9ucyBkZWNsaW5lZBI7ChhPUkdBTklaQVRJT05fVEVBTV9DUkVBVEUQ",
+            "axodwj4aT3JnYW5pemF0aW9uIHRlYW1zIGNyZWF0ZWQSOwoYT1JHQU5JWkFU",
+            "SU9OX1RFQU1fVVBEQVRFEGwaHcI+Gk9yZ2FuaXphdGlvbiB0ZWFtcyB1cGRh",
+            "dGVkEjsKGE9SR0FOSVpBVElPTl9URUFNX0RFTEVURRBtGh3CPhpPcmdhbml6",
+            "YXRpb24gdGVhbXMgZGVsZXRlZBJEChxPUkdBTklaQVRJT05fVEVBTV9NRU1C",
+            "RVJfQUREEG4aIsI+H09yZ2FuaXphdGlvbiB0ZWFtIG1lbWJlcnMgYWRkZWQS",
+            "SQofT1JHQU5JWkFUSU9OX1RFQU1fTUVNQkVSX1JFTU9WRRBvGiTCPiFPcmdh",
+            "bml6YXRpb24gdGVhbSBtZW1iZXJzIHJlbW92ZWQSRgoZT1JHQU5JWkFUSU9O",
+            "X1RFQU1fQVBQX0FERBBwGifCPiRPcmdhbml6YXRpb24gdGVhbSBhcHBsaWNh",
+            "dGlvbnMgYWRkZWQSSwocT1JHQU5JWkFUSU9OX1RFQU1fQVBQX1JFTU9WRRBx",
+            "GinCPiZPcmdhbml6YXRpb24gdGVhbSBhcHBsaWNhdGlvbnMgcmVtb3ZlZBIm",
+            "Cg1NT0RVTEVfQ1JFQVRFEMgBGhLCPg9Nb2R1bGVzIGNyZWF0ZWQSJgoNTU9E",
+            "VUxFX1VQREFURRDJARoSwj4PTW9kdWxlcyB1cGRhdGVkEiYKDU1PRFVMRV9E",
+            "RUxFVEUQygEaEsI+D01vZHVsZXMgZGVsZXRlZBI2ChVNT0RVTEVfVkVSU0lP",
+            "Tl9DUkVBVEUQywEaGsI+F01vZHVsZSB2ZXJzaW9ucyBjcmVhdGVkEjYKFU1P",
+            "RFVMRV9WRVJTSU9OX1VQREFURRDMARoawj4XTW9kdWxlIHZlcnNpb25zIHVw",
+            "ZGF0ZWQSNgoVTU9EVUxFX1ZFUlNJT05fREVMRVRFEM0BGhrCPhdNb2R1bGUg",
+            "dmVyc2lvbnMgZGVsZXRlZBIkCgxNT0RFTF9DUkVBVEUQrAIaEcI+Dk1vZGVs",
+            "cyBjcmVhdGVkEiQKDE1PREVMX1VQREFURRCtAhoRwj4OTW9kZWxzIHVwZGF0",
+            "ZWQSJAoMTU9ERUxfREVMRVRFEK4CGhHCPg5Nb2RlbHMgZGVsZXRlZBI0ChRN",
+            "T0RFTF9WRVJTSU9OX0NSRUFURRCvAhoZwj4WTW9kZWwgdmVyc2lvbnMgY3Jl",
+            "YXRlZBI0ChRNT0RFTF9WRVJTSU9OX1VQREFURRCwAhoZwj4WTW9kZWwgdmVy",
+            "c2lvbnMgdXBkYXRlZBI0ChRNT0RFTF9WRVJTSU9OX0RFTEVURRCxAhoZwj4W",
+            "TW9kZWwgdmVyc2lvbnMgZGVsZXRlZBIqCg9XT1JLRkxPV19DUkVBVEUQkAMa",
+            "FMI+EVdvcmtmbG93cyBjcmVhdGVkEioKD1dPUktGTE9XX1VQREFURRCRAxoU",
+            "wj4RV29ya2Zsb3dzIHVwZGF0ZWQSKgoPV09SS0ZMT1dfREVMRVRFEJIDGhTC",
+            "PhFXb3JrZmxvd3MgZGVsZXRlZBI6ChdXT1JLRkxPV19WRVJTSU9OX0NSRUFU",
+            "RRCTAxocwj4ZV29ya2Zsb3cgdmVyc2lvbnMgY3JlYXRlZBI6ChdXT1JLRkxP",
+            "V19WRVJTSU9OX1VQREFURRCUAxocwj4ZV29ya2Zsb3cgdmVyc2lvbnMgdXBk",
+            "YXRlZBI6ChdXT1JLRkxPV19WRVJTSU9OX0RFTEVURRCVAxocwj4ZV29ya2Zs",
+            "b3cgdmVyc2lvbnMgZGVsZXRlZBIwChJBUFBMSUNBVElPTl9DUkVBVEUQ2AQa",
+            "F8I+FEFwcGxpY2F0aW9ucyBjcmVhdGVkEjAKEkFQUExJQ0FUSU9OX1VQREFU",
+            "RRDZBBoXwj4UQXBwbGljYXRpb25zIHVwZGF0ZWQSMAoSQVBQTElDQVRJT05f",
+            "REVMRVRFENoEGhfCPhRBcHBsaWNhdGlvbnMgZGVsZXRlZBItChBDT0xMQUJP",
+            "UkFUT1JfQUREELwFGhbCPhNDb2xsYWJvcmF0b3JzIGFkZGVkEjIKE0NPTExB",
+            "Qk9SQVRPUl9VUERBVEUQvQUaGMI+FUNvbGxhYm9yYXRvcnMgdXBkYXRlZBIy",
+            "ChNDT0xMQUJPUkFUT1JfUkVNT1ZFEL4FGhjCPhVDb2xsYWJvcmF0b3JzIHJl",
+            "bW92ZWQSIgoLVVNFUl9VUERBVEUQoAYaEMI+DVVzZXJzIHVwZGF0ZWRCWQoV",
+            "Y29tLmNsYXJpZmFpLmdycGMuYXBpUAFaN2dpdGh1Yi5jb20vQ2xhcmlmYWkv",
+            "Y2xhcmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hcGmiAgRDQUlQYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::MatrixReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.WorkflowModelUseCase), typeof(global::Clarifai.Api.DatasetVersionRequestOrigin), typeof(global::Clarifai.Api.DatasetVersionMetricsGroupType), typeof(global::Clarifai.Api.DatasetVersionExportFormat), typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.LicenseType), typeof(global::Clarifai.Api.DataType), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.AnnotationDataType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), typeof(global::Clarifai.Api.InputIDConflictResolution), typeof(global::Clarifai.Api.RunnerMethodType), typeof(global::Clarifai.Api.EventType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1360,6 +1371,8 @@ namespace Clarifai.Api {
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.AuditLogQuery), global::Clarifai.Api.AuditLogQuery.Parser, new[]{ "TimestampFrom", "TimestampTo", "UserIds", "Operations", "Targets", "Success", "SourceIps" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.WorkflowVersionEvaluationMetric), global::Clarifai.Api.WorkflowVersionEvaluationMetric.Parser, new[]{ "Id", "Summary", "Description", "DataType", "VisualisationType" }, null, new[]{ typeof(global::Clarifai.Api.WorkflowVersionEvaluationMetric.Types.DataType), typeof(global::Clarifai.Api.WorkflowVersionEvaluationMetric.Types.VisualisationType) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.WorkflowVersionEvaluationTemplate), global::Clarifai.Api.WorkflowVersionEvaluationTemplate.Parser, new[]{ "Id", "Description", "TaskTypes", "WorkflowVersionEvaluationMetrics" }, null, new[]{ typeof(global::Clarifai.Api.WorkflowVersionEvaluationTemplate.Types.TaskType) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputePlaneMetrics), global::Clarifai.Api.ComputePlaneMetrics.Parser, new[]{ "Meta", "Cloud", "Region", "InstanceType", "ReservationType", "ReservationPrice", "RuntimeS", "Timestamp", "EventType", "GpuMetrics", "Hostname" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.GpuMetrics), global::Clarifai.Api.GpuMetrics.Parser, new[]{ "Uuid", "ModelName", "UtilizationPct", "TensorUtilizationPct", "MemoryUtilizationPct" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.LogEntry), global::Clarifai.Api.LogEntry.Parser, new[]{ "Message", "LogType", "Url", "Meta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ComputeSourceMetadata), global::Clarifai.Api.ComputeSourceMetadata.Parser, new[]{ "UserAppId", "ModelId", "ModelVersionId", "WorkflowId", "ComputeClusterId", "NodepoolId", "RunnerId" }, null, null, null, null)
           }));
@@ -84954,6 +84967,961 @@ namespace Clarifai.Api {
   }
 
   /// <summary>
+  /// ComputePlaneMetrics captures the compute plane metrics to send back to the control plane.
+  /// Each message should have the meta filled and one or more of the other fields.
+  /// </summary>
+  public sealed partial class ComputePlaneMetrics : pb::IMessage<ComputePlaneMetrics>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ComputePlaneMetrics> _parser = new pb::MessageParser<ComputePlaneMetrics>(() => new ComputePlaneMetrics());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ComputePlaneMetrics> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[218]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ComputePlaneMetrics() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ComputePlaneMetrics(ComputePlaneMetrics other) : this() {
+      meta_ = other.meta_ != null ? other.meta_.Clone() : null;
+      cloud_ = other.cloud_;
+      region_ = other.region_;
+      instanceType_ = other.instanceType_;
+      reservationType_ = other.reservationType_;
+      reservationPrice_ = other.reservationPrice_;
+      runtimeS_ = other.runtimeS_;
+      timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
+      eventType_ = other.eventType_;
+      gpuMetrics_ = other.gpuMetrics_.Clone();
+      hostname_ = other.hostname_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ComputePlaneMetrics Clone() {
+      return new ComputePlaneMetrics(this);
+    }
+
+    /// <summary>Field number for the "meta" field.</summary>
+    public const int MetaFieldNumber = 1;
+    private global::Clarifai.Api.ComputeSourceMetadata meta_;
+    /// <summary>
+    /// Who and where the metrics are from.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.ComputeSourceMetadata Meta {
+      get { return meta_; }
+      set {
+        meta_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cloud" field.</summary>
+    public const int CloudFieldNumber = 2;
+    private string cloud_ = "";
+    /// <summary>
+    /// e.g. aws, azure, on-prem.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Cloud {
+      get { return cloud_; }
+      set {
+        cloud_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "region" field.</summary>
+    public const int RegionFieldNumber = 3;
+    private string region_ = "";
+    /// <summary>
+    /// e.g. us-east, us-west.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Region {
+      get { return region_; }
+      set {
+        region_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "instance_type" field.</summary>
+    public const int InstanceTypeFieldNumber = 4;
+    private string instanceType_ = "";
+    /// <summary>
+    /// e.g. t3a.medium, g5.xlarge.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InstanceType {
+      get { return instanceType_; }
+      set {
+        instanceType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "reservation_type" field.</summary>
+    public const int ReservationTypeFieldNumber = 5;
+    private string reservationType_ = "";
+    /// <summary>
+    /// e.g. spot, on-demand.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ReservationType {
+      get { return reservationType_; }
+      set {
+        reservationType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "reservation_price" field.</summary>
+    public const int ReservationPriceFieldNumber = 6;
+    private float reservationPrice_;
+    /// <summary>
+    /// Metrics billing
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float ReservationPrice {
+      get { return reservationPrice_; }
+      set {
+        reservationPrice_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "runtime_s" field.</summary>
+    public const int RuntimeSFieldNumber = 7;
+    private int runtimeS_;
+    /// <summary>
+    /// Runtime in seconds.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int RuntimeS {
+      get { return runtimeS_; }
+      set {
+        runtimeS_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    /// <summary>
+    /// Metrics for latency.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
+      get { return timestamp_; }
+      set {
+        timestamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "event_type" field.</summary>
+    public const int EventTypeFieldNumber = 9;
+    private string eventType_ = "";
+    /// <summary>
+    /// e.g. NodeProvisioned, NodeTerminated, ModelDeployed, ModelScheduled, ModelReady.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string EventType {
+      get { return eventType_; }
+      set {
+        eventType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "gpu_metrics" field.</summary>
+    public const int GpuMetricsFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::Clarifai.Api.GpuMetrics> _repeated_gpuMetrics_codec
+        = pb::FieldCodec.ForMessage(82, global::Clarifai.Api.GpuMetrics.Parser);
+    private readonly pbc::RepeatedField<global::Clarifai.Api.GpuMetrics> gpuMetrics_ = new pbc::RepeatedField<global::Clarifai.Api.GpuMetrics>();
+    /// <summary>
+    /// GPU metrics.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Clarifai.Api.GpuMetrics> GpuMetrics {
+      get { return gpuMetrics_; }
+    }
+
+    /// <summary>Field number for the "hostname" field.</summary>
+    public const int HostnameFieldNumber = 11;
+    private string hostname_ = "";
+    /// <summary>
+    /// Hostname of the node.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Hostname {
+      get { return hostname_; }
+      set {
+        hostname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ComputePlaneMetrics);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ComputePlaneMetrics other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Meta, other.Meta)) return false;
+      if (Cloud != other.Cloud) return false;
+      if (Region != other.Region) return false;
+      if (InstanceType != other.InstanceType) return false;
+      if (ReservationType != other.ReservationType) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ReservationPrice, other.ReservationPrice)) return false;
+      if (RuntimeS != other.RuntimeS) return false;
+      if (!object.Equals(Timestamp, other.Timestamp)) return false;
+      if (EventType != other.EventType) return false;
+      if(!gpuMetrics_.Equals(other.gpuMetrics_)) return false;
+      if (Hostname != other.Hostname) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (meta_ != null) hash ^= Meta.GetHashCode();
+      if (Cloud.Length != 0) hash ^= Cloud.GetHashCode();
+      if (Region.Length != 0) hash ^= Region.GetHashCode();
+      if (InstanceType.Length != 0) hash ^= InstanceType.GetHashCode();
+      if (ReservationType.Length != 0) hash ^= ReservationType.GetHashCode();
+      if (ReservationPrice != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ReservationPrice);
+      if (RuntimeS != 0) hash ^= RuntimeS.GetHashCode();
+      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
+      if (EventType.Length != 0) hash ^= EventType.GetHashCode();
+      hash ^= gpuMetrics_.GetHashCode();
+      if (Hostname.Length != 0) hash ^= Hostname.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (meta_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Meta);
+      }
+      if (Cloud.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Cloud);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Region);
+      }
+      if (InstanceType.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstanceType);
+      }
+      if (ReservationType.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ReservationType);
+      }
+      if (ReservationPrice != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(ReservationPrice);
+      }
+      if (RuntimeS != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(RuntimeS);
+      }
+      if (timestamp_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Timestamp);
+      }
+      if (EventType.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(EventType);
+      }
+      gpuMetrics_.WriteTo(output, _repeated_gpuMetrics_codec);
+      if (Hostname.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Hostname);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (meta_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Meta);
+      }
+      if (Cloud.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Cloud);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Region);
+      }
+      if (InstanceType.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(InstanceType);
+      }
+      if (ReservationType.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ReservationType);
+      }
+      if (ReservationPrice != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(ReservationPrice);
+      }
+      if (RuntimeS != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(RuntimeS);
+      }
+      if (timestamp_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Timestamp);
+      }
+      if (EventType.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(EventType);
+      }
+      gpuMetrics_.WriteTo(ref output, _repeated_gpuMetrics_codec);
+      if (Hostname.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Hostname);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (meta_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Meta);
+      }
+      if (Cloud.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Cloud);
+      }
+      if (Region.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Region);
+      }
+      if (InstanceType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstanceType);
+      }
+      if (ReservationType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ReservationType);
+      }
+      if (ReservationPrice != 0F) {
+        size += 1 + 4;
+      }
+      if (RuntimeS != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RuntimeS);
+      }
+      if (timestamp_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
+      }
+      if (EventType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(EventType);
+      }
+      size += gpuMetrics_.CalculateSize(_repeated_gpuMetrics_codec);
+      if (Hostname.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Hostname);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ComputePlaneMetrics other) {
+      if (other == null) {
+        return;
+      }
+      if (other.meta_ != null) {
+        if (meta_ == null) {
+          Meta = new global::Clarifai.Api.ComputeSourceMetadata();
+        }
+        Meta.MergeFrom(other.Meta);
+      }
+      if (other.Cloud.Length != 0) {
+        Cloud = other.Cloud;
+      }
+      if (other.Region.Length != 0) {
+        Region = other.Region;
+      }
+      if (other.InstanceType.Length != 0) {
+        InstanceType = other.InstanceType;
+      }
+      if (other.ReservationType.Length != 0) {
+        ReservationType = other.ReservationType;
+      }
+      if (other.ReservationPrice != 0F) {
+        ReservationPrice = other.ReservationPrice;
+      }
+      if (other.RuntimeS != 0) {
+        RuntimeS = other.RuntimeS;
+      }
+      if (other.timestamp_ != null) {
+        if (timestamp_ == null) {
+          Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Timestamp.MergeFrom(other.Timestamp);
+      }
+      if (other.EventType.Length != 0) {
+        EventType = other.EventType;
+      }
+      gpuMetrics_.Add(other.gpuMetrics_);
+      if (other.Hostname.Length != 0) {
+        Hostname = other.Hostname;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (meta_ == null) {
+              Meta = new global::Clarifai.Api.ComputeSourceMetadata();
+            }
+            input.ReadMessage(Meta);
+            break;
+          }
+          case 18: {
+            Cloud = input.ReadString();
+            break;
+          }
+          case 26: {
+            Region = input.ReadString();
+            break;
+          }
+          case 34: {
+            InstanceType = input.ReadString();
+            break;
+          }
+          case 42: {
+            ReservationType = input.ReadString();
+            break;
+          }
+          case 53: {
+            ReservationPrice = input.ReadFloat();
+            break;
+          }
+          case 56: {
+            RuntimeS = input.ReadInt32();
+            break;
+          }
+          case 66: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 74: {
+            EventType = input.ReadString();
+            break;
+          }
+          case 82: {
+            gpuMetrics_.AddEntriesFrom(input, _repeated_gpuMetrics_codec);
+            break;
+          }
+          case 90: {
+            Hostname = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (meta_ == null) {
+              Meta = new global::Clarifai.Api.ComputeSourceMetadata();
+            }
+            input.ReadMessage(Meta);
+            break;
+          }
+          case 18: {
+            Cloud = input.ReadString();
+            break;
+          }
+          case 26: {
+            Region = input.ReadString();
+            break;
+          }
+          case 34: {
+            InstanceType = input.ReadString();
+            break;
+          }
+          case 42: {
+            ReservationType = input.ReadString();
+            break;
+          }
+          case 53: {
+            ReservationPrice = input.ReadFloat();
+            break;
+          }
+          case 56: {
+            RuntimeS = input.ReadInt32();
+            break;
+          }
+          case 66: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 74: {
+            EventType = input.ReadString();
+            break;
+          }
+          case 82: {
+            gpuMetrics_.AddEntriesFrom(ref input, _repeated_gpuMetrics_codec);
+            break;
+          }
+          case 90: {
+            Hostname = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GpuMetrics : pb::IMessage<GpuMetrics>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GpuMetrics> _parser = new pb::MessageParser<GpuMetrics>(() => new GpuMetrics());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GpuMetrics> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[219]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GpuMetrics() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GpuMetrics(GpuMetrics other) : this() {
+      uuid_ = other.uuid_;
+      modelName_ = other.modelName_;
+      utilizationPct_ = other.utilizationPct_;
+      tensorUtilizationPct_ = other.tensorUtilizationPct_;
+      memoryUtilizationPct_ = other.memoryUtilizationPct_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GpuMetrics Clone() {
+      return new GpuMetrics(this);
+    }
+
+    /// <summary>Field number for the "uuid" field.</summary>
+    public const int UuidFieldNumber = 1;
+    private string uuid_ = "";
+    /// <summary>
+    /// GPU UUID.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Uuid {
+      get { return uuid_; }
+      set {
+        uuid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "model_name" field.</summary>
+    public const int ModelNameFieldNumber = 2;
+    private string modelName_ = "";
+    /// <summary>
+    /// GPU model name. e.g. NVIDIA_A10G
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ModelName {
+      get { return modelName_; }
+      set {
+        modelName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "utilization_pct" field.</summary>
+    public const int UtilizationPctFieldNumber = 3;
+    private float utilizationPct_;
+    /// <summary>
+    /// GPU utilization. e.g. DCGM_FI_DEV_GPU_UTIL
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float UtilizationPct {
+      get { return utilizationPct_; }
+      set {
+        utilizationPct_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tensor_utilization_pct" field.</summary>
+    public const int TensorUtilizationPctFieldNumber = 4;
+    private float tensorUtilizationPct_;
+    /// <summary>
+    /// Tensor utilization. e.g. DCGM_FI_PROF_PIPE_TENSOR_ACTIVE
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float TensorUtilizationPct {
+      get { return tensorUtilizationPct_; }
+      set {
+        tensorUtilizationPct_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "memory_utilization_pct" field.</summary>
+    public const int MemoryUtilizationPctFieldNumber = 5;
+    private float memoryUtilizationPct_;
+    /// <summary>
+    /// Memory utilization. e.g. DCGM_FI_PROF_DRAM_ACTIVE
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float MemoryUtilizationPct {
+      get { return memoryUtilizationPct_; }
+      set {
+        memoryUtilizationPct_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GpuMetrics);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GpuMetrics other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Uuid != other.Uuid) return false;
+      if (ModelName != other.ModelName) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(UtilizationPct, other.UtilizationPct)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(TensorUtilizationPct, other.TensorUtilizationPct)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MemoryUtilizationPct, other.MemoryUtilizationPct)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Uuid.Length != 0) hash ^= Uuid.GetHashCode();
+      if (ModelName.Length != 0) hash ^= ModelName.GetHashCode();
+      if (UtilizationPct != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(UtilizationPct);
+      if (TensorUtilizationPct != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(TensorUtilizationPct);
+      if (MemoryUtilizationPct != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MemoryUtilizationPct);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Uuid.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uuid);
+      }
+      if (ModelName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ModelName);
+      }
+      if (UtilizationPct != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(UtilizationPct);
+      }
+      if (TensorUtilizationPct != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(TensorUtilizationPct);
+      }
+      if (MemoryUtilizationPct != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(MemoryUtilizationPct);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Uuid.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Uuid);
+      }
+      if (ModelName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ModelName);
+      }
+      if (UtilizationPct != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(UtilizationPct);
+      }
+      if (TensorUtilizationPct != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(TensorUtilizationPct);
+      }
+      if (MemoryUtilizationPct != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(MemoryUtilizationPct);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Uuid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Uuid);
+      }
+      if (ModelName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ModelName);
+      }
+      if (UtilizationPct != 0F) {
+        size += 1 + 4;
+      }
+      if (TensorUtilizationPct != 0F) {
+        size += 1 + 4;
+      }
+      if (MemoryUtilizationPct != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GpuMetrics other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Uuid.Length != 0) {
+        Uuid = other.Uuid;
+      }
+      if (other.ModelName.Length != 0) {
+        ModelName = other.ModelName;
+      }
+      if (other.UtilizationPct != 0F) {
+        UtilizationPct = other.UtilizationPct;
+      }
+      if (other.TensorUtilizationPct != 0F) {
+        TensorUtilizationPct = other.TensorUtilizationPct;
+      }
+      if (other.MemoryUtilizationPct != 0F) {
+        MemoryUtilizationPct = other.MemoryUtilizationPct;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Uuid = input.ReadString();
+            break;
+          }
+          case 18: {
+            ModelName = input.ReadString();
+            break;
+          }
+          case 29: {
+            UtilizationPct = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            TensorUtilizationPct = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            MemoryUtilizationPct = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Uuid = input.ReadString();
+            break;
+          }
+          case 18: {
+            ModelName = input.ReadString();
+            break;
+          }
+          case 29: {
+            UtilizationPct = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            TensorUtilizationPct = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            MemoryUtilizationPct = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// LogEntry is a single technical log entry (e.g. service log, stack traces, etc).
   /// </summary>
   public sealed partial class LogEntry : pb::IMessage<LogEntry>
@@ -84970,7 +85938,7 @@ namespace Clarifai.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[218]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[220]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -85294,7 +86262,7 @@ namespace Clarifai.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[219]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[221]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

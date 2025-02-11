@@ -736,9 +736,15 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse> __Marshaller_clarifai_api_MultiWorkflowEvaluationTemplateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostLogEntriesRequest> __Marshaller_clarifai_api_PostLogEntriesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostLogEntriesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListLogEntriesRequest> __Marshaller_clarifai_api_ListLogEntriesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListLogEntriesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiLogEntryResponse> __Marshaller_clarifai_api_MultiLogEntryResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiLogEntryResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.StreamLogEntriesRequest> __Marshaller_clarifai_api_StreamLogEntriesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.StreamLogEntriesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostComputePlaneMetricsRequest> __Marshaller_clarifai_api_PostComputePlaneMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostComputePlaneMetricsRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2645,12 +2651,36 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiWorkflowEvaluationTemplateResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostLogEntriesRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostLogEntries = new grpc::Method<global::Clarifai.Api.PostLogEntriesRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostLogEntries",
+        __Marshaller_clarifai_api_PostLogEntriesRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse> __Method_ListLogEntries = new grpc::Method<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "ListLogEntries",
         __Marshaller_clarifai_api_ListLogEntriesRequest,
         __Marshaller_clarifai_api_MultiLogEntryResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.StreamLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse> __Method_StreamLogEntries = new grpc::Method<global::Clarifai.Api.StreamLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "StreamLogEntries",
+        __Marshaller_clarifai_api_StreamLogEntriesRequest,
+        __Marshaller_clarifai_api_MultiLogEntryResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostComputePlaneMetricsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostComputePlaneMetrics = new grpc::Method<global::Clarifai.Api.PostComputePlaneMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostComputePlaneMetrics",
+        __Marshaller_clarifai_api_PostComputePlaneMetricsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -5507,7 +5537,25 @@ namespace Clarifai.Api {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostLogEntries(global::Clarifai.Api.PostLogEntriesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiLogEntryResponse> ListLogEntries(global::Clarifai.Api.ListLogEntriesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task StreamLogEntries(global::Clarifai.Api.StreamLogEntriesRequest request, grpc::IServerStreamWriter<global::Clarifai.Api.MultiLogEntryResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostComputePlaneMetrics(global::Clarifai.Api.PostComputePlaneMetricsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -16688,6 +16736,26 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListWorkflowEvaluationTemplates, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostLogEntries(global::Clarifai.Api.PostLogEntriesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostLogEntries(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostLogEntries(global::Clarifai.Api.PostLogEntriesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostLogEntries, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostLogEntriesAsync(global::Clarifai.Api.PostLogEntriesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostLogEntriesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostLogEntriesAsync(global::Clarifai.Api.PostLogEntriesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostLogEntries, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiLogEntryResponse ListLogEntries(global::Clarifai.Api.ListLogEntriesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ListLogEntries(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -16706,6 +16774,36 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiLogEntryResponse> ListLogEntriesAsync(global::Clarifai.Api.ListLogEntriesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListLogEntries, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.MultiLogEntryResponse> StreamLogEntries(global::Clarifai.Api.StreamLogEntriesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return StreamLogEntries(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.MultiLogEntryResponse> StreamLogEntries(global::Clarifai.Api.StreamLogEntriesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_StreamLogEntries, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostComputePlaneMetrics(global::Clarifai.Api.PostComputePlaneMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostComputePlaneMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostComputePlaneMetrics(global::Clarifai.Api.PostComputePlaneMetricsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostComputePlaneMetrics, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostComputePlaneMetricsAsync(global::Clarifai.Api.PostComputePlaneMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostComputePlaneMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostComputePlaneMetricsAsync(global::Clarifai.Api.PostComputePlaneMetricsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostComputePlaneMetrics, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -16959,7 +17057,10 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteDeployments, serviceImpl.DeleteDeployments)
           .AddMethod(__Method_PostAuditLogSearches, serviceImpl.PostAuditLogSearches)
           .AddMethod(__Method_ListWorkflowEvaluationTemplates, serviceImpl.ListWorkflowEvaluationTemplates)
-          .AddMethod(__Method_ListLogEntries, serviceImpl.ListLogEntries).Build();
+          .AddMethod(__Method_PostLogEntries, serviceImpl.PostLogEntries)
+          .AddMethod(__Method_ListLogEntries, serviceImpl.ListLogEntries)
+          .AddMethod(__Method_StreamLogEntries, serviceImpl.StreamLogEntries)
+          .AddMethod(__Method_PostComputePlaneMetrics, serviceImpl.PostComputePlaneMetrics).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -17207,7 +17308,10 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteDeploymentsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteDeployments));
       serviceBinder.AddMethod(__Method_PostAuditLogSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAuditLogSearchesRequest, global::Clarifai.Api.MultiAuditLogEntryResponse>(serviceImpl.PostAuditLogSearches));
       serviceBinder.AddMethod(__Method_ListWorkflowEvaluationTemplates, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowEvaluationTemplatesRequest, global::Clarifai.Api.MultiWorkflowEvaluationTemplateResponse>(serviceImpl.ListWorkflowEvaluationTemplates));
+      serviceBinder.AddMethod(__Method_PostLogEntries, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostLogEntriesRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostLogEntries));
       serviceBinder.AddMethod(__Method_ListLogEntries, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(serviceImpl.ListLogEntries));
+      serviceBinder.AddMethod(__Method_StreamLogEntries, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Clarifai.Api.StreamLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(serviceImpl.StreamLogEntries));
+      serviceBinder.AddMethod(__Method_PostComputePlaneMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostComputePlaneMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostComputePlaneMetrics));
     }
 
   }
