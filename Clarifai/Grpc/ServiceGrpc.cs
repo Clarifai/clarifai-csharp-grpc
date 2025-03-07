@@ -290,6 +290,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelVersionsUploadResponse> __Marshaller_clarifai_api_PostModelVersionsUploadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelVersionsUploadResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostModelMigrationRequest> __Marshaller_clarifai_api_PostModelMigrationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelMigrationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PutModelVersionExportsRequest> __Marshaller_clarifai_api_PutModelVersionExportsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PutModelVersionExportsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionExportResponse> __Marshaller_clarifai_api_SingleModelVersionExportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModelVersionExportResponse.Parser));
@@ -745,6 +747,18 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.StreamLogEntriesRequest> __Marshaller_clarifai_api_StreamLogEntriesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.StreamLogEntriesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostComputePlaneMetricsRequest> __Marshaller_clarifai_api_PostComputePlaneMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostComputePlaneMetricsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_PostWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> __Marshaller_clarifai_api_MultiWorkflowVersionEvaluationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetWorkflowVersionEvaluationRequest> __Marshaller_clarifai_api_GetWorkflowVersionEvaluationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetWorkflowVersionEvaluationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse> __Marshaller_clarifai_api_SingleWorkflowVersionEvaluationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_ListWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_PatchWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -1425,6 +1439,14 @@ namespace Clarifai.Api {
         "PostModelVersionsUpload",
         __Marshaller_clarifai_api_PostModelVersionsUploadRequest,
         __Marshaller_clarifai_api_PostModelVersionsUploadResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostModelMigrationRequest, global::Clarifai.Api.SingleModelResponse> __Method_PostModelMigration = new grpc::Method<global::Clarifai.Api.PostModelMigrationRequest, global::Clarifai.Api.SingleModelResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostModelMigration",
+        __Marshaller_clarifai_api_PostModelMigrationRequest,
+        __Marshaller_clarifai_api_SingleModelResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.PutModelVersionExportsRequest, global::Clarifai.Api.SingleModelVersionExportResponse> __Method_PutModelVersionExports = new grpc::Method<global::Clarifai.Api.PutModelVersionExportsRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(
@@ -2682,6 +2704,38 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_PostComputePlaneMetricsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> __Method_PostWorkflowVersionEvaluations = new grpc::Method<global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostWorkflowVersionEvaluations",
+        __Marshaller_clarifai_api_PostWorkflowVersionEvaluationsRequest,
+        __Marshaller_clarifai_api_MultiWorkflowVersionEvaluationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetWorkflowVersionEvaluationRequest, global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse> __Method_GetWorkflowVersionEvaluation = new grpc::Method<global::Clarifai.Api.GetWorkflowVersionEvaluationRequest, global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetWorkflowVersionEvaluation",
+        __Marshaller_clarifai_api_GetWorkflowVersionEvaluationRequest,
+        __Marshaller_clarifai_api_SingleWorkflowVersionEvaluationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> __Method_ListWorkflowVersionEvaluations = new grpc::Method<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListWorkflowVersionEvaluations",
+        __Marshaller_clarifai_api_ListWorkflowVersionEvaluationsRequest,
+        __Marshaller_clarifai_api_MultiWorkflowVersionEvaluationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> __Method_PatchWorkflowVersionEvaluations = new grpc::Method<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchWorkflowVersionEvaluations",
+        __Marshaller_clarifai_api_PatchWorkflowVersionEvaluationsRequest,
+        __Marshaller_clarifai_api_MultiWorkflowVersionEvaluationResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -3730,6 +3784,18 @@ namespace Clarifai.Api {
       /// <returns>A task indicating completion of the handler.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task PostModelVersionsUpload(grpc::IAsyncStreamReader<global::Clarifai.Api.PostModelVersionsUploadRequest> requestStream, grpc::IServerStreamWriter<global::Clarifai.Api.PostModelVersionsUploadResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Kicks off conversion from the old Triton model format to the new Docker model format.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelResponse> PostModelMigration(global::Clarifai.Api.PostModelMigrationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -5556,6 +5622,30 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostComputePlaneMetrics(global::Clarifai.Api.PostComputePlaneMetricsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PostWorkflowVersionEvaluations(global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse> GetWorkflowVersionEvaluation(global::Clarifai.Api.GetWorkflowVersionEvaluationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> ListWorkflowVersionEvaluations(global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PatchWorkflowVersionEvaluations(global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -9642,6 +9732,54 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse> PostModelVersionsUpload(grpc::CallOptions options)
       {
         return CallInvoker.AsyncDuplexStreamingCall(__Method_PostModelVersionsUpload, null, options);
+      }
+      /// <summary>
+      /// Kicks off conversion from the old Triton model format to the new Docker model format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelResponse PostModelMigration(global::Clarifai.Api.PostModelMigrationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModelMigration(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Kicks off conversion from the old Triton model format to the new Docker model format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelResponse PostModelMigration(global::Clarifai.Api.PostModelMigrationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostModelMigration, null, options, request);
+      }
+      /// <summary>
+      /// Kicks off conversion from the old Triton model format to the new Docker model format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelResponse> PostModelMigrationAsync(global::Clarifai.Api.PostModelMigrationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostModelMigrationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Kicks off conversion from the old Triton model format to the new Docker model format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelResponse> PostModelMigrationAsync(global::Clarifai.Api.PostModelMigrationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostModelMigration, null, options, request);
       }
       /// <summary>
       /// Export a model
@@ -16805,6 +16943,86 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostComputePlaneMetrics, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse PostWorkflowVersionEvaluations(global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostWorkflowVersionEvaluations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse PostWorkflowVersionEvaluations(global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostWorkflowVersionEvaluations, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PostWorkflowVersionEvaluationsAsync(global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostWorkflowVersionEvaluationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PostWorkflowVersionEvaluationsAsync(global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostWorkflowVersionEvaluations, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse GetWorkflowVersionEvaluation(global::Clarifai.Api.GetWorkflowVersionEvaluationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetWorkflowVersionEvaluation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse GetWorkflowVersionEvaluation(global::Clarifai.Api.GetWorkflowVersionEvaluationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetWorkflowVersionEvaluation, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse> GetWorkflowVersionEvaluationAsync(global::Clarifai.Api.GetWorkflowVersionEvaluationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetWorkflowVersionEvaluationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse> GetWorkflowVersionEvaluationAsync(global::Clarifai.Api.GetWorkflowVersionEvaluationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetWorkflowVersionEvaluation, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse ListWorkflowVersionEvaluations(global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListWorkflowVersionEvaluations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse ListWorkflowVersionEvaluations(global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListWorkflowVersionEvaluations, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> ListWorkflowVersionEvaluationsAsync(global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListWorkflowVersionEvaluationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> ListWorkflowVersionEvaluationsAsync(global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListWorkflowVersionEvaluations, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse PatchWorkflowVersionEvaluations(global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchWorkflowVersionEvaluations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse PatchWorkflowVersionEvaluations(global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchWorkflowVersionEvaluations, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PatchWorkflowVersionEvaluationsAsync(global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchWorkflowVersionEvaluationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PatchWorkflowVersionEvaluationsAsync(global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchWorkflowVersionEvaluations, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -16904,6 +17122,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchModelVersions, serviceImpl.PatchModelVersions)
           .AddMethod(__Method_DeleteModelVersion, serviceImpl.DeleteModelVersion)
           .AddMethod(__Method_PostModelVersionsUpload, serviceImpl.PostModelVersionsUpload)
+          .AddMethod(__Method_PostModelMigration, serviceImpl.PostModelMigration)
           .AddMethod(__Method_PutModelVersionExports, serviceImpl.PutModelVersionExports)
           .AddMethod(__Method_GetModelVersionExport, serviceImpl.GetModelVersionExport)
           .AddMethod(__Method_GetModelVersionMetrics, serviceImpl.GetModelVersionMetrics)
@@ -17060,7 +17279,11 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostLogEntries, serviceImpl.PostLogEntries)
           .AddMethod(__Method_ListLogEntries, serviceImpl.ListLogEntries)
           .AddMethod(__Method_StreamLogEntries, serviceImpl.StreamLogEntries)
-          .AddMethod(__Method_PostComputePlaneMetrics, serviceImpl.PostComputePlaneMetrics).Build();
+          .AddMethod(__Method_PostComputePlaneMetrics, serviceImpl.PostComputePlaneMetrics)
+          .AddMethod(__Method_PostWorkflowVersionEvaluations, serviceImpl.PostWorkflowVersionEvaluations)
+          .AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl.GetWorkflowVersionEvaluation)
+          .AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl.ListWorkflowVersionEvaluations)
+          .AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl.PatchWorkflowVersionEvaluations).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -17155,6 +17378,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchModelVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModelVersionsRequest, global::Clarifai.Api.MultiModelVersionResponse>(serviceImpl.PatchModelVersions));
       serviceBinder.AddMethod(__Method_DeleteModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersion));
       serviceBinder.AddMethod(__Method_PostModelVersionsUpload, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse>(serviceImpl.PostModelVersionsUpload));
+      serviceBinder.AddMethod(__Method_PostModelMigration, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelMigrationRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModelMigration));
       serviceBinder.AddMethod(__Method_PutModelVersionExports, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutModelVersionExportsRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(serviceImpl.PutModelVersionExports));
       serviceBinder.AddMethod(__Method_GetModelVersionExport, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionExportRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(serviceImpl.GetModelVersionExport));
       serviceBinder.AddMethod(__Method_GetModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersionMetrics));
@@ -17312,6 +17536,10 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListLogEntries, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(serviceImpl.ListLogEntries));
       serviceBinder.AddMethod(__Method_StreamLogEntries, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Clarifai.Api.StreamLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(serviceImpl.StreamLogEntries));
       serviceBinder.AddMethod(__Method_PostComputePlaneMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostComputePlaneMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostComputePlaneMetrics));
+      serviceBinder.AddMethod(__Method_PostWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.PostWorkflowVersionEvaluations));
+      serviceBinder.AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetWorkflowVersionEvaluationRequest, global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse>(serviceImpl.GetWorkflowVersionEvaluation));
+      serviceBinder.AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.ListWorkflowVersionEvaluations));
+      serviceBinder.AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.PatchWorkflowVersionEvaluations));
     }
 
   }
