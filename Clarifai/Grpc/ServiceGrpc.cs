@@ -664,6 +664,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostRunnersRequest> __Marshaller_clarifai_api_PostRunnersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostRunnersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchRunnersRequest> __Marshaller_clarifai_api_PatchRunnersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchRunnersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteRunnersRequest> __Marshaller_clarifai_api_DeleteRunnersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteRunnersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListRunnerItemsRequest> __Marshaller_clarifai_api_ListRunnerItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListRunnerItemsRequest.Parser));
@@ -2478,6 +2480,14 @@ namespace Clarifai.Api {
         __ServiceName,
         "PostRunners",
         __Marshaller_clarifai_api_PostRunnersRequest,
+        __Marshaller_clarifai_api_MultiRunnerResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PatchRunnersRequest, global::Clarifai.Api.MultiRunnerResponse> __Method_PatchRunners = new grpc::Method<global::Clarifai.Api.PatchRunnersRequest, global::Clarifai.Api.MultiRunnerResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchRunners",
+        __Marshaller_clarifai_api_PatchRunnersRequest,
         __Marshaller_clarifai_api_MultiRunnerResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -5362,6 +5372,18 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiRunnerResponse> PostRunners(global::Clarifai.Api.PostRunnersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch runners of a user.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiRunnerResponse> PatchRunners(global::Clarifai.Api.PatchRunnersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -16010,6 +16032,54 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostRunners, null, options, request);
       }
       /// <summary>
+      /// Patch runners of a user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiRunnerResponse PatchRunners(global::Clarifai.Api.PatchRunnersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchRunners(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch runners of a user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiRunnerResponse PatchRunners(global::Clarifai.Api.PatchRunnersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchRunners, null, options, request);
+      }
+      /// <summary>
+      /// Patch runners of a user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiRunnerResponse> PatchRunnersAsync(global::Clarifai.Api.PatchRunnersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchRunnersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch runners of a user.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiRunnerResponse> PatchRunnersAsync(global::Clarifai.Api.PatchRunnersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchRunners, null, options, request);
+      }
+      /// <summary>
       /// Delete multiple runners in one request.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -17252,6 +17322,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_GetRunner, serviceImpl.GetRunner)
           .AddMethod(__Method_ListRunners, serviceImpl.ListRunners)
           .AddMethod(__Method_PostRunners, serviceImpl.PostRunners)
+          .AddMethod(__Method_PatchRunners, serviceImpl.PatchRunners)
           .AddMethod(__Method_DeleteRunners, serviceImpl.DeleteRunners)
           .AddMethod(__Method_ListRunnerItems, serviceImpl.ListRunnerItems)
           .AddMethod(__Method_PostRunnerItemOutputs, serviceImpl.PostRunnerItemOutputs)
@@ -17508,6 +17579,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetRunner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetRunnerRequest, global::Clarifai.Api.SingleRunnerResponse>(serviceImpl.GetRunner));
       serviceBinder.AddMethod(__Method_ListRunners, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListRunnersRequest, global::Clarifai.Api.MultiRunnerResponse>(serviceImpl.ListRunners));
       serviceBinder.AddMethod(__Method_PostRunners, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnersRequest, global::Clarifai.Api.MultiRunnerResponse>(serviceImpl.PostRunners));
+      serviceBinder.AddMethod(__Method_PatchRunners, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchRunnersRequest, global::Clarifai.Api.MultiRunnerResponse>(serviceImpl.PatchRunners));
       serviceBinder.AddMethod(__Method_DeleteRunners, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteRunnersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteRunners));
       serviceBinder.AddMethod(__Method_ListRunnerItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListRunnerItemsRequest, global::Clarifai.Api.MultiRunnerItemResponse>(serviceImpl.ListRunnerItems));
       serviceBinder.AddMethod(__Method_PostRunnerItemOutputs, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnerItemOutputsRequest, global::Clarifai.Api.MultiRunnerItemOutputResponse>(serviceImpl.PostRunnerItemOutputs));
