@@ -27,7 +27,7 @@ namespace Clarifai.Auth.Scope {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlL3Njb3BlLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnNjb3BlGiBnb29nbGUvcHJvdG9idWYvZGVzY3JpcHRvci5w",
             "cm90byJGCglTY29wZUxpc3QSJgoGc2NvcGVzGAEgAygOMhYuY2xhcmlmYWku",
-            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSqcGgoBUxIJCgV1bmRl",
+            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSrTGgoBUxIJCgV1bmRl",
             "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIYCgpJbnB1",
             "dHNfQWRkEAQaCPCbJwH4mycFEhQKCklucHV0c19HZXQQBRoE8JsnARIgCgxJ",
             "bnB1dHNfUGF0Y2gQBxoOCAHwmycB+JsnBPibJwUSHwoNSW5wdXRzX0RlbGV0",
@@ -101,14 +101,15 @@ namespace Clarifai.Auth.Scope {
             "EJQBGgTwmycBEhgKDUF1ZGl0TG9nc19HZXQQlQEaBPCbJwESGQoOTG9nRW50",
             "cmllc19HZXQQlwEaBPCbJwESKQoeV29ya2Zsb3dWZXJzaW9uRXZhbHVhdGlv",
             "bnNfR2V0EJgBGgTwmycBEi4KHldvcmtmbG93VmVyc2lvbkV2YWx1YXRpb25z",
-            "X0FkZBCZARoJ8JsnAfibJ5gBIgQIHhAeIgQIHxAfIgQIIBAgIgQIIRAhIgQI",
-            "IhAiIgQIfRB9IgQIfhB+OjwKD2NsYXJmYWlfZXhwb3NlZBIhLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbnVtVmFsdWVPcHRpb25zGL7zBCABKAg6XgoZY2xhcmlmYWlf",
-            "ZGVwZW5kaW5nX3Njb3BlcxIhLmdvb2dsZS5wcm90b2J1Zi5FbnVtVmFsdWVP",
-            "cHRpb25zGL/zBCADKA4yFi5jbGFyaWZhaS5hdXRoLnNjb3BlLlNCZwocY29t",
-            "LmNsYXJpZmFpLmdycGMuYXV0aC5zY29wZVABWj5naXRodWIuY29tL0NsYXJp",
-            "ZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXV0aC9zY29w",
-            "ZaICBENBSVBiBnByb3RvMw=="));
+            "X0FkZBCZARoJ8JsnAfibJ5gBEhcKDFBpcGVsaW5lX0dldBCaARoE8JsnARIc",
+            "CgxQaXBlbGluZV9BZGQQmwEaCfCbJwH4myeaASIECB4QHiIECB8QHyIECCAQ",
+            "ICIECCEQISIECCIQIiIECH0QfSIECH4Qfjo8Cg9jbGFyZmFpX2V4cG9zZWQS",
+            "IS5nb29nbGUucHJvdG9idWYuRW51bVZhbHVlT3B0aW9ucxi+8wQgASgIOl4K",
+            "GWNsYXJpZmFpX2RlcGVuZGluZ19zY29wZXMSIS5nb29nbGUucHJvdG9idWYu",
+            "RW51bVZhbHVlT3B0aW9ucxi/8wQgAygOMhYuY2xhcmlmYWkuYXV0aC5zY29w",
+            "ZS5TQmcKHGNvbS5jbGFyaWZhaS5ncnBjLmF1dGguc2NvcGVQAVo+Z2l0aHVi",
+            "LmNvbS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3RvL2NsYXJpZmFp",
+            "L2F1dGgvc2NvcGWiAgRDQUlQYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Scope.S), }, new pb::Extension[] { ScopeExtensions.ClarfaiExposed, ScopeExtensions.ClarifaiDependingScopes }, new pbr::GeneratedClrTypeInfo[] {
@@ -506,6 +507,12 @@ namespace Clarifai.Auth.Scope {
     [pbr::OriginalName("LogEntries_Get")] LogEntriesGet = 151,
     [pbr::OriginalName("WorkflowVersionEvaluations_Get")] WorkflowVersionEvaluationsGet = 152,
     [pbr::OriginalName("WorkflowVersionEvaluations_Add")] WorkflowVersionEvaluationsAdd = 153,
+    /// <summary>
+    /// Pipelines feature is in development, this shouldn't be exposed yet.
+    /// TODO: Expose this scope when the feature is ready.
+    /// </summary>
+    [pbr::OriginalName("Pipeline_Get")] PipelineGet = 154,
+    [pbr::OriginalName("Pipeline_Add")] PipelineAdd = 155,
   }
 
   #endregion
