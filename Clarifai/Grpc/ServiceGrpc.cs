@@ -3240,7 +3240,7 @@ namespace Clarifai.Api {
 
       /// <summary>
       /// TODO(zeiler): will need to
-      /// Single request but streaming resopnses.
+      /// Single request but streaming responses.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="responseStream">Used for sending responses back to the client.</param>
@@ -7627,7 +7627,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// TODO(zeiler): will need to
-      /// Single request but streaming resopnses.
+      /// Single request but streaming responses.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7641,7 +7641,7 @@ namespace Clarifai.Api {
       }
       /// <summary>
       /// TODO(zeiler): will need to
-      /// Single request but streaming resopnses.
+      /// Single request but streaming responses.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
