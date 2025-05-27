@@ -761,6 +761,10 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_ListWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_PatchWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MCPRequest> __Marshaller_clarifai_api_MCPRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MCPRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleMCPResponse> __Marshaller_clarifai_api_SingleMCPResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleMCPResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2745,6 +2749,22 @@ namespace Clarifai.Api {
         "PatchWorkflowVersionEvaluations",
         __Marshaller_clarifai_api_PatchWorkflowVersionEvaluationsRequest,
         __Marshaller_clarifai_api_MultiWorkflowVersionEvaluationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.MCPRequest, global::Clarifai.Api.SingleMCPResponse> __Method_GetMCP = new grpc::Method<global::Clarifai.Api.MCPRequest, global::Clarifai.Api.SingleMCPResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMCP",
+        __Marshaller_clarifai_api_MCPRequest,
+        __Marshaller_clarifai_api_SingleMCPResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.MCPRequest, global::Clarifai.Api.SingleMCPResponse> __Method_PostMCP = new grpc::Method<global::Clarifai.Api.MCPRequest, global::Clarifai.Api.SingleMCPResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostMCP",
+        __Marshaller_clarifai_api_MCPRequest,
+        __Marshaller_clarifai_api_SingleMCPResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -5668,6 +5688,32 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PatchWorkflowVersionEvaluations(global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// The GET request to start an MCP session.
+      /// Currently not supported in our API.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleMCPResponse> GetMCP(global::Clarifai.Api.MCPRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// The POST request for interacting with MCP tools.
+      /// This is the simplest form of MCP tool calls with stateless execution for now.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleMCPResponse> PostMCP(global::Clarifai.Api.MCPRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -17093,6 +17139,110 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PatchWorkflowVersionEvaluations, null, options, request);
       }
+      /// <summary>
+      /// The GET request to start an MCP session.
+      /// Currently not supported in our API.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleMCPResponse GetMCP(global::Clarifai.Api.MCPRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMCP(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// The GET request to start an MCP session.
+      /// Currently not supported in our API.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleMCPResponse GetMCP(global::Clarifai.Api.MCPRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMCP, null, options, request);
+      }
+      /// <summary>
+      /// The GET request to start an MCP session.
+      /// Currently not supported in our API.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleMCPResponse> GetMCPAsync(global::Clarifai.Api.MCPRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMCPAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// The GET request to start an MCP session.
+      /// Currently not supported in our API.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleMCPResponse> GetMCPAsync(global::Clarifai.Api.MCPRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMCP, null, options, request);
+      }
+      /// <summary>
+      /// The POST request for interacting with MCP tools.
+      /// This is the simplest form of MCP tool calls with stateless execution for now.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleMCPResponse PostMCP(global::Clarifai.Api.MCPRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostMCP(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// The POST request for interacting with MCP tools.
+      /// This is the simplest form of MCP tool calls with stateless execution for now.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleMCPResponse PostMCP(global::Clarifai.Api.MCPRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostMCP, null, options, request);
+      }
+      /// <summary>
+      /// The POST request for interacting with MCP tools.
+      /// This is the simplest form of MCP tool calls with stateless execution for now.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleMCPResponse> PostMCPAsync(global::Clarifai.Api.MCPRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostMCPAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// The POST request for interacting with MCP tools.
+      /// This is the simplest form of MCP tool calls with stateless execution for now.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleMCPResponse> PostMCPAsync(global::Clarifai.Api.MCPRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostMCP, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -17354,7 +17504,9 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostWorkflowVersionEvaluations, serviceImpl.PostWorkflowVersionEvaluations)
           .AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl.GetWorkflowVersionEvaluation)
           .AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl.ListWorkflowVersionEvaluations)
-          .AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl.PatchWorkflowVersionEvaluations).Build();
+          .AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl.PatchWorkflowVersionEvaluations)
+          .AddMethod(__Method_GetMCP, serviceImpl.GetMCP)
+          .AddMethod(__Method_PostMCP, serviceImpl.PostMCP).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -17612,6 +17764,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetWorkflowVersionEvaluationRequest, global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse>(serviceImpl.GetWorkflowVersionEvaluation));
       serviceBinder.AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.ListWorkflowVersionEvaluations));
       serviceBinder.AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.PatchWorkflowVersionEvaluations));
+      serviceBinder.AddMethod(__Method_GetMCP, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.MCPRequest, global::Clarifai.Api.SingleMCPResponse>(serviceImpl.GetMCP));
+      serviceBinder.AddMethod(__Method_PostMCP, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.MCPRequest, global::Clarifai.Api.SingleMCPResponse>(serviceImpl.PostMCP));
     }
 
   }

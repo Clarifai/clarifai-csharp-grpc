@@ -82225,6 +82225,7 @@ namespace Clarifai.Api {
     /// Amount of CPUs to use as a minimum. This follows kubernetes notation like: "1", "100m", "4.5", etc.
     /// See https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/
     /// For runners, this is the minimum amount of CPU requested for the runner pod.
+    /// Optional. If unspecified, a small default is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -82242,6 +82243,7 @@ namespace Clarifai.Api {
     /// Amount of CPU memory to use as a minimum. This follows kubernetes notation like:
     /// 1Ki, 1500Mi, 3Gi, 4Ti, etc.
     /// For runners, this is the minimum amount of CPU memory requested for the runner pod.
+    /// Optional. If unspecified, a small default is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
