@@ -1124,131 +1124,156 @@ namespace Clarifai.Api {
             "c3RyYXRpb25TcGVjEhMKC2FwaV92ZXJzaW9uGAIgASgJEhEKCXNwZWNfanNv",
             "bhgDIAEoCSJsChFPcmNoZXN0cmF0aW9uU3BlYxJGChdhcmdvX29yY2hlc3Ry",
             "YXRpb25fc3BlYxgBIAEoCzIjLmNsYXJpZmFpLmFwaS5BcmdvT3JjaGVzdHJh",
-            "dGlvblNwZWNIAEIPCg1vcmNoZXN0cmF0aW9uIt8CCg9QaXBlbGluZVZlcnNp",
-            "b24SCgoCaWQYASABKAkSDgoGYXBwX2lkGAIgASgJEg8KB3VzZXJfaWQYAyAB",
-            "KAkSOwoSb3JjaGVzdHJhdGlvbl9zcGVjGAQgASgLMh8uY2xhcmlmYWkuYXBp",
-            "Lk9yY2hlc3RyYXRpb25TcGVjEhMKC3BpcGVsaW5lX2lkGAUgASgJEhMKC2Rl",
-            "c2NyaXB0aW9uGAYgASgJEiwKCnZpc2liaWxpdHkYByABKAsyGC5jbGFyaWZh",
-            "aS5hcGkuVmlzaWJpbGl0eRIpCghtZXRhZGF0YRgIIAEoCzIXLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJ1Y3QSLgoKY3JlYXRlZF9hdBgJIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXASLwoLbW9kaWZpZWRfYXQYCiABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuVGltZXN0YW1wIpIBChNPcmNoZXN0cmF0aW9uU3RhdHVz",
-            "EjwKC2FyZ29fc3RhdHVzGAEgASgLMiUuY2xhcmlmYWkuYXBpLkFyZ29PcmNo",
-            "ZXN0cmF0aW9uU3RhdHVzSAASKwoGc3RhdHVzGAIgASgLMhsuY2xhcmlmYWku",
-            "YXBpLnN0YXR1cy5TdGF0dXNCEAoOc3RhdHVzX2RldGFpbHMiKQoXQXJnb09y",
-            "Y2hlc3RyYXRpb25TdGF0dXMSDgoGc3RhdHVzGAEgASgJIuYBChJQaXBlbGlu",
-            "ZVZlcnNpb25SdW4SCgoCaWQYASABKAkSNwoQcGlwZWxpbmVfdmVyc2lvbhgC",
-            "IAEoCzIdLmNsYXJpZmFpLmFwaS5QaXBlbGluZVZlcnNpb24SKQoJbm9kZXBv",
-            "b2xzGAMgAygLMhYuY2xhcmlmYWkuYXBpLk5vZGVwb29sEj8KFG9yY2hlc3Ry",
-            "YXRpb25fc3RhdHVzGAQgASgLMiEuY2xhcmlmYWkuYXBpLk9yY2hlc3RyYXRp",
-            "b25TdGF0dXMSDwoHdXNlcl9pZBgFIAEoCRIOCgZhcHBfaWQYBiABKAkqXgoU",
-            "V29ya2Zsb3dNb2RlbFVzZUNhc2USIwofV09SS0ZMT1dfTU9ERUxfVVNFX0NB",
-            "U0VfTk9UX1NFVBAAEhIKDkNMQVNTSUZJQ0FUSU9OEAESDQoJREVURUNUSU9O",
-            "EAIqkAEKG0RhdGFzZXRWZXJzaW9uUmVxdWVzdE9yaWdpbhIqCiZEQVRBU0VU",
-            "X1ZFUlNJT05fUkVRVUVTVF9PUklHSU5fTk9UX1NFVBAAEgoKBk1BTlVBTBAB",
-            "EgwKCFRSQUlOSU5HEAISFQoRRVZBTF9HUk9VTkRfVFJVVEgQAxIUChBFVkFM",
-            "X1BSRURJQ1RJT05TEAQq+QEKHkRhdGFzZXRWZXJzaW9uTWV0cmljc0dyb3Vw",
-            "VHlwZRIuCipEQVRBU0VUX1ZFUlNJT05fTUVUUklDU19HUk9VUF9UWVBFX05P",
-            "VF9TRVQQABIOCgpJTlBVVF9UWVBFEAISDgoKQ09OQ0VQVF9JRBAKEhIKDkNP",
-            "TkNFUFRTX0NPVU5UEAsSGAoUQk9VTkRJTkdfQk9YRVNfQ09VTlQQFBISCg5Q",
-            "T0xZR09OU19DT1VOVBAVEhAKDFBPSU5UU19DT1VOVBAWEg8KC01BU0tTX0NP",
-            "VU5UEBcSEAoMUElYRUxTX0NPVU5UEB4SEAoMQVNQRUNUX1JBVElPEB8qhQEK",
-            "GkRhdGFzZXRWZXJzaW9uRXhwb3J0Rm9ybWF0EikKJURBVEFTRVRfVkVSU0lP",
-            "Tl9FWFBPUlRfRk9STUFUX05PVF9TRVQQABIaChZDTEFSSUZBSV9EQVRBX1BS",
-            "T1RPQlVGEAESFgoSQ0xBUklGQUlfREFUQV9KU09OEAMSCAoEQ09DTxACKkgK",
-            "EEV4cGlyYXRpb25BY3Rpb24SHQoZRVhQSVJBVElPTl9BQ1RJT05fTk9UX1NF",
-            "VBAAEgkKBURFTEFZEAESCgoGRVhQSVJZEAIqTQoMTGljZW5zZVNjb3BlEhkK",
-            "FUxJQ0VOU0VfU0NPUEVfTk9UX1NFVBAAEgsKB1BSRURJQ1QQARIJCgVUUkFJ",
-            "ThACEgoKBlNFQVJDSBADKlwKC0xpY2Vuc2VUeXBlEhgKFFVOS05PV05fTElD",
-            "RU5TRV9UWVBFEAASDwoLRklSU1RfUEFSVFkQARIPCgtPUEVOX1NPVVJDRRAC",
-            "EhEKDUNMT1NFRF9TT1VSQ0UQAypQCghEYXRhVHlwZRINCglVTkRFRklORUQQ",
-            "ABIKCgZTVFJJTkcQARIJCgVVSU5UOBACEgkKBUlOVDMyEAMSCQoFSU5UNjQQ",
-            "BBIICgRGUDMyEAUqjwEKD1ZhbHVlQ29tcGFyYXRvchIdChlDT05DRVBUX1RI",
-            "UkVTSE9MRF9OT1RfU0VUEAASEAoMR1JFQVRFUl9USEFOEAESGQoVR1JFQVRF",
-            "Ul9USEFOX09SX0VRVUFMEAISDQoJTEVTU19USEFOEAMSFgoSTEVTU19USEFO",
-            "X09SX0VRVUFMEAQSCQoFRVFVQUwQBSqBAQoORXZhbHVhdGlvblR5cGUSDQoJ",
-            "VW5kZWZpbmVkEAASEgoOQ2xhc3NpZmljYXRpb24QARINCglEZXRlY3Rpb24Q",
-            "AhIQCgxTZWdtZW50YXRpb24QAxIOCgpDbHVzdGVyaW5nEAQSCwoHVHJhY2tl",
-            "chAFEg4KCkdlbmVyYXRpb24QBipmCgxBUElFdmVudFR5cGUSGgoWQVBJX0VW",
-            "RU5UX1RZUEVfTk9UX1NFVBAAEhMKD09OX1BSRU1fUFJFRElDVBABEhEKDU9O",
-            "X1BSRU1fVFJBSU4QAhISCg5PTl9QUkVNX1NFQVJDSBADKjwKEVVzYWdlSW50",
-            "ZXJ2YWxUeXBlEgkKBXVuZGVmEAASBwoDZGF5EAESCQoFbW9udGgQAhIICgR5",
-            "ZWFyEAMqfQoSQW5ub3RhdGlvbkRhdGFUeXBlEiAKHEFOTk9UQVRJT05fREFU",
-            "QV9UWVBFX05PVF9TRVQQABIHCgNUQUcQARIQCgxCT1VORElOR19CT1gQAhIL",
-            "CgdQT0xZR09OEAQSCQoFUE9JTlQQCBIICgRTUEFOEBASCAoETUFTSxAgKh0K",
-            "CFJvbGVUeXBlEggKBFRFQU0QABIHCgNPUkcQASokChBTdGF0VmFsdWVBZ2dU",
-            "eXBlEgcKA1NVTRAAEgcKA0FWRxABKmAKD1N0YXRUaW1lQWdnVHlwZRIPCgtO",
-            "T19USU1FX0FHRxAAEggKBFlFQVIQARIJCgVNT05USBACEggKBFdFRUsQAxIH",
-            "CgNEQVkQBBIICgRIT1VSEAUSCgoGTUlOVVRFEAYqYgoTVmFsaWRhdGlvbkVy",
-            "cm9yVHlwZRIhCh1WQUxJREFUSU9OX0VSUk9SX1RZUEVfTk9UX1NFVBAAEg4K",
-            "ClJFU1RSSUNURUQQARIMCghEQVRBQkFTRRACEgoKBkZPUk1BVBADKlsKGUlu",
-            "cHV0SURDb25mbGljdFJlc29sdXRpb24SKAokSU5QVVRfSURfQ09ORkxJQ1Rf",
-            "UkVTT0xVVElPTl9OT1RfU0VUEAASCAoEU0tJUBABEgoKBlNVRkZJWBACKnMK",
-            "EFJ1bm5lck1ldGhvZFR5cGUSCwoHVU5LTk9XThAAEg8KC1VOQVJZX1VOQVJZ",
-            "EAESEwoPVU5BUllfU1RSRUFNSU5HEAISEwoPU1RSRUFNSU5HX1VOQVJZEAMS",
-            "FwoTU1RSRUFNSU5HX1NUUkVBTUlORxAEKuoUCglFdmVudFR5cGUSFgoSRVZF",
-            "TlRfVFlQRV9OT1RfU0VUEAASOgoXT1JHQU5JWkFUSU9OX01FTUJFUl9BREQQ",
-            "ZBodwj4aT3JnYW5pemF0aW9uIG1lbWJlcnMgYWRkZWQSRgoaT1JHQU5JWkFU",
-            "SU9OX01FTUJFUl9DSEFOR0UQZRomwj4jT3JnYW5pemF0aW9uIG1lbWJlcnMn",
-            "IHJvbGVzIGNoYW5nZWQSPwoaT1JHQU5JWkFUSU9OX01FTUJFUl9SRU1PVkUQ",
-            "Zhofwj4cT3JnYW5pemF0aW9uIG1lbWJlcnMgcmVtb3ZlZBJVCiVPUkdBTkla",
-            "QVRJT05fTUVNQkVSX0lOVklUQVRJT05fQ1JFQVRFEGcaKsI+J09yZ2FuaXph",
-            "dGlvbiBtZW1iZXIgaW52aXRhdGlvbnMgY3JlYXRlZBJWCiVPUkdBTklaQVRJ",
-            "T05fTUVNQkVSX0lOVklUQVRJT05fQ0FOQ0VMEGgaK8I+KE9yZ2FuaXphdGlv",
-            "biBtZW1iZXIgaW52aXRhdGlvbnMgY2FuY2VsZWQSVgolT1JHQU5JWkFUSU9O",
-            "X01FTUJFUl9JTlZJVEFUSU9OX0FDQ0VQVBBpGivCPihPcmdhbml6YXRpb24g",
-            "bWVtYmVyIGludml0YXRpb25zIGFjY2VwdGVkElcKJk9SR0FOSVpBVElPTl9N",
-            "RU1CRVJfSU5WSVRBVElPTl9ERUNMSU5FEGoaK8I+KE9yZ2FuaXphdGlvbiBt",
-            "ZW1iZXIgaW52aXRhdGlvbnMgZGVjbGluZWQSOwoYT1JHQU5JWkFUSU9OX1RF",
-            "QU1fQ1JFQVRFEGsaHcI+Gk9yZ2FuaXphdGlvbiB0ZWFtcyBjcmVhdGVkEjsK",
-            "GE9SR0FOSVpBVElPTl9URUFNX1VQREFURRBsGh3CPhpPcmdhbml6YXRpb24g",
-            "dGVhbXMgdXBkYXRlZBI7ChhPUkdBTklaQVRJT05fVEVBTV9ERUxFVEUQbRod",
-            "wj4aT3JnYW5pemF0aW9uIHRlYW1zIGRlbGV0ZWQSRAocT1JHQU5JWkFUSU9O",
-            "X1RFQU1fTUVNQkVSX0FERBBuGiLCPh9Pcmdhbml6YXRpb24gdGVhbSBtZW1i",
-            "ZXJzIGFkZGVkEkkKH09SR0FOSVpBVElPTl9URUFNX01FTUJFUl9SRU1PVkUQ",
-            "bxokwj4hT3JnYW5pemF0aW9uIHRlYW0gbWVtYmVycyByZW1vdmVkEkYKGU9S",
-            "R0FOSVpBVElPTl9URUFNX0FQUF9BREQQcBonwj4kT3JnYW5pemF0aW9uIHRl",
-            "YW0gYXBwbGljYXRpb25zIGFkZGVkEksKHE9SR0FOSVpBVElPTl9URUFNX0FQ",
-            "UF9SRU1PVkUQcRopwj4mT3JnYW5pemF0aW9uIHRlYW0gYXBwbGljYXRpb25z",
-            "IHJlbW92ZWQSJgoNTU9EVUxFX0NSRUFURRDIARoSwj4PTW9kdWxlcyBjcmVh",
-            "dGVkEiYKDU1PRFVMRV9VUERBVEUQyQEaEsI+D01vZHVsZXMgdXBkYXRlZBIm",
-            "Cg1NT0RVTEVfREVMRVRFEMoBGhLCPg9Nb2R1bGVzIGRlbGV0ZWQSNgoVTU9E",
-            "VUxFX1ZFUlNJT05fQ1JFQVRFEMsBGhrCPhdNb2R1bGUgdmVyc2lvbnMgY3Jl",
-            "YXRlZBI2ChVNT0RVTEVfVkVSU0lPTl9VUERBVEUQzAEaGsI+F01vZHVsZSB2",
-            "ZXJzaW9ucyB1cGRhdGVkEjYKFU1PRFVMRV9WRVJTSU9OX0RFTEVURRDNARoa",
-            "wj4XTW9kdWxlIHZlcnNpb25zIGRlbGV0ZWQSJAoMTU9ERUxfQ1JFQVRFEKwC",
-            "GhHCPg5Nb2RlbHMgY3JlYXRlZBIkCgxNT0RFTF9VUERBVEUQrQIaEcI+Dk1v",
-            "ZGVscyB1cGRhdGVkEiQKDE1PREVMX0RFTEVURRCuAhoRwj4OTW9kZWxzIGRl",
-            "bGV0ZWQSNAoUTU9ERUxfVkVSU0lPTl9DUkVBVEUQrwIaGcI+Fk1vZGVsIHZl",
-            "cnNpb25zIGNyZWF0ZWQSNAoUTU9ERUxfVkVSU0lPTl9VUERBVEUQsAIaGcI+",
-            "Fk1vZGVsIHZlcnNpb25zIHVwZGF0ZWQSNAoUTU9ERUxfVkVSU0lPTl9ERUxF",
-            "VEUQsQIaGcI+Fk1vZGVsIHZlcnNpb25zIGRlbGV0ZWQSKgoPV09SS0ZMT1df",
-            "Q1JFQVRFEJADGhTCPhFXb3JrZmxvd3MgY3JlYXRlZBIqCg9XT1JLRkxPV19V",
-            "UERBVEUQkQMaFMI+EVdvcmtmbG93cyB1cGRhdGVkEioKD1dPUktGTE9XX0RF",
-            "TEVURRCSAxoUwj4RV29ya2Zsb3dzIGRlbGV0ZWQSOgoXV09SS0ZMT1dfVkVS",
-            "U0lPTl9DUkVBVEUQkwMaHMI+GVdvcmtmbG93IHZlcnNpb25zIGNyZWF0ZWQS",
-            "OgoXV09SS0ZMT1dfVkVSU0lPTl9VUERBVEUQlAMaHMI+GVdvcmtmbG93IHZl",
-            "cnNpb25zIHVwZGF0ZWQSOgoXV09SS0ZMT1dfVkVSU0lPTl9ERUxFVEUQlQMa",
-            "HMI+GVdvcmtmbG93IHZlcnNpb25zIGRlbGV0ZWQSMAoSQVBQTElDQVRJT05f",
-            "Q1JFQVRFENgEGhfCPhRBcHBsaWNhdGlvbnMgY3JlYXRlZBIwChJBUFBMSUNB",
-            "VElPTl9VUERBVEUQ2QQaF8I+FEFwcGxpY2F0aW9ucyB1cGRhdGVkEjAKEkFQ",
-            "UExJQ0FUSU9OX0RFTEVURRDaBBoXwj4UQXBwbGljYXRpb25zIGRlbGV0ZWQS",
-            "LQoQQ09MTEFCT1JBVE9SX0FERBC8BRoWwj4TQ29sbGFib3JhdG9ycyBhZGRl",
-            "ZBIyChNDT0xMQUJPUkFUT1JfVVBEQVRFEL0FGhjCPhVDb2xsYWJvcmF0b3Jz",
-            "IHVwZGF0ZWQSMgoTQ09MTEFCT1JBVE9SX1JFTU9WRRC+BRoYwj4VQ29sbGFi",
-            "b3JhdG9ycyByZW1vdmVkEiIKC1VTRVJfVVBEQVRFEKAGGhDCPg1Vc2VycyB1",
-            "cGRhdGVkEjgKFkNPTVBVVEVfQ0xVU1RFUl9DUkVBVEUQhAcaG8I+GENvbXB1",
-            "dGUgY2x1c3RlcnMgY3JlYXRlZBI4ChZDT01QVVRFX0NMVVNURVJfREVMRVRF",
-            "EIUHGhvCPhhDb21wdXRlIGNsdXN0ZXJzIGRlbGV0ZWQSKgoPTk9ERVBPT0xf",
-            "Q1JFQVRFEOgHGhTCPhFOb2RlcG9vbHMgY3JlYXRlZBIqCg9OT0RFUE9PTF9V",
-            "UERBVEUQ6QcaFMI+EU5vZGVwb29scyB1cGRhdGVkEioKD05PREVQT09MX0RF",
-            "TEVURRDqBxoUwj4RTm9kZXBvb2xzIGRlbGV0ZWQSLgoRREVQTE9ZTUVOVF9D",
-            "UkVBVEUQzAgaFsI+E0RlcGxveW1lbnRzIGNyZWF0ZWQSLgoRREVQTE9ZTUVO",
-            "VF9VUERBVEUQzQgaFsI+E0RlcGxveW1lbnRzIHVwZGF0ZWQSLgoRREVQTE9Z",
-            "TUVOVF9ERUxFVEUQzggaFsI+E0RlcGxveW1lbnRzIGRlbGV0ZWRCWQoVY29t",
-            "LmNsYXJpZmFpLmdycGMuYXBpUAFaN2dpdGh1Yi5jb20vQ2xhcmlmYWkvY2xh",
-            "cmlmYWktZ28tZ3JwYy9wcm90by9jbGFyaWZhaS9hcGmiAgRDQUlQYgZwcm90",
-            "bzM="));
+            "dGlvblNwZWNIAEIPCg1vcmNoZXN0cmF0aW9uImsKFlBpcGVsaW5lU3RlcElu",
+            "cHV0UGFyYW0SDAoEbmFtZRgBIAEoCRIVCg1kZWZhdWx0X3ZhbHVlGAIgASgJ",
+            "EhMKC2Rlc2NyaXB0aW9uGAMgASgJEhcKD2FjY2VwdGVkX3ZhbHVlcxgEIAMo",
+            "CSKRAgoMUGlwZWxpbmVTdGVwEgoKAmlkGAEgASgJEg8KB3VzZXJfaWQYAiAB",
+            "KAkSEwoLZGVzY3JpcHRpb24YAyABKAkSQAoVcGlwZWxpbmVfc3RlcF92ZXJz",
+            "aW9uGAQgASgLMiEuY2xhcmlmYWkuYXBpLlBpcGVsaW5lU3RlcFZlcnNpb24S",
+            "LAoKdmlzaWJpbGl0eRgFIAEoCzIYLmNsYXJpZmFpLmFwaS5WaXNpYmlsaXR5",
+            "Ei4KCmNyZWF0ZWRfYXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEi8KC21vZGlmaWVkX2F0GAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
+            "bWVzdGFtcCJ5ChVPcmNoZXN0cmF0aW9uU3RlcFNwZWMSTwocYXJnb19vcmNo",
+            "ZXN0cmF0aW9uX3N0ZXBfc3BlYxgBIAEoCzInLmNsYXJpZmFpLmFwaS5Bcmdv",
+            "T3JjaGVzdHJhdGlvblN0ZXBTcGVjSABCDwoNb3JjaGVzdHJhdGlvbiJDChlB",
+            "cmdvT3JjaGVzdHJhdGlvblN0ZXBTcGVjEhMKC2FwaV92ZXJzaW9uGAEgASgJ",
+            "EhEKCXNwZWNfanNvbhgCIAEoCSLCBAoTUGlwZWxpbmVTdGVwVmVyc2lvbhIK",
+            "CgJpZBgBIAEoCRIPCgd1c2VyX2lkGAIgASgJEg4KBmFwcF9pZBgDIAEoCRIT",
+            "CgtkZXNjcmlwdGlvbhgEIAEoCRIxCg1waXBlbGluZV9zdGVwGAUgASgLMhou",
+            "Y2xhcmlmYWkuYXBpLlBpcGVsaW5lU3RlcBJEChdvcmNoZXN0cmF0aW9uX3N0",
+            "ZXBfc3BlYxgGIAEoCzIjLmNsYXJpZmFpLmFwaS5PcmNoZXN0cmF0aW9uU3Rl",
+            "cFNwZWMSSAoacGlwZWxpbmVfc3RlcF9pbnB1dF9wYXJhbXMYByADKAsyJC5j",
+            "bGFyaWZhaS5hcGkuUGlwZWxpbmVTdGVwSW5wdXRQYXJhbRIrCgZzdGF0dXMY",
+            "CCABKAsyGy5jbGFyaWZhaS5hcGkuc3RhdHVzLlN0YXR1cxI9ChpwaXBlbGlu",
+            "ZV9zdGVwX2NvbXB1dGVfaW5mbxgJIAEoCzIZLmNsYXJpZmFpLmFwaS5Db21w",
+            "dXRlSW5mbxIrCgpidWlsZF9pbmZvGAogASgLMhcuY2xhcmlmYWkuYXBpLkJ1",
+            "aWxkSW5mbxIsCgp2aXNpYmlsaXR5GAsgASgLMhguY2xhcmlmYWkuYXBpLlZp",
+            "c2liaWxpdHkSLgoKY3JlYXRlZF9hdBgMIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASLwoLbW9kaWZpZWRfYXQYDSABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wIt8CCg9QaXBlbGluZVZlcnNpb24SCgoCaWQYASAB",
+            "KAkSDgoGYXBwX2lkGAIgASgJEg8KB3VzZXJfaWQYAyABKAkSOwoSb3JjaGVz",
+            "dHJhdGlvbl9zcGVjGAQgASgLMh8uY2xhcmlmYWkuYXBpLk9yY2hlc3RyYXRp",
+            "b25TcGVjEhMKC3BpcGVsaW5lX2lkGAUgASgJEhMKC2Rlc2NyaXB0aW9uGAYg",
+            "ASgJEiwKCnZpc2liaWxpdHkYByABKAsyGC5jbGFyaWZhaS5hcGkuVmlzaWJp",
+            "bGl0eRIpCghtZXRhZGF0YRgIIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1",
+            "Y3QSLgoKY3JlYXRlZF9hdBgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
+            "c3RhbXASLwoLbW9kaWZpZWRfYXQYCiABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wIpIBChNPcmNoZXN0cmF0aW9uU3RhdHVzEjwKC2FyZ29fc3Rh",
+            "dHVzGAEgASgLMiUuY2xhcmlmYWkuYXBpLkFyZ29PcmNoZXN0cmF0aW9uU3Rh",
+            "dHVzSAASKwoGc3RhdHVzGAIgASgLMhsuY2xhcmlmYWkuYXBpLnN0YXR1cy5T",
+            "dGF0dXNCEAoOc3RhdHVzX2RldGFpbHMiKQoXQXJnb09yY2hlc3RyYXRpb25T",
+            "dGF0dXMSDgoGc3RhdHVzGAEgASgJIuYBChJQaXBlbGluZVZlcnNpb25SdW4S",
+            "CgoCaWQYASABKAkSNwoQcGlwZWxpbmVfdmVyc2lvbhgCIAEoCzIdLmNsYXJp",
+            "ZmFpLmFwaS5QaXBlbGluZVZlcnNpb24SKQoJbm9kZXBvb2xzGAMgAygLMhYu",
+            "Y2xhcmlmYWkuYXBpLk5vZGVwb29sEj8KFG9yY2hlc3RyYXRpb25fc3RhdHVz",
+            "GAQgASgLMiEuY2xhcmlmYWkuYXBpLk9yY2hlc3RyYXRpb25TdGF0dXMSDwoH",
+            "dXNlcl9pZBgFIAEoCRIOCgZhcHBfaWQYBiABKAkqXgoUV29ya2Zsb3dNb2Rl",
+            "bFVzZUNhc2USIwofV09SS0ZMT1dfTU9ERUxfVVNFX0NBU0VfTk9UX1NFVBAA",
+            "EhIKDkNMQVNTSUZJQ0FUSU9OEAESDQoJREVURUNUSU9OEAIqkAEKG0RhdGFz",
+            "ZXRWZXJzaW9uUmVxdWVzdE9yaWdpbhIqCiZEQVRBU0VUX1ZFUlNJT05fUkVR",
+            "VUVTVF9PUklHSU5fTk9UX1NFVBAAEgoKBk1BTlVBTBABEgwKCFRSQUlOSU5H",
+            "EAISFQoRRVZBTF9HUk9VTkRfVFJVVEgQAxIUChBFVkFMX1BSRURJQ1RJT05T",
+            "EAQq+QEKHkRhdGFzZXRWZXJzaW9uTWV0cmljc0dyb3VwVHlwZRIuCipEQVRB",
+            "U0VUX1ZFUlNJT05fTUVUUklDU19HUk9VUF9UWVBFX05PVF9TRVQQABIOCgpJ",
+            "TlBVVF9UWVBFEAISDgoKQ09OQ0VQVF9JRBAKEhIKDkNPTkNFUFRTX0NPVU5U",
+            "EAsSGAoUQk9VTkRJTkdfQk9YRVNfQ09VTlQQFBISCg5QT0xZR09OU19DT1VO",
+            "VBAVEhAKDFBPSU5UU19DT1VOVBAWEg8KC01BU0tTX0NPVU5UEBcSEAoMUElY",
+            "RUxTX0NPVU5UEB4SEAoMQVNQRUNUX1JBVElPEB8qhQEKGkRhdGFzZXRWZXJz",
+            "aW9uRXhwb3J0Rm9ybWF0EikKJURBVEFTRVRfVkVSU0lPTl9FWFBPUlRfRk9S",
+            "TUFUX05PVF9TRVQQABIaChZDTEFSSUZBSV9EQVRBX1BST1RPQlVGEAESFgoS",
+            "Q0xBUklGQUlfREFUQV9KU09OEAMSCAoEQ09DTxACKkgKEEV4cGlyYXRpb25B",
+            "Y3Rpb24SHQoZRVhQSVJBVElPTl9BQ1RJT05fTk9UX1NFVBAAEgkKBURFTEFZ",
+            "EAESCgoGRVhQSVJZEAIqTQoMTGljZW5zZVNjb3BlEhkKFUxJQ0VOU0VfU0NP",
+            "UEVfTk9UX1NFVBAAEgsKB1BSRURJQ1QQARIJCgVUUkFJThACEgoKBlNFQVJD",
+            "SBADKlwKC0xpY2Vuc2VUeXBlEhgKFFVOS05PV05fTElDRU5TRV9UWVBFEAAS",
+            "DwoLRklSU1RfUEFSVFkQARIPCgtPUEVOX1NPVVJDRRACEhEKDUNMT1NFRF9T",
+            "T1VSQ0UQAypQCghEYXRhVHlwZRINCglVTkRFRklORUQQABIKCgZTVFJJTkcQ",
+            "ARIJCgVVSU5UOBACEgkKBUlOVDMyEAMSCQoFSU5UNjQQBBIICgRGUDMyEAUq",
+            "jwEKD1ZhbHVlQ29tcGFyYXRvchIdChlDT05DRVBUX1RIUkVTSE9MRF9OT1Rf",
+            "U0VUEAASEAoMR1JFQVRFUl9USEFOEAESGQoVR1JFQVRFUl9USEFOX09SX0VR",
+            "VUFMEAISDQoJTEVTU19USEFOEAMSFgoSTEVTU19USEFOX09SX0VRVUFMEAQS",
+            "CQoFRVFVQUwQBSqBAQoORXZhbHVhdGlvblR5cGUSDQoJVW5kZWZpbmVkEAAS",
+            "EgoOQ2xhc3NpZmljYXRpb24QARINCglEZXRlY3Rpb24QAhIQCgxTZWdtZW50",
+            "YXRpb24QAxIOCgpDbHVzdGVyaW5nEAQSCwoHVHJhY2tlchAFEg4KCkdlbmVy",
+            "YXRpb24QBipmCgxBUElFdmVudFR5cGUSGgoWQVBJX0VWRU5UX1RZUEVfTk9U",
+            "X1NFVBAAEhMKD09OX1BSRU1fUFJFRElDVBABEhEKDU9OX1BSRU1fVFJBSU4Q",
+            "AhISCg5PTl9QUkVNX1NFQVJDSBADKjwKEVVzYWdlSW50ZXJ2YWxUeXBlEgkK",
+            "BXVuZGVmEAASBwoDZGF5EAESCQoFbW9udGgQAhIICgR5ZWFyEAMqfQoSQW5u",
+            "b3RhdGlvbkRhdGFUeXBlEiAKHEFOTk9UQVRJT05fREFUQV9UWVBFX05PVF9T",
+            "RVQQABIHCgNUQUcQARIQCgxCT1VORElOR19CT1gQAhILCgdQT0xZR09OEAQS",
+            "CQoFUE9JTlQQCBIICgRTUEFOEBASCAoETUFTSxAgKh0KCFJvbGVUeXBlEggK",
+            "BFRFQU0QABIHCgNPUkcQASokChBTdGF0VmFsdWVBZ2dUeXBlEgcKA1NVTRAA",
+            "EgcKA0FWRxABKmAKD1N0YXRUaW1lQWdnVHlwZRIPCgtOT19USU1FX0FHRxAA",
+            "EggKBFlFQVIQARIJCgVNT05USBACEggKBFdFRUsQAxIHCgNEQVkQBBIICgRI",
+            "T1VSEAUSCgoGTUlOVVRFEAYqYgoTVmFsaWRhdGlvbkVycm9yVHlwZRIhCh1W",
+            "QUxJREFUSU9OX0VSUk9SX1RZUEVfTk9UX1NFVBAAEg4KClJFU1RSSUNURUQQ",
+            "ARIMCghEQVRBQkFTRRACEgoKBkZPUk1BVBADKlsKGUlucHV0SURDb25mbGlj",
+            "dFJlc29sdXRpb24SKAokSU5QVVRfSURfQ09ORkxJQ1RfUkVTT0xVVElPTl9O",
+            "T1RfU0VUEAASCAoEU0tJUBABEgoKBlNVRkZJWBACKnMKEFJ1bm5lck1ldGhv",
+            "ZFR5cGUSCwoHVU5LTk9XThAAEg8KC1VOQVJZX1VOQVJZEAESEwoPVU5BUllf",
+            "U1RSRUFNSU5HEAISEwoPU1RSRUFNSU5HX1VOQVJZEAMSFwoTU1RSRUFNSU5H",
+            "X1NUUkVBTUlORxAEKuoUCglFdmVudFR5cGUSFgoSRVZFTlRfVFlQRV9OT1Rf",
+            "U0VUEAASOgoXT1JHQU5JWkFUSU9OX01FTUJFUl9BREQQZBodwj4aT3JnYW5p",
+            "emF0aW9uIG1lbWJlcnMgYWRkZWQSRgoaT1JHQU5JWkFUSU9OX01FTUJFUl9D",
+            "SEFOR0UQZRomwj4jT3JnYW5pemF0aW9uIG1lbWJlcnMnIHJvbGVzIGNoYW5n",
+            "ZWQSPwoaT1JHQU5JWkFUSU9OX01FTUJFUl9SRU1PVkUQZhofwj4cT3JnYW5p",
+            "emF0aW9uIG1lbWJlcnMgcmVtb3ZlZBJVCiVPUkdBTklaQVRJT05fTUVNQkVS",
+            "X0lOVklUQVRJT05fQ1JFQVRFEGcaKsI+J09yZ2FuaXphdGlvbiBtZW1iZXIg",
+            "aW52aXRhdGlvbnMgY3JlYXRlZBJWCiVPUkdBTklaQVRJT05fTUVNQkVSX0lO",
+            "VklUQVRJT05fQ0FOQ0VMEGgaK8I+KE9yZ2FuaXphdGlvbiBtZW1iZXIgaW52",
+            "aXRhdGlvbnMgY2FuY2VsZWQSVgolT1JHQU5JWkFUSU9OX01FTUJFUl9JTlZJ",
+            "VEFUSU9OX0FDQ0VQVBBpGivCPihPcmdhbml6YXRpb24gbWVtYmVyIGludml0",
+            "YXRpb25zIGFjY2VwdGVkElcKJk9SR0FOSVpBVElPTl9NRU1CRVJfSU5WSVRB",
+            "VElPTl9ERUNMSU5FEGoaK8I+KE9yZ2FuaXphdGlvbiBtZW1iZXIgaW52aXRh",
+            "dGlvbnMgZGVjbGluZWQSOwoYT1JHQU5JWkFUSU9OX1RFQU1fQ1JFQVRFEGsa",
+            "HcI+Gk9yZ2FuaXphdGlvbiB0ZWFtcyBjcmVhdGVkEjsKGE9SR0FOSVpBVElP",
+            "Tl9URUFNX1VQREFURRBsGh3CPhpPcmdhbml6YXRpb24gdGVhbXMgdXBkYXRl",
+            "ZBI7ChhPUkdBTklaQVRJT05fVEVBTV9ERUxFVEUQbRodwj4aT3JnYW5pemF0",
+            "aW9uIHRlYW1zIGRlbGV0ZWQSRAocT1JHQU5JWkFUSU9OX1RFQU1fTUVNQkVS",
+            "X0FERBBuGiLCPh9Pcmdhbml6YXRpb24gdGVhbSBtZW1iZXJzIGFkZGVkEkkK",
+            "H09SR0FOSVpBVElPTl9URUFNX01FTUJFUl9SRU1PVkUQbxokwj4hT3JnYW5p",
+            "emF0aW9uIHRlYW0gbWVtYmVycyByZW1vdmVkEkYKGU9SR0FOSVpBVElPTl9U",
+            "RUFNX0FQUF9BREQQcBonwj4kT3JnYW5pemF0aW9uIHRlYW0gYXBwbGljYXRp",
+            "b25zIGFkZGVkEksKHE9SR0FOSVpBVElPTl9URUFNX0FQUF9SRU1PVkUQcRop",
+            "wj4mT3JnYW5pemF0aW9uIHRlYW0gYXBwbGljYXRpb25zIHJlbW92ZWQSJgoN",
+            "TU9EVUxFX0NSRUFURRDIARoSwj4PTW9kdWxlcyBjcmVhdGVkEiYKDU1PRFVM",
+            "RV9VUERBVEUQyQEaEsI+D01vZHVsZXMgdXBkYXRlZBImCg1NT0RVTEVfREVM",
+            "RVRFEMoBGhLCPg9Nb2R1bGVzIGRlbGV0ZWQSNgoVTU9EVUxFX1ZFUlNJT05f",
+            "Q1JFQVRFEMsBGhrCPhdNb2R1bGUgdmVyc2lvbnMgY3JlYXRlZBI2ChVNT0RV",
+            "TEVfVkVSU0lPTl9VUERBVEUQzAEaGsI+F01vZHVsZSB2ZXJzaW9ucyB1cGRh",
+            "dGVkEjYKFU1PRFVMRV9WRVJTSU9OX0RFTEVURRDNARoawj4XTW9kdWxlIHZl",
+            "cnNpb25zIGRlbGV0ZWQSJAoMTU9ERUxfQ1JFQVRFEKwCGhHCPg5Nb2RlbHMg",
+            "Y3JlYXRlZBIkCgxNT0RFTF9VUERBVEUQrQIaEcI+Dk1vZGVscyB1cGRhdGVk",
+            "EiQKDE1PREVMX0RFTEVURRCuAhoRwj4OTW9kZWxzIGRlbGV0ZWQSNAoUTU9E",
+            "RUxfVkVSU0lPTl9DUkVBVEUQrwIaGcI+Fk1vZGVsIHZlcnNpb25zIGNyZWF0",
+            "ZWQSNAoUTU9ERUxfVkVSU0lPTl9VUERBVEUQsAIaGcI+Fk1vZGVsIHZlcnNp",
+            "b25zIHVwZGF0ZWQSNAoUTU9ERUxfVkVSU0lPTl9ERUxFVEUQsQIaGcI+Fk1v",
+            "ZGVsIHZlcnNpb25zIGRlbGV0ZWQSKgoPV09SS0ZMT1dfQ1JFQVRFEJADGhTC",
+            "PhFXb3JrZmxvd3MgY3JlYXRlZBIqCg9XT1JLRkxPV19VUERBVEUQkQMaFMI+",
+            "EVdvcmtmbG93cyB1cGRhdGVkEioKD1dPUktGTE9XX0RFTEVURRCSAxoUwj4R",
+            "V29ya2Zsb3dzIGRlbGV0ZWQSOgoXV09SS0ZMT1dfVkVSU0lPTl9DUkVBVEUQ",
+            "kwMaHMI+GVdvcmtmbG93IHZlcnNpb25zIGNyZWF0ZWQSOgoXV09SS0ZMT1df",
+            "VkVSU0lPTl9VUERBVEUQlAMaHMI+GVdvcmtmbG93IHZlcnNpb25zIHVwZGF0",
+            "ZWQSOgoXV09SS0ZMT1dfVkVSU0lPTl9ERUxFVEUQlQMaHMI+GVdvcmtmbG93",
+            "IHZlcnNpb25zIGRlbGV0ZWQSMAoSQVBQTElDQVRJT05fQ1JFQVRFENgEGhfC",
+            "PhRBcHBsaWNhdGlvbnMgY3JlYXRlZBIwChJBUFBMSUNBVElPTl9VUERBVEUQ",
+            "2QQaF8I+FEFwcGxpY2F0aW9ucyB1cGRhdGVkEjAKEkFQUExJQ0FUSU9OX0RF",
+            "TEVURRDaBBoXwj4UQXBwbGljYXRpb25zIGRlbGV0ZWQSLQoQQ09MTEFCT1JB",
+            "VE9SX0FERBC8BRoWwj4TQ29sbGFib3JhdG9ycyBhZGRlZBIyChNDT0xMQUJP",
+            "UkFUT1JfVVBEQVRFEL0FGhjCPhVDb2xsYWJvcmF0b3JzIHVwZGF0ZWQSMgoT",
+            "Q09MTEFCT1JBVE9SX1JFTU9WRRC+BRoYwj4VQ29sbGFib3JhdG9ycyByZW1v",
+            "dmVkEiIKC1VTRVJfVVBEQVRFEKAGGhDCPg1Vc2VycyB1cGRhdGVkEjgKFkNP",
+            "TVBVVEVfQ0xVU1RFUl9DUkVBVEUQhAcaG8I+GENvbXB1dGUgY2x1c3RlcnMg",
+            "Y3JlYXRlZBI4ChZDT01QVVRFX0NMVVNURVJfREVMRVRFEIUHGhvCPhhDb21w",
+            "dXRlIGNsdXN0ZXJzIGRlbGV0ZWQSKgoPTk9ERVBPT0xfQ1JFQVRFEOgHGhTC",
+            "PhFOb2RlcG9vbHMgY3JlYXRlZBIqCg9OT0RFUE9PTF9VUERBVEUQ6QcaFMI+",
+            "EU5vZGVwb29scyB1cGRhdGVkEioKD05PREVQT09MX0RFTEVURRDqBxoUwj4R",
+            "Tm9kZXBvb2xzIGRlbGV0ZWQSLgoRREVQTE9ZTUVOVF9DUkVBVEUQzAgaFsI+",
+            "E0RlcGxveW1lbnRzIGNyZWF0ZWQSLgoRREVQTE9ZTUVOVF9VUERBVEUQzQga",
+            "FsI+E0RlcGxveW1lbnRzIHVwZGF0ZWQSLgoRREVQTE9ZTUVOVF9ERUxFVEUQ",
+            "zggaFsI+E0RlcGxveW1lbnRzIGRlbGV0ZWRCWQoVY29tLmNsYXJpZmFpLmdy",
+            "cGMuYXBpUAFaN2dpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlmYWktZ28tZ3Jw",
+            "Yy9wcm90by9jbGFyaWZhaS9hcGmiAgRDQUlQYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::MatrixReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.WorkflowModelUseCase), typeof(global::Clarifai.Api.DatasetVersionRequestOrigin), typeof(global::Clarifai.Api.DatasetVersionMetricsGroupType), typeof(global::Clarifai.Api.DatasetVersionExportFormat), typeof(global::Clarifai.Api.ExpirationAction), typeof(global::Clarifai.Api.LicenseScope), typeof(global::Clarifai.Api.LicenseType), typeof(global::Clarifai.Api.DataType), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.AnnotationDataType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), typeof(global::Clarifai.Api.InputIDConflictResolution), typeof(global::Clarifai.Api.RunnerMethodType), typeof(global::Clarifai.Api.EventType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1484,6 +1509,11 @@ namespace Clarifai.Api {
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.MetricValue), global::Clarifai.Api.MetricValue.Parser, new[]{ "StringValue", "FloatValue", "IntValue" }, new[]{ "MetricValue" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ArgoOrchestrationSpec), global::Clarifai.Api.ArgoOrchestrationSpec.Parser, new[]{ "ApiVersion", "SpecJson" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.OrchestrationSpec), global::Clarifai.Api.OrchestrationSpec.Parser, new[]{ "ArgoOrchestrationSpec" }, new[]{ "Orchestration" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.PipelineStepInputParam), global::Clarifai.Api.PipelineStepInputParam.Parser, new[]{ "Name", "DefaultValue", "Description", "AcceptedValues" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.PipelineStep), global::Clarifai.Api.PipelineStep.Parser, new[]{ "Id", "UserId", "Description", "PipelineStepVersion", "Visibility", "CreatedAt", "ModifiedAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.OrchestrationStepSpec), global::Clarifai.Api.OrchestrationStepSpec.Parser, new[]{ "ArgoOrchestrationStepSpec" }, new[]{ "Orchestration" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ArgoOrchestrationStepSpec), global::Clarifai.Api.ArgoOrchestrationStepSpec.Parser, new[]{ "ApiVersion", "SpecJson" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.PipelineStepVersion), global::Clarifai.Api.PipelineStepVersion.Parser, new[]{ "Id", "UserId", "AppId", "Description", "PipelineStep", "OrchestrationStepSpec", "PipelineStepInputParams", "Status", "PipelineStepComputeInfo", "BuildInfo", "Visibility", "CreatedAt", "ModifiedAt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.PipelineVersion), global::Clarifai.Api.PipelineVersion.Parser, new[]{ "Id", "AppId", "UserId", "OrchestrationSpec", "PipelineId", "Description", "Visibility", "Metadata", "CreatedAt", "ModifiedAt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.OrchestrationStatus), global::Clarifai.Api.OrchestrationStatus.Parser, new[]{ "ArgoStatus", "Status" }, new[]{ "StatusDetails" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Clarifai.Api.ArgoOrchestrationStatus), global::Clarifai.Api.ArgoOrchestrationStatus.Parser, new[]{ "Status" }, null, null, null, null),
@@ -91272,6 +91302,1980 @@ namespace Clarifai.Api {
 
   }
 
+  public sealed partial class PipelineStepInputParam : pb::IMessage<PipelineStepInputParam>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PipelineStepInputParam> _parser = new pb::MessageParser<PipelineStepInputParam>(() => new PipelineStepInputParam());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PipelineStepInputParam> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[231]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStepInputParam() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStepInputParam(PipelineStepInputParam other) : this() {
+      name_ = other.name_;
+      defaultValue_ = other.defaultValue_;
+      description_ = other.description_;
+      acceptedValues_ = other.acceptedValues_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStepInputParam Clone() {
+      return new PipelineStepInputParam(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    /// <summary>
+    /// The name of the input parameter.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "default_value" field.</summary>
+    public const int DefaultValueFieldNumber = 2;
+    private string defaultValue_ = "";
+    /// <summary>
+    /// The default value of the input parameter.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DefaultValue {
+      get { return defaultValue_; }
+      set {
+        defaultValue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 3;
+    private string description_ = "";
+    /// <summary>
+    /// The description of the input parameter.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "accepted_values" field.</summary>
+    public const int AcceptedValuesFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _repeated_acceptedValues_codec
+        = pb::FieldCodec.ForString(34);
+    private readonly pbc::RepeatedField<string> acceptedValues_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// The accepted values for the input parameter.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> AcceptedValues {
+      get { return acceptedValues_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PipelineStepInputParam);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PipelineStepInputParam other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (DefaultValue != other.DefaultValue) return false;
+      if (Description != other.Description) return false;
+      if(!acceptedValues_.Equals(other.acceptedValues_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (DefaultValue.Length != 0) hash ^= DefaultValue.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      hash ^= acceptedValues_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (DefaultValue.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DefaultValue);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      acceptedValues_.WriteTo(output, _repeated_acceptedValues_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (DefaultValue.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(DefaultValue);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      acceptedValues_.WriteTo(ref output, _repeated_acceptedValues_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (DefaultValue.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DefaultValue);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      size += acceptedValues_.CalculateSize(_repeated_acceptedValues_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PipelineStepInputParam other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.DefaultValue.Length != 0) {
+        DefaultValue = other.DefaultValue;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      acceptedValues_.Add(other.acceptedValues_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            DefaultValue = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 34: {
+            acceptedValues_.AddEntriesFrom(input, _repeated_acceptedValues_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            DefaultValue = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 34: {
+            acceptedValues_.AddEntriesFrom(ref input, _repeated_acceptedValues_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PipelineStep : pb::IMessage<PipelineStep>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PipelineStep> _parser = new pb::MessageParser<PipelineStep>(() => new PipelineStep());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PipelineStep> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[232]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStep() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStep(PipelineStep other) : this() {
+      id_ = other.id_;
+      userId_ = other.userId_;
+      description_ = other.description_;
+      pipelineStepVersion_ = other.pipelineStepVersion_ != null ? other.pipelineStepVersion_.Clone() : null;
+      visibility_ = other.visibility_ != null ? other.visibility_.Clone() : null;
+      createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
+      modifiedAt_ = other.modifiedAt_ != null ? other.modifiedAt_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStep Clone() {
+      return new PipelineStep(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    /// <summary>
+    /// The ID of the pipeline step.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 2;
+    private string userId_ = "";
+    /// <summary>
+    /// The user the pipeline step belongs to
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string UserId {
+      get { return userId_; }
+      set {
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 3;
+    private string description_ = "";
+    /// <summary>
+    /// Description of the pipeline step
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "pipeline_step_version" field.</summary>
+    public const int PipelineStepVersionFieldNumber = 4;
+    private global::Clarifai.Api.PipelineStepVersion pipelineStepVersion_;
+    /// <summary>
+    /// Latest Pipeline Step Version
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.PipelineStepVersion PipelineStepVersion {
+      get { return pipelineStepVersion_; }
+      set {
+        pipelineStepVersion_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "visibility" field.</summary>
+    public const int VisibilityFieldNumber = 5;
+    private global::Clarifai.Api.Visibility visibility_;
+    /// <summary>
+    /// The visibility field represents whether this is privately/publicly visible.
+    /// To be visible to the public the App that contains it AND the User that contains the App must
+    /// also be publicly visible.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.Visibility Visibility {
+      get { return visibility_; }
+      set {
+        visibility_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "created_at" field.</summary>
+    public const int CreatedAtFieldNumber = 6;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
+    /// <summary>
+    /// When the pipeline step was created
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
+      get { return createdAt_; }
+      set {
+        createdAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "modified_at" field.</summary>
+    public const int ModifiedAtFieldNumber = 7;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp modifiedAt_;
+    /// <summary>
+    /// When the pipeline step was last modified
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ModifiedAt {
+      get { return modifiedAt_; }
+      set {
+        modifiedAt_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PipelineStep);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PipelineStep other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (UserId != other.UserId) return false;
+      if (Description != other.Description) return false;
+      if (!object.Equals(PipelineStepVersion, other.PipelineStepVersion)) return false;
+      if (!object.Equals(Visibility, other.Visibility)) return false;
+      if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
+      if (!object.Equals(ModifiedAt, other.ModifiedAt)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (pipelineStepVersion_ != null) hash ^= PipelineStepVersion.GetHashCode();
+      if (visibility_ != null) hash ^= Visibility.GetHashCode();
+      if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
+      if (modifiedAt_ != null) hash ^= ModifiedAt.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (UserId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UserId);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      if (pipelineStepVersion_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PipelineStepVersion);
+      }
+      if (visibility_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Visibility);
+      }
+      if (createdAt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreatedAt);
+      }
+      if (modifiedAt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ModifiedAt);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (UserId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UserId);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
+      if (pipelineStepVersion_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PipelineStepVersion);
+      }
+      if (visibility_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Visibility);
+      }
+      if (createdAt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreatedAt);
+      }
+      if (modifiedAt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ModifiedAt);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (pipelineStepVersion_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PipelineStepVersion);
+      }
+      if (visibility_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Visibility);
+      }
+      if (createdAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedAt);
+      }
+      if (modifiedAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ModifiedAt);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PipelineStep other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.UserId.Length != 0) {
+        UserId = other.UserId;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      if (other.pipelineStepVersion_ != null) {
+        if (pipelineStepVersion_ == null) {
+          PipelineStepVersion = new global::Clarifai.Api.PipelineStepVersion();
+        }
+        PipelineStepVersion.MergeFrom(other.PipelineStepVersion);
+      }
+      if (other.visibility_ != null) {
+        if (visibility_ == null) {
+          Visibility = new global::Clarifai.Api.Visibility();
+        }
+        Visibility.MergeFrom(other.Visibility);
+      }
+      if (other.createdAt_ != null) {
+        if (createdAt_ == null) {
+          CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreatedAt.MergeFrom(other.CreatedAt);
+      }
+      if (other.modifiedAt_ != null) {
+        if (modifiedAt_ == null) {
+          ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ModifiedAt.MergeFrom(other.ModifiedAt);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            UserId = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (pipelineStepVersion_ == null) {
+              PipelineStepVersion = new global::Clarifai.Api.PipelineStepVersion();
+            }
+            input.ReadMessage(PipelineStepVersion);
+            break;
+          }
+          case 42: {
+            if (visibility_ == null) {
+              Visibility = new global::Clarifai.Api.Visibility();
+            }
+            input.ReadMessage(Visibility);
+            break;
+          }
+          case 50: {
+            if (createdAt_ == null) {
+              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreatedAt);
+            break;
+          }
+          case 58: {
+            if (modifiedAt_ == null) {
+              ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ModifiedAt);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            UserId = input.ReadString();
+            break;
+          }
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (pipelineStepVersion_ == null) {
+              PipelineStepVersion = new global::Clarifai.Api.PipelineStepVersion();
+            }
+            input.ReadMessage(PipelineStepVersion);
+            break;
+          }
+          case 42: {
+            if (visibility_ == null) {
+              Visibility = new global::Clarifai.Api.Visibility();
+            }
+            input.ReadMessage(Visibility);
+            break;
+          }
+          case 50: {
+            if (createdAt_ == null) {
+              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreatedAt);
+            break;
+          }
+          case 58: {
+            if (modifiedAt_ == null) {
+              ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ModifiedAt);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class OrchestrationStepSpec : pb::IMessage<OrchestrationStepSpec>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<OrchestrationStepSpec> _parser = new pb::MessageParser<OrchestrationStepSpec>(() => new OrchestrationStepSpec());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<OrchestrationStepSpec> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[233]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OrchestrationStepSpec() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OrchestrationStepSpec(OrchestrationStepSpec other) : this() {
+      switch (other.OrchestrationCase) {
+        case OrchestrationOneofCase.ArgoOrchestrationStepSpec:
+          ArgoOrchestrationStepSpec = other.ArgoOrchestrationStepSpec.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OrchestrationStepSpec Clone() {
+      return new OrchestrationStepSpec(this);
+    }
+
+    /// <summary>Field number for the "argo_orchestration_step_spec" field.</summary>
+    public const int ArgoOrchestrationStepSpecFieldNumber = 1;
+    /// <summary>
+    /// Argo orchestration step template
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.ArgoOrchestrationStepSpec ArgoOrchestrationStepSpec {
+      get { return orchestrationCase_ == OrchestrationOneofCase.ArgoOrchestrationStepSpec ? (global::Clarifai.Api.ArgoOrchestrationStepSpec) orchestration_ : null; }
+      set {
+        orchestration_ = value;
+        orchestrationCase_ = value == null ? OrchestrationOneofCase.None : OrchestrationOneofCase.ArgoOrchestrationStepSpec;
+      }
+    }
+
+    private object orchestration_;
+    /// <summary>Enum of possible cases for the "orchestration" oneof.</summary>
+    public enum OrchestrationOneofCase {
+      None = 0,
+      ArgoOrchestrationStepSpec = 1,
+    }
+    private OrchestrationOneofCase orchestrationCase_ = OrchestrationOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OrchestrationOneofCase OrchestrationCase {
+      get { return orchestrationCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOrchestration() {
+      orchestrationCase_ = OrchestrationOneofCase.None;
+      orchestration_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as OrchestrationStepSpec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(OrchestrationStepSpec other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ArgoOrchestrationStepSpec, other.ArgoOrchestrationStepSpec)) return false;
+      if (OrchestrationCase != other.OrchestrationCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (orchestrationCase_ == OrchestrationOneofCase.ArgoOrchestrationStepSpec) hash ^= ArgoOrchestrationStepSpec.GetHashCode();
+      hash ^= (int) orchestrationCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (orchestrationCase_ == OrchestrationOneofCase.ArgoOrchestrationStepSpec) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ArgoOrchestrationStepSpec);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (orchestrationCase_ == OrchestrationOneofCase.ArgoOrchestrationStepSpec) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ArgoOrchestrationStepSpec);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (orchestrationCase_ == OrchestrationOneofCase.ArgoOrchestrationStepSpec) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ArgoOrchestrationStepSpec);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(OrchestrationStepSpec other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.OrchestrationCase) {
+        case OrchestrationOneofCase.ArgoOrchestrationStepSpec:
+          if (ArgoOrchestrationStepSpec == null) {
+            ArgoOrchestrationStepSpec = new global::Clarifai.Api.ArgoOrchestrationStepSpec();
+          }
+          ArgoOrchestrationStepSpec.MergeFrom(other.ArgoOrchestrationStepSpec);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Clarifai.Api.ArgoOrchestrationStepSpec subBuilder = new global::Clarifai.Api.ArgoOrchestrationStepSpec();
+            if (orchestrationCase_ == OrchestrationOneofCase.ArgoOrchestrationStepSpec) {
+              subBuilder.MergeFrom(ArgoOrchestrationStepSpec);
+            }
+            input.ReadMessage(subBuilder);
+            ArgoOrchestrationStepSpec = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::Clarifai.Api.ArgoOrchestrationStepSpec subBuilder = new global::Clarifai.Api.ArgoOrchestrationStepSpec();
+            if (orchestrationCase_ == OrchestrationOneofCase.ArgoOrchestrationStepSpec) {
+              subBuilder.MergeFrom(ArgoOrchestrationStepSpec);
+            }
+            input.ReadMessage(subBuilder);
+            ArgoOrchestrationStepSpec = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ArgoOrchestrationStepSpec : pb::IMessage<ArgoOrchestrationStepSpec>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ArgoOrchestrationStepSpec> _parser = new pb::MessageParser<ArgoOrchestrationStepSpec>(() => new ArgoOrchestrationStepSpec());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ArgoOrchestrationStepSpec> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[234]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ArgoOrchestrationStepSpec() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ArgoOrchestrationStepSpec(ArgoOrchestrationStepSpec other) : this() {
+      apiVersion_ = other.apiVersion_;
+      specJson_ = other.specJson_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ArgoOrchestrationStepSpec Clone() {
+      return new ArgoOrchestrationStepSpec(this);
+    }
+
+    /// <summary>Field number for the "api_version" field.</summary>
+    public const int ApiVersionFieldNumber = 1;
+    private string apiVersion_ = "";
+    /// <summary>
+    /// The API version of the orchestration W.
+    /// Example: "argoproj.io/v1alpha1", "argoproj.io/v1beta1"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiVersion {
+      get { return apiVersion_; }
+      set {
+        apiVersion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "spec_json" field.</summary>
+    public const int SpecJsonFieldNumber = 2;
+    private string specJson_ = "";
+    /// <summary>
+    /// The JSON representation of the Argo Workflow Template
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SpecJson {
+      get { return specJson_; }
+      set {
+        specJson_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ArgoOrchestrationStepSpec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ArgoOrchestrationStepSpec other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ApiVersion != other.ApiVersion) return false;
+      if (SpecJson != other.SpecJson) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ApiVersion.Length != 0) hash ^= ApiVersion.GetHashCode();
+      if (SpecJson.Length != 0) hash ^= SpecJson.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ApiVersion.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiVersion);
+      }
+      if (SpecJson.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SpecJson);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ApiVersion.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ApiVersion);
+      }
+      if (SpecJson.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SpecJson);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ApiVersion.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiVersion);
+      }
+      if (SpecJson.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpecJson);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ArgoOrchestrationStepSpec other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ApiVersion.Length != 0) {
+        ApiVersion = other.ApiVersion;
+      }
+      if (other.SpecJson.Length != 0) {
+        SpecJson = other.SpecJson;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ApiVersion = input.ReadString();
+            break;
+          }
+          case 18: {
+            SpecJson = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ApiVersion = input.ReadString();
+            break;
+          }
+          case 18: {
+            SpecJson = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PipelineStepVersion : pb::IMessage<PipelineStepVersion>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PipelineStepVersion> _parser = new pb::MessageParser<PipelineStepVersion>(() => new PipelineStepVersion());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PipelineStepVersion> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[235]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStepVersion() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStepVersion(PipelineStepVersion other) : this() {
+      id_ = other.id_;
+      userId_ = other.userId_;
+      appId_ = other.appId_;
+      description_ = other.description_;
+      pipelineStep_ = other.pipelineStep_ != null ? other.pipelineStep_.Clone() : null;
+      orchestrationStepSpec_ = other.orchestrationStepSpec_ != null ? other.orchestrationStepSpec_.Clone() : null;
+      pipelineStepInputParams_ = other.pipelineStepInputParams_.Clone();
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      pipelineStepComputeInfo_ = other.pipelineStepComputeInfo_ != null ? other.pipelineStepComputeInfo_.Clone() : null;
+      buildInfo_ = other.buildInfo_ != null ? other.buildInfo_.Clone() : null;
+      visibility_ = other.visibility_ != null ? other.visibility_.Clone() : null;
+      createdAt_ = other.createdAt_ != null ? other.createdAt_.Clone() : null;
+      modifiedAt_ = other.modifiedAt_ != null ? other.modifiedAt_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PipelineStepVersion Clone() {
+      return new PipelineStepVersion(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    /// <summary>
+    /// The ID of the pipeline step version.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 2;
+    private string userId_ = "";
+    /// <summary>
+    /// The user the pipeline step version belongs to
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string UserId {
+      get { return userId_; }
+      set {
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "app_id" field.</summary>
+    public const int AppIdFieldNumber = 3;
+    private string appId_ = "";
+    /// <summary>
+    /// The app the pipeline step version belongs to
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AppId {
+      get { return appId_; }
+      set {
+        appId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 4;
+    private string description_ = "";
+    /// <summary>
+    /// Description of the pipeline step version
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "pipeline_step" field.</summary>
+    public const int PipelineStepFieldNumber = 5;
+    private global::Clarifai.Api.PipelineStep pipelineStep_;
+    /// <summary>
+    /// Pipeline Step
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.PipelineStep PipelineStep {
+      get { return pipelineStep_; }
+      set {
+        pipelineStep_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "orchestration_step_spec" field.</summary>
+    public const int OrchestrationStepSpecFieldNumber = 6;
+    private global::Clarifai.Api.OrchestrationStepSpec orchestrationStepSpec_;
+    /// <summary>
+    /// Orchestration Step Specification using oneof
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.OrchestrationStepSpec OrchestrationStepSpec {
+      get { return orchestrationStepSpec_; }
+      set {
+        orchestrationStepSpec_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pipeline_step_input_params" field.</summary>
+    public const int PipelineStepInputParamsFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::Clarifai.Api.PipelineStepInputParam> _repeated_pipelineStepInputParams_codec
+        = pb::FieldCodec.ForMessage(58, global::Clarifai.Api.PipelineStepInputParam.Parser);
+    private readonly pbc::RepeatedField<global::Clarifai.Api.PipelineStepInputParam> pipelineStepInputParams_ = new pbc::RepeatedField<global::Clarifai.Api.PipelineStepInputParam>();
+    /// <summary>
+    /// The pipeline step version input parameters
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Clarifai.Api.PipelineStepInputParam> PipelineStepInputParams {
+      get { return pipelineStepInputParams_; }
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 8;
+    private global::Clarifai.Api.Status.Status status_;
+    /// <summary>
+    /// Pipeline step Status - Created, Building Artifacts, Completed, Failed
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.Status.Status Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pipeline_step_compute_info" field.</summary>
+    public const int PipelineStepComputeInfoFieldNumber = 9;
+    private global::Clarifai.Api.ComputeInfo pipelineStepComputeInfo_;
+    /// <summary>
+    /// The minimum required compute resource to run the pipeline step as part of a Pipeline
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.ComputeInfo PipelineStepComputeInfo {
+      get { return pipelineStepComputeInfo_; }
+      set {
+        pipelineStepComputeInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "build_info" field.</summary>
+    public const int BuildInfoFieldNumber = 10;
+    private global::Clarifai.Api.BuildInfo buildInfo_;
+    /// <summary>
+    /// Build information for the pipeline step
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.BuildInfo BuildInfo {
+      get { return buildInfo_; }
+      set {
+        buildInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "visibility" field.</summary>
+    public const int VisibilityFieldNumber = 11;
+    private global::Clarifai.Api.Visibility visibility_;
+    /// <summary>
+    /// The visibility field represents whether this is privately/publicly visible.
+    /// To be visible to the public the App that contains it AND the User that contains the App must
+    /// also be publicly visible.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Clarifai.Api.Visibility Visibility {
+      get { return visibility_; }
+      set {
+        visibility_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "created_at" field.</summary>
+    public const int CreatedAtFieldNumber = 12;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createdAt_;
+    /// <summary>
+    /// When the pipeline step was created
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedAt {
+      get { return createdAt_; }
+      set {
+        createdAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "modified_at" field.</summary>
+    public const int ModifiedAtFieldNumber = 13;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp modifiedAt_;
+    /// <summary>
+    /// When the pipeline step was last modified
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ModifiedAt {
+      get { return modifiedAt_; }
+      set {
+        modifiedAt_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PipelineStepVersion);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PipelineStepVersion other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (UserId != other.UserId) return false;
+      if (AppId != other.AppId) return false;
+      if (Description != other.Description) return false;
+      if (!object.Equals(PipelineStep, other.PipelineStep)) return false;
+      if (!object.Equals(OrchestrationStepSpec, other.OrchestrationStepSpec)) return false;
+      if(!pipelineStepInputParams_.Equals(other.pipelineStepInputParams_)) return false;
+      if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(PipelineStepComputeInfo, other.PipelineStepComputeInfo)) return false;
+      if (!object.Equals(BuildInfo, other.BuildInfo)) return false;
+      if (!object.Equals(Visibility, other.Visibility)) return false;
+      if (!object.Equals(CreatedAt, other.CreatedAt)) return false;
+      if (!object.Equals(ModifiedAt, other.ModifiedAt)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (AppId.Length != 0) hash ^= AppId.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (pipelineStep_ != null) hash ^= PipelineStep.GetHashCode();
+      if (orchestrationStepSpec_ != null) hash ^= OrchestrationStepSpec.GetHashCode();
+      hash ^= pipelineStepInputParams_.GetHashCode();
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (pipelineStepComputeInfo_ != null) hash ^= PipelineStepComputeInfo.GetHashCode();
+      if (buildInfo_ != null) hash ^= BuildInfo.GetHashCode();
+      if (visibility_ != null) hash ^= Visibility.GetHashCode();
+      if (createdAt_ != null) hash ^= CreatedAt.GetHashCode();
+      if (modifiedAt_ != null) hash ^= ModifiedAt.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (UserId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UserId);
+      }
+      if (AppId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AppId);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Description);
+      }
+      if (pipelineStep_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(PipelineStep);
+      }
+      if (orchestrationStepSpec_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(OrchestrationStepSpec);
+      }
+      pipelineStepInputParams_.WriteTo(output, _repeated_pipelineStepInputParams_codec);
+      if (status_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Status);
+      }
+      if (pipelineStepComputeInfo_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(PipelineStepComputeInfo);
+      }
+      if (buildInfo_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(BuildInfo);
+      }
+      if (visibility_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Visibility);
+      }
+      if (createdAt_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(CreatedAt);
+      }
+      if (modifiedAt_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(ModifiedAt);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (UserId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UserId);
+      }
+      if (AppId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AppId);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Description);
+      }
+      if (pipelineStep_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(PipelineStep);
+      }
+      if (orchestrationStepSpec_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(OrchestrationStepSpec);
+      }
+      pipelineStepInputParams_.WriteTo(ref output, _repeated_pipelineStepInputParams_codec);
+      if (status_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Status);
+      }
+      if (pipelineStepComputeInfo_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(PipelineStepComputeInfo);
+      }
+      if (buildInfo_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(BuildInfo);
+      }
+      if (visibility_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Visibility);
+      }
+      if (createdAt_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(CreatedAt);
+      }
+      if (modifiedAt_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(ModifiedAt);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      }
+      if (AppId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AppId);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (pipelineStep_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PipelineStep);
+      }
+      if (orchestrationStepSpec_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OrchestrationStepSpec);
+      }
+      size += pipelineStepInputParams_.CalculateSize(_repeated_pipelineStepInputParams_codec);
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (pipelineStepComputeInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PipelineStepComputeInfo);
+      }
+      if (buildInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BuildInfo);
+      }
+      if (visibility_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Visibility);
+      }
+      if (createdAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedAt);
+      }
+      if (modifiedAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ModifiedAt);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PipelineStepVersion other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.UserId.Length != 0) {
+        UserId = other.UserId;
+      }
+      if (other.AppId.Length != 0) {
+        AppId = other.AppId;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      if (other.pipelineStep_ != null) {
+        if (pipelineStep_ == null) {
+          PipelineStep = new global::Clarifai.Api.PipelineStep();
+        }
+        PipelineStep.MergeFrom(other.PipelineStep);
+      }
+      if (other.orchestrationStepSpec_ != null) {
+        if (orchestrationStepSpec_ == null) {
+          OrchestrationStepSpec = new global::Clarifai.Api.OrchestrationStepSpec();
+        }
+        OrchestrationStepSpec.MergeFrom(other.OrchestrationStepSpec);
+      }
+      pipelineStepInputParams_.Add(other.pipelineStepInputParams_);
+      if (other.status_ != null) {
+        if (status_ == null) {
+          Status = new global::Clarifai.Api.Status.Status();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      if (other.pipelineStepComputeInfo_ != null) {
+        if (pipelineStepComputeInfo_ == null) {
+          PipelineStepComputeInfo = new global::Clarifai.Api.ComputeInfo();
+        }
+        PipelineStepComputeInfo.MergeFrom(other.PipelineStepComputeInfo);
+      }
+      if (other.buildInfo_ != null) {
+        if (buildInfo_ == null) {
+          BuildInfo = new global::Clarifai.Api.BuildInfo();
+        }
+        BuildInfo.MergeFrom(other.BuildInfo);
+      }
+      if (other.visibility_ != null) {
+        if (visibility_ == null) {
+          Visibility = new global::Clarifai.Api.Visibility();
+        }
+        Visibility.MergeFrom(other.Visibility);
+      }
+      if (other.createdAt_ != null) {
+        if (createdAt_ == null) {
+          CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreatedAt.MergeFrom(other.CreatedAt);
+      }
+      if (other.modifiedAt_ != null) {
+        if (modifiedAt_ == null) {
+          ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ModifiedAt.MergeFrom(other.ModifiedAt);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            UserId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AppId = input.ReadString();
+            break;
+          }
+          case 34: {
+            Description = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (pipelineStep_ == null) {
+              PipelineStep = new global::Clarifai.Api.PipelineStep();
+            }
+            input.ReadMessage(PipelineStep);
+            break;
+          }
+          case 50: {
+            if (orchestrationStepSpec_ == null) {
+              OrchestrationStepSpec = new global::Clarifai.Api.OrchestrationStepSpec();
+            }
+            input.ReadMessage(OrchestrationStepSpec);
+            break;
+          }
+          case 58: {
+            pipelineStepInputParams_.AddEntriesFrom(input, _repeated_pipelineStepInputParams_codec);
+            break;
+          }
+          case 66: {
+            if (status_ == null) {
+              Status = new global::Clarifai.Api.Status.Status();
+            }
+            input.ReadMessage(Status);
+            break;
+          }
+          case 74: {
+            if (pipelineStepComputeInfo_ == null) {
+              PipelineStepComputeInfo = new global::Clarifai.Api.ComputeInfo();
+            }
+            input.ReadMessage(PipelineStepComputeInfo);
+            break;
+          }
+          case 82: {
+            if (buildInfo_ == null) {
+              BuildInfo = new global::Clarifai.Api.BuildInfo();
+            }
+            input.ReadMessage(BuildInfo);
+            break;
+          }
+          case 90: {
+            if (visibility_ == null) {
+              Visibility = new global::Clarifai.Api.Visibility();
+            }
+            input.ReadMessage(Visibility);
+            break;
+          }
+          case 98: {
+            if (createdAt_ == null) {
+              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreatedAt);
+            break;
+          }
+          case 106: {
+            if (modifiedAt_ == null) {
+              ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ModifiedAt);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            UserId = input.ReadString();
+            break;
+          }
+          case 26: {
+            AppId = input.ReadString();
+            break;
+          }
+          case 34: {
+            Description = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (pipelineStep_ == null) {
+              PipelineStep = new global::Clarifai.Api.PipelineStep();
+            }
+            input.ReadMessage(PipelineStep);
+            break;
+          }
+          case 50: {
+            if (orchestrationStepSpec_ == null) {
+              OrchestrationStepSpec = new global::Clarifai.Api.OrchestrationStepSpec();
+            }
+            input.ReadMessage(OrchestrationStepSpec);
+            break;
+          }
+          case 58: {
+            pipelineStepInputParams_.AddEntriesFrom(ref input, _repeated_pipelineStepInputParams_codec);
+            break;
+          }
+          case 66: {
+            if (status_ == null) {
+              Status = new global::Clarifai.Api.Status.Status();
+            }
+            input.ReadMessage(Status);
+            break;
+          }
+          case 74: {
+            if (pipelineStepComputeInfo_ == null) {
+              PipelineStepComputeInfo = new global::Clarifai.Api.ComputeInfo();
+            }
+            input.ReadMessage(PipelineStepComputeInfo);
+            break;
+          }
+          case 82: {
+            if (buildInfo_ == null) {
+              BuildInfo = new global::Clarifai.Api.BuildInfo();
+            }
+            input.ReadMessage(BuildInfo);
+            break;
+          }
+          case 90: {
+            if (visibility_ == null) {
+              Visibility = new global::Clarifai.Api.Visibility();
+            }
+            input.ReadMessage(Visibility);
+            break;
+          }
+          case 98: {
+            if (createdAt_ == null) {
+              CreatedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreatedAt);
+            break;
+          }
+          case 106: {
+            if (modifiedAt_ == null) {
+              ModifiedAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ModifiedAt);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class PipelineVersion : pb::IMessage<PipelineVersion>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -91286,7 +93290,7 @@ namespace Clarifai.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[231]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[236]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -91883,7 +93887,7 @@ namespace Clarifai.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[232]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[237]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -92170,7 +94174,7 @@ namespace Clarifai.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[233]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[238]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -92362,7 +94366,7 @@ namespace Clarifai.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[234]; }
+      get { return global::Clarifai.Api.ResourcesReflection.Descriptor.MessageTypes[239]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

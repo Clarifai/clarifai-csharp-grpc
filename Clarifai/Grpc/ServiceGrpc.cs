@@ -761,6 +761,28 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_ListWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_PatchWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostPipelineStepsRequest> __Marshaller_clarifai_api_PostPipelineStepsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostPipelineStepsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiPipelineStepResponse> __Marshaller_clarifai_api_MultiPipelineStepResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiPipelineStepResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetPipelineStepRequest> __Marshaller_clarifai_api_GetPipelineStepRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetPipelineStepRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SinglePipelineStepResponse> __Marshaller_clarifai_api_SinglePipelineStepResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SinglePipelineStepResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListPipelineStepsRequest> __Marshaller_clarifai_api_ListPipelineStepsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListPipelineStepsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest> __Marshaller_clarifai_api_PostPipelineStepVersionsUploadRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostPipelineStepVersionsUploadRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostPipelineStepVersionsUploadResponse> __Marshaller_clarifai_api_PostPipelineStepVersionsUploadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostPipelineStepVersionsUploadResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListPipelineStepVersionsRequest> __Marshaller_clarifai_api_ListPipelineStepVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListPipelineStepVersionsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiPipelineStepVersionResponse> __Marshaller_clarifai_api_MultiPipelineStepVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiPipelineStepVersionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetPipelineStepVersionRequest> __Marshaller_clarifai_api_GetPipelineStepVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetPipelineStepVersionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SinglePipelineStepVersionResponse> __Marshaller_clarifai_api_SinglePipelineStepVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SinglePipelineStepVersionResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -2745,6 +2767,54 @@ namespace Clarifai.Api {
         "PatchWorkflowVersionEvaluations",
         __Marshaller_clarifai_api_PatchWorkflowVersionEvaluationsRequest,
         __Marshaller_clarifai_api_MultiWorkflowVersionEvaluationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostPipelineStepsRequest, global::Clarifai.Api.MultiPipelineStepResponse> __Method_PostPipelineSteps = new grpc::Method<global::Clarifai.Api.PostPipelineStepsRequest, global::Clarifai.Api.MultiPipelineStepResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostPipelineSteps",
+        __Marshaller_clarifai_api_PostPipelineStepsRequest,
+        __Marshaller_clarifai_api_MultiPipelineStepResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetPipelineStepRequest, global::Clarifai.Api.SinglePipelineStepResponse> __Method_GetPipelineStep = new grpc::Method<global::Clarifai.Api.GetPipelineStepRequest, global::Clarifai.Api.SinglePipelineStepResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetPipelineStep",
+        __Marshaller_clarifai_api_GetPipelineStepRequest,
+        __Marshaller_clarifai_api_SinglePipelineStepResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListPipelineStepsRequest, global::Clarifai.Api.MultiPipelineStepResponse> __Method_ListPipelineSteps = new grpc::Method<global::Clarifai.Api.ListPipelineStepsRequest, global::Clarifai.Api.MultiPipelineStepResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListPipelineSteps",
+        __Marshaller_clarifai_api_ListPipelineStepsRequest,
+        __Marshaller_clarifai_api_MultiPipelineStepResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest, global::Clarifai.Api.PostPipelineStepVersionsUploadResponse> __Method_PostPipelineStepVersionsUpload = new grpc::Method<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest, global::Clarifai.Api.PostPipelineStepVersionsUploadResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "PostPipelineStepVersionsUpload",
+        __Marshaller_clarifai_api_PostPipelineStepVersionsUploadRequest,
+        __Marshaller_clarifai_api_PostPipelineStepVersionsUploadResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListPipelineStepVersionsRequest, global::Clarifai.Api.MultiPipelineStepVersionResponse> __Method_ListPipelineStepVersions = new grpc::Method<global::Clarifai.Api.ListPipelineStepVersionsRequest, global::Clarifai.Api.MultiPipelineStepVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListPipelineStepVersions",
+        __Marshaller_clarifai_api_ListPipelineStepVersionsRequest,
+        __Marshaller_clarifai_api_MultiPipelineStepVersionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetPipelineStepVersionRequest, global::Clarifai.Api.SinglePipelineStepVersionResponse> __Method_GetPipelineStepVersion = new grpc::Method<global::Clarifai.Api.GetPipelineStepVersionRequest, global::Clarifai.Api.SinglePipelineStepVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetPipelineStepVersion",
+        __Marshaller_clarifai_api_GetPipelineStepVersionRequest,
+        __Marshaller_clarifai_api_SinglePipelineStepVersionResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -5668,6 +5738,53 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse> PatchWorkflowVersionEvaluations(global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiPipelineStepResponse> PostPipelineSteps(global::Clarifai.Api.PostPipelineStepsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SinglePipelineStepResponse> GetPipelineStep(global::Clarifai.Api.GetPipelineStepRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiPipelineStepResponse> ListPipelineSteps(global::Clarifai.Api.ListPipelineStepsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the pipeline_step_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the pipeline_step_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the pipeline_step_version_id specified for your pipeline_step_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the pipeline_step_bytes.
+      /// </summary>
+      /// <param name="requestStream">Used for reading requests from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task PostPipelineStepVersionsUpload(grpc::IAsyncStreamReader<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest> requestStream, grpc::IServerStreamWriter<global::Clarifai.Api.PostPipelineStepVersionsUploadResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiPipelineStepVersionResponse> ListPipelineStepVersions(global::Clarifai.Api.ListPipelineStepVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SinglePipelineStepVersionResponse> GetPipelineStepVersion(global::Clarifai.Api.GetPipelineStepVersionRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -17093,6 +17210,136 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PatchWorkflowVersionEvaluations, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineStepResponse PostPipelineSteps(global::Clarifai.Api.PostPipelineStepsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostPipelineSteps(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineStepResponse PostPipelineSteps(global::Clarifai.Api.PostPipelineStepsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostPipelineSteps, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineStepResponse> PostPipelineStepsAsync(global::Clarifai.Api.PostPipelineStepsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostPipelineStepsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineStepResponse> PostPipelineStepsAsync(global::Clarifai.Api.PostPipelineStepsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostPipelineSteps, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SinglePipelineStepResponse GetPipelineStep(global::Clarifai.Api.GetPipelineStepRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPipelineStep(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SinglePipelineStepResponse GetPipelineStep(global::Clarifai.Api.GetPipelineStepRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetPipelineStep, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SinglePipelineStepResponse> GetPipelineStepAsync(global::Clarifai.Api.GetPipelineStepRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPipelineStepAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SinglePipelineStepResponse> GetPipelineStepAsync(global::Clarifai.Api.GetPipelineStepRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetPipelineStep, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineStepResponse ListPipelineSteps(global::Clarifai.Api.ListPipelineStepsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPipelineSteps(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineStepResponse ListPipelineSteps(global::Clarifai.Api.ListPipelineStepsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListPipelineSteps, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineStepResponse> ListPipelineStepsAsync(global::Clarifai.Api.ListPipelineStepsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPipelineStepsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineStepResponse> ListPipelineStepsAsync(global::Clarifai.Api.ListPipelineStepsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListPipelineSteps, null, options, request);
+      }
+      /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the pipeline_step_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the pipeline_step_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the pipeline_step_version_id specified for your pipeline_step_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the pipeline_step_bytes.
+      /// </summary>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest, global::Clarifai.Api.PostPipelineStepVersionsUploadResponse> PostPipelineStepVersionsUpload(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostPipelineStepVersionsUpload(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the pipeline_step_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the pipeline_step_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the pipeline_step_version_id specified for your pipeline_step_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the pipeline_step_bytes.
+      /// </summary>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest, global::Clarifai.Api.PostPipelineStepVersionsUploadResponse> PostPipelineStepVersionsUpload(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_PostPipelineStepVersionsUpload, null, options);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineStepVersionResponse ListPipelineStepVersions(global::Clarifai.Api.ListPipelineStepVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPipelineStepVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineStepVersionResponse ListPipelineStepVersions(global::Clarifai.Api.ListPipelineStepVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListPipelineStepVersions, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineStepVersionResponse> ListPipelineStepVersionsAsync(global::Clarifai.Api.ListPipelineStepVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPipelineStepVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineStepVersionResponse> ListPipelineStepVersionsAsync(global::Clarifai.Api.ListPipelineStepVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListPipelineStepVersions, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SinglePipelineStepVersionResponse GetPipelineStepVersion(global::Clarifai.Api.GetPipelineStepVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPipelineStepVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SinglePipelineStepVersionResponse GetPipelineStepVersion(global::Clarifai.Api.GetPipelineStepVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetPipelineStepVersion, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SinglePipelineStepVersionResponse> GetPipelineStepVersionAsync(global::Clarifai.Api.GetPipelineStepVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPipelineStepVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SinglePipelineStepVersionResponse> GetPipelineStepVersionAsync(global::Clarifai.Api.GetPipelineStepVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetPipelineStepVersion, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -17354,7 +17601,13 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostWorkflowVersionEvaluations, serviceImpl.PostWorkflowVersionEvaluations)
           .AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl.GetWorkflowVersionEvaluation)
           .AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl.ListWorkflowVersionEvaluations)
-          .AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl.PatchWorkflowVersionEvaluations).Build();
+          .AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl.PatchWorkflowVersionEvaluations)
+          .AddMethod(__Method_PostPipelineSteps, serviceImpl.PostPipelineSteps)
+          .AddMethod(__Method_GetPipelineStep, serviceImpl.GetPipelineStep)
+          .AddMethod(__Method_ListPipelineSteps, serviceImpl.ListPipelineSteps)
+          .AddMethod(__Method_PostPipelineStepVersionsUpload, serviceImpl.PostPipelineStepVersionsUpload)
+          .AddMethod(__Method_ListPipelineStepVersions, serviceImpl.ListPipelineStepVersions)
+          .AddMethod(__Method_GetPipelineStepVersion, serviceImpl.GetPipelineStepVersion).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -17612,6 +17865,12 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetWorkflowVersionEvaluationRequest, global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse>(serviceImpl.GetWorkflowVersionEvaluation));
       serviceBinder.AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.ListWorkflowVersionEvaluations));
       serviceBinder.AddMethod(__Method_PatchWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.PatchWorkflowVersionEvaluations));
+      serviceBinder.AddMethod(__Method_PostPipelineSteps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostPipelineStepsRequest, global::Clarifai.Api.MultiPipelineStepResponse>(serviceImpl.PostPipelineSteps));
+      serviceBinder.AddMethod(__Method_GetPipelineStep, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetPipelineStepRequest, global::Clarifai.Api.SinglePipelineStepResponse>(serviceImpl.GetPipelineStep));
+      serviceBinder.AddMethod(__Method_ListPipelineSteps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListPipelineStepsRequest, global::Clarifai.Api.MultiPipelineStepResponse>(serviceImpl.ListPipelineSteps));
+      serviceBinder.AddMethod(__Method_PostPipelineStepVersionsUpload, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest, global::Clarifai.Api.PostPipelineStepVersionsUploadResponse>(serviceImpl.PostPipelineStepVersionsUpload));
+      serviceBinder.AddMethod(__Method_ListPipelineStepVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListPipelineStepVersionsRequest, global::Clarifai.Api.MultiPipelineStepVersionResponse>(serviceImpl.ListPipelineStepVersions));
+      serviceBinder.AddMethod(__Method_GetPipelineStepVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetPipelineStepVersionRequest, global::Clarifai.Api.SinglePipelineStepVersionResponse>(serviceImpl.GetPipelineStepVersion));
     }
 
   }
