@@ -114,6 +114,16 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationsRequest> __Marshaller_clarifai_api_DeleteAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAnnotationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationTracksRequest> __Marshaller_clarifai_api_ListAnnotationTracksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAnnotationTracksRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationTrackResponse> __Marshaller_clarifai_api_MultiAnnotationTrackResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAnnotationTrackResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationTracksRequest> __Marshaller_clarifai_api_PostAnnotationTracksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationTracksRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationTracksRequest> __Marshaller_clarifai_api_PatchAnnotationTracksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationTracksRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationTracksRequest> __Marshaller_clarifai_api_DeleteAnnotationTracksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAnnotationTracksRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsSearchesRequest> __Marshaller_clarifai_api_PatchAnnotationsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationsSearchesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiSearchResponse> __Marshaller_clarifai_api_MultiSearchResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiSearchResponse.Parser));
@@ -1024,6 +1034,38 @@ namespace Clarifai.Api {
         __ServiceName,
         "DeleteAnnotations",
         __Marshaller_clarifai_api_DeleteAnnotationsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse> __Method_ListAnnotationTracks = new grpc::Method<global::Clarifai.Api.ListAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListAnnotationTracks",
+        __Marshaller_clarifai_api_ListAnnotationTracksRequest,
+        __Marshaller_clarifai_api_MultiAnnotationTrackResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse> __Method_PostAnnotationTracks = new grpc::Method<global::Clarifai.Api.PostAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostAnnotationTracks",
+        __Marshaller_clarifai_api_PostAnnotationTracksRequest,
+        __Marshaller_clarifai_api_MultiAnnotationTrackResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PatchAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse> __Method_PatchAnnotationTracks = new grpc::Method<global::Clarifai.Api.PatchAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchAnnotationTracks",
+        __Marshaller_clarifai_api_PatchAnnotationTracksRequest,
+        __Marshaller_clarifai_api_MultiAnnotationTrackResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeleteAnnotationTracksRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteAnnotationTracks = new grpc::Method<global::Clarifai.Api.DeleteAnnotationTracksRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteAnnotationTracks",
+        __Marshaller_clarifai_api_DeleteAnnotationTracksRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -3324,6 +3366,54 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotations(global::Clarifai.Api.DeleteAnnotationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List all the annotation tracks.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationTrackResponse> ListAnnotationTracks(global::Clarifai.Api.ListAnnotationTracksRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Post annotation tracks.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationTrackResponse> PostAnnotationTracks(global::Clarifai.Api.PostAnnotationTracksRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Patch one or more annotation tracks.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationTrackResponse> PatchAnnotationTracks(global::Clarifai.Api.PatchAnnotationTracksRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete multiple annotation tracks in one request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationTracks(global::Clarifai.Api.DeleteAnnotationTracksRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7297,6 +7387,198 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationsAsync(global::Clarifai.Api.DeleteAnnotationsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteAnnotations, null, options, request);
+      }
+      /// <summary>
+      /// List all the annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAnnotationTrackResponse ListAnnotationTracks(global::Clarifai.Api.ListAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListAnnotationTracks(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAnnotationTrackResponse ListAnnotationTracks(global::Clarifai.Api.ListAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListAnnotationTracks, null, options, request);
+      }
+      /// <summary>
+      /// List all the annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationTrackResponse> ListAnnotationTracksAsync(global::Clarifai.Api.ListAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListAnnotationTracksAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List all the annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationTrackResponse> ListAnnotationTracksAsync(global::Clarifai.Api.ListAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListAnnotationTracks, null, options, request);
+      }
+      /// <summary>
+      /// Post annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAnnotationTrackResponse PostAnnotationTracks(global::Clarifai.Api.PostAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostAnnotationTracks(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAnnotationTrackResponse PostAnnotationTracks(global::Clarifai.Api.PostAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostAnnotationTracks, null, options, request);
+      }
+      /// <summary>
+      /// Post annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationTrackResponse> PostAnnotationTracksAsync(global::Clarifai.Api.PostAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostAnnotationTracksAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationTrackResponse> PostAnnotationTracksAsync(global::Clarifai.Api.PostAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostAnnotationTracks, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAnnotationTrackResponse PatchAnnotationTracks(global::Clarifai.Api.PatchAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationTracks(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiAnnotationTrackResponse PatchAnnotationTracks(global::Clarifai.Api.PatchAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchAnnotationTracks, null, options, request);
+      }
+      /// <summary>
+      /// Patch one or more annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationTrackResponse> PatchAnnotationTracksAsync(global::Clarifai.Api.PatchAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchAnnotationTracksAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Patch one or more annotation tracks.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationTrackResponse> PatchAnnotationTracksAsync(global::Clarifai.Api.PatchAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchAnnotationTracks, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple annotation tracks in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationTracks(global::Clarifai.Api.DeleteAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteAnnotationTracks(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple annotation tracks in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationTracks(global::Clarifai.Api.DeleteAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteAnnotationTracks, null, options, request);
+      }
+      /// <summary>
+      /// Delete multiple annotation tracks in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationTracksAsync(global::Clarifai.Api.DeleteAnnotationTracksRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteAnnotationTracksAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete multiple annotation tracks in one request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationTracksAsync(global::Clarifai.Api.DeleteAnnotationTracksRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteAnnotationTracks, null, options, request);
       }
       /// <summary>
       /// Patch saved annotations searches by ids.
@@ -18149,6 +18431,10 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchAnnotationsStatus, serviceImpl.PatchAnnotationsStatus)
           .AddMethod(__Method_DeleteAnnotation, serviceImpl.DeleteAnnotation)
           .AddMethod(__Method_DeleteAnnotations, serviceImpl.DeleteAnnotations)
+          .AddMethod(__Method_ListAnnotationTracks, serviceImpl.ListAnnotationTracks)
+          .AddMethod(__Method_PostAnnotationTracks, serviceImpl.PostAnnotationTracks)
+          .AddMethod(__Method_PatchAnnotationTracks, serviceImpl.PatchAnnotationTracks)
+          .AddMethod(__Method_DeleteAnnotationTracks, serviceImpl.DeleteAnnotationTracks)
           .AddMethod(__Method_PatchAnnotationsSearches, serviceImpl.PatchAnnotationsSearches)
           .AddMethod(__Method_PostAnnotationsSearches, serviceImpl.PostAnnotationsSearches)
           .AddMethod(__Method_ListAnnotationWorkers, serviceImpl.ListAnnotationWorkers)
@@ -18432,6 +18718,10 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchAnnotationsStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsStatusRequest, global::Clarifai.Api.PatchAnnotationsStatusResponse>(serviceImpl.PatchAnnotationsStatus));
       serviceBinder.AddMethod(__Method_DeleteAnnotation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotation));
       serviceBinder.AddMethod(__Method_DeleteAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotations));
+      serviceBinder.AddMethod(__Method_ListAnnotationTracks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse>(serviceImpl.ListAnnotationTracks));
+      serviceBinder.AddMethod(__Method_PostAnnotationTracks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse>(serviceImpl.PostAnnotationTracks));
+      serviceBinder.AddMethod(__Method_PatchAnnotationTracks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationTracksRequest, global::Clarifai.Api.MultiAnnotationTrackResponse>(serviceImpl.PatchAnnotationTracks));
+      serviceBinder.AddMethod(__Method_DeleteAnnotationTracks, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationTracksRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotationTracks));
       serviceBinder.AddMethod(__Method_PatchAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PatchAnnotationsSearches));
       serviceBinder.AddMethod(__Method_PostAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostAnnotationsSearches));
       serviceBinder.AddMethod(__Method_ListAnnotationWorkers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationWorkersRequest, global::Clarifai.Api.MultiWorkerResponse>(serviceImpl.ListAnnotationWorkers));
