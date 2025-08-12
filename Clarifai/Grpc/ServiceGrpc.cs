@@ -2925,12 +2925,12 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiPipelineResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.DeletePipelinesRequest, global::Clarifai.Api.MultiPipelineResponse> __Method_DeletePipelines = new grpc::Method<global::Clarifai.Api.DeletePipelinesRequest, global::Clarifai.Api.MultiPipelineResponse>(
+    static readonly grpc::Method<global::Clarifai.Api.DeletePipelinesRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeletePipelines = new grpc::Method<global::Clarifai.Api.DeletePipelinesRequest, global::Clarifai.Api.Status.BaseResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeletePipelines",
         __Marshaller_clarifai_api_DeletePipelinesRequest,
-        __Marshaller_clarifai_api_MultiPipelineResponse);
+        __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetPipelineVersionRequest, global::Clarifai.Api.SinglePipelineVersionResponse> __Method_GetPipelineVersion = new grpc::Method<global::Clarifai.Api.GetPipelineVersionRequest, global::Clarifai.Api.SinglePipelineVersionResponse>(
@@ -2957,12 +2957,12 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiPipelineVersionResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.DeletePipelineVersionsRequest, global::Clarifai.Api.MultiPipelineVersionResponse> __Method_DeletePipelineVersions = new grpc::Method<global::Clarifai.Api.DeletePipelineVersionsRequest, global::Clarifai.Api.MultiPipelineVersionResponse>(
+    static readonly grpc::Method<global::Clarifai.Api.DeletePipelineVersionsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeletePipelineVersions = new grpc::Method<global::Clarifai.Api.DeletePipelineVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeletePipelineVersions",
         __Marshaller_clarifai_api_DeletePipelineVersionsRequest,
-        __Marshaller_clarifai_api_MultiPipelineVersionResponse);
+        __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetPipelineVersionRunRequest, global::Clarifai.Api.SinglePipelineVersionRunResponse> __Method_GetPipelineVersionRun = new grpc::Method<global::Clarifai.Api.GetPipelineVersionRunRequest, global::Clarifai.Api.SinglePipelineVersionRunResponse>(
@@ -6099,7 +6099,7 @@ namespace Clarifai.Api {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiPipelineResponse> DeletePipelines(global::Clarifai.Api.DeletePipelinesRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeletePipelines(global::Clarifai.Api.DeletePipelinesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -6123,7 +6123,7 @@ namespace Clarifai.Api {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiPipelineVersionResponse> DeletePipelineVersions(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeletePipelineVersions(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -18005,22 +18005,22 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchPipelines, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiPipelineResponse DeletePipelines(global::Clarifai.Api.DeletePipelinesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelines(global::Clarifai.Api.DeletePipelinesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeletePipelines(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiPipelineResponse DeletePipelines(global::Clarifai.Api.DeletePipelinesRequest request, grpc::CallOptions options)
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelines(global::Clarifai.Api.DeletePipelinesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeletePipelines, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineResponse> DeletePipelinesAsync(global::Clarifai.Api.DeletePipelinesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelinesAsync(global::Clarifai.Api.DeletePipelinesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeletePipelinesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineResponse> DeletePipelinesAsync(global::Clarifai.Api.DeletePipelinesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelinesAsync(global::Clarifai.Api.DeletePipelinesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeletePipelines, null, options, request);
       }
@@ -18085,22 +18085,22 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PatchPipelineVersions, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiPipelineVersionResponse DeletePipelineVersions(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelineVersions(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeletePipelineVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiPipelineVersionResponse DeletePipelineVersions(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::CallOptions options)
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelineVersions(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_DeletePipelineVersions, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineVersionResponse> DeletePipelineVersionsAsync(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelineVersionsAsync(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DeletePipelineVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineVersionResponse> DeletePipelineVersionsAsync(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelineVersionsAsync(global::Clarifai.Api.DeletePipelineVersionsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeletePipelineVersions, null, options, request);
       }
@@ -18954,11 +18954,11 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetPipeline, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetPipelineRequest, global::Clarifai.Api.SinglePipelineResponse>(serviceImpl.GetPipeline));
       serviceBinder.AddMethod(__Method_ListPipelines, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListPipelinesRequest, global::Clarifai.Api.MultiPipelineResponse>(serviceImpl.ListPipelines));
       serviceBinder.AddMethod(__Method_PatchPipelines, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchPipelinesRequest, global::Clarifai.Api.MultiPipelineResponse>(serviceImpl.PatchPipelines));
-      serviceBinder.AddMethod(__Method_DeletePipelines, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelinesRequest, global::Clarifai.Api.MultiPipelineResponse>(serviceImpl.DeletePipelines));
+      serviceBinder.AddMethod(__Method_DeletePipelines, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelinesRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeletePipelines));
       serviceBinder.AddMethod(__Method_GetPipelineVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetPipelineVersionRequest, global::Clarifai.Api.SinglePipelineVersionResponse>(serviceImpl.GetPipelineVersion));
       serviceBinder.AddMethod(__Method_ListPipelineVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListPipelineVersionsRequest, global::Clarifai.Api.MultiPipelineVersionResponse>(serviceImpl.ListPipelineVersions));
       serviceBinder.AddMethod(__Method_PatchPipelineVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchPipelineVersionsRequest, global::Clarifai.Api.MultiPipelineVersionResponse>(serviceImpl.PatchPipelineVersions));
-      serviceBinder.AddMethod(__Method_DeletePipelineVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelineVersionsRequest, global::Clarifai.Api.MultiPipelineVersionResponse>(serviceImpl.DeletePipelineVersions));
+      serviceBinder.AddMethod(__Method_DeletePipelineVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelineVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeletePipelineVersions));
       serviceBinder.AddMethod(__Method_GetPipelineVersionRun, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetPipelineVersionRunRequest, global::Clarifai.Api.SinglePipelineVersionRunResponse>(serviceImpl.GetPipelineVersionRun));
       serviceBinder.AddMethod(__Method_PostPipelineVersionRuns, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostPipelineVersionRunsRequest, global::Clarifai.Api.MultiPipelineVersionRunResponse>(serviceImpl.PostPipelineVersionRuns));
       serviceBinder.AddMethod(__Method_PatchPipelineVersionRuns, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchPipelineVersionRunsRequest, global::Clarifai.Api.MultiPipelineVersionRunResponse>(serviceImpl.PatchPipelineVersionRuns));
