@@ -851,6 +851,14 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchSecretsRequest> __Marshaller_clarifai_api_PatchSecretsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchSecretsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteSecretsRequest> __Marshaller_clarifai_api_DeleteSecretsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteSecretsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostMetricsQueryRequest> __Marshaller_clarifai_api_PostMetricsQueryRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostMetricsQueryRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MetricsQueryResponse> __Marshaller_clarifai_api_MetricsQueryResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MetricsQueryResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListMetricLabelsRequest> __Marshaller_clarifai_api_ListMetricLabelsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListMetricLabelsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiMetricLabelsResponse> __Marshaller_clarifai_api_MultiMetricLabelsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiMetricLabelsResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse> __Method_ListConceptRelations = new grpc::Method<global::Clarifai.Api.ListConceptRelationsRequest, global::Clarifai.Api.MultiConceptRelationResponse>(
@@ -3075,6 +3083,22 @@ namespace Clarifai.Api {
         "DeleteSecrets",
         __Marshaller_clarifai_api_DeleteSecretsRequest,
         __Marshaller_clarifai_api_MultiSecretResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostMetricsQueryRequest, global::Clarifai.Api.MetricsQueryResponse> __Method_PostMetricsQuery = new grpc::Method<global::Clarifai.Api.PostMetricsQueryRequest, global::Clarifai.Api.MetricsQueryResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostMetricsQuery",
+        __Marshaller_clarifai_api_PostMetricsQueryRequest,
+        __Marshaller_clarifai_api_MetricsQueryResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListMetricLabelsRequest, global::Clarifai.Api.MultiMetricLabelsResponse> __Method_ListMetricLabels = new grpc::Method<global::Clarifai.Api.ListMetricLabelsRequest, global::Clarifai.Api.MultiMetricLabelsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListMetricLabels",
+        __Marshaller_clarifai_api_ListMetricLabelsRequest,
+        __Marshaller_clarifai_api_MultiMetricLabelsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -6219,6 +6243,18 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiSecretResponse> DeleteSecrets(global::Clarifai.Api.DeleteSecretsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MetricsQueryResponse> PostMetricsQuery(global::Clarifai.Api.PostMetricsQueryRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiMetricLabelsResponse> ListMetricLabels(global::Clarifai.Api.ListMetricLabelsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -18394,6 +18430,46 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteSecrets, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MetricsQueryResponse PostMetricsQuery(global::Clarifai.Api.PostMetricsQueryRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostMetricsQuery(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MetricsQueryResponse PostMetricsQuery(global::Clarifai.Api.PostMetricsQueryRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostMetricsQuery, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MetricsQueryResponse> PostMetricsQueryAsync(global::Clarifai.Api.PostMetricsQueryRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostMetricsQueryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MetricsQueryResponse> PostMetricsQueryAsync(global::Clarifai.Api.PostMetricsQueryRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostMetricsQuery, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiMetricLabelsResponse ListMetricLabels(global::Clarifai.Api.ListMetricLabelsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListMetricLabels(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiMetricLabelsResponse ListMetricLabels(global::Clarifai.Api.ListMetricLabelsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListMetricLabels, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiMetricLabelsResponse> ListMetricLabelsAsync(global::Clarifai.Api.ListMetricLabelsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListMetricLabelsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiMetricLabelsResponse> ListMetricLabelsAsync(global::Clarifai.Api.ListMetricLabelsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListMetricLabels, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override V2Client NewInstance(ClientBaseConfiguration configuration)
@@ -18685,7 +18761,9 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListSecrets, serviceImpl.ListSecrets)
           .AddMethod(__Method_PostSecrets, serviceImpl.PostSecrets)
           .AddMethod(__Method_PatchSecrets, serviceImpl.PatchSecrets)
-          .AddMethod(__Method_DeleteSecrets, serviceImpl.DeleteSecrets).Build();
+          .AddMethod(__Method_DeleteSecrets, serviceImpl.DeleteSecrets)
+          .AddMethod(__Method_PostMetricsQuery, serviceImpl.PostMetricsQuery)
+          .AddMethod(__Method_ListMetricLabels, serviceImpl.ListMetricLabels).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -18973,6 +19051,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostSecrets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostSecretsRequest, global::Clarifai.Api.MultiSecretResponse>(serviceImpl.PostSecrets));
       serviceBinder.AddMethod(__Method_PatchSecrets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchSecretsRequest, global::Clarifai.Api.MultiSecretResponse>(serviceImpl.PatchSecrets));
       serviceBinder.AddMethod(__Method_DeleteSecrets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteSecretsRequest, global::Clarifai.Api.MultiSecretResponse>(serviceImpl.DeleteSecrets));
+      serviceBinder.AddMethod(__Method_PostMetricsQuery, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostMetricsQueryRequest, global::Clarifai.Api.MetricsQueryResponse>(serviceImpl.PostMetricsQuery));
+      serviceBinder.AddMethod(__Method_ListMetricLabels, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListMetricLabelsRequest, global::Clarifai.Api.MultiMetricLabelsResponse>(serviceImpl.ListMetricLabels));
     }
 
   }

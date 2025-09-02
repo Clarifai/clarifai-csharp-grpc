@@ -27,7 +27,7 @@ namespace Clarifai.Auth.Scope {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlL3Njb3BlLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnNjb3BlGiBnb29nbGUvcHJvdG9idWYvZGVzY3JpcHRvci5w",
             "cm90byJGCglTY29wZUxpc3QSJgoGc2NvcGVzGAEgAygOMhYuY2xhcmlmYWku",
-            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSq7HAoBUxIJCgV1bmRl",
+            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSrXHAoBUxIJCgV1bmRl",
             "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIYCgpJbnB1",
             "dHNfQWRkEAQaCPCbJwH4mycFEhQKCklucHV0c19HZXQQBRoE8JsnARIgCgxJ",
             "bnB1dHNfUGF0Y2gQBxoOCAHwmycB+JsnBPibJwUSHwoNSW5wdXRzX0RlbGV0",
@@ -107,14 +107,15 @@ namespace Clarifai.Auth.Scope {
             "EJ0BGgTwmycBEiEKEVBpcGVsaW5lU3RlcHNfQWRkEJ4BGgnwmycB+JsnnQES",
             "IgoSUGlwZWxpbmVTdGVwc19QdWxsEJ8BGgnwmycB+JsnnQESFgoLU2VjcmV0",
             "c19HZXQQoAEaBPCbJwESGwoLU2VjcmV0c19BZGQQoQEaCfCbJwH4myegARIj",
-            "Cg5TZWNyZXRzX0RlbGV0ZRCiARoO8JsnAfibJ6AB+JsnoQEiBAgeEB4iBAgf",
-            "EB8iBAggECAiBAghECEiBAgiECIiBAh9EH0iBAh+EH46PAoPY2xhcmZhaV9l",
-            "eHBvc2VkEiEuZ29vZ2xlLnByb3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMYvvME",
-            "IAEoCDpeChljbGFyaWZhaV9kZXBlbmRpbmdfc2NvcGVzEiEuZ29vZ2xlLnBy",
-            "b3RvYnVmLkVudW1WYWx1ZU9wdGlvbnMYv/MEIAMoDjIWLmNsYXJpZmFpLmF1",
-            "dGguc2NvcGUuU0JnChxjb20uY2xhcmlmYWkuZ3JwYy5hdXRoLnNjb3BlUAFa",
-            "PmdpdGh1Yi5jb20vQ2xhcmlmYWkvY2xhcmlmYWktZ28tZ3JwYy9wcm90by9j",
-            "bGFyaWZhaS9hdXRoL3Njb3BlogIEQ0FJUGIGcHJvdG8z"));
+            "Cg5TZWNyZXRzX0RlbGV0ZRCiARoO8JsnAfibJ6AB+JsnoQESGgoPVXNlck1l",
+            "dHJpY3NfR2V0EKMBGgTwmycBIgQIHhAeIgQIHxAfIgQIIBAgIgQIIRAhIgQI",
+            "IhAiIgQIfRB9IgQIfhB+OjwKD2NsYXJmYWlfZXhwb3NlZBIhLmdvb2dsZS5w",
+            "cm90b2J1Zi5FbnVtVmFsdWVPcHRpb25zGL7zBCABKAg6XgoZY2xhcmlmYWlf",
+            "ZGVwZW5kaW5nX3Njb3BlcxIhLmdvb2dsZS5wcm90b2J1Zi5FbnVtVmFsdWVP",
+            "cHRpb25zGL/zBCADKA4yFi5jbGFyaWZhaS5hdXRoLnNjb3BlLlNCZwocY29t",
+            "LmNsYXJpZmFpLmdycGMuYXV0aC5zY29wZVABWj5naXRodWIuY29tL0NsYXJp",
+            "ZmFpL2NsYXJpZmFpLWdvLWdycGMvcHJvdG8vY2xhcmlmYWkvYXV0aC9zY29w",
+            "ZaICBENBSVBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Auth.Scope.S), }, new pb::Extension[] { ScopeExtensions.ClarfaiExposed, ScopeExtensions.ClarifaiDependingScopes }, new pbr::GeneratedClrTypeInfo[] {
@@ -524,6 +525,7 @@ namespace Clarifai.Auth.Scope {
     [pbr::OriginalName("Secrets_Get")] EcretsGet = 160,
     [pbr::OriginalName("Secrets_Add")] EcretsAdd = 161,
     [pbr::OriginalName("Secrets_Delete")] EcretsDelete = 162,
+    [pbr::OriginalName("UserMetrics_Get")] UserMetricsGet = 163,
   }
 
   #endregion
