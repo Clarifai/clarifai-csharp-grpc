@@ -720,6 +720,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteComputeClustersRequest> __Marshaller_clarifai_api_DeleteComputeClustersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteComputeClustersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PatchComputeClustersRequest> __Marshaller_clarifai_api_PatchComputeClustersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchComputeClustersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetNodepoolRequest> __Marshaller_clarifai_api_GetNodepoolRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetNodepoolRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleNodepoolResponse> __Marshaller_clarifai_api_SingleNodepoolResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleNodepoolResponse.Parser));
@@ -2733,6 +2735,14 @@ namespace Clarifai.Api {
         "DeleteComputeClusters",
         __Marshaller_clarifai_api_DeleteComputeClustersRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PatchComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse> __Method_PatchComputeClusters = new grpc::Method<global::Clarifai.Api.PatchComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PatchComputeClusters",
+        __Marshaller_clarifai_api_PatchComputeClustersRequest,
+        __Marshaller_clarifai_api_MultiComputeClusterResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetNodepoolRequest, global::Clarifai.Api.SingleNodepoolResponse> __Method_GetNodepool = new grpc::Method<global::Clarifai.Api.GetNodepoolRequest, global::Clarifai.Api.SingleNodepoolResponse>(
@@ -5960,6 +5970,12 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteComputeClusters(global::Clarifai.Api.DeleteComputeClustersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiComputeClusterResponse> PatchComputeClusters(global::Clarifai.Api.PatchComputeClustersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -17488,6 +17504,26 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteComputeClusters, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiComputeClusterResponse PatchComputeClusters(global::Clarifai.Api.PatchComputeClustersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchComputeClusters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiComputeClusterResponse PatchComputeClusters(global::Clarifai.Api.PatchComputeClustersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PatchComputeClusters, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiComputeClusterResponse> PatchComputeClustersAsync(global::Clarifai.Api.PatchComputeClustersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PatchComputeClustersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiComputeClusterResponse> PatchComputeClustersAsync(global::Clarifai.Api.PatchComputeClustersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PatchComputeClusters, null, options, request);
+      }
       /// <summary>
       /// Nodepools CRUD
       /// </summary>
@@ -18788,6 +18824,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListComputeClusters, serviceImpl.ListComputeClusters)
           .AddMethod(__Method_PostComputeClusters, serviceImpl.PostComputeClusters)
           .AddMethod(__Method_DeleteComputeClusters, serviceImpl.DeleteComputeClusters)
+          .AddMethod(__Method_PatchComputeClusters, serviceImpl.PatchComputeClusters)
           .AddMethod(__Method_GetNodepool, serviceImpl.GetNodepool)
           .AddMethod(__Method_ListNodepools, serviceImpl.ListNodepools)
           .AddMethod(__Method_PostNodepools, serviceImpl.PostNodepools)
@@ -19078,6 +19115,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListComputeClusters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse>(serviceImpl.ListComputeClusters));
       serviceBinder.AddMethod(__Method_PostComputeClusters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse>(serviceImpl.PostComputeClusters));
       serviceBinder.AddMethod(__Method_DeleteComputeClusters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteComputeClustersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteComputeClusters));
+      serviceBinder.AddMethod(__Method_PatchComputeClusters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchComputeClustersRequest, global::Clarifai.Api.MultiComputeClusterResponse>(serviceImpl.PatchComputeClusters));
       serviceBinder.AddMethod(__Method_GetNodepool, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetNodepoolRequest, global::Clarifai.Api.SingleNodepoolResponse>(serviceImpl.GetNodepool));
       serviceBinder.AddMethod(__Method_ListNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.ListNodepools));
       serviceBinder.AddMethod(__Method_PostNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.PostNodepools));
