@@ -1024,6 +1024,7 @@ namespace Clarifai.Api.Status {
     [pbr::OriginalName("LABEL_ORDER_CANCELED")] LabelOrderCanceled = 55004,
     /// <summary>
     /// License Related Status Code 600xx
+    /// DEPRECATED: License feature is fully deprecated now.
     /// </summary>
     [pbr::OriginalName("LICENSE_ACTIVE")] LicenseActive = 60000,
     [pbr::OriginalName("LICENSE_DOES_NOT_EXIST")] LicenseDoesNotExist = 60001,
