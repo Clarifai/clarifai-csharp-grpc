@@ -280,6 +280,9 @@ namespace Clarifai.Auth.Scope {
     /// To delete we need read/write.
     /// </summary>
     [pbr::OriginalName("Workflows_Delete")] WorkflowsDelete = 21,
+    /// <summary>
+    /// DEPRECATED
+    /// </summary>
     [pbr::OriginalName("WorkflowMetrics_Get")] WorkflowMetricsGet = 96,
     [pbr::OriginalName("WorkflowMetrics_Add")] WorkflowMetricsAdd = 97,
     [pbr::OriginalName("WorkflowMetrics_Delete")] WorkflowMetricsDelete = 98,
@@ -408,6 +411,7 @@ namespace Clarifai.Auth.Scope {
     [pbr::OriginalName("LabelOrders_Delete")] LabelOrdersDelete = 69,
     /// <summary>
     /// CRUD on FindDuplicateAnnotationsJobs table
+    /// DEPRECATED
     /// </summary>
     [pbr::OriginalName("FindDuplicateAnnotationsJobs_Add")] FindDuplicateAnnotationsJobsAdd = 102,
     [pbr::OriginalName("FindDuplicateAnnotationsJobs_Get")] FindDuplicateAnnotationsJobsGet = 103,

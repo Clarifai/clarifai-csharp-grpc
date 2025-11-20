@@ -450,16 +450,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostSearchesByIDRequest> __Marshaller_clarifai_api_PostSearchesByIDRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostSearchesByIDRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_PostAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationSearchMetricsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> __Marshaller_clarifai_api_MultiAnnotationSearchMetricsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_GetAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetAnnotationSearchMetricsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_ListAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAnnotationSearchMetricsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest> __Marshaller_clarifai_api_DeleteAnnotationSearchMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteSearchRequest> __Marshaller_clarifai_api_DeleteSearchRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteSearchRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.ListAnnotationFiltersRequest> __Marshaller_clarifai_api_ListAnnotationFiltersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListAnnotationFiltersRequest.Parser));
@@ -1999,38 +1989,6 @@ namespace Clarifai.Api {
         "PostSearchesByID",
         __Marshaller_clarifai_api_PostSearchesByIDRequest,
         __Marshaller_clarifai_api_MultiSearchResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> __Method_PostAnnotationSearchMetrics = new grpc::Method<global::Clarifai.Api.PostAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostAnnotationSearchMetrics",
-        __Marshaller_clarifai_api_PostAnnotationSearchMetricsRequest,
-        __Marshaller_clarifai_api_MultiAnnotationSearchMetricsResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> __Method_GetAnnotationSearchMetrics = new grpc::Method<global::Clarifai.Api.GetAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetAnnotationSearchMetrics",
-        __Marshaller_clarifai_api_GetAnnotationSearchMetricsRequest,
-        __Marshaller_clarifai_api_MultiAnnotationSearchMetricsResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.ListAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> __Method_ListAnnotationSearchMetrics = new grpc::Method<global::Clarifai.Api.ListAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ListAnnotationSearchMetrics",
-        __Marshaller_clarifai_api_ListAnnotationSearchMetricsRequest,
-        __Marshaller_clarifai_api_MultiAnnotationSearchMetricsResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteAnnotationSearchMetrics = new grpc::Method<global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeleteAnnotationSearchMetrics",
-        __Marshaller_clarifai_api_DeleteAnnotationSearchMetricsRequest,
-        __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.DeleteSearchRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteSearch = new grpc::Method<global::Clarifai.Api.DeleteSearchRequest, global::Clarifai.Api.Status.BaseResponse>(
@@ -4844,54 +4802,6 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiSearchResponse> PostSearchesByID(global::Clarifai.Api.PostSearchesByIDRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Evaluate the results of two search requests
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> PostAnnotationSearchMetrics(global::Clarifai.Api.PostAnnotationSearchMetricsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Get the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> GetAnnotationSearchMetrics(global::Clarifai.Api.GetAnnotationSearchMetricsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// List the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> ListAnnotationSearchMetrics(global::Clarifai.Api.ListAnnotationSearchMetricsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// DeleteAnnotationSearchMetrics
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationSearchMetrics(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -13065,198 +12975,6 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostSearchesByID, null, options, request);
       }
       /// <summary>
-      /// Evaluate the results of two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAnnotationSearchMetricsResponse PostAnnotationSearchMetrics(global::Clarifai.Api.PostAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostAnnotationSearchMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Evaluate the results of two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAnnotationSearchMetricsResponse PostAnnotationSearchMetrics(global::Clarifai.Api.PostAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
-      /// Evaluate the results of two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> PostAnnotationSearchMetricsAsync(global::Clarifai.Api.PostAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostAnnotationSearchMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Evaluate the results of two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> PostAnnotationSearchMetricsAsync(global::Clarifai.Api.PostAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
-      /// Get the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAnnotationSearchMetricsResponse GetAnnotationSearchMetrics(global::Clarifai.Api.GetAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetAnnotationSearchMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAnnotationSearchMetricsResponse GetAnnotationSearchMetrics(global::Clarifai.Api.GetAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
-      /// Get the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> GetAnnotationSearchMetricsAsync(global::Clarifai.Api.GetAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetAnnotationSearchMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> GetAnnotationSearchMetricsAsync(global::Clarifai.Api.GetAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
-      /// List the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAnnotationSearchMetricsResponse ListAnnotationSearchMetrics(global::Clarifai.Api.ListAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListAnnotationSearchMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiAnnotationSearchMetricsResponse ListAnnotationSearchMetrics(global::Clarifai.Api.ListAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ListAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
-      /// List the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> ListAnnotationSearchMetricsAsync(global::Clarifai.Api.ListAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListAnnotationSearchMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List the evaluation results between two search requests
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationSearchMetricsResponse> ListAnnotationSearchMetricsAsync(global::Clarifai.Api.ListAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ListAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
-      /// DeleteAnnotationSearchMetrics
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationSearchMetrics(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteAnnotationSearchMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// DeleteAnnotationSearchMetrics
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteAnnotationSearchMetrics(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
-      /// DeleteAnnotationSearchMetrics
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationSearchMetricsAsync(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteAnnotationSearchMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// DeleteAnnotationSearchMetrics
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteAnnotationSearchMetricsAsync(global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteAnnotationSearchMetrics, null, options, request);
-      }
-      /// <summary>
       /// Delete a saved search.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -18732,10 +18450,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PatchSearches, serviceImpl.PatchSearches)
           .AddMethod(__Method_PostSearches, serviceImpl.PostSearches)
           .AddMethod(__Method_PostSearchesByID, serviceImpl.PostSearchesByID)
-          .AddMethod(__Method_PostAnnotationSearchMetrics, serviceImpl.PostAnnotationSearchMetrics)
-          .AddMethod(__Method_GetAnnotationSearchMetrics, serviceImpl.GetAnnotationSearchMetrics)
-          .AddMethod(__Method_ListAnnotationSearchMetrics, serviceImpl.ListAnnotationSearchMetrics)
-          .AddMethod(__Method_DeleteAnnotationSearchMetrics, serviceImpl.DeleteAnnotationSearchMetrics)
           .AddMethod(__Method_DeleteSearch, serviceImpl.DeleteSearch)
           .AddMethod(__Method_ListAnnotationFilters, serviceImpl.ListAnnotationFilters)
           .AddMethod(__Method_GetAnnotationFilter, serviceImpl.GetAnnotationFilter)
@@ -19023,10 +18737,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PatchSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PatchSearches));
       serviceBinder.AddMethod(__Method_PostSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostSearchesRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostSearches));
       serviceBinder.AddMethod(__Method_PostSearchesByID, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostSearchesByIDRequest, global::Clarifai.Api.MultiSearchResponse>(serviceImpl.PostSearchesByID));
-      serviceBinder.AddMethod(__Method_PostAnnotationSearchMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(serviceImpl.PostAnnotationSearchMetrics));
-      serviceBinder.AddMethod(__Method_GetAnnotationSearchMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(serviceImpl.GetAnnotationSearchMetrics));
-      serviceBinder.AddMethod(__Method_ListAnnotationSearchMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationSearchMetricsRequest, global::Clarifai.Api.MultiAnnotationSearchMetricsResponse>(serviceImpl.ListAnnotationSearchMetrics));
-      serviceBinder.AddMethod(__Method_DeleteAnnotationSearchMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteAnnotationSearchMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteAnnotationSearchMetrics));
       serviceBinder.AddMethod(__Method_DeleteSearch, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteSearchRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteSearch));
       serviceBinder.AddMethod(__Method_ListAnnotationFilters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationFiltersRequest, global::Clarifai.Api.MultiAnnotationFilterResponse>(serviceImpl.ListAnnotationFilters));
       serviceBinder.AddMethod(__Method_GetAnnotationFilter, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAnnotationFilterRequest, global::Clarifai.Api.SingleAnnotationFilterResponse>(serviceImpl.GetAnnotationFilter));
