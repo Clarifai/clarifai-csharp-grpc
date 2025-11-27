@@ -104,6 +104,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostTrackAnnotationsSearchesRequest> __Marshaller_clarifai_api_PostTrackAnnotationsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostTrackAnnotationsSearchesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest> __Marshaller_clarifai_api_StreamTrackAnnotationsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsRequest> __Marshaller_clarifai_api_PostAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsRequest> __Marshaller_clarifai_api_PatchAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationsRequest.Parser));
@@ -832,6 +834,36 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SinglePipelineStepVersionResponse> __Marshaller_clarifai_api_SinglePipelineStepVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SinglePipelineStepVersionResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeletePipelineStepsRequest> __Marshaller_clarifai_api_DeletePipelineStepsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeletePipelineStepsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeletePipelineStepVersionsRequest> __Marshaller_clarifai_api_DeletePipelineStepVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeletePipelineStepVersionsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostArtifactsRequest> __Marshaller_clarifai_api_PostArtifactsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostArtifactsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiArtifactResponse> __Marshaller_clarifai_api_MultiArtifactResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiArtifactResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetArtifactRequest> __Marshaller_clarifai_api_GetArtifactRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetArtifactRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleArtifactResponse> __Marshaller_clarifai_api_SingleArtifactResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleArtifactResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListArtifactsRequest> __Marshaller_clarifai_api_ListArtifactsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListArtifactsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteArtifactRequest> __Marshaller_clarifai_api_DeleteArtifactRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteArtifactRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostArtifactVersionsUploadRequest> __Marshaller_clarifai_api_PostArtifactVersionsUploadRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostArtifactVersionsUploadRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostArtifactVersionsUploadResponse> __Marshaller_clarifai_api_PostArtifactVersionsUploadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostArtifactVersionsUploadResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListArtifactVersionsRequest> __Marshaller_clarifai_api_ListArtifactVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListArtifactVersionsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiArtifactVersionResponse> __Marshaller_clarifai_api_MultiArtifactVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiArtifactVersionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.GetArtifactVersionRequest> __Marshaller_clarifai_api_GetArtifactVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetArtifactVersionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleArtifactVersionResponse> __Marshaller_clarifai_api_SingleArtifactVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleArtifactVersionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteArtifactVersionRequest> __Marshaller_clarifai_api_DeleteArtifactVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteArtifactVersionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetSecretRequest> __Marshaller_clarifai_api_GetSecretRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetSecretRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleSecretResponse> __Marshaller_clarifai_api_SingleSecretResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleSecretResponse.Parser));
@@ -1005,6 +1037,14 @@ namespace Clarifai.Api {
         "PostTrackAnnotationsSearches",
         __Marshaller_clarifai_api_PostTrackAnnotationsSearchesRequest,
         __Marshaller_clarifai_api_MultiAnnotationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleAnnotationResponse> __Method_StreamTrackAnnotationsSearches = new grpc::Method<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleAnnotationResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "StreamTrackAnnotationsSearches",
+        __Marshaller_clarifai_api_StreamTrackAnnotationsSearchesRequest,
+        __Marshaller_clarifai_api_SingleAnnotationResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse> __Method_PostAnnotations = new grpc::Method<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(
@@ -3023,6 +3063,86 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_SinglePipelineStepVersionResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeletePipelineStepsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeletePipelineSteps = new grpc::Method<global::Clarifai.Api.DeletePipelineStepsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeletePipelineSteps",
+        __Marshaller_clarifai_api_DeletePipelineStepsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeletePipelineStepVersionsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeletePipelineStepVersions = new grpc::Method<global::Clarifai.Api.DeletePipelineStepVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeletePipelineStepVersions",
+        __Marshaller_clarifai_api_DeletePipelineStepVersionsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse> __Method_PostArtifacts = new grpc::Method<global::Clarifai.Api.PostArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostArtifacts",
+        __Marshaller_clarifai_api_PostArtifactsRequest,
+        __Marshaller_clarifai_api_MultiArtifactResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetArtifactRequest, global::Clarifai.Api.SingleArtifactResponse> __Method_GetArtifact = new grpc::Method<global::Clarifai.Api.GetArtifactRequest, global::Clarifai.Api.SingleArtifactResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetArtifact",
+        __Marshaller_clarifai_api_GetArtifactRequest,
+        __Marshaller_clarifai_api_SingleArtifactResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse> __Method_ListArtifacts = new grpc::Method<global::Clarifai.Api.ListArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListArtifacts",
+        __Marshaller_clarifai_api_ListArtifactsRequest,
+        __Marshaller_clarifai_api_MultiArtifactResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeleteArtifactRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteArtifact = new grpc::Method<global::Clarifai.Api.DeleteArtifactRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteArtifact",
+        __Marshaller_clarifai_api_DeleteArtifactRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostArtifactVersionsUploadRequest, global::Clarifai.Api.PostArtifactVersionsUploadResponse> __Method_PostArtifactVersionsUpload = new grpc::Method<global::Clarifai.Api.PostArtifactVersionsUploadRequest, global::Clarifai.Api.PostArtifactVersionsUploadResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "PostArtifactVersionsUpload",
+        __Marshaller_clarifai_api_PostArtifactVersionsUploadRequest,
+        __Marshaller_clarifai_api_PostArtifactVersionsUploadResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListArtifactVersionsRequest, global::Clarifai.Api.MultiArtifactVersionResponse> __Method_ListArtifactVersions = new grpc::Method<global::Clarifai.Api.ListArtifactVersionsRequest, global::Clarifai.Api.MultiArtifactVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListArtifactVersions",
+        __Marshaller_clarifai_api_ListArtifactVersionsRequest,
+        __Marshaller_clarifai_api_MultiArtifactVersionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.GetArtifactVersionRequest, global::Clarifai.Api.SingleArtifactVersionResponse> __Method_GetArtifactVersion = new grpc::Method<global::Clarifai.Api.GetArtifactVersionRequest, global::Clarifai.Api.SingleArtifactVersionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetArtifactVersion",
+        __Marshaller_clarifai_api_GetArtifactVersionRequest,
+        __Marshaller_clarifai_api_SingleArtifactVersionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeleteArtifactVersionRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteArtifactVersion = new grpc::Method<global::Clarifai.Api.DeleteArtifactVersionRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteArtifactVersion",
+        __Marshaller_clarifai_api_DeleteArtifactVersionRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetSecretRequest, global::Clarifai.Api.SingleSecretResponse> __Method_GetSecret = new grpc::Method<global::Clarifai.Api.GetSecretRequest, global::Clarifai.Api.SingleSecretResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -3317,6 +3437,19 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiAnnotationResponse> PostTrackAnnotationsSearches(global::Clarifai.Api.PostTrackAnnotationsSearchesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Stream video track annotations for a specific input one-by-one.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::IServerStreamWriter<global::Clarifai.Api.SingleAnnotationResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -6166,6 +6299,77 @@ namespace Clarifai.Api {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeletePipelineSteps(global::Clarifai.Api.DeletePipelineStepsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeletePipelineStepVersions(global::Clarifai.Api.DeletePipelineStepVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiArtifactResponse> PostArtifacts(global::Clarifai.Api.PostArtifactsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleArtifactResponse> GetArtifact(global::Clarifai.Api.GetArtifactRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiArtifactResponse> ListArtifacts(global::Clarifai.Api.ListArtifactsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteArtifact(global::Clarifai.Api.DeleteArtifactRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the artifact_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the artifact_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the artifact_version_id specified for your artifact_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the artifact_bytes.
+      /// </summary>
+      /// <param name="requestStream">Used for reading requests from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task PostArtifactVersionsUpload(grpc::IAsyncStreamReader<global::Clarifai.Api.PostArtifactVersionsUploadRequest> requestStream, grpc::IServerStreamWriter<global::Clarifai.Api.PostArtifactVersionsUploadResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiArtifactVersionResponse> ListArtifactVersions(global::Clarifai.Api.ListArtifactVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleArtifactVersionResponse> GetArtifactVersion(global::Clarifai.Api.GetArtifactVersionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteArtifactVersion(global::Clarifai.Api.DeleteArtifactVersionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleSecretResponse> GetSecret(global::Clarifai.Api.GetSecretRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -7167,6 +7371,30 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiAnnotationResponse> PostTrackAnnotationsSearchesAsync(global::Clarifai.Api.PostTrackAnnotationsSearchesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostTrackAnnotationsSearches, null, options, request);
+      }
+      /// <summary>
+      /// Stream video track annotations for a specific input one-by-one.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.SingleAnnotationResponse> StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return StreamTrackAnnotationsSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Stream video track annotations for a specific input one-by-one.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.SingleAnnotationResponse> StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_StreamTrackAnnotationsSearches, null, options, request);
       }
       /// <summary>
       /// Post annotations.
@@ -18155,6 +18383,216 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_GetPipelineStepVersion, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelineSteps(global::Clarifai.Api.DeletePipelineStepsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeletePipelineSteps(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelineSteps(global::Clarifai.Api.DeletePipelineStepsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeletePipelineSteps, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelineStepsAsync(global::Clarifai.Api.DeletePipelineStepsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeletePipelineStepsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelineStepsAsync(global::Clarifai.Api.DeletePipelineStepsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeletePipelineSteps, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelineStepVersions(global::Clarifai.Api.DeletePipelineStepVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeletePipelineStepVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeletePipelineStepVersions(global::Clarifai.Api.DeletePipelineStepVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeletePipelineStepVersions, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelineStepVersionsAsync(global::Clarifai.Api.DeletePipelineStepVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeletePipelineStepVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeletePipelineStepVersionsAsync(global::Clarifai.Api.DeletePipelineStepVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeletePipelineStepVersions, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiArtifactResponse PostArtifacts(global::Clarifai.Api.PostArtifactsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostArtifacts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiArtifactResponse PostArtifacts(global::Clarifai.Api.PostArtifactsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostArtifacts, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiArtifactResponse> PostArtifactsAsync(global::Clarifai.Api.PostArtifactsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostArtifactsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiArtifactResponse> PostArtifactsAsync(global::Clarifai.Api.PostArtifactsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostArtifacts, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleArtifactResponse GetArtifact(global::Clarifai.Api.GetArtifactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetArtifact(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleArtifactResponse GetArtifact(global::Clarifai.Api.GetArtifactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetArtifact, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleArtifactResponse> GetArtifactAsync(global::Clarifai.Api.GetArtifactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetArtifactAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleArtifactResponse> GetArtifactAsync(global::Clarifai.Api.GetArtifactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetArtifact, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiArtifactResponse ListArtifacts(global::Clarifai.Api.ListArtifactsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListArtifacts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiArtifactResponse ListArtifacts(global::Clarifai.Api.ListArtifactsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListArtifacts, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiArtifactResponse> ListArtifactsAsync(global::Clarifai.Api.ListArtifactsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListArtifactsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiArtifactResponse> ListArtifactsAsync(global::Clarifai.Api.ListArtifactsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListArtifacts, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteArtifact(global::Clarifai.Api.DeleteArtifactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteArtifact(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteArtifact(global::Clarifai.Api.DeleteArtifactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteArtifact, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteArtifactAsync(global::Clarifai.Api.DeleteArtifactRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteArtifactAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteArtifactAsync(global::Clarifai.Api.DeleteArtifactRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteArtifact, null, options, request);
+      }
+      /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the artifact_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the artifact_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the artifact_version_id specified for your artifact_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the artifact_bytes.
+      /// </summary>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostArtifactVersionsUploadRequest, global::Clarifai.Api.PostArtifactVersionsUploadResponse> PostArtifactVersionsUpload(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostArtifactVersionsUpload(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// This is a streaming endpoint, the request has a field, upload_data, which can either be the config for the upload or the actual data to upload.
+      /// The config must be sent first before the artifact_bytes can be uploaded.
+      /// Once the config has been sent, the server will respond with a confirmation containing the artifact_version_id.
+      /// This is so that if your upload is interrupted, you can resume the upload by sending the config again with the artifact_version_id specified for your artifact_version.
+      /// The actual upload will be done via a multipart upload, the latest successful part_id will be sent from the server in the response to the artifact_bytes.
+      /// </summary>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::Clarifai.Api.PostArtifactVersionsUploadRequest, global::Clarifai.Api.PostArtifactVersionsUploadResponse> PostArtifactVersionsUpload(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_PostArtifactVersionsUpload, null, options);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiArtifactVersionResponse ListArtifactVersions(global::Clarifai.Api.ListArtifactVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListArtifactVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiArtifactVersionResponse ListArtifactVersions(global::Clarifai.Api.ListArtifactVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListArtifactVersions, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiArtifactVersionResponse> ListArtifactVersionsAsync(global::Clarifai.Api.ListArtifactVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListArtifactVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiArtifactVersionResponse> ListArtifactVersionsAsync(global::Clarifai.Api.ListArtifactVersionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListArtifactVersions, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleArtifactVersionResponse GetArtifactVersion(global::Clarifai.Api.GetArtifactVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetArtifactVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleArtifactVersionResponse GetArtifactVersion(global::Clarifai.Api.GetArtifactVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetArtifactVersion, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleArtifactVersionResponse> GetArtifactVersionAsync(global::Clarifai.Api.GetArtifactVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetArtifactVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleArtifactVersionResponse> GetArtifactVersionAsync(global::Clarifai.Api.GetArtifactVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetArtifactVersion, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteArtifactVersion(global::Clarifai.Api.DeleteArtifactVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteArtifactVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse DeleteArtifactVersion(global::Clarifai.Api.DeleteArtifactVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteArtifactVersion, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteArtifactVersionAsync(global::Clarifai.Api.DeleteArtifactVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteArtifactVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteArtifactVersionAsync(global::Clarifai.Api.DeleteArtifactVersionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteArtifactVersion, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.SingleSecretResponse GetSecret(global::Clarifai.Api.GetSecretRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetSecret(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -18327,6 +18765,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_GetAnnotation, serviceImpl.GetAnnotation)
           .AddMethod(__Method_ListAnnotations, serviceImpl.ListAnnotations)
           .AddMethod(__Method_PostTrackAnnotationsSearches, serviceImpl.PostTrackAnnotationsSearches)
+          .AddMethod(__Method_StreamTrackAnnotationsSearches, serviceImpl.StreamTrackAnnotationsSearches)
           .AddMethod(__Method_PostAnnotations, serviceImpl.PostAnnotations)
           .AddMethod(__Method_PatchAnnotations, serviceImpl.PatchAnnotations)
           .AddMethod(__Method_PatchAnnotationsStatus, serviceImpl.PatchAnnotationsStatus)
@@ -18579,6 +19018,16 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostPipelineStepVersionsUpload, serviceImpl.PostPipelineStepVersionsUpload)
           .AddMethod(__Method_ListPipelineStepVersions, serviceImpl.ListPipelineStepVersions)
           .AddMethod(__Method_GetPipelineStepVersion, serviceImpl.GetPipelineStepVersion)
+          .AddMethod(__Method_DeletePipelineSteps, serviceImpl.DeletePipelineSteps)
+          .AddMethod(__Method_DeletePipelineStepVersions, serviceImpl.DeletePipelineStepVersions)
+          .AddMethod(__Method_PostArtifacts, serviceImpl.PostArtifacts)
+          .AddMethod(__Method_GetArtifact, serviceImpl.GetArtifact)
+          .AddMethod(__Method_ListArtifacts, serviceImpl.ListArtifacts)
+          .AddMethod(__Method_DeleteArtifact, serviceImpl.DeleteArtifact)
+          .AddMethod(__Method_PostArtifactVersionsUpload, serviceImpl.PostArtifactVersionsUpload)
+          .AddMethod(__Method_ListArtifactVersions, serviceImpl.ListArtifactVersions)
+          .AddMethod(__Method_GetArtifactVersion, serviceImpl.GetArtifactVersion)
+          .AddMethod(__Method_DeleteArtifactVersion, serviceImpl.DeleteArtifactVersion)
           .AddMethod(__Method_GetSecret, serviceImpl.GetSecret)
           .AddMethod(__Method_ListSecrets, serviceImpl.ListSecrets)
           .AddMethod(__Method_PostSecrets, serviceImpl.PostSecrets)
@@ -18614,6 +19063,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetAnnotation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAnnotationRequest, global::Clarifai.Api.SingleAnnotationResponse>(serviceImpl.GetAnnotation));
       serviceBinder.AddMethod(__Method_ListAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.ListAnnotations));
       serviceBinder.AddMethod(__Method_PostTrackAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostTrackAnnotationsSearchesRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PostTrackAnnotationsSearches));
+      serviceBinder.AddMethod(__Method_StreamTrackAnnotationsSearches, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleAnnotationResponse>(serviceImpl.StreamTrackAnnotationsSearches));
       serviceBinder.AddMethod(__Method_PostAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PostAnnotations));
       serviceBinder.AddMethod(__Method_PatchAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PatchAnnotations));
       serviceBinder.AddMethod(__Method_PatchAnnotationsStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsStatusRequest, global::Clarifai.Api.PatchAnnotationsStatusResponse>(serviceImpl.PatchAnnotationsStatus));
@@ -18866,6 +19316,16 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostPipelineStepVersionsUpload, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostPipelineStepVersionsUploadRequest, global::Clarifai.Api.PostPipelineStepVersionsUploadResponse>(serviceImpl.PostPipelineStepVersionsUpload));
       serviceBinder.AddMethod(__Method_ListPipelineStepVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListPipelineStepVersionsRequest, global::Clarifai.Api.MultiPipelineStepVersionResponse>(serviceImpl.ListPipelineStepVersions));
       serviceBinder.AddMethod(__Method_GetPipelineStepVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetPipelineStepVersionRequest, global::Clarifai.Api.SinglePipelineStepVersionResponse>(serviceImpl.GetPipelineStepVersion));
+      serviceBinder.AddMethod(__Method_DeletePipelineSteps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelineStepsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeletePipelineSteps));
+      serviceBinder.AddMethod(__Method_DeletePipelineStepVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelineStepVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeletePipelineStepVersions));
+      serviceBinder.AddMethod(__Method_PostArtifacts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse>(serviceImpl.PostArtifacts));
+      serviceBinder.AddMethod(__Method_GetArtifact, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetArtifactRequest, global::Clarifai.Api.SingleArtifactResponse>(serviceImpl.GetArtifact));
+      serviceBinder.AddMethod(__Method_ListArtifacts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse>(serviceImpl.ListArtifacts));
+      serviceBinder.AddMethod(__Method_DeleteArtifact, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteArtifactRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteArtifact));
+      serviceBinder.AddMethod(__Method_PostArtifactVersionsUpload, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostArtifactVersionsUploadRequest, global::Clarifai.Api.PostArtifactVersionsUploadResponse>(serviceImpl.PostArtifactVersionsUpload));
+      serviceBinder.AddMethod(__Method_ListArtifactVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListArtifactVersionsRequest, global::Clarifai.Api.MultiArtifactVersionResponse>(serviceImpl.ListArtifactVersions));
+      serviceBinder.AddMethod(__Method_GetArtifactVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetArtifactVersionRequest, global::Clarifai.Api.SingleArtifactVersionResponse>(serviceImpl.GetArtifactVersion));
+      serviceBinder.AddMethod(__Method_DeleteArtifactVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteArtifactVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteArtifactVersion));
       serviceBinder.AddMethod(__Method_GetSecret, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetSecretRequest, global::Clarifai.Api.SingleSecretResponse>(serviceImpl.GetSecret));
       serviceBinder.AddMethod(__Method_ListSecrets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListSecretsRequest, global::Clarifai.Api.MultiSecretResponse>(serviceImpl.ListSecrets));
       serviceBinder.AddMethod(__Method_PostSecrets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostSecretsRequest, global::Clarifai.Api.MultiSecretResponse>(serviceImpl.PostSecrets));
