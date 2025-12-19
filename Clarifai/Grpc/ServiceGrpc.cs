@@ -106,6 +106,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest> __Marshaller_clarifai_api_StreamTrackAnnotationsSearchesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.SingleStreamTrackAnnotationResponse> __Marshaller_clarifai_api_SingleStreamTrackAnnotationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleStreamTrackAnnotationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostAnnotationsRequest> __Marshaller_clarifai_api_PostAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostAnnotationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PatchAnnotationsRequest> __Marshaller_clarifai_api_PatchAnnotationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchAnnotationsRequest.Parser));
@@ -1039,12 +1041,12 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiAnnotationResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleAnnotationResponse> __Method_StreamTrackAnnotationsSearches = new grpc::Method<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleAnnotationResponse>(
+    static readonly grpc::Method<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleStreamTrackAnnotationResponse> __Method_StreamTrackAnnotationsSearches = new grpc::Method<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleStreamTrackAnnotationResponse>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "StreamTrackAnnotationsSearches",
         __Marshaller_clarifai_api_StreamTrackAnnotationsSearchesRequest,
-        __Marshaller_clarifai_api_SingleAnnotationResponse);
+        __Marshaller_clarifai_api_SingleStreamTrackAnnotationResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse> __Method_PostAnnotations = new grpc::Method<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(
@@ -3449,7 +3451,7 @@ namespace Clarifai.Api {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>A task indicating completion of the handler.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::IServerStreamWriter<global::Clarifai.Api.SingleAnnotationResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::IServerStreamWriter<global::Clarifai.Api.SingleStreamTrackAnnotationResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7381,7 +7383,7 @@ namespace Clarifai.Api {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.SingleAnnotationResponse> StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.SingleStreamTrackAnnotationResponse> StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return StreamTrackAnnotationsSearches(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -7392,7 +7394,7 @@ namespace Clarifai.Api {
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.SingleAnnotationResponse> StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Clarifai.Api.SingleStreamTrackAnnotationResponse> StreamTrackAnnotationsSearches(global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_StreamTrackAnnotationsSearches, null, options, request);
       }
@@ -19063,7 +19065,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetAnnotation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetAnnotationRequest, global::Clarifai.Api.SingleAnnotationResponse>(serviceImpl.GetAnnotation));
       serviceBinder.AddMethod(__Method_ListAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.ListAnnotations));
       serviceBinder.AddMethod(__Method_PostTrackAnnotationsSearches, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostTrackAnnotationsSearchesRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PostTrackAnnotationsSearches));
-      serviceBinder.AddMethod(__Method_StreamTrackAnnotationsSearches, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleAnnotationResponse>(serviceImpl.StreamTrackAnnotationsSearches));
+      serviceBinder.AddMethod(__Method_StreamTrackAnnotationsSearches, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Clarifai.Api.StreamTrackAnnotationsSearchesRequest, global::Clarifai.Api.SingleStreamTrackAnnotationResponse>(serviceImpl.StreamTrackAnnotationsSearches));
       serviceBinder.AddMethod(__Method_PostAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PostAnnotations));
       serviceBinder.AddMethod(__Method_PatchAnnotations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsRequest, global::Clarifai.Api.MultiAnnotationResponse>(serviceImpl.PatchAnnotations));
       serviceBinder.AddMethod(__Method_PatchAnnotationsStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchAnnotationsStatusRequest, global::Clarifai.Api.PatchAnnotationsStatusResponse>(serviceImpl.PatchAnnotationsStatus));
