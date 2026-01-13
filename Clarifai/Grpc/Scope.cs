@@ -27,7 +27,7 @@ namespace Clarifai.Auth.Scope {
             "CiVwcm90by9jbGFyaWZhaS9hdXRoL3Njb3BlL3Njb3BlLnByb3RvEhNjbGFy",
             "aWZhaS5hdXRoLnNjb3BlGiBnb29nbGUvcHJvdG9idWYvZGVzY3JpcHRvci5w",
             "cm90byJGCglTY29wZUxpc3QSJgoGc2NvcGVzGAEgAygOMhYuY2xhcmlmYWku",
-            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSrIHgoBUxIJCgV1bmRl",
+            "YXV0aC5zY29wZS5TEhEKCWVuZHBvaW50cxgCIAMoCSr1HgoBUxIJCgV1bmRl",
             "ZhAAEg0KA0FsbBABGgTwmycBEhEKB1ByZWRpY3QQAhoE8JsnARIYCgpJbnB1",
             "dHNfQWRkEAQaCPCbJwH4mycFEhQKCklucHV0c19HZXQQBRoE8JsnARIgCgxJ",
             "bnB1dHNfUGF0Y2gQBxoOCAHwmycB+JsnBPibJwUSHwoNSW5wdXRzX0RlbGV0",
@@ -113,7 +113,8 @@ namespace Clarifai.Auth.Scope {
             "bm90YXRpb25UcmFja3NfRGVsZXRlEKgBGgTwmycBEikKFFBpcGVsaW5lU3Rl",
             "cHNfRGVsZXRlEKkBGg7wmycB+JsnnQH4myeeARIYCg1BcnRpZmFjdHNfR2V0",
             "EKoBGgTwmycBEh0KDUFydGlmYWN0c19BZGQQqwEaCfCbJwH4myeqARIlChBB",
-            "cnRpZmFjdHNfRGVsZXRlEKwBGg7wmycB+JsnqgH4myerASIECB4QHiIECB8Q",
+            "cnRpZmFjdHNfRGVsZXRlEKwBGg7wmycB+JsnqgH4myerARIrCiBQaXBlbGlu",
+            "ZVZlcnNpb25SdW5TdGF0dXNMb2dzX0dldBCtARoE8JsnASIECB4QHiIECB8Q",
             "HyIECCAQICIECCEQISIECCIQIiIECH0QfSIECH4Qfjo8Cg9jbGFyZmFpX2V4",
             "cG9zZWQSIS5nb29nbGUucHJvdG9idWYuRW51bVZhbHVlT3B0aW9ucxi+8wQg",
             "ASgIOl4KGWNsYXJpZmFpX2RlcGVuZGluZ19zY29wZXMSIS5nb29nbGUucHJv",
@@ -542,6 +543,10 @@ namespace Clarifai.Auth.Scope {
     [pbr::OriginalName("Artifacts_Get")] ArtifactsGet = 170,
     [pbr::OriginalName("Artifacts_Add")] ArtifactsAdd = 171,
     [pbr::OriginalName("Artifacts_Delete")] ArtifactsDelete = 172,
+    /// <summary>
+    /// Pipeline version run status logs (audit trail)
+    /// </summary>
+    [pbr::OriginalName("PipelineVersionRunStatusLogs_Get")] PipelineVersionRunStatusLogsGet = 173,
   }
 
   #endregion
