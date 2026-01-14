@@ -25,7 +25,7 @@ namespace Clarifai.Api.Status {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citwcm90by9jbGFyaWZhaS9hcGkvc3RhdHVzL3N0YXR1c19jb2RlLnByb3Rv",
-            "EhNjbGFyaWZhaS5hcGkuc3RhdHVzKtZqCgpTdGF0dXNDb2RlEggKBFpFUk8Q",
+            "EhNjbGFyaWZhaS5hcGkuc3RhdHVzKs9pCgpTdGF0dXNDb2RlEggKBFpFUk8Q",
             "ABIMCgdTVUNDRVNTEJBOEhEKDE1JWEVEX1NUQVRVUxCaThIMCgdGQUlMVVJF",
             "EKROEg4KCVRSWV9BR0FJThCuThIUCg9OT1RfSU1QTEVNRU5URUQQuE4SCgoF",
             "TU9WRUQQwk4SCwoGVEVBUE9UEMxOEg0KCEFDQ0VQVEVEENZOEhgKE0NPTk5f",
@@ -299,12 +299,9 @@ namespace Clarifai.Api.Status {
             "RUNURURfRVJST1IQo5MEEhQKDlVQTE9BRF9FWFBJUkVEEKSTBBIVCg9VUExP",
             "QURfQ0FOQ0VMRUQQpZMEEhUKD1VQTE9BRF9DT05GTElDVBCmkwQSGgoUQklM",
             "TElOR19JTlZBTElEX0lORk8QiJsEEhwKFkJJTExJTkdfTUlTU0lOR19UT0tF",
-            "TlMQiZsEEiEKG0xPR19FTlRSSUVTX0lOVkFMSURfUkVRVUVTVBDwogQSIAoa",
-            "VFdJTElPX1VOQ0FURUdPUklaRURfRVJST1IQ2aoEEh0KF1RXSUxJT19JTlZB",
-            "TElEX0FSR1VNRU5UENqqBBIsCiZUV0lMSU9fTUFYX1ZFUklGSUNBVElPTl9C",
-            "RUdJTl9FWENFRURFRBDbqgQSLAomVFdJTElPX01BWF9WRVJJRklDQVRJT05f",
-            "Q0hFQ0tfRVhDRUVERUQQ3KoEEh8KGVRXSUxJT19SRVNPVVJDRV9OT1RfRk9V",
-            "TkQQ3aoEEiMKHVRXSUxJT19DTElFTlRfTk9UX0lOSVRJQUxJWkVEEN6qBBIb",
+            "TlMQiZsEEiEKG0xPR19FTlRSSUVTX0lOVkFMSURfUkVRVUVTVBDwogQSLAom",
+            "VFdJTElPX01BWF9WRVJJRklDQVRJT05fQkVHSU5fRVhDRUVERUQQ26oEEiwK",
+            "JlRXSUxJT19NQVhfVkVSSUZJQ0FUSU9OX0NIRUNLX0VYQ0VFREVEENyqBBIb",
             "ChVJTlRFUk5BTF9TRVJWRVJfSVNTVUUQ1P0FEh0KF0lOVEVSTkFMX0ZFVENI",
             "SU5HX0lTU1VFENX9BRIdChdJTlRFUk5BTF9EQVRBQkFTRV9JU1NVRRDW/QUS",
             "HwoZSU5URVJOQUxfQ09OVEVYVF9DQU5DRUxFRBDY/QUSIQobSU5URVJOQUxf",
@@ -1169,12 +1166,8 @@ namespace Clarifai.Api.Status {
     /// <summary>
     ///Twilio related issues: 71xxx
     /// </summary>
-    [pbr::OriginalName("TWILIO_UNCATEGORIZED_ERROR")] TwilioUncategorizedError = 71001,
-    [pbr::OriginalName("TWILIO_INVALID_ARGUMENT")] TwilioInvalidArgument = 71002,
     [pbr::OriginalName("TWILIO_MAX_VERIFICATION_BEGIN_EXCEEDED")] TwilioMaxVerificationBeginExceeded = 71003,
     [pbr::OriginalName("TWILIO_MAX_VERIFICATION_CHECK_EXCEEDED")] TwilioMaxVerificationCheckExceeded = 71004,
-    [pbr::OriginalName("TWILIO_RESOURCE_NOT_FOUND")] TwilioResourceNotFound = 71005,
-    [pbr::OriginalName("TWILIO_CLIENT_NOT_INITIALIZED")] TwilioClientNotInitialized = 71006,
     /// <summary>
     /// Internal issues: 98xxx
     /// </summary>
