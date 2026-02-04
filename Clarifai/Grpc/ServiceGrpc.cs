@@ -310,6 +310,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostModelMigrationRequest> __Marshaller_clarifai_api_PostModelMigrationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModelMigrationRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModelMigrationRequest> __Marshaller_clarifai_api_DeleteModelMigrationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModelMigrationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PutModelVersionExportsRequest> __Marshaller_clarifai_api_PutModelVersionExportsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PutModelVersionExportsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleModelVersionExportResponse> __Marshaller_clarifai_api_SingleModelVersionExportResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModelVersionExportResponse.Parser));
@@ -1636,6 +1638,14 @@ namespace Clarifai.Api {
         __ServiceName,
         "PostModelMigration",
         __Marshaller_clarifai_api_PostModelMigrationRequest,
+        __Marshaller_clarifai_api_SingleModelResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.DeleteModelMigrationRequest, global::Clarifai.Api.SingleModelResponse> __Method_DeleteModelMigration = new grpc::Method<global::Clarifai.Api.DeleteModelMigrationRequest, global::Clarifai.Api.SingleModelResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteModelMigration",
+        __Marshaller_clarifai_api_DeleteModelMigrationRequest,
         __Marshaller_clarifai_api_SingleModelResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -4369,6 +4379,18 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelResponse> PostModelMigration(global::Clarifai.Api.PostModelMigrationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Reverts a model migration from Docker format back to Triton format.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModelResponse> DeleteModelMigration(global::Clarifai.Api.DeleteModelMigrationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -10875,6 +10897,54 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelResponse> PostModelMigrationAsync(global::Clarifai.Api.PostModelMigrationRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostModelMigration, null, options, request);
+      }
+      /// <summary>
+      /// Reverts a model migration from Docker format back to Triton format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelResponse DeleteModelMigration(global::Clarifai.Api.DeleteModelMigrationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModelMigration(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Reverts a model migration from Docker format back to Triton format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.SingleModelResponse DeleteModelMigration(global::Clarifai.Api.DeleteModelMigrationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteModelMigration, null, options, request);
+      }
+      /// <summary>
+      /// Reverts a model migration from Docker format back to Triton format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelResponse> DeleteModelMigrationAsync(global::Clarifai.Api.DeleteModelMigrationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteModelMigrationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Reverts a model migration from Docker format back to Triton format.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModelResponse> DeleteModelMigrationAsync(global::Clarifai.Api.DeleteModelMigrationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteModelMigration, null, options, request);
       }
       /// <summary>
       /// Export a model
@@ -18929,6 +18999,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteModelVersion, serviceImpl.DeleteModelVersion)
           .AddMethod(__Method_PostModelVersionsUpload, serviceImpl.PostModelVersionsUpload)
           .AddMethod(__Method_PostModelMigration, serviceImpl.PostModelMigration)
+          .AddMethod(__Method_DeleteModelMigration, serviceImpl.DeleteModelMigration)
           .AddMethod(__Method_PutModelVersionExports, serviceImpl.PutModelVersionExports)
           .AddMethod(__Method_GetModelVersionExport, serviceImpl.GetModelVersionExport)
           .AddMethod(__Method_GetModelVersionMetrics, serviceImpl.GetModelVersionMetrics)
@@ -19229,6 +19300,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteModelVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelVersionRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModelVersion));
       serviceBinder.AddMethod(__Method_PostModelVersionsUpload, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Clarifai.Api.PostModelVersionsUploadRequest, global::Clarifai.Api.PostModelVersionsUploadResponse>(serviceImpl.PostModelVersionsUpload));
       serviceBinder.AddMethod(__Method_PostModelMigration, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModelMigrationRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.PostModelMigration));
+      serviceBinder.AddMethod(__Method_DeleteModelMigration, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModelMigrationRequest, global::Clarifai.Api.SingleModelResponse>(serviceImpl.DeleteModelMigration));
       serviceBinder.AddMethod(__Method_PutModelVersionExports, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PutModelVersionExportsRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(serviceImpl.PutModelVersionExports));
       serviceBinder.AddMethod(__Method_GetModelVersionExport, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionExportRequest, global::Clarifai.Api.SingleModelVersionExportResponse>(serviceImpl.GetModelVersionExport));
       serviceBinder.AddMethod(__Method_GetModelVersionMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModelVersionMetricsRequest, global::Clarifai.Api.SingleModelVersionResponse>(serviceImpl.GetModelVersionMetrics));
