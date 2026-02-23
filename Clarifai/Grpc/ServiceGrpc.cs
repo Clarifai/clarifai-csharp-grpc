@@ -560,52 +560,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueAggregateResponse> __Marshaller_clarifai_api_MultiStatValueAggregateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiStatValueAggregateResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModuleRequest> __Marshaller_clarifai_api_GetModuleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModuleRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModuleResponse> __Marshaller_clarifai_api_SingleModuleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModuleResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModulesRequest> __Marshaller_clarifai_api_ListModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModulesRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModuleResponse> __Marshaller_clarifai_api_MultiModuleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModuleResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModulesRequest> __Marshaller_clarifai_api_PostModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModulesRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModulesRequest> __Marshaller_clarifai_api_PatchModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModulesRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModulesRequest> __Marshaller_clarifai_api_DeleteModulesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModulesRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModuleVersionRequest> __Marshaller_clarifai_api_GetModuleVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModuleVersionRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModuleVersionResponse> __Marshaller_clarifai_api_SingleModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModuleVersionResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListModuleVersionsRequest> __Marshaller_clarifai_api_ListModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListModuleVersionsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiModuleVersionResponse> __Marshaller_clarifai_api_MultiModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiModuleVersionResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostModuleVersionsRequest> __Marshaller_clarifai_api_PostModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostModuleVersionsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchModuleVersionsRequest> __Marshaller_clarifai_api_PatchModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchModuleVersionsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteModuleVersionsRequest> __Marshaller_clarifai_api_DeleteModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteModuleVersionsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetModuleVersionUsageCountRequest> __Marshaller_clarifai_api_GetModuleVersionUsageCountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetModuleVersionUsageCountRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> __Marshaller_clarifai_api_SingleModuleVersionUsageCountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleModuleVersionUsageCountResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetInstalledModuleVersionRequest> __Marshaller_clarifai_api_GetInstalledModuleVersionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetInstalledModuleVersionRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleInstalledModuleVersionResponse> __Marshaller_clarifai_api_SingleInstalledModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleInstalledModuleVersionResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListInstalledModuleVersionsRequest> __Marshaller_clarifai_api_ListInstalledModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListInstalledModuleVersionsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiInstalledModuleVersionResponse> __Marshaller_clarifai_api_MultiInstalledModuleVersionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiInstalledModuleVersionResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostInstalledModuleVersionsRequest> __Marshaller_clarifai_api_PostInstalledModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostInstalledModuleVersionsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest> __Marshaller_clarifai_api_DeleteInstalledModuleVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteInstalledModuleVersionsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest> __Marshaller_clarifai_api_PostInstalledModuleVersionsKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostBulkOperationsRequest> __Marshaller_clarifai_api_PostBulkOperationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostBulkOperationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiBulkOperationsResponse> __Marshaller_clarifai_api_MultiBulkOperationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiBulkOperationsResponse.Parser));
@@ -765,6 +719,8 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.StreamLogEntriesRequest> __Marshaller_clarifai_api_StreamLogEntriesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.StreamLogEntriesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostComputePlaneMetricsRequest> __Marshaller_clarifai_api_PostComputePlaneMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostComputePlaneMetricsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest> __Marshaller_clarifai_api_PostRunnerReplicaTaskMetricsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest> __Marshaller_clarifai_api_PostWorkflowVersionEvaluationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -2337,134 +2293,6 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_MultiStatValueAggregateResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetModuleRequest, global::Clarifai.Api.SingleModuleResponse> __Method_GetModule = new grpc::Method<global::Clarifai.Api.GetModuleRequest, global::Clarifai.Api.SingleModuleResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetModule",
-        __Marshaller_clarifai_api_GetModuleRequest,
-        __Marshaller_clarifai_api_SingleModuleResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.ListModulesRequest, global::Clarifai.Api.MultiModuleResponse> __Method_ListModules = new grpc::Method<global::Clarifai.Api.ListModulesRequest, global::Clarifai.Api.MultiModuleResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ListModules",
-        __Marshaller_clarifai_api_ListModulesRequest,
-        __Marshaller_clarifai_api_MultiModuleResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostModulesRequest, global::Clarifai.Api.MultiModuleResponse> __Method_PostModules = new grpc::Method<global::Clarifai.Api.PostModulesRequest, global::Clarifai.Api.MultiModuleResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostModules",
-        __Marshaller_clarifai_api_PostModulesRequest,
-        __Marshaller_clarifai_api_MultiModuleResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PatchModulesRequest, global::Clarifai.Api.MultiModuleResponse> __Method_PatchModules = new grpc::Method<global::Clarifai.Api.PatchModulesRequest, global::Clarifai.Api.MultiModuleResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PatchModules",
-        __Marshaller_clarifai_api_PatchModulesRequest,
-        __Marshaller_clarifai_api_MultiModuleResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.DeleteModulesRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModules = new grpc::Method<global::Clarifai.Api.DeleteModulesRequest, global::Clarifai.Api.Status.BaseResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeleteModules",
-        __Marshaller_clarifai_api_DeleteModulesRequest,
-        __Marshaller_clarifai_api_status_BaseResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetModuleVersionRequest, global::Clarifai.Api.SingleModuleVersionResponse> __Method_GetModuleVersion = new grpc::Method<global::Clarifai.Api.GetModuleVersionRequest, global::Clarifai.Api.SingleModuleVersionResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetModuleVersion",
-        __Marshaller_clarifai_api_GetModuleVersionRequest,
-        __Marshaller_clarifai_api_SingleModuleVersionResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.ListModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse> __Method_ListModuleVersions = new grpc::Method<global::Clarifai.Api.ListModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ListModuleVersions",
-        __Marshaller_clarifai_api_ListModuleVersionsRequest,
-        __Marshaller_clarifai_api_MultiModuleVersionResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse> __Method_PostModuleVersions = new grpc::Method<global::Clarifai.Api.PostModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostModuleVersions",
-        __Marshaller_clarifai_api_PostModuleVersionsRequest,
-        __Marshaller_clarifai_api_MultiModuleVersionResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PatchModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse> __Method_PatchModuleVersions = new grpc::Method<global::Clarifai.Api.PatchModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PatchModuleVersions",
-        __Marshaller_clarifai_api_PatchModuleVersionsRequest,
-        __Marshaller_clarifai_api_MultiModuleVersionResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.DeleteModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteModuleVersions = new grpc::Method<global::Clarifai.Api.DeleteModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeleteModuleVersions",
-        __Marshaller_clarifai_api_DeleteModuleVersionsRequest,
-        __Marshaller_clarifai_api_status_BaseResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetModuleVersionUsageCountRequest, global::Clarifai.Api.SingleModuleVersionUsageCountResponse> __Method_GetModuleVersionUsageCount = new grpc::Method<global::Clarifai.Api.GetModuleVersionUsageCountRequest, global::Clarifai.Api.SingleModuleVersionUsageCountResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetModuleVersionUsageCount",
-        __Marshaller_clarifai_api_GetModuleVersionUsageCountRequest,
-        __Marshaller_clarifai_api_SingleModuleVersionUsageCountResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse> __Method_GetInstalledModuleVersion = new grpc::Method<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetInstalledModuleVersion",
-        __Marshaller_clarifai_api_GetInstalledModuleVersionRequest,
-        __Marshaller_clarifai_api_SingleInstalledModuleVersionResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.ListInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse> __Method_ListInstalledModuleVersions = new grpc::Method<global::Clarifai.Api.ListInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ListInstalledModuleVersions",
-        __Marshaller_clarifai_api_ListInstalledModuleVersionsRequest,
-        __Marshaller_clarifai_api_MultiInstalledModuleVersionResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse> __Method_PostInstalledModuleVersions = new grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostInstalledModuleVersions",
-        __Marshaller_clarifai_api_PostInstalledModuleVersionsRequest,
-        __Marshaller_clarifai_api_MultiInstalledModuleVersionResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteInstalledModuleVersions = new grpc::Method<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeleteInstalledModuleVersions",
-        __Marshaller_clarifai_api_DeleteInstalledModuleVersionsRequest,
-        __Marshaller_clarifai_api_status_BaseResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest, global::Clarifai.Api.SingleKeyResponse> __Method_PostInstalledModuleVersionsKey = new grpc::Method<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest, global::Clarifai.Api.SingleKeyResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostInstalledModuleVersionsKey",
-        __Marshaller_clarifai_api_PostInstalledModuleVersionsKeyRequest,
-        __Marshaller_clarifai_api_SingleKeyResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse> __Method_PostBulkOperations = new grpc::Method<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -2894,6 +2722,14 @@ namespace Clarifai.Api {
         __ServiceName,
         "PostComputePlaneMetrics",
         __Marshaller_clarifai_api_PostComputePlaneMetricsRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostRunnerReplicaTaskMetrics = new grpc::Method<global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostRunnerReplicaTaskMetrics",
+        __Marshaller_clarifai_api_PostRunnerReplicaTaskMetricsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -3489,8 +3325,8 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Stream live video annotations as they are being created by the runner.
-      /// This endpoint reads from Redis instead of the database for real-time streaming.
+      /// Stream live video annotations as soon as they are available.
+      /// This endpoint will NOT replay old annotations, but only stream new annotations that are generated after the stream is opened.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="responseStream">Used for sending responses back to the client.</param>
@@ -5437,201 +5273,6 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Get a specific module from an app.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModuleResponse> GetModule(global::Clarifai.Api.GetModuleRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// List all the modules in community, by user or by app.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleResponse> ListModules(global::Clarifai.Api.ListModulesRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Add a modules to an app.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleResponse> PostModules(global::Clarifai.Api.PostModulesRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Patch one or more modules.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleResponse> PatchModules(global::Clarifai.Api.PatchModulesRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Delete multiple modules in one request.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModules(global::Clarifai.Api.DeleteModulesRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Get a specific module version for a module.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModuleVersionResponse> GetModuleVersion(global::Clarifai.Api.GetModuleVersionRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// List all the modules versions for a given module.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleVersionResponse> ListModuleVersions(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Create a new module version to trigger training of the module.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleVersionResponse> PostModuleVersions(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Modify details of an existing module version.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiModuleVersionResponse> PatchModuleVersions(global::Clarifai.Api.PatchModuleVersionsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Delete a multiple module version.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteModuleVersions(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Get usage count for specific module version.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> GetModuleVersionUsageCount(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Get installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleInstalledModuleVersionResponse> GetInstalledModuleVersion(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// List installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInstalledModuleVersionResponse> ListInstalledModuleVersions(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiInstalledModuleVersionResponse> PostInstalledModuleVersions(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
-      /// in the url.
-      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteInstalledModuleVersions(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Assign a key that the caller owns to be used when accessing this installed module version
-      /// If this endpoint is called with a different key then it overwrites what is there.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleKeyResponse> PostInstalledModuleVersionsKey(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
       /// Perform bulk operations on a list of inputs based on input source.
       /// Operation include add, update, delete of concepts, metadata and geo data.
       /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
@@ -6199,6 +5840,18 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostComputePlaneMetrics(global::Clarifai.Api.PostComputePlaneMetricsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Post task metrics from runner replicas.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostRunnerReplicaTaskMetrics(global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7463,8 +7116,8 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncServerStreamingCall(__Method_StreamAnnotations, null, options, request);
       }
       /// <summary>
-      /// Stream live video annotations as they are being created by the runner.
-      /// This endpoint reads from Redis instead of the database for real-time streaming.
+      /// Stream live video annotations as soon as they are available.
+      /// This endpoint will NOT replay old annotations, but only stream new annotations that are generated after the stream is opened.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7477,8 +7130,8 @@ namespace Clarifai.Api {
         return StreamLivestreamAnnotations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Stream live video annotations as they are being created by the runner.
-      /// This endpoint reads from Redis instead of the database for real-time streaming.
+      /// Stream live video annotations as soon as they are available.
+      /// This endpoint will NOT replay old annotations, but only stream new annotations that are generated after the stream is opened.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15091,786 +14744,6 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostStatValuesAggregate, null, options, request);
       }
       /// <summary>
-      /// Get a specific module from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleModuleResponse GetModule(global::Clarifai.Api.GetModuleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetModule(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific module from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleModuleResponse GetModule(global::Clarifai.Api.GetModuleRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetModule, null, options, request);
-      }
-      /// <summary>
-      /// Get a specific module from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleResponse> GetModuleAsync(global::Clarifai.Api.GetModuleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetModuleAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific module from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleResponse> GetModuleAsync(global::Clarifai.Api.GetModuleRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetModule, null, options, request);
-      }
-      /// <summary>
-      /// List all the modules in community, by user or by app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleResponse ListModules(global::Clarifai.Api.ListModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List all the modules in community, by user or by app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleResponse ListModules(global::Clarifai.Api.ListModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ListModules, null, options, request);
-      }
-      /// <summary>
-      /// List all the modules in community, by user or by app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> ListModulesAsync(global::Clarifai.Api.ListModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List all the modules in community, by user or by app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> ListModulesAsync(global::Clarifai.Api.ListModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ListModules, null, options, request);
-      }
-      /// <summary>
-      /// Add a modules to an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleResponse PostModules(global::Clarifai.Api.PostModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Add a modules to an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleResponse PostModules(global::Clarifai.Api.PostModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostModules, null, options, request);
-      }
-      /// <summary>
-      /// Add a modules to an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PostModulesAsync(global::Clarifai.Api.PostModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Add a modules to an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PostModulesAsync(global::Clarifai.Api.PostModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostModules, null, options, request);
-      }
-      /// <summary>
-      /// Patch one or more modules.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleResponse PatchModules(global::Clarifai.Api.PatchModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PatchModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Patch one or more modules.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleResponse PatchModules(global::Clarifai.Api.PatchModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PatchModules, null, options, request);
-      }
-      /// <summary>
-      /// Patch one or more modules.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PatchModulesAsync(global::Clarifai.Api.PatchModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PatchModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Patch one or more modules.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleResponse> PatchModulesAsync(global::Clarifai.Api.PatchModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PatchModules, null, options, request);
-      }
-      /// <summary>
-      /// Delete multiple modules in one request.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModules(global::Clarifai.Api.DeleteModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteModules(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete multiple modules in one request.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModules(global::Clarifai.Api.DeleteModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteModules, null, options, request);
-      }
-      /// <summary>
-      /// Delete multiple modules in one request.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModulesAsync(global::Clarifai.Api.DeleteModulesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteModulesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete multiple modules in one request.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModulesAsync(global::Clarifai.Api.DeleteModulesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteModules, null, options, request);
-      }
-      /// <summary>
-      /// Get a specific module version for a module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleModuleVersionResponse GetModuleVersion(global::Clarifai.Api.GetModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetModuleVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific module version for a module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleModuleVersionResponse GetModuleVersion(global::Clarifai.Api.GetModuleVersionRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetModuleVersion, null, options, request);
-      }
-      /// <summary>
-      /// Get a specific module version for a module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionResponse> GetModuleVersionAsync(global::Clarifai.Api.GetModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetModuleVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific module version for a module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionResponse> GetModuleVersionAsync(global::Clarifai.Api.GetModuleVersionRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetModuleVersion, null, options, request);
-      }
-      /// <summary>
-      /// List all the modules versions for a given module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleVersionResponse ListModuleVersions(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List all the modules versions for a given module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleVersionResponse ListModuleVersions(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ListModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// List all the modules versions for a given module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> ListModuleVersionsAsync(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List all the modules versions for a given module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> ListModuleVersionsAsync(global::Clarifai.Api.ListModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ListModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Create a new module version to trigger training of the module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleVersionResponse PostModuleVersions(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Create a new module version to trigger training of the module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleVersionResponse PostModuleVersions(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Create a new module version to trigger training of the module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> PostModuleVersionsAsync(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Create a new module version to trigger training of the module.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> PostModuleVersionsAsync(global::Clarifai.Api.PostModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Modify details of an existing module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleVersionResponse PatchModuleVersions(global::Clarifai.Api.PatchModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PatchModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Modify details of an existing module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiModuleVersionResponse PatchModuleVersions(global::Clarifai.Api.PatchModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PatchModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Modify details of an existing module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> PatchModuleVersionsAsync(global::Clarifai.Api.PatchModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PatchModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Modify details of an existing module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiModuleVersionResponse> PatchModuleVersionsAsync(global::Clarifai.Api.PatchModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PatchModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Delete a multiple module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModuleVersions(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete a multiple module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteModuleVersions(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Delete a multiple module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModuleVersionsAsync(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete a multiple module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteModuleVersionsAsync(global::Clarifai.Api.DeleteModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Get usage count for specific module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleModuleVersionUsageCountResponse GetModuleVersionUsageCount(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetModuleVersionUsageCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get usage count for specific module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleModuleVersionUsageCountResponse GetModuleVersionUsageCount(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetModuleVersionUsageCount, null, options, request);
-      }
-      /// <summary>
-      /// Get usage count for specific module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> GetModuleVersionUsageCountAsync(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetModuleVersionUsageCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get usage count for specific module version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleModuleVersionUsageCountResponse> GetModuleVersionUsageCountAsync(global::Clarifai.Api.GetModuleVersionUsageCountRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetModuleVersionUsageCount, null, options, request);
-      }
-      /// <summary>
-      /// Get installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleInstalledModuleVersionResponse GetInstalledModuleVersion(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetInstalledModuleVersion(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleInstalledModuleVersionResponse GetInstalledModuleVersion(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetInstalledModuleVersion, null, options, request);
-      }
-      /// <summary>
-      /// Get installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleInstalledModuleVersionResponse> GetInstalledModuleVersionAsync(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetInstalledModuleVersionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleInstalledModuleVersionResponse> GetInstalledModuleVersionAsync(global::Clarifai.Api.GetInstalledModuleVersionRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetInstalledModuleVersion, null, options, request);
-      }
-      /// <summary>
-      /// List installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse ListInstalledModuleVersions(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListInstalledModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse ListInstalledModuleVersions(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ListInstalledModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// List installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> ListInstalledModuleVersionsAsync(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListInstalledModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List installed modules vesrions for an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> ListInstalledModuleVersionsAsync(global::Clarifai.Api.ListInstalledModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ListInstalledModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse PostInstalledModuleVersions(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostInstalledModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiInstalledModuleVersionResponse PostInstalledModuleVersions(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostInstalledModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> PostInstalledModuleVersionsAsync(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostInstalledModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Install a new module version which will deploy the specific ModuleVersion to the app in the url.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiInstalledModuleVersionResponse> PostInstalledModuleVersionsAsync(global::Clarifai.Api.PostInstalledModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostInstalledModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
-      /// in the url.
-      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteInstalledModuleVersions(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteInstalledModuleVersions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
-      /// in the url.
-      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteInstalledModuleVersions(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteInstalledModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
-      /// in the url.
-      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteInstalledModuleVersionsAsync(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteInstalledModuleVersionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Uninstall an installed module version which will deploy the specific ModuleVersion to the app
-      /// in the url.
-      /// This cleaned up any associated caller keys so needs the Keys_Delete scope.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteInstalledModuleVersionsAsync(global::Clarifai.Api.DeleteInstalledModuleVersionsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteInstalledModuleVersions, null, options, request);
-      }
-      /// <summary>
-      /// Assign a key that the caller owns to be used when accessing this installed module version
-      /// If this endpoint is called with a different key then it overwrites what is there.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleKeyResponse PostInstalledModuleVersionsKey(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostInstalledModuleVersionsKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Assign a key that the caller owns to be used when accessing this installed module version
-      /// If this endpoint is called with a different key then it overwrites what is there.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleKeyResponse PostInstalledModuleVersionsKey(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostInstalledModuleVersionsKey, null, options, request);
-      }
-      /// <summary>
-      /// Assign a key that the caller owns to be used when accessing this installed module version
-      /// If this endpoint is called with a different key then it overwrites what is there.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleKeyResponse> PostInstalledModuleVersionsKeyAsync(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostInstalledModuleVersionsKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Assign a key that the caller owns to be used when accessing this installed module version
-      /// If this endpoint is called with a different key then it overwrites what is there.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleKeyResponse> PostInstalledModuleVersionsKeyAsync(global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostInstalledModuleVersionsKey, null, options, request);
-      }
-      /// <summary>
       /// Perform bulk operations on a list of inputs based on input source.
       /// Operation include add, update, delete of concepts, metadata and geo data.
       /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
@@ -18032,6 +16905,54 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PostComputePlaneMetrics, null, options, request);
       }
+      /// <summary>
+      /// Post task metrics from runner replicas.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostRunnerReplicaTaskMetrics(global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostRunnerReplicaTaskMetrics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post task metrics from runner replicas.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostRunnerReplicaTaskMetrics(global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostRunnerReplicaTaskMetrics, null, options, request);
+      }
+      /// <summary>
+      /// Post task metrics from runner replicas.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostRunnerReplicaTaskMetricsAsync(global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostRunnerReplicaTaskMetricsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Post task metrics from runner replicas.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostRunnerReplicaTaskMetricsAsync(global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostRunnerReplicaTaskMetrics, null, options, request);
+      }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse PostWorkflowVersionEvaluations(global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
@@ -19086,22 +18007,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_DeleteCollectors, serviceImpl.DeleteCollectors)
           .AddMethod(__Method_PostStatValues, serviceImpl.PostStatValues)
           .AddMethod(__Method_PostStatValuesAggregate, serviceImpl.PostStatValuesAggregate)
-          .AddMethod(__Method_GetModule, serviceImpl.GetModule)
-          .AddMethod(__Method_ListModules, serviceImpl.ListModules)
-          .AddMethod(__Method_PostModules, serviceImpl.PostModules)
-          .AddMethod(__Method_PatchModules, serviceImpl.PatchModules)
-          .AddMethod(__Method_DeleteModules, serviceImpl.DeleteModules)
-          .AddMethod(__Method_GetModuleVersion, serviceImpl.GetModuleVersion)
-          .AddMethod(__Method_ListModuleVersions, serviceImpl.ListModuleVersions)
-          .AddMethod(__Method_PostModuleVersions, serviceImpl.PostModuleVersions)
-          .AddMethod(__Method_PatchModuleVersions, serviceImpl.PatchModuleVersions)
-          .AddMethod(__Method_DeleteModuleVersions, serviceImpl.DeleteModuleVersions)
-          .AddMethod(__Method_GetModuleVersionUsageCount, serviceImpl.GetModuleVersionUsageCount)
-          .AddMethod(__Method_GetInstalledModuleVersion, serviceImpl.GetInstalledModuleVersion)
-          .AddMethod(__Method_ListInstalledModuleVersions, serviceImpl.ListInstalledModuleVersions)
-          .AddMethod(__Method_PostInstalledModuleVersions, serviceImpl.PostInstalledModuleVersions)
-          .AddMethod(__Method_DeleteInstalledModuleVersions, serviceImpl.DeleteInstalledModuleVersions)
-          .AddMethod(__Method_PostInstalledModuleVersionsKey, serviceImpl.PostInstalledModuleVersionsKey)
           .AddMethod(__Method_PostBulkOperations, serviceImpl.PostBulkOperations)
           .AddMethod(__Method_ListBulkOperations, serviceImpl.ListBulkOperations)
           .AddMethod(__Method_GetBulkOperation, serviceImpl.GetBulkOperation)
@@ -19156,6 +18061,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListLogEntries, serviceImpl.ListLogEntries)
           .AddMethod(__Method_StreamLogEntries, serviceImpl.StreamLogEntries)
           .AddMethod(__Method_PostComputePlaneMetrics, serviceImpl.PostComputePlaneMetrics)
+          .AddMethod(__Method_PostRunnerReplicaTaskMetrics, serviceImpl.PostRunnerReplicaTaskMetrics)
           .AddMethod(__Method_PostWorkflowVersionEvaluations, serviceImpl.PostWorkflowVersionEvaluations)
           .AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl.GetWorkflowVersionEvaluation)
           .AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl.ListWorkflowVersionEvaluations)
@@ -19387,22 +18293,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_DeleteCollectors, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteCollectorsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteCollectors));
       serviceBinder.AddMethod(__Method_PostStatValues, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesRequest, global::Clarifai.Api.MultiStatValueResponse>(serviceImpl.PostStatValues));
       serviceBinder.AddMethod(__Method_PostStatValuesAggregate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesAggregateRequest, global::Clarifai.Api.MultiStatValueAggregateResponse>(serviceImpl.PostStatValuesAggregate));
-      serviceBinder.AddMethod(__Method_GetModule, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModuleRequest, global::Clarifai.Api.SingleModuleResponse>(serviceImpl.GetModule));
-      serviceBinder.AddMethod(__Method_ListModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModulesRequest, global::Clarifai.Api.MultiModuleResponse>(serviceImpl.ListModules));
-      serviceBinder.AddMethod(__Method_PostModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModulesRequest, global::Clarifai.Api.MultiModuleResponse>(serviceImpl.PostModules));
-      serviceBinder.AddMethod(__Method_PatchModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModulesRequest, global::Clarifai.Api.MultiModuleResponse>(serviceImpl.PatchModules));
-      serviceBinder.AddMethod(__Method_DeleteModules, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModulesRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModules));
-      serviceBinder.AddMethod(__Method_GetModuleVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModuleVersionRequest, global::Clarifai.Api.SingleModuleVersionResponse>(serviceImpl.GetModuleVersion));
-      serviceBinder.AddMethod(__Method_ListModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(serviceImpl.ListModuleVersions));
-      serviceBinder.AddMethod(__Method_PostModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(serviceImpl.PostModuleVersions));
-      serviceBinder.AddMethod(__Method_PatchModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchModuleVersionsRequest, global::Clarifai.Api.MultiModuleVersionResponse>(serviceImpl.PatchModuleVersions));
-      serviceBinder.AddMethod(__Method_DeleteModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteModuleVersions));
-      serviceBinder.AddMethod(__Method_GetModuleVersionUsageCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetModuleVersionUsageCountRequest, global::Clarifai.Api.SingleModuleVersionUsageCountResponse>(serviceImpl.GetModuleVersionUsageCount));
-      serviceBinder.AddMethod(__Method_GetInstalledModuleVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetInstalledModuleVersionRequest, global::Clarifai.Api.SingleInstalledModuleVersionResponse>(serviceImpl.GetInstalledModuleVersion));
-      serviceBinder.AddMethod(__Method_ListInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(serviceImpl.ListInstalledModuleVersions));
-      serviceBinder.AddMethod(__Method_PostInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInstalledModuleVersionsRequest, global::Clarifai.Api.MultiInstalledModuleVersionResponse>(serviceImpl.PostInstalledModuleVersions));
-      serviceBinder.AddMethod(__Method_DeleteInstalledModuleVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteInstalledModuleVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteInstalledModuleVersions));
-      serviceBinder.AddMethod(__Method_PostInstalledModuleVersionsKey, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostInstalledModuleVersionsKeyRequest, global::Clarifai.Api.SingleKeyResponse>(serviceImpl.PostInstalledModuleVersionsKey));
       serviceBinder.AddMethod(__Method_PostBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.PostBulkOperations));
       serviceBinder.AddMethod(__Method_ListBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.ListBulkOperations));
       serviceBinder.AddMethod(__Method_GetBulkOperation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetBulkOperationRequest, global::Clarifai.Api.SingleBulkOperationsResponse>(serviceImpl.GetBulkOperation));
@@ -19457,6 +18347,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListLogEntries, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(serviceImpl.ListLogEntries));
       serviceBinder.AddMethod(__Method_StreamLogEntries, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Clarifai.Api.StreamLogEntriesRequest, global::Clarifai.Api.MultiLogEntryResponse>(serviceImpl.StreamLogEntries));
       serviceBinder.AddMethod(__Method_PostComputePlaneMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostComputePlaneMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostComputePlaneMetrics));
+      serviceBinder.AddMethod(__Method_PostRunnerReplicaTaskMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostRunnerReplicaTaskMetricsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostRunnerReplicaTaskMetrics));
       serviceBinder.AddMethod(__Method_PostWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.PostWorkflowVersionEvaluations));
       serviceBinder.AddMethod(__Method_GetWorkflowVersionEvaluation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetWorkflowVersionEvaluationRequest, global::Clarifai.Api.SingleWorkflowVersionEvaluationResponse>(serviceImpl.GetWorkflowVersionEvaluation));
       serviceBinder.AddMethod(__Method_ListWorkflowVersionEvaluations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListWorkflowVersionEvaluationsRequest, global::Clarifai.Api.MultiWorkflowVersionEvaluationResponse>(serviceImpl.ListWorkflowVersionEvaluations));
