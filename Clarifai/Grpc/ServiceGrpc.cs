@@ -688,6 +688,8 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteNodepoolsRequest> __Marshaller_clarifai_api_DeleteNodepoolsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteNodepoolsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostNodepoolStatusRequest> __Marshaller_clarifai_api_PostNodepoolStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostNodepoolStatusRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.GetDeploymentRequest> __Marshaller_clarifai_api_GetDeploymentRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetDeploymentRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.SingleDeploymentResponse> __Marshaller_clarifai_api_SingleDeploymentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleDeploymentResponse.Parser));
@@ -803,6 +805,14 @@ namespace Clarifai.Api {
     static readonly grpc::Marshaller<global::Clarifai.Api.DeletePipelineStepsRequest> __Marshaller_clarifai_api_DeletePipelineStepsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeletePipelineStepsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeletePipelineStepVersionsRequest> __Marshaller_clarifai_api_DeletePipelineStepVersionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeletePipelineStepVersionsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.ListPipelineTemplatesRequest> __Marshaller_clarifai_api_ListPipelineTemplatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListPipelineTemplatesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.MultiPipelineTemplateResponse> __Marshaller_clarifai_api_MultiPipelineTemplateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiPipelineTemplateResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest> __Marshaller_clarifai_api_PostPipelineVersionRunFromTemplateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse> __Marshaller_clarifai_api_PostPipelineVersionRunFromTemplateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostArtifactsRequest> __Marshaller_clarifai_api_PostArtifactsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostArtifactsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -2637,6 +2647,14 @@ namespace Clarifai.Api {
         __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostNodepoolStatusRequest, global::Clarifai.Api.Status.BaseResponse> __Method_PostNodepoolStatus = new grpc::Method<global::Clarifai.Api.PostNodepoolStatusRequest, global::Clarifai.Api.Status.BaseResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostNodepoolStatus",
+        __Marshaller_clarifai_api_PostNodepoolStatusRequest,
+        __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.GetDeploymentRequest, global::Clarifai.Api.SingleDeploymentResponse> __Method_GetDeployment = new grpc::Method<global::Clarifai.Api.GetDeploymentRequest, global::Clarifai.Api.SingleDeploymentResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -2947,6 +2965,22 @@ namespace Clarifai.Api {
         "DeletePipelineStepVersions",
         __Marshaller_clarifai_api_DeletePipelineStepVersionsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.ListPipelineTemplatesRequest, global::Clarifai.Api.MultiPipelineTemplateResponse> __Method_ListPipelineTemplates = new grpc::Method<global::Clarifai.Api.ListPipelineTemplatesRequest, global::Clarifai.Api.MultiPipelineTemplateResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListPipelineTemplates",
+        __Marshaller_clarifai_api_ListPipelineTemplatesRequest,
+        __Marshaller_clarifai_api_MultiPipelineTemplateResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest, global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse> __Method_PostPipelineVersionRunFromTemplate = new grpc::Method<global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest, global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PostPipelineVersionRunFromTemplate",
+        __Marshaller_clarifai_api_PostPipelineVersionRunFromTemplateRequest,
+        __Marshaller_clarifai_api_PostPipelineVersionRunFromTemplateResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.PostArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse> __Method_PostArtifacts = new grpc::Method<global::Clarifai.Api.PostArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse>(
@@ -5767,6 +5801,18 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Update nodepool status. Called by the agent to report nodepool health/errors.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> PostNodepoolStatus(global::Clarifai.Api.PostNodepoolStatusRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Deployments CRUD
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -6025,6 +6071,31 @@ namespace Clarifai.Api {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeletePipelineStepVersions(global::Clarifai.Api.DeletePipelineStepVersionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Lists pipeline templates, which are ready-to-use templates that can simply be run on demand.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiPipelineTemplateResponse> ListPipelineTemplates(global::Clarifai.Api.ListPipelineTemplatesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// This is a convenience endpoint for users to quickly get started with running pipelines.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse> PostPipelineVersionRunFromTemplate(global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -16640,6 +16711,54 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteNodepools, null, options, request);
       }
       /// <summary>
+      /// Update nodepool status. Called by the agent to report nodepool health/errors.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostNodepoolStatus(global::Clarifai.Api.PostNodepoolStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostNodepoolStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update nodepool status. Called by the agent to report nodepool health/errors.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.Status.BaseResponse PostNodepoolStatus(global::Clarifai.Api.PostNodepoolStatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostNodepoolStatus, null, options, request);
+      }
+      /// <summary>
+      /// Update nodepool status. Called by the agent to report nodepool health/errors.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostNodepoolStatusAsync(global::Clarifai.Api.PostNodepoolStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostNodepoolStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update nodepool status. Called by the agent to report nodepool health/errors.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> PostNodepoolStatusAsync(global::Clarifai.Api.PostNodepoolStatusRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostNodepoolStatus, null, options, request);
+      }
+      /// <summary>
       /// Deployments CRUD
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -17503,6 +17622,106 @@ namespace Clarifai.Api {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeletePipelineStepVersions, null, options, request);
       }
+      /// <summary>
+      /// Lists pipeline templates, which are ready-to-use templates that can simply be run on demand.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineTemplateResponse ListPipelineTemplates(global::Clarifai.Api.ListPipelineTemplatesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPipelineTemplates(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Lists pipeline templates, which are ready-to-use templates that can simply be run on demand.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.MultiPipelineTemplateResponse ListPipelineTemplates(global::Clarifai.Api.ListPipelineTemplatesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListPipelineTemplates, null, options, request);
+      }
+      /// <summary>
+      /// Lists pipeline templates, which are ready-to-use templates that can simply be run on demand.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineTemplateResponse> ListPipelineTemplatesAsync(global::Clarifai.Api.ListPipelineTemplatesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPipelineTemplatesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Lists pipeline templates, which are ready-to-use templates that can simply be run on demand.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiPipelineTemplateResponse> ListPipelineTemplatesAsync(global::Clarifai.Api.ListPipelineTemplatesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListPipelineTemplates, null, options, request);
+      }
+      /// <summary>
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// This is a convenience endpoint for users to quickly get started with running pipelines.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse PostPipelineVersionRunFromTemplate(global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostPipelineVersionRunFromTemplate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// This is a convenience endpoint for users to quickly get started with running pipelines.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse PostPipelineVersionRunFromTemplate(global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PostPipelineVersionRunFromTemplate, null, options, request);
+      }
+      /// <summary>
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// This is a convenience endpoint for users to quickly get started with running pipelines.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse> PostPipelineVersionRunFromTemplateAsync(global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PostPipelineVersionRunFromTemplateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// This is a convenience endpoint for users to quickly get started with running pipelines.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse> PostPipelineVersionRunFromTemplateAsync(global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PostPipelineVersionRunFromTemplate, null, options, request);
+      }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Clarifai.Api.MultiArtifactResponse PostArtifacts(global::Clarifai.Api.PostArtifactsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
@@ -18050,6 +18269,7 @@ namespace Clarifai.Api {
           .AddMethod(__Method_PostNodepools, serviceImpl.PostNodepools)
           .AddMethod(__Method_PatchNodepools, serviceImpl.PatchNodepools)
           .AddMethod(__Method_DeleteNodepools, serviceImpl.DeleteNodepools)
+          .AddMethod(__Method_PostNodepoolStatus, serviceImpl.PostNodepoolStatus)
           .AddMethod(__Method_GetDeployment, serviceImpl.GetDeployment)
           .AddMethod(__Method_ListDeployments, serviceImpl.ListDeployments)
           .AddMethod(__Method_PostDeployments, serviceImpl.PostDeployments)
@@ -18089,6 +18309,8 @@ namespace Clarifai.Api {
           .AddMethod(__Method_GetPipelineStepVersion, serviceImpl.GetPipelineStepVersion)
           .AddMethod(__Method_DeletePipelineSteps, serviceImpl.DeletePipelineSteps)
           .AddMethod(__Method_DeletePipelineStepVersions, serviceImpl.DeletePipelineStepVersions)
+          .AddMethod(__Method_ListPipelineTemplates, serviceImpl.ListPipelineTemplates)
+          .AddMethod(__Method_PostPipelineVersionRunFromTemplate, serviceImpl.PostPipelineVersionRunFromTemplate)
           .AddMethod(__Method_PostArtifacts, serviceImpl.PostArtifacts)
           .AddMethod(__Method_GetArtifact, serviceImpl.GetArtifact)
           .AddMethod(__Method_ListArtifacts, serviceImpl.ListArtifacts)
@@ -18336,6 +18558,7 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_PostNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.PostNodepools));
       serviceBinder.AddMethod(__Method_PatchNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchNodepoolsRequest, global::Clarifai.Api.MultiNodepoolResponse>(serviceImpl.PatchNodepools));
       serviceBinder.AddMethod(__Method_DeleteNodepools, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteNodepoolsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteNodepools));
+      serviceBinder.AddMethod(__Method_PostNodepoolStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostNodepoolStatusRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.PostNodepoolStatus));
       serviceBinder.AddMethod(__Method_GetDeployment, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetDeploymentRequest, global::Clarifai.Api.SingleDeploymentResponse>(serviceImpl.GetDeployment));
       serviceBinder.AddMethod(__Method_ListDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.ListDeployments));
       serviceBinder.AddMethod(__Method_PostDeployments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostDeploymentsRequest, global::Clarifai.Api.MultiDeploymentResponse>(serviceImpl.PostDeployments));
@@ -18375,6 +18598,8 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_GetPipelineStepVersion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetPipelineStepVersionRequest, global::Clarifai.Api.SinglePipelineStepVersionResponse>(serviceImpl.GetPipelineStepVersion));
       serviceBinder.AddMethod(__Method_DeletePipelineSteps, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelineStepsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeletePipelineSteps));
       serviceBinder.AddMethod(__Method_DeletePipelineStepVersions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeletePipelineStepVersionsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeletePipelineStepVersions));
+      serviceBinder.AddMethod(__Method_ListPipelineTemplates, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListPipelineTemplatesRequest, global::Clarifai.Api.MultiPipelineTemplateResponse>(serviceImpl.ListPipelineTemplates));
+      serviceBinder.AddMethod(__Method_PostPipelineVersionRunFromTemplate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostPipelineVersionRunFromTemplateRequest, global::Clarifai.Api.PostPipelineVersionRunFromTemplateResponse>(serviceImpl.PostPipelineVersionRunFromTemplate));
       serviceBinder.AddMethod(__Method_PostArtifacts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse>(serviceImpl.PostArtifacts));
       serviceBinder.AddMethod(__Method_GetArtifact, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetArtifactRequest, global::Clarifai.Api.SingleArtifactResponse>(serviceImpl.GetArtifact));
       serviceBinder.AddMethod(__Method_ListArtifacts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListArtifactsRequest, global::Clarifai.Api.MultiArtifactResponse>(serviceImpl.ListArtifacts));
