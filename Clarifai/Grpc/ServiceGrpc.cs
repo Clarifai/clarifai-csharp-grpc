@@ -538,20 +538,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteLabelOrdersRequest> __Marshaller_clarifai_api_DeleteLabelOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteLabelOrdersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostCollectorsRequest> __Marshaller_clarifai_api_PostCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostCollectorsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiCollectorResponse> __Marshaller_clarifai_api_MultiCollectorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiCollectorResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.GetCollectorRequest> __Marshaller_clarifai_api_GetCollectorRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.GetCollectorRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.SingleCollectorResponse> __Marshaller_clarifai_api_SingleCollectorResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.SingleCollectorResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.ListCollectorsRequest> __Marshaller_clarifai_api_ListCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.ListCollectorsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PatchCollectorsRequest> __Marshaller_clarifai_api_PatchCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PatchCollectorsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.DeleteCollectorsRequest> __Marshaller_clarifai_api_DeleteCollectorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteCollectorsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesRequest> __Marshaller_clarifai_api_PostStatValuesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostStatValuesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueResponse> __Marshaller_clarifai_api_MultiStatValueResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiStatValueResponse.Parser));
@@ -2244,46 +2230,6 @@ namespace Clarifai.Api {
         __ServiceName,
         "DeleteLabelOrders",
         __Marshaller_clarifai_api_DeleteLabelOrdersRequest,
-        __Marshaller_clarifai_api_status_BaseResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse> __Method_PostCollectors = new grpc::Method<global::Clarifai.Api.PostCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostCollectors",
-        __Marshaller_clarifai_api_PostCollectorsRequest,
-        __Marshaller_clarifai_api_MultiCollectorResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.GetCollectorRequest, global::Clarifai.Api.SingleCollectorResponse> __Method_GetCollector = new grpc::Method<global::Clarifai.Api.GetCollectorRequest, global::Clarifai.Api.SingleCollectorResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetCollector",
-        __Marshaller_clarifai_api_GetCollectorRequest,
-        __Marshaller_clarifai_api_SingleCollectorResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.ListCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse> __Method_ListCollectors = new grpc::Method<global::Clarifai.Api.ListCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ListCollectors",
-        __Marshaller_clarifai_api_ListCollectorsRequest,
-        __Marshaller_clarifai_api_MultiCollectorResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PatchCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse> __Method_PatchCollectors = new grpc::Method<global::Clarifai.Api.PatchCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PatchCollectors",
-        __Marshaller_clarifai_api_PatchCollectorsRequest,
-        __Marshaller_clarifai_api_MultiCollectorResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.DeleteCollectorsRequest, global::Clarifai.Api.Status.BaseResponse> __Method_DeleteCollectors = new grpc::Method<global::Clarifai.Api.DeleteCollectorsRequest, global::Clarifai.Api.Status.BaseResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "DeleteCollectors",
-        __Marshaller_clarifai_api_DeleteCollectorsRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -5026,17 +4972,9 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// PostAppDuplications starts async app duplication jobs which copy resources
-      /// (inputs, annotations, models etc) from one application to another. It can
-      /// also create the destination application if it does not exist, with fields
-      /// (description, metadata etc) copied from the source application.
-      ///
-      /// A duplication job can be started by any user that can read from the source
-      /// application (the target of this call) and can create and write to the
-      /// destination application. The duplication is associated with the user that
-      /// created it, so in order to read the status and progress of the job, that
-      /// user's ID has to be used in the call to GetAppDuplication, which might be
-      /// different to the source application owner ID in this call.
+      /// (inputs, annotations, models etc) from one application to another.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5048,6 +4986,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -5060,6 +4999,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -5212,72 +5152,6 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteLabelOrders(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Add a list of Collectors to an app.
-      /// In the handler of this endpoint we also check for all the scopes of the  POST /inputs
-      /// endpoint.
-      /// Those current scopes are listed here as a hard requirement.
-      /// They are needed when adding the collectors just so we now that you have permission with
-      /// that key at least to do the writing to this app with POST /inputs.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiCollectorResponse> PostCollectors(global::Clarifai.Api.PostCollectorsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Get a specific collector from an app.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.SingleCollectorResponse> GetCollector(global::Clarifai.Api.GetCollectorRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// List all the collectors.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiCollectorResponse> ListCollectors(global::Clarifai.Api.ListCollectorsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Patch one or more collectors.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiCollectorResponse> PatchCollectors(global::Clarifai.Api.PatchCollectorsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Delete multiple collectors in one request.
-      /// This call is asynchronous. Use DeleteCollector if you want a synchronous version.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteCollectors(global::Clarifai.Api.DeleteCollectorsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -6088,7 +5962,7 @@ namespace Clarifai.Api {
       }
 
       /// <summary>
-      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate.
       /// This is a convenience endpoint for users to quickly get started with running pipelines.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -13691,17 +13565,9 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListCollaborations, null, options, request);
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// PostAppDuplications starts async app duplication jobs which copy resources
-      /// (inputs, annotations, models etc) from one application to another. It can
-      /// also create the destination application if it does not exist, with fields
-      /// (description, metadata etc) copied from the source application.
-      ///
-      /// A duplication job can be started by any user that can read from the source
-      /// application (the target of this call) and can create and write to the
-      /// destination application. The duplication is associated with the user that
-      /// created it, so in order to read the status and progress of the job, that
-      /// user's ID has to be used in the call to GetAppDuplication, which might be
-      /// different to the source application owner ID in this call.
+      /// (inputs, annotations, models etc) from one application to another.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13714,17 +13580,9 @@ namespace Clarifai.Api {
         return PostAppDuplications(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// PostAppDuplications starts async app duplication jobs which copy resources
-      /// (inputs, annotations, models etc) from one application to another. It can
-      /// also create the destination application if it does not exist, with fields
-      /// (description, metadata etc) copied from the source application.
-      ///
-      /// A duplication job can be started by any user that can read from the source
-      /// application (the target of this call) and can create and write to the
-      /// destination application. The duplication is associated with the user that
-      /// created it, so in order to read the status and progress of the job, that
-      /// user's ID has to be used in the call to GetAppDuplication, which might be
-      /// different to the source application owner ID in this call.
+      /// (inputs, annotations, models etc) from one application to another.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13735,17 +13593,9 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostAppDuplications, null, options, request);
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// PostAppDuplications starts async app duplication jobs which copy resources
-      /// (inputs, annotations, models etc) from one application to another. It can
-      /// also create the destination application if it does not exist, with fields
-      /// (description, metadata etc) copied from the source application.
-      ///
-      /// A duplication job can be started by any user that can read from the source
-      /// application (the target of this call) and can create and write to the
-      /// destination application. The duplication is associated with the user that
-      /// created it, so in order to read the status and progress of the job, that
-      /// user's ID has to be used in the call to GetAppDuplication, which might be
-      /// different to the source application owner ID in this call.
+      /// (inputs, annotations, models etc) from one application to another.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13758,17 +13608,9 @@ namespace Clarifai.Api {
         return PostAppDuplicationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// PostAppDuplications starts async app duplication jobs which copy resources
-      /// (inputs, annotations, models etc) from one application to another. It can
-      /// also create the destination application if it does not exist, with fields
-      /// (description, metadata etc) copied from the source application.
-      ///
-      /// A duplication job can be started by any user that can read from the source
-      /// application (the target of this call) and can create and write to the
-      /// destination application. The duplication is associated with the user that
-      /// created it, so in order to read the status and progress of the job, that
-      /// user's ID has to be used in the call to GetAppDuplication, which might be
-      /// different to the source application owner ID in this call.
+      /// (inputs, annotations, models etc) from one application to another.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13779,6 +13621,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_PostAppDuplications, null, options, request);
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -13792,6 +13635,7 @@ namespace Clarifai.Api {
         return ListAppDuplications(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -13803,6 +13647,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_ListAppDuplications, null, options, request);
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -13816,6 +13661,7 @@ namespace Clarifai.Api {
         return ListAppDuplicationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// ListAppDuplications lists all app duplication jobs created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -13827,6 +13673,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListAppDuplications, null, options, request);
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -13840,6 +13687,7 @@ namespace Clarifai.Api {
         return GetAppDuplication(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -13851,6 +13699,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_GetAppDuplication, null, options, request);
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -13864,6 +13713,7 @@ namespace Clarifai.Api {
         return GetAppDuplicationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
+      /// Deprecated: App duplication is no longer supported.
       /// GetAppDuplication returns an app duplication job created by the user.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -14453,270 +14303,6 @@ namespace Clarifai.Api {
       public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteLabelOrdersAsync(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteLabelOrders, null, options, request);
-      }
-      /// <summary>
-      /// Add a list of Collectors to an app.
-      /// In the handler of this endpoint we also check for all the scopes of the  POST /inputs
-      /// endpoint.
-      /// Those current scopes are listed here as a hard requirement.
-      /// They are needed when adding the collectors just so we now that you have permission with
-      /// that key at least to do the writing to this app with POST /inputs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiCollectorResponse PostCollectors(global::Clarifai.Api.PostCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostCollectors(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Add a list of Collectors to an app.
-      /// In the handler of this endpoint we also check for all the scopes of the  POST /inputs
-      /// endpoint.
-      /// Those current scopes are listed here as a hard requirement.
-      /// They are needed when adding the collectors just so we now that you have permission with
-      /// that key at least to do the writing to this app with POST /inputs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiCollectorResponse PostCollectors(global::Clarifai.Api.PostCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostCollectors, null, options, request);
-      }
-      /// <summary>
-      /// Add a list of Collectors to an app.
-      /// In the handler of this endpoint we also check for all the scopes of the  POST /inputs
-      /// endpoint.
-      /// Those current scopes are listed here as a hard requirement.
-      /// They are needed when adding the collectors just so we now that you have permission with
-      /// that key at least to do the writing to this app with POST /inputs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCollectorResponse> PostCollectorsAsync(global::Clarifai.Api.PostCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostCollectorsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Add a list of Collectors to an app.
-      /// In the handler of this endpoint we also check for all the scopes of the  POST /inputs
-      /// endpoint.
-      /// Those current scopes are listed here as a hard requirement.
-      /// They are needed when adding the collectors just so we now that you have permission with
-      /// that key at least to do the writing to this app with POST /inputs.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCollectorResponse> PostCollectorsAsync(global::Clarifai.Api.PostCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostCollectors, null, options, request);
-      }
-      /// <summary>
-      /// Get a specific collector from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleCollectorResponse GetCollector(global::Clarifai.Api.GetCollectorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCollector(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific collector from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.SingleCollectorResponse GetCollector(global::Clarifai.Api.GetCollectorRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetCollector, null, options, request);
-      }
-      /// <summary>
-      /// Get a specific collector from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleCollectorResponse> GetCollectorAsync(global::Clarifai.Api.GetCollectorRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetCollectorAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Get a specific collector from an app.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.SingleCollectorResponse> GetCollectorAsync(global::Clarifai.Api.GetCollectorRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetCollector, null, options, request);
-      }
-      /// <summary>
-      /// List all the collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiCollectorResponse ListCollectors(global::Clarifai.Api.ListCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListCollectors(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List all the collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiCollectorResponse ListCollectors(global::Clarifai.Api.ListCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ListCollectors, null, options, request);
-      }
-      /// <summary>
-      /// List all the collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCollectorResponse> ListCollectorsAsync(global::Clarifai.Api.ListCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ListCollectorsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// List all the collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCollectorResponse> ListCollectorsAsync(global::Clarifai.Api.ListCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ListCollectors, null, options, request);
-      }
-      /// <summary>
-      /// Patch one or more collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiCollectorResponse PatchCollectors(global::Clarifai.Api.PatchCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PatchCollectors(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Patch one or more collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiCollectorResponse PatchCollectors(global::Clarifai.Api.PatchCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PatchCollectors, null, options, request);
-      }
-      /// <summary>
-      /// Patch one or more collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCollectorResponse> PatchCollectorsAsync(global::Clarifai.Api.PatchCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PatchCollectorsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Patch one or more collectors.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiCollectorResponse> PatchCollectorsAsync(global::Clarifai.Api.PatchCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PatchCollectors, null, options, request);
-      }
-      /// <summary>
-      /// Delete multiple collectors in one request.
-      /// This call is asynchronous. Use DeleteCollector if you want a synchronous version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteCollectors(global::Clarifai.Api.DeleteCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteCollectors(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete multiple collectors in one request.
-      /// This call is asynchronous. Use DeleteCollector if you want a synchronous version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.Status.BaseResponse DeleteCollectors(global::Clarifai.Api.DeleteCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_DeleteCollectors, null, options, request);
-      }
-      /// <summary>
-      /// Delete multiple collectors in one request.
-      /// This call is asynchronous. Use DeleteCollector if you want a synchronous version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteCollectorsAsync(global::Clarifai.Api.DeleteCollectorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return DeleteCollectorsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Delete multiple collectors in one request.
-      /// This call is asynchronous. Use DeleteCollector if you want a synchronous version.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.Status.BaseResponse> DeleteCollectorsAsync(global::Clarifai.Api.DeleteCollectorsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_DeleteCollectors, null, options, request);
       }
       /// <summary>
       /// PostStatValues
@@ -17671,7 +17257,7 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_ListPipelineTemplates, null, options, request);
       }
       /// <summary>
-      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate.
       /// This is a convenience endpoint for users to quickly get started with running pipelines.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -17685,7 +17271,7 @@ namespace Clarifai.Api {
         return PostPipelineVersionRunFromTemplate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate.
       /// This is a convenience endpoint for users to quickly get started with running pipelines.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -17697,7 +17283,7 @@ namespace Clarifai.Api {
         return CallInvoker.BlockingUnaryCall(__Method_PostPipelineVersionRunFromTemplate, null, options, request);
       }
       /// <summary>
-      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate.
       /// This is a convenience endpoint for users to quickly get started with running pipelines.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -17711,7 +17297,7 @@ namespace Clarifai.Api {
         return PostPipelineVersionRunFromTemplateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate. 
+      /// Creates a Pipeline, PipelineVersion, and PipelineVersionRun from a PipelineTemplate.
       /// This is a convenience endpoint for users to quickly get started with running pipelines.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -18219,11 +17805,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListLabelOrders, serviceImpl.ListLabelOrders)
           .AddMethod(__Method_PatchLabelOrders, serviceImpl.PatchLabelOrders)
           .AddMethod(__Method_DeleteLabelOrders, serviceImpl.DeleteLabelOrders)
-          .AddMethod(__Method_PostCollectors, serviceImpl.PostCollectors)
-          .AddMethod(__Method_GetCollector, serviceImpl.GetCollector)
-          .AddMethod(__Method_ListCollectors, serviceImpl.ListCollectors)
-          .AddMethod(__Method_PatchCollectors, serviceImpl.PatchCollectors)
-          .AddMethod(__Method_DeleteCollectors, serviceImpl.DeleteCollectors)
           .AddMethod(__Method_PostStatValues, serviceImpl.PostStatValues)
           .AddMethod(__Method_PostStatValuesAggregate, serviceImpl.PostStatValuesAggregate)
           .AddMethod(__Method_PostBulkOperations, serviceImpl.PostBulkOperations)
@@ -18508,11 +18089,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(serviceImpl.ListLabelOrders));
       serviceBinder.AddMethod(__Method_PatchLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(serviceImpl.PatchLabelOrders));
       serviceBinder.AddMethod(__Method_DeleteLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteLabelOrdersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteLabelOrders));
-      serviceBinder.AddMethod(__Method_PostCollectors, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(serviceImpl.PostCollectors));
-      serviceBinder.AddMethod(__Method_GetCollector, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetCollectorRequest, global::Clarifai.Api.SingleCollectorResponse>(serviceImpl.GetCollector));
-      serviceBinder.AddMethod(__Method_ListCollectors, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(serviceImpl.ListCollectors));
-      serviceBinder.AddMethod(__Method_PatchCollectors, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchCollectorsRequest, global::Clarifai.Api.MultiCollectorResponse>(serviceImpl.PatchCollectors));
-      serviceBinder.AddMethod(__Method_DeleteCollectors, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteCollectorsRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteCollectors));
       serviceBinder.AddMethod(__Method_PostStatValues, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesRequest, global::Clarifai.Api.MultiStatValueResponse>(serviceImpl.PostStatValues));
       serviceBinder.AddMethod(__Method_PostStatValuesAggregate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesAggregateRequest, global::Clarifai.Api.MultiStatValueAggregateResponse>(serviceImpl.PostStatValuesAggregate));
       serviceBinder.AddMethod(__Method_PostBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.PostBulkOperations));
