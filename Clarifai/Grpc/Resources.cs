@@ -1441,15 +1441,16 @@ namespace Clarifai.Api {
             "QVRFEMwIGhbCPhNEZXBsb3ltZW50cyBjcmVhdGVkEi4KEURFUExPWU1FTlRf",
             "VVBEQVRFEM0IGhbCPhNEZXBsb3ltZW50cyB1cGRhdGVkEi4KEURFUExPWU1F",
             "TlRfREVMRVRFEM4IGhbCPhNEZXBsb3ltZW50cyBkZWxldGVkIgYIyAEQyAEi",
-            "BgjJARDJASIGCMoBEMoBIgYIywEQywEiBgjMARDMASIGCM0BEM0BKpUBCgpN",
+            "BgjJARDJASIGCMoBEMoBIgYIywEQywEiBgjMARDMASIGCM0BEM0BKq4BCgpN",
             "ZXRyaWNUeXBlEhcKE01FVFJJQ19UWVBFX05PVF9TRVQQABIOCgpNT0RFTF9U",
             "VEZUEAESFAoQTU9ERUxfVEhST1VHSFBVVBACEiEKHU1PREVMX1BST01QVF9U",
             "T0tFTl9USFJPVUdIUFVUEAMSJQohTU9ERUxfQ09NUExFVElPTl9UT0tFTl9U",
-            "SFJPVUdIUFVUEAQqaAoLTWV0cmljTGFiZWwSGAoUTUVUUklDX0xBQkVMX05P",
-            "VF9TRVQQABIKCgZBUFBfSUQQARIMCghNT0RFTF9JRBACEhQKEE1PREVMX1ZF",
-            "UlNJT05fSUQQAxIPCgtIVFRQX1NUQVRVUxAEQlkKFWNvbS5jbGFyaWZhaS5n",
-            "cnBjLmFwaVABWjdnaXRodWIuY29tL0NsYXJpZmFpL2NsYXJpZmFpLWdvLWdy",
-            "cGMvcHJvdG8vY2xhcmlmYWkvYXBpogIEQ0FJUGIGcHJvdG8z"));
+            "SFJPVUdIUFVUEAQSFwoTTU9ERUxfUkVRVUVTVF9DT1VOVBAFKmgKC01ldHJp",
+            "Y0xhYmVsEhgKFE1FVFJJQ19MQUJFTF9OT1RfU0VUEAASCgoGQVBQX0lEEAES",
+            "DAoITU9ERUxfSUQQAhIUChBNT0RFTF9WRVJTSU9OX0lEEAMSDwoLSFRUUF9T",
+            "VEFUVVMQBEJZChVjb20uY2xhcmlmYWkuZ3JwYy5hcGlQAVo3Z2l0aHViLmNv",
+            "bS9DbGFyaWZhaS9jbGFyaWZhaS1nby1ncnBjL3Byb3RvL2NsYXJpZmFpL2Fw",
+            "aaICBENBSVBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Clarifai.Api.Status.StatusReflection.Descriptor, global::Clarifai.Api.Status.StatusCodeReflection.Descriptor, global::Clarifai.Api.Utils.ExtensionsReflection.Descriptor, global::MatrixReflection.Descriptor, global::Clarifai.Api.Utils.TimeReflection.Descriptor, global::Clarifai.Auth.Util.ExtensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Clarifai.Api.WorkflowModelUseCase), typeof(global::Clarifai.Api.DatasetVersionRequestOrigin), typeof(global::Clarifai.Api.DatasetVersionMetricsGroupType), typeof(global::Clarifai.Api.DatasetVersionExportFormat), typeof(global::Clarifai.Api.LicenseType), typeof(global::Clarifai.Api.DeployRestriction), typeof(global::Clarifai.Api.DataType), typeof(global::Clarifai.Api.ValueComparator), typeof(global::Clarifai.Api.EvaluationType), typeof(global::Clarifai.Api.APIEventType), typeof(global::Clarifai.Api.UsageIntervalType), typeof(global::Clarifai.Api.AnnotationDataType), typeof(global::Clarifai.Api.RoleType), typeof(global::Clarifai.Api.StatValueAggType), typeof(global::Clarifai.Api.StatTimeAggType), typeof(global::Clarifai.Api.ValidationErrorType), typeof(global::Clarifai.Api.InputIDConflictResolution), typeof(global::Clarifai.Api.RunnerMethodType), typeof(global::Clarifai.Api.EventType), typeof(global::Clarifai.Api.MetricType), typeof(global::Clarifai.Api.MetricLabel), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -2072,6 +2073,7 @@ namespace Clarifai.Api {
     [pbr::OriginalName("MODEL_THROUGHPUT")] ModelThroughput = 2,
     [pbr::OriginalName("MODEL_PROMPT_TOKEN_THROUGHPUT")] ModelPromptTokenThroughput = 3,
     [pbr::OriginalName("MODEL_COMPLETION_TOKEN_THROUGHPUT")] ModelCompletionTokenThroughput = 4,
+    [pbr::OriginalName("MODEL_REQUEST_COUNT")] ModelRequestCount = 5,
   }
 
   public enum MetricLabel {
