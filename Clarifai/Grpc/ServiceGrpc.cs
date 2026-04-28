@@ -538,14 +538,6 @@ namespace Clarifai.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.DeleteLabelOrdersRequest> __Marshaller_clarifai_api_DeleteLabelOrdersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.DeleteLabelOrdersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesRequest> __Marshaller_clarifai_api_PostStatValuesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostStatValuesRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueResponse> __Marshaller_clarifai_api_MultiStatValueResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiStatValueResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.PostStatValuesAggregateRequest> __Marshaller_clarifai_api_PostStatValuesAggregateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostStatValuesAggregateRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Clarifai.Api.MultiStatValueAggregateResponse> __Marshaller_clarifai_api_MultiStatValueAggregateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiStatValueAggregateResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.PostBulkOperationsRequest> __Marshaller_clarifai_api_PostBulkOperationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.PostBulkOperationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Clarifai.Api.MultiBulkOperationsResponse> __Marshaller_clarifai_api_MultiBulkOperationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Clarifai.Api.MultiBulkOperationsResponse.Parser));
@@ -2231,22 +2223,6 @@ namespace Clarifai.Api {
         "DeleteLabelOrders",
         __Marshaller_clarifai_api_DeleteLabelOrdersRequest,
         __Marshaller_clarifai_api_status_BaseResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostStatValuesRequest, global::Clarifai.Api.MultiStatValueResponse> __Method_PostStatValues = new grpc::Method<global::Clarifai.Api.PostStatValuesRequest, global::Clarifai.Api.MultiStatValueResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostStatValues",
-        __Marshaller_clarifai_api_PostStatValuesRequest,
-        __Marshaller_clarifai_api_MultiStatValueResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Clarifai.Api.PostStatValuesAggregateRequest, global::Clarifai.Api.MultiStatValueAggregateResponse> __Method_PostStatValuesAggregate = new grpc::Method<global::Clarifai.Api.PostStatValuesAggregateRequest, global::Clarifai.Api.MultiStatValueAggregateResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "PostStatValuesAggregate",
-        __Marshaller_clarifai_api_PostStatValuesAggregateRequest,
-        __Marshaller_clarifai_api_MultiStatValueAggregateResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse> __Method_PostBulkOperations = new grpc::Method<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(
@@ -5152,30 +5128,6 @@ namespace Clarifai.Api {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.Status.BaseResponse> DeleteLabelOrders(global::Clarifai.Api.DeleteLabelOrdersRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// PostStatValues
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiStatValueResponse> PostStatValues(global::Clarifai.Api.PostStatValuesRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// PostStatValuesAggregate
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Clarifai.Api.MultiStatValueAggregateResponse> PostStatValuesAggregate(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -14305,102 +14257,6 @@ namespace Clarifai.Api {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteLabelOrders, null, options, request);
       }
       /// <summary>
-      /// PostStatValues
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiStatValueResponse PostStatValues(global::Clarifai.Api.PostStatValuesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostStatValues(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// PostStatValues
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiStatValueResponse PostStatValues(global::Clarifai.Api.PostStatValuesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostStatValues, null, options, request);
-      }
-      /// <summary>
-      /// PostStatValues
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueResponse> PostStatValuesAsync(global::Clarifai.Api.PostStatValuesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostStatValuesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// PostStatValues
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueResponse> PostStatValuesAsync(global::Clarifai.Api.PostStatValuesRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostStatValues, null, options, request);
-      }
-      /// <summary>
-      /// PostStatValuesAggregate
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiStatValueAggregateResponse PostStatValuesAggregate(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostStatValuesAggregate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// PostStatValuesAggregate
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Clarifai.Api.MultiStatValueAggregateResponse PostStatValuesAggregate(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PostStatValuesAggregate, null, options, request);
-      }
-      /// <summary>
-      /// PostStatValuesAggregate
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueAggregateResponse> PostStatValuesAggregateAsync(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PostStatValuesAggregateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// PostStatValuesAggregate
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Clarifai.Api.MultiStatValueAggregateResponse> PostStatValuesAggregateAsync(global::Clarifai.Api.PostStatValuesAggregateRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PostStatValuesAggregate, null, options, request);
-      }
-      /// <summary>
       /// Perform bulk operations on a list of inputs based on input source.
       /// Operation include add, update, delete of concepts, metadata and geo data.
       /// This is an Asynchronous process. Use ListBulkOperations or GetBulkOperation to check the status.
@@ -17805,8 +17661,6 @@ namespace Clarifai.Api {
           .AddMethod(__Method_ListLabelOrders, serviceImpl.ListLabelOrders)
           .AddMethod(__Method_PatchLabelOrders, serviceImpl.PatchLabelOrders)
           .AddMethod(__Method_DeleteLabelOrders, serviceImpl.DeleteLabelOrders)
-          .AddMethod(__Method_PostStatValues, serviceImpl.PostStatValues)
-          .AddMethod(__Method_PostStatValuesAggregate, serviceImpl.PostStatValuesAggregate)
           .AddMethod(__Method_PostBulkOperations, serviceImpl.PostBulkOperations)
           .AddMethod(__Method_ListBulkOperations, serviceImpl.ListBulkOperations)
           .AddMethod(__Method_GetBulkOperation, serviceImpl.GetBulkOperation)
@@ -18089,8 +17943,6 @@ namespace Clarifai.Api {
       serviceBinder.AddMethod(__Method_ListLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(serviceImpl.ListLabelOrders));
       serviceBinder.AddMethod(__Method_PatchLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PatchLabelOrdersRequest, global::Clarifai.Api.MultiLabelOrderResponse>(serviceImpl.PatchLabelOrders));
       serviceBinder.AddMethod(__Method_DeleteLabelOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.DeleteLabelOrdersRequest, global::Clarifai.Api.Status.BaseResponse>(serviceImpl.DeleteLabelOrders));
-      serviceBinder.AddMethod(__Method_PostStatValues, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesRequest, global::Clarifai.Api.MultiStatValueResponse>(serviceImpl.PostStatValues));
-      serviceBinder.AddMethod(__Method_PostStatValuesAggregate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostStatValuesAggregateRequest, global::Clarifai.Api.MultiStatValueAggregateResponse>(serviceImpl.PostStatValuesAggregate));
       serviceBinder.AddMethod(__Method_PostBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.PostBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.PostBulkOperations));
       serviceBinder.AddMethod(__Method_ListBulkOperations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.ListBulkOperationsRequest, global::Clarifai.Api.MultiBulkOperationsResponse>(serviceImpl.ListBulkOperations));
       serviceBinder.AddMethod(__Method_GetBulkOperation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Clarifai.Api.GetBulkOperationRequest, global::Clarifai.Api.SingleBulkOperationsResponse>(serviceImpl.GetBulkOperation));
